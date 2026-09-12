@@ -1,0 +1,959 @@
+{
+  "scope": "public source snapshot; no private Git history or media",
+  "source_files": [
+    {
+      "file": ".gitattributes",
+      "source_sha256": "91c171a7f4e295966f6e40aba83b0a11a56b4c99b59b9c55fcf54f15df207bc0",
+      "release_sha256": "91c171a7f4e295966f6e40aba83b0a11a56b4c99b59b9c55fcf54f15df207bc0",
+      "adapted": false
+    },
+    {
+      "file": ".gitignore",
+      "source_sha256": "6ce767b041d2547a679ec4cf89969c8cf7e903c856c6ae2a715d1507200931c7",
+      "release_sha256": "6ce767b041d2547a679ec4cf89969c8cf7e903c856c6ae2a715d1507200931c7",
+      "adapted": false
+    },
+    {
+      "file": "LICENSE",
+      "source_sha256": "030dd68224ad58f5813b43944bf423c683b62d02cd4741bbf67ddf58b590a296",
+      "release_sha256": "030dd68224ad58f5813b43944bf423c683b62d02cd4741bbf67ddf58b590a296",
+      "adapted": false
+    },
+    {
+      "file": "THIRD_PARTY.md",
+      "source_sha256": "1a86aec6c4e6a960fa6be56382f9e4fe1060fb64ad659de5d53e7a376729e1c6",
+      "release_sha256": "1a86aec6c4e6a960fa6be56382f9e4fe1060fb64ad659de5d53e7a376729e1c6",
+      "adapted": false
+    },
+    {
+      "file": "extensions/chatcut-vd44/README.md",
+      "source_sha256": "8d79512153e39d271979a14579033d2d0a6218c9ed56b778accd4de69edbd8e5",
+      "release_sha256": "8d79512153e39d271979a14579033d2d0a6218c9ed56b778accd4de69edbd8e5",
+      "adapted": false
+    },
+    {
+      "file": "extensions/chatcut-vd44/native-keyword.jsx",
+      "source_sha256": "0efafe5ec51bbb60afb6ae9fe03c33116ee697f88abb4250e0c8381f2ac1b6f7",
+      "release_sha256": "0efafe5ec51bbb60afb6ae9fe03c33116ee697f88abb4250e0c8381f2ac1b6f7",
+      "adapted": false
+    },
+    {
+      "file": "extensions/chatcut-vd44/placements.json",
+      "source_sha256": "1553ecfcf31a912efa0bc14ec7521435ab34ebd584debb85a5b46afc0f89116c",
+      "release_sha256": "06c79cbeffc8a2e824efecedd5f928941c7b172045fe9fa9457c0a61a364efe3",
+      "adapted": true
+    },
+    {
+      "file": "extensions/hyperframes-vd44/.gitignore",
+      "source_sha256": "718107f7840b9c6ba2321de80c7f3a77762924f67756e0f5c6ce3459efeceeed",
+      "release_sha256": "718107f7840b9c6ba2321de80c7f3a77762924f67756e0f5c6ce3459efeceeed",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/AGENTS.md",
+      "source_sha256": "6361e5d1b78020e6a17a9c31685104d78cb538a080907ca21fd6f88ec21b7fd3",
+      "release_sha256": "6361e5d1b78020e6a17a9c31685104d78cb538a080907ca21fd6f88ec21b7fd3",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/CLAUDE.md",
+      "source_sha256": "6361e5d1b78020e6a17a9c31685104d78cb538a080907ca21fd6f88ec21b7fd3",
+      "release_sha256": "6361e5d1b78020e6a17a9c31685104d78cb538a080907ca21fd6f88ec21b7fd3",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/README.md",
+      "source_sha256": "5e3b518b54489ca6eaf3b2f2a67c19f08d346fa153d4572e26487474dfb43973",
+      "release_sha256": "7b060e75dfc939ce604d7fd39acd7b670818692c645aa2750b3a24a12b43381e",
+      "adapted": true
+    },
+    {
+      "file": "extensions/hyperframes-vd44/assets/NotoSansSC-OFL.txt",
+      "source_sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "release_sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/compositions/components/spring-pop.html",
+      "source_sha256": "009ea4f79971ddfa076bf215da0787cfab5507dca99ba879db16b3521b25e22c",
+      "release_sha256": "009ea4f79971ddfa076bf215da0787cfab5507dca99ba879db16b3521b25e22c",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/compositions/yt-comment-card.html",
+      "source_sha256": "144ec7b5b720ea0f704fd244b31889022732d1791667b74d8d98def553e693d9",
+      "release_sha256": "144ec7b5b720ea0f704fd244b31889022732d1791667b74d8d98def553e693d9",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/hyperframes.json",
+      "source_sha256": "449964d70444458f4a943b0c09ea960117194091ff086b719be9e958e2f947fa",
+      "release_sha256": "449964d70444458f4a943b0c09ea960117194091ff086b719be9e958e2f947fa",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/hyperframes.lock.json",
+      "source_sha256": "5f1d3e495cc184a8e025b7158b1dfdb8ecb0936925583a0b68864628007ee75a",
+      "release_sha256": "5f1d3e495cc184a8e025b7158b1dfdb8ecb0936925583a0b68864628007ee75a",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/index.html",
+      "source_sha256": "1c779c156afc2233d3fefbd042a3b3b83537cadaa5f8455359645cfccf4d0691",
+      "release_sha256": "1c779c156afc2233d3fefbd042a3b3b83537cadaa5f8455359645cfccf4d0691",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/index.motion.json",
+      "source_sha256": "6f1e397062b4288dff5334026f82a24c80e92f53df281f95f0f11402c5bf368f",
+      "release_sha256": "6f1e397062b4288dff5334026f82a24c80e92f53df281f95f0f11402c5bf368f",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/package.json",
+      "source_sha256": "2da1fff544c36e220b2853d36498dfa1a10c68ad0e88822d37e5c954b9d544a9",
+      "release_sha256": "2da1fff544c36e220b2853d36498dfa1a10c68ad0e88822d37e5c954b9d544a9",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/run.ps1",
+      "source_sha256": "5cba908c48a41cdb2e9009228247b6bfc8a7b583124c60ad9a2ad66edc9ed9b5",
+      "release_sha256": "5cba908c48a41cdb2e9009228247b6bfc8a7b583124c60ad9a2ad66edc9ed9b5",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/shot-plan.json",
+      "source_sha256": "c79d84a3bf8dfe33bf357273aa2b34da61cfc929ae2a21687851577f5a74c138",
+      "release_sha256": "c79d84a3bf8dfe33bf357273aa2b34da61cfc929ae2a21687851577f5a74c138",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/skills-lock.json",
+      "source_sha256": "89d8e89749f5f19211fe0e25938f6e5d2c3c12204ab29e196b28d2165e2e97c5",
+      "release_sha256": "89d8e89749f5f19211fe0e25938f6e5d2c3c12204ab29e196b28d2165e2e97c5",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/source-manifest.json",
+      "source_sha256": "f90b07ef1b1914296da0c21c3d6c30370f6bf49adc9e23fe3b939beb0569fd44",
+      "release_sha256": "f90b07ef1b1914296da0c21c3d6c30370f6bf49adc9e23fe3b939beb0569fd44",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/upstream/HyperFrames-LICENSE.txt",
+      "source_sha256": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8",
+      "release_sha256": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/upstream/spring-pop.original.html",
+      "source_sha256": "50dbfb83f4f76b0dbad7377c86689c27080c70f7cd764e2cfb840ed618ac5364",
+      "release_sha256": "50dbfb83f4f76b0dbad7377c86689c27080c70f7cd764e2cfb840ed618ac5364",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/upstream/yt-comment-card.original.html",
+      "source_sha256": "612f5ebb1313e5384d0aa11655a7aed3b40fc34d2951616a73dae2c767b69c98",
+      "release_sha256": "612f5ebb1313e5384d0aa11655a7aed3b40fc34d2951616a73dae2c767b69c98",
+      "adapted": false
+    },
+    {
+      "file": "extensions/hyperframes-vd44/verify_render.py",
+      "source_sha256": "f28f40fc07ed2ab8d62659930f586a6239af7a4e30e06357d03dea8d850c076e",
+      "release_sha256": "f28f40fc07ed2ab8d62659930f586a6239af7a4e30e06357d03dea8d850c076e",
+      "adapted": false
+    },
+    {
+      "file": "extensions/jianying-core-lock.json",
+      "source_sha256": "af897db6e46fa4781feed5db220b7cb3adf0b511110cee35e35fb67af60de1d9",
+      "release_sha256": "af897db6e46fa4781feed5db220b7cb3adf0b511110cee35e35fb67af60de1d9",
+      "adapted": false
+    },
+    {
+      "file": "extensions/jianying-source-lock.json",
+      "source_sha256": "33247c2f40a051fa9cb3df7b7cd35ddc7162c752c4cae80e45864bfdfbf79a93",
+      "release_sha256": "33247c2f40a051fa9cb3df7b7cd35ddc7162c752c4cae80e45864bfdfbf79a93",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/.gitignore",
+      "source_sha256": "79e2f8c581bb06e2b6e33f9e579201fd112d12beb1b8813ce0aaecb766e4f9ba",
+      "release_sha256": "79e2f8c581bb06e2b6e33f9e579201fd112d12beb1b8813ce0aaecb766e4f9ba",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/.prettierrc",
+      "source_sha256": "e8dae064695ae349a6c12b7b38ed709940aed6239762246dd0895f8a3d365d4d",
+      "release_sha256": "e8dae064695ae349a6c12b7b38ed709940aed6239762246dd0895f8a3d365d4d",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/BRIEF.md",
+      "source_sha256": "96339b8cdca36292f0f936413845008fd62c05b6712f6a3b7f5c117a8c434811",
+      "release_sha256": "77ea92f3bee933f90b4e3b5d6f663b8cfb18143afe2887a15601a7abd1a076ab",
+      "adapted": true
+    },
+    {
+      "file": "extensions/remotion-vd44/README.md",
+      "source_sha256": "37b1f37ca6ef684634055157c5147a2d26c47dca834a859415d4a20297875adf",
+      "release_sha256": "37b1f37ca6ef684634055157c5147a2d26c47dca834a859415d4a20297875adf",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/eslint.config.mjs",
+      "source_sha256": "7220a95b6eec7d402e9d853a0858cef9ac34ffa791c6462c1fc2d13c8bb7deae",
+      "release_sha256": "7220a95b6eec7d402e9d853a0858cef9ac34ffa791c6462c1fc2d13c8bb7deae",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/package-lock.json",
+      "source_sha256": "abe42cefbe816d54667e293dfe5c7fb087d274f8e1828526504f375d53bce2e6",
+      "release_sha256": "abe42cefbe816d54667e293dfe5c7fb087d274f8e1828526504f375d53bce2e6",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/package.json",
+      "source_sha256": "a6bf32d8139a5cee37c4da72cd4a321041271a9f60243069a520d33783168333",
+      "release_sha256": "a6bf32d8139a5cee37c4da72cd4a321041271a9f60243069a520d33783168333",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/public/OFL.txt",
+      "source_sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "release_sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/remotion.config.ts",
+      "source_sha256": "0aa440f3ff8ba1558716d39cf7346394d77b6629dfec32867096d5769d620adb",
+      "release_sha256": "0aa440f3ff8ba1558716d39cf7346394d77b6629dfec32867096d5769d620adb",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/run.ps1",
+      "source_sha256": "22474b2303daaec66da063b7bcbd58488e94247135b78c865792f45e895865e0",
+      "release_sha256": "22474b2303daaec66da063b7bcbd58488e94247135b78c865792f45e895865e0",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/source-manifest.json",
+      "source_sha256": "7d2a11ec72675abcced97b86602af64ab0265ad2cff3f972c6d0cfcf1403afb3",
+      "release_sha256": "445b01ef4f3de0fb5711f9d928d3e1e334ec1af1025436a2d919bb4ab7580167",
+      "adapted": true
+    },
+    {
+      "file": "extensions/remotion-vd44/src/Ending.tsx",
+      "source_sha256": "d994c52d38aa6297383c90773e664499c35b7c9f48d03fcf4e688df8e87316ab",
+      "release_sha256": "d1390d85cb267dc3090347038123e41834a8377dba0dbfd162d53dd661b8a054",
+      "adapted": true
+    },
+    {
+      "file": "extensions/remotion-vd44/src/Journey.tsx",
+      "source_sha256": "e29ed81bc667126e37bbbe64705a99cd395eac9bc9ec306f2346fdc8d960d326",
+      "release_sha256": "e29ed81bc667126e37bbbe64705a99cd395eac9bc9ec306f2346fdc8d960d326",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/src/Root.tsx",
+      "source_sha256": "8190b8d1245bfd85cf0cf191fe44f424f44e56af7127ae12da64708fe2140a62",
+      "release_sha256": "8190b8d1245bfd85cf0cf191fe44f424f44e56af7127ae12da64708fe2140a62",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/src/index.ts",
+      "source_sha256": "9add656193bc0a61896d26d3067000fcff56ef7b69270af1f8883b0e4ce65cc4",
+      "release_sha256": "9add656193bc0a61896d26d3067000fcff56ef7b69270af1f8883b0e4ce65cc4",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/src/scenes/FollowUp.tsx",
+      "source_sha256": "44927631f19c41d35077454696c912608dabe95d9f05721295fb5f4012bdbf16",
+      "release_sha256": "44927631f19c41d35077454696c912608dabe95d9f05721295fb5f4012bdbf16",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/src/scenes/NewLead.tsx",
+      "source_sha256": "fef50a8a75e8136004586bcbaa72096a3f02c69e344a2a7e6bc7b87072728f81",
+      "release_sha256": "fef50a8a75e8136004586bcbaa72096a3f02c69e344a2a7e6bc7b87072728f81",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/src/scenes/NoReply.tsx",
+      "source_sha256": "7c0de0072165a09a8a25bce12c927614f406b7cd6d49e83e24253896d4bae3ab",
+      "release_sha256": "7c0de0072165a09a8a25bce12c927614f406b7cd6d49e83e24253896d4bae3ab",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/src/scenes/Register.tsx",
+      "source_sha256": "c44f311564bd62f7f005218dfe4c2e35147ed5c035e5c914e1f8940165f18a42",
+      "release_sha256": "c44f311564bd62f7f005218dfe4c2e35147ed5c035e5c914e1f8940165f18a42",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/src/scenes/Shared.tsx",
+      "source_sha256": "f32c1f822c4aeed1bef7d0630843903a56619513f6a9f6ab390a2b8103e0ca52",
+      "release_sha256": "f32c1f822c4aeed1bef7d0630843903a56619513f6a9f6ab390a2b8103e0ca52",
+      "adapted": false
+    },
+    {
+      "file": "extensions/remotion-vd44/tsconfig.json",
+      "source_sha256": "8ebfd92fdfb99c3d51ce6394d896f82c2aa1498fbfbc9762ce126266d05f0671",
+      "release_sha256": "8ebfd92fdfb99c3d51ce6394d896f82c2aa1498fbfbc9762ce126266d05f0671",
+      "adapted": false
+    },
+    {
+      "file": "extensions/resolve-tools.ps1",
+      "source_sha256": "3ca371ca98b1bd9e7a5bb8236ad8da2856f7374d363eefad524837c0773453d9",
+      "release_sha256": "3ca371ca98b1bd9e7a5bb8236ad8da2856f7374d363eefad524837c0773453d9",
+      "adapted": false
+    },
+    {
+      "file": "extensions/upstream-lock.json",
+      "source_sha256": "8253f0599d269fcea422d9173da9fdc6cdfaca8cd57bfeb21c1670b7e954d69c",
+      "release_sha256": "8253f0599d269fcea422d9173da9fdc6cdfaca8cd57bfeb21c1670b7e954d69c",
+      "adapted": false
+    },
+    {
+      "file": "profiles/approved-vd44-teaching-v1.json",
+      "source_sha256": "537868f2633abc6d4e43f297ddf4e02502105dd14d16b201519d7fe7c834801e",
+      "release_sha256": "537868f2633abc6d4e43f297ddf4e02502105dd14d16b201519d7fe7c834801e",
+      "adapted": false
+    },
+    {
+      "file": "publishing/AGENTS.md",
+      "source_sha256": "8c69f8715031654406ba7ad26d831c4d13f95ed3b87c56f6f91da6913a6dbbf0",
+      "release_sha256": "8c69f8715031654406ba7ad26d831c4d13f95ed3b87c56f6f91da6913a6dbbf0",
+      "adapted": false
+    },
+    {
+      "file": "publishing/INSTALL_SKILLS.md",
+      "source_sha256": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
+      "release_sha256": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
+      "adapted": false
+    },
+    {
+      "file": "publishing/README.md",
+      "source_sha256": "1cabb9b1fce4b3c85bfb4de1ef6ad0276509d436249be56f171bdc7865bfe724",
+      "release_sha256": "1cabb9b1fce4b3c85bfb4de1ef6ad0276509d436249be56f171bdc7865bfe724",
+      "adapted": false
+    },
+    {
+      "file": "publishing/VALIDATION.md",
+      "source_sha256": "9ec4eb1a1d3b7783d73a46ef0210cafe109062b6199d0a263c1e9727474a01c2",
+      "release_sha256": "9ec4eb1a1d3b7783d73a46ef0210cafe109062b6199d0a263c1e9727474a01c2",
+      "adapted": false
+    },
+    {
+      "file": "pyproject.toml",
+      "source_sha256": "368eac81ae329ebc69ed58ef03e42da967c6857f0475a7f7c52d3c5a588c1b81",
+      "release_sha256": "368eac81ae329ebc69ed58ef03e42da967c6857f0475a7f7c52d3c5a588c1b81",
+      "adapted": false
+    },
+    {
+      "file": "requirements.lock.txt",
+      "source_sha256": "8c2e8ad15da44078b1b4ca76997837ab35066528e4e8fe1192f869a9defbb2df",
+      "release_sha256": "8c2e8ad15da44078b1b4ca76997837ab35066528e4e8fe1192f869a9defbb2df",
+      "adapted": false
+    },
+    {
+      "file": "scripts/adapt_jianying_skill.py",
+      "source_sha256": "77354e62ae0d318a188ee7cd744617b3a0be035c74d422c93bb3f0e83579e2fc",
+      "release_sha256": "77354e62ae0d318a188ee7cd744617b3a0be035c74d422c93bb3f0e83579e2fc",
+      "adapted": false
+    },
+    {
+      "file": "scripts/audit_chatcut_snapshot.py",
+      "source_sha256": "9d869bef78f482d26780ca8943a37c69c925318a3f243a065b79a4d2b51f86d8",
+      "release_sha256": "9d869bef78f482d26780ca8943a37c69c925318a3f243a065b79a4d2b51f86d8",
+      "adapted": false
+    },
+    {
+      "file": "scripts/bootstrap.ps1",
+      "source_sha256": "263d0d9467926276d514ec007bb9c92657a541c86adb9cf8f9f79d41642f64cb",
+      "release_sha256": "263d0d9467926276d514ec007bb9c92657a541c86adb9cf8f9f79d41642f64cb",
+      "adapted": false
+    },
+    {
+      "file": "scripts/bootstrap_runtime.py",
+      "source_sha256": "5a4f7360cd01c12da3295e2773f633c0067c02081f0ec4812b715c22978440aa",
+      "release_sha256": "5a4f7360cd01c12da3295e2773f633c0067c02081f0ec4812b715c22978440aa",
+      "adapted": false
+    },
+    {
+      "file": "scripts/build_jianying_project.py",
+      "source_sha256": "bcdc3f76557aba2c99cb011ca4553a326f57da779e0ddf209667edcbf1675288",
+      "release_sha256": "bcdc3f76557aba2c99cb011ca4553a326f57da779e0ddf209667edcbf1675288",
+      "adapted": false
+    },
+    {
+      "file": "scripts/export_public_release.py",
+      "source_sha256": "1b675fd4323a6c1f1c2ba41640ae43ae715b2cfbb412faa925bbb58d1811d8fb",
+      "release_sha256": "1b675fd4323a6c1f1c2ba41640ae43ae715b2cfbb412faa925bbb58d1811d8fb",
+      "adapted": false
+    },
+    {
+      "file": "scripts/export_student_skill.py",
+      "source_sha256": "81466af97da3fc047f894371ae2e8bfe2992142aebff457168a47aa8d804e4b4",
+      "release_sha256": "81466af97da3fc047f894371ae2e8bfe2992142aebff457168a47aa8d804e4b4",
+      "adapted": false
+    },
+    {
+      "file": "scripts/install_extensions.py",
+      "source_sha256": "594867d338f0357de5f2ca6653dbb8718e7c6a0c510e20f98aa29a02713c01d8",
+      "release_sha256": "594867d338f0357de5f2ca6653dbb8718e7c6a0c510e20f98aa29a02713c01d8",
+      "adapted": false
+    },
+    {
+      "file": "scripts/install_skill.py",
+      "source_sha256": "20d1183adc84cab529fe1e7974583cf0a957c0d761ec8c9bf52eb7ffe734b35a",
+      "release_sha256": "20d1183adc84cab529fe1e7974583cf0a957c0d761ec8c9bf52eb7ffe734b35a",
+      "adapted": false
+    },
+    {
+      "file": "scripts/smoke_asr.py",
+      "source_sha256": "9e3ce8c2edeff801d2eed4ce70894234163cd6e61e058c94eca5b5ac890a0a9b",
+      "release_sha256": "9e3ce8c2edeff801d2eed4ce70894234163cd6e61e058c94eca5b5ac890a0a9b",
+      "adapted": false
+    },
+    {
+      "file": "scripts/smoke_asr_core.py",
+      "source_sha256": "9ab28f19a178ba6dbc4df7b36a391c8dd08f8c7788f78486c92dea0368fe6acc",
+      "release_sha256": "9ab28f19a178ba6dbc4df7b36a391c8dd08f8c7788f78486c92dea0368fe6acc",
+      "adapted": false
+    },
+    {
+      "file": "scripts/smoke_media.py",
+      "source_sha256": "a8bdfd3f49f34d6296b5d73676a2423d553dbe93f4f8f53b655730c980d4e323",
+      "release_sha256": "a8bdfd3f49f34d6296b5d73676a2423d553dbe93f4f8f53b655730c980d4e323",
+      "adapted": false
+    },
+    {
+      "file": "scripts/smoke_motion.py",
+      "source_sha256": "2c6d65f41cd1333302cdd1147e0471102bb4121c4061f8d0aa523ba2ee6ab6ce",
+      "release_sha256": "2c6d65f41cd1333302cdd1147e0471102bb4121c4061f8d0aa523ba2ee6ab6ce",
+      "adapted": false
+    },
+    {
+      "file": "scripts/smoke_render.py",
+      "source_sha256": "4c4ec8a7331a46261a512b89d9b8b4fb7abc1e1516ecee429dcbc643d92b2825",
+      "release_sha256": "4c4ec8a7331a46261a512b89d9b8b4fb7abc1e1516ecee429dcbc643d92b2825",
+      "adapted": false
+    },
+    {
+      "file": "scripts/verify_review_media.py",
+      "source_sha256": "e32fec93c9fba13f967c85904ebdd2071767614cefe1dae006489589074ea4cc",
+      "release_sha256": "e32fec93c9fba13f967c85904ebdd2071767614cefe1dae006489589074ea4cc",
+      "adapted": false
+    },
+    {
+      "file": "scripts/video_use_review.py",
+      "source_sha256": "fc3946f7787f9fd3d9d6a2d4ec216b92567bd074398dee0d008fee813b53951d",
+      "release_sha256": "fc3946f7787f9fd3d9d6a2d4ec216b92567bd074398dee0d008fee813b53951d",
+      "adapted": false
+    },
+    {
+      "file": "skill-adapters/jianying-editor/SKILL.md",
+      "source_sha256": "da8d7e95fcc0280c25eb26726b0e978ed45bc5966774b0652716fa9f04bf6d9f",
+      "release_sha256": "da8d7e95fcc0280c25eb26726b0e978ed45bc5966774b0652716fa9f04bf6d9f",
+      "adapted": false
+    },
+    {
+      "file": "skill-adapters/remotion-best-practices/SKILL.md",
+      "source_sha256": "9857b75ce246a6d95919ddf06d641e3e190a6288738b8923ef401e0adf7bc5c9",
+      "release_sha256": "9857b75ce246a6d95919ddf06d641e3e190a6288738b8923ef401e0adf7bc5c9",
+      "adapted": false
+    },
+    {
+      "file": "skill-adapters/remotion-best-practices/agents/openai.yaml",
+      "source_sha256": "f628953bdd07e01c73bee275461cf6865a2986d88ba35d1dbbd5403eb7dbbf3f",
+      "release_sha256": "f628953bdd07e01c73bee275461cf6865a2986d88ba35d1dbbd5403eb7dbbf3f",
+      "adapted": false
+    },
+    {
+      "file": "skill-adapters/video-use/SKILL.md",
+      "source_sha256": "a367e93ae2d02f702bbfa3a11b330d935634f7697f91bff56c496dcd7a9cb096",
+      "release_sha256": "a367e93ae2d02f702bbfa3a11b330d935634f7697f91bff56c496dcd7a9cb096",
+      "adapted": false
+    },
+    {
+      "file": "skill-adapters/video-use/agents/openai.yaml",
+      "source_sha256": "dc44f7a6a18ac2a8f80b5b1a6e9adf168409e7f013058cbd02bd094965f90791",
+      "release_sha256": "dc44f7a6a18ac2a8f80b5b1a6e9adf168409e7f013058cbd02bd094965f90791",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/SKILL.md",
+      "source_sha256": "e9be92747af6b26b79662e844820620c44b26d58f2015b50c9ac81228ee0113c",
+      "release_sha256": "e9be92747af6b26b79662e844820620c44b26d58f2015b50c9ac81228ee0113c",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/agents/openai.yaml",
+      "source_sha256": "f7dc166a41889c1f6b0bffd761ee0f4cffc848ed7f4107af2135125818e9045d",
+      "release_sha256": "f7dc166a41889c1f6b0bffd761ee0f4cffc848ed7f4107af2135125818e9045d",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/approved-workflow.md",
+      "source_sha256": "e258f4e868b87c6fcbb33bb07d9a55e6240b1ad2be7874a01ab2dbfa36c6b866",
+      "release_sha256": "e258f4e868b87c6fcbb33bb07d9a55e6240b1ad2be7874a01ab2dbfa36c6b866",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/chatcut.md",
+      "source_sha256": "90e5d95a801a2187e226f18d09dcfad3d2b08e099da4332cd5ffb79fb84de203",
+      "release_sha256": "90e5d95a801a2187e226f18d09dcfad3d2b08e099da4332cd5ffb79fb84de203",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/data-contract.md",
+      "source_sha256": "0cb953010cb2631ff3aa902950504e52026ccbf1f137bc0678f420f12e61da2d",
+      "release_sha256": "0cb953010cb2631ff3aa902950504e52026ccbf1f137bc0678f420f12e61da2d",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/editorial.md",
+      "source_sha256": "48d194f708088b074a732e43d51db506c230451d38c44342b6a45208d7b85bbe",
+      "release_sha256": "48d194f708088b074a732e43d51db506c230451d38c44342b6a45208d7b85bbe",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/jianying.md",
+      "source_sha256": "75af11549cb8d899e29a622d8b69afb8928ac68bb7894d072d59cfe7d7c0c7de",
+      "release_sha256": "75af11549cb8d899e29a622d8b69afb8928ac68bb7894d072d59cfe7d7c0c7de",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/manual-editing.md",
+      "source_sha256": "4f83f96ebcdc5bf14978731bc7fb4875083e90ab3eea3936daad1d16bbbbe641",
+      "release_sha256": "4f83f96ebcdc5bf14978731bc7fb4875083e90ab3eea3936daad1d16bbbbe641",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/master-playbook.md",
+      "source_sha256": "a1b183f79d48deee46d34fab763b2a558feb352f84b32a06b0ba1df0aa51a6f5",
+      "release_sha256": "8847c27608996368e5cc7e0aa82b1f07972132565140a47ed7e44fc549ccb05e",
+      "adapted": true
+    },
+    {
+      "file": "skill/talking-head-editor/references/operations.md",
+      "source_sha256": "53e3cae30a9eabd830580fd6e21514e49edb6dbbcc1db156708211723b54484d",
+      "release_sha256": "53e3cae30a9eabd830580fd6e21514e49edb6dbbcc1db156708211723b54484d",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/quality.md",
+      "source_sha256": "1156473a114d43e492aae13a97c6ffde3358a383679686769848a1f13cfd4210",
+      "release_sha256": "1156473a114d43e492aae13a97c6ffde3358a383679686769848a1f13cfd4210",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/reference-motion.md",
+      "source_sha256": "adef44e5ddc8038820d1f9b66614d210effae2a694faa93681dfdedd8f953bdb",
+      "release_sha256": "a1f7eafc80e5f0b116b87e1357f3176f3fed4e77f03c60f2741eea7cae817ae3",
+      "adapted": true
+    },
+    {
+      "file": "skill/talking-head-editor/references/tool-stack.md",
+      "source_sha256": "47041261b403c5db4d848a734d0490929fe7d2cd2256a0ace5cdaf3d3adbc56c",
+      "release_sha256": "47041261b403c5db4d848a734d0490929fe7d2cd2256a0ace5cdaf3d3adbc56c",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/user-preferences.md",
+      "source_sha256": "b663d3d1cfb94fb50b319d64817ade7c6e343ba309a78a69fef5cefe56980448",
+      "release_sha256": "b663d3d1cfb94fb50b319d64817ade7c6e343ba309a78a69fef5cefe56980448",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/visual-storytelling.md",
+      "source_sha256": "879f49b4605abbeb03715596503d4222064ef8296a550afe92e1069e872e54c3",
+      "release_sha256": "879f49b4605abbeb03715596503d4222064ef8296a550afe92e1069e872e54c3",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/scripts/run.py",
+      "source_sha256": "07f00fd0a6a8914117e7cd629b4b58e1a23e68872ff2f413054e2df0e91c5b5a",
+      "release_sha256": "07f00fd0a6a8914117e7cd629b4b58e1a23e68872ff2f413054e2df0e91c5b5a",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/__init__.py",
+      "source_sha256": "3813c2c8d3e4a661c5985d96c7a5410802dfa3af162989a6db2edc714b87792a",
+      "release_sha256": "3813c2c8d3e4a661c5985d96c7a5410802dfa3af162989a6db2edc714b87792a",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/asr.py",
+      "source_sha256": "aeb1dd00deaa5e27dbf9a55345993c7bf2cc54f5e8c4756383b751001f168426",
+      "release_sha256": "aeb1dd00deaa5e27dbf9a55345993c7bf2cc54f5e8c4756383b751001f168426",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/assets.py",
+      "source_sha256": "e3a2291d18506e735492af5066d86893fa41fb9bbce48a396375cdd2d35ebf33",
+      "release_sha256": "e3a2291d18506e735492af5066d86893fa41fb9bbce48a396375cdd2d35ebf33",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/audio_controls.py",
+      "source_sha256": "26d4e8f481c854d9a9ab3f0be29412578fcdb776cc68f1033656d4a60e3a32d1",
+      "release_sha256": "26d4e8f481c854d9a9ab3f0be29412578fcdb776cc68f1033656d4a60e3a32d1",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/cli.py",
+      "source_sha256": "69808bb01e903b857cd0ca5d9fcb3a73d987145b2309b649ef6a489859de71a4",
+      "release_sha256": "69808bb01e903b857cd0ca5d9fcb3a73d987145b2309b649ef6a489859de71a4",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/ending.py",
+      "source_sha256": "01db0dc0e9bea26eafb987b84a553b8b98dbacad231917b07461b94d2ac2e1ec",
+      "release_sha256": "01db0dc0e9bea26eafb987b84a553b8b98dbacad231917b07461b94d2ac2e1ec",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/illustrations.py",
+      "source_sha256": "b24bc7818c27054e8bc55c75b55dda5853c94f01301cbae12da868d8b25e2d0b",
+      "release_sha256": "b24bc7818c27054e8bc55c75b55dda5853c94f01301cbae12da868d8b25e2d0b",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/jianying.py",
+      "source_sha256": "c4db3f674b8ca17daad0bd58f0744db7d625a60985c9da02cf5d9869b4cee83d",
+      "release_sha256": "c4db3f674b8ca17daad0bd58f0744db7d625a60985c9da02cf5d9869b4cee83d",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/motion.py",
+      "source_sha256": "cc15ac8de316c6d142d0347216cb668b9bdde691480e9c94d8175876f0e2d452",
+      "release_sha256": "cc15ac8de316c6d142d0347216cb668b9bdde691480e9c94d8175876f0e2d452",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/portable.py",
+      "source_sha256": "6cdc33f04a2a8788c4b5b893462bfa0be5940d370513a5090b1cb173e3c3a73e",
+      "release_sha256": "6cdc33f04a2a8788c4b5b893462bfa0be5940d370513a5090b1cb173e3c3a73e",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/process_visuals.py",
+      "source_sha256": "7cce00e0a0a922c7ddd9a3ae1527720c573973ae6058089a076081c5426cea69",
+      "release_sha256": "7cce00e0a0a922c7ddd9a3ae1527720c573973ae6058089a076081c5426cea69",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/project.py",
+      "source_sha256": "714cc3765636d9da328e4c9268a926f8050be0ba1bf52a8055e1af285416faba",
+      "release_sha256": "714cc3765636d9da328e4c9268a926f8050be0ba1bf52a8055e1af285416faba",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/quality.py",
+      "source_sha256": "26f638c65b840d1595272836f7a2ab5baaff5259954439940a063179a865af78",
+      "release_sha256": "26f638c65b840d1595272836f7a2ab5baaff5259954439940a063179a865af78",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/render.py",
+      "source_sha256": "3ad575eb33f63077602082ed2bda0b29794086a5675ad3258ec3cf0d879de1e8",
+      "release_sha256": "3ad575eb33f63077602082ed2bda0b29794086a5675ad3258ec3cf0d879de1e8",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/timeline.py",
+      "source_sha256": "31a63949ffcc693a47b0dc77c89f5066c1e4cdeedbeed0b1b422c35cb3893708",
+      "release_sha256": "31a63949ffcc693a47b0dc77c89f5066c1e4cdeedbeed0b1b422c35cb3893708",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/util.py",
+      "source_sha256": "f52d0a101e1851e64e116da92f3e6701c5539207750fdca1fe44462855a3fac1",
+      "release_sha256": "f52d0a101e1851e64e116da92f3e6701c5539207750fdca1fe44462855a3fac1",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/visuals.py",
+      "source_sha256": "4ba6de9cf86be0b33666ddc402ef365a8176a189a0c1a90c55e2ac93ac8a1774",
+      "release_sha256": "4ba6de9cf86be0b33666ddc402ef365a8176a189a0c1a90c55e2ac93ac8a1774",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/workflow.py",
+      "source_sha256": "1c956c7e617391760710bc5eb086078f921c6cc20e4a632c8ba8e13e07312196",
+      "release_sha256": "1c956c7e617391760710bc5eb086078f921c6cc20e4a632c8ba8e13e07312196",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_audio_levels.py",
+      "source_sha256": "c9d1e97e083c434fa9cef9690526410d0e0621a9b12b0301b541b44a104cb0f6",
+      "release_sha256": "c9d1e97e083c434fa9cef9690526410d0e0621a9b12b0301b541b44a104cb0f6",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_caption_breaks.py",
+      "source_sha256": "987a5bffad87fc2f50d22fe3fe2b73dd6710fb61175d53b8c3340869eba3971e",
+      "release_sha256": "987a5bffad87fc2f50d22fe3fe2b73dd6710fb61175d53b8c3340869eba3971e",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_chatcut_snapshot.py",
+      "source_sha256": "9c16b884b4b5de5f2207edc90053371dddbeff2b27a02f53d1c5943f7e676e86",
+      "release_sha256": "9c16b884b4b5de5f2207edc90053371dddbeff2b27a02f53d1c5943f7e676e86",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_contracts.py",
+      "source_sha256": "423a9363f62fa9754b9606cf015014234c57678680154bb57eb163e65c974008",
+      "release_sha256": "423a9363f62fa9754b9606cf015014234c57678680154bb57eb163e65c974008",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_jianying.py",
+      "source_sha256": "d73a33133b0b63a75120a59ee21d6874b0b8caf84ef82851349829b351dc8d7a",
+      "release_sha256": "d73a33133b0b63a75120a59ee21d6874b0b8caf84ef82851349829b351dc8d7a",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_jianying_install.py",
+      "source_sha256": "3fd4dbd29c238f6874b65b51867474e5858cf63c6f686e470117fe83768b760f",
+      "release_sha256": "3fd4dbd29c238f6874b65b51867474e5858cf63c6f686e470117fe83768b760f",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_layouts.py",
+      "source_sha256": "338775c2701fe85447beda12d623b1382d40c8fee79308aead8cf5a512b92886",
+      "release_sha256": "338775c2701fe85447beda12d623b1382d40c8fee79308aead8cf5a512b92886",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_motion.py",
+      "source_sha256": "3262b77d439a542c24578e6cc790751b13fe5507d47cebbab81fdeadb2b7db7e",
+      "release_sha256": "3262b77d439a542c24578e6cc790751b13fe5507d47cebbab81fdeadb2b7db7e",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_portable.py",
+      "source_sha256": "1a0cc66def11dd1f3882fd6a08544552fa5139e23f395666e5693fa370f6e17a",
+      "release_sha256": "1a0cc66def11dd1f3882fd6a08544552fa5139e23f395666e5693fa370f6e17a",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_public_release.py",
+      "source_sha256": "a3a34f2d6af38c6351ec8cbf723a55f4bad7d296b8f51053236a3f6385c128bc",
+      "release_sha256": "a3a34f2d6af38c6351ec8cbf723a55f4bad7d296b8f51053236a3f6385c128bc",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_quality_first.py",
+      "source_sha256": "735770df31005ff5970d37fc26098af151f462e188d05a16d3bd8f1fdaf3012e",
+      "release_sha256": "735770df31005ff5970d37fc26098af151f462e188d05a16d3bd8f1fdaf3012e",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_revisions.py",
+      "source_sha256": "8139ce6e2e93f962e761f18da70976b77b4b3aa623dacb40924e8284cf976403",
+      "release_sha256": "8139ce6e2e93f962e761f18da70976b77b4b3aa623dacb40924e8284cf976403",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_skill_dispatch.py",
+      "source_sha256": "51a5e0ee1393139450b0d12b5580035f0f8cf08877fd0e1c3c2f4b4c82b03d05",
+      "release_sha256": "51a5e0ee1393139450b0d12b5580035f0f8cf08877fd0e1c3c2f4b4c82b03d05",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_skill_extensions.py",
+      "source_sha256": "2f857240ce182c42e446b9fbf48f7ce8a54553f57cd0df28f6fffc1042bad7d8",
+      "release_sha256": "2f857240ce182c42e446b9fbf48f7ce8a54553f57cd0df28f6fffc1042bad7d8",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_speed_and_formats.py",
+      "source_sha256": "6acf634154a4c5b88d64c164fc1d1edf8eac2d20c005698bf2e56a3b3e22b8c1",
+      "release_sha256": "6acf634154a4c5b88d64c164fc1d1edf8eac2d20c005698bf2e56a3b3e22b8c1",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_teaching_graphics.py",
+      "source_sha256": "7f48c91c1c140c250058958def9ec1809e73151f425011eabe062b06d3864a88",
+      "release_sha256": "7f48c91c1c140c250058958def9ec1809e73151f425011eabe062b06d3864a88",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_visual_storytelling.py",
+      "source_sha256": "8432f06f58984b4a19ead90dd62319ffe7a7d056cebb316dd59c685328b0d547",
+      "release_sha256": "8432f06f58984b4a19ead90dd62319ffe7a7d056cebb316dd59c685328b0d547",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_workflow.py",
+      "source_sha256": "7f726a34945898f623a5c9ac72b4418ec70edfbdcb003be98d8256779a385bb3",
+      "release_sha256": "7f726a34945898f623a5c9ac72b4418ec70edfbdcb003be98d8256779a385bb3",
+      "adapted": false
+    },
+    {
+      "file": "tests/test_workflow_review.py",
+      "source_sha256": "896894fd407a975df02883573b37de241d3a0ac2d60b14ad0917c6b96ce6af6d",
+      "release_sha256": "896894fd407a975df02883573b37de241d3a0ac2d60b14ad0917c6b96ce6af6d",
+      "adapted": false
+    }
+  ],
+  "excluded": "private knowledge history, jobs, media, accounts, vendored GSAP runtime, caches",
+  "files": {
+    ".gitattributes": "91c171a7f4e295966f6e40aba83b0a11a56b4c99b59b9c55fcf54f15df207bc0",
+    ".github/workflows/tests.yml": "351e2c3464ed957682f810e2aa794de6a64cc4557dde422e54fb94d4ba8c4c79",
+    ".gitignore": "6ce767b041d2547a679ec4cf89969c8cf7e903c856c6ae2a715d1507200931c7",
+    "03_Documentation/Knowledge_Base/00_Start_Here.md": "962f9c38f66451833855466c500565787fdf31c4dddab1ad7f1286a3ad561294",
+    "03_Documentation/Knowledge_Base/02_Feature_Register.md": "460bd9b1c381128b65c812caea6919d3f1a9dfd7c844e9d1f401ecd33092203c",
+    "03_Documentation/Knowledge_Base/03_Technical_Knowledge.md": "fe574462608129ba44c04c81aab7a694e5739442221086e4e9ab9d920a8fa6e5",
+    "03_Documentation/Knowledge_Base/04_FAQ.md": "3b38fdc785f5f4797b30646867c3b48745e96e00c8b47846440c20bc9b022c4d",
+    "03_Documentation/Knowledge_Base/05_Development_Precautions.md": "0eced9ef78617628b354728428b49f87f7d1edc199bb3c06e2b3365b72e54aa2",
+    "03_Documentation/Knowledge_Base/06_Teaching_Playbook.md": "c5ec0a1b76f65ca176a4ea7119a7641dd51667efdbeca84cc4cdec9d6baaac31",
+    "03_Documentation/Knowledge_Base/07_Change_Log.md": "bf10d8d13197b4562efbd21a68f0b60d76d2a5b4bd23dddba28fb9346a47ddfd",
+    "03_Documentation/Knowledge_Base/08_Decision_Log.md": "cf350f8f828ddd29e9adadd46f341f1ce2ab251125b3de16803da924b975e338",
+    "03_Documentation/Knowledge_Base/09_Glossary.md": "1bd0ae54dcebd2afecd88dc754e1905aa96e6d864621ca5ec53e30b91837a0c6",
+    "03_Documentation/Knowledge_Base/14_Reference_Motion.md": "ea31e3906150c24bd34b3425fea4178a1ea9eed6f5655d712577230c56796253",
+    "03_Documentation/Knowledge_Base/15_Student_Walkthrough.md": "e7f826519492d1fe315431beba80d83be1441ee374a3f44dc4f88e7df918d77f",
+    "03_Documentation/Knowledge_Base/README.md": "d4648f288bd6e57cf67b82534f6525dfe3909750daa13721f101ad112d5f8a0e",
+    "03_Documentation/Knowledge_Base/_Templates.md": "2ed8df2fc68fdb807a5ba4ffb6317e767012b1745bb3eb397ac0cbac8f8f09ef",
+    "AGENTS.md": "8c69f8715031654406ba7ad26d831c4d13f95ed3b87c56f6f91da6913a6dbbf0",
+    "LICENSE": "030dd68224ad58f5813b43944bf423c683b62d02cd4741bbf67ddf58b590a296",
+    "README.md": "1cabb9b1fce4b3c85bfb4de1ef6ad0276509d436249be56f171bdc7865bfe724",
+    "THIRD_PARTY.md": "1a86aec6c4e6a960fa6be56382f9e4fe1060fb64ad659de5d53e7a376729e1c6",
+    "docs/INSTALL_SKILLS.md": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
+    "docs/VALIDATION.md": "9ec4eb1a1d3b7783d73a46ef0210cafe109062b6199d0a263c1e9727474a01c2",
+    "extensions/chatcut-vd44/README.md": "8d79512153e39d271979a14579033d2d0a6218c9ed56b778accd4de69edbd8e5",
+    "extensions/chatcut-vd44/native-keyword.jsx": "0efafe5ec51bbb60afb6ae9fe03c33116ee697f88abb4250e0c8381f2ac1b6f7",
+    "extensions/chatcut-vd44/placements.json": "06c79cbeffc8a2e824efecedd5f928941c7b172045fe9fa9457c0a61a364efe3",
+    "extensions/hyperframes-vd44/.gitignore": "718107f7840b9c6ba2321de80c7f3a77762924f67756e0f5c6ce3459efeceeed",
+    "extensions/hyperframes-vd44/AGENTS.md": "6361e5d1b78020e6a17a9c31685104d78cb538a080907ca21fd6f88ec21b7fd3",
+    "extensions/hyperframes-vd44/CLAUDE.md": "6361e5d1b78020e6a17a9c31685104d78cb538a080907ca21fd6f88ec21b7fd3",
+    "extensions/hyperframes-vd44/README.md": "7b060e75dfc939ce604d7fd39acd7b670818692c645aa2750b3a24a12b43381e",
+    "extensions/hyperframes-vd44/assets/NotoSansSC-OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "extensions/hyperframes-vd44/compositions/components/spring-pop.html": "009ea4f79971ddfa076bf215da0787cfab5507dca99ba879db16b3521b25e22c",
+    "extensions/hyperframes-vd44/compositions/yt-comment-card.html": "144ec7b5b720ea0f704fd244b31889022732d1791667b74d8d98def553e693d9",
+    "extensions/hyperframes-vd44/hyperframes.json": "449964d70444458f4a943b0c09ea960117194091ff086b719be9e958e2f947fa",
+    "extensions/hyperframes-vd44/hyperframes.lock.json": "5f1d3e495cc184a8e025b7158b1dfdb8ecb0936925583a0b68864628007ee75a",
+    "extensions/hyperframes-vd44/index.html": "1c779c156afc2233d3fefbd042a3b3b83537cadaa5f8455359645cfccf4d0691",
+    "extensions/hyperframes-vd44/index.motion.json": "6f1e397062b4288dff5334026f82a24c80e92f53df281f95f0f11402c5bf368f",
+    "extensions/hyperframes-vd44/package.json": "2da1fff544c36e220b2853d36498dfa1a10c68ad0e88822d37e5c954b9d544a9",
+    "extensions/hyperframes-vd44/run.ps1": "5cba908c48a41cdb2e9009228247b6bfc8a7b583124c60ad9a2ad66edc9ed9b5",
+    "extensions/hyperframes-vd44/shot-plan.json": "c79d84a3bf8dfe33bf357273aa2b34da61cfc929ae2a21687851577f5a74c138",
+    "extensions/hyperframes-vd44/skills-lock.json": "89d8e89749f5f19211fe0e25938f6e5d2c3c12204ab29e196b28d2165e2e97c5",
+    "extensions/hyperframes-vd44/source-manifest.json": "f90b07ef1b1914296da0c21c3d6c30370f6bf49adc9e23fe3b939beb0569fd44",
+    "extensions/hyperframes-vd44/upstream/HyperFrames-LICENSE.txt": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8",
+    "extensions/hyperframes-vd44/upstream/spring-pop.original.html": "50dbfb83f4f76b0dbad7377c86689c27080c70f7cd764e2cfb840ed618ac5364",
+    "extensions/hyperframes-vd44/upstream/yt-comment-card.original.html": "612f5ebb1313e5384d0aa11655a7aed3b40fc34d2951616a73dae2c767b69c98",
+    "extensions/hyperframes-vd44/verify_render.py": "f28f40fc07ed2ab8d62659930f586a6239af7a4e30e06357d03dea8d850c076e",
+    "extensions/jianying-core-lock.json": "af897db6e46fa4781feed5db220b7cb3adf0b511110cee35e35fb67af60de1d9",
+    "extensions/jianying-source-lock.json": "33247c2f40a051fa9cb3df7b7cd35ddc7162c752c4cae80e45864bfdfbf79a93",
+    "extensions/remotion-vd44/.gitignore": "79e2f8c581bb06e2b6e33f9e579201fd112d12beb1b8813ce0aaecb766e4f9ba",
+    "extensions/remotion-vd44/.prettierrc": "e8dae064695ae349a6c12b7b38ed709940aed6239762246dd0895f8a3d365d4d",
+    "extensions/remotion-vd44/BRIEF.md": "77ea92f3bee933f90b4e3b5d6f663b8cfb18143afe2887a15601a7abd1a076ab",
+    "extensions/remotion-vd44/README.md": "37b1f37ca6ef684634055157c5147a2d26c47dca834a859415d4a20297875adf",
+    "extensions/remotion-vd44/eslint.config.mjs": "7220a95b6eec7d402e9d853a0858cef9ac34ffa791c6462c1fc2d13c8bb7deae",
+    "extensions/remotion-vd44/package-lock.json": "abe42cefbe816d54667e293dfe5c7fb087d274f8e1828526504f375d53bce2e6",
+    "extensions/remotion-vd44/package.json": "a6bf32d8139a5cee37c4da72cd4a321041271a9f60243069a520d33783168333",
+    "extensions/remotion-vd44/public/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "extensions/remotion-vd44/remotion.config.ts": "0aa440f3ff8ba1558716d39cf7346394d77b6629dfec32867096d5769d620adb",
+    "extensions/remotion-vd44/run.ps1": "22474b2303daaec66da063b7bcbd58488e94247135b78c865792f45e895865e0",
+    "extensions/remotion-vd44/source-manifest.json": "445b01ef4f3de0fb5711f9d928d3e1e334ec1af1025436a2d919bb4ab7580167",
+    "extensions/remotion-vd44/src/Ending.tsx": "d1390d85cb267dc3090347038123e41834a8377dba0dbfd162d53dd661b8a054",
+    "extensions/remotion-vd44/src/Journey.tsx": "e29ed81bc667126e37bbbe64705a99cd395eac9bc9ec306f2346fdc8d960d326",
+    "extensions/remotion-vd44/src/Root.tsx": "8190b8d1245bfd85cf0cf191fe44f424f44e56af7127ae12da64708fe2140a62",
+    "extensions/remotion-vd44/src/index.ts": "9add656193bc0a61896d26d3067000fcff56ef7b69270af1f8883b0e4ce65cc4",
+    "extensions/remotion-vd44/src/scenes/FollowUp.tsx": "44927631f19c41d35077454696c912608dabe95d9f05721295fb5f4012bdbf16",
+    "extensions/remotion-vd44/src/scenes/NewLead.tsx": "fef50a8a75e8136004586bcbaa72096a3f02c69e344a2a7e6bc7b87072728f81",
+    "extensions/remotion-vd44/src/scenes/NoReply.tsx": "7c0de0072165a09a8a25bce12c927614f406b7cd6d49e83e24253896d4bae3ab",
+    "extensions/remotion-vd44/src/scenes/Register.tsx": "c44f311564bd62f7f005218dfe4c2e35147ed5c035e5c914e1f8940165f18a42",
+    "extensions/remotion-vd44/src/scenes/Shared.tsx": "f32c1f822c4aeed1bef7d0630843903a56619513f6a9f6ab390a2b8103e0ca52",
+    "extensions/remotion-vd44/tsconfig.json": "8ebfd92fdfb99c3d51ce6394d896f82c2aa1498fbfbc9762ce126266d05f0671",
+    "extensions/resolve-tools.ps1": "3ca371ca98b1bd9e7a5bb8236ad8da2856f7374d363eefad524837c0773453d9",
+    "extensions/upstream-lock.json": "8253f0599d269fcea422d9173da9fdc6cdfaca8cd57bfeb21c1670b7e954d69c",
+    "profiles/approved-vd44-teaching-v1.json": "537868f2633abc6d4e43f297ddf4e02502105dd14d16b201519d7fe7c834801e",
+    "publishing/AGENTS.md": "8c69f8715031654406ba7ad26d831c4d13f95ed3b87c56f6f91da6913a6dbbf0",
+    "publishing/INSTALL_SKILLS.md": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
+    "publishing/README.md": "1cabb9b1fce4b3c85bfb4de1ef6ad0276509d436249be56f171bdc7865bfe724",
+    "publishing/VALIDATION.md": "9ec4eb1a1d3b7783d73a46ef0210cafe109062b6199d0a263c1e9727474a01c2",
+    "pyproject.toml": "368eac81ae329ebc69ed58ef03e42da967c6857f0475a7f7c52d3c5a588c1b81",
+    "requirements.lock.txt": "8c2e8ad15da44078b1b4ca76997837ab35066528e4e8fe1192f869a9defbb2df",
+    "scripts/adapt_jianying_skill.py": "77354e62ae0d318a188ee7cd744617b3a0be035c74d422c93bb3f0e83579e2fc",
+    "scripts/audit_chatcut_snapshot.py": "9d869bef78f482d26780ca8943a37c69c925318a3f243a065b79a4d2b51f86d8",
+    "scripts/bootstrap.ps1": "263d0d9467926276d514ec007bb9c92657a541c86adb9cf8f9f79d41642f64cb",
+    "scripts/bootstrap_runtime.py": "5a4f7360cd01c12da3295e2773f633c0067c02081f0ec4812b715c22978440aa",
+    "scripts/build_jianying_project.py": "bcdc3f76557aba2c99cb011ca4553a326f57da779e0ddf209667edcbf1675288",
+    "scripts/export_public_release.py": "1b675fd4323a6c1f1c2ba41640ae43ae715b2cfbb412faa925bbb58d1811d8fb",
+    "scripts/export_student_skill.py": "81466af97da3fc047f894371ae2e8bfe2992142aebff457168a47aa8d804e4b4",
+    "scripts/install_extensions.py": "594867d338f0357de5f2ca6653dbb8718e7c6a0c510e20f98aa29a02713c01d8",
+    "scripts/install_skill.py": "20d1183adc84cab529fe1e7974583cf0a957c0d761ec8c9bf52eb7ffe734b35a",
+    "scripts/smoke_asr.py": "9e3ce8c2edeff801d2eed4ce70894234163cd6e61e058c94eca5b5ac890a0a9b",
+    "scripts/smoke_asr_core.py": "9ab28f19a178ba6dbc4df7b36a391c8dd08f8c7788f78486c92dea0368fe6acc",
+    "scripts/smoke_media.py": "a8bdfd3f49f34d6296b5d73676a2423d553dbe93f4f8f53b655730c980d4e323",
+    "scripts/smoke_motion.py": "2c6d65f41cd1333302cdd1147e0471102bb4121c4061f8d0aa523ba2ee6ab6ce",
+    "scripts/smoke_render.py": "4c4ec8a7331a46261a512b89d9b8b4fb7abc1e1516ecee429dcbc643d92b2825",
+    "scripts/verify_review_media.py": "e32fec93c9fba13f967c85904ebdd2071767614cefe1dae006489589074ea4cc",
+    "scripts/video_use_review.py": "fc3946f7787f9fd3d9d6a2d4ec216b92567bd074398dee0d008fee813b53951d",
+    "skill-adapters/jianying-editor/SKILL.md": "da8d7e95fcc0280c25eb26726b0e978ed45bc5966774b0652716fa9f04bf6d9f",
+    "skill-adapters/remotion-best-practices/SKILL.md": "9857b75ce246a6d95919ddf06d641e3e190a6288738b8923ef401e0adf7bc5c9",
+    "skill-adapters/remotion-best-practices/agents/openai.yaml": "f628953bdd07e01c73bee275461cf6865a2986d88ba35d1dbbd5403eb7dbbf3f",
+    "skill-adapters/video-use/SKILL.md": "a367e93ae2d02f702bbfa3a11b330d935634f7697f91bff56c496dcd7a9cb096",
+    "skill-adapters/video-use/agents/openai.yaml": "dc44f7a6a18ac2a8f80b5b1a6e9adf168409e7f013058cbd02bd094965f90791",
+    "skill/talking-head-editor/SKILL.md": "e9be92747af6b26b79662e844820620c44b26d58f2015b50c9ac81228ee0113c",
+    "skill/talking-head-editor/agents/openai.yaml": "f7dc166a41889c1f6b0bffd761ee0f4cffc848ed7f4107af2135125818e9045d",
+    "skill/talking-head-editor/references/approved-workflow.md": "e258f4e868b87c6fcbb33bb07d9a55e6240b1ad2be7874a01ab2dbfa36c6b866",
+    "skill/talking-head-editor/references/chatcut.md": "90e5d95a801a2187e226f18d09dcfad3d2b08e099da4332cd5ffb79fb84de203",
+    "skill/talking-head-editor/references/data-contract.md": "0cb953010cb2631ff3aa902950504e52026ccbf1f137bc0678f420f12e61da2d",
+    "skill/talking-head-editor/references/editorial.md": "48d194f708088b074a732e43d51db506c230451d38c44342b6a45208d7b85bbe",
+    "skill/talking-head-editor/references/jianying.md": "75af11549cb8d899e29a622d8b69afb8928ac68bb7894d072d59cfe7d7c0c7de",
+    "skill/talking-head-editor/references/manual-editing.md": "4f83f96ebcdc5bf14978731bc7fb4875083e90ab3eea3936daad1d16bbbbe641",
+    "skill/talking-head-editor/references/master-playbook.md": "8847c27608996368e5cc7e0aa82b1f07972132565140a47ed7e44fc549ccb05e",
+    "skill/talking-head-editor/references/operations.md": "53e3cae30a9eabd830580fd6e21514e49edb6dbbcc1db156708211723b54484d",
+    "skill/talking-head-editor/references/quality.md": "1156473a114d43e492aae13a97c6ffde3358a383679686769848a1f13cfd4210",
+    "skill/talking-head-editor/references/reference-motion.md": "a1f7eafc80e5f0b116b87e1357f3176f3fed4e77f03c60f2741eea7cae817ae3",
+    "skill/talking-head-editor/references/tool-stack.md": "47041261b403c5db4d848a734d0490929fe7d2cd2256a0ace5cdaf3d3adbc56c",
+    "skill/talking-head-editor/references/user-preferences.md": "b663d3d1cfb94fb50b319d64817ade7c6e343ba309a78a69fef5cefe56980448",
+    "skill/talking-head-editor/references/visual-storytelling.md": "879f49b4605abbeb03715596503d4222064ef8296a550afe92e1069e872e54c3",
+    "skill/talking-head-editor/scripts/run.py": "07f00fd0a6a8914117e7cd629b4b58e1a23e68872ff2f413054e2df0e91c5b5a",
+    "src/talking_head_editor/__init__.py": "3813c2c8d3e4a661c5985d96c7a5410802dfa3af162989a6db2edc714b87792a",
+    "src/talking_head_editor/asr.py": "aeb1dd00deaa5e27dbf9a55345993c7bf2cc54f5e8c4756383b751001f168426",
+    "src/talking_head_editor/assets.py": "e3a2291d18506e735492af5066d86893fa41fb9bbce48a396375cdd2d35ebf33",
+    "src/talking_head_editor/audio_controls.py": "26d4e8f481c854d9a9ab3f0be29412578fcdb776cc68f1033656d4a60e3a32d1",
+    "src/talking_head_editor/cli.py": "69808bb01e903b857cd0ca5d9fcb3a73d987145b2309b649ef6a489859de71a4",
+    "src/talking_head_editor/ending.py": "01db0dc0e9bea26eafb987b84a553b8b98dbacad231917b07461b94d2ac2e1ec",
+    "src/talking_head_editor/illustrations.py": "b24bc7818c27054e8bc55c75b55dda5853c94f01301cbae12da868d8b25e2d0b",
+    "src/talking_head_editor/jianying.py": "c4db3f674b8ca17daad0bd58f0744db7d625a60985c9da02cf5d9869b4cee83d",
+    "src/talking_head_editor/motion.py": "cc15ac8de316c6d142d0347216cb668b9bdde691480e9c94d8175876f0e2d452",
+    "src/talking_head_editor/portable.py": "6cdc33f04a2a8788c4b5b893462bfa0be5940d370513a5090b1cb173e3c3a73e",
+    "src/talking_head_editor/process_visuals.py": "7cce00e0a0a922c7ddd9a3ae1527720c573973ae6058089a076081c5426cea69",
+    "src/talking_head_editor/project.py": "714cc3765636d9da328e4c9268a926f8050be0ba1bf52a8055e1af285416faba",
+    "src/talking_head_editor/quality.py": "26f638c65b840d1595272836f7a2ab5baaff5259954439940a063179a865af78",
+    "src/talking_head_editor/render.py": "3ad575eb33f63077602082ed2bda0b29794086a5675ad3258ec3cf0d879de1e8",
+    "src/talking_head_editor/timeline.py": "31a63949ffcc693a47b0dc77c89f5066c1e4cdeedbeed0b1b422c35cb3893708",
+    "src/talking_head_editor/util.py": "f52d0a101e1851e64e116da92f3e6701c5539207750fdca1fe44462855a3fac1",
+    "src/talking_head_editor/visuals.py": "4ba6de9cf86be0b33666ddc402ef365a8176a189a0c1a90c55e2ac93ac8a1774",
+    "src/talking_head_editor/workflow.py": "1c956c7e617391760710bc5eb086078f921c6cc20e4a632c8ba8e13e07312196",
+    "tests/test_audio_levels.py": "c9d1e97e083c434fa9cef9690526410d0e0621a9b12b0301b541b44a104cb0f6",
+    "tests/test_caption_breaks.py": "987a5bffad87fc2f50d22fe3fe2b73dd6710fb61175d53b8c3340869eba3971e",
+    "tests/test_chatcut_snapshot.py": "9c16b884b4b5de5f2207edc90053371dddbeff2b27a02f53d1c5943f7e676e86",
+    "tests/test_contracts.py": "423a9363f62fa9754b9606cf015014234c57678680154bb57eb163e65c974008",
+    "tests/test_jianying.py": "d73a33133b0b63a75120a59ee21d6874b0b8caf84ef82851349829b351dc8d7a",
+    "tests/test_jianying_install.py": "3fd4dbd29c238f6874b65b51867474e5858cf63c6f686e470117fe83768b760f",
+    "tests/test_layouts.py": "338775c2701fe85447beda12d623b1382d40c8fee79308aead8cf5a512b92886",
+    "tests/test_motion.py": "3262b77d439a542c24578e6cc790751b13fe5507d47cebbab81fdeadb2b7db7e",
+    "tests/test_portable.py": "1a0cc66def11dd1f3882fd6a08544552fa5139e23f395666e5693fa370f6e17a",
+    "tests/test_public_release.py": "a3a34f2d6af38c6351ec8cbf723a55f4bad7d296b8f51053236a3f6385c128bc",
+    "tests/test_quality_first.py": "735770df31005ff5970d37fc26098af151f462e188d05a16d3bd8f1fdaf3012e",
+    "tests/test_revisions.py": "8139ce6e2e93f962e761f18da70976b77b4b3aa623dacb40924e8284cf976403",
+    "tests/test_skill_dispatch.py": "51a5e0ee1393139450b0d12b5580035f0f8cf08877fd0e1c3c2f4b4c82b03d05",
+    "tests/test_skill_extensions.py": "2f857240ce182c42e446b9fbf48f7ce8a54553f57cd0df28f6fffc1042bad7d8",
+    "tests/test_speed_and_formats.py": "6acf634154a4c5b88d64c164fc1d1edf8eac2d20c005698bf2e56a3b3e22b8c1",
+    "tests/test_teaching_graphics.py": "7f48c91c1c140c250058958def9ec1809e73151f425011eabe062b06d3864a88",
+    "tests/test_visual_storytelling.py": "8432f06f58984b4a19ead90dd62319ffe7a7d056cebb316dd59c685328b0d547",
+    "tests/test_workflow.py": "7f726a34945898f623a5c9ac72b4418ec70edfbdcb003be98d8256779a385bb3",
+    "tests/test_workflow_review.py": "896894fd407a975df02883573b37de241d3a0ac2d60b14ad0917c6b96ce6af6d"
+  },
+  "new_machine_execution": "not certified by packaging",
+  "public_visibility": "must be verified after publishing"
+}

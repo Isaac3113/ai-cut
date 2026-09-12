@@ -1,0 +1,109 @@
+{
+  "category": "kinetic-type",
+  "duration_s": 6.7,
+  "fps": 30,
+  "canvas": {
+    "w": 1920,
+    "h": 1080,
+    "aspect": "16:9"
+  },
+  "style": "VD44 reference: cream/yellow bold Chinese words, crisp offset shadow, short scale reveals, contextual UI objects. Three parallel customer states, not a funnel.",
+  "palette": [
+    "#171b1d",
+    "#fff8e8",
+    "#ffdd55",
+    "#fff0ae",
+    "#ba3545",
+    "#215a47"
+  ],
+  "font": "Noto Sans SC 900",
+  "beats": [
+    51,
+    97,
+    149
+  ],
+  "export": "mp4",
+  "asset_needs": [],
+  "block": "yt-comment-card",
+  "customize": {
+    "layout": "three illustrative customer cards staggered at spoken cues; no connecting arrows",
+    "type": "large Chinese phrase pop adapted from spring-pop",
+    "cue_frames": [
+      51,
+      97,
+      149
+    ],
+    "safe_bottom": 890,
+    "audio": "none",
+    "motion_geometry": "First card centered at x offset544; moves to272 then0 as siblings independently enter. Second card starts at272 then settles0. No directional connector between statuses."
+  },
+  "content": {
+    "scenes": [
+      {
+        "id": "record",
+        "start": 0,
+        "end": 1.7,
+        "text": "跟进到第几天？",
+        "emphasis_words": [
+          "第几天"
+        ],
+        "emotion": "curiosity",
+        "motion": "calendar day flip",
+        "beats": [
+          0,
+          19,
+          34
+        ]
+      },
+      {
+        "id": "waiting",
+        "start": 1.7,
+        "end": 3.2333333333,
+        "text": "没有回复",
+        "emphasis_words": [
+          "没有回复"
+        ],
+        "emotion": "uncertainty",
+        "motion": "left card springs in; waiting dots",
+        "beats": [
+          51
+        ]
+      },
+      {
+        "id": "purchased",
+        "start": 3.2333333333,
+        "end": 4.9666666667,
+        "text": "已经购买",
+        "emphasis_words": [
+          "已经购买"
+        ],
+        "emotion": "completion",
+        "motion": "middle card springs in; shopping bag check draws",
+        "beats": [
+          97
+        ]
+      },
+      {
+        "id": "uninterested",
+        "start": 4.9666666667,
+        "end": 6.7,
+        "text": "没有兴趣",
+        "emphasis_words": [
+          "没有兴趣"
+        ],
+        "emotion": "neutral negative status",
+        "motion": "right card springs in; red cross draws; all parallel states settle",
+        "beats": [
+          149
+        ]
+      }
+    ]
+  },
+  "integration": {
+    "timeline_from_frame": 435,
+    "timeline_duration_frames": 201,
+    "playback_rate": 1,
+    "speech_already_retimed": true
+  },
+  "approval": "Original creator explicitly approved the final complete video and both animation workflows on 2026-09-12. Per-video checks remain separate."
+}

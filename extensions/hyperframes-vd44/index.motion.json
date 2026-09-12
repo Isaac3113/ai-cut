@@ -1,0 +1,15 @@
+{
+  "duration": 6.7,
+  "assertions": [
+    {"kind":"appearsBy","selector":"#title-day","bySec":0.35},
+    {"kind":"appearsBy","selector":"#card-0","bySec":2.0},
+    {"kind":"appearsBy","selector":"#card-1","bySec":3.6},
+    {"kind":"appearsBy","selector":"#card-2","bySec":5.3},
+    {"kind":"before","a":"#card-0","b":"#card-1"},
+    {"kind":"before","a":"#card-1","b":"#card-2"},
+    {"kind":"staysInFrame","selector":"#card-0"},
+    {"kind":"staysInFrame","selector":"#card-1"},
+    {"kind":"staysInFrame","selector":"#card-2"},
+    {"kind":"keepsMoving","withinSelector":"#yt-cc-clip","maxStaticSec":2}
+  ]
+}

@@ -1,0 +1,62 @@
+<!-- Adapted by Isaac3113 contributors, 2026: teaching state cards and timing. Source: heygen-com/hyperframes registry; Apache-2.0, see upstream/HyperFrames-LICENSE.txt. -->
+<!-- hyperframes-registry-item: yt-comment-card -->
+<!-- Adapted from yt-comment-card card/avatar construction and spring-pop reveal; originals in upstream/. -->
+<template><div data-hf-id="hf-ictd" id="yt-cc-root" data-composition-id="yt-comment-card" data-start="0" data-duration="6.7" data-fps="30" data-width="1920" data-height="1080">
+<style>
+@font-face{font-family:NotoLocal;src:url('assets/NotoSansSC.ttf') format('truetype');font-weight:100 900;font-display:block}*{box-sizing:border-box}#yt-cc-root{--bg:#171b1d;--card:#fff8e8;--ink:#202226;--muted:#55544e;--yellow:#ffdd55;--cream:#fff0ae;--red:#ba3545;--green:#215a47;--line:#d9d2c1;position:relative;width:1920px;height:1080px;overflow:hidden;background:var(--bg);color:var(--cream);font-family:NotoLocal,sans-serif}
+.yt-scene{width:100%;height:100%;padding:116px 138px 214px;display:flex;flex-direction:column;gap:38px}.yt-top{display:flex;align-items:center;justify-content:space-between;height:66px;flex:none}.yt-kicker{font-size:30px;font-weight:700;letter-spacing:5px;color:var(--cream)}.yt-section{font-size:28px;color:var(--cream);letter-spacing:2px}.yt-titlezone{height:132px;display:grid;flex:none}.yt-title{grid-area:1/1;margin:0;font-size:96px;line-height:1.18;font-weight:900;letter-spacing:-4px;color:var(--yellow);text-shadow:5px 7px 0 #080a0c;transform-origin:8% 65%;width:1400px;height:124px}
+.yt-board{height:428px;display:grid;position:relative;flex:none}.yt-cards,.yt-calendar{grid-area:1/1;display:flex;align-items:center;justify-content:center;gap:48px;width:1644px;height:428px}.yt-card{width:496px;height:398px;flex:none;display:flex;flex-direction:column;gap:24px;padding:32px 34px;border:2px solid var(--line);border-radius:26px;background:var(--card);color:var(--ink);box-shadow:9px 13px 0 #07090a;transform-origin:50% 50%}.yt-card:nth-child(2){align-self:flex-start}.yt-card:nth-child(3){align-self:flex-end}
+.yt-meta{display:flex;align-items:center;gap:17px;height:62px;flex:none}.yt-avatar{width:62px;height:62px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:900;color:var(--ink);flex:none;box-shadow:0 3px 0 #d5bd62}.yt-user{font-size:30px;font-weight:700}.yt-time{font-size:21px;color:var(--muted);margin-left:auto;font-weight:500}.yt-card-title{font-size:62px;font-weight:900;line-height:1.2;letter-spacing:-2px;color:var(--ink);height:78px;flex:none;display:flex;align-items:center;gap:5px}.yt-card-title .word{display:block}.yt-card:last-child .yt-card-title{color:var(--red)}.yt-action{display:flex;align-items:center;justify-content:space-between;gap:22px;height:112px;flex:none}.yt-action-label{font-size:29px;font-weight:700;line-height:1.25}.yt-action-svg{width:120px;height:112px;flex:none;overflow:visible;stroke:var(--ink);fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.yt-negative .yt-action-svg{stroke:var(--red)}.yt-positive .yt-action-svg{stroke:var(--green)}.yt-dot{fill:var(--muted);stroke:none}.yt-line{background:var(--line);width:100%;height:3px;flex:none}
+.yt-calendar{justify-content:flex-start;gap:48px;padding:6px 30px}.yt-calendar-icon{width:330px;height:300px;display:flex;flex-direction:column;border-radius:26px;background:var(--card);color:var(--ink);box-shadow:10px 12px 0 #050607;overflow:hidden}.yt-calendar-head{background:var(--yellow);font-size:29px;font-weight:900;letter-spacing:8px;height:67px;display:flex;align-items:center;justify-content:center}.yt-calendar-body{flex:1;display:flex;align-items:center;justify-content:center;gap:12px}.yt-calendar-number{font-size:136px;line-height:1;font-weight:900}.yt-calendar-unit{font-size:33px;font-weight:700;padding-top:69px}.yt-calendar-copy{display:flex;flex-direction:column;gap:24px}.yt-calendar-copy strong{font-size:57px;line-height:1.2;font-weight:900}.yt-ticks{display:flex;align-items:center;gap:18px}.yt-tick{width:78px;height:12px;background:var(--yellow);border-radius:6px}.yt-note{font-size:26px;line-height:1.25;letter-spacing:1px;color:var(--cream);height:32px;display:flex;align-items:center;gap:12px;flex:none}.yt-note-dot{width:10px;height:10px;border-radius:50%;background:var(--yellow)}
+</style>
+<div data-hf-id="hf-sali" id="yt-cc-clip" class="yt-scene clip" data-start="0" data-duration="6.7" data-track-index="0">
+<div data-hf-id="hf-xkg1" class="yt-top"><div data-hf-id="hf-2yot" class="yt-kicker">客户跟进记录</div><div data-hf-id="hf-egsl" class="yt-section">CUSTOMER STATUS</div></div>
+<div data-hf-id="hf-oxzk" class="yt-titlezone"><h1 data-hf-id="hf-m0r1" id="title-day" class="yt-title">跟进到第几天？</h1><h1 data-hf-id="hf-h7pg" id="title-states" class="yt-title">每位客户，状态不同</h1></div>
+<div data-hf-id="hf-kdao" class="yt-board"><div data-hf-id="hf-zsyy" id="calendar" class="yt-calendar"><div data-hf-id="hf-f15g" class="yt-calendar-icon"><div data-hf-id="hf-xaf4" class="yt-calendar-head">跟进记录</div><div data-hf-id="hf-denv" class="yt-calendar-body"><div data-hf-id="hf-x3j3" id="day" class="yt-calendar-number">01</div><div data-hf-id="hf-qico" class="yt-calendar-unit">天</div></div></div><div data-hf-id="hf-c7iw" class="yt-calendar-copy"><strong data-hf-id="hf-sgrl">每一天，都有记录</strong><div data-hf-id="hf-2wp2" class="yt-ticks"><div data-hf-id="hf-ftvj" class="yt-tick"></div><div data-hf-id="hf-hszj" class="yt-tick"></div><div data-hf-id="hf-heoi" class="yt-tick"></div></div></div></div><div data-hf-id="hf-om3q" id="yt-cc-col" class="yt-cards"></div></div>
+<div data-hf-id="hf-z36s" class="yt-note"><span data-hf-id="hf-7o59" class="yt-note-dot"></span><span data-hf-id="hf-56rk">流程示意 · 三类状态分别记录</span></div>
+</div>
+<script src="assets/gsap.min.js"></script><script>
+(function(){
+// A/B/C are illustrative initials, never actual clients. Cue frames are on final 1.1x speech timeline.
+const CONFIG={comments:[{initials:'A',username:'客户 A',time:'状态记录',text:'没有回复',cueFrame:51,label:'等待回复',kind:'waiting'},{initials:'B',username:'客户 B',time:'状态记录',text:'已经购买',cueFrame:97,label:'已购买',kind:'positive'},{initials:'C',username:'客户 C',time:'状态记录',text:'没有兴趣',cueFrame:149,label:'无意向',kind:'negative'}]};
+const icons={waiting:'<path d="M18 16h86v60H55L31 97V76H18Z"/><circle class="yt-dot" cx="40" cy="45" r="5"/><circle class="yt-dot" cx="60" cy="45" r="5"/><circle class="yt-dot" cx="80" cy="45" r="5"/>',positive:'<path d="M25 32h70l7 69H18Z"/><path d="M44 35V24a16 16 0 0 1 32 0v11"/><path id="check" pathLength="1" d="m40 65 15 15 27-31"/>',negative:'<path d="M18 16h86v60H55L31 97V76H18Z"/><path id="cross" pathLength="1" d="m47 32 28 28m0-28L47 60"/>'};
+const col=document.getElementById('yt-cc-col');
+CONFIG.comments.forEach(function(c,i){
+ const card=document.createElement('div');card.className='yt-card yt-'+c.kind;card.id='card-'+i;
+ const av=document.createElement('div');av.className='yt-avatar';av.id='av-'+i;av.textContent=c.initials;
+ const meta=document.createElement('div');meta.className='yt-meta';meta.appendChild(av);
+ const user=document.createElement('div');user.className='yt-user';user.textContent=c.username;meta.appendChild(user);
+ const time=document.createElement('div');time.className='yt-time';time.textContent=c.time;meta.appendChild(time);card.appendChild(meta);
+ const text=document.createElement('div');text.className='yt-card-title';text.id='text-'+i;
+ [c.text.slice(0,2),c.text.slice(2)].forEach(function(word){const span=document.createElement('span');span.className='word';span.textContent=word;text.appendChild(span)});card.appendChild(text);
+ const line=document.createElement('div');line.className='yt-line';card.appendChild(line);
+ const action=document.createElement('div');action.className='yt-action';action.innerHTML='<div class="yt-action-label">'+c.label+'</div><svg class="yt-action-svg" viewBox="0 0 120 112" aria-hidden="true">'+icons[c.kind]+'</svg>';card.appendChild(action);col.appendChild(card);
+});
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#title-day',{scale:1.07,y:10,autoAlpha:0},{scale:1,y:0,autoAlpha:1,duration:.26,ease:'power3.out'},0);
+tl.fromTo('#calendar',{y:44,autoAlpha:0},{y:0,autoAlpha:1,duration:.36,ease:'power3.out'},.05);
+tl.fromTo('.yt-tick',{scaleX:0},{scaleX:1,transformOrigin:'left center',duration:.16,stagger:.25,ease:'power2.out'},.16);
+tl.set('#day',{innerText:'02'},.63);tl.set('#day',{innerText:'03'},1.12);
+tl.set('#calendar',{autoAlpha:0},1.55);
+tl.to('#title-day',{y:-18,autoAlpha:0,duration:.15,ease:'power2.in'},1.46);
+tl.fromTo('#title-states',{scale:1.06,y:18,autoAlpha:0},{scale:1,y:0,autoAlpha:1,duration:.3,ease:'power3.out'},1.61);
+CONFIG.comments.forEach(function(c,i){const start=c.cueFrame/30;
+ // spring-pop: separate visible 0.9 scale overshoot and non-overshooting opacity.
+ const laneX=(2-i)*272;
+tl.fromTo('#card-'+i,{scale:.9,y:44,x:laneX},{scale:1,y:0,x:laneX,duration:.5,ease:'back.out(1.45)'},start);
+ tl.fromTo('#card-'+i,{autoAlpha:0},{autoAlpha:1,duration:.19,ease:'power2.out'},start);
+ tl.fromTo('#av-'+i,{scale:.65},{scale:1,duration:.4,ease:'back.out(1.6)'},start+.04);
+ tl.fromTo('#text-'+i+' .word',{scale:1.12,y:8,autoAlpha:0},{scale:1,y:0,autoAlpha:1,duration:.28,stagger:.06,ease:'power3.out'},start+.07);
+ if(i>0)tl.to('#card-'+(i-1),{scale:.97,opacity:.82,duration:.24,ease:'power2.out'},start+.1);
+});
+tl.to('#card-0',{x:272,duration:.42,ease:'power3.inOut'},97/30);
+tl.to('#card-0, #card-1',{x:0,duration:.42,ease:'power3.inOut'},149/30);
+tl.fromTo('.yt-dot',{opacity:.35,y:0},{opacity:1,y:-5,duration:.2,stagger:.12,repeat:1,yoyo:true,ease:'sine.inOut'},1.94);
+tl.fromTo('#check',{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.32,ease:'power2.out'},3.42);
+tl.fromTo('#cross',{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.32,ease:'power2.out'},5.15);
+tl.to('#card-0, #card-1',{scale:1,opacity:1,duration:.32,ease:'power2.out'},6.1);
+window.__timelines['yt-comment-card']=tl;tl.seek(0);
+})();
+</script></div></template>
+
+

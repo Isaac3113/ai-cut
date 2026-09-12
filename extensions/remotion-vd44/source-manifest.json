@@ -1,0 +1,34 @@
+{
+  "engine": "Remotion",
+  "version": "4.0.523",
+  "template_repository": "https://github.com/remotion-dev/template-empty",
+  "template_commit": "9d03be1df2796a5f46eb26c747a106f21a11cefc",
+  "fps": 30,
+  "playbackRate": 1,
+  "hasAudio": false,
+  "styleApproval": "approved_by_original_creator_2026-09-12",
+  "license": "https://www.remotion.dev/license",
+  "usage": "suitability evaluation draft; commercial eligibility unverified",
+  "renders": [
+    {
+      "file": "out/customer-journey-remotion.mp4",
+      "composition": "CustomerJourney",
+      "startFrame": 1148,
+      "durationFrames": 838,
+      "scope": "example timing; rendered media is not distributed"
+    },
+    {
+      "file": "out/presenter-ending-remotion.mp4",
+      "composition": "PresenterEnding",
+      "startFrame": 2955,
+      "durationFrames": 90,
+      "scope": "example timing; rendered media is not distributed"
+    }
+  ],
+  "font": {
+    "path": "public/NotoSansSC.ttf",
+    "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+    "license": "SIL Open Font License 1.1"
+  }
+}

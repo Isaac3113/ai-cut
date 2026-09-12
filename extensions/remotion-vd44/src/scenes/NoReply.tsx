@@ -1,0 +1,7 @@
+import {useCurrentFrame,interpolate} from 'remotion';
+import {Shell,Customer,Note,Icon,Path,ink,red,pop,clamp} from './Shared';
+export const NoReply=()=>{const f=useCurrentFrame();return <Shell step={3} title="没有回复，系统接着跟" english="NO REPLY" tone={red}>
+ <Customer x={105} y={345} scale={pop(f,8)} accent="#edb1a7"/><Note text="如果客户还没回复" at={26} x={130} y={595} accent="#edb1a7"/>
+ <div style={{position:'absolute',left:820,top:310,width:875,height:465,background:'#fffefa',border:`3px solid ${ink}`,borderRadius:30,boxShadow:'12px 12px 0 #d8cfbd',translate:`${100*(1-pop(f,18))}px 0px`}}><div style={{borderBottom:'2px solid #ded6c8',fontWeight:850,fontSize:30,display:'flex',gap:20,alignItems:'center',padding:'20px 30px'}}><Icon kind="message" size={48}/><span>跟进消息</span><span style={{marginLeft:'auto',fontSize:23,color:red}}>示例对话</span></div><div style={{margin:'32px 34px 20px',background:'#ece6dc',borderRadius:'22px 22px 22px 0',width:460,padding:25,fontSize:30,scale:pop(f,40),transformOrigin:'left center'}}>想了解哪方面的内容？</div><div style={{marginLeft:70,fontSize:24,color:'#878075',opacity:interpolate(f,[60,70],[0,1],clamp)}}>等待客户回复 · · ·</div><div style={{position:'absolute',right:35,top:280,background:'#ffd545',border:`2px solid ${ink}`,borderRadius:'22px 22px 0 22px',padding:'23px 30px',fontSize:30,scale:pop(f,146),transformOrigin:'right center'}}>系统自动继续跟进</div></div>
+ <Path d="M642 434h113l-20-17m20 17-20 17" at={94} length={155}/>
+ </Shell>};

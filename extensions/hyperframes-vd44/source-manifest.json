@@ -1,0 +1,42 @@
+{
+  "global_skills_modified": false,
+  "sources": [
+    {
+      "sha256": "6d5f88ba34fb60e9657043ccd3b3312b778b39cf1ad7024d4acf86d3b728a915",
+      "source": "https://github.com/heygen-com/hyperframes/tree/main/registry",
+      "license": "Apache-2.0",
+      "role": "official yt-comment-card block, adapted in compositions/yt-comment-card.html",
+      "file": "upstream/yt-comment-card.original.html"
+    },
+    {
+      "sha256": "528a81454e7d4dc939c132627ceaa106f4fec093a433942bc93821db41d8e3bb",
+      "source": "https://github.com/heygen-com/hyperframes/tree/main/registry",
+      "license": "Apache-2.0",
+      "role": "official spring-pop finite overshoot timing reused in card reveals",
+      "file": "upstream/spring-pop.original.html"
+    },
+    {
+      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "source": "https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js",
+      "license": "https://gsap.com/standard-license/",
+      "role": "offline animation runtime 3.14.2",
+      "file": "assets/gsap.min.js"
+    },
+    {
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "license": "SIL Open Font License 1.1",
+      "role": "font, user style test uses weight 900",
+      "file": "assets/NotoSansSC.ttf"
+    }
+  ],
+  "engine_version": "0.8.35",
+  "fps": 30,
+  "reference_role": "VD44.mov is style only, not factual/customer evidence",
+  "render_duration_frames": 201,
+  "skills_install": "Project-local .agents/skills, selected seven official skills. Exact skill hashes in skills-lock.json.",
+  "illustrative_elements": "Calendar days and customer A/B/C, chat/wait/bag/cross are locally drawn diagrams. No real customer assertions.",
+  "local_node_version": "24.19.0",
+  "schema_version": 1,
+  "engine": "hyperframes"
+}

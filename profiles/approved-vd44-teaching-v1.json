@@ -1,0 +1,19 @@
+{
+  "profile_id": "approved-vd44-teaching-v1",
+  "style_approval": "approved_by_original_creator",
+  "approved_date": "2026-09-12",
+  "approval_source": "Explicit user feedback on the final complete video in the current conversation",
+  "scope": "Original creator subsequent teaching videos; other users may explicitly adopt this preset",
+  "main_timeline": "ChatCut",
+  "engines": {
+    "HyperFrames": "0.8.35",
+    "Remotion": "4.0.523"
+  },
+  "rule_entry": "references/approved-workflow.md",
+  "style_entry": "references/user-preferences.md",
+  "per_video_technical_review": "required",
+  "agent_full_watch": "unverified",
+  "agent_full_listen": "unverified",
+  "manual_caption_sync": "unverified",
+  "runtime_status_on_other_machines": "unverified"
+}
