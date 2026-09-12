@@ -9,8 +9,8 @@
     },
     {
       "file": ".gitignore",
-      "source_sha256": "6ce767b041d2547a679ec4cf89969c8cf7e903c856c6ae2a715d1507200931c7",
-      "release_sha256": "6ce767b041d2547a679ec4cf89969c8cf7e903c856c6ae2a715d1507200931c7",
+      "source_sha256": "08b62f46fc195eae64e00e61111fc8c65c4cc42b62b834fbef3a90f764648e21",
+      "release_sha256": "08b62f46fc195eae64e00e61111fc8c65c4cc42b62b834fbef3a90f764648e21",
       "adapted": false
     },
     {
@@ -804,7 +804,7 @@
   "files": {
     ".gitattributes": "91c171a7f4e295966f6e40aba83b0a11a56b4c99b59b9c55fcf54f15df207bc0",
     ".github/workflows/tests.yml": "351e2c3464ed957682f810e2aa794de6a64cc4557dde422e54fb94d4ba8c4c79",
-    ".gitignore": "6ce767b041d2547a679ec4cf89969c8cf7e903c856c6ae2a715d1507200931c7",
+    ".gitignore": "08b62f46fc195eae64e00e61111fc8c65c4cc42b62b834fbef3a90f764648e21",
     "03_Documentation/Knowledge_Base/00_Start_Here.md": "962f9c38f66451833855466c500565787fdf31c4dddab1ad7f1286a3ad561294",
     "03_Documentation/Knowledge_Base/02_Feature_Register.md": "460bd9b1c381128b65c812caea6919d3f1a9dfd7c844e9d1f401ecd33092203c",
     "03_Documentation/Knowledge_Base/03_Technical_Knowledge.md": "fe574462608129ba44c04c81aab7a694e5739442221086e4e9ab9d920a8fa6e5",

@@ -21,3 +21,4 @@ extensions/remotion-vd44/public/*.ttf
 extensions/remotion-vd44/public/presenter.jpg
 extensions/remotion-vd44/out/
 extensions/hyperframes-vd44/.thumbnails/
+extensions/hyperframes-vd44/assets/gsap.min.js
