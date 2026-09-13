@@ -2,11 +2,16 @@
 import argparse
 import hashlib
 import json
+import math
 import re
 from pathlib import Path
 
 
-def audit(snapshot):
+def audit(snapshot, expected_speed=1.1):
+    """Check voice-paired source clips; silent cover/ending items need no speech rate."""
+    expected_speed = float(expected_speed)
+    if not math.isfinite(expected_speed) or expected_speed <= 0:
+        raise ValueError("expected_speed must be positive and finite")
     errors = []
     state = snapshot['state']
     fps = state['fps']
@@ -36,7 +41,7 @@ def audit(snapshot):
             continue
         seconds = (audio['timelineRange']['toFrame'] - audio['fromFrame']) / fps
         rate = (source['endSeconds'] - source['startSeconds']) / seconds
-        if abs(rate - 1.1) > .002:
+        if abs(rate - expected_speed) > .002:
             errors.append('speech playback rate drift: ' + audio['id'])
     if not voice:
         errors.append('missing independent voice track')
@@ -50,15 +55,19 @@ def audit(snapshot):
         errors.append('source file missing')
     elif hashlib.sha256(source.read_bytes()).hexdigest() != snapshot['sourceSha256']:
         errors.append('source hash mismatch')
-    return {'structural_pass': not errors, 'errors': errors, 'video_items': len(video), 'voice_items': len(voice), 'duration_frames': end, 'captions': captions['total'], 'not_proven': ['continuous watch', 'listening', 'manual 200ms sync', 'semantic material fit', 'pixel-level visual cadence', 'audio track gain (requires inspect_item and export analysis)']}
+    return {'structural_pass': not errors, 'expected_speed': expected_speed, 'errors': errors, 'video_items': len(video), 'voice_items': len(voice), 'duration_frames': end, 'captions': captions['total'], 'not_proven': ['continuous watch', 'listening', 'manual 200ms sync', 'semantic material fit', 'pixel-level visual cadence', 'audio track gain (requires inspect_item and export analysis)']}
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('snapshot', type=Path)
     parser.add_argument('--out', type=Path)
+    parser.add_argument('--expected-speed', type=float, default=1.1,
+                        help='Absolute speech speed relative to the source; default preserves existing calls')
     args = parser.parse_args()
-    result = audit(json.loads(args.snapshot.read_text(encoding='utf-8-sig')))
+    if not math.isfinite(args.expected_speed) or args.expected_speed <= 0:
+        parser.error('--expected-speed must be positive and finite')
+    result = audit(json.loads(args.snapshot.read_text(encoding='utf-8-sig')), expected_speed=args.expected_speed)
     content = json.dumps(result, ensure_ascii=False, indent=2)
     if args.out:
         if args.out.exists():

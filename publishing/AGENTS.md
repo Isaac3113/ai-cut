@@ -8,3 +8,5 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 - Only report checks actually run; code tests and user style feedback do not prove continuous viewing/listening or new-machine success.
 - Run relevant regression tests for behavior changes. Keep reversible outputs and do not delete user files.
 - Update the project knowledge base for changes and teaching workflows. Use normal Git commits without rewriting existing histories.
+
+- Every complete video includes TXT, SRT, cover inside the video, standalone cover, complete production report and whole-timeline evidence. One video per project subfolder; follow project-storage.md. Preserve explicitly requested private repository visibility.

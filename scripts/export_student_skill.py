@@ -77,7 +77,7 @@ def export(destination):
     for name in ['remotion-best-practices','video-use']:
         content = sanitize((ROOT/'skill-adapters'/name/'SKILL.md').read_text(encoding='utf-8-sig'))
         prepared[f'辅助规则/{name}.md'] = '# 本项目辅助入口的阅读副本\n\n此文件供教学说明；其中上游参考由官方Skill另行安装，不把本文件视为完整独立安装包。\n\n' + content
-    order = ['SKILL.md', 'references/approved-workflow.md','references/master-playbook.md','references/user-preferences.md','references/editorial.md','references/visual-storytelling.md','references/reference-motion.md','references/chatcut.md','references/quality.md','references/manual-editing.md','references/tool-stack.md','references/operations.md','references/data-contract.md','references/jianying.md']
+    order = ['SKILL.md', 'references/project-storage.md', 'references/approved-workflow.md','references/master-playbook.md','references/user-preferences.md','references/editorial.md','references/visual-storytelling.md','references/reference-motion.md','references/chatcut.md','references/final-delivery.md','references/cover-prompt-worker.md','references/quality.md','references/manual-editing.md','references/tool-stack.md','references/operations.md','references/data-contract.md','references/jianying.md']
     combined = ['# 完整口播总Skill · 学员合订阅读版\n\n这份文件合并全部Markdown规则供上课阅读；可安装版本仍是旁边的talking-head-editor目录。案例参数与历史状态不代表学员机器已通过。\n']
     for relative in order:
         def rebase_link(match):

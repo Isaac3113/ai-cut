@@ -85,3 +85,7 @@ Node>=22（案例使用24）、npm、Chrome与FFmpeg。安装不包含商业许�
 学员包包含完整规则合订阅读版和可安装Skill目录；可执行源码就是本仓库。无原片不能重建案例成片；外部动画在ChatCut里是视频片段，内部文字需修改HTML/React源码重渲染。
 
 原创代码与规则采用 [MIT](LICENSE)。Remotion、GSAP、ChatCut、字体/音乐等保留各自许可，不承诺整套第三方服务免费。当前没有自动发布、常驻后台服务、自动付款或声音克隆。实片的风格反馈与技术/视听证据界限见 [验证状态](docs/VALIDATION.md)。
+
+## Complete deliveries and project storage
+
+Each full video includes MP4 with cover, standalone cover, plain TXT, SRT, full production explanation, per-second/per-frame records and honest QA. Read `skill/talking-head-editor/references/final-delivery.md`. Use `scripts/create_video_folder.py --name "AIVD - Your topic"` for one folder per video under the chosen project root; revisions reuse that folder. Private footage and exports are excluded from Git. Repository visibility remains the owner’s explicit choice.

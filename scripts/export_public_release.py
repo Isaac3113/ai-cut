@@ -17,7 +17,7 @@ PREFIXES=('src/','tests/','skill/','skill-adapters/','profiles/','publishing/')
 SCRIPTS={'bootstrap.ps1','bootstrap_runtime.py','install_skill.py','install_extensions.py',
  'adapt_jianying_skill.py','build_jianying_project.py','audit_chatcut_snapshot.py',
  'verify_review_media.py','video_use_review.py','smoke_asr.py','smoke_asr_core.py',
- 'smoke_media.py','smoke_motion.py','smoke_render.py','export_student_skill.py','export_public_release.py'}
+ 'export_final_subtitles.py','create_video_folder.py','smoke_media.py','smoke_motion.py','smoke_render.py','export_student_skill.py','export_public_release.py'}
 EXTENSIONS=('extensions/remotion-vd44/','extensions/hyperframes-vd44/','extensions/chatcut-vd44/')
 EXCLUDE={'extensions/hyperframes-vd44/assets/gsap.min.js',
  'extensions/hyperframes-vd44/meta.json','extensions/remotion-vd44/src/Composition.tsx'}
@@ -93,7 +93,7 @@ def prepare(root=ROOT):
      'README.md':'# Project knowledge base\nRead 00_Start_Here.md. Historical private jobs are not distributed.',
      '00_Start_Here.md':'# Start here\nRead ../../README.md and ../../skill/talking-head-editor/references/approved-workflow.md. The approved teaching preset is reusable; every new video is separately checked. This public snapshot contains source, not private footage or account permissions.',
      '02_Feature_Register.md':'# Features\nMaster Skill, Python revisioned runtime, local ASR option, independent audio, ChatCut workflow, Remotion/HyperFrames teaching scene sources, inspection and packaging. Each new environment needs actual installation and render checks.',
-     '03_Technical_Knowledge.md':'# Technical knowledge\nOne authoritative main timeline. Speech at 1.1 once; external graphics at 1.0. Background music is processed separately; never re-normalize a mix to compensate for weak raw speech. See master Skill and docs/VALIDATION.md.',
+     '03_Technical_Knowledge.md':'# Technical knowledge\nOne authoritative main timeline. Speech defaults to absolute 1.1, with per-video override. New graphics use final timing at 1.0; documented approved-asset retiming follows final-delivery.md. Background music is processed separately; never re-normalize a mix to compensate for weak raw speech. See master Skill and docs/VALIDATION.md.',
      '04_FAQ.md':'# FAQ\nSkills are instructions; runtimes execute. Complex rendered animation internals require editing HTML/React and re-rendering. The visible browser timeline must match the delivered export. No accounts or private example media are included.',
      '05_Development_Precautions.md':'# Precautions\nPreserve source files and revisions. Do not commit credentials, media, caches or private job metadata. Preserve third-party licenses. Tests do not certify listening, user consent or video quality.',
      '06_Teaching_Playbook.md':'# Teaching\nFollow the master Skill, references/approved-workflow.md and 15_Student_Walkthrough.md. Use your own footage and explicitly choose the preset. Read only the relevant engine branch.',

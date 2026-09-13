@@ -42,3 +42,44 @@ class ChatcutSnapshotTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             s = self.fixture(Path(folder)); s['sourceSha256'] = '0' * 64
             self.assertIn('source hash mismatch', module.audit(s)['errors'])
+
+
+    def test_explicit_absolute_speed_preserves_default_and_detects_wrong_multiplier(self):
+        with tempfile.TemporaryDirectory() as folder:
+            s = self.fixture(Path(folder))
+            for item in s['timeline']['entries']:
+                item['sourceRange']['endSeconds'] = 11.2
+            self.assertTrue(module.audit(s, expected_speed=1.2)['structural_pass'])
+            self.assertEqual(module.audit(s, expected_speed=1.2)['expected_speed'], 1.2)
+            self.assertFalse(module.audit(s)['structural_pass'])
+            self.assertFalse(module.audit(s, expected_speed=1.32)['structural_pass'])
+
+    def test_silent_cover_and_ending_are_not_checked_as_speech(self):
+        with tempfile.TemporaryDirectory() as folder:
+            s = self.fixture(Path(folder))
+            for item in s['timeline']['entries']:
+                item['fromFrame'] = 30
+                item['timelineRange'] = {'fromFrame': 30, 'toFrame': 60}
+                item['sourceRange']['endSeconds'] = 11.2
+            s['timeline']['entries'].extend([
+                {'id': 'cover', 'trackId': 'video', 'kind': 'item', 'itemType': 'image',
+                 'fromFrame': 0, 'timelineRange': {'fromFrame': 0, 'toFrame': 30}},
+                {'id': 'ending', 'trackId': 'video', 'kind': 'item', 'itemType': 'video',
+                 'fromFrame': 60, 'timelineRange': {'fromFrame': 60, 'toFrame': 150},
+                 'sourceRange': {'startSeconds': 0, 'endSeconds': 3}},
+            ])
+            s['timeline']['totalEntries'] = 4
+            s['state']['durationInFrames'] = 150
+            result = module.audit(s, expected_speed=1.2)
+            self.assertTrue(result['structural_pass'], result['errors'])
+            self.assertEqual(result['video_items'], 3)
+            self.assertEqual(result['voice_items'], 1)
+            self.assertEqual(result['duration_frames'], 150)
+
+    def test_invalid_expected_speed_is_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            s = self.fixture(Path(folder))
+            for speed in (0, -1, float('nan'), float('inf')):
+                with self.subTest(speed=speed):
+                    with self.assertRaises(ValueError):
+                        module.audit(s, expected_speed=speed)

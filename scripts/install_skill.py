@@ -9,7 +9,7 @@ p=argparse.ArgumentParser(); p.add_argument("--target",type=Path,default=Path.ho
 a=p.parse_args(); source=ROOT/"skill/talking-head-editor"; target=a.target.resolve()
 manifest=target/"installation.json"
 if target.exists() and any(target.iterdir()):
-    require(manifest.is_file() and json.loads(manifest.read_text())["source_root"]==str(ROOT),"existing_skill","Existing unrecognized skill preserved")
+    require(manifest.is_file() and Path(json.loads(manifest.read_text())["source_root"]).resolve()==ROOT,"existing_skill","Existing unrecognized skill preserved")
     old=json.loads(manifest.read_text())
     for path,sha in old["files"].items():
         require((target/path).is_file() and file_hash(target/path)==sha,"skill_modified","Installed skill was modified; reconcile before updating")
