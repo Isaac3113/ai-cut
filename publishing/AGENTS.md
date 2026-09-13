@@ -10,3 +10,5 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 - Update the project knowledge base for changes and teaching workflows. Use normal Git commits without rewriting existing histories.
 
 - Every complete video includes TXT, SRT, cover inside the video, standalone cover, complete production report and whole-timeline evidence. One video per project subfolder; follow project-storage.md. Preserve explicitly requested private repository visibility.
+
+- Read the owner’s shared storage rules before moving a project. OneDrive is a documentation/media Hub, not an active source or runtime location. Keep the authoritative technical KB in the local Git repo and link it from PROJECT_STRUCTURE.md. Preserve other-computer checkpoints before removing legacy copies.

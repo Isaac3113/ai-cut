@@ -71,4 +71,4 @@ description: 剪辑用户真人口播，保留原声原意，清理重录，搭�
 
 ## 项目与视频归档
 
-每次先执行[独立项目与一条视频一个文件夹](references/project-storage.md)。用户指定的根目录是正式项目；每条新口播用 `scripts/create_video_folder.py` 建立独立目录，同片修改沿用目录、另存交付版本。素材、工程和制作说明随视频归档，安装后的Skill继续由项目源码维护。
+每次先执行[独立项目与一条视频一个文件夹](references/project-storage.md)。先读用户共享规则和Project Hub的PROJECT_STRUCTURE.md，区分OneDrive资料入口与本机CODE_ROOT。每条新口播用 `scripts/create_video_folder.py --hub PROJECT_HUB` 建立独立资料/工作目录；实际代码、运行时及缓存留在OneDrive之外，同片修改沿用目录、另存交付版本。安装后的Skill绑定本机源码。

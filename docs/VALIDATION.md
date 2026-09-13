@@ -20,4 +20,10 @@
 
 维护项目146项Python回归通过；新增TXT/SRT导出、绝对速度核验、独立视频目录和大批边界平衡抽帧。实际代表片94.3秒含封面，102帧抽查及全片解码通过；完整试听和人工200ms同步仍未验证。每片目录规则见project-storage.md，固定交付见final-delivery.md。代码分发不自动改变仓库private可见性。
 
+## Shared storage correction
+
+The per-video directory helper now separates Project Hub media/deliveries from local editing work, requires an explicit/configured Hub, and rejects OneDrive work/cache roots. Earlier same-root examples are superseded by references/project-storage.md. Migration checks and actual regression results are recorded separately from video listening.
+
 同一台迁移后的电脑上，分发源码146项回归也已通过；使用已安装运行时，不能称为新电脑首次安装通过。
+
+2026-09-13 storage correction verified on the existing computer: 150 tests passed in the maintenance checkout (11.588s) and independently in the distribution checkout (11.026s). This is not new-machine validation. Legacy OneDrive removal is still pending the owner's other-computer confirmation; runtime/Skill now use the local checkout. No new full-video listening or rendering claim.

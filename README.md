@@ -88,4 +88,4 @@ Node>=22（案例使用24）、npm、Chrome与FFmpeg。安装不包含商业许�
 
 ## Complete deliveries and project storage
 
-Each full video includes MP4 with cover, standalone cover, plain TXT, SRT, full production explanation, per-second/per-frame records and honest QA. Read `skill/talking-head-editor/references/final-delivery.md`. Use `scripts/create_video_folder.py --name "AIVD - Your topic"` for one folder per video under the chosen project root; revisions reuse that folder. Private footage and exports are excluded from Git. Repository visibility remains the owner’s explicit choice.
+Each full video includes MP4 with cover, standalone cover, plain TXT, SRT, full production explanation, per-second/per-frame records and honest QA. Read `skill/talking-head-editor/references/final-delivery.md`. Keep active code, dependencies and work/cache outside OneDrive. Use `scripts/create_video_folder.py --hub "YOUR_PROJECT_HUB" --name "AIVD - Your topic"` to create separate per-video media/delivery and local-work folders; revisions reuse the pair. The Hub has no implicit code-root default. Private footage and exports are excluded from Git. Repository visibility remains the owner’s explicit choice.
