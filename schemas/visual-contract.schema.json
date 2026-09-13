@@ -1,0 +1,396 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frozen visual contract evidence v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "fps",
+    "duration_frames",
+    "canvas",
+    "speech_segments",
+    "full_screen_visuals",
+    "pip_segments",
+    "brand"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "fps": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "duration_frames": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "canvas": {
+      "type": "object",
+      "required": [
+        "width",
+        "height"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "evidence_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "speech_segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "asset_id",
+          "from_frame",
+          "to_frame",
+          "source_start",
+          "source_end",
+          "speed"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_frame": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "to_frame": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "asset_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_start": {
+            "type": "number"
+          },
+          "source_end": {
+            "type": "number"
+          },
+          "speed": {
+            "type": "number",
+            "minimum": 0.5,
+            "maximum": 2
+          }
+        }
+      }
+    },
+    "full_screen_visuals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "from_frame",
+          "to_frame",
+          "purpose",
+          "action"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_frame": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "to_frame": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 1
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "pip_segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "asset_id",
+          "from_frame",
+          "to_frame",
+          "source_start",
+          "source_end",
+          "media_type",
+          "shape",
+          "muted",
+          "bounds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_frame": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "to_frame": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "asset_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_start": {
+            "type": "number"
+          },
+          "source_end": {
+            "type": "number"
+          },
+          "speed": {
+            "type": "number",
+            "minimum": 0.5,
+            "maximum": 2
+          },
+          "media_type": {
+            "const": "video"
+          },
+          "shape": {
+            "const": "circle"
+          },
+          "muted": {
+            "const": true
+          },
+          "bounds": {
+            "type": "object",
+            "required": [
+              "x",
+              "y",
+              "width",
+              "height"
+            ],
+            "properties": {
+              "x": {
+                "type": "number",
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "minimum": 0
+              },
+              "width": {
+                "type": "number",
+                "minimum": 0
+              },
+              "height": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "caption_regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from_frame",
+          "to_frame",
+          "bounds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_frame": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "to_frame": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "bounds": {
+            "type": "object",
+            "required": [
+              "x",
+              "y",
+              "width",
+              "height"
+            ],
+            "properties": {
+              "x": {
+                "type": "number",
+                "minimum": 0
+              },
+              "y": {
+                "type": "number",
+                "minimum": 0
+              },
+              "width": {
+                "type": "number",
+                "minimum": 0
+              },
+              "height": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "brand": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending_logo",
+            "ready"
+          ]
+        },
+        "logo_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "logo_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "palette": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          }
+        },
+        "palette_bindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "target",
+              "colors"
+            ],
+            "properties": {
+              "target": {
+                "enum": [
+                  "keywords",
+                  "cards",
+                  "arrows",
+                  "cover",
+                  "ending"
+                ]
+              },
+              "colors": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                }
+              }
+            }
+          }
+        },
+        "watermarks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "from_frame",
+              "to_frame",
+              "opacity",
+              "preserve_aspect"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "from_frame": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "to_frame": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "opacity": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 0.25
+              },
+              "preserve_aspect": {
+                "const": true
+              },
+              "contrast_adjustment": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "ready"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "logo_path",
+              "logo_sha256",
+              "palette",
+              "palette_bindings",
+              "watermarks"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

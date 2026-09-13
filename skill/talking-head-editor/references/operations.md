@@ -1,5 +1,7 @@
 # 实际命令
 
+当前0.2.5补充规则优先：[Logo品牌配色、淡水印、绝对1.2倍与全屏素材动态圆窗](brand-and-presenter.md)。旧固定黄/奶油及可选人物小窗是历史；每条按原话增加有用对象动作。历史工程/实测数字保留，不作为新片默认。
+
 当前用户最新要求见 [用户剪辑偏好](user-preferences.md)。0.1.3已接入单比例、1.1倍速和逐步流程。plan中设置output_formats=["source"]（默认）或明确的["landscape","portrait"]；style.playback_speed控制统一时间轴，原版无该字段时保持1倍速。用户要求重剪完整内容可用draft模式输出完整1080p审阅版；不等于final风格批准。
 
 PowerShell 使用源码项目的 `& 'C:\Codex Workspace\AI-Talking-Head-Editor\.venv\Scripts\python.exe' -m talking_head_editor.cli <命令>`；也可用任意 Python 执行本 Skill 的 `scripts/run.py`。有空格的路径加引号，参数不拼成 shell 指令。
@@ -45,7 +47,7 @@ unlock --job <工程> [--asr]
 
 完整新剪/重剪先读[总规则](master-playbook.md)，参数与现有字段对照[data-contract](data-contract.md)。现有ASR有效就复用；新视觉和声音仍经plan-export、plan-apply进入同一revision，不直接改project.json。
 
-1. 用现有素材和真实原话安排B-roll、人物轻推近、关键词、流程动作，记录已查看的内部motion_times。设置visual_rhythm.enforce=true，按最终1.1倍速后的时间检查全片≤5秒间隔；程序通过后仍须看实际变化。
+1. 用现有素材和真实原话安排B-roll、人物轻推近、关键词、流程动作，记录已查看的内部motion_times。设置visual_rhythm.enforce=true，按最终实际速度（默认1.2倍）后的时间检查全片≤5秒间隔；程序通过后仍须看实际变化。
 2. 把punch/keyword写入visual_effects，把少量重点tap/pop/swipe写入sound_effects。SFX增益≤0.05（预峰值-6dBFS后再衰减），BGM显式保留music_gain_db=-35.020599913279625，不能调低真人或调大音乐代替音效。
 3. 从真实原片选本人头像帧，实际看裁切，生成并登记新的片尾视频；保留源帧、时间点、crop和衍生证据。当前ending模块是16:9本条客户流程模板，其他主题不能原样复用其固定文字/音乐署名，也没有新增独立CLI子命令。
 4. 计划ending选择已登记的owned视频asset，显式duration=3最终秒及实际source_start，检查完整结尾与署名。preview不包含片尾，检查完整收尾用draft；没有真实听审不把sfx_review填成已听。

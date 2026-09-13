@@ -17,7 +17,7 @@ class WorkflowTests(unittest.TestCase):
         before=copy.deepcopy(p); result=rough_view(p)
         self.assertEqual(p,before)
         self.assertEqual(result['plan']['clips'],p['plan']['clips'])
-        self.assertEqual(result['plan']['style']['playback_speed'],1.1)
+        self.assertEqual(result['plan']['style']['playback_speed'],1.2)
         self.assertNotIn('ending',result['plan']);self.assertNotIn('music_asset_id',result['plan'])
         self.assertEqual(result['plan']['overlays'],[])
         self.assertEqual(structure_fingerprint(result),structure_fingerprint(p))

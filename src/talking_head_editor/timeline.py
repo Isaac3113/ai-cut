@@ -298,4 +298,4 @@ def default_plan(duration, revision):
     return {"schema_version": 1, "base_revision": revision, "output_formats": ["source"],
             "clips": [{"id": "c001", "start": 0, "end": duration, "reason": "Initial full source; agent has not reviewed edits"}],
             "deletions": [], "overlays": [], "caption_corrections": {},
-            "style": {**DEFAULT_STYLE, "playback_speed": 1.1}, "semantic_review": {"status": "pending", "evidence": ""}}
+            "style": {**DEFAULT_STYLE, "playback_speed": 1.2}, "semantic_review": {"status": "pending", "evidence": ""}}

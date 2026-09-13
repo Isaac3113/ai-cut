@@ -82,7 +82,7 @@ schema_version仍为1，以下字段可省略，旧计划没有这些字段时�
 
 ### sound_effects：与BGM分开的轻短音效
 
-当前支持本地原创程序音效tap/pop/swipe，不是任意外部音频asset_id接口。每个事件时长0.08～0.7原片秒，gain缺省0.05且范围0～0.05。输出事件按同一1.1倍速时间轴生成，事件不能叠加成更大的提示声。
+当前支持本地原创程序音效tap/pop/swipe，不是任意外部音频asset_id接口。每个事件时长0.08～0.7原片秒，gain缺省0.05且范围0～0.05。输出事件按主时间轴当前绝对速度生成，事件不能叠加成更大的提示声。
 
 音效先预整平至-6dBFS峰值，再施加gain。gain=0.05是约-26.0206dB增益，生成轨的最大峰值约-32.0206dBFS；它不是系统音量5%、相对人声5%或最终响度。只在重点事件安排，刺耳时继续降低，不能每次视觉变化都响。
 
@@ -137,5 +137,7 @@ rhythm_report不把这段同源连续画面的overlay退出和正文/片尾接�
 - QA新增每版quality_checks：full_watch/full_listen/full_captions/privacy/color/overall；status四值pass/fail/unverified/not_applicable。完整观看/试听的pass必须连续模式和覆盖全时长；字幕pass必须all_captions和当前总数。最终包不能缺项。
 - package --audience external过滤无原始分发授权的raw，DEPENDENCIES.json列哈希和withheld；internal是给本人继续编辑的包，不能当外部分发授权。
 
+
+0.2.5新任务默认style.playback_speed=1.2，旧已保存计划不会自动改值；缺speed的历史计划仍按1倍。品牌与圆窗审计是独立schema_version=1的只读证据合同，见brand-and-presenter.md；不把这些字段塞进不支持的本机plan。当前本机mode=pip表示素材小窗，不等于强制真人圆窗，未实现的渲染分支不能通过规则文字冒充。
 
 overlay.caption_theme支持default/dark；dark仅全屏素材。改变ASS外观不改SRT文字和时间。QA的ass_sha256也是正式验收必需字段，旧QA缺少时须重检。

@@ -5,7 +5,7 @@ from talking_head_editor.render import preview_plan
 
 class SpeedAndFormats(unittest.TestCase):
     def test_common_speed_maps_reordered_words_and_frame_padding(self):
-        p=default_plan(10,0)
+        p=default_plan(10,0); p["style"]["playback_speed"]=1.1
         p.update(clips=[{"id":"b","start":5,"end":8.31,"reason":"later complete unit"},{"id":"a","start":1,"end":3.2,"reason":"earlier unit"}],
                  deletions=[{"start":0,"end":1,"reason":"prep"},{"start":3.2,"end":5,"reason":"retake"},{"start":8.31,"end":10,"reason":"tail"}])
         words=[{"id":"a","text":"不是","start":1.2,"end":2.2},{"id":"b","text":"如果","start":5.22,"end":6.32}]
@@ -38,7 +38,7 @@ class SpeedAndFormats(unittest.TestCase):
         with self.assertRaises(EditorError) as c: validate_plan(p,10,[],{})
         self.assertEqual(c.exception.code,"flow_timing")
     def test_grouped_english_keeps_original_time_and_word_provenance(self):
-        p=default_plan(5,0)
+        p=default_plan(5,0); p["style"]["playback_speed"]=1.1
         words=[{"id":"a","text":"Web","start":1.1,"end":1.5},{"id":"b","text":"inar","start":1.5,"end":2.2}]
         p["caption_groups"]=[{"word_ids":["a","b"],"text":"Webinar"}]
         p["correction_evidence"]="Adjacent ASR fragments in calibration"
@@ -50,7 +50,7 @@ class SpeedAndFormats(unittest.TestCase):
         self.assertAlmostEqual(mapped[0]["start"],1)
         self.assertAlmostEqual(mapped[0]["end"],2)
     def test_partial_english_group_cannot_be_cut_into_new_term(self):
-        p=default_plan(5,0)
+        p=default_plan(5,0); p["style"]["playback_speed"]=1.1
         words=[{"id":"a","text":"Web","start":1.1,"end":1.5},{"id":"b","text":"inar","start":1.5,"end":2.2}]
         p["clips"][0]["end"]=1.5
         p["deletions"]=[{"start":1.5,"end":5,"reason":"fixture"}]

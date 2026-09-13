@@ -1,5 +1,5 @@
 {
-  "scope": "public source snapshot; no private Git history or media",
+  "scope": "private maintained student source snapshot; no private media/history copied",
   "source_files": [
     {
       "file": ".gitattributes",
@@ -333,8 +333,8 @@
     },
     {
       "file": "publishing/README.md",
-      "source_sha256": "781f0aa5ff26c43bacbf896f3abcbe33062e35d1be47b967e438dd9f02dcf176",
-      "release_sha256": "781f0aa5ff26c43bacbf896f3abcbe33062e35d1be47b967e438dd9f02dcf176",
+      "source_sha256": "e2afb4d7a04cb3f9bbc3ec3e3020e7145536d0429832cdcbead0380a2f327974",
+      "release_sha256": "e2afb4d7a04cb3f9bbc3ec3e3020e7145536d0429832cdcbead0380a2f327974",
       "adapted": false
     },
     {
@@ -345,14 +345,20 @@
     },
     {
       "file": "pyproject.toml",
-      "source_sha256": "368eac81ae329ebc69ed58ef03e42da967c6857f0475a7f7c52d3c5a588c1b81",
-      "release_sha256": "368eac81ae329ebc69ed58ef03e42da967c6857f0475a7f7c52d3c5a588c1b81",
+      "source_sha256": "e6a5e2718ca5de3310fd65f3a7885e95081816a2cc733b611acf45cae5bab8ee",
+      "release_sha256": "e6a5e2718ca5de3310fd65f3a7885e95081816a2cc733b611acf45cae5bab8ee",
       "adapted": false
     },
     {
       "file": "requirements.lock.txt",
       "source_sha256": "8c2e8ad15da44078b1b4ca76997837ab35066528e4e8fe1192f869a9defbb2df",
       "release_sha256": "8c2e8ad15da44078b1b4ca76997837ab35066528e4e8fe1192f869a9defbb2df",
+      "adapted": false
+    },
+    {
+      "file": "schemas/visual-contract.schema.json",
+      "source_sha256": "354b6eff30de3cd95a346904c08f169241a26e5a829ff80f231f7ebba82eb2c5",
+      "release_sha256": "354b6eff30de3cd95a346904c08f169241a26e5a829ff80f231f7ebba82eb2c5",
       "adapted": false
     },
     {
@@ -363,8 +369,14 @@
     },
     {
       "file": "scripts/audit_chatcut_snapshot.py",
-      "source_sha256": "7e8700334f86c0e15270434fba042292278529fbb63faa30f781a930ef865734",
-      "release_sha256": "7e8700334f86c0e15270434fba042292278529fbb63faa30f781a930ef865734",
+      "source_sha256": "9d31946bd0d49a4c2bdcac20e3d75fd5e25eafd935cc62aca6290787060e3c77",
+      "release_sha256": "9d31946bd0d49a4c2bdcac20e3d75fd5e25eafd935cc62aca6290787060e3c77",
+      "adapted": false
+    },
+    {
+      "file": "scripts/audit_visual_contract.py",
+      "source_sha256": "2936c40e13850419dc56ccb594825c5fd631da0ddc3200f7ed61c337c49d2234",
+      "release_sha256": "2936c40e13850419dc56ccb594825c5fd631da0ddc3200f7ed61c337c49d2234",
       "adapted": false
     },
     {
@@ -399,14 +411,14 @@
     },
     {
       "file": "scripts/export_public_release.py",
-      "source_sha256": "d0b993407e02b783a5a9d766829f9062cfe99c79cc9295799cec37a1158852cd",
-      "release_sha256": "d0b993407e02b783a5a9d766829f9062cfe99c79cc9295799cec37a1158852cd",
+      "source_sha256": "508b8b40c78bc82c684d48120dc3dc3ec2be667af3237f4793564f8f627254b5",
+      "release_sha256": "508b8b40c78bc82c684d48120dc3dc3ec2be667af3237f4793564f8f627254b5",
       "adapted": false
     },
     {
       "file": "scripts/export_student_skill.py",
-      "source_sha256": "1e2b986ed73083eb4c6390554cbe39e10c38208446f18b2a30abe41580ad6d60",
-      "release_sha256": "1e2b986ed73083eb4c6390554cbe39e10c38208446f18b2a30abe41580ad6d60",
+      "source_sha256": "09cac8d8ea9172abc2b1560be737056556ea2b8ff68f42d6a97c7e502cd7b0f3",
+      "release_sha256": "09cac8d8ea9172abc2b1560be737056556ea2b8ff68f42d6a97c7e502cd7b0f3",
       "adapted": false
     },
     {
@@ -471,8 +483,8 @@
     },
     {
       "file": "skill-adapters/remotion-best-practices/SKILL.md",
-      "source_sha256": "9857b75ce246a6d95919ddf06d641e3e190a6288738b8923ef401e0adf7bc5c9",
-      "release_sha256": "9857b75ce246a6d95919ddf06d641e3e190a6288738b8923ef401e0adf7bc5c9",
+      "source_sha256": "aa383ed159bc1ab3fd193580ee901bba6ac8d067011b75e926d52af2c9adf668",
+      "release_sha256": "aa383ed159bc1ab3fd193580ee901bba6ac8d067011b75e926d52af2c9adf668",
       "adapted": false
     },
     {
@@ -483,8 +495,8 @@
     },
     {
       "file": "skill-adapters/video-use/SKILL.md",
-      "source_sha256": "a367e93ae2d02f702bbfa3a11b330d935634f7697f91bff56c496dcd7a9cb096",
-      "release_sha256": "a367e93ae2d02f702bbfa3a11b330d935634f7697f91bff56c496dcd7a9cb096",
+      "source_sha256": "951e9bd160ca58c33e396a18377acbd411f202f18eda7c9e5f7e2b67bde96b83",
+      "release_sha256": "951e9bd160ca58c33e396a18377acbd411f202f18eda7c9e5f7e2b67bde96b83",
       "adapted": false
     },
     {
@@ -495,26 +507,32 @@
     },
     {
       "file": "skill/talking-head-editor/SKILL.md",
-      "source_sha256": "519e6605187be5e987c6b02bd9515b785d279d9c5d0cd585ff1fd38d1245e553",
-      "release_sha256": "519e6605187be5e987c6b02bd9515b785d279d9c5d0cd585ff1fd38d1245e553",
+      "source_sha256": "8041359148d9805e8fad169e054ceca8a094b569b89b08a85c1365f22948df0f",
+      "release_sha256": "8041359148d9805e8fad169e054ceca8a094b569b89b08a85c1365f22948df0f",
       "adapted": false
     },
     {
       "file": "skill/talking-head-editor/agents/openai.yaml",
-      "source_sha256": "f7dc166a41889c1f6b0bffd761ee0f4cffc848ed7f4107af2135125818e9045d",
-      "release_sha256": "f7dc166a41889c1f6b0bffd761ee0f4cffc848ed7f4107af2135125818e9045d",
+      "source_sha256": "2317f9ac1406c07a5af09b66a604c8cfa20f4b154dd322e32cfe9296dbaa7ca0",
+      "release_sha256": "2317f9ac1406c07a5af09b66a604c8cfa20f4b154dd322e32cfe9296dbaa7ca0",
       "adapted": false
     },
     {
       "file": "skill/talking-head-editor/references/approved-workflow.md",
-      "source_sha256": "78e844db92a35b972a83f77e8297f28822d6e834c875864c27e98e15e9f3c7b1",
-      "release_sha256": "78e844db92a35b972a83f77e8297f28822d6e834c875864c27e98e15e9f3c7b1",
+      "source_sha256": "4dac32c0189de51fda39740b55565a327ea0d60532917ccf22fa8ca733336d3c",
+      "release_sha256": "4dac32c0189de51fda39740b55565a327ea0d60532917ccf22fa8ca733336d3c",
+      "adapted": false
+    },
+    {
+      "file": "skill/talking-head-editor/references/brand-and-presenter.md",
+      "source_sha256": "cc6551000683bc788208ff1bd8ea4b7c9b0004380e5245cc0bc0bb4386a25bf2",
+      "release_sha256": "cc6551000683bc788208ff1bd8ea4b7c9b0004380e5245cc0bc0bb4386a25bf2",
       "adapted": false
     },
     {
       "file": "skill/talking-head-editor/references/chatcut.md",
-      "source_sha256": "53d0e45c65b9c061dfe7a8bf11c721af565722a5011a76c32dbca31d1b3b532a",
-      "release_sha256": "53d0e45c65b9c061dfe7a8bf11c721af565722a5011a76c32dbca31d1b3b532a",
+      "source_sha256": "32dffca6beeff35fe621868102d79f93e270ae6c198b4995eda50bd54ece3d26",
+      "release_sha256": "32dffca6beeff35fe621868102d79f93e270ae6c198b4995eda50bd54ece3d26",
       "adapted": false
     },
     {
@@ -525,20 +543,20 @@
     },
     {
       "file": "skill/talking-head-editor/references/data-contract.md",
-      "source_sha256": "0cb953010cb2631ff3aa902950504e52026ccbf1f137bc0678f420f12e61da2d",
-      "release_sha256": "0cb953010cb2631ff3aa902950504e52026ccbf1f137bc0678f420f12e61da2d",
+      "source_sha256": "35da0075e7fd072c0bdc12ca2e28ad5f0ff27eee9126f8a28a2d2b4351f83357",
+      "release_sha256": "35da0075e7fd072c0bdc12ca2e28ad5f0ff27eee9126f8a28a2d2b4351f83357",
       "adapted": false
     },
     {
       "file": "skill/talking-head-editor/references/editorial.md",
-      "source_sha256": "48d194f708088b074a732e43d51db506c230451d38c44342b6a45208d7b85bbe",
-      "release_sha256": "48d194f708088b074a732e43d51db506c230451d38c44342b6a45208d7b85bbe",
+      "source_sha256": "a7d2a3a83d373e22a4af2246f17ae8791d246a9cab505dce8f123dff590e1122",
+      "release_sha256": "a7d2a3a83d373e22a4af2246f17ae8791d246a9cab505dce8f123dff590e1122",
       "adapted": false
     },
     {
       "file": "skill/talking-head-editor/references/final-delivery.md",
-      "source_sha256": "a54f1b623a569a3ec3db98946cd395da9fdbc57a0b7d3be31455449d35166d6f",
-      "release_sha256": "a54f1b623a569a3ec3db98946cd395da9fdbc57a0b7d3be31455449d35166d6f",
+      "source_sha256": "d5490455d089a51ddaa0bd389f33bb699a7a153c13c5e256ce4d47e43b19c6f0",
+      "release_sha256": "d5490455d089a51ddaa0bd389f33bb699a7a153c13c5e256ce4d47e43b19c6f0",
       "adapted": false
     },
     {
@@ -555,14 +573,14 @@
     },
     {
       "file": "skill/talking-head-editor/references/master-playbook.md",
-      "source_sha256": "e5b49fc531602152aadf5aacf691d919346b3049f33afdc643da6088f3e9a5d1",
-      "release_sha256": "53f4aeef35dfe3d6c1eac9383b69e4f5aef9eb48b61fb40cfdf08eae551f3393",
+      "source_sha256": "02c775ac88d9622c6212cbe993e1a7b0c6cdce2d51a6c9c6212a81201d16d1e6",
+      "release_sha256": "b739c6aa4e47f73e0001a737ad71d4074f7f20ed772b134e772535462015f434",
       "adapted": true
     },
     {
       "file": "skill/talking-head-editor/references/operations.md",
-      "source_sha256": "53e3cae30a9eabd830580fd6e21514e49edb6dbbcc1db156708211723b54484d",
-      "release_sha256": "53e3cae30a9eabd830580fd6e21514e49edb6dbbcc1db156708211723b54484d",
+      "source_sha256": "41a7572a405ecff783fa9b598e48c450f622e3420882c79b9014ff84df3262f8",
+      "release_sha256": "41a7572a405ecff783fa9b598e48c450f622e3420882c79b9014ff84df3262f8",
       "adapted": false
     },
     {
@@ -573,32 +591,32 @@
     },
     {
       "file": "skill/talking-head-editor/references/quality.md",
-      "source_sha256": "be1744bd75a34667c81a5d0c761db129c5dbd5225900255178d17f4a5a3bdc8b",
-      "release_sha256": "be1744bd75a34667c81a5d0c761db129c5dbd5225900255178d17f4a5a3bdc8b",
+      "source_sha256": "e039850340e4210be06e71b4cfb4e4e720e1c74c88ebbebdb4b08e9d28368368",
+      "release_sha256": "e039850340e4210be06e71b4cfb4e4e720e1c74c88ebbebdb4b08e9d28368368",
       "adapted": false
     },
     {
       "file": "skill/talking-head-editor/references/reference-motion.md",
-      "source_sha256": "6e649d34fabe379d2181456998b6fd1b977b845d890bc8f0848ec8c7a8e62cf6",
-      "release_sha256": "7617773f899149020e2ff654e5998ce04786387c0f12d9a1772d3f1167a36f6b",
+      "source_sha256": "a7ad0e434b7559312a843c0edc87844b50e1558c75d5b54ed0d741da57647a42",
+      "release_sha256": "7e3c48bd51fd0a9ee9dd91761d48ccea4805bfa26e2df58eda3dec5bad78393b",
       "adapted": true
     },
     {
       "file": "skill/talking-head-editor/references/tool-stack.md",
-      "source_sha256": "466509b2ac95e6219d470b15bdeef993c84f9a7d1e5b9f852926e33452760b75",
-      "release_sha256": "466509b2ac95e6219d470b15bdeef993c84f9a7d1e5b9f852926e33452760b75",
+      "source_sha256": "f707b91976b5657ca796a6f62563d0200e76977d1423c5207be7c2998c8f3eee",
+      "release_sha256": "f707b91976b5657ca796a6f62563d0200e76977d1423c5207be7c2998c8f3eee",
       "adapted": false
     },
     {
       "file": "skill/talking-head-editor/references/user-preferences.md",
-      "source_sha256": "ae7102201b844a3247a70d378905a2d9adf5590a2740d694eb75c46305905ddb",
-      "release_sha256": "ae7102201b844a3247a70d378905a2d9adf5590a2740d694eb75c46305905ddb",
+      "source_sha256": "953a22ea58fce08497acc1ed9ec05e17206e47f8f04f412cb922eba854839502",
+      "release_sha256": "953a22ea58fce08497acc1ed9ec05e17206e47f8f04f412cb922eba854839502",
       "adapted": false
     },
     {
       "file": "skill/talking-head-editor/references/visual-storytelling.md",
-      "source_sha256": "879f49b4605abbeb03715596503d4222064ef8296a550afe92e1069e872e54c3",
-      "release_sha256": "879f49b4605abbeb03715596503d4222064ef8296a550afe92e1069e872e54c3",
+      "source_sha256": "e0b01d742927e49d2d5e4f77f75ca004714ab7ed15b634e2bdee9c8114b861ae",
+      "release_sha256": "e0b01d742927e49d2d5e4f77f75ca004714ab7ed15b634e2bdee9c8114b861ae",
       "adapted": false
     },
     {
@@ -609,8 +627,8 @@
     },
     {
       "file": "src/talking_head_editor/__init__.py",
-      "source_sha256": "3813c2c8d3e4a661c5985d96c7a5410802dfa3af162989a6db2edc714b87792a",
-      "release_sha256": "3813c2c8d3e4a661c5985d96c7a5410802dfa3af162989a6db2edc714b87792a",
+      "source_sha256": "491c8300ee4ad2b4b196a88667481ce643fe1f7a62bf233dd068ccca09a049b3",
+      "release_sha256": "491c8300ee4ad2b4b196a88667481ce643fe1f7a62bf233dd068ccca09a049b3",
       "adapted": false
     },
     {
@@ -693,14 +711,20 @@
     },
     {
       "file": "src/talking_head_editor/timeline.py",
-      "source_sha256": "31a63949ffcc693a47b0dc77c89f5066c1e4cdeedbeed0b1b422c35cb3893708",
-      "release_sha256": "31a63949ffcc693a47b0dc77c89f5066c1e4cdeedbeed0b1b422c35cb3893708",
+      "source_sha256": "8da776382d583ba7ba90febd5696360fe6fba600f101141e3f485b99581c5a18",
+      "release_sha256": "8da776382d583ba7ba90febd5696360fe6fba600f101141e3f485b99581c5a18",
       "adapted": false
     },
     {
       "file": "src/talking_head_editor/util.py",
       "source_sha256": "f52d0a101e1851e64e116da92f3e6701c5539207750fdca1fe44462855a3fac1",
       "release_sha256": "f52d0a101e1851e64e116da92f3e6701c5539207750fdca1fe44462855a3fac1",
+      "adapted": false
+    },
+    {
+      "file": "src/talking_head_editor/visual_contract.py",
+      "source_sha256": "883f7a2b67a0c4ab6063ba06ffa2bff14a0872a0e03c113caf1b02bac10216c1",
+      "release_sha256": "883f7a2b67a0c4ab6063ba06ffa2bff14a0872a0e03c113caf1b02bac10216c1",
       "adapted": false
     },
     {
@@ -729,8 +753,8 @@
     },
     {
       "file": "tests/test_chatcut_snapshot.py",
-      "source_sha256": "a0cf372a300f4c29fa77aae79a72c8d6861cf232ac637b6e8f33ca904c293cb5",
-      "release_sha256": "a0cf372a300f4c29fa77aae79a72c8d6861cf232ac637b6e8f33ca904c293cb5",
+      "source_sha256": "b7a7870b862103476434a0cc3e936f833736f23c4818ab0e75c9834534566c12",
+      "release_sha256": "b7a7870b862103476434a0cc3e936f833736f23c4818ab0e75c9834534566c12",
       "adapted": false
     },
     {
@@ -813,8 +837,8 @@
     },
     {
       "file": "tests/test_speed_and_formats.py",
-      "source_sha256": "6acf634154a4c5b88d64c164fc1d1edf8eac2d20c005698bf2e56a3b3e22b8c1",
-      "release_sha256": "6acf634154a4c5b88d64c164fc1d1edf8eac2d20c005698bf2e56a3b3e22b8c1",
+      "source_sha256": "c49bba0a73d0825c3ef287967e4622d0d0d1ee74fee58f57b4f837e585bf0fae",
+      "release_sha256": "c49bba0a73d0825c3ef287967e4622d0d0d1ee74fee58f57b4f837e585bf0fae",
       "adapted": false
     },
     {
@@ -830,6 +854,12 @@
       "adapted": false
     },
     {
+      "file": "tests/test_visual_contract.py",
+      "source_sha256": "a18ef69a6c9ce9bd5251889648c8bd176ee4b1dbb8e331238e1b37d0612dec7c",
+      "release_sha256": "a18ef69a6c9ce9bd5251889648c8bd176ee4b1dbb8e331238e1b37d0612dec7c",
+      "adapted": false
+    },
+    {
       "file": "tests/test_visual_storytelling.py",
       "source_sha256": "8432f06f58984b4a19ead90dd62319ffe7a7d056cebb316dd59c685328b0d547",
       "release_sha256": "8432f06f58984b4a19ead90dd62319ffe7a7d056cebb316dd59c685328b0d547",
@@ -837,8 +867,8 @@
     },
     {
       "file": "tests/test_workflow.py",
-      "source_sha256": "7f726a34945898f623a5c9ac72b4418ec70edfbdcb003be98d8256779a385bb3",
-      "release_sha256": "7f726a34945898f623a5c9ac72b4418ec70edfbdcb003be98d8256779a385bb3",
+      "source_sha256": "3e7beff91c3a6b250b26d894f3eccbf922873e2a8c4434095588c0c93d41b800",
+      "release_sha256": "3e7beff91c3a6b250b26d894f3eccbf922873e2a8c4434095588c0c93d41b800",
       "adapted": false
     },
     {
@@ -854,21 +884,21 @@
     ".github/workflows/tests.yml": "351e2c3464ed957682f810e2aa794de6a64cc4557dde422e54fb94d4ba8c4c79",
     ".gitignore": "db75df360a105c471b21fc4dc5cf0e4ec0cfca9146d2195a2ad3bf44efdaa477",
     "03_Documentation/Knowledge_Base/00_Start_Here.md": "ba492fb578ac4c15cb41392bc56b863b0261a98b4920e2fd8ba4f6378978d22e",
-    "03_Documentation/Knowledge_Base/02_Feature_Register.md": "3c89bfcad0aed330b2ca90320f9563ac230f4da7aeafc6927cff58cda999392a",
-    "03_Documentation/Knowledge_Base/03_Technical_Knowledge.md": "13c0c25cddfcf60eb383403df2ffac1bff0a83255ed99191cac4d06cae9b70e5",
+    "03_Documentation/Knowledge_Base/02_Feature_Register.md": "34bb3cab2f796388b6797027e382cae94f5b26c116de30d63ec45bcbd707f4ca",
+    "03_Documentation/Knowledge_Base/03_Technical_Knowledge.md": "cc0e9ddfe17fe560b9f9fd77b230feb98fb168a10358bcee88906910a1e0a715",
     "03_Documentation/Knowledge_Base/04_FAQ.md": "3b38fdc785f5f4797b30646867c3b48745e96e00c8b47846440c20bc9b022c4d",
     "03_Documentation/Knowledge_Base/05_Development_Precautions.md": "0eced9ef78617628b354728428b49f87f7d1edc199bb3c06e2b3365b72e54aa2",
     "03_Documentation/Knowledge_Base/06_Teaching_Playbook.md": "c5ec0a1b76f65ca176a4ea7119a7641dd51667efdbeca84cc4cdec9d6baaac31",
-    "03_Documentation/Knowledge_Base/07_Change_Log.md": "6ef5bfe512b48797220d5c86446261f216cec1ee878ad4ad052410ac7c7d48e6",
+    "03_Documentation/Knowledge_Base/07_Change_Log.md": "eb040705e3ec53c3f618479bf1cb541bde3232436942f4bf855d8f8878b272a5",
     "03_Documentation/Knowledge_Base/08_Decision_Log.md": "cf350f8f828ddd29e9adadd46f341f1ce2ab251125b3de16803da924b975e338",
     "03_Documentation/Knowledge_Base/09_Glossary.md": "1bd0ae54dcebd2afecd88dc754e1905aa96e6d864621ca5ec53e30b91837a0c6",
     "03_Documentation/Knowledge_Base/14_Reference_Motion.md": "ea31e3906150c24bd34b3425fea4178a1ea9eed6f5655d712577230c56796253",
-    "03_Documentation/Knowledge_Base/15_Student_Walkthrough.md": "e7f826519492d1fe315431beba80d83be1441ee374a3f44dc4f88e7df918d77f",
+    "03_Documentation/Knowledge_Base/15_Student_Walkthrough.md": "0f312f10cd631e8d9f7025d0b311292230fd34b311b2787360e2cdafa2799740",
     "03_Documentation/Knowledge_Base/README.md": "d4648f288bd6e57cf67b82534f6525dfe3909750daa13721f101ad112d5f8a0e",
     "03_Documentation/Knowledge_Base/_Templates.md": "2ed8df2fc68fdb807a5ba4ffb6317e767012b1745bb3eb397ac0cbac8f8f09ef",
     "AGENTS.md": "6e91abb0f851e7c701ef7c93ada2c26ed92bf36bcc5e7d0a0a86f07c25d7df4b",
     "LICENSE": "030dd68224ad58f5813b43944bf423c683b62d02cd4741bbf67ddf58b590a296",
-    "README.md": "781f0aa5ff26c43bacbf896f3abcbe33062e35d1be47b967e438dd9f02dcf176",
+    "README.md": "e2afb4d7a04cb3f9bbc3ec3e3020e7145536d0429832cdcbead0380a2f327974",
     "THIRD_PARTY.md": "1a86aec6c4e6a960fa6be56382f9e4fe1060fb64ad659de5d53e7a376729e1c6",
     "docs/INSTALL_SKILLS.md": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
     "docs/VALIDATION.md": "638a837ccc98049430c22aaf1bdbf2b57d3f35d6c5a86aa90a518b618e4b2783",
@@ -923,19 +953,21 @@
     "profiles/approved-vd44-teaching-v1.json": "537868f2633abc6d4e43f297ddf4e02502105dd14d16b201519d7fe7c834801e",
     "publishing/AGENTS.md": "5536dfe5eedb19676ad3324b9c12758eb02042d20d6ecafa2e5985c43c15086a",
     "publishing/INSTALL_SKILLS.md": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
-    "publishing/README.md": "781f0aa5ff26c43bacbf896f3abcbe33062e35d1be47b967e438dd9f02dcf176",
+    "publishing/README.md": "e2afb4d7a04cb3f9bbc3ec3e3020e7145536d0429832cdcbead0380a2f327974",
     "publishing/VALIDATION.md": "7b715aefbeaec4e3611aa56dbd4b29291268399cb3c5f80bfd8e8ef065fa96ea",
-    "pyproject.toml": "368eac81ae329ebc69ed58ef03e42da967c6857f0475a7f7c52d3c5a588c1b81",
+    "pyproject.toml": "e6a5e2718ca5de3310fd65f3a7885e95081816a2cc733b611acf45cae5bab8ee",
     "requirements.lock.txt": "8c2e8ad15da44078b1b4ca76997837ab35066528e4e8fe1192f869a9defbb2df",
+    "schemas/visual-contract.schema.json": "354b6eff30de3cd95a346904c08f169241a26e5a829ff80f231f7ebba82eb2c5",
     "scripts/adapt_jianying_skill.py": "77354e62ae0d318a188ee7cd744617b3a0be035c74d422c93bb3f0e83579e2fc",
-    "scripts/audit_chatcut_snapshot.py": "7e8700334f86c0e15270434fba042292278529fbb63faa30f781a930ef865734",
+    "scripts/audit_chatcut_snapshot.py": "9d31946bd0d49a4c2bdcac20e3d75fd5e25eafd935cc62aca6290787060e3c77",
+    "scripts/audit_visual_contract.py": "2936c40e13850419dc56ccb594825c5fd631da0ddc3200f7ed61c337c49d2234",
     "scripts/bootstrap.ps1": "263d0d9467926276d514ec007bb9c92657a541c86adb9cf8f9f79d41642f64cb",
     "scripts/bootstrap_runtime.py": "5a4f7360cd01c12da3295e2773f633c0067c02081f0ec4812b715c22978440aa",
     "scripts/build_jianying_project.py": "bcdc3f76557aba2c99cb011ca4553a326f57da779e0ddf209667edcbf1675288",
     "scripts/create_video_folder.py": "5b429d23a3236c2e482d08298a461df8a5a1ef50fb689ea319fdbc02123c6597",
     "scripts/export_final_subtitles.py": "d0e5e603adebe4c581a3516dc8f5193625c088b7224585f86c293c5102bfd2b8",
-    "scripts/export_public_release.py": "d0b993407e02b783a5a9d766829f9062cfe99c79cc9295799cec37a1158852cd",
-    "scripts/export_student_skill.py": "1e2b986ed73083eb4c6390554cbe39e10c38208446f18b2a30abe41580ad6d60",
+    "scripts/export_public_release.py": "508b8b40c78bc82c684d48120dc3dc3ec2be667af3237f4793564f8f627254b5",
+    "scripts/export_student_skill.py": "09cac8d8ea9172abc2b1560be737056556ea2b8ff68f42d6a97c7e502cd7b0f3",
     "scripts/install_extensions.py": "594867d338f0357de5f2ca6653dbb8718e7c6a0c510e20f98aa29a02713c01d8",
     "scripts/install_skill.py": "1e7bcc094c8509ae29aa7d6fd09d1cf8b78e52a400630709d65c6a440b09b730",
     "scripts/smoke_asr.py": "9e3ce8c2edeff801d2eed4ce70894234163cd6e61e058c94eca5b5ac890a0a9b",
@@ -946,30 +978,31 @@
     "scripts/verify_review_media.py": "6085d79af33a2f4a6e3741146b167fe4b1230125ccb6321262cb3aa7fdd1146a",
     "scripts/video_use_review.py": "fc3946f7787f9fd3d9d6a2d4ec216b92567bd074398dee0d008fee813b53951d",
     "skill-adapters/jianying-editor/SKILL.md": "da8d7e95fcc0280c25eb26726b0e978ed45bc5966774b0652716fa9f04bf6d9f",
-    "skill-adapters/remotion-best-practices/SKILL.md": "9857b75ce246a6d95919ddf06d641e3e190a6288738b8923ef401e0adf7bc5c9",
+    "skill-adapters/remotion-best-practices/SKILL.md": "aa383ed159bc1ab3fd193580ee901bba6ac8d067011b75e926d52af2c9adf668",
     "skill-adapters/remotion-best-practices/agents/openai.yaml": "f628953bdd07e01c73bee275461cf6865a2986d88ba35d1dbbd5403eb7dbbf3f",
-    "skill-adapters/video-use/SKILL.md": "a367e93ae2d02f702bbfa3a11b330d935634f7697f91bff56c496dcd7a9cb096",
+    "skill-adapters/video-use/SKILL.md": "951e9bd160ca58c33e396a18377acbd411f202f18eda7c9e5f7e2b67bde96b83",
     "skill-adapters/video-use/agents/openai.yaml": "dc44f7a6a18ac2a8f80b5b1a6e9adf168409e7f013058cbd02bd094965f90791",
-    "skill/talking-head-editor/SKILL.md": "519e6605187be5e987c6b02bd9515b785d279d9c5d0cd585ff1fd38d1245e553",
-    "skill/talking-head-editor/agents/openai.yaml": "f7dc166a41889c1f6b0bffd761ee0f4cffc848ed7f4107af2135125818e9045d",
-    "skill/talking-head-editor/references/approved-workflow.md": "78e844db92a35b972a83f77e8297f28822d6e834c875864c27e98e15e9f3c7b1",
-    "skill/talking-head-editor/references/chatcut.md": "53d0e45c65b9c061dfe7a8bf11c721af565722a5011a76c32dbca31d1b3b532a",
+    "skill/talking-head-editor/SKILL.md": "8041359148d9805e8fad169e054ceca8a094b569b89b08a85c1365f22948df0f",
+    "skill/talking-head-editor/agents/openai.yaml": "2317f9ac1406c07a5af09b66a604c8cfa20f4b154dd322e32cfe9296dbaa7ca0",
+    "skill/talking-head-editor/references/approved-workflow.md": "4dac32c0189de51fda39740b55565a327ea0d60532917ccf22fa8ca733336d3c",
+    "skill/talking-head-editor/references/brand-and-presenter.md": "cc6551000683bc788208ff1bd8ea4b7c9b0004380e5245cc0bc0bb4386a25bf2",
+    "skill/talking-head-editor/references/chatcut.md": "32dffca6beeff35fe621868102d79f93e270ae6c198b4995eda50bd54ece3d26",
     "skill/talking-head-editor/references/cover-prompt-worker.md": "1f625777ba9c849d7a0ae1d1eddbfadd8ad6c780d8a1abcc064d25e71362863b",
-    "skill/talking-head-editor/references/data-contract.md": "0cb953010cb2631ff3aa902950504e52026ccbf1f137bc0678f420f12e61da2d",
-    "skill/talking-head-editor/references/editorial.md": "48d194f708088b074a732e43d51db506c230451d38c44342b6a45208d7b85bbe",
-    "skill/talking-head-editor/references/final-delivery.md": "a54f1b623a569a3ec3db98946cd395da9fdbc57a0b7d3be31455449d35166d6f",
+    "skill/talking-head-editor/references/data-contract.md": "35da0075e7fd072c0bdc12ca2e28ad5f0ff27eee9126f8a28a2d2b4351f83357",
+    "skill/talking-head-editor/references/editorial.md": "a7d2a3a83d373e22a4af2246f17ae8791d246a9cab505dce8f123dff590e1122",
+    "skill/talking-head-editor/references/final-delivery.md": "d5490455d089a51ddaa0bd389f33bb699a7a153c13c5e256ce4d47e43b19c6f0",
     "skill/talking-head-editor/references/jianying.md": "75af11549cb8d899e29a622d8b69afb8928ac68bb7894d072d59cfe7d7c0c7de",
     "skill/talking-head-editor/references/manual-editing.md": "4f83f96ebcdc5bf14978731bc7fb4875083e90ab3eea3936daad1d16bbbbe641",
-    "skill/talking-head-editor/references/master-playbook.md": "53f4aeef35dfe3d6c1eac9383b69e4f5aef9eb48b61fb40cfdf08eae551f3393",
-    "skill/talking-head-editor/references/operations.md": "53e3cae30a9eabd830580fd6e21514e49edb6dbbcc1db156708211723b54484d",
+    "skill/talking-head-editor/references/master-playbook.md": "b739c6aa4e47f73e0001a737ad71d4074f7f20ed772b134e772535462015f434",
+    "skill/talking-head-editor/references/operations.md": "41a7572a405ecff783fa9b598e48c450f622e3420882c79b9014ff84df3262f8",
     "skill/talking-head-editor/references/project-storage.md": "405a06fb0b0754b8507cf91664976668fb050de8fbfe70a10d470dc8fcc0addb",
-    "skill/talking-head-editor/references/quality.md": "be1744bd75a34667c81a5d0c761db129c5dbd5225900255178d17f4a5a3bdc8b",
-    "skill/talking-head-editor/references/reference-motion.md": "7617773f899149020e2ff654e5998ce04786387c0f12d9a1772d3f1167a36f6b",
-    "skill/talking-head-editor/references/tool-stack.md": "466509b2ac95e6219d470b15bdeef993c84f9a7d1e5b9f852926e33452760b75",
-    "skill/talking-head-editor/references/user-preferences.md": "ae7102201b844a3247a70d378905a2d9adf5590a2740d694eb75c46305905ddb",
-    "skill/talking-head-editor/references/visual-storytelling.md": "879f49b4605abbeb03715596503d4222064ef8296a550afe92e1069e872e54c3",
+    "skill/talking-head-editor/references/quality.md": "e039850340e4210be06e71b4cfb4e4e720e1c74c88ebbebdb4b08e9d28368368",
+    "skill/talking-head-editor/references/reference-motion.md": "7e3c48bd51fd0a9ee9dd91761d48ccea4805bfa26e2df58eda3dec5bad78393b",
+    "skill/talking-head-editor/references/tool-stack.md": "f707b91976b5657ca796a6f62563d0200e76977d1423c5207be7c2998c8f3eee",
+    "skill/talking-head-editor/references/user-preferences.md": "953a22ea58fce08497acc1ed9ec05e17206e47f8f04f412cb922eba854839502",
+    "skill/talking-head-editor/references/visual-storytelling.md": "e0b01d742927e49d2d5e4f77f75ca004714ab7ed15b634e2bdee9c8114b861ae",
     "skill/talking-head-editor/scripts/run.py": "07f00fd0a6a8914117e7cd629b4b58e1a23e68872ff2f413054e2df0e91c5b5a",
-    "src/talking_head_editor/__init__.py": "3813c2c8d3e4a661c5985d96c7a5410802dfa3af162989a6db2edc714b87792a",
+    "src/talking_head_editor/__init__.py": "491c8300ee4ad2b4b196a88667481ce643fe1f7a62bf233dd068ccca09a049b3",
     "src/talking_head_editor/asr.py": "aeb1dd00deaa5e27dbf9a55345993c7bf2cc54f5e8c4756383b751001f168426",
     "src/talking_head_editor/assets.py": "e3a2291d18506e735492af5066d86893fa41fb9bbce48a396375cdd2d35ebf33",
     "src/talking_head_editor/audio_controls.py": "26d4e8f481c854d9a9ab3f0be29412578fcdb776cc68f1033656d4a60e3a32d1",
@@ -983,13 +1016,14 @@
     "src/talking_head_editor/project.py": "714cc3765636d9da328e4c9268a926f8050be0ba1bf52a8055e1af285416faba",
     "src/talking_head_editor/quality.py": "26f638c65b840d1595272836f7a2ab5baaff5259954439940a063179a865af78",
     "src/talking_head_editor/render.py": "3ad575eb33f63077602082ed2bda0b29794086a5675ad3258ec3cf0d879de1e8",
-    "src/talking_head_editor/timeline.py": "31a63949ffcc693a47b0dc77c89f5066c1e4cdeedbeed0b1b422c35cb3893708",
+    "src/talking_head_editor/timeline.py": "8da776382d583ba7ba90febd5696360fe6fba600f101141e3f485b99581c5a18",
     "src/talking_head_editor/util.py": "f52d0a101e1851e64e116da92f3e6701c5539207750fdca1fe44462855a3fac1",
+    "src/talking_head_editor/visual_contract.py": "883f7a2b67a0c4ab6063ba06ffa2bff14a0872a0e03c113caf1b02bac10216c1",
     "src/talking_head_editor/visuals.py": "4ba6de9cf86be0b33666ddc402ef365a8176a189a0c1a90c55e2ac93ac8a1774",
     "src/talking_head_editor/workflow.py": "1c956c7e617391760710bc5eb086078f921c6cc20e4a632c8ba8e13e07312196",
     "tests/test_audio_levels.py": "c9d1e97e083c434fa9cef9690526410d0e0621a9b12b0301b541b44a104cb0f6",
     "tests/test_caption_breaks.py": "987a5bffad87fc2f50d22fe3fe2b73dd6710fb61175d53b8c3340869eba3971e",
-    "tests/test_chatcut_snapshot.py": "a0cf372a300f4c29fa77aae79a72c8d6861cf232ac637b6e8f33ca904c293cb5",
+    "tests/test_chatcut_snapshot.py": "b7a7870b862103476434a0cc3e936f833736f23c4818ab0e75c9834534566c12",
     "tests/test_contracts.py": "423a9363f62fa9754b9606cf015014234c57678680154bb57eb163e65c974008",
     "tests/test_final_subtitles.py": "b6df232913ef632541d560b21fc662f8623ebf8c135ceacf5110b7ac98182d17",
     "tests/test_jianying.py": "d73a33133b0b63a75120a59ee21d6874b0b8caf84ef82851349829b351dc8d7a",
@@ -1003,13 +1037,22 @@
     "tests/test_revisions.py": "8139ce6e2e93f962e761f18da70976b77b4b3aa623dacb40924e8284cf976403",
     "tests/test_skill_dispatch.py": "51a5e0ee1393139450b0d12b5580035f0f8cf08877fd0e1c3c2f4b4c82b03d05",
     "tests/test_skill_extensions.py": "2f857240ce182c42e446b9fbf48f7ce8a54553f57cd0df28f6fffc1042bad7d8",
-    "tests/test_speed_and_formats.py": "6acf634154a4c5b88d64c164fc1d1edf8eac2d20c005698bf2e56a3b3e22b8c1",
+    "tests/test_speed_and_formats.py": "c49bba0a73d0825c3ef287967e4622d0d0d1ee74fee58f57b4f837e585bf0fae",
     "tests/test_teaching_graphics.py": "7f48c91c1c140c250058958def9ec1809e73151f425011eabe062b06d3864a88",
     "tests/test_video_folder.py": "36a78007af5e31f36a80b38623dd5516e5479d77eed98357426105b0cce7749f",
+    "tests/test_visual_contract.py": "a18ef69a6c9ce9bd5251889648c8bd176ee4b1dbb8e331238e1b37d0612dec7c",
     "tests/test_visual_storytelling.py": "8432f06f58984b4a19ead90dd62319ffe7a7d056cebb316dd59c685328b0d547",
-    "tests/test_workflow.py": "7f726a34945898f623a5c9ac72b4418ec70edfbdcb003be98d8256779a385bb3",
+    "tests/test_workflow.py": "3e7beff91c3a6b250b26d894f3eccbf922873e2a8c4434095588c0c93d41b800",
     "tests/test_workflow_review.py": "896894fd407a975df02883573b37de241d3a0ac2d60b14ad0917c6b96ce6af6d"
   },
   "new_machine_execution": "not certified by packaging",
-  "public_visibility": "PRIVATE per owner; verified separately with GitHub API"
+  "public_visibility": "private by explicit owner instruction; unchanged",
+  "preserved_repo_specific_files": [
+    "03_Documentation/Knowledge_Base/00_Start_Here.md",
+    "03_Documentation/Knowledge_Base/02_Feature_Register.md",
+    "03_Documentation/Knowledge_Base/03_Technical_Knowledge.md",
+    "03_Documentation/Knowledge_Base/07_Change_Log.md",
+    "AGENTS.md",
+    "docs/VALIDATION.md"
+  ]
 }

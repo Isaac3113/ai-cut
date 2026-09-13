@@ -13,7 +13,7 @@ class ChatcutSnapshotTests(unittest.TestCase):
     def fixture(self, path):
         path = path / 'source.bin'
         path.write_bytes(b'test source')
-        source = {'startSeconds': 10, 'endSeconds': 11.1}
+        source = {'startSeconds': 10, 'endSeconds': 11.2}
         def item(id, track):
             return {'id': id, 'trackId': track, 'kind': 'item', 'fromFrame': 0, 'timelineRange': {'fromFrame': 0, 'toFrame': 30}, 'sourceRange': dict(source)}
         return {'state': {'canvas': {'width': 1920, 'height': 1080}, 'fps': 30, 'durationInFrames': 30}, 'timeline': {'totalEntries': 2, 'entries': [item('v', 'video'), item('a', 'voice')]}, 'videoTrackId': 'video', 'voiceTrackId': 'voice', 'captions': {'hasMore': False, 'total': 1, 'text': '"overflow":false'}, 'sourcePath': str(path), 'sourceSha256': hashlib.sha256(path.read_bytes()).hexdigest()}
@@ -44,14 +44,15 @@ class ChatcutSnapshotTests(unittest.TestCase):
             self.assertIn('source hash mismatch', module.audit(s)['errors'])
 
 
-    def test_explicit_absolute_speed_preserves_default_and_detects_wrong_multiplier(self):
+    def test_current_absolute_default_and_legacy_override_detect_wrong_multiplier(self):
         with tempfile.TemporaryDirectory() as folder:
             s = self.fixture(Path(folder))
             for item in s['timeline']['entries']:
                 item['sourceRange']['endSeconds'] = 11.2
             self.assertTrue(module.audit(s, expected_speed=1.2)['structural_pass'])
             self.assertEqual(module.audit(s, expected_speed=1.2)['expected_speed'], 1.2)
-            self.assertFalse(module.audit(s)['structural_pass'])
+            self.assertTrue(module.audit(s)['structural_pass'])
+            self.assertFalse(module.audit(s, expected_speed=1.1)['structural_pass'])
             self.assertFalse(module.audit(s, expected_speed=1.32)['structural_pass'])
 
     def test_silent_cover_and_ending_are_not_checked_as_speech(self):

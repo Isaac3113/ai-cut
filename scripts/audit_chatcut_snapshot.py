@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 
 
-def audit(snapshot, expected_speed=1.1):
+def audit(snapshot, expected_speed=1.2):
     """Check voice-paired source clips; silent cover/ending items need no speech rate."""
     expected_speed = float(expected_speed)
     if not math.isfinite(expected_speed) or expected_speed <= 0:
@@ -62,8 +62,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('snapshot', type=Path)
     parser.add_argument('--out', type=Path)
-    parser.add_argument('--expected-speed', type=float, default=1.1,
-                        help='Absolute speech speed relative to the source; default preserves existing calls')
+    parser.add_argument('--expected-speed', type=float, default=1.2,
+                        help='Absolute speech speed relative to the source; default is the current creator rule; pass 1.1 explicitly for historical exports')
     args = parser.parse_args()
     if not math.isfinite(args.expected_speed) or args.expected_speed <= 0:
         parser.error('--expected-speed must be positive and finite')
