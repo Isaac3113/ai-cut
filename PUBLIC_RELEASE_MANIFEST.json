@@ -1,5 +1,5 @@
 {
-  "scope": "public source snapshot; no private Git history or media",
+  "scope": "shareable source snapshot; no private Git history or media; repository must remain private",
   "source_files": [
     {
       "file": ".gitattributes",
@@ -808,19 +808,19 @@
     "03_Documentation/Knowledge_Base/00_Start_Here.md": "962f9c38f66451833855466c500565787fdf31c4dddab1ad7f1286a3ad561294",
     "03_Documentation/Knowledge_Base/02_Feature_Register.md": "460bd9b1c381128b65c812caea6919d3f1a9dfd7c844e9d1f401ecd33092203c",
     "03_Documentation/Knowledge_Base/03_Technical_Knowledge.md": "fe574462608129ba44c04c81aab7a694e5739442221086e4e9ab9d920a8fa6e5",
-    "03_Documentation/Knowledge_Base/04_FAQ.md": "3b38fdc785f5f4797b30646867c3b48745e96e00c8b47846440c20bc9b022c4d",
+    "03_Documentation/Knowledge_Base/04_FAQ.md": "5e39316deb8799642e3847cffed95b9a506547e42707e03a92aeb55d43431ee8",
     "03_Documentation/Knowledge_Base/05_Development_Precautions.md": "0eced9ef78617628b354728428b49f87f7d1edc199bb3c06e2b3365b72e54aa2",
     "03_Documentation/Knowledge_Base/06_Teaching_Playbook.md": "c5ec0a1b76f65ca176a4ea7119a7641dd51667efdbeca84cc4cdec9d6baaac31",
-    "03_Documentation/Knowledge_Base/07_Change_Log.md": "bf10d8d13197b4562efbd21a68f0b60d76d2a5b4bd23dddba28fb9346a47ddfd",
-    "03_Documentation/Knowledge_Base/08_Decision_Log.md": "cf350f8f828ddd29e9adadd46f341f1ce2ab251125b3de16803da924b975e338",
+    "03_Documentation/Knowledge_Base/07_Change_Log.md": "e01eb4b03a7579282f5f99e2353fcce43b24a565b2de69597039fa95ec86e9dc",
+    "03_Documentation/Knowledge_Base/08_Decision_Log.md": "1cd3f2c85dcbb626adffa4662dec7c3e46efb05a38a050b810ee2062efbc2f56",
     "03_Documentation/Knowledge_Base/09_Glossary.md": "1bd0ae54dcebd2afecd88dc754e1905aa96e6d864621ca5ec53e30b91837a0c6",
     "03_Documentation/Knowledge_Base/14_Reference_Motion.md": "ea31e3906150c24bd34b3425fea4178a1ea9eed6f5655d712577230c56796253",
     "03_Documentation/Knowledge_Base/15_Student_Walkthrough.md": "e7f826519492d1fe315431beba80d83be1441ee374a3f44dc4f88e7df918d77f",
     "03_Documentation/Knowledge_Base/README.md": "d4648f288bd6e57cf67b82534f6525dfe3909750daa13721f101ad112d5f8a0e",
     "03_Documentation/Knowledge_Base/_Templates.md": "2ed8df2fc68fdb807a5ba4ffb6317e767012b1745bb3eb397ac0cbac8f8f09ef",
-    "AGENTS.md": "8c69f8715031654406ba7ad26d831c4d13f95ed3b87c56f6f91da6913a6dbbf0",
+    "AGENTS.md": "45ed86c1eb72f8ec2cab1ba0e3a7f9cebce0a80a3c455e9ab298c73ff74b0c7b",
     "LICENSE": "030dd68224ad58f5813b43944bf423c683b62d02cd4741bbf67ddf58b590a296",
-    "README.md": "1cabb9b1fce4b3c85bfb4de1ef6ad0276509d436249be56f171bdc7865bfe724",
+    "README.md": "ee1bea2676116b4d69248a005be9c556dcda6263c894475dc6a250255534ddfa",
     "THIRD_PARTY.md": "1a86aec6c4e6a960fa6be56382f9e4fe1060fb64ad659de5d53e7a376729e1c6",
     "docs/INSTALL_SKILLS.md": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
     "docs/VALIDATION.md": "9ec4eb1a1d3b7783d73a46ef0210cafe109062b6199d0a263c1e9727474a01c2",
@@ -955,5 +955,5 @@
     "tests/test_workflow_review.py": "896894fd407a975df02883573b37de241d3a0ac2d60b14ad0917c6b96ce6af6d"
   },
   "new_machine_execution": "not certified by packaging",
-  "public_visibility": "must be verified after publishing"
+  "public_visibility": "not authorized; user explicitly requested private on 2026-09-13"
 }
