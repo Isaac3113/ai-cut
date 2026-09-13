@@ -27,3 +27,5 @@ The per-video directory helper now separates Project Hub media/deliveries from l
 同一台迁移后的电脑上，分发源码146项回归也已通过；使用已安装运行时，不能称为新电脑首次安装通过。
 
 2026-09-13 storage correction verified on the existing computer: 150 tests passed in the maintenance checkout (11.588s) and independently in the distribution checkout (11.026s). This is not new-machine validation. Legacy OneDrive removal is still pending the owner's other-computer confirmation; runtime/Skill now use the local checkout. No new full-video listening or rendering claim.
+
+2026-09-13 follow-up: the owner confirmed the old OneDrive copy was used only on this computer. Legacy source/cache removal is now COMPLETE; originals were moved to an off-OneDrive backup, not deleted. Media and deliveries remain in the Hub. Post-move real runtime, existing job, model/Skill hashes, representative transcode/decode and unchanged subtitle checks passed. No implementation change or new-machine/full-film acceptance claim.

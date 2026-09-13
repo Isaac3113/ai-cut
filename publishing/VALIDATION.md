@@ -25,3 +25,5 @@
 The per-video directory helper now separates Project Hub media/deliveries from local editing work, requires an explicit/configured Hub, and rejects OneDrive work/cache roots. Earlier same-root examples are superseded by references/project-storage.md. Migration checks and actual regression results are recorded separately from video listening.
 
 2026-09-13 storage correction verified on the existing computer: 150 tests passed in the maintenance checkout (11.588s) and independently in the distribution checkout (11.026s). This is not new-machine validation. Legacy OneDrive removal is still pending the owner's other-computer confirmation; runtime/Skill now use the local checkout. No new full-video listening or rendering claim.
+
+2026-09-13 follow-up: the owner confirmed the old OneDrive copy was used only on this computer. Legacy source/cache removal is now COMPLETE; originals were moved to an off-OneDrive backup, not deleted. Media and deliveries remain in the Hub. Post-move real runtime, existing job, model/Skill hashes, representative transcode/decode and unchanged subtitle checks passed. No implementation change or new-machine/full-film acceptance claim.

@@ -6,3 +6,5 @@
 Added per-video workspace creation, full TXT/SRT + cover + production-report delivery, absolute speed audit, and scalable FFmpeg frame sampling. The distribution remains PRIVATE. No private footage, account project or source Git history copied.
 
 2026-09-13: Keep code/runtime/work outside OneDrive; the Project Hub stores documents, media and deliveries. Directory helper requires a configured Hub and separately creates local work. Existing Chinese titles are preserved; Windows CLI output uses UTF-8. See master references/project-storage.md. Actual regression status: docs/VALIDATION.md.
+
+2026-09-13 follow-up: the owner confirmed the old OneDrive copy was used only on this computer. Legacy source/cache removal is now COMPLETE; originals were moved to an off-OneDrive backup, not deleted. Media and deliveries remain in the Hub. Post-move real runtime, existing job, model/Skill hashes, representative transcode/decode and unchanged subtitle checks passed. No implementation change or new-machine/full-film acceptance claim.

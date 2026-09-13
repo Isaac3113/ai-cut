@@ -339,8 +339,8 @@
     },
     {
       "file": "publishing/VALIDATION.md",
-      "source_sha256": "37c10c75851358fbf20fcfb45c58441fc88105a173a0049aba4cc211361d8181",
-      "release_sha256": "37c10c75851358fbf20fcfb45c58441fc88105a173a0049aba4cc211361d8181",
+      "source_sha256": "7b715aefbeaec4e3611aa56dbd4b29291268399cb3c5f80bfd8e8ef065fa96ea",
+      "release_sha256": "7b715aefbeaec4e3611aa56dbd4b29291268399cb3c5f80bfd8e8ef065fa96ea",
       "adapted": false
     },
     {
@@ -859,7 +859,7 @@
     "03_Documentation/Knowledge_Base/04_FAQ.md": "3b38fdc785f5f4797b30646867c3b48745e96e00c8b47846440c20bc9b022c4d",
     "03_Documentation/Knowledge_Base/05_Development_Precautions.md": "0eced9ef78617628b354728428b49f87f7d1edc199bb3c06e2b3365b72e54aa2",
     "03_Documentation/Knowledge_Base/06_Teaching_Playbook.md": "c5ec0a1b76f65ca176a4ea7119a7641dd51667efdbeca84cc4cdec9d6baaac31",
-    "03_Documentation/Knowledge_Base/07_Change_Log.md": "a40d725b75a2139392e8a19597bd06a5b4e3107945cf731a1d2c068114545674",
+    "03_Documentation/Knowledge_Base/07_Change_Log.md": "6ef5bfe512b48797220d5c86446261f216cec1ee878ad4ad052410ac7c7d48e6",
     "03_Documentation/Knowledge_Base/08_Decision_Log.md": "cf350f8f828ddd29e9adadd46f341f1ce2ab251125b3de16803da924b975e338",
     "03_Documentation/Knowledge_Base/09_Glossary.md": "1bd0ae54dcebd2afecd88dc754e1905aa96e6d864621ca5ec53e30b91837a0c6",
     "03_Documentation/Knowledge_Base/14_Reference_Motion.md": "ea31e3906150c24bd34b3425fea4178a1ea9eed6f5655d712577230c56796253",
@@ -871,7 +871,7 @@
     "README.md": "781f0aa5ff26c43bacbf896f3abcbe33062e35d1be47b967e438dd9f02dcf176",
     "THIRD_PARTY.md": "1a86aec6c4e6a960fa6be56382f9e4fe1060fb64ad659de5d53e7a376729e1c6",
     "docs/INSTALL_SKILLS.md": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
-    "docs/VALIDATION.md": "96e382bcd1a0761bbcb051986c0c0f9ec11b115d58b51cccf7861c01c2db38c7",
+    "docs/VALIDATION.md": "638a837ccc98049430c22aaf1bdbf2b57d3f35d6c5a86aa90a518b618e4b2783",
     "extensions/chatcut-vd44/README.md": "8d79512153e39d271979a14579033d2d0a6218c9ed56b778accd4de69edbd8e5",
     "extensions/chatcut-vd44/native-keyword.jsx": "0efafe5ec51bbb60afb6ae9fe03c33116ee697f88abb4250e0c8381f2ac1b6f7",
     "extensions/chatcut-vd44/placements.json": "06c79cbeffc8a2e824efecedd5f928941c7b172045fe9fa9457c0a61a364efe3",
@@ -924,7 +924,7 @@
     "publishing/AGENTS.md": "5536dfe5eedb19676ad3324b9c12758eb02042d20d6ecafa2e5985c43c15086a",
     "publishing/INSTALL_SKILLS.md": "bc66f44ae38c18fc288771b8a31f398bff89e408cd0285d4a713994375641f69",
     "publishing/README.md": "781f0aa5ff26c43bacbf896f3abcbe33062e35d1be47b967e438dd9f02dcf176",
-    "publishing/VALIDATION.md": "37c10c75851358fbf20fcfb45c58441fc88105a173a0049aba4cc211361d8181",
+    "publishing/VALIDATION.md": "7b715aefbeaec4e3611aa56dbd4b29291268399cb3c5f80bfd8e8ef065fa96ea",
     "pyproject.toml": "368eac81ae329ebc69ed58ef03e42da967c6857f0475a7f7c52d3c5a588c1b81",
     "requirements.lock.txt": "8c2e8ad15da44078b1b4ca76997837ab35066528e4e8fe1192f869a9defbb2df",
     "scripts/adapt_jianying_skill.py": "77354e62ae0d318a188ee7cd744617b3a0be035c74d422c93bb3f0e83579e2fc",
