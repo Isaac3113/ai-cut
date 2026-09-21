@@ -22,3 +22,8 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 ## 2026-09-21 长访谈切片
 
 加入长访谈主题切片分支及入口/发现描述；沿用既有 ChatCut 主路线、R6 轻音乐、1.2 倍一次及 AIVD 命名。未修改执行器/渲染版本，未将安装视为视频交付。
+
+
+## 2026-09-21 AIVD5最新合同
+
+落实AIVD5最新合同：1:1、自拟主题与条数（可超过5）、ChatCut、逐句精炼和完整操作录屏；只修改规则与记录，尚无切片导出。

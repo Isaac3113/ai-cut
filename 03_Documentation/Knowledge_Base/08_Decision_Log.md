@@ -11,3 +11,8 @@ Use a clean public source snapshot to retain private job/history separation. MIT
 ## 2026-09-21 长访谈切片
 
 将新能力作为现有 talking-head-editor 的条件分支，避免重复安装另一套编辑入口。片数由完整独立主题决定，时长按实际保留区间和独立包装计算；已授权自动开剪时不新增选题批准步骤。
+
+
+## 2026-09-21 AIVD5最新合同
+
+用户将整段Zoom指定AIVD5，采用AIVD5母项目加5-01等子序号；明确授权自行主题，不重复审批标题。注册并登录官方hosted ChatCut MCP，保留既定在线主路线；注册/登录成功与工具实际加载分开验证。
