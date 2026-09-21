@@ -1,3 +1,5 @@
+> 长访谈/Zoom 多切片先执行 [long-form-clips](long-form-clips.md) 的整场理解、单一主题筛选和最终时长预算，再将每条接入本流程。用户已授权准备好后直接剪时不重复要求批准选题表；比例与实际工具准备仍须真实核验。
+
 # 从首次沟通到认可成片：完整执行顺序
 
 这是总 Skill 的工作流程和教学入口。完整质量规则在 [master-playbook](master-playbook.md)，当前视觉/声音预设在 [user-preferences](user-preferences.md)，动画细节在 [reference-motion](reference-motion.md)。无需把多个入口全部读进每一次局部修改。

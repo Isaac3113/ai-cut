@@ -1,4 +1,4 @@
 interface:
   display_name: "口播剪辑员工"
-  short_description: "默认用ChatCut交付可编辑口播工程，有实操时加入重点效果、流程引导与同步音效"
-  default_prompt: "使用 $talking-head-editor，先核对ChatCut连接和已有工程、确认视频比例；以ChatCut为主时间轴，原片直接1.2倍一次，有实操时按约三秒重点效果配同步音效，沿用品牌与AIVD命名并交付可编辑工程；缺连接先说明，不静默换工具。"
+  short_description: "用ChatCut剪口播或将长访谈按独立主题切片，实操加入重点效果与同步音效"
+  default_prompt: "使用 $talking-head-editor，长访谈先按单一主题规划独立切片；先核对ChatCut连接和已有工程、确认视频比例；以ChatCut为主时间轴，原片直接1.2倍一次，有实操时按约三秒重点效果配同步音效，沿用品牌与AIVD命名并交付可编辑工程；缺连接先说明，不静默换工具。"
