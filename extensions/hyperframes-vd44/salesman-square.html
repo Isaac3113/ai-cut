@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><style>
+@font-face{font-family:Noto;src:url("assets/NotoSansSC.ttf");font-weight:100 900}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#E5F3F7;color:#153340;font-family:Noto}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden}
+.clip{position:absolute;inset:0}
+.header{position:absolute;left:104px;top:70px;font-size:30px;font-weight:700;letter-spacing:5px}
+.title{position:absolute;left:100px;top:125px;font-size:91px;font-weight:900}
+.hint{position:absolute;right:110px;top:82px;font-size:26px}
+.board{position:absolute;left:105px;top:300px;width:1320px;height:515px;border:3px solid #153340;border-radius:24px;background:#F8FBFC;box-shadow:12px 14px 0 #B5D5DF;overflow:hidden}
+.bar{height:70px;background:#153340;color:#E5F3F7;display:flex;align-items:center;gap:15px;padding:0 28px;font-size:25px}
+.dot{width:12px;height:12px;border-radius:50%;background:#47B4D0}
+.cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;padding:23px 38px;font-size:28px;border-bottom:1px solid #BDD8E1;color:#597C88}
+.row{position:absolute;left:26px;right:26px;height:98px;border-radius:14px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;align-items:center;padding:0 12px;font-size:33px;background:#E4EFF2}
+.r1{top:153px}.r2{top:267px}.r3{top:381px}
+.person{display:flex;gap:18px;align-items:center}
+.avatar{border-radius:50%;background:#153340;color:#47B4D0;width:51px;height:51px;text-align:center;line-height:51px;font-weight:800;font-size:23px}
+.state{font-size:27px;padding:8px 15px;justify-self:start;border-radius:10px;background:#CAE1E9}
+.status-done{position:absolute;left:1025px;top:173px;background:#47B4D0;border:2px solid #153340;padding:9px 17px;border-radius:10px;font-size:27px;font-weight:800}
+.cursor{position:absolute;left:1258px;top:685px;width:60px;height:60px}
+.notification{position:absolute;left:1465px;top:422px;width:325px;height:194px;padding:24px;background:#153340;color:#E5F3F7;border-radius:22px;box-shadow:8px 10px 0 #ADD0DC}
+.bell{font-size:42px;color:#47B4D0;margin-bottom:13px}.note{font-size:31px;font-weight:800;line-height:1.35}
+.remind{position:absolute;left:1488px;top:710px;font-size:35px;font-weight:800;width:300px}
+.badge{position:absolute;left:110px;top:856px;font-size:24px;color:#597C88}
+#board-scene{width:1920px;height:1080px;transform:translate(42px,38px) scale(.76);transform-origin:top left} #stage{background:#F2F8FA} #stage:after{content:'';position:absolute;left:0;top:900px;width:1920px;height:180px;background:#153340}
+html,body,#stage,#board-scene{width:1080px;height:1080px}#board-scene{transform:none}
+#stage:after{top:970px;width:1080px;height:110px}
+.header{left:48px;top:45px;font-size:24px;letter-spacing:2px}
+.title{left:48px;top:108px;font-size:60px}
+.hint{left:335px;top:893px;font-size:21px}
+.board{left:42px;top:225px;width:996px;height:460px;box-shadow:8px 10px 0 #B5D5DF}
+.bar{height:64px;font-size:25px}
+.cols{grid-template-columns:1.3fr 1fr .7fr 1fr;padding:20px 24px;font-size:25px}
+.row{left:16px;right:16px;grid-template-columns:1.3fr 1fr .7fr 1fr;font-size:28px;height:90px}
+.r1{top:133px}.r2{top:235px}.r3{top:337px}
+.avatar{width:37px;height:37px;line-height:37px;font-size:20px}.person{gap:10px}
+.state{font-size:25px;padding:8px 10px}
+.status-done{left:752px;top:152px;font-size:25px;padding:8px 12px}
+.cursor{left:950px;top:520px}
+.notification{left:335px;top:750px;width:675px;height:124px;padding:20px 25px;display:flex;gap:24px;align-items:center}
+.bell{font-size:29px;white-space:nowrap;margin:0}.note{font-size:29px}
+.remind{left:335px;top:732px;width:680px;font-size:32px;opacity:0!important}
+.badge{left:335px;top:765px;width:670px;font-size:29px;line-height:1.5}
+</style></head><body>
+<div id="stage" data-composition-id="sales-task-board" data-start="0" data-duration="6.8666666667" data-fps="30" data-width="1080" data-height="1080">
+<div id="board-scene" class="clip" data-start="0" data-duration="6.8666666667">
+<div class="header">01 / 任务看板</div><div class="title">谁在做？做到哪？</div><div class="hint">流程示意 · 非实际后台数据</div>
+<div class="board"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>团队任务</span></div><div class="cols"><span>待办事项</span><span>负责人</span><span>到期时间</span><span>当前状态</span></div>
+<div class="row r1"><span>跟进客户</span><span class="person"><b class="avatar">A</b>销售 A</span><span>今天</span><span class="state">待完成</span></div>
+<div class="row r2"><span>回复咨询</span><span class="person"><b class="avatar">B</b>销售 B</span><span>明天</span><span class="state">进行中</span></div>
+<div class="row r3"><span>确认需求</span><span class="person"><b class="avatar">C</b>销售 C</span><span>本周</span><span class="state">待完成</span></div>
+<div class="status-done">✓ 已完成</div></div>
+<div class="notification"><div class="bell">● 到期提醒</div><div class="note">跟进任务 需要处理</div></div><div class="remind">打开看板 查看进度</div>
+<svg class="cursor" viewBox="0 0 60 60"><path d="M7 3 L9 48 L22 35 L35 57 L45 50 L31 30 L49 27 Z" fill="#47B4D0" stroke="#153340" stroke-width="3"/></svg>
+<div class="badge">任务、负责人、期限和状态，在同一处查看。</div>
+</div></div><script src="assets/gsap.min.js"></script><script>
+const tl=gsap.timeline({paused:true});
+// Authored event times scale explicitly; root seek ignores playback timeScale.
+const T=(seconds)=>seconds*206/270;
+tl.fromTo(".header",{opacity:0,y:20},{opacity:1,y:0,duration:T(.35)},T(0));
+tl.fromTo(".title",{opacity:0,y:30},{opacity:1,y:0,duration:T(.5),ease:"power3.out"},T(.13));
+tl.fromTo(".board",{opacity:0,y:80},{opacity:1,y:0,duration:T(.6),ease:"power3.out"},T(.35));
+tl.fromTo(".r1,.r2,.r3",{opacity:0,x:-60},{opacity:1,x:0,duration:T(.45),stagger:T(.28),ease:"power2.out"},T(.95));
+tl.fromTo(".notification",{opacity:0,x:75},{opacity:1,x:0,duration:T(.5),ease:"power3.out"},T(3.0));
+tl.fromTo(".remind",{opacity:0,y:18},{opacity:1,y:0,duration:T(.4)},T(3.4));
+tl.fromTo(".cursor",{opacity:0,x:220,y:70},{opacity:1,x:0,y:0,duration:T(.7),ease:"power2.inOut"},T(4.4));
+tl.to(".cursor",{x:-50,y:-130,duration:T(.65),ease:"power2.inOut"},T(5.2));
+tl.to(".r1 .state",{opacity:0,duration:T(.12)},T(5.7));
+tl.fromTo(".status-done",{opacity:0,scale:.8},{opacity:1,scale:1,duration:T(.4),ease:"back.out(1.4)"},T(5.9));
+tl.to(".cursor",{opacity:0,duration:T(.2)},T(6.6));
+tl.to(".notification",{opacity:0,y:-20,duration:T(.20)},T(5.7));
+tl.fromTo(".badge",{opacity:0,y:16},{opacity:1,y:0,duration:T(.4)},T(6.8));
+
+window.__timelines["sales-task-board"]=tl;
+</script></body></html>

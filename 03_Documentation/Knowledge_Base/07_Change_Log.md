@@ -11,3 +11,7 @@ Added per-video workspace creation, full TXT/SRT + cover + production-report del
 
 ## 2026-09-13 / 0.2.5
 Added brand-driven styles, subtle logo watermarks, mandatory synchronized presenter circles for full-screen inserts and semantic animation triggers. Updated executable new-plan/default audit rate to absolute 1.2. Added 11 regression cases; 161 total tests passed on the original development machine. Main Skill and two local auxiliary entries installed with manifest hashes checked. No student-machine or complete human audiovisual acceptance is inferred.
+
+## 2026-09-21 GitHub总Skill整合与ChatCut主路线
+
+成组合入比例确认、AIVD/类型命名、五项社媒交付、实操helper与规则，统一ChatCut主路线和逐事件声音；保留历史、PRIVATE规则、核心0.2.5。176项回归通过，未重剪/迁移视频。详见[26_GitHub_Skill_Integration.md](26_GitHub_Skill_Integration.md)。

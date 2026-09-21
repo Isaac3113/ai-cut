@@ -83,7 +83,7 @@ class FinalSubtitleTests(unittest.TestCase):
             self.assertIn("actual_video_caption_match", manifest["not_verified"])
             with self.assertRaises(FileExistsError): module.export(source, directory / "final", 30)
             with self.assertRaises(ValueError): module.export(source, directory / "invalid", 30, duration_frames=130)
-            self.assertFalse((directory / "invalid.srt").exists())
+            self.assertFalse((directory / "invalid_字幕.srt").exists())
 
 
 if __name__ == "__main__":

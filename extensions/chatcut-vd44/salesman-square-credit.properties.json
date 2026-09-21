@@ -1,0 +1,32 @@
+[
+  {
+    "key": "title",
+    "label": "音乐与作者",
+    "type": "text",
+    "defaultValue": "Life of Riley — Kevin MacLeod (incompetech.com)"
+  },
+  {
+    "key": "license",
+    "label": "使用许可",
+    "type": "text",
+    "defaultValue": "CC BY 4.0 · creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "key": "edits",
+    "label": "修改说明",
+    "type": "text",
+    "defaultValue": "Excerpt, fades and gain adjustment"
+  },
+  {
+    "key": "color",
+    "label": "文字颜色",
+    "type": "color",
+    "defaultValue": "#153340"
+  },
+  {
+    "key": "fontFamily",
+    "label": "字体",
+    "type": "font",
+    "defaultValue": "Noto Sans SC"
+  }
+]

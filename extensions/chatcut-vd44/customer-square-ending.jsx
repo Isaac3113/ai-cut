@@ -1,0 +1,1 @@
+const Component=({item})=>{const props=item.props;const rootStyle={position:"absolute",inset:0,backgroundColor:props.background};const stripe={position:"absolute",left:0,top:0,bottom:0,width:props.stripeWidth+"%",backgroundColor:props.accent};return <div style={rootStyle}><div style={stripe}/></div>;};

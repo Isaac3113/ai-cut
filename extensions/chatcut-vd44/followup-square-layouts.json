@@ -1,0 +1,140 @@
+{
+  "description": "1:1 spatial variants; same frame events as landscape. Create independent MG assets, do not overwrite shared landscape assets.",
+  "canvas": {
+    "width": 1080,
+    "height": 1080,
+    "fps": 30
+  },
+  "task": {
+    "durationInFrames": 445,
+    "code": "const Component=({item})=>{const props=item.props;const f=useCurrentFrame();const ok=f>=264;const deg=interpolate(f,[0,264,330],[0,290,360],{extrapolateRight:\"clamp\",extrapolateLeft:\"clamp\"});const fill=interpolate(f,[264,420],[0,100],{extrapolateRight:\"clamp\",extrapolateLeft:\"clamp\"});return <div style={{width:\"100%\",height:\"100%\",position:\"relative\",background:props.bgColor,color:props.ink,fontFamily:props.fontFamily}}><div style={{position:\"absolute\",left:65,top:92,fontSize:66,fontWeight:900}}>{props.title}</div><div style={{position:\"absolute\",left:85,top:352,width:210,height:210,border:\"12px solid \"+props.accent,borderRadius:\"50%\"}}><div style={{position:\"absolute\",left:94,top:31,width:9,height:74,borderRadius:5,background:props.ink,transformOrigin:\"center 74px\",transform:\"rotate(\"+deg+\"deg)\"}}/></div><div style={{position:\"absolute\",left:355,top:315,width:655,height:350,boxSizing:\"border-box\",padding:36,borderRadius:30,background:\"#FFFFFF\",border:\"2px solid #D8E6EB\",boxShadow:\"0 20px 50px #15334018\"}}><div style={{fontSize:43,fontWeight:800}}>{props.pending}</div><div style={{marginTop:48,fontSize:34,lineHeight:1.6,fontWeight:800,color:ok?props.accent:\"#87552B\"}}>{ok?\"✓  \"+props.done:\"○  \"+(f>=209?props.risk3:f>=115?props.risk2:props.risk)}</div></div><div style={{position:\"absolute\",left:355,top:715,width:655,height:8,borderRadius:4,background:\"#D8E6EB\"}}><div style={{width:fill+\"%\",height:\"100%\",borderRadius:4,background:props.accent}}/></div><div style={{position:\"absolute\",right:65,top:835,fontSize:24,color:\"#526C75\"}}>{props.note}</div></div>};",
+    "properties": [
+      {
+        "key": "title",
+        "label": "title",
+        "type": "text",
+        "defaultValue": "把跟进交给系统"
+      },
+      {
+        "key": "pending",
+        "label": "pending",
+        "type": "text",
+        "defaultValue": "跟进有兴趣的客户"
+      },
+      {
+        "key": "risk",
+        "label": "risk",
+        "type": "text",
+        "defaultValue": "人一忘记，跟进就断了"
+      },
+      {
+        "key": "risk2",
+        "label": "risk2",
+        "type": "text",
+        "defaultValue": "广告费白白烧了"
+      },
+      {
+        "key": "risk3",
+        "label": "risk3",
+        "type": "text",
+        "defaultValue": "业绩又下降了"
+      },
+      {
+        "key": "done",
+        "label": "done",
+        "type": "text",
+        "defaultValue": "按流程持续跟进"
+      },
+      {
+        "key": "note",
+        "label": "note",
+        "type": "text",
+        "defaultValue": "流程示意"
+      },
+      {
+        "key": "fontFamily",
+        "label": "fontFamily",
+        "type": "font",
+        "defaultValue": "Noto Sans SC"
+      },
+      {
+        "key": "bgColor",
+        "label": "bgColor",
+        "type": "color",
+        "defaultValue": "#F2F8FA"
+      },
+      {
+        "key": "ink",
+        "label": "ink",
+        "type": "color",
+        "defaultValue": "#153340"
+      },
+      {
+        "key": "accent",
+        "label": "accent",
+        "type": "color",
+        "defaultValue": "#1384A0"
+      }
+    ]
+  },
+  "ending": {
+    "durationInFrames": 90,
+    "code": "const Component=({item})=>{const props=item.props;const f=useCurrentFrame();const y=interpolate(f,[0,15],[30,0],{extrapolateLeft:\"clamp\",extrapolateRight:\"clamp\"});return <div style={{width:\"100%\",height:\"100%\",background:props.bgColor,fontFamily:props.fontFamily,color:props.ink,position:\"relative\"}}><div style={{position:\"absolute\",left:40,right:40,top:625,textAlign:\"center\",fontSize:66,fontWeight:900,transform:\"translateY(\"+y+\"px)\"}}>{props.title}</div><div style={{position:\"absolute\",left:40,right:40,top:737,textAlign:\"center\",fontSize:43,fontWeight:700,color:props.accent}}>{props.cta}</div><div style={{position:\"absolute\",left:50,right:50,top:932,fontSize:22,lineHeight:1.65,color:\"#42626C\",textAlign:\"center\"}}><div>{props.credit}</div><div>{props.license}</div><div>{props.note}</div></div></div>};",
+    "properties": [
+      {
+        "key": "title",
+        "label": "title",
+        "type": "text",
+        "defaultValue": "先分兴趣，再做跟进"
+      },
+      {
+        "key": "cta",
+        "label": "cta",
+        "type": "text",
+        "defaultValue": "AGI TOP · 实战课程"
+      },
+      {
+        "key": "credit",
+        "label": "credit",
+        "type": "text",
+        "defaultValue": "Music: Digital Lemonade — Kevin MacLeod (incompetech.com)"
+      },
+      {
+        "key": "license",
+        "label": "license",
+        "type": "text",
+        "defaultValue": "CC BY 4.0 · creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "key": "note",
+        "label": "note",
+        "type": "text",
+        "defaultValue": "音轨已裁切并调整音量"
+      },
+      {
+        "key": "fontFamily",
+        "label": "fontFamily",
+        "type": "font",
+        "defaultValue": "Noto Sans SC"
+      },
+      {
+        "key": "bgColor",
+        "label": "bgColor",
+        "type": "color",
+        "defaultValue": "#F2F8FA"
+      },
+      {
+        "key": "ink",
+        "label": "ink",
+        "type": "color",
+        "defaultValue": "#153340"
+      },
+      {
+        "key": "accent",
+        "label": "accent",
+        "type": "color",
+        "defaultValue": "#1384A0"
+      }
+    ]
+  }
+}

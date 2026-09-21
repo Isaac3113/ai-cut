@@ -17,7 +17,7 @@ PREFIXES=('src/','tests/','schemas/','skill/','skill-adapters/','profiles/','pub
 SCRIPTS={'bootstrap.ps1','bootstrap_runtime.py','install_skill.py','install_extensions.py',
  'adapt_jianying_skill.py','build_jianying_project.py','audit_chatcut_snapshot.py',
  'verify_review_media.py','video_use_review.py','smoke_asr.py','smoke_asr_core.py',
- 'audit_visual_contract.py','export_final_subtitles.py','create_video_folder.py','smoke_media.py','smoke_motion.py','smoke_render.py','export_student_skill.py','export_public_release.py'}
+ 'audit_visual_contract.py','delivery_names.py','export_final_subtitles.py','create_video_folder.py','package_social_delivery.py','smoke_media.py','smoke_motion.py','smoke_render.py','export_student_skill.py','export_public_release.py'}
 EXTENSIONS=('extensions/remotion-vd44/','extensions/hyperframes-vd44/','extensions/chatcut-vd44/')
 EXCLUDE={'extensions/hyperframes-vd44/assets/gsap.min.js',
  'extensions/hyperframes-vd44/meta.json','extensions/remotion-vd44/src/Composition.tsx'}
@@ -84,7 +84,7 @@ def prepare(root=ROOT):
         data=text.encode('utf-8');scan(name,data);prepared[name]=data
         records.append({'file':name,'source_sha256':hashlib.sha256(raw).hexdigest(),
                         'release_sha256':hashlib.sha256(data).hexdigest(),'adapted':raw!=data})
-    templates={'README.md':'README.md','AGENTS.md':'AGENTS.md','INSTALL_SKILLS.md':'docs/INSTALL_SKILLS.md','VALIDATION.md':'docs/VALIDATION.md'}
+    templates={'README.md':'README.md','AGENTS.md':'AGENTS.md','INSTALL_SKILLS.md':'docs/INSTALL_SKILLS.md','VALIDATION.md':'docs/VALIDATION.md','WORKFLOW_AND_TOOLS.md':'docs/WORKFLOW_AND_TOOLS.md'}
     for source,target in templates.items():
         prepared[target]=(root/'publishing'/source).read_bytes()
     guide=root/'03_Documentation/Knowledge_Base/15_Student_Walkthrough.md'

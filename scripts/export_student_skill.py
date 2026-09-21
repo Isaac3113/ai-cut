@@ -52,9 +52,13 @@ def export(destination):
 
 安装前请让Codex检查你的现有同名Skill；已有修改先比较，不要直接覆盖。个人Skill通常放在你自己的.codex/skills目录。完整文件夹复制只能提供规则，不能自动提供剪辑软件、模型、账户和本项目执行器。
 
-本机路线的scripts/run.py从TALKING_HEAD_EDITOR_ROOT读取源码根；需要另有本项目源码与.venv。如果没有执行器源码，先解决此依赖再运行，不把安装Skill说成已能剪片。ChatCut路线使用学员自己的插件、账号与原片授权，不需要借用讲师账号。
+本创作者默认ChatCut为唯一主时间轴、最终导出和在线手改；学员明确选择自己的工具与素材授权。采用ChatCut路线时核对当前可调用工具、账号、项目及活动时间轴，不借用讲师账号。缺工具先说明，继续独立检查/分析/素材准备，不静默切换本地主路线。只有用户明确改选本机或剪映才切换。
 
-环境状态、商业许可和最终验收均不继承。对学员新视频须重新读取原片比例、实际转写与声音，不套用案例的人声增益；风格确认也不能从讲师案例自动批准。
+本机路线的scripts/run.py从TALKING_HEAD_EDITOR_ROOT读取源码根；需要另有本项目源码与.venv。没有执行器源码先解决依赖，不把安装Skill说成已能剪片。本地实操/动画工具也可以只制作无声素材，再实际导入ChatCut，不等于自动建立在线工程。
+
+环境状态、商业许可和最终验收均不继承。每条新视频先询问并收到本条视频比例的明确答复，再布局和剪辑；读取原片或封面比例不代替用户选择。同片修改沿用已确认比例。实际转写与声音逐片检查，不套用案例人声增益；讲师的风格认可不代替学员选择。
+
+采用本预设且含电脑实操时，约每3秒按真实目标选择六类效果中的合适组合并配同步轻SFX；没有实操则跳过。ChatCut里保留独立人声、BGM、逐事件SFX片段，不能只给一整条音效混音。外部效果素材的内部参数仍可能需源码重渲染；MP4/恢复ZIP不是可逐层手改的在线工程。
 
 依赖与来源见03_工具与依赖.json。修改源码/内部动画的示例工程与软件运行时不在这个规则包里；它不是可以离线还原讲师视频的工程包。
 '''
@@ -71,6 +75,13 @@ def export(destination):
         'chatcut_installation': 'Install the official ChatCut plugin from your own Codex plugin catalog and authorize your own account.',
         'local_runtime': 'Separate AI-Talking-Head-Editor source + Python environment, FFmpeg/FFprobe; FunASR if choosing local transcription.',
         'licenses': ['https://www.remotion.dev/license','https://gsap.com/standard-license/','https://github.com/google/fonts/tree/main/ofl/notosanssc'],
+        'social_delivery': {
+            'rules': 'talking-head-editor/references/social-delivery.md',
+            'required_source_tool': 'scripts/package_social_delivery.py from the source repository',
+            'image_generation': 'Use the available built-in imagegen; actual generation and image review are required.',
+            'optional_skills': ['facebook-copywriter', 'xiaohongshu-copywriter', 'image-prompt-designer'],
+            'private_factory_plugin_required': False,
+        },
         'student_environment_tested': False,
     }
     prepared['03_工具与依赖.json'] = json.dumps(dependencies, ensure_ascii=False, indent=2)
@@ -79,6 +90,10 @@ def export(destination):
         prepared[f'辅助规则/{name}.md'] = '# 本项目辅助入口的阅读副本\n\n此文件供教学说明；其中上游参考由官方Skill另行安装，不把本文件视为完整独立安装包。\n\n' + content
     order = ['SKILL.md', 'references/project-storage.md', 'references/approved-workflow.md','references/brand-and-presenter.md','references/master-playbook.md','references/user-preferences.md','references/editorial.md','references/visual-storytelling.md','references/reference-motion.md','references/chatcut.md','references/final-delivery.md','references/cover-prompt-worker.md','references/quality.md','references/manual-editing.md','references/tool-stack.md','references/operations.md','references/data-contract.md','references/jianying.md']
     combined = ['# 完整口播总Skill · 学员合订阅读版\n\n这份文件合并全部Markdown规则供上课阅读；可安装版本仍是旁边的talking-head-editor目录。案例参数与历史状态不代表学员机器已通过。\n']
+    order.insert(order.index('references/cover-prompt-worker.md'), 'references/social-delivery.md')
+    # A new routed reference must also be present in the complete reading edition.
+    order += sorted(p.relative_to(SOURCE).as_posix() for p in source_files
+                    if p.suffix == '.md' and p.relative_to(SOURCE).as_posix() not in order)
     for relative in order:
         def rebase_link(match):
             target=match.group(1)

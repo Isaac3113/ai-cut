@@ -33,6 +33,7 @@ class PublicReleaseTests(unittest.TestCase):
 
     def test_license_files_retained_but_runtime_and_private_history_excluded(self):
         self.assertTrue(release.eligible('LICENSE'))
+        self.assertTrue(release.eligible('scripts/delivery_names.py'))
         self.assertTrue(release.eligible('extensions/hyperframes-vd44/upstream/HyperFrames-LICENSE.txt'))
         self.assertFalse(release.eligible('extensions/hyperframes-vd44/assets/gsap.min.js'))
         self.assertFalse(release.eligible('03_Documentation/Knowledge_Base/13_ChatCut_Integration.md'))

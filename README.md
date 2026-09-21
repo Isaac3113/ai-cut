@@ -1,6 +1,6 @@
 # Talking Head Editor · 教学口播剪辑总 Skill
 
-当前规则与执行器版本0.2.5；品牌/圆窗审计见主Skill的brand-and-presenter.md。历史渲染证据与新规则实际验收分开记录。
+2026-09-21整合版：保留原Python执行器0.2.5及动画扩展；合入比例确认、双平台五项素材、类型命名、AIVD连续编号、实操六类效果与ChatCut主路线规则。规则更新不等于已连接云端或完成新视频验收。
 
 由 Codex 理解口播内容，用 ChatCut 管理可编辑主时间轴，按场景调用 HyperFrames 和 Remotion 制作动画。包含完整规则、Python执行器、两套动画源码、原生重点字示例、检查程序和回归测试。
 
@@ -9,20 +9,26 @@
 ## 第一次按这个顺序看
 
 1. **[总 Skill 入口](skill/talking-head-editor/SKILL.md)**：决定路线，守住单一主时间轴。
-2. **[完整执行流程与小 Skill 顺序](skill/talking-head-editor/references/approved-workflow.md)**：16步从接收、粗剪、选材、动画到导出；包含历次反馈形成的规则。
+2. **[完整执行流程与小 Skill 顺序](skill/talking-head-editor/references/approved-workflow.md)**：从接收、粗剪、选材、动画到导出的完整步骤；包含历次反馈形成的规则。
 3. **[已认可预设](skill/talking-head-editor/references/user-preferences.md)** 与 **[完整质量规则](skill/talking-head-editor/references/master-playbook.md)**。
 4. 使用网页编辑时读 **[ChatCut流程](skill/talking-head-editor/references/chatcut.md)**；动画选型看 **[两引擎分工](skill/talking-head-editor/references/reference-motion.md)**。
 5. **[验收](skill/talking-head-editor/references/quality.md)** → **[手动修改/恢复](skill/talking-head-editor/references/manual-editing.md)**。
 
 日常只调用 `$talking-head-editor`。辅助Skill按场景加载，不需要把所有工具依次运行一遍。
 
+## 当前统一路线
+
+对本仓库创作者，ChatCut是默认主编辑时间轴与最终导出入口；仅明确选择其他主路线时切换。换电脑先核对实际工具、账号、项目ID和当前时间轴，缺连接先说明，不静默改为本机工程。复杂特效可由本机工具生成素材再导入ChatCut；字幕、人声、音乐与逐事件音效保留独立轨道/片段。外部特效素材的内部参数仍可能需要源码重渲染。
+
+本机可恢复ZIP与最终MP4不等于ChatCut可编辑时间轴。详见[工具与工程说明](docs/WORKFLOW_AND_TOOLS.md)；本次代码整合没有创建或迁移用户的在线视频工程。
+
 ## 主要规则
 
 - 保留真人、原声、事实、否定和条件；先做完整语义粗剪，再包装；删改可恢复。
-- 默认按原片比例输出一版；口播主体绝对1.2倍一次，字幕和事件共同映射；外部动画/BGM不重复加速。
-- 每3～5秒有相关可见变化；画面先有对象/动作/条件/结果，再配重点字。
+- 每条新视频先询问并取得用户确认的视频比例，只做所选一版；口播主体绝对1.2倍一次，字幕和事件共同映射；外部动画/BGM不重复加速。
+- 普通口播每3～5秒有相关可见变化；有真实电脑实操则约每3秒安排重点放大、框选、聚光、下划线、脉冲或流程推进，配同步轻音效；无实操不套用。重点字放大，基础字幕可读。
 - HyperFrames做短状态卡，Remotion做精确多步骤/计时/片尾，简单重点字用ChatCut原生层。
-- 音乐与SFX分别极轻，人声清楚。先处理原声再混音，不在混合后整体提高响度。
+- 音乐轻且能听见、音效与重点动作同步可听，人声清楚；旧极低增益不是新素材固定上限。先处理原声再混音，不在混合后整体提高响度。
 - 使用真实素材或标明示意；采购有授权，素材许可和公开分发权限分开。
 - 实际导出、观看、试听和检查分别记录。风格已获原创作者认可，不证明其他视频或机器已经通过。
 - 交付前确认浏览器真实选中的新版时间轴，打开关键动画，并核对完整MP4；不只交单独动画素材。
@@ -72,9 +78,11 @@ Node>=22（案例使用24）、npm、Chrome与FFmpeg。安装不包含商业许�
 ```text
 使用 $talking-head-editor，沿用已认可动作节奏，使用我的Logo品牌配色、淡水印和全屏素材动态圆窗。
 原片：<路径>；文稿/术语：<可选>；素材：<可选文件夹>。
-用ChatCut作为主时间轴，按场景选HyperFrames/Remotion。
-保留原意原声，按原片比例一版，口播相对原片绝对1.2倍一次，音乐与音效极轻。
-先粗剪，再安排真实画面和对象动作。交付完整MP4、字幕、正确可见工程及修改记录。
+用ChatCut作为主时间轴，开始前核对工具连接和已有工程；缺连接先说明，不静默换路线。按场景选HyperFrames/Remotion或本机实操素材工具。
+保留原意原声，先确认本条视频比例再做所选一版，口播相对原片绝对1.2倍一次，音乐轻且能听见、重点音效同步可听。
+先粗剪，再安排真实画面和对象动作；有电脑实操时约每3秒安排合适效果并配同步音效，没有实操则跳过。
+人声、背景音乐、逐事件音效保留独立轨道或片段，方便在ChatCut逐个调整；外部动画内部参数保留源码供重渲染。
+项目用AIVD连续编号加确认主题，同片修改沿用编号。交付完整MP4、字幕、ChatCut工程链接/时间轴标识及修改记录。
 ```
 
 ## 分享和开发
@@ -90,4 +98,7 @@ Node>=22（案例使用24）、npm、Chrome与FFmpeg。安装不包含商业许�
 
 ## Complete deliveries and project storage
 
-Each full video includes MP4 with cover, standalone cover, plain TXT, SRT, full production explanation, per-second/per-frame records and honest QA. Read `skill/talking-head-editor/references/final-delivery.md`. Keep active code, dependencies and work/cache outside OneDrive. Use `scripts/create_video_folder.py --hub "YOUR_PROJECT_HUB" --name "AIVD - Your topic"` to create separate per-video media/delivery and local-work folders; revisions reuse the pair. The Hub has no implicit code-root default. Private footage and exports are excluded from Git. Repository visibility remains the owner’s explicit choice.
+Each full video includes MP4 with cover, standalone cover, plain TXT, SRT, full production explanation, per-second/per-frame records and honest QA. Read `skill/talking-head-editor/references/final-delivery.md`. Keep active code, dependencies and work/cache outside OneDrive. Use `scripts/create_video_folder.py --hub "YOUR_PROJECT_HUB" --name "AIVD 5 - Your confirmed topic"` to create separate per-video media/delivery and local-work folders; revisions reuse the pair. The Hub has no implicit code-root default. Private footage and exports are excluded from Git. Repository visibility remains the owner’s explicit choice.
+
+
+编号5仅为例子，创建前核对已有AIVD编号；已有视频修改不增加编号。缺主题先询问，不以原片001或拍摄日期代替正式项目名。每条完整视频还交付Facebook/小红书两篇文案、Facebook封面、小红书竖版与4:3横版封面；既有原片/历史交付不批量改名。音乐“降低30%”仅是已指定案例相对已认可音轨乘0.70，不是每条重复降低或所有音乐的默认值。

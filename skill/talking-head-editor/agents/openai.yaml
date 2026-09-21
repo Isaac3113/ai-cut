@@ -1,4 +1,4 @@
 interface:
   display_name: "口播剪辑员工"
-  short_description: "按原片比例剪口播，保留原声，搭配流程动作、重点字、轻音效与可恢复工程"
-  default_prompt: "使用 $talking-head-editor 按我的总规则剪辑真人口播：原片比例一版、绝对1.2倍速、Logo品牌色与淡水印、全屏素材同步真人圆窗、每3～5秒有意义画面变化，保留原声并提供可恢复工程。"
+  short_description: "默认用ChatCut交付可编辑口播工程，有实操时加入重点效果、流程引导与同步音效"
+  default_prompt: "使用 $talking-head-editor，先核对ChatCut连接和已有工程、确认视频比例；以ChatCut为主时间轴，原片直接1.2倍一次，有实操时按约三秒重点效果配同步音效，沿用品牌与AIVD命名并交付可编辑工程；缺连接先说明，不静默换工具。"

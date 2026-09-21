@@ -1,0 +1,1 @@
+const Component=({item})=>{const props=item.props;const rootStyle={position:"absolute",inset:0,backgroundColor:props.transparentBackground?"transparent":props.bgColor};return <div style={rootStyle}/>;};

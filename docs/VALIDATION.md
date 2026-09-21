@@ -29,3 +29,11 @@ The per-video directory helper now separates Project Hub media/deliveries from l
 2026-09-13 storage correction verified on the existing computer: 150 tests passed in the maintenance checkout (11.588s) and independently in the distribution checkout (11.026s). This is not new-machine validation. Legacy OneDrive removal is still pending the owner's other-computer confirmation; runtime/Skill now use the local checkout. No new full-video listening or rendering claim.
 
 2026-09-13 follow-up: the owner confirmed the old OneDrive copy was used only on this computer. Legacy source/cache removal is now COMPLETE; originals were moved to an off-OneDrive backup, not deleted. Media and deliveries remain in the Hub. Post-move real runtime, existing job, model/Skill hashes, representative transcode/decode and unchanged subtitle checks passed. No implementation change or new-machine/full-film acceptance claim.
+
+## 2026-09-21 整合后复核
+
+目标checkout完整176项unittest通过；原始沙箱/路径失败及修正见KB26。Skill格式验证通过；24个安装文件与维护源码逐文件SHA256一致，保留原source_root。目标源码的完整学员包实际导出33文件（其中24个总Skill文件），ZIP CRC/逐文件哈希、主Skill链接与文本隐私扫描通过。出版allowlist内的所有规则/代码与经脱敏的维护源码一致。
+
+实际只读审计已认可案例配置：43个实操事件、六类效果、最大起点间隔3.0秒、cadence_ok=true；独立helper代码SHA256与已认可版本相同。本轮未重新渲染或视听视频。前向审查覆盖缺ChatCut连接、新片未选比例、已确认方形实操逐个音效编辑、同片字幕修改不重复降低音乐、明确本机路线与9:16源限制；修正发现的旧默认/交付数量/路径冲突。
+
+新Remotion示例并非全部注册在旧默认入口，私人头像不随源码分发，详见WORKFLOW_AND_TOOLS.md。本机已有Python/FFmpeg用于验证，未声称在全新电脑安装、线上CI或新ChatCut工程通过。保留PRIVATE仓库规则，不改变可见性。

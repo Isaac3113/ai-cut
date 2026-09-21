@@ -10,6 +10,11 @@ from fractions import Fraction
 import hashlib
 import json
 from pathlib import Path
+import sys
+
+# Also supports loading by file path and running from another directory.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from delivery_names import typed_stem
 
 
 def frame_milliseconds(frame: int, fps: Fraction) -> int:
@@ -96,7 +101,8 @@ def prepare(cards, fps, *, offset_frames=0, duration_frames=None, paragraphs=Non
 def export(cards_path: Path, output_stem: Path, fps, *, offset_frames=0,
            duration_frames=None, paragraphs_path: Path | None = None):
     """Validate first, preserve existing outputs, and write byte/hash provenance."""
-    cards_path, output_stem = Path(cards_path).resolve(), Path(output_stem).resolve()
+    cards_path = Path(cards_path).resolve()
+    output_stem = typed_stem(Path(output_stem).resolve(), "字幕")
     raw = cards_path.read_bytes()
     cards = json.loads(raw.decode("utf-8-sig"))
     paragraphs = None
@@ -111,7 +117,7 @@ def export(cards_path: Path, output_stem: Path, fps, *, offset_frames=0,
         raise FileExistsError("Output exists; choose a new output stem. Historical files are preserved.")
     data = {"srt": srt.encode("utf-8"), "txt": plain.encode("utf-8")}
     manifest = {
-        "schema_version": 1, "input_path": str(cards_path),
+        "schema_version": 1, "naming_rule": "0.2.9", "input_path": str(cards_path),
         "input_sha256": hashlib.sha256(raw).hexdigest(),
         "fps": f"{rate.numerator}/{rate.denominator}",
         "frame_ranges": "start_inclusive_end_exclusive",
