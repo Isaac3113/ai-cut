@@ -27,3 +27,7 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 ## 2026-09-21 AIVD5最新合同
 
 落实AIVD5最新合同：1:1、自拟主题与条数（可超过5）、ChatCut、逐句精炼和完整操作录屏；只修改规则与记录，尚无切片导出。
+
+## 2026-10-08 固定片头片尾与跨电脑更新
+
+新增intro-outro单一规则入口：片内封面0.1秒、无淡入淡出；固定用户视频片尾以原始素材1.2倍一次作为当前实施参数，正文和BGM不复乘。相关执行入口解除旧1秒封面/约3秒头像片尾冲突。新增安全pull、Skill安装与OneDrive媒体分离的交接说明；媒体不入Git，不把规则同步或在线工程修改冒称实际导出/第二电脑恢复验证。见[KB28](28_Intro_Outro_And_Cross_Computer.md)。

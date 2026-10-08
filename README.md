@@ -16,6 +16,8 @@
 
 日常只调用 `$talking-head-editor`。辅助Skill按场景加载，不需要把所有工具依次运行一遍。
 
+2026-10-08包装更新：本用户片内封面只闪0.1秒（30fps为3帧，无淡入淡出）；固定片尾改用用户提供的视频，当前实施参数为原件1.2倍一次，正文和BGM不因此再加速。详见[固定片头片尾](skill/talking-head-editor/references/intro-outro.md)。换电脑先读[安全pull、Skill与素材同步](docs/CROSS_COMPUTER_UPDATE.md)及[KB28](03_Documentation/Knowledge_Base/28_Intro_Outro_And_Cross_Computer.md)；Git不包含私人片尾素材或在线工程。
+
 ## 当前统一路线
 
 对本仓库创作者，ChatCut是默认主编辑时间轴与最终导出入口；仅明确选择其他主路线时切换。换电脑先核对实际工具、账号、项目ID和当前时间轴，缺连接先说明，不静默改为本机工程。复杂特效可由本机工具生成素材再导入ChatCut；字幕、人声、音乐与逐事件音效保留独立轨道/片段。外部特效素材的内部参数仍可能需要源码重渲染。
@@ -65,7 +67,7 @@ Node>=22（案例使用24）、npm、Chrome与FFmpeg。安装不包含商业许�
 
 脚本可传 `-NodePath`、`-NpmCli`；Remotion可传 `-BrowserPath`，HyperFrames可传 `-FfmpegDirectory`。没有可用工具会明确失败，不默认沿用讲师个人路径。HyperFrames Install会下载并核对固定GSAP/字体哈希，Doctor/check/render分别验证引擎。
 
-`CustomerJourney`是四步流程教学示例，不是所有新口播的固定文案或时间。片尾需要将你有权使用的真实头像放在 `extensions/remotion-vd44/public/presenter.jpg`，并修改结束语/品牌后渲染；代码不附头像。当前场景模板为16:9，竖屏必须重新排版并验证。
+`CustomerJourney`是四步流程教学示例，不是所有新口播的固定文案或时间。仅明确选用旧头像片尾方案时，才将有权使用的真实头像放在 `extensions/remotion-vd44/public/presenter.jpg`，修改结束语/品牌后渲染；代码不附头像。本用户当前使用上述固定视频片尾。当前Remotion场景模板为16:9，竖屏必须重新排版并验证。
 
 ### 辅助 Skill
 

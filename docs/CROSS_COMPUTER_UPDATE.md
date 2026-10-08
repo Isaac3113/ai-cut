@@ -1,0 +1,43 @@
+# 换电脑更新：规则、素材与同一个在线工程
+
+GitHub同步本仓库代码、Skill与技术说明；OneDrive同步Project Hub资料和私人媒体；ChatCut保存在线主时间轴。三者分别核对，`git pull`不等于视频、依赖、账号或Skill安装已经同步。
+
+## 更新前后顺序
+
+1. 在本机`C:\Codex Workspace\talking-head-editor`核对repo；如果使用了其他本机路径，先核对remote再采用实际位置。不要在OneDrive旧副本开发，不覆盖本地修改或迁入缓存。
+2. 确认`origin`是`Isaac3113/talking-head-editor`且仓库仍为PRIVATE。用GitHub账户的当前权限核对可见性，不根据旧文档就宣称已验证；不要求用户贴密码或token。
+3. 查看当前分支、`git status --short`和diff。存在本地工作、不同分支或分叉时先说明并保留，比较后处理；不自动`reset --hard`、`clean`、强制checkout、删除或覆盖。
+4. 仅在正确仓库、main干净、提交关系允许快进时执行`git fetch origin`、`git pull --ff-only origin main`。核对本地HEAD与`origin/main`；快进失败时保留现场，不能用强制同步掩盖冲突。
+5. 阅读`AGENTS.md`、`README.md`、KB入口、总Skill、`references/intro-outro.md`及当前任务相关规则。安装前查看个人Skill的`installation.json`和本地改动，按`docs/INSTALL_SKILLS.md`保留并协调已有安装；运行现有`scripts/install_skill.py`更新Skill。没有Python运行环境时先核对现有依赖，再按README恢复必要环境，不复制另一台电脑的`.venv`、模型、`node_modules`或缓存。
+6. 运行本机doctor并如实区分缺失工具。只有规则修改时不无故安装ASR模型、商业工具或另一套引擎。
+7. 从本机OneDrive中定位Project Hub的`公共素材/固定片尾/结尾模板.mp4`，确保不是未下载占位符；核对KB28记录的源文件SHA256、尺寸、音轨与时长。不要假定用户目录仍为`C:\Users\User`，也不要要求另一台电脑在相同`Videos`路径放一份。
+8. 继续本片前先读取当前任务交接信息和Hub该片资料，确认ChatCut当前账号、projectId、活动timelineId及浏览器实际选择。打开既有工程并读取最新状态，不重复创建，不把本地旧快照覆盖在线较新的修订。凭证/带临时授权参数的URL不写入Git。
+9. 视频导出能力和剩余额度必须当场核对。导出受限时只报告规则/工程的实际完成状态，不虚构已生成视频，也不默默切换本机最终渲染路线。只有真实输出通过检查后才更新`05_成片/最新版`。
+
+## 本次要记住的包装规则
+
+- 片内封面0.1秒：30fps为3帧，无淡入淡出；独立封面与社媒五项继续交付。
+- 固定片尾使用用户提供的原始`结尾模板.mp4`；当前工程默认以原件1.2倍一次播放。用户没有指定这个精确数字，后续明确要求可覆盖。
+- 只改变片尾速度，正文不再乘速；正文BGM不随片尾加速。片尾原音轨保留且不重复，正文BGM结束后再由片尾自身声音承接。
+- 适配已确认画幅，不裁核心Logo文字；片尾不叠第二个水印、不强加口播圆窗/基础字幕。
+- 缩短片头后同步移动正文画面、原声、字幕、圆窗、MG和SFX；跨片头的连续BGM可保留0帧起点并按正文新终点裁定，贴正文起点的BGM随正文平移。重新从同一个主时间轴导出字幕。保护已修复的完整讲话范围，不能又按词切得过紧。
+
+以下提示词可交给另一台电脑的Codex。执行时使用当前GitHub主线和实时工程状态，不把文字里的要求当作已经完成的验证。
+
+```text
+请更新这台电脑的 talking-head-editor 项目，并按最新规则继续工作。
+
+先在 C:\Codex Workspace\talking-head-editor 核对实际repo、origin、当前分支和git status/diff。origin应为Isaac3113/talking-head-editor，并核对PRIVATE可见性。若实际repo在别的非OneDrive本机路径，核对remote后使用该路径。保留本地未提交工作、未推送提交和个人Skill修改；不要reset --hard、clean、强制覆盖或删除。
+
+正确仓库在main、工作区干净且允许快进时，git fetch origin，再git pull --ff-only origin main，核对HEAD==origin/main；遇到本地修改或分叉先比较和说明，不强制同步。
+
+读取AGENTS.md、README.md、03_Documentation/Knowledge_Base/00_Start_Here.md、03_Documentation/Knowledge_Base/28_Intro_Outro_And_Cross_Computer.md、skill/talking-head-editor/SKILL.md、skill/talking-head-editor/references/intro-outro.md和docs/CROSS_COMPUTER_UPDATE.md。保护并核对个人Skill installation.json归属及改动后，用本仓库scripts/install_skill.py更新安装，运行doctor，分别报告规则和运行环境结果。
+
+当前规则：片头封面只闪0.1秒，30fps为3帧，无淡入淡出；以后结尾用用户提供的原始“结尾模板.mp4”。当前实施参数是原始片尾直接1.2倍一次，只加快片尾；正文速度不变，BGM不整体加速。保留片尾自己的音轨，只播放一次；正文BGM在正文结束处收尾。适配本条已确认比例，不裁关键Logo文字，片尾不重复叠Logo水印或强加真人圆窗、口播字幕。独立封面与社媒五项不取消。
+
+素材不在Git中。请从本机OneDrive的口播Project Hub/公共素材/固定片尾/结尾模板.mp4取得完整原件，核对KB28的SHA256；不能把旧电脑Videos路径当唯一入口。代码、运行时和缓存留在C盘非OneDrive repo。
+
+默认继续ChatCut同一个项目与唯一有效时间轴。先从当前任务交接或Hub资料核对projectId/timelineId，再读取在线最新状态；不要重复创建，也不要用旧快照覆盖新工程。缩短片头时同步平移正文画面、原声、字幕、MG、圆窗和SFX；跨片头的连续BGM可保留0帧起点并按正文新终点裁定，贴正文起点的BGM随正文平移。保护完整字音，重新导出字幕；已完成的位移不能重复执行。当前账号、工具、导出额度当场核对；工程修改、MP4真实导出、完整观看/试听和另一电脑恢复验证分开报告。没有真实导出就不要说视频已经完成，不静默改用其他主路线。
+
+更新完成后告诉我实际commit、Skill安装结果、素材哈希和在线工程状态，以及仍需完成的项目。
+```

@@ -9,4 +9,6 @@
 # Start here
 Read ../../README.md and ../../skill/talking-head-editor/references/approved-workflow.md. The approved teaching preset is reusable; every new video is separately checked. This public snapshot contains source, not private footage or account permissions.
 
+2026-10-08: [KB28 固定片头片尾与跨电脑更新](28_Intro_Outro_And_Cross_Computer.md)记录0.1秒封面、用户视频片尾、媒体哈希及安全更新边界。规则正文在master Skill的references/intro-outro.md；一键复制交接与安全pull见docs/CROSS_COMPUTER_UPDATE.md。
+
 2026-09-13: Keep code/runtime/work outside OneDrive; the Project Hub stores documents, media and deliveries. Directory helper requires a configured Hub and separately creates local work. Existing Chinese titles are preserved; Windows CLI output uses UTF-8. See master references/project-storage.md. Actual regression status: docs/VALIDATION.md.
