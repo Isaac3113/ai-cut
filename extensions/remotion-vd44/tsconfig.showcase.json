@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","files":["src/template-library/talking-head-effects/index.tsx"],"include":[],"exclude":[]}

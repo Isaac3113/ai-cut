@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-10-26",
+  "extension_code_license": "MIT",
+  "runtime": "MediaPipe Tasks ImageSegmenter 1.1.1",
+  "runtime_license": "Apache-2.0",
+  "runtime_package_url": "https://pypi.org/project/mediapipe/1.1.1/",
+  "api_documentation": "https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter/python",
+  "isolated_environment": ".runtime/segmentation-venv",
+  "main_venv_changed": false,
+  "media_uploaded": false,
+  "models": [
+    {
+      "id": "selfie-segmenter-float16-v1",
+      "path": ".runtime/models/mediapipe-selfie-segmenter-float16-v1/selfie_segmenter.tflite",
+      "url": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter/float16/1/selfie_segmenter.tflite",
+      "sha256": "191ac9529ae506ee0beefa6b2c945a172dab9d07d1e802a290a4e4038226658b",
+      "card_url": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Selfie%20Segmentation.pdf",
+      "card_sha256": "ef2e8d350891ba71699ac1e079658e697fc8d48c0f9253922990e907ecdade60",
+      "license": "Apache-2.0, explicitly in model card page 1",
+      "selected": false
+    },
+    {
+      "id": "selfie-multiclass-256-float32-v1",
+      "path": ".runtime/models/mediapipe-selfie-multiclass-256-float32-v1/selfie_multiclass_256x256.tflite",
+      "url": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/1/selfie_multiclass_256x256.tflite",
+      "sha256": "c6748b1253a99067ef71f7e26ca71096cd449baefa8f101900ea23016507e0e0",
+      "card_url": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Multiclass%20Segmentation.pdf",
+      "card_sha256": "59372fce0666d4c75b3877540fa77f80ac4b2a0f75e914711417f85fc490a9e6",
+      "license": "Apache-2.0, explicitly in model card page 1",
+      "selected": true
+    }
+  ],
+  "installed_wheels": [
+    {
+      "name": "mediapipe",
+      "version": "1.1.1",
+      "url": "https://files.pythonhosted.org/packages/ae/49/600556ec6305f28c13ea917c9222cb6de84f5f587312979835e7fedc6677/mediapipe-1.1.1-py3-none-win_amd64.whl",
+      "sha256": "a4b27829e808cd659e7cf481cbbbfc31917092a1ebcb7eafed2395dbabcd2499"
+    },
+    {
+      "name": "absl-py",
+      "version": "2.5.1",
+      "url": "https://files.pythonhosted.org/packages/b3/7d/01e62f59e4166af1be6238d9f2b7f3453630c51b8044b412d05b5606532a/absl_py-2.5.1-py3-none-any.whl",
+      "sha256": "721200f2f0e9960f2ca9dc3a2a706b201f5f75d812c158f059cbbe29eeafbdb8"
+    },
+    {
+      "name": "flatbuffers",
+      "version": "25.12.19",
+      "url": "https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl",
+      "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4"
+    },
+    {
+      "name": "sounddevice",
+      "version": "0.5.6",
+      "url": "https://files.pythonhosted.org/packages/8d/3e/cbc593c31a5f0d817b3fe97e64aa8461bd0f55cb07b67ce1b776296ae336/sounddevice-0.5.6-py3-none-win_amd64.whl",
+      "sha256": "7f4162f514f007b0bf25a3ccfed3f1705bc2ec311888a90232729eec4f57a4f4"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.23",
+      "url": "https://files.pythonhosted.org/packages/32/d1/a3652fe2c19134d0d15922177821d863cbd7e842d53a21bbe7e8e3a1b5ac/certifi-2026.10.23-py3-none-any.whl",
+      "sha256": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.11.2",
+      "url": "https://files.pythonhosted.org/packages/04/93/0d239bde12b308262265c2d98909b2f0ecad2b5deeae96241642e822e9c7/matplotlib-3.11.2-cp312-cp312-win_amd64.whl",
+      "sha256": "c5c1c68ee401fc98271263410f0e5ce88285abacf7627132914e8adf3d70ff43"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.4",
+      "url": "https://files.pythonhosted.org/packages/12/33/fefe62073dc8acfd0f2b9ed7c003af2f50aa61555e113e6db02b8f79f145/numpy-2.5.4-cp312-cp312-win_amd64.whl",
+      "sha256": "a7b1b6353e36a7e50de2973a38d705c88ee93adcf120673cee7f45a4a3fa223a"
+    },
+    {
+      "name": "opencv-contrib-python",
+      "version": "5.0.0.93",
+      "url": "https://files.pythonhosted.org/packages/09/29/6985260569ee3c7f6fcae252bc06e2a843e5b90eed665a2936bdd26fa283/opencv_contrib_python-5.0.0.93-cp37-abi3-win_amd64.whl",
+      "sha256": "461622db95c964652d4d8fda171034961c3de270f78a6095aaad31050771774a"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.4.0",
+      "url": "https://files.pythonhosted.org/packages/50/a9/dab08786bb4d77ef9a046b3c1be923be4e73c5d07d91f5a54e8ea9b09e41/contourpy-1.4.0-cp312-cp312-win_amd64.whl",
+      "sha256": "6e697d94e69f499ff6bebb899cae97a58d5d14f0e1fe9568b43a0248d2f9af8c"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "url": "https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl",
+      "sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.67.0",
+      "url": "https://files.pythonhosted.org/packages/c1/3a/625a6dd0173e88dbea1826405b4bcbfa06c6ca095310ed720caba36b2e43/fonttools-4.67.0-cp312-cp312-win_amd64.whl",
+      "sha256": "2bfab2f5d1d255dec82f4bd082a1c10e77df808e42210890f50a9c30bf91570e"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1",
+      "url": "https://files.pythonhosted.org/packages/6e/7c/7b210498f9f92e1cd7855f260fa69ef056881087b199ee20c208f0e4189a/kiwisolver-1.5.1-cp312-cp312-win_amd64.whl",
+      "sha256": "06a6917674de9e0fe3f66f5430787f59a9f2ddb64af9b714eaec547e29ef5c19"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "name": "pillow",
+      "version": "13.0.0",
+      "url": "https://files.pythonhosted.org/packages/ff/cd/73a79ecdc822076002eb24b5e1e4a530b0bb5310fcb6d239abbec877110b/pillow-13.0.0-cp312-cp312-win_amd64.whl",
+      "sha256": "ff3fe9eb621fbb9db4c4be33ab946f6bac5f98ab50ca8d3260503653656c961b"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3",
+      "url": "https://files.pythonhosted.org/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl",
+      "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "3.0.0",
+      "url": "https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl",
+      "sha256": "3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "url": "https://files.pythonhosted.org/packages/d9/79/615cc094e2fb508cade7de88d3b4f6c4ec2bab695c97bce9153dc65aadf5/cffi-2.1.1-cp312-cp312-win_amd64.whl",
+      "sha256": "f53e442b08449d42821fa4a4fba000095af9f62742a500f978a9f557ec44339a"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.12",
+      "url": "https://files.pythonhosted.org/packages/b6/ae/315bbeee126a769cbde43cf4908acb4b40408d8bf8bbf334dd7368d8dadf/pycparser-3.12-py3-none-any.whl",
+      "sha256": "a076f3f489b39b43ed13563a1dafe42447445bec2e294154ec5c57fcdda4c85e"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "url": "https://files.pythonhosted.org/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl",
+      "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac"
+    }
+  ],
+  "sources": [
+    {
+      "path": "segment_video.py",
+      "sha256": "468b1e7c0b8a28f4403acf2809bf63c974665ef6b886eadf100db5e5aef4f352"
+    },
+    {
+      "path": "README.md",
+      "sha256": "931fe001a08b583145814963e29e111543ca45d148f2a5a2f63031d992ef03ad"
+    },
+    {
+      "path": "requirements.lock.txt",
+      "sha256": "88f2d8b47ac3d3f18d731e8fcd9047aac4f339633b4117676a9b048e9a1ed560"
+    },
+    {
+      "path": "LICENSE.mediapipe.Apache-2.0",
+      "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8"
+    }
+  ],
+  "verification": {
+    "api_import": "passed",
+    "actual_sample_inference": "passed",
+    "four_sample_composites_viewed": "binary-r1, binary-r2, multiclass-r1",
+    "selected_model_reason": "Multiclass reduced large bright curtain remnants near shoulders; fast blurred hands and wrist gaps remain.",
+    "full_source_mask": {
+      "status": "complete",
+      "frame_count": 1434,
+      "verified_decoded_frame_count": 1434,
+      "width": 540,
+      "height": 960,
+      "fps": 30,
+      "source_start_seconds": 0.0,
+      "requested_source_duration_seconds": 47.77,
+      "last_source_sample_seconds": 47.766666666666666,
+      "encoded_duration_seconds": 47.8,
+      "held_tail_frames": 1,
+      "full_decode": "passed",
+      "elapsed_seconds": 200.59286150000116,
+      "processing_fps": 7.148808732657676,
+      "output_sha256": "f6c97268ff028e0c0f032c065666de8617e61d1da2c82c7189a5b2d6a77c4109",
+      "format": "Opaque full-range grayscale H264; no audio, no alpha",
+      "source_time_mapping": "Frame i corresponds to original source second i / 30."
+    },
+    "full_watch": "not_performed",
+    "pixel_perfect_matting": "not_claimed",
+    "full_mask_encoded_samples_viewed": [
+      15,
+      30
+    ],
+    "pip_check": "passed"
+  }
+}

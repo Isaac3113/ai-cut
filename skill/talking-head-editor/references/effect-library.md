@@ -4,6 +4,12 @@
 `template-catalog.json` 是目录入口。主Skill仍管理口播和ChatCut主时间轴。
 模板使用独立 `src/template-library/index.ts`，不改变既有 `src/Root.tsx`。
 
+真人原片的19项试剪另读[独立Showcase说明](../../../extensions/remotion-vd44/src/template-library/talking-head-effects/README.md)：
+入口为 `src/template-library/talking-head-effects/index.tsx`，由冻结主时间轴的源区间、
+同期人物alpha和图形层合成。它是独立composition，不改变既有55项模板目录或ChatCut主时间轴。
+蒙版准备按[隔离人物分割扩展](../../../extensions/segmentation/README.md)，不要把灰度蒙版直接当透明人物视频。
+本条部分时间边界仍需按新口播适配，源码/素材改变后使用新的render revision，避免复用旧bundle。
+
 ## 来源与范围
 
 - RenderComp/free-remotion-templates，固定提交
@@ -36,9 +42,11 @@
   放入口播、改中央胶囊、输入真人视频或换画幅均需适配。
 - OrbitMotion提供前后层级，不能生成透明人物；矩形原片不等于人物轮廓。
 - TextMaskVideo的静音视频、图片、渐变分支分别验证，不互相替代。
-- 剪纸、换景、背后标题墙、照片墙前景、破框和跟踪轮廓仍需人物遮罩。
-  本次没有安装或宣称完成真人抠像、跨帧稳定性和真人合成。
-- MediaPipe、BackgroundMattingV2为候选，未接入；模型许可须单独核对。
+- 剪纸、换景、背后标题墙、照片墙前景、破框和跟踪轮廓需要人物遮罩。
+  初次模板库接入未包含人物抠像；后续独立Showcase使用隔离MediaPipe流程与真实原片样本，
+  不代表精细发丝/手指、整段跨帧稳定性或完整参考复刻已经通过。
+- MediaPipe的版本、模型和许可在隔离扩展单独维护；BackgroundMattingV2仍为候选，
+  不因代码模板可用就安装其他模型或继承其素材授权。
 - 转场示例两张图形卡片不自动成为任意口播片段的转场。
 - 原片、模型、缓存和渲染视频不进Git。OneDrive保存媒体，Active Repo保存源码和技术KB。
 
