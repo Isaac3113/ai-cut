@@ -51,3 +51,5 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 ## 2026-10-26 用户确认后核对总Skill入口
 
 用户确认上述要求正确，并要求重新写入Skill及检查commit/push。核对现有封面风格、两种封面展示、成品确认、三平台草稿、固定首评、发布前再次确认及hashtag规则后，在总Skill补齐交付项目和hashtag的直接入口；完整规则仍维护在原参考页，避免多处名单和流程漂移。本次仅整理规则与Git同步，不执行视频重剪或发布；规则认可不代替具体草稿的post授权。
+
+复核同时消解social-delivery旧版固定深色标题与已认可暗底浅字风格的冲突：标题按所选风格、背景对比度和品牌色设计，具体以user-preferences为准；不改变封面风格可选及逐图检查要求。
