@@ -2,10 +2,12 @@
 
 执行存放或迁移前先读用户的共享规则及Project Hub内PROJECT_STRUCTURE.md。用户给OneDrive项目路径时，它是项目资料入口，不能推断为把源码、依赖或缓存也放进去。此前“所有内容同一个物理根”的本项目规则已纠正。
 
+本用户2026-10-26起以[精简交付入口](final-delivery.md#本用户精简交付入口)覆盖旧完整资料交付及06历史归档规定：最新版仅1个MP4、16:9／9:16两封面和含3份TXT的发布素材；技术资料、字幕、工程、检查证据留在`CODE_ROOT/work`。核实新成片与主要资产后清理本条被替代的旧成片，不另建旧交付备份，不自动归档到06；不碰原片、当前可恢复工程、必要素材或其他视频。
+
 ## 两个根，一条权威时间轴
 
-- `CODE_ROOT`：OneDrive之外、本次实际选定的Active Git Repo。按本Skill的`scripts/run.py`现有机制解析：先取`TALKING_HEAD_EDITOR_ROOT`，再取已安装Skill的`installation.json.source_root`，最后从该入口所在目录向上查找同时含`pyproject.toml`与`src/talking_head_editor`的源码根；找不到就明确报错。本用户当前电脑的`C:\Codex Workspace\AI-Talking-Head-Editor`仍是有效维护目录，仅记录本机现状，不是跨电脑写死默认，也不据此替换用户这次选择的checkout。源码、总Skill源码、技术知识库、动画源工程、.git、.venv、node_modules、模型、缓存和实际剪辑工作目录在所选根内；代码经private GitHub同步。
-- `PROJECT_HUB`：用户指定的资料项目；本用户使用OneDrive下Projects-AI-Talking-Head-Editor。保存PROJECT_STRUCTURE.md、需求、教学阅读件、原片、素材、参考、封面、字幕、完整制作说明与完整交付。这里不保留Active Git Repo、展开的运行时或缓存。
+- `CODE_ROOT`：OneDrive之外、本次实际选定的Active Git Repo。按本Skill的`scripts/run.py`现有机制解析：先取`TALKING_HEAD_EDITOR_ROOT`，再取已安装Skill的`installation.json.source_root`，最后从该入口所在目录向上查找同时含`pyproject.toml`与`src/talking_head_editor`的源码根；找不到就明确报错。本用户当前电脑已核对的Active Repo为`C:\Codex Workspace\talking-head-editor`；`AI-Talking-Head-Editor`属于历史维护路径，不能据此覆盖当前安装。此处只记录本机现状，跨电脑仍按实际checkout及安装记录定位。源码、总Skill源码、技术知识库、动画源工程、.git、.venv、node_modules、模型、缓存和实际剪辑工作目录在所选根内；代码经private GitHub同步。
+- `PROJECT_HUB`：用户指定的资料项目；本用户使用OneDrive下Projects-AI-Talking-Head-Editor。保存PROJECT_STRUCTURE.md、需求、教学阅读件、原片、素材、参考和本用户精简交付；字幕、制作说明及技术证据留本机工作目录。这里不保留Active Git Repo、展开的运行时或缓存。
 - 技术知识库只有CODE_ROOT/03_Documentation/Knowledge_Base一份正式维护位置；Hub记录链接，不另维护同步副本。可供分享的固定ZIP/阅读导出不属于第二份Active Repo。
 - ChatCut仍只有官方时间轴一条执行依据；本机模式仍沿用既有job/revision，存储分开不建立两套剪辑清单。
 
@@ -15,7 +17,7 @@ CODE_ROOT/
   .git/ .venv/ .runtime/
   03_Documentation/Knowledge_Base/
   work/videos/AIVD 5 - 视频主题/04_剪辑工程/
-    job或原有outputs/       实际工程、动画工作文件、抽帧、日志、缓存
+    job或原有outputs/       实际工程、字幕、报告、检查证据、动画工作文件、抽帧、日志、缓存
 
 PROJECT_HUB/
   PROJECT_STRUCTURE.md
@@ -26,8 +28,7 @@ PROJECT_HUB/
     02_自有素材/
     03_参考视频/
     04_剪辑工程/本机剪辑工程.md   只写位置及恢复入口，不复制运行时
-    05_成片/最新版/              本用户唯一交付入口：MP4、封面、TXT、SRT、说明与证据
-    06_历史交付/                 旧版本内部归档，不与最新版并列交付
+    05_成片/最新版/              本用户唯一交付入口：1 MP4、2封面、发布素材目录内3份TXT
   学员分发/                    完整Skill ZIP与教学阅读件
   项目资料/                    需求原稿、存储说明与小型验收报告
 ```
@@ -42,7 +43,7 @@ PROJECT_HUB/
 
 ## 实际创建与恢复
 
-每条新口播单独建文件夹，保留用户给的中文主题和全角问号；同片重剪沿用文件夹。依照2026-09-13最新要求，先在工作区生成并验证，再把旧交付移入06历史归档、更新05最新版的固定入口；给用户只展示最新版。目录移动前核对源/目标绝对路径都在本条视频资料目录内，并保存映射；不批量删除原片或恢复资料。Windows非法字符不静默替换。
+每条新口播单独建文件夹，保留用户给的中文主题和全角问号；同片重剪沿用文件夹。先在工作区生成并验证，再按上方精简规则更新05最新版、清理本条旧交付，不再自动备份或放入06；给用户只展示最新版。删除／移动前核对绝对路径及逐项清单处于本条允许处理的交付范围，保留内部操作记录；不批量删除原片或恢复资料。Windows非法字符不静默替换。
 
 在CODE_ROOT执行：
 
