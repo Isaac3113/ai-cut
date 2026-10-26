@@ -7,6 +7,8 @@
 > 2026-09-21 GitHub总Skill整合与ChatCut主路线：用户指定仓库已合入后续规则与配套代码，ChatCut为默认主路线，缺连接不静默换工具；本轮无视频迁移。当前证据读[26_GitHub_Skill_Integration.md](26_GitHub_Skill_Integration.md)。
 
 # Start here
+2026-10-26: [KB29 可复用代码特效库](29_Reusable_Effect_Library.md)记录50套现成模板、两项适配组件、独立调用入口、参考19项差距与本次真实渲染范围。
+
 Read ../../README.md and ../../skill/talking-head-editor/references/approved-workflow.md. The approved teaching preset is reusable; every new video is separately checked. This public snapshot contains source, not private footage or account permissions.
 
 2026-10-08: [KB28 固定片头片尾与跨电脑更新](28_Intro_Outro_And_Cross_Computer.md)记录0.1秒封面、用户视频片尾、媒体哈希及安全更新边界。规则正文在master Skill的references/intro-outro.md；一键复制交接与安全pull见docs/CROSS_COMPUTER_UPDATE.md。

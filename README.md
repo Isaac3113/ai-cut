@@ -18,6 +18,10 @@
 
 2026-10-08包装更新：本用户片内封面只闪0.1秒（30fps为3帧，无淡入淡出）；固定片尾改用用户提供的视频，当前实施参数为原件1.2倍一次，正文和BGM不因此再加速。详见[固定片头片尾](skill/talking-head-editor/references/intro-outro.md)。换电脑先读[安全pull、Skill与素材同步](docs/CROSS_COMPUTER_UPDATE.md)及[KB28](03_Documentation/Knowledge_Base/28_Intro_Outro_And_Cross_Computer.md)；Git不包含私人片尾素材或在线工程。
 
+## 可复用剪辑特效库（2026-10-26）
+
+已加入[中文模板目录与参考19项对照](extensions/remotion-vd44/TEMPLATE_LIBRARY.md)：固定来源的RenderComp 50套MIT模板、RemotionUI两项适配组件及三项中文参数示例。使用独立 `run-library.ps1` 入口，保留原有视频Root；运行时版本不变。模板、人物抠像、真实原片合成和最终ChatCut导出分别验收，不能互相替代。来源、适配及实际验证见[KB29](03_Documentation/Knowledge_Base/29_Reusable_Effect_Library.md)。
+
 ## 当前统一路线
 
 对本仓库创作者，ChatCut是默认主编辑时间轴与最终导出入口；仅明确选择其他主路线时切换。换电脑先核对实际工具、账号、项目ID和当前时间轴，缺连接先说明，不静默改为本机工程。复杂特效可由本机工具生成素材再导入ChatCut；字幕、人声、音乐与逐事件音效保留独立轨道/片段。外部特效素材的内部参数仍可能需要源码重渲染。

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "adapted_on": "2026-10-26",
+  "upstream_repository": "https://github.com/riaz37/remotion-ui",
+  "upstream_commit": "0aecaca2b61a167992e1205d10e4da16d8a71331",
+  "upstream_license": "MIT",
+  "license_file": "upstream/LICENSE",
+  "upstream_sources": [
+    {
+      "upstream_path": "apps/web/registry/bases/default/primitives/orbit-motion.tsx",
+      "url": "https://raw.githubusercontent.com/riaz37/remotion-ui/0aecaca2b61a167992e1205d10e4da16d8a71331/apps/web/registry/bases/default/primitives/orbit-motion.tsx",
+      "local_path": "upstream/orbit-motion.tsx.txt",
+      "sha256": "4f1c65d37431326036e6f08cdeea3edd82218d191f70e21290d23036878a4367",
+      "stored_unmodified": true
+    },
+    {
+      "upstream_path": "apps/web/registry/bases/default/primitives/text-mask-video.tsx",
+      "url": "https://raw.githubusercontent.com/riaz37/remotion-ui/0aecaca2b61a167992e1205d10e4da16d8a71331/apps/web/registry/bases/default/primitives/text-mask-video.tsx",
+      "local_path": "upstream/text-mask-video.tsx.txt",
+      "sha256": "4c432b1395137fe0e29b97afa92b292b2bd72b6c19468d9310bfc9e600a23819",
+      "stored_unmodified": true
+    },
+    {
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/riaz37/remotion-ui/0aecaca2b61a167992e1205d10e4da16d8a71331/LICENSE",
+      "local_path": "upstream/LICENSE",
+      "sha256": "97d885d1d43e787f2855b1084625fce1480d9789792bc209e8b2b2c08464ec9a",
+      "stored_unmodified": true
+    }
+  ],
+  "adapted_sources": [
+    {
+      "local_path": "OrbitMotion.tsx",
+      "sha256": "afc9f079aa43bca67db53a0db1f4fa221d0344c0343c12f676f85da05086048d"
+    },
+    {
+      "local_path": "TextMaskVideo.tsx",
+      "sha256": "03417c71c0878f3f6057b53d280ed8d0ddddf5dcd5c1210ee281fa708bdf292e"
+    },
+    {
+      "local_path": "Demos.tsx",
+      "sha256": "64627aca82d9f06dbbb1031a8a25ba2a4dfe6870394560b3559a80a5c2868ae0"
+    },
+    {
+      "local_path": "index.ts",
+      "sha256": "341472e5ba68d945157de0913b62a25205a5e58472f913e5022624f264b2010c"
+    },
+    {
+      "local_path": "README.md",
+      "sha256": "dc8969be40b078729ec33dbc6f0367b5719418a9121791fe5e98035aa3b2d726"
+    }
+  ],
+  "modifications": [
+    "OrbitMotion: retain frame-driven orbit/scale/opacity/z-index math; add finite and range validation; explicit FC import.",
+    "TextMaskVideo: retain SVG text clipping, nested wipe, muted media and bounded pan/zoom; replace website aliases with local layout scale and explicit frame-based entrance/exit timing.",
+    "TextMaskVideo timing is intentionally not API-identical to upstream motion helpers; no spring/exitTravel/exitDirection.",
+    "Original SVG figure and gradient demonstrations contain no private assets.",
+    "Demos: JSON-safe optional props and exported defaults for Composition defaultProps; default visuals preserved.",
+    "Demos: video/image require an explicit source, public-relative src resolves through staticFile, Windows filesystem paths and invalid media values are rejected; synthetic note is not retained for real media."
+  ],
+  "runtime_dependencies": [
+    "react@19.2.3",
+    "remotion@4.0.523"
+  ],
+  "new_packages_installed": false,
+  "verification": {
+    "upstream_downloads_and_hashes": "checked",
+    "source_review": "performed",
+    "parent_typecheck": "pending",
+    "parent_render": "pending",
+    "real_person_alpha": "not_provided",
+    "real_video_branch": "not_exercised",
+    "chinese_font_layout": "not_exercised",
+    "chatcut_integration": "not_exercised"
+  }
+}

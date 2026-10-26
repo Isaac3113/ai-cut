@@ -4,6 +4,8 @@
 
 | 组件 | 来源与许可边界 | 本仓库如何处理 |
 |---|---|---|
+| RenderComp 50模板 | https://github.com/RenderComp/free-remotion-templates ，MIT，2026 Trimora Inc. | 固定提交f648980e528defb7594e24c6447055f0540f340b；完整LICENSE、ASSETS和逐文件指纹保留在src/vendor/rendercomp；5文件仅移除未使用声明；模板许可不覆盖Remotion引擎 |
+| RemotionUI OrbitMotion/TextMaskVideo | https://github.com/riaz37/remotion-ui ，MIT | 固定提交0aecaca2b61a167992e1205d10e4da16d8a71331；保留原始源码、许可和适配记录；不包含其网络字体、示例照片或人物模型 |
 | Remotion 4.0.523 | https://www.remotion.dev/license ，有独立使用条件 | 保留原创React场景与依赖锁；引擎由使用者安装，不将其重新标为MIT；公司商业使用自行核实资格 |
 | Remotion起始模板 | https://github.com/remotion-dev/template-empty ，原始提交见扩展manifest | 保留来源说明；未使用的空Composition不进入公开版；第三方模板内容不由本MIT重新授权 |
 | HyperFrames 0.8.35 | https://github.com/heygen-com/hyperframes ，Apache-2.0 | 随附upstream/中的两份参考组件、完整Apache许可；改写组件保留来源与修改说明；引擎独立安装 |

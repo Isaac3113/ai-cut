@@ -85,6 +85,10 @@ description: 剪辑用户真人口播，保留原声原意，先确认视频比�
 
 完整交付新增第9步：按social-delivery逐项审核两篇文案及三张封面，运行`scripts/package_social_delivery.py build`与`audit`，把五项和一键复制阅读文件放进同条视频`05_成片/最新版/发布素材`，与原有视频/字幕/制作说明一起交付。只改音乐且正文不变时复用文案图片并重新绑定成片；只改一个平台时保留另一平台。
 
+## 可复用特效模板
+
+用户提供剪辑特效参考、要求查找或复用代码模板时，先读[特效库调用规则](references/effect-library.md)。现成模板目录、19项参考映射及缺口在Active Repo的extensions/remotion-vd44/TEMPLATE_LIBRARY.md；先复用，再适配缺少的效果。下载模板和图形示意不代表已完成真人抠像、完整参考复刻或本条成片验收。
+
 ## 辅助Skill的调用条件
 
 主工程只由本Skill管理。按[工具分工](references/tool-stack.md)：
