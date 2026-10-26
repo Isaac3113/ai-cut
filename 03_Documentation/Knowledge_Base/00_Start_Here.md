@@ -7,7 +7,7 @@
 > 2026-09-21 GitHub总Skill整合与ChatCut主路线：用户指定仓库已合入后续规则与配套代码，ChatCut为默认主路线，缺连接不静默换工具；本轮无视频迁移。当前证据读[26_GitHub_Skill_Integration.md](26_GitHub_Skill_Integration.md)。
 
 # Start here
-2026-10-26 封面设计方向更新：用户明确要求原片相关帧压暗背景、右下真实本人轮廓描边、hook及按内容设计的主副辅助文字层级。规则在[当前用户偏好](../../skill/talking-head-editor/references/user-preferences.md)和[封面提示词员工](../../skill/talking-head-editor/references/cover-prompt-worker.md)。本次先做独立样稿，未记录用户对新样图的审美认可；不修改0.1秒片头时长或擅自扩大为整片导出。
+2026-10-26 封面风格认可：用户已认可原片暗背景、真人轮廓描边、hook及主副辅助文字层级的样图，命名为`dark-frame-cutout-hook-v1`，并明确这是多种风格之一。可按内容与画幅尝试其他风格，不固定样图标题、斜黑体或右下布局；旧亮浅渐层加居中大头像及普通主题词不再作为默认。规则和Hub参考图入口见[当前用户偏好](../../skill/talking-head-editor/references/user-preferences.md)与[封面提示词员工](../../skill/talking-head-editor/references/cover-prompt-worker.md)。本次风格认可不替代实际片头替换、重新导出或全片验收；0.1秒片头规则保持。
 
 2026-10-26: [KB29 可复用代码特效库](29_Reusable_Effect_Library.md)记录50套现成模板、两项适配组件、独立调用入口、参考19项差距与本次真实渲染范围。
 

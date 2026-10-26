@@ -31,3 +31,7 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 ## 2026-10-08 固定片头片尾与跨电脑更新
 
 新增intro-outro单一规则入口：片内封面0.1秒、无淡入淡出；固定用户视频片尾以原始素材1.2倍一次作为当前实施参数，正文和BGM不复乘。相关执行入口解除旧1秒封面/约3秒头像片尾冲突。新增安全pull、Skill安装与OneDrive媒体分离的交接说明；媒体不入Git，不把规则同步或在线工程修改冒称实际导出/第二电脑恢复验证。见[KB28](28_Intro_Outro_And_Cross_Computer.md)。
+
+## 2026-10-26 封面风格之一获认可
+
+用户认可新样图，并明确“当然有很多风格”“这个算其中一种风格”。记录`dark-frame-cutout-hook-v1`：真实原片帧压暗背景、真人完整可见轮廓描边、内容支持的hook与主副辅助文字层级。保留按内容与画幅选择、尝试其他风格的空间，不固定本图的标题、斜黑体或右下人物布局；旧亮浅渐层加居中大头像及普通主题词不再作为默认。更新[用户偏好](../../skill/talking-head-editor/references/user-preferences.md)、[封面提示词员工](../../skill/talking-head-editor/references/cover-prompt-worker.md)与发现入口，已认可参考图仅用配置Hub下的相对路径及哈希定位，媒体不进入Git。本记录区分样图认可、规则源码更新、Skill安装、实际视频导出与全片验收，不由本次认可推断后续步骤已完成。
