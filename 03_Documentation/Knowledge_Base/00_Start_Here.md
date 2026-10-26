@@ -7,6 +7,8 @@
 > 2026-09-21 GitHub总Skill整合与ChatCut主路线：用户指定仓库已合入后续规则与配套代码，ChatCut为默认主路线，缺连接不静默换工具；本轮无视频迁移。当前证据读[26_GitHub_Skill_Integration.md](26_GitHub_Skill_Integration.md)。
 
 # Start here
+2026-10-26 封面设计方向更新：用户明确要求原片相关帧压暗背景、右下真实本人轮廓描边、hook及按内容设计的主副辅助文字层级。规则在[当前用户偏好](../../skill/talking-head-editor/references/user-preferences.md)和[封面提示词员工](../../skill/talking-head-editor/references/cover-prompt-worker.md)。本次先做独立样稿，未记录用户对新样图的审美认可；不修改0.1秒片头时长或擅自扩大为整片导出。
+
 2026-10-26: [KB29 可复用代码特效库](29_Reusable_Effect_Library.md)记录50套现成模板、两项适配组件、独立调用入口、参考19项差距与本次真实渲染范围。
 
 Read ../../README.md and ../../skill/talking-head-editor/references/approved-workflow.md. The approved teaching preset is reusable; every new video is separately checked. This public snapshot contains source, not private footage or account permissions.
