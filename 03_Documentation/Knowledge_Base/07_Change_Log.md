@@ -35,3 +35,7 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 ## 2026-10-26 封面风格之一获认可
 
 用户认可新样图，并明确“当然有很多风格”“这个算其中一种风格”。记录`dark-frame-cutout-hook-v1`：真实原片帧压暗背景、真人完整可见轮廓描边、内容支持的hook与主副辅助文字层级。保留按内容与画幅选择、尝试其他风格的空间，不固定本图的标题、斜黑体或右下人物布局；旧亮浅渐层加居中大头像及普通主题词不再作为默认。更新[用户偏好](../../skill/talking-head-editor/references/user-preferences.md)、[封面提示词员工](../../skill/talking-head-editor/references/cover-prompt-worker.md)与发现入口，已认可参考图仅用配置Hub下的相对路径及哈希定位，媒体不进入Git。本记录区分样图认可、规则源码更新、Skill安装、实际视频导出与全片验收，不由本次认可推断后续步骤已完成。
+
+## 2026-10-26 完成后展示16:9与9:16封面
+
+用户要求每次完成视频或封面工作后，直接在聊天里展示一张16:9和一张9:16实际封面，并保存到最新版交付。补入[当前用户偏好](../../skill/talking-head-editor/references/user-preferences.md)与[固定交付](../../skill/talking-head-editor/references/final-delivery.md)，保留既有平台素材、不扩展MP4比例；不以文件夹链接代替两张图片。
