@@ -47,3 +47,7 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 ## 2026-10-26 每篇文案的hashtag要求
 
 用户要求每篇内容至少10个hashtag，保留指定5个品牌标签原文，其余结合实际视频与Google搜索关键词选择；完整名单及规则只维护在[social-delivery](../../skill/talking-head-editor/references/social-delivery.md#本用户hashtag要求)，用户偏好仅引用。要求相关且有真实检索依据，不虚构搜索量或排名；若实际渠道硬限制冲突，核实并请用户确认适配，不静默减量、硬塞或挪动固定首评。已审稿改标签后保存并回读草稿，重新取得发布确认；本次只更新规则，不代表已搜索、已修改草稿或已发布。
+
+## 2026-10-26 用户确认后核对总Skill入口
+
+用户确认上述要求正确，并要求重新写入Skill及检查commit/push。核对现有封面风格、两种封面展示、成品确认、三平台草稿、固定首评、发布前再次确认及hashtag规则后，在总Skill补齐交付项目和hashtag的直接入口；完整规则仍维护在原参考页，避免多处名单和流程漂移。本次仅整理规则与Git同步，不执行视频重剪或发布；规则认可不代替具体草稿的post授权。
