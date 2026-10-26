@@ -39,3 +39,7 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 ## 2026-10-26 完成后展示16:9与9:16封面
 
 用户要求每次完成视频或封面工作后，直接在聊天里展示一张16:9和一张9:16实际封面，并保存到最新版交付。补入[当前用户偏好](../../skill/talking-head-editor/references/user-preferences.md)与[固定交付](../../skill/talking-head-editor/references/final-delivery.md)，保留既有平台素材、不扩展MP4比例；不以文件夹链接代替两张图片。
+
+## 2026-10-26 成品确认后建草稿、发布前再次确认
+
+本用户明确要求完成后展示并确认Facebook文案、小红书文案、仅9:16竖版视频及16:9/9:16封面；全部确认后才进入AGI Top Marketing准备FB/IG/TikTok草稿，已有本条明确全部确认直接沿用。保存后回读具体账号、文案、视频、封面和固定第一评论，展示具体预览再次询问；明确post授权后才发布，内容、账号或时机变更重新确认。不使用YouTube、不自动排程；首评不支持时明确说明，不替换正文或绕道自动公开评论。固定首评原文及执行细节集中在[social-delivery](../../skill/talking-head-editor/references/social-delivery.md#本用户成品确认与agi-top发布流程)，由[用户偏好](../../skill/talking-head-editor/references/user-preferences.md)与总Skill发现。内容认可与技术QA分别记录，不补造完整观看/试听等通过结果；此个人流程不替公开使用者授权外部操作。本次记录规则更新，不据此宣称草稿或发布已经完成。
