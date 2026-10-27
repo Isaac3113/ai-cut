@@ -1,4 +1,11 @@
 # Change log
+
+## 2026-10-27 MotionGit隔离评估
+
+新增[KB30](30_MotionGit_Evaluation.md)，核实ChatCut、Remotion4.0.523、HyperFrames0.8.35的实际分工，区分规则、调用、实现与素材问题。官网Modern Editorial Portrait 2.7.17-alpha.2经官方helper1.0.0-rc.50验签，motion-kit0.3.0路线完成环境检查、计划、预览及10.233秒组件实际渲染；55.033秒A/B只替换末307帧，原整条AAC保持一致。公开classic候选是另一项独立实验，不为官网原生组背书。
+
+正式Skill源码与安装副本27文件保持不变，未修改生产时间轴、默认路线或本用户精简交付目录。原片、个人.motion、凭据、依赖、实验工程与MP4不进入Git；本次只提交审计文档。完整解码、帧数及音频身份检查通过，抽帧审阅已做，连续听审、跨电脑恢复、ChatCut重新导入和用户审美认可未由此推断。已发现的检查器问题仅提出修复建议，未改执行代码。
+
 2026-09-12: clean public source release; original creator approved the final teaching style. Added portable Skill root discovery and animation tool paths; no core rendering algorithm or source timeline rewritten.
 
 ## 2026-09-13
