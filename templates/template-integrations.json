@@ -1,5 +1,533 @@
 {
   "schema_version": 1,
   "scope_zh": "独立的逐片接入记录：引用既有条目或加入实测新候选。保留原四层基线、包版本与原验证范围，不表示全库已安装或所有变体可执行。仅收本人授权精选静音Demo及来源、调用与QA说明；原片、个人包、Key和本机绝对输入路径不入Git。",
-  "integrations": []
+  "integrations": [
+    {
+      "id": "aivd-10-mg-control-flow-2.7.17-alpha.2-v1",
+      "entry_id": "mg-control-flow",
+      "project_id": "AIVD 10",
+      "integrated_at": "2026-10-27T23:21:01+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+        "package_id": "template-01-integrated-portrait",
+        "version": "2.7.17-alpha.2",
+        "sha256": "9a3adb3c023336c364226d1c57c9194f309b4a0b9ec3c85e0ebe5c6e2e7ada7d",
+        "official": true,
+        "verification_note": "实际原始个人包SHA256；只计算整包哈希，没有打开保护代码或提取个人标识。仓库适配器固定核验官方helper 1.0.0-rc.50 SHA256 7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3；同包公开motion-kit 0.3.0合同支持landscape，本片已实际plan/preview/render并导回主ChatCut时间轴。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "library_version": "0.3.0",
+        "library_sha256": "3e904b3ec370260b56913a15b006867f664e0c8bfe5c7ee1822a2f417d7d2909"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py执行motion-kit；静音概念镜头完成后，FFmpeg仅按真实同源时钟合成本人圆窗并生成精选Demo，不代替ChatCut主时间轴。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <scene.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包guide.json → extensionLibrary；kit.params.schema.json",
+        "inputs_zh": [
+          "workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。",
+          "自动回复→客户未回→自动跟进，按本片实际语义节拍依次出现。",
+          "使用本片原始时钟上的同源本人176px人像源，从332.94秒开始绝对1.2倍一次；先裁去窗口边缘/姓名条再做透明圆窗。",
+          "素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。"
+        ],
+        "actual_parameters": {
+          "control": "flow",
+          "variant": "chain",
+          "local_t0": 0,
+          "local_t1": 13.966666666666667,
+          "local_cues": [
+            0.25,
+            4.833333333,
+            10.933333333
+          ],
+          "props": {
+            "title": "自动回复与跟进｜流程示意",
+            "nodes": [
+              {
+                "text": "自动回复",
+                "icon": "chat"
+              },
+              {
+                "text": "客户未回",
+                "icon": "clock"
+              },
+              {
+                "text": "自动跟进",
+                "icon": "arrow"
+              }
+            ]
+          }
+        },
+        "demo_postprocess": {
+          "output_size": [
+            1280,
+            720
+          ],
+          "fps": 30,
+          "circle_pixels": {
+            "x": 1090,
+            "y": 520,
+            "diameter": 160
+          },
+          "circular_alpha": "transparent corners with antialiased cyan rim; no black square backing",
+          "source_portrait_crop_pixels": {
+            "x": 16,
+            "y": 32,
+            "w": 144,
+            "h": 144
+          }
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权及本次明确授权：允许将已检查的短概念画面与同期本人圆窗收入同一私人演示库。只包含本人形象、本人讲解对应概念文字与原包渲染；不含客户画面/对话/联系方式/网址，不复制原片、源人像、个人.motion、Key、保护代码；不得扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false,
+        "scope": "本片横屏flow/chain：1280×720、30fps、419帧、无音轨，完整解码通过；实际查看编码帧6,209,345,418及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。",
+        "sampled_frames": [
+          6,
+          209,
+          345,
+          418
+        ],
+        "privacy_review": "受控概念输入与本人圆窗来源核对；本批4条合计16个完整编码画面及圆窗细节；本条4帧见sampled_frames。不把抽样称为全帧隐私QA。",
+        "timeline_usage": "本片官方概念素材已由制作根代理实际放回原ChatCut时间轴；本登记Demo是另制的短静音库样片，不是整片导出。"
+      },
+      "actual_variants": [
+        "chain"
+      ],
+      "production_mapping": {
+        "final_frames": [
+          3,
+          422
+        ],
+        "fps": 30,
+        "source_seconds": [
+          332.94,
+          349.7
+        ],
+        "official_asset_frames": [
+          0,
+          419
+        ],
+        "absolute_source_speed": 1.2,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.mp4",
+        "description_zh": "AIVD 10 本人同期圆窗＋官方 flow/chain 横屏概念讲解节选；静音；不含客户画面。自动回复→客户未回→自动跟进，按本片实际语义节拍依次出现。",
+        "sha256": "81f9c6d70c99c666d3f6a13f404fbda959e3318617b2496ca25e8e192fb2283e",
+        "bytes": 427528,
+        "variant_id": "chain",
+        "width": 1280,
+        "height": 720,
+        "duration_seconds": 13.966667,
+        "audio": "none",
+        "poster_path": "demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.jpg"
+      }
+    },
+    {
+      "id": "aivd-10-mg-control-steps-2.7.17-alpha.2-v1",
+      "entry_id": "mg-control-steps",
+      "project_id": "AIVD 10",
+      "integrated_at": "2026-10-27T23:21:01+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+        "package_id": "template-01-integrated-portrait",
+        "version": "2.7.17-alpha.2",
+        "sha256": "9a3adb3c023336c364226d1c57c9194f309b4a0b9ec3c85e0ebe5c6e2e7ada7d",
+        "official": true,
+        "verification_note": "实际原始个人包SHA256；只计算整包哈希，没有打开保护代码或提取个人标识。仓库适配器固定核验官方helper 1.0.0-rc.50 SHA256 7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3；同包公开motion-kit 0.3.0合同支持landscape，本片已实际plan/preview/render并导回主ChatCut时间轴。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "library_version": "0.3.0",
+        "library_sha256": "3e904b3ec370260b56913a15b006867f664e0c8bfe5c7ee1822a2f417d7d2909"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py执行motion-kit；静音概念镜头完成后，FFmpeg仅按真实同源时钟合成本人圆窗并生成精选Demo，不代替ChatCut主时间轴。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <scene.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包guide.json → extensionLibrary；kit.params.schema.json",
+        "inputs_zh": [
+          "workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。",
+          "知识库与 AI 员工手册两项前提，保留完整条件，轨道依次点亮。",
+          "使用本片原始时钟上的同源本人176px人像源，从376.83秒开始绝对1.2倍一次；先裁去窗口边缘/姓名条再做透明圆窗。",
+          "素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。"
+        ],
+        "actual_parameters": {
+          "control": "steps",
+          "variant": "track",
+          "local_t0": 0,
+          "local_t1": 13.266666666666667,
+          "local_cues": [
+            1.466666667,
+            7.933333333
+          ],
+          "props": {
+            "title": "AI 回复，先准备这两样",
+            "steps": [
+              "知识库",
+              "AI 员工手册"
+            ]
+          }
+        },
+        "demo_postprocess": {
+          "output_size": [
+            1280,
+            720
+          ],
+          "fps": 30,
+          "circle_pixels": {
+            "x": 1090,
+            "y": 520,
+            "diameter": 160
+          },
+          "circular_alpha": "transparent corners with antialiased cyan rim; no black square backing",
+          "source_portrait_crop_pixels": {
+            "x": 16,
+            "y": 32,
+            "w": 144,
+            "h": 144
+          }
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权及本次明确授权：允许将已检查的短概念画面与同期本人圆窗收入同一私人演示库。只包含本人形象、本人讲解对应概念文字与原包渲染；不含客户画面/对话/联系方式/网址，不复制原片、源人像、个人.motion、Key、保护代码；不得扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false,
+        "scope": "本片横屏steps/track：1280×720、30fps、398帧、无音轨，完整解码通过；实际查看编码帧6,199,270,397及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。",
+        "sampled_frames": [
+          6,
+          199,
+          270,
+          397
+        ],
+        "privacy_review": "受控概念输入与本人圆窗来源核对；本批4条合计16个完整编码画面及圆窗细节；本条4帧见sampled_frames。不把抽样称为全帧隐私QA。",
+        "timeline_usage": "本片官方概念素材已由制作根代理实际放回原ChatCut时间轴；本登记Demo是另制的短静音库样片，不是整片导出。"
+      },
+      "actual_variants": [
+        "track"
+      ],
+      "production_mapping": {
+        "final_frames": [
+          1055,
+          1453
+        ],
+        "fps": 30,
+        "source_seconds": [
+          376.83,
+          392.75
+        ],
+        "official_asset_frames": [
+          0,
+          398
+        ],
+        "absolute_source_speed": 1.2,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.mp4",
+        "description_zh": "AIVD 10 本人同期圆窗＋官方 steps/track 横屏概念讲解节选；静音；不含客户画面。知识库与 AI 员工手册两项前提，保留完整条件，轨道依次点亮。",
+        "sha256": "989c03bb53a9127e7f4f2729c7ac92a69b460509b4d2f10f48ce7504060d19ae",
+        "bytes": 385793,
+        "variant_id": "track",
+        "width": 1280,
+        "height": 720,
+        "duration_seconds": 13.266667,
+        "audio": "none",
+        "poster_path": "demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.jpg"
+      },
+      "additional_production_variants_zh": [
+        {
+          "variant": "ladder",
+          "final_frames": [
+            5489,
+            5724
+          ],
+          "fps": 30,
+          "duration_frames": 235,
+          "title": "标签含义｜流程示意",
+          "steps": [
+            "跟进 1 天",
+            "跟进 3 天"
+          ],
+          "local_cues_seconds": [
+            0.2,
+            5.566666666666666
+          ],
+          "same_source_native_circle_frames": 235,
+          "evidence": "制作根代理已实际导回同一ChatCut主时间轴并核对native圆窗；这段仅记录本片生产使用。",
+          "current_git_demo_covers_this_variant": false,
+          "scope": "当前本人Demo和海报只代表steps.track；不把track的解码与抽帧结果当作ladder库样片验证，不另建虚拟Demo。"
+        }
+      ]
+    },
+    {
+      "id": "aivd-10-mg-control-hub-2.7.17-alpha.2-v1",
+      "entry_id": "mg-control-hub",
+      "project_id": "AIVD 10",
+      "integrated_at": "2026-10-27T23:21:01+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+        "package_id": "template-01-integrated-portrait",
+        "version": "2.7.17-alpha.2",
+        "sha256": "9a3adb3c023336c364226d1c57c9194f309b4a0b9ec3c85e0ebe5c6e2e7ada7d",
+        "official": true,
+        "verification_note": "实际原始个人包SHA256；只计算整包哈希，没有打开保护代码或提取个人标识。仓库适配器固定核验官方helper 1.0.0-rc.50 SHA256 7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3；同包公开motion-kit 0.3.0合同支持landscape，本片已实际plan/preview/render并导回主ChatCut时间轴。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "library_version": "0.3.0",
+        "library_sha256": "3e904b3ec370260b56913a15b006867f664e0c8bfe5c7ee1822a2f417d7d2909"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py执行motion-kit；静音概念镜头完成后，FFmpeg仅按真实同源时钟合成本人圆窗并生成精选Demo，不代替ChatCut主时间轴。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <scene.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包guide.json → extensionLibrary；kit.params.schema.json",
+        "inputs_zh": [
+          "workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。",
+          "预约入口连接表格可选、日历与报名页；展示入口关系，不声称已完成预约。",
+          "使用本片原始时钟上的同源本人176px人像源，从695.04秒开始绝对1.2倍一次；先裁去窗口边缘/姓名条再做透明圆窗。",
+          "素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。"
+        ],
+        "actual_parameters": {
+          "control": "hub",
+          "variant": "constellation",
+          "local_t0": 0,
+          "local_t1": 12.799999999999999,
+          "local_cues": [
+            0.1,
+            0.3,
+            1.166666667,
+            4.5
+          ],
+          "props": {
+            "center": {
+              "text": "预约入口",
+              "icon": "calendar"
+            },
+            "items": [
+              {
+                "text": "表格可选",
+                "icon": "file"
+              },
+              {
+                "text": "日历",
+                "icon": "calendar"
+              },
+              {
+                "text": "报名页",
+                "icon": "globe"
+              }
+            ]
+          }
+        },
+        "demo_postprocess": {
+          "output_size": [
+            1280,
+            720
+          ],
+          "fps": 30,
+          "circle_pixels": {
+            "x": 1090,
+            "y": 520,
+            "diameter": 160
+          },
+          "circular_alpha": "transparent corners with antialiased cyan rim; no black square backing",
+          "source_portrait_crop_pixels": {
+            "x": 16,
+            "y": 32,
+            "w": 144,
+            "h": 144
+          }
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权及本次明确授权：允许将已检查的短概念画面与同期本人圆窗收入同一私人演示库。只包含本人形象、本人讲解对应概念文字与原包渲染；不含客户画面/对话/联系方式/网址，不复制原片、源人像、个人.motion、Key、保护代码；不得扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false,
+        "scope": "本片横屏hub/constellation：1280×720、30fps、384帧、无音轨，完整解码通过；实际查看编码帧6,192,300,383及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。",
+        "sampled_frames": [
+          6,
+          192,
+          300,
+          383
+        ],
+        "privacy_review": "受控概念输入与本人圆窗来源核对；本批4条合计16个完整编码画面及圆窗细节；本条4帧见sampled_frames。不把抽样称为全帧隐私QA。",
+        "timeline_usage": "本片官方概念素材已由制作根代理实际放回原ChatCut时间轴；本登记Demo是另制的短静音库样片，不是整片导出。"
+      },
+      "actual_variants": [
+        "constellation"
+      ],
+      "production_mapping": {
+        "final_frames": [
+          3280,
+          3664
+        ],
+        "fps": 30,
+        "source_seconds": [
+          695.04,
+          710.4
+        ],
+        "official_asset_frames": [
+          398,
+          782
+        ],
+        "absolute_source_speed": 1.2,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.mp4",
+        "description_zh": "AIVD 10 本人同期圆窗＋官方 hub/constellation 横屏概念讲解节选；静音；不含客户画面。预约入口连接表格可选、日历与报名页；展示入口关系，不声称已完成预约。",
+        "sha256": "a57ca3e62f816364445cdd496d5791ba4b91b98181839f6722b6523c4bcde432",
+        "bytes": 398475,
+        "variant_id": "constellation",
+        "width": 1280,
+        "height": 720,
+        "duration_seconds": 12.8,
+        "audio": "none",
+        "poster_path": "demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.jpg"
+      }
+    },
+    {
+      "id": "aivd-10-mg-control-kinetic-2.7.17-alpha.2-v1",
+      "entry_id": "mg-control-kinetic",
+      "project_id": "AIVD 10",
+      "integrated_at": "2026-10-27T23:21:01+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+        "package_id": "template-01-integrated-portrait",
+        "version": "2.7.17-alpha.2",
+        "sha256": "9a3adb3c023336c364226d1c57c9194f309b4a0b9ec3c85e0ebe5c6e2e7ada7d",
+        "official": true,
+        "verification_note": "实际原始个人包SHA256；只计算整包哈希，没有打开保护代码或提取个人标识。仓库适配器固定核验官方helper 1.0.0-rc.50 SHA256 7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3；同包公开motion-kit 0.3.0合同支持landscape，本片已实际plan/preview/render并导回主ChatCut时间轴。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "library_version": "0.3.0",
+        "library_sha256": "3e904b3ec370260b56913a15b006867f664e0c8bfe5c7ee1822a2f417d7d2909"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py执行motion-kit；静音概念镜头完成后，FFmpeg仅按真实同源时钟合成本人圆窗并生成精选Demo，不代替ChatCut主时间轴。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <scene.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包guide.json → extensionLibrary；kit.params.schema.json",
+        "inputs_zh": [
+          "workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。",
+          "Reply、Follow up、AI 三行动态归纳，与本片结尾同期本人圆窗结合。",
+          "使用同源结尾800px方形人像，源2104.56–2115.44秒已经绝对1.2倍一次，本Demo圆窗按1.0倍使用，不重复加速。",
+          "素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。"
+        ],
+        "actual_parameters": {
+          "control": "kinetic",
+          "variant": "stack",
+          "local_t0": 0,
+          "local_t1": 9.06666666666667,
+          "local_cues": [
+            2.733333333,
+            3.4,
+            4.566666667
+          ],
+          "props": {
+            "lines": [
+              "Reply",
+              "Follow up",
+              "AI"
+            ],
+            "kicker": "先把基础做好"
+          }
+        },
+        "demo_postprocess": {
+          "output_size": [
+            1280,
+            720
+          ],
+          "fps": 30,
+          "circle_pixels": {
+            "x": 1090,
+            "y": 520,
+            "diameter": 160
+          },
+          "circular_alpha": "transparent corners with antialiased cyan rim; no black square backing",
+          "source_portrait_crop_pixels": null
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权及本次明确授权：允许将已检查的短概念画面与同期本人圆窗收入同一私人演示库。只包含本人形象、本人讲解对应概念文字与原包渲染；不含客户画面/对话/联系方式/网址，不复制原片、源人像、个人.motion、Key、保护代码；不得扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false,
+        "scope": "本片横屏kinetic/stack：1280×720、30fps、272帧、无音轨，完整解码通过；实际查看编码帧6,136,195,271及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。",
+        "sampled_frames": [
+          6,
+          136,
+          195,
+          271
+        ],
+        "privacy_review": "受控概念输入与本人圆窗来源核对；本批4条合计16个完整编码画面及圆窗细节；本条4帧见sampled_frames。不把抽样称为全帧隐私QA。",
+        "timeline_usage": "本片官方概念素材已由制作根代理实际放回原ChatCut时间轴；本登记Demo是另制的短静音库样片，不是整片导出。"
+      },
+      "actual_variants": [
+        "stack"
+      ],
+      "production_mapping": {
+        "final_frames": [
+          6625,
+          6897
+        ],
+        "fps": 30,
+        "source_seconds": [
+          2104.56,
+          2115.44
+        ],
+        "official_asset_frames": [
+          1017,
+          1289
+        ],
+        "absolute_source_speed": 1.2,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4",
+        "description_zh": "AIVD 10 本人同期圆窗＋官方 kinetic/stack 横屏概念讲解节选；静音；不含客户画面。Reply、Follow up、AI 三行动态归纳，与本片结尾同期本人圆窗结合。",
+        "sha256": "9895d292ee3f632e6d02c5ba66e1d0f6426bcd411632339e2239f12845945e0f",
+        "bytes": 285372,
+        "variant_id": "stack",
+        "width": 1280,
+        "height": 720,
+        "duration_seconds": 9.066667,
+        "audio": "none",
+        "poster_path": "demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.jpg"
+      }
+    }
+  ]
 }

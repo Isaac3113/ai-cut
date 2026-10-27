@@ -10,7 +10,7 @@
 | 官网控件 | 70 | 原包基线70项/210变体冻结，新接入另记版本；不代表所有变体实测 |
 | 代码库注册项 | 55 | 基线55注册项/52实现基础，新接入按来源区分 |
 | 真人特效分支 | 19 | 基线19分支；不是完整剪辑系统 |
-| 本片接入记录 | 0 | 版本与本人Demo记录，不加入上方模板条目总数 |
+| 本片接入记录 | 4 | 版本与本人Demo记录，不加入上方模板条目总数 |
 
 ## 浏览方式
 
@@ -130,13 +130,15 @@ Set-Location "C:\Codex Workspace\talking-head-editor"
 
 | 名称 | 用途 | 当前验证 | Demo |
 |---|---|---|---|
-| 流程图 `mg-control-flow` | 3–6 个有先后顺序的环节（步骤、流水线、因果链），或一个起点分出多个去向（branch）；节点可带图标 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/flow.mp4) |
+| 流程图 `mg-control-flow` | 3–6 个有先后顺序的环节（步骤、流水线、因果链），或一个起点分出多个去向（branch）；节点可带图标 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.mp4) / [演示2](../docs/template-gallery/demos/motiongit/flow.mp4) |
 | 循环图 `mg-control-cycle` | 首尾相接、周而复始的 3–6 个环节：飞轮、迭代闭环、生命周期；中心可写主题 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/cycle.mp4) |
 | 漏斗 / 层级 `mg-control-funnel` | 逐层收窄的转化、筛选（funnel），或自下而上的层级、金字塔、技术栈（pyramid / layers）；每层可带一个数值 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/funnel.mp4) |
 | 交集图 `mg-control-venn` | 两三个概念的交集或合成：A + B 的重叠点、三者兼得；merge 变体表示合而为一 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/venn.mp4) |
 | 思维导图 `mg-control-mindmap` | 一个主题展开 3–6 个方面，每个方面可再列 0–2 个要点：知识框架、话题拆解 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/mindmap.mp4) |
 | 2×2 象限 `mg-control-matrix` | 两个维度把事物分成四类：重要/紧急、投入/回报、定位分析；可在象限里落几个点，priority 变体突出一个象限 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/matrix.mp4) |
-| 中心辐射 `mg-control-hub` | 一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/hub.mp4) |
+| 中心辐射 `mg-control-hub` | 一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.mp4) / [演示2](../docs/template-gallery/demos/motiongit/hub.mp4) |
+- `mg-control-flow` 登记基线版本：0.3.0 (package2.7.17-alpha.2)；当前本人Demo版本：2.7.17-alpha.2；本片QA：verified_demo。本片横屏flow/chain：1280×720、30fps、419帧、无音轨，完整解码通过；实际查看编码帧6,209,345,418及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。（不改变原条目验证范围，不代表用户审美认可）
+- `mg-control-hub` 登记基线版本：0.3.0 (package2.7.17-alpha.2)；当前本人Demo版本：2.7.17-alpha.2；本片QA：verified_demo。本片横屏hub/constellation：1280×720、30fps、384帧、无音轨，完整解码通过；实际查看编码帧6,192,300,383及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。（不改变原条目验证范围，不代表用户审美认可）
 
 ### 叠加标注与装饰
 
@@ -173,13 +175,14 @@ Set-Location "C:\Codex Workspace\talking-head-editor"
 | 数字滚动 `mg-control-number` | 一个关键数字：时长、数量、百分比、价格。可带 1–3 句注释 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/number.mp4) |
 | 要点列表 `mg-control-list` | 1–6 个并列要点，逐条出现；全部出现后高亮依次轮转 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/list.mp4) |
 | 左右对比 `mg-control-compare` | 两种做法、前后变化、A 和 B 的差别；可给结论并标出胜者 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/compare.mp4) |
-| 步骤流程 `mg-control-steps` | 2–5 个先后步骤；光点沿轨道依次点亮 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/steps.mp4) |
+| 步骤流程 `mg-control-steps` | 2–5 个先后步骤；光点沿轨道依次点亮 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.mp4) / [演示2](../docs/template-gallery/demos/motiongit/steps.mp4) |
 | 金句 / 引用 `mg-control-quote` | 一句原话、观点或引用，逐字打出；*星号* 包住的词高亮 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/quote.mp4) |
 | 数据条 `mg-control-bars` | 2–5 项数值比较；数值必须来自真实数据 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/bars.mp4) |
 | 录屏 / 图片窗 `mg-control-media` | 展示用户的录屏、截图、产品图；可在画面上标出 1–3 处重点 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/media.mp4) |
 | 印章强调 `mg-control-stamp` | 下结论、表态：免费、已上线、不推荐 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/stamp.mp4) |
 | 章节卡 `mg-control-chapter` | 长视频分段：编号 + 段名 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/chapter.mp4) |
 | 光球合成 `mg-control-fusion` | A × B 合在一起得到结果 C | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/fusion.mp4) |
+- `mg-control-steps` 登记基线版本：0.3.0 (package2.7.17-alpha.2)；当前本人Demo版本：2.7.17-alpha.2；本片QA：verified_demo。本片横屏steps/track：1280×720、30fps、398帧、无音轨，完整解码通过；实际查看编码帧6,199,270,397及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。（不改变原条目验证范围，不代表用户审美认可）
 
 ### 数据与进度
 
@@ -197,12 +200,13 @@ Set-Location "C:\Codex Workspace\talking-head-editor"
 
 | 名称 | 用途 | 当前验证 | Demo |
 |---|---|---|---|
-| 逐行动态排版 `mg-control-kinetic` | 一句有节奏的观点拆成 2–5 个短行，跟着口播一行一行冲出来；适合开场钩子、口号、情绪句 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/kinetic.mp4) |
+| 逐行动态排版 `mg-control-kinetic` | 一句有节奏的观点拆成 2–5 个短行，跟着口播一行一行冲出来；适合开场钩子、口号、情绪句 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4) / [演示2](../docs/template-gallery/demos/motiongit/kinetic.mp4) |
 | 重点词标记 `mg-control-highlight` | 一句完整的话里有 1–2 个必须被看见的词（用 *星号* 标出）：先出整句，再在重点上画标记 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/highlight.mp4) |
 | 乱码解码 `mg-control-scramble` | 揭晓一个名字、术语、答案、代号：乱码逐位锁定。科技、数据、揭秘类内容 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/scramble.mp4) |
 | 轮换词 `mg-control-rotator` | 同一句话换不同的词：「适合 学生 / 老师 / 公司」、「它能 写 / 画 / 剪」。最后一个词停住 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/rotator.mp4) |
 | 滚动横幅 `mg-control-marquee` | 一串关键词/标签/口号持续滚动：活动、清单很长、节奏型过渡；可在横幅上砸入一个大词 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/marquee.mp4) |
 | 巨字 `mg-control-bigtype` | 一个词撑满画面的冲击时刻：段落主题、结论词、品牌词；mask 变体可让图片/视频透过字显示 | 本机演示已检查 | [演示1](../docs/template-gallery/demos/motiongit/bigtype.mp4) |
+- `mg-control-kinetic` 登记基线版本：0.3.0 (package2.7.17-alpha.2)；当前本人Demo版本：2.7.17-alpha.2；本片QA：verified_demo。本片横屏kinetic/stack：1280×720、30fps、272帧、无音轨，完整解码通过；实际查看编码帧6,136,195,271及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。（不改变原条目验证范围，不代表用户审美认可）
 
 ### 概念教学
 
