@@ -1,0 +1,3123 @@
+{
+  "schema_version": 1,
+  "title_zh": "MotionGit 中文风格与演示索引",
+  "updated": "2026-10-27",
+  "source": {
+    "repository": "https://github.com/motiontemplates/all",
+    "commit": "21537c6f49aa9504496d20c14bf597f7eac229f4",
+    "commit_timestamp_utc": "2026-10-27T03:02:25Z",
+    "catalog_url": "https://raw.githubusercontent.com/motiontemplates/all/21537c6f49aa9504496d20c14bf597f7eac229f4/catalog.json",
+    "snapshot_path": "sources/motiongit-catalog.snapshot.json",
+    "snapshot_bytes": 315398,
+    "snapshot_sha256": "c4bb605a22a3529c0dcbe8acb720ae50df3f5bc0c4ede8577f6caf8218d9a485",
+    "provenance_path": "PROVENANCE.zh-CN.md"
+  },
+  "field_provenance_zh": {
+    "label_zh": "保留固定官方目录 title.zh 原文；Light Ribbon Word 在官方中文字段中也是英文，不擅自改名。",
+    "description_zh": "保留固定官方目录 summary.zh；原始摘要可能简短或截断，不补写未经证实的能力。",
+    "category_zh": "本地中文分类，对应官方 source_group；类别不是整套模板、原子组件、Skill 或兼容引擎的保证。",
+    "uses_zh": "根据官方摘要整理的本地选型建议，未经每条实际制作验证。",
+    "avoid_zh": "本地编辑建议及已知边界，不替代用户要求或本期 Skill。",
+    "inputs_zh": "官方 materials.zh 原文或中文摘要；未列素材时明确未知。这是输入说明，不是自动执行命令或账户授权。",
+    "family_label_zh": "本地展示去重：在同一 source_group 内去除明确的竖屏后缀；不是官方 family ID 或运行兼容性声明。",
+    "version": "固定目录记录的版本；Demo 文件、官网新版、公开 GitHub 版可能不同。"
+  },
+  "counts": {
+    "main_entries": 72,
+    "entry_demos": 73,
+    "previews": 1,
+    "official_demo_urls": 74,
+    "unique_official_demo_urls": 74,
+    "descriptive_families": 66,
+    "by_source_group": {
+      "open": 1,
+      "talk": 21,
+      "explainer": 19,
+      "product": 14,
+      "art": 17
+    },
+    "main_entries_by_ratio": {
+      "16:9": 62,
+      "9:16": 7,
+      "3:4": 1,
+      "4:3": 1,
+      "1:1": 1
+    },
+    "notes_zh": "72 为固定公开集合的主条目数，内含画幅版本与动效片段；73 为主条目的 Demo 数，另 1 个预告共 74。66 为本地名称归并，不是全站套数或官方 Styles 总数。"
+  },
+  "categories": [
+    {
+      "source_group": "open",
+      "label_zh": "科技视觉（非口播默认）",
+      "count": 1,
+      "description_zh": "科技主题的标题、章节与视觉强调"
+    },
+    {
+      "source_group": "talk",
+      "label_zh": "口播与讲解",
+      "count": 21,
+      "description_zh": "真人知识口播、观点与案例讲解"
+    },
+    {
+      "source_group": "explainer",
+      "label_zh": "知识解说与流程图",
+      "count": 19,
+      "description_zh": "知识关系、流程、数据和方法解释"
+    },
+    {
+      "source_group": "product",
+      "label_zh": "产品宣传与教程",
+      "count": 14,
+      "description_zh": "产品功能、品牌叙事与使用流程"
+    },
+    {
+      "source_group": "art",
+      "label_zh": "视觉与场景动效（非口播默认）",
+      "count": 17,
+      "description_zh": "与当前内容相关的开场、转场、素材展示或专用场景"
+    }
+  ],
+  "validation_boundary_zh": "官方Demo可看表示来源提供可点击的官方演示 URL；未对全部 URL 播放或可用性逐条验收，不代表模板已下载、已可运行或用户认可。",
+  "entries": [
+    {
+      "id": "mg-style-385712",
+      "label_zh": "酷炫科技风",
+      "layer": "style",
+      "category_zh": "科技视觉（非口播默认）",
+      "description_zh": "金属立体字、光效与空间动效；中英横屏、中文竖屏，新增英文竖屏基础表达 B1–B4，支持人脸居中与圆形署名。",
+      "uses_zh": [
+        "科技主题的短标题、空间动效与章节强调；需先确认其视觉风格与内容匹配"
+      ],
+      "avoid_zh": [
+        "不要因内容提到 AI 就全片套用科技装饰；先检查人像、字幕与操作界面可读性。",
+        "横屏公开版与官网竖屏版版本不同，不能把额外 Demo 当作横竖共用参数或当前版本实测。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "0.2.7-open-beta",
+      "source_url": "https://motiongit.com/@adunext/385712",
+      "source_id": "385712",
+      "license": "公开 GitHub 0.2.7-open-beta 代码的 LICENSE 为 MIT；字体、音乐、演示人物与其他素材另核，官网个人版须核对随包许可。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://motiontemplates.github.io/385712/assets/demo.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        },
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/626/0.2.9-open-beta-zh-11eae4868d37.mp4",
+          "description_zh": "酷炫科技风 · 中文竖屏；目录版本 0.2.38-open-beta，Demo 文件版本可能不同，未本机实测。",
+          "ratio": "9:16"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "open",
+      "source_template_id": 626,
+      "source_repository_url": "https://github.com/motiontemplates/385712",
+      "source_revision": "9dfbe7d7c6a6d4aa03f6f8e2f2285e631099faae",
+      "catalog_download_type": "direct-package",
+      "catalog_availability": "download-available",
+      "family_label_zh": "酷炫科技风",
+      "variants": [
+        {
+          "label_zh": "酷炫科技风 · 中文竖屏",
+          "ratio": "9:16",
+          "version": "0.2.38-open-beta",
+          "source_template_id": 626,
+          "source_url": "https://motiongit.com/@adunext/385712",
+          "demo_index": 1,
+          "note_zh": "官网中文竖屏 v0.2.38-open-beta；GitHub 开源包 v0.2.7-open-beta（16:9）。"
+        }
+      ]
+    },
+    {
+      "id": "mg-style-336980",
+      "label_zh": "现代图文 · 口播讲解",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。",
+      "uses_zh": [
+        "观点、证据、步骤与营销方法的横屏图文讲解"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.4",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated",
+      "source_id": "336980",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 605,
+      "source_repository_url": "https://github.com/motiontemplates/336980",
+      "source_revision": "3a52599127dbca7cc647dadac0471b372e9bb090",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "现代图文 · 口播讲解"
+    },
+    {
+      "id": "mg-style-314486",
+      "label_zh": "现代图文 · 口播讲解 · 竖屏",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。",
+      "uses_zh": [
+        "观点、证据、步骤与营销方法的竖屏图文讲解；可先评估局部重点强调"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。",
+        "本机仅实测两段 highlight/underline 局部组合；完整 native 版式、模板声音与用户风格认可尚未验证。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.2",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "314486",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "局部实测",
+        "scope": "官网 2.7.17-alpha.2：仅两段 highlight/underline 用于同一 55.0333 秒 A/B 的末 10.233 秒，其余沿用原画面和整条原音轨。两版各 1651 帧/30fps、全解码成功，AAC 与 PCM 一致，已抽检最终编码画面。完整 native 排版仅预览；模板声音优势、连续观看/完整听审和用户风格认可未完成。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/case-studies/approved-b-highlight.mp4",
+          "description_zh": "本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。",
+          "sha256": "3be466abdde60e536a0b3b15222e43e3d7b36ad50296baa54a076585d41456e1",
+          "bytes": 78189
+        },
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "9:16"
+        }
+      ],
+      "ratio": "9:16",
+      "source_group": "talk",
+      "source_template_id": 606,
+      "source_repository_url": "https://github.com/motiontemplates/314486",
+      "source_revision": "78c59f0bb035155b5887660382df60863c627dec",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "现代图文 · 口播讲解"
+    },
+    {
+      "id": "mg-style-358192",
+      "label_zh": "纸面透视 · 口播讲解",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。",
+      "uses_zh": [
+        "方法拆解、层级关系与结构化知识的横屏表达"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.20-alpha.2",
+      "source_url": "https://motiongit.com/@adunext/template-02-expanded",
+      "source_id": "358192",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 607,
+      "source_repository_url": "https://github.com/motiontemplates/358192",
+      "source_revision": "fa7e39f1830b1baffde67e3c6bffa6f574852f11",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "纸面透视 · 口播讲解"
+    },
+    {
+      "id": "mg-style-295450",
+      "label_zh": "纸面透视 · 口播讲解 · 竖屏",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。",
+      "uses_zh": [
+        "方法拆解、层级关系与结构化知识的竖屏表达"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.2",
+      "source_url": "https://motiongit.com/@adunext/template-02-expanded-portrait",
+      "source_id": "295450",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "9:16"
+        }
+      ],
+      "ratio": "9:16",
+      "source_group": "talk",
+      "source_template_id": 608,
+      "source_repository_url": "https://github.com/motiontemplates/295450",
+      "source_revision": "06139edc5c48a453be421eebfac207752533e58e",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "纸面透视 · 口播讲解"
+    },
+    {
+      "id": "mg-style-304634",
+      "label_zh": "深色立体 · 多屏展陈",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。",
+      "uses_zh": [
+        "产品案例、媒体证据与多个画面的横屏并置"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.2",
+      "source_url": "https://motiongit.com/@adunext/template-03-native",
+      "source_id": "304634",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/609/draft-zh-a33d6dc67131.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 609,
+      "source_repository_url": "https://github.com/motiontemplates/304634",
+      "source_revision": "d0799f766f98b60b71b191f9e464807d31bde1df",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "深色立体 · 多屏展陈"
+    },
+    {
+      "id": "mg-style-569615",
+      "label_zh": "深色立体 · 多屏展陈 · 竖屏",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。",
+      "uses_zh": [
+        "产品案例、媒体证据与多个画面的竖屏并置；先检查小屏阅读容量"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.2",
+      "source_url": "https://motiongit.com/@adunext/template-03-native-portrait",
+      "source_id": "569615",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "9:16"
+        }
+      ],
+      "ratio": "9:16",
+      "source_group": "talk",
+      "source_template_id": 610,
+      "source_repository_url": "https://github.com/motiontemplates/569615",
+      "source_revision": "6474ac402fe8d9c69666b8ea90b4c2f0cb0a5e9a",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "深色立体 · 多屏展陈"
+    },
+    {
+      "id": "mg-style-553346",
+      "label_zh": "科技控制台 · 口播讲解",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用科技控制台、紫色玻璃质感与动态信息组件配合口播，适合技术与数据说明。",
+      "uses_zh": [
+        "技术概念、数据与控制台式信息的横屏讲解"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.19-alpha.3",
+      "source_url": "https://motiongit.com/@adunext/template-04-dark-console",
+      "source_id": "553346",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/611/2.5.7-zh-96b144413879.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 611,
+      "source_repository_url": "https://github.com/motiontemplates/553346",
+      "source_revision": "316d5b7d725adef62c4bcbe350fb73cc99d1caf4",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "科技控制台 · 口播讲解"
+    },
+    {
+      "id": "mg-style-738182",
+      "label_zh": "科技控制台 · 口播讲解 · 竖屏",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用科技控制台、紫色玻璃质感与动态信息组件配合口播，适合技术与数据说明。",
+      "uses_zh": [
+        "技术概念、数据与控制台式信息的竖屏讲解"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.3",
+      "source_url": "https://motiongit.com/@adunext/template-04-dark-console-portrait",
+      "source_id": "738182",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/612/2.5.7-zh-a93efdfb29ba.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "9:16"
+        }
+      ],
+      "ratio": "9:16",
+      "source_group": "talk",
+      "source_template_id": 612,
+      "source_repository_url": "https://github.com/motiontemplates/738182",
+      "source_revision": "68ba644466cf120bfc6dc97bc3fe561c7c5e4693",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "科技控制台 · 口播讲解"
+    },
+    {
+      "id": "mg-style-960723",
+      "label_zh": "鲜色角色 · 叙事讲解",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用鲜明配色、角色素材与叙事动效配合口播，适合故事、观点和情境解释。",
+      "uses_zh": [
+        "故事、观点和情境解释的横屏叙事"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.2",
+      "source_url": "https://motiongit.com/@adunext/template-05-native",
+      "source_id": "960723",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/613/draft-zh-9454c905098e.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 613,
+      "source_repository_url": "https://github.com/motiontemplates/960723",
+      "source_revision": "53962927d94860c94a1f8a93e0c8ba1d41652400",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "鲜色角色 · 叙事讲解"
+    },
+    {
+      "id": "mg-style-293151",
+      "label_zh": "鲜色角色 · 叙事讲解 · 竖屏",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用鲜明配色、角色素材与叙事动效配合口播，适合故事、观点和情境解释。",
+      "uses_zh": [
+        "故事、观点和情境解释的竖屏叙事"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.2",
+      "source_url": "https://motiongit.com/@adunext/template-05-native-portrait",
+      "source_id": "293151",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/614/draft-zh-6382724d35a0.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "9:16"
+        }
+      ],
+      "ratio": "9:16",
+      "source_group": "talk",
+      "source_template_id": 614,
+      "source_repository_url": "https://github.com/motiontemplates/293151",
+      "source_revision": "5075f6f835e4e6a11fd6e94e7ef1afa367053e41",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "鲜色角色 · 叙事讲解"
+    },
+    {
+      "id": "mg-style-762139",
+      "label_zh": "活力海报 · 口播讲解",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用高对比海报、大字、清单和图形关系配合口播，含原生动画与新增组件，横屏独立编排。",
+      "uses_zh": [
+        "重点观点、清单与图形关系的横屏海报式讲解"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.3",
+      "source_url": "https://motiongit.com/@adunext/vibrant-poster",
+      "source_id": "762139",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/623/draft-zh-e8e43fce1aae.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 623,
+      "source_repository_url": "https://github.com/motiontemplates/762139",
+      "source_revision": "353507e7ce73a0e9b5757429d42b6de53d17f108",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "活力海报 · 口播讲解"
+    },
+    {
+      "id": "mg-style-721489",
+      "label_zh": "活力海报 · 口播讲解 · 竖屏",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "用高对比海报、大字、清单和图形关系配合口播，含原生动画与新增组件，竖屏独立编排。",
+      "uses_zh": [
+        "重点观点、清单与图形关系的竖屏海报式讲解"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "本期口播视频与原声、匹配的文稿或字幕，以及本期需要引用的图片、录像和数据。可先仅提供文稿讨论画面方案；正式制作前需要真实配音时长和已确认的素材。没有提供人物素材时，不使用示例人物代替你。"
+      ],
+      "version": "2.7.17-alpha.3",
+      "source_url": "https://motiongit.com/@adunext/vibrant-poster-portrait",
+      "source_id": "721489",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/624/draft-zh-11cf23913cdd.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "9:16"
+        }
+      ],
+      "ratio": "9:16",
+      "source_group": "talk",
+      "source_template_id": 624,
+      "source_repository_url": "https://github.com/motiontemplates/721489",
+      "source_revision": "7a5f8a56c7f87778da1e92802d695aa2d9f0098d",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "活力海报 · 口播讲解"
+    },
+    {
+      "id": "mg-style-854836",
+      "label_zh": "口播宣传动效 10 秒",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "10 秒横版宣传动效：用一个数字、一句大字和品牌收尾，做短视频开场或产品预告片头。",
+      "uses_zh": [
+        "短宣传片的单一数字、主张和品牌开场；目录描述为 10 秒片段"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/kouboo-motion",
+      "source_id": "854836",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/870/1.0.0-6dcf8b7863ca.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 870,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "口播宣传动效 10 秒"
+    },
+    {
+      "id": "mg-style-554769",
+      "label_zh": "3D 口播开场",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "3D 口播开场",
+      "uses_zh": [
+        "3D 口播开场的视觉参考；目录没有详细说明完整正文能力"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。",
+        "公开摘要只有标题；不能据 Demo 宣称能完成任意口播正文。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/cool-3d-intro",
+      "source_id": "554769",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/871/draft-40ddede10a69.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 871,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "3D 口播开场"
+    },
+    {
+      "id": "mg-style-228996",
+      "label_zh": "DEEP STAGE 口播主舞台",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "口播主舞台动效：9:16 人物画面（CAM 01 / REC 取景标签）与主信息屏、竖向章节导航屏三层错峰入位，下三分之一人名条滑入，镜头全程缓慢横移。14 秒，适合口播正文与知识讲解。",
+      "uses_zh": [
+        "人物、主信息屏和章节导航并列的知识讲解片段"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/deep-stage-host-stage",
+      "source_id": "228996",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/880/1.0.0-2c8e89fea7a8.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 880,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DEEP STAGE 口播主舞台"
+    },
+    {
+      "id": "mg-style-838778",
+      "label_zh": "DEEP STAGE 深境舞台完整版",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "46 秒整条口播包装视频模板：深色 3D 舞台开场点火 → 口播主舞台（人物画面 + 信息屏 + 章节屏）→ 产品讲解 → 案例数据 → 媒体素材墙 → 收尾锁版，一条连续镜头运动。可替换品牌、标题、人名职务、三屏文案、产品/案例文案、10 句口播字幕与主色；随包可选音效轨（纯合",
+      "uses_zh": [
+        "需要开场、讲解、产品、案例、素材墙和收尾的整套包装候选"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/deep-stage-full-video",
+      "source_id": "838778",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/885/1.0.0-1d0d4dc1ea23.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 885,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DEEP STAGE 深境舞台完整版"
+    },
+    {
+      "id": "mg-style-583549",
+      "label_zh": "Kit 2 · 口播动效包装（竖屏）",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "给真人出镜的口播视频套上完整动效包装：人像窗口在全屏、圆窗、卡片之间插值过渡，配 10 个段落可视化隐喻与深色药丸双语字幕（重点词橙色）。高潮锚词砸下（震屏+橙闪），片尾手写收尾。1080×1920/30fps，样例 36.5 秒，含程序化动作音效。",
+      "uses_zh": [
+        "双语字幕、锚词与人物窗口变化的竖屏包装候选"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。",
+        "当前包的占位人像不可作为用户本人交付；真人输入接入不在该包默认运行合同内。"
+      ],
+      "inputs_zh": [
+        "锚词（中文 1–4 字及英文）、按真实时间排序的双语字幕和高潮位置。",
+        "当前包使用矢量占位人像；官方说明真人接入需作者的剪辑、抽帧管线，不能把包内窗口动画当成已接好真人。",
+        "动作音效可按随包脚本生成；真人原声属于后续素材和混音管线。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@chenyutao0417/kit2-koubo-wrap",
+      "source_id": "583549",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/890/1.0.0-a07dfe35eea8.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "9:16"
+        }
+      ],
+      "ratio": "9:16",
+      "source_group": "talk",
+      "source_template_id": 890,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "Kit 2 · 口播动效包装"
+    },
+    {
+      "id": "mg-style-178707",
+      "label_zh": "突破边界",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "纸面画框、破框转场与彩蛋动效。内测版，新文案适配仍在完善。",
+      "uses_zh": [
+        "纸面画框与破框转场的风格探索"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。",
+        "目录注明内测、新文案适配仍完善；先验证本期文字与画幅。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "0.1.1-alpha.2",
+      "source_url": "https://motiongit.com/@adunext/break-boundaries",
+      "source_id": "178707",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/896/draft-zh-995fe8c7aa31.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "3:4"
+        }
+      ],
+      "ratio": "3:4",
+      "source_group": "talk",
+      "source_template_id": 896,
+      "source_repository_url": "https://github.com/motiontemplates/178707",
+      "source_revision": "c18710a10d1a4f6f5ab5a405e519c24be4626a50",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "突破边界"
+    },
+    {
+      "id": "mg-style-148294",
+      "label_zh": "字符剧场",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "字符角色、作品墙与剧场式动画。内测版，新文案适配仍在完善。",
+      "uses_zh": [
+        "字符角色与作品墙的剧场式叙事"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。",
+        "目录注明内测、新文案适配仍完善；先验证本期文字与画幅。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "0.1.0-alpha8",
+      "source_url": "https://motiongit.com/@adunext/character-theater",
+      "source_id": "148294",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/897/draft-zh-1bc9e79516df.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 897,
+      "source_repository_url": "https://github.com/motiontemplates/148294",
+      "source_revision": "ac062abaaac4c7389f0e001e6bfc8e2d6dccfcce",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "字符剧场"
+    },
+    {
+      "id": "mg-style-875206",
+      "label_zh": "卡通讲解风",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "手绘卡通讲解、步骤演示与原生转场。内测版，新文案适配仍在完善。",
+      "uses_zh": [
+        "手绘卡通的概念解释与步骤表达"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。",
+        "目录注明内测、新文案适配仍完善；先验证本期文字与画幅。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "0.1.0-alpha8",
+      "source_url": "https://motiongit.com/@adunext/cartoon-explainer",
+      "source_id": "875206",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/898/draft-zh-07d37803544c.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "talk",
+      "source_template_id": 898,
+      "source_repository_url": "https://github.com/motiontemplates/875206",
+      "source_revision": "60d8d5b3ba8997d6bd4abc3014ce4ffa795f72cd",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "卡通讲解风"
+    },
+    {
+      "id": "mg-style-966597",
+      "label_zh": "像素海洋",
+      "layer": "style",
+      "category_zh": "口播与讲解",
+      "description_zh": "像素海浪、水位上涨与过关式动画。内测版，新文案适配仍在完善。",
+      "uses_zh": [
+        "像素海洋、状态推进与过关隐喻的主题表达"
+      ],
+      "avoid_zh": [
+        "人物窗口必须来自本期合法的同期本人素材；不要把 Demo 人物、UI 内角色或占位头像当成讲师。",
+        "目录注明内测、新文案适配仍完善；先验证本期文字与画幅。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "0.1.0-alpha8",
+      "source_url": "https://motiongit.com/@adunext/pixel-ocean",
+      "source_id": "966597",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/899/draft-zh-e97c782669c1.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "4:3"
+        }
+      ],
+      "ratio": "4:3",
+      "source_group": "talk",
+      "source_template_id": 899,
+      "source_repository_url": "https://github.com/motiontemplates/966597",
+      "source_revision": "e302c321dd4221295ac3a099c62261dd589c2bc7",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "像素海洋"
+    },
+    {
+      "id": "mg-style-287792",
+      "label_zh": "量价图表：K线突破与分时动画",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "量价教学图表独立组件，包含两组日K与一组分时动画。",
+      "uses_zh": [
+        "量价关系、日 K 与分时变化的教学图表"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。",
+        "图表示例只用于教学，不代表真实行情、预测或收益承诺。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@oubaba95128/volume-price-kline-charts",
+      "source_id": "287792",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/869/1.0.0-zh-d5fd83bc28a8.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "1:1"
+        }
+      ],
+      "ratio": "1:1",
+      "source_group": "explainer",
+      "source_template_id": 869,
+      "source_repository_url": "https://github.com/motiontemplates/287792",
+      "source_revision": "3d7697c07f166cbf13d5cc0b620235436df66840",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "量价图表：K线突破与分时动画"
+    },
+    {
+      "id": "mg-style-876",
+      "label_zh": "流程与时间线 · FLOW / TIMELINE",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "四步创作流程（说戏→分镜→画面→成片）推进到一条时间线，四轨片段铺开、播放头扫过、统计落位；9.8 秒，适合 AIGC/创作工具的能力说明。",
+      "uses_zh": [
+        "创作流程、步骤推进与时间线结构的短说明"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/collage-flow",
+      "source_id": "876",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/876/1.0.0-zh-294b6a370e6d.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 876,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "流程与时间线 · FLOW / TIMELINE"
+    },
+    {
+      "id": "mg-style-587362",
+      "label_zh": "DEEP STAGE 案例数据",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "案例讲解动效：数据仪表盘推入，3 个 KPI 数字滚动，6 根柱图从底部逐根生长（最高值自动主色高亮），前后对比副屏滑入。13 秒，适合案例复盘与成果汇报。",
+      "uses_zh": [
+        "有来源的 KPI、柱图与前后比较的案例复盘"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/deep-stage-case-data",
+      "source_id": "587362",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/882/1.0.0-5df639825460.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 882,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DEEP STAGE 案例数据"
+    },
+    {
+      "id": "mg-style-509099",
+      "label_zh": "目标与证据 · 17类语义动效",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "暖灰米白与绿色的17类语义动效，适用于知识讲解、产品说明、指标比较与观点表达。",
+      "uses_zh": [
+        "知识解释、产品说明、指标比较与观点表达的语义动效"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "本期带原声视频或音频、对应 SRT、项目名与真实来源/句级事件依据。",
+        "按实际需要选择同源人物窗口、明确的音乐方案与内容镜头；真实口播时长来自原声。",
+        "voiceover 与 content 模式边界、产品演示证据数量和当前版本动作窗须按随包合同核对。"
+      ],
+      "version": "0.4.0-rc.5",
+      "source_url": "https://motiongit.com/@frankye1211/product-update-story",
+      "source_id": "509099",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/886/0.4.0-rc.4-7ab29961149d.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 886,
+      "source_repository_url": "https://github.com/motiontemplates/509099",
+      "source_revision": "0f1aea44661fbdcf12b66ba0c1223db0190951ac",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "目标与证据 · 17类语义动效"
+    },
+    {
+      "id": "mg-style-643842",
+      "label_zh": "图解口播与图片展示",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "月白渐变风格的图解与口播模板，支持图形讲解、图片视频展示和人物卡片；新增7种同系列食物SVG与透明PNG。",
+      "uses_zh": [
+        "图形关系、图片视频证据、作品墙与人物卡片的讲解"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "本期人物视频、原声及准确时间段；按所选场景提供 Logo、图片、截图、报告和视频。",
+        "图片墙分别有 6–9 张、12–60 张等输入要求，不能重复图片凑数；实际槽位按当前 guide 核对。",
+        "人物窗口、原声和字幕需同一时钟；短场景路线与旧演示重放路线有不同输入合同。"
+      ],
+      "version": "0.8.1-rc.1",
+      "source_url": "https://motiongit.com/@frankye1211/moonwhite-robot-unified",
+      "source_id": "643842",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/888/0.8.0-rc.2-6971ec2770b7.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 888,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "图解口播与图片展示"
+    },
+    {
+      "id": "mg-style-233154",
+      "label_zh": "Kit 1 · 人文纪录片知识短片",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "无口播、画面+字幕叙事的人文纪录片风知识短片模板：暗场开题、锚词砸出（缩放回弹+闪白+震屏）、结尾亮背景重定义。替换锚词与双语字幕即可制作新短片，1920×1080/30fps，样例 20 秒含程序化 BGM 与音效。",
+      "uses_zh": [
+        "无口播的人文知识短片，以画面与字幕推进叙事"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。",
+        "官方定位为无口播短片，不默认套到必须保留同期真人与原声的整条视频。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@chenyutao0417/kit1-doc-shortfilm",
+      "source_id": "233154",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/889/1.0.0-c28fac802c50.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 889,
+      "source_repository_url": "https://github.com/motiontemplates/233154",
+      "source_revision": "e7e63081c81039ae5eebfc4210d49836af4ffe8a",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "Kit 1 · 人文纪录片知识短片"
+    },
+    {
+      "id": "mg-style-360840",
+      "label_zh": "水墨人物志 · 一个人的故事",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "用汉字当角色（韩、刘、萧、项…）的水墨动画，2 分 48 秒讲完一个历史人物的一生，并用心理学解释他为什么落到这个下场。改预设里的对白、成语签、地点年份、括注和场景即可换一个新人物。1920×1080 / 30fps，样例含程序化动作音效。",
+      "uses_zh": [
+        "有史料或授权文稿的人物经历、因果与概念解释"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "有来源的人物史料、参考台词或用户文稿，以及要解释的概念。",
+        "片名、系列名、印章字、短句对白、成语签、地点年份和背景括注。",
+        "有使用权的背景音乐或明确的无音乐方案；保留史料、解释与示意的界限。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@chenyutao0417/ink-saga",
+      "source_id": "360840",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/892/1.0.0-zh-1f9aa1a124de.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 892,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "水墨人物志 · 一个人的故事"
+    },
+    {
+      "id": "mg-style-257987",
+      "label_zh": "瑞士信息设计 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "用清晰网格、对象计数和比例变化讲明白“百分比在除什么”。适合分母、权重与统计比较，可由AI助手按本期文稿选择图示，支持可选真人开场。",
+      "uses_zh": [
+        "百分比、分母、权重和统计比较"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-swiss",
+      "source_id": "257987",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/900/2.5.3-zh-5df29820b59b.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 900,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "瑞士信息设计 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-517652",
+      "label_zh": "黏土实验台 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "把拆分、附着和搬运变成可追踪的黏土实验。适合对象变化与过程解释，由AI助手选择图标和图示，可选真人全屏开头后缩成圆窗。",
+      "uses_zh": [
+        "对象拆分、附着、搬运与过程变化的教学"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。",
+        "原始证据图片无法在当前原生镜头中直接嵌入；纯图示不能替代需要看清的实际 UI。"
+      ],
+      "inputs_zh": [
+        "完整文稿、知识问题、条件、数据、出处与事实/假设/示意边界。",
+        "本期真实原声或已经授权的配音；需要真人时提供本人视频，以及可核对的字幕时间。",
+        "指定授权音乐可一并提供；不能把示例音乐或人物当成已授权输入。",
+        "本版官方说明原图用于核对知识依据，没有原图嵌入镜头；必须展示原始证据图片时需另行适配。",
+        "新主题与源演出重放的模型、对象、时钟和证据合同不同；不得由风格 Demo 推断任意文稿均可直接套用。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-clay",
+      "source_id": "517652",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/901/2.5.3-zh-8f8876c01431.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 901,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "黏土实验台 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-173723",
+      "label_zh": "粉笔黑板 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "用粉笔线条把光线、视角与遮挡条件逐步画清。适合轨道、投影和几何原因辨析，提供图标图示选择引导，可选真人开场后圆窗陪讲。",
+      "uses_zh": [
+        "轨道、投影、视角、遮挡和几何原因的解释"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-chalkboard",
+      "source_id": "173723",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/902/2.5.3-zh-3d0943b9524d.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 902,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "粉笔黑板 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-880856",
+      "label_zh": "生长导图 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "让关系沿分支生长，让对象沿路径前进。适合层级、分流、局部放大与不同时间尺度的解释，配有图示选择引导，可选真人开场后缩圆窗。",
+      "uses_zh": [
+        "层级分支、分流、路径和时间尺度的流程图教学"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-mindmap",
+      "source_id": "880856",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/903/2.5.3-zh-fe14805ea913.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 903,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "生长导图 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-949192",
+      "label_zh": "博物馆展墙 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "以展墙与展品机制串起一段知识历程。适合日影、液位、齿轮、摆动、分频与共振的解释，由AI助手选图示，可选真人开场后圆窗陪讲。",
+      "uses_zh": [
+        "日影、液位、齿轮、摆动等机制的展陈式解释"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-timeline",
+      "source_id": "949192",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/904/2.5.3-zh-12ca8272b15b.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 904,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "博物馆展墙 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-803150",
+      "label_zh": "发光玻璃板 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "在发光线条中看见波形怎样相遇、延时怎样留下残余。适合信号叠加、相位与反馈解释，提供图标图示引导，可选真人开头后缩圆窗。",
+      "uses_zh": [
+        "波形、叠加、延时、相位与反馈的信号教学"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-lightboard",
+      "source_id": "803150",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/905/2.5.3-zh-90f1d36b5c30.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 905,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "发光玻璃板 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-106531",
+      "label_zh": "等距系统图 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "用等距剖切把内部结构、物质通路与能量关系分开讲清。适合换热、压缩和能量核算，提供图示选择引导，可选真人开场后缩圆窗。",
+      "uses_zh": [
+        "内部结构、物质通路与能量关系的系统图解"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-isometric",
+      "source_id": "106531",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/906/2.5.3-zh-f7f712d44ade.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 906,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "等距系统图 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-546070",
+      "label_zh": "纸雕层叠 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "用层叠纸片看见内部、压缩与搬运。适合层序、褶皱、切面和错动的教学解释，提供图标图示选择引导，可选真人开场后缩成圆窗。",
+      "uses_zh": [
+        "层序、褶皱、切面与错动的分层教学"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-papercut",
+      "source_id": "546070",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/907/2.5.3-zh-66b986377f2a.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 907,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "纸雕层叠 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-447390",
+      "label_zh": "地铁线路图 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "沿着线路追踪占用、停车与队列变化。适合安全间隔、状态读数和有限服务流程的教学表达，配有图标图示引导，可选真人开头后缩圆窗。",
+      "uses_zh": [
+        "队列、占用、安全间隔与有限服务流程的说明"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-metro",
+      "source_id": "447390",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/908/2.5.3-zh-fd8d9dc5ae03.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 908,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "地铁线路图 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-808349",
+      "label_zh": "双色孔版 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "用双色套印看清复制、增长和基数差异。适合固定增量与固定比例、谱系和指数规则的解释，提供图示选择引导，可选真人开场后圆窗陪讲。",
+      "uses_zh": [
+        "固定增量与比例、谱系、复制和指数规则的解释"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-riso",
+      "source_id": "808349",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/909/2.5.3-zh-15d6f65e42f3.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 909,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "双色孔版 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-968813",
+      "label_zh": "点阵手账 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "把步骤、关键词和修订留在同一本点阵手账里。适合方法拆解与学习回顾，提供图标图示选择引导；页面为19.95秒早期风格短样。",
+      "uses_zh": [
+        "方法步骤、关键词与学习回顾的手账风格参考"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。",
+        "当前 Demo 是 19.95 秒早期短样，不代表新版任意主题已验证。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-sketchnote",
+      "source_id": "968813",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/910/2.5.3-zh-5ebc896f6930.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 910,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "点阵手账 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-118272",
+      "label_zh": "彩色几何 · 知识讲解模板",
+      "layer": "style",
+      "category_zh": "知识解说与流程图",
+      "description_zh": "用彩色边、面积与刚体拼图讲清几何等量关系。原生新稿围绕直角三角形模型，提供图示选择引导；页面为23.8667秒早期风格短样。",
+      "uses_zh": [
+        "面积、边长与刚体拼图的几何教学参考"
+      ],
+      "avoid_zh": [
+        "图示须对应真实文稿、条件与数据；示意动画不能冒充实测证据或实际系统操作。",
+        "当前 Demo 是 23.8667 秒早期短样，不代表新版任意主题已验证。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "2.7.2",
+      "source_url": "https://motiongit.com/@adunext/knowledge-explainer-byrne",
+      "source_id": "118272",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/911/2.5.3-zh-b27b76c06f66.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "explainer",
+      "source_template_id": 911,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "彩色几何 · 知识讲解模板"
+    },
+    {
+      "id": "mg-style-128610",
+      "label_zh": "多屏拼贴 · 品牌宣传",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "用多屏拼贴、版面切换和品牌收尾展示产品与创作流程，适合品牌介绍和工具宣传。",
+      "uses_zh": [
+        "品牌介绍、工具宣传与多个作品画面的并置"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "提供产品名称、准确的功能与主张、短标题、网址，以及有权使用的品牌素材。改写了有声内容时，提供对应的新配音或授权制作配音，并重新核对配乐、音效与画面同步。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@motiongit/motiongit-promo-main",
+      "source_id": "128610",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/585/draft-zh-78bba5fd21f6.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 585,
+      "source_repository_url": "https://github.com/motiontemplates/128610",
+      "source_revision": "65b4b8af4ff0e700dd082283e1230930345c9dee",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "多屏拼贴 · 品牌宣传"
+    },
+    {
+      "id": "mg-style-252912",
+      "label_zh": "像素闯关 · 产品宣传",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "像素城市、角色闯关和复古游戏音色组成产品介绍，适合数字工具与功能说明。",
+      "uses_zh": [
+        "数字工具和功能说明的复古闯关式宣传"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "提供产品名称、准确的功能与主张、短标题、网址，以及有权使用的品牌素材。改写了有声内容时，提供对应的新配音或授权制作配音，并重新核对配乐、音效与画面同步。 像素场景中的小屏标题有字符与长度限制；保留像素风格时，按包内指南使用短标题并检查实际显示。"
+      ],
+      "version": "2.6.6",
+      "source_url": "https://motiongit.com/@motiongit/motiongit-promo-pixel",
+      "source_id": "252912",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/586/draft-zh-b8792f9887ad.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 586,
+      "source_repository_url": "https://github.com/motiontemplates/252912",
+      "source_revision": "ec286ac676ab6177886300f5c4ca7b827329f0bf",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "像素闯关 · 产品宣传"
+    },
+    {
+      "id": "mg-style-867595",
+      "label_zh": "明暗快切 · 产品宣传",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "明暗画面快速切换，结合大字和界面展示突出产品功能，适合节奏鲜明的宣传片。",
+      "uses_zh": [
+        "突出单一产品功能的快节奏宣传"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "提供产品名称、准确的功能与主张、短标题、网址，以及有权使用的品牌素材。改写了有声内容时，提供对应的新配音或授权制作配音，并重新核对配乐、音效与画面同步。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@motiongit/motiongit-promo-velocity",
+      "source_id": "867595",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/587/draft-zh-89b65ccfd5ce.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 587,
+      "source_repository_url": "https://github.com/motiontemplates/867595",
+      "source_revision": "2f41bb33db8f84227a3ee4c626c08da240f5b539",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "明暗快切 · 产品宣传"
+    },
+    {
+      "id": "mg-style-670021",
+      "label_zh": "流程演示 · 产品教程",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "沿着选择模板、提供内容、生成视频的流程讲解产品使用，适合工具教程和上手演示。",
+      "uses_zh": [
+        "按真实步骤讲解工具使用与上手流程"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "提供产品名称、准确的功能与主张、短标题、网址，以及有权使用的品牌素材。改写了有声内容时，提供对应的新配音或授权制作配音，并重新核对配乐、音效与画面同步。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@motiongit/motiongit-promo-user",
+      "source_id": "670021",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/588/draft-zh-ca08bac0650e.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 588,
+      "source_repository_url": "https://github.com/motiontemplates/670021",
+      "source_revision": "13ab9776f4e09163f9297dded1c519ef0fb5a4c4",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "流程演示 · 产品教程"
+    },
+    {
+      "id": "mg-style-452365",
+      "label_zh": "模块拼贴 · 创作者宣传",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "以模块拼贴呈现内容、素材和动画的组合关系，适合创作者工具与工作方式介绍。",
+      "uses_zh": [
+        "创作者工作方式、内容和素材组合关系的展示"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "提供产品名称、准确的功能与主张、短标题、网址，以及有权使用的品牌素材。改写了有声内容时，提供对应的新配音或授权制作配音，并重新核对配乐、音效与画面同步。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@motiongit/motiongit-promo-creator",
+      "source_id": "452365",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/589/draft-zh-4d806a380523.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 589,
+      "source_repository_url": "https://github.com/motiontemplates/452365",
+      "source_revision": "80423e83a99b32499b9a493a4c22f486adb16861",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "模块拼贴 · 创作者宣传"
+    },
+    {
+      "id": "mg-style-213827",
+      "label_zh": "工程蓝图 · 产品拆解",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "以工程蓝图、结构示意和模块拆解展示产品组成，适合技术产品与工作流讲解。",
+      "uses_zh": [
+        "技术产品组成、模块关系和工作流拆解"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "提供产品名称、准确的功能与主张、短标题、网址，以及有权使用的品牌素材。改写了有声内容时，提供对应的新配音或授权制作配音，并重新核对配乐、音效与画面同步。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@motiongit/motiongit-promo-blueprint",
+      "source_id": "213827",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/590/draft-zh-308a5a69232f.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 590,
+      "source_repository_url": "https://github.com/motiontemplates/213827",
+      "source_revision": "4859988ea9fe834b982d457548e29e9c8be524c7",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "工程蓝图 · 产品拆解"
+    },
+    {
+      "id": "mg-style-667934",
+      "label_zh": "发布会舞台 · 产品演示",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "以发布会舞台和大屏展示组织产品演示，适合新品介绍、功能发布与品牌展示。",
+      "uses_zh": [
+        "新品介绍、功能发布与大屏产品演示"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "提供产品名称、准确的功能与主张、短标题、网址，以及有权使用的品牌素材。改写了有声内容时，提供对应的新配音或授权制作配音，并重新核对配乐、音效与画面同步。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@motiongit/motiongit-promo-keynote",
+      "source_id": "667934",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/591/draft-zh-958b2690a669.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 591,
+      "source_repository_url": "https://github.com/motiontemplates/667934",
+      "source_revision": "591f5acfd6355c76f937910cbc9fb31fed5e6ed3",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "发布会舞台 · 产品演示"
+    },
+    {
+      "id": "mg-style-394243",
+      "label_zh": "宣纸手卷 · 品牌叙事",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "沿宣纸手卷展开品牌故事，以水墨意象和卷轴转场营造东方叙事。",
+      "uses_zh": [
+        "品牌经历与东方视觉叙事"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "提供产品名称、准确的功能与主张、短标题、网址，以及有权使用的品牌素材。改写了有声内容时，提供对应的新配音或授权制作配音，并重新核对配乐、音效与画面同步。"
+      ],
+      "version": "2.6.6",
+      "source_url": "https://motiongit.com/@motiongit/motiongit-promo-ink",
+      "source_id": "394243",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/592/draft-zh-eba2e4e6f671.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 592,
+      "source_repository_url": "https://github.com/motiontemplates/394243",
+      "source_revision": "e880c950f5c277924f406854016b51ca915d2f7c",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "宣纸手卷 · 品牌叙事"
+    },
+    {
+      "id": "mg-style-873",
+      "label_zh": "拼贴出场 · COLLAGE OPEN",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "8.5 秒拼贴出场：9 块创作样张依次飞入拼贴墙，主张版块落位。可换品牌名、片头编号、强调色与两行标题。",
+      "uses_zh": [
+        "作品样张拼贴和品牌主张的短开场"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/collage-open",
+      "source_id": "873",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/873/1.0.0-zh-6b7b749b3dc5.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 873,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "拼贴出场 · COLLAGE OPEN"
+    },
+    {
+      "id": "mg-style-874",
+      "label_zh": "多屏墙换版 · WALL SWAP",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "从面板擦除进入多屏拼贴墙，再切到「一个想法，四种看法」的分屏版面；8.6 秒展示多素材并置与版面切换。可换品牌名、片头编号、强调色与两行标题。",
+      "uses_zh": [
+        "多素材并置及分屏版面的切换"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/collage-wall",
+      "source_id": "874",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/874/1.0.0-zh-7831dd69bc6b.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 874,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "多屏墙换版 · WALL SWAP"
+    },
+    {
+      "id": "mg-style-875",
+      "label_zh": "四种看法与片格 · VIEWS / STRIP",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "「一个想法，四种看法」分屏版面切到横滚片格，真实晚霞树影与创作样张横向滚动；8.2 秒，适合多镜头并置与作品条带展示。",
+      "uses_zh": [
+        "同一主题的多镜头比较和作品条带展示"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/collage-views",
+      "source_id": "875",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/875/1.0.0-zh-cd8ad1570460.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 875,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "四种看法与片格 · VIEWS / STRIP"
+    },
+    {
+      "id": "mg-style-877",
+      "label_zh": "产品与品牌 · PRODUCT → BRAND",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "从面板擦除进入产品工作台（分镜/画布/调色/时间线同窗联动），再以墨色擦除收进棱镜标志、字标、主张与 CTA；14.4 秒，适合产品演示与品牌落版。",
+      "uses_zh": [
+        "产品工作台流程展示与品牌 CTA 收束"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/collage-product",
+      "source_id": "877",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/877/1.0.0-zh-97910ee13592.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 877,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "产品与品牌 · PRODUCT → BRAND"
+    },
+    {
+      "id": "mg-style-648878",
+      "label_zh": "DEEP STAGE 产品讲解",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "产品讲解动效：产品主屏推入并持续推近，3 个参数切片从 3D 空间错峰浮出、数字从 0 滚到终值，右下角人物小画中画入位。12 秒，适合产品卖点与参数讲解。",
+      "uses_zh": [
+        "产品卖点、参数与人物解说的短场景"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/deep-stage-product-focus",
+      "source_id": "648878",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/881/1.0.0-bf4d2ce8953d.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 881,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DEEP STAGE 产品讲解"
+    },
+    {
+      "id": "mg-style-640261",
+      "label_zh": "多屏商务 · 动态图表",
+      "layer": "style",
+      "category_zh": "产品宣传与教程",
+      "description_zh": "固定20秒横屏商务短片，以多屏重排呈现团队、比较、趋势、构成与行动。",
+      "uses_zh": [
+        "有来源的团队、比较、趋势、构成和排行数据的商务短片"
+      ],
+      "avoid_zh": [
+        "宣传镜头不能替代真实操作证据；不编造功能、收益、案例数据或素材授权。"
+      ],
+      "inputs_zh": [
+        "三张有使用权的 JPG/PNG 照片，以及有来源的比较、趋势、构成和排行数据。",
+        "六段标题与说明、品牌角标、六色配色；固定 20 秒合同与容量需按包内说明核对。",
+        "官方说明默认仅动作音效；如需另加音乐，须明确选择并绑定有授权的文件。"
+      ],
+      "version": "0.1.1-candidate",
+      "source_url": "https://motiongit.com/@frankye1211/corporate-multiscreen-charts",
+      "source_id": "640261",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/891/0.1.1-candidate-zh-a43ff10687ec.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "product",
+      "source_template_id": 891,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "多屏商务 · 动态图表"
+    },
+    {
+      "id": "mg-style-381814",
+      "label_zh": "半调网点 · 人像标题",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "三张人像化为流动的双色网点，散开后重新汇聚成标题，适合人像与主题开场。",
+      "uses_zh": [
+        "人物与主题标题的短开场"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "提供自己有权使用的照片、短标题或署名。这个模板面向当前横屏视觉场景；画幅或照片结构变化需要另行适配设计。"
+      ],
+      "version": "2.6.6",
+      "source_url": "https://motiongit.com/@prism-studio/visual-art-a-halftone",
+      "source_id": "381814",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 615,
+      "source_repository_url": "https://github.com/motiontemplates/381814",
+      "source_revision": "1a9f5b1637698517a0fd1fd95e389c595580236e",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "半调网点 · 人像标题"
+    },
+    {
+      "id": "mg-style-460349",
+      "label_zh": "照片马赛克 · 拼图揭幕",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "多张照片组成主视觉，从局部照片拉远揭示完整马赛克，适合集体回忆与拼图揭幕。",
+      "uses_zh": [
+        "集体回忆、照片拼图与主视觉揭幕"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "提供自己有权使用的照片、短标题或署名。这个模板面向当前横屏视觉场景；画幅或照片结构变化需要另行适配设计。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@prism-studio/visual-art-b-mosaic",
+      "source_id": "460349",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/616/draft-zh-3c3bc74e9591.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 616,
+      "source_repository_url": "https://github.com/motiontemplates/460349",
+      "source_revision": "764b9dbe0cce18a126077381084e7d394b56d3d7",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "照片马赛克 · 拼图揭幕"
+    },
+    {
+      "id": "mg-style-907345",
+      "label_zh": "几何拼贴 · 动态海报",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "将四张照片裁成几何形状，在三组包豪斯动态海报中重组，适合活动与视觉主题展示。",
+      "uses_zh": [
+        "活动照片、视觉主题与动态海报"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "提供自己有权使用的照片、短标题或署名。这个模板面向当前横屏视觉场景；画幅或照片结构变化需要另行适配设计。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@prism-studio/visual-art-c-collage",
+      "source_id": "907345",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/617/draft-zh-d014a696e0ba.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 617,
+      "source_repository_url": "https://github.com/motiontemplates/907345",
+      "source_revision": "b9bc6960a626c9a599a609b25f04265b3cdb388f",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "几何拼贴 · 动态海报"
+    },
+    {
+      "id": "mg-style-328828",
+      "label_zh": "笔触重绘 · 艺术照片",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "用三层定向笔触重绘照片，与原图对照后呈现署名标题，适合摄影与艺术展示。",
+      "uses_zh": [
+        "摄影作品、艺术照片与原图对照"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "提供自己有权使用的照片、短标题或署名。这个模板面向当前横屏视觉场景；画幅或照片结构变化需要另行适配设计。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@prism-studio/visual-art-d-brushwork",
+      "source_id": "328828",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/618/draft-zh-9a122d6aac1e.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 618,
+      "source_repository_url": "https://github.com/motiontemplates/328828",
+      "source_revision": "d985f654c3c26e525583aa8bb490a9f54236b564",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "笔触重绘 · 艺术照片"
+    },
+    {
+      "id": "mg-style-638039",
+      "label_zh": "信号故障 · 照片转场",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "用像素排序、RGB 分离和扫描线改造照片，并以 CRT 关机效果收尾，适合科技视觉片段。",
+      "uses_zh": [
+        "与内容相关的信号故障或科技照片转场"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "提供自己有权使用的照片、短标题或署名。这个模板面向当前横屏视觉场景；画幅或照片结构变化需要另行适配设计。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@prism-studio/visual-art-e-glitch",
+      "source_id": "638039",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/619/draft-zh-567d566f31a3.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 619,
+      "source_repository_url": "https://github.com/motiontemplates/638039",
+      "source_revision": "4a42776829882ff6e578dd336cd6702332a9796f",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "信号故障 · 照片转场"
+    },
+    {
+      "id": "mg-style-800829",
+      "label_zh": "双重曝光 · 人像叠影",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "以风景填充人像剪影，双层画面反向漂移，标题从薄雾显现，适合诗意人像叠影。",
+      "uses_zh": [
+        "人物故事与风景意象的诗意叠影"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "提供自己有权使用的照片、短标题或署名。这个模板面向当前横屏视觉场景；画幅或照片结构变化需要另行适配设计。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@prism-studio/visual-art-f-double",
+      "source_id": "800829",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/620/draft-zh-eb40eb882b43.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 620,
+      "source_repository_url": "https://github.com/motiontemplates/800829",
+      "source_revision": "f8b3ef9c3346a65030999287a25d884fc2843364",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "双重曝光 · 人像叠影"
+    },
+    {
+      "id": "mg-style-743702",
+      "label_zh": "空间画廊 · 回忆相册",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "穿行带有文字说明的立体照片画廊，最后推进主照片并揭示全屏标题，适合回忆与作品集。",
+      "uses_zh": [
+        "回忆相册、作品集与带说明的照片展陈"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "提供自己有权使用的照片、短标题或署名。这个模板面向当前横屏视觉场景；画幅或照片结构变化需要另行适配设计。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@prism-studio/visual-art-g-gallery",
+      "source_id": "743702",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/621/draft-zh-13dffcc71ff3.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 621,
+      "source_repository_url": "https://github.com/motiontemplates/743702",
+      "source_revision": "8b822dbf2fbfa817d56a2b016a366860ce57366c",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "空间画廊 · 回忆相册"
+    },
+    {
+      "id": "mg-style-551805",
+      "label_zh": "镜像万花筒 · 照片变幻",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "将两张照片镜像成旋转的十二分段万花筒，经扩张圆环转场再展开原图，适合视觉主题片。",
+      "uses_zh": [
+        "明确需要镜像与抽象变幻的视觉主题片"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "提供自己有权使用的照片、短标题或署名。这个模板面向当前横屏视觉场景；画幅或照片结构变化需要另行适配设计。"
+      ],
+      "version": "2.6.4",
+      "source_url": "https://motiongit.com/@prism-studio/visual-art-h-kaleido",
+      "source_id": "551805",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/622/draft-zh-3a7bf4639a39.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 622,
+      "source_repository_url": "https://github.com/motiontemplates/551805",
+      "source_revision": "650591b787d916495e6709311c4902635315777d",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "镜像万花筒 · 照片变幻"
+    },
+    {
+      "id": "mg-style-404937",
+      "label_zh": "DeepSeek 鲸鱼粒子聚合",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "粒子从散落聚合成品牌鲸鱼 Logo，适合片头、品牌露出或章节转场。",
+      "uses_zh": [
+        "已确认品牌授权的鲸鱼 Logo 粒子聚合参考"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。",
+        "DeepSeek 品牌与鲸鱼标识不因模板代码许可而成为本项目自有或可任意替换的品牌资产。"
+      ],
+      "inputs_zh": [
+        "底部文字 · 一到两个词，如品牌名或口号；不超过 24 个字符。 主色 · 填十六进制颜色，如 #70C9E8；建议与品牌色接近。"
+      ],
+      "version": "1.1.0",
+      "source_url": "https://motiongit.com/@thepandaq/deepseek-whale-assemble",
+      "source_id": "404937",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/628/1.1.0-e0d9c9e4a5b8.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 628,
+      "source_repository_url": "https://github.com/motiontemplates/404937",
+      "source_revision": "c96c5381d512fc8b12dda23a6c71c158df2c68b4",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DeepSeek 鲸鱼粒子聚合"
+    },
+    {
+      "id": "mg-style-380710",
+      "label_zh": "DeepSeek 粒子形变",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "同一批粒子在四种三维形状间形变，适合科技感转场、概念串联或片尾。",
+      "uses_zh": [
+        "科技概念或章节之间的粒子形变衔接"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。",
+        "模板标题含第三方品牌；先核对具体实现和素材许可，不推断拥有品牌授权。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.1.0",
+      "source_url": "https://motiongit.com/@thepandaq/deepseek-form-morph",
+      "source_id": "380710",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/629/1.1.0-0892fa4bf82d.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 629,
+      "source_repository_url": "https://github.com/motiontemplates/380710",
+      "source_revision": "a165d44000ba982d2a57c99f723107164183c119",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DeepSeek 粒子形变"
+    },
+    {
+      "id": "mg-style-941301",
+      "label_zh": "DeepSeek 词语粒子",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "粒子按顺序拼出四个关键词，适合概念介绍、能力列表与口号式开场。",
+      "uses_zh": [
+        "四个关键词、概念或能力列表的粒子表达"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。",
+        "模板标题含第三方品牌；先核对具体实现和素材许可，不推断拥有品牌授权。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.1.0",
+      "source_url": "https://motiongit.com/@thepandaq/deepseek-word-morph",
+      "source_id": "941301",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/630/1.1.0-7b16186bd6b2.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 630,
+      "source_repository_url": "https://github.com/motiontemplates/941301",
+      "source_revision": "3e7f50e98cecef4c681e64226354d3377718e630",
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DeepSeek 词语粒子"
+    },
+    {
+      "id": "mg-style-872",
+      "label_zh": "光带文字",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "光之丝带汇聚成一个词：丝带流动、粒子成字、光带扫过，再散回丝带。",
+      "uses_zh": [
+        "单个词的光带聚合与散开"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/light-ribbon-word",
+      "source_id": "872",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/872/1.0.0-08a812711d78.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 872,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "Light Ribbon Word",
+      "source_title": "Light Ribbon Word",
+      "localization_note_zh": "中文名称为本项目按英文原名翻译；原名保留，不冒称原作者提供中文标题。"
+    },
+    {
+      "id": "mg-style-878",
+      "label_zh": "面板擦除 · WIPE PACK",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "四套面板擦除过场：竖条合拢、横条下压、纸色竖条、墨色竖条；8 秒转场包，可用于场景切换与章节过渡。",
+      "uses_zh": [
+        "场景切换、章节之间的面板擦除过场"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/collage-wipe",
+      "source_id": "878",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/878/1.0.0-zh-be7dc794ab1a.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 878,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "面板擦除 · WIPE PACK"
+    },
+    {
+      "id": "mg-style-921052",
+      "label_zh": "DEEP STAGE 开场点火标题",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "深色立体舞台开场：地平线点火、地面透视网格生长、远景屏幕墙点亮，两段主标题落下（金属渐变），最后落到副标题与角标。10 秒片头动效，可换品牌、标题、副标题与主色。",
+      "uses_zh": [
+        "深色舞台与主副标题的短开场"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/deep-stage-title-ignition",
+      "source_id": "921052",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/879/1.0.0-8e74030d1901.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 879,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DEEP STAGE 开场点火标题"
+    },
+    {
+      "id": "mg-style-430770",
+      "label_zh": "DEEP STAGE 媒体素材墙",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "媒体素材墙动效：六宫格（2×3）在 3D 空间逐张落位，每格独立纵深与旋转，落位后极缓慢浮动，镜头持续后拉。10 秒，适合素材盘点与 B-roll 讲解。",
+      "uses_zh": [
+        "六宫格素材盘点、案例素材与 B-roll 讲解"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/deep-stage-media-wall",
+      "source_id": "430770",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/883/1.0.0-a30bac716f4b.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 883,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DEEP STAGE 媒体素材墙"
+    },
+    {
+      "id": "mg-style-581039",
+      "label_zh": "DEEP STAGE 收尾锁版",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "收尾锁版动效：屏幕退向纵深，logo 描边锁定，字标、副标、规格行与版本胶囊依次落位，一道横扫光掠过，结尾稳定呼吸。8 秒，适合片尾与版本标识。",
+      "uses_zh": [
+        "品牌收束与版本标识的片尾参考"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。",
+        "本用户已有固定视频片尾；此条作为参考，不自动替换用户片尾。"
+      ],
+      "inputs_zh": [
+        "公开目录未列具体输入；制作前须读取本条包的 guide、素材槽和运行契约，不能从 Demo 猜参数。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@thepandaq/deep-stage-outro-lockup",
+      "source_id": "581039",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/884/1.0.0-651f2839086d.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 884,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "DEEP STAGE 收尾锁版"
+    },
+    {
+      "id": "mg-style-887145",
+      "label_zh": "3D 吉祥物手把手教程",
+      "layer": "style",
+      "category_zh": "视觉与场景动效（非口播默认）",
+      "description_zh": "把网页或 App 的一段操作流程（注册、下单、设置等），做成 3D 小宠物带着一步步点、打字、指重点的横屏教程视频",
+      "uses_zh": [
+        "网页或 App 操作步骤的吉祥物教程候选；官方归 art，不据分类误认为普通口播"
+      ],
+      "avoid_zh": [
+        "此分类不默认应用于整条口播；只在内容需要时选择，避免装饰遮住讲解、UI 和字幕。",
+        "吉祥物和截图重演不是同步真人录屏；必要时仍需真实操作证据，不能用动画证明实际操作成功。"
+      ],
+      "inputs_zh": [
+        "透明 PNG 产品 Logo、产品首页截图，以及按真实操作顺序提供的每一步界面截图。",
+        "官方建议首页截图为 16:10、宽度 1880 像素以上；截图应去除真实手机号、账号与二维码。",
+        "可选透明品牌字标；开场标题、每步大字和字幕、片尾标语按随包字数容量编排。",
+        "自带音乐需给节拍速度及第一拍位置；未提供时官方说明可使用模板生成节拍。"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://motiongit.com/@xkkiss12/mascot-tutorial-3d",
+      "source_id": "887145",
+      "license": "目录声明开源；代码、字体与素材许可须逐包核对，本索引未逐包审定。",
+      "availability": "以官网当前页面为准",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://media.openaicut.com/previews/895/1.0.0-zh-a15d0b9cfbab.mp4",
+          "description_zh": "官方目录演示；文件不保证对应所列最新版本，未逐条播放验收。",
+          "ratio": "16:9"
+        }
+      ],
+      "ratio": "16:9",
+      "source_group": "art",
+      "source_template_id": 895,
+      "source_repository_url": null,
+      "source_revision": null,
+      "catalog_download_type": "official-page",
+      "catalog_availability": "check-official-page",
+      "family_label_zh": "3D 吉祥物手把手教程"
+    }
+  ],
+  "previews": [
+    {
+      "id": "mg-preview-3d-book",
+      "label_zh": "3D书 · 阿杜和那个影响了",
+      "layer": "preview",
+      "category_zh": "预告（不计入主清单）",
+      "description_zh": "以立体书页、真实照片、翻页镜头和双语字幕串联个人经历，展示可用于回忆与叙事讲解的书本舞台。Demo 使用第8版完整成片。",
+      "source_id": "3d-book",
+      "source_url": "https://github.com/motiontemplates/all/tree/21537c6f49aa9504496d20c14bf597f7eac229f4",
+      "ratio": "16:9",
+      "preview_only": true,
+      "availability": "官方目录标记 coming-soon；以官网后续状态为准",
+      "license": "演示链接不是模板或素材复用授权；具体许可证未核定。",
+      "validation": {
+        "state": "官方Demo可看",
+        "scope": "目录中仅为 previewOnly 演示，没有主模板条目；未取得包、运行或连续观看。"
+      },
+      "demos": [
+        {
+          "kind": "official",
+          "url": "https://github.com/motiontemplates/all/releases/download/demo-batch-two-2026-10-21/3d-book-demo-6dc0bd1a0e5bc9e8.mp4",
+          "description_zh": "官方 3D 书预告，目录注明 Demo 使用第 8 版完整成片；不是已取得的可运行模板。",
+          "ratio": "16:9"
+        }
+      ]
+    }
+  ]
+}

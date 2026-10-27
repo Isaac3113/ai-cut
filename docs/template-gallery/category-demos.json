@@ -1,0 +1,164 @@
+[
+  {
+    "category_zh": "Logo与品牌",
+    "path": "demos/categories/category-7e694c01abeb.gif",
+    "source_entry": "remotion-brush-stroke-reveal",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "RemotionUI本地适配",
+    "path": "demos/categories/category-defa6776e30e.gif",
+    "source_entry": "remotion-library-orbit",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "中文示例",
+    "path": "demos/categories/category-43a970088797.gif",
+    "source_entry": "remotion-library-bar-zh",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "产品宣传与教程",
+    "url": "https://media.openaicut.com/previews/585/draft-zh-78bba5fd21f6.mp4",
+    "source_entry": "mg-style-128610",
+    "description_zh": "多屏拼贴 · 品牌宣传：官方在线分类演示"
+  },
+  {
+    "category_zh": "人物与背景",
+    "path": "demos/categories/category-b82c52b1a37f.gif",
+    "source_entry": "presenter-effect-04",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "关系与系统结构",
+    "path": "demos/categories/category-16ad44f7cf14.gif",
+    "source_entry": "mg-control-flow",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "列表与步骤",
+    "path": "demos/categories/category-c56da5b252bc.gif",
+    "source_entry": "presenter-effect-10",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "叠加标注与装饰",
+    "path": "demos/categories/category-7c6eac7c2495.gif",
+    "source_entry": "mg-control-lowerthird",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "口播与讲解",
+    "path": "demos/categories/category-e3a35b0b90af.gif",
+    "source_entry": "mg-style-314486",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "品牌与行动",
+    "path": "demos/categories/category-6893aefa7124.gif",
+    "source_entry": "mg-control-logo",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "基础讲解",
+    "path": "demos/categories/category-67110fb27cc6.gif",
+    "source_entry": "mg-control-title",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "循环与背景",
+    "path": "demos/categories/category-3070f8c70687.gif",
+    "source_entry": "remotion-bokeh-circles",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "数据与图表",
+    "path": "demos/categories/category-001f1de2d90f.gif",
+    "source_entry": "remotion-bar-chart-anim",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "数据与进度",
+    "path": "demos/categories/category-9ee5c67797d4.gif",
+    "source_entry": "mg-control-donut",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "文字与标题",
+    "path": "demos/categories/category-4900ace6d3d9.gif",
+    "source_entry": "remotion-bounce-in-headline",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "文字动态",
+    "path": "demos/categories/category-97eaf40a4ff9.gif",
+    "source_entry": "mg-control-kinetic",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "概念教学",
+    "path": "demos/categories/category-3031b21ed62f.gif",
+    "source_entry": "mg-control-iconcards",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "界面与交互演示",
+    "path": "demos/categories/category-b49e16fe7196.gif",
+    "source_entry": "mg-control-chat",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "界面与设备",
+    "path": "demos/categories/category-5297269d2cdb.gif",
+    "source_entry": "presenter-effect-07",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "真实素材展示",
+    "path": "demos/categories/category-a8befd61c2a2.gif",
+    "source_entry": "mg-control-gallery",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "知识解说与流程图",
+    "url": "https://media.openaicut.com/previews/869/1.0.0-zh-d5fd83bc28a8.mp4",
+    "source_entry": "mg-style-287792",
+    "description_zh": "量价图表：K线突破与分时动画：官方在线分类演示"
+  },
+  {
+    "category_zh": "社交与界面",
+    "path": "demos/categories/category-4025db9f0bf4.gif",
+    "source_entry": "remotion-community-chat",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "科技视觉（非口播默认）",
+    "url": "https://motiontemplates.github.io/385712/assets/demo.mp4",
+    "source_entry": "mg-style-385712",
+    "description_zh": "酷炫科技风：官方在线分类演示"
+  },
+  {
+    "category_zh": "装饰与强调",
+    "path": "demos/categories/category-453d878fd5d5.gif",
+    "source_entry": "presenter-effect-12",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "视觉与场景动效（非口播默认）",
+    "url": "https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4",
+    "source_entry": "mg-style-381814",
+    "description_zh": "半调网点 · 人像标题：官方在线分类演示"
+  },
+  {
+    "category_zh": "转场",
+    "path": "demos/categories/category-12bb64579c19.gif",
+    "source_entry": "remotion-camera-shake",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "镜头与转场",
+    "path": "demos/categories/category-e4de82d4b8b9.gif",
+    "source_entry": "presenter-effect-03",
+    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  }
+]

@@ -1,0 +1,735 @@
+{
+  "entries": [
+    {
+      "id": "presenter-effect-01",
+      "label_zh": "条形增长",
+      "layer": "effect",
+      "category_zh": "数据与图表",
+      "description_zh": "三条横向示意条按顺序增长，叠在口播画面上。",
+      "uses_zh": [
+        "比较选项或说明阶段进展"
+      ],
+      "avoid_zh": [
+        "示意长度不能当作真实业绩数据"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "真实标签与数值"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-01.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "dc03313f44234bdf679ba1e636809099e9da39fd1504114a4588058ec3b7b573",
+          "bytes": 202701
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 1
+    },
+    {
+      "id": "presenter-effect-02",
+      "label_zh": "玻璃标签",
+      "layer": "effect",
+      "category_zh": "文字与标题",
+      "description_zh": "半透明圆角玻璃标签进入画面，突出一个短标题。",
+      "uses_zh": [
+        "强调一句关键词或术语"
+      ],
+      "avoid_zh": [
+        "避免长段落和低对比背景"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "短标题",
+        "品牌颜色"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-02.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "aa1f61e58323d2973631729a52a9e676d155792de653e837cfb20a09524e453e",
+          "bytes": 157301
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 2
+    },
+    {
+      "id": "presenter-effect-03",
+      "label_zh": "冲击缩放",
+      "layer": "effect",
+      "category_zh": "镜头与转场",
+      "description_zh": "同一镜头快速推近、模糊并回拉，配合扩散边框。",
+      "uses_zh": [
+        "段落转折或短促强调"
+      ],
+      "avoid_zh": [
+        "不是两个场景间的真正穿越；避免频繁使用"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "推近焦点和切点"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-03.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "905270f1c34ea1f6193f3c442fb771bc34b417ad0458dea62547aefacb4ec560",
+          "bytes": 262925
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 3
+    },
+    {
+      "id": "presenter-effect-04",
+      "label_zh": "剪纸描边",
+      "layer": "effect",
+      "category_zh": "人物与背景",
+      "description_zh": "动态抠像人物加白色纸边和阴影，置于纸张纹理背景。",
+      "uses_zh": [
+        "人物介绍或轻松创意片段"
+      ],
+      "avoid_zh": [
+        "抠像边缘抖动时不宜直接使用"
+      ],
+      "inputs_zh": [
+        "同步人物透明视频",
+        "纸张背景"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-04.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "c2102e488d794bcd48412a4f992db8e55c7977d6104749d68adcaafebb1b6d2b",
+          "bytes": 95445
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 4
+    },
+    {
+      "id": "presenter-effect-05",
+      "label_zh": "照片墙",
+      "layer": "effect",
+      "category_zh": "人物与背景",
+      "description_zh": "多张照片组成错位移动墙，动态人物位于前景。",
+      "uses_zh": [
+        "展示素材集合或个人经历"
+      ],
+      "avoid_zh": [
+        "避免无授权照片及背景信息过密"
+      ],
+      "inputs_zh": [
+        "授权照片",
+        "同步人物透明视频"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-05.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "fec61c3de256e4f28cf3561997a4bef0ff600be99f1313f83b3bd499a250f1ea",
+          "bytes": 152837
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 5
+    },
+    {
+      "id": "presenter-effect-06",
+      "label_zh": "拉远揭幕",
+      "layer": "effect",
+      "category_zh": "镜头与转场",
+      "description_zh": "口播画面逐步缩小，显露带标题栏的悬浮窗口。",
+      "uses_zh": [
+        "从讲述过渡到内容预览"
+      ],
+      "avoid_zh": [
+        "小窗口内的重要文字要另行放大"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "窗口标题",
+        "背景颜色"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-06.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "065c3e7c74b4e48d39a88095a5556dc50040ef242c81a70077bba7ecba848b5d",
+          "bytes": 171293
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 6
+    },
+    {
+      "id": "presenter-effect-07",
+      "label_zh": "界面窗框",
+      "layer": "effect",
+      "category_zh": "界面与设备",
+      "description_zh": "口播被放入带标题栏的悬浮窗框，形成界面容器效果。",
+      "uses_zh": [
+        "介绍视频内容或界面场景"
+      ],
+      "avoid_zh": [
+        "此演示没有真实软件操作与点击"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "窗口标题",
+        "背景颜色"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-07.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "9f437717c0127f943f6e302edc7680d1e03dd7cd9e97db045482d9704c46b332",
+          "bytes": 121651
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 7
+    },
+    {
+      "id": "presenter-effect-08",
+      "label_zh": "杂志封面",
+      "layer": "effect",
+      "category_zh": "人物与背景",
+      "description_zh": "人物与封面标题分层，形成杂志封面式口播包装。",
+      "uses_zh": [
+        "人物专题或章节开场"
+      ],
+      "avoid_zh": [
+        "避免把装饰标题当作真实媒体背书"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "同步人物透明视频",
+        "封面文字"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-08.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "5318ac41ac8701204138dc71bddc4267893dd6b25063f3deb74d4586d3cf9e3f",
+          "bytes": 178558
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 8
+    },
+    {
+      "id": "presenter-effect-09",
+      "label_zh": "抠像换景",
+      "layer": "effect",
+      "category_zh": "人物与背景",
+      "description_zh": "已抠像的人物合成到原创蓝色空间背景。",
+      "uses_zh": [
+        "替换环境或建立主题场景"
+      ],
+      "avoid_zh": [
+        "演示使用人物透明层，不代表原片拍摄了绿幕"
+      ],
+      "inputs_zh": [
+        "同步人物透明视频",
+        "替换背景"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-09.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "54d2954fae9d8b6c6a4e0436f06ada56917ea62c427d26f7fd8c26371c22c57c",
+          "bytes": 180512
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 9
+    },
+    {
+      "id": "presenter-effect-10",
+      "label_zh": "打勾清单",
+      "layer": "effect",
+      "category_zh": "列表与步骤",
+      "description_zh": "清单项依次打勾，顶部进度随演示推进。",
+      "uses_zh": [
+        "步骤总结或完成项确认"
+      ],
+      "avoid_zh": [
+        "不能把演示勾选当作真实任务完成"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "清单文字",
+        "逐项时间"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-10.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "fffaba149cf39490b9bb534104887688975a1d11906672ea2654c72fe614bdd8",
+          "bytes": 198454
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 10
+    },
+    {
+      "id": "presenter-effect-11",
+      "label_zh": "视频镂空字",
+      "layer": "effect",
+      "category_zh": "文字与标题",
+      "description_zh": "真人视频透过大型中文字显示，并保留圆形人物小窗。",
+      "uses_zh": [
+        "章节主题或短词视觉强调"
+      ],
+      "avoid_zh": [
+        "长句和细笔画会降低视频辨识度"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "粗体中文短词",
+        "人物小窗"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-11.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "caf65295375a0b887f8d962fa47ab3ed3e6cb434e88bca76b1e6f288c37bc740",
+          "bytes": 76259
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 11
+    },
+    {
+      "id": "presenter-effect-12",
+      "label_zh": "手绘涂鸦",
+      "layer": "effect",
+      "category_zh": "装饰与强调",
+      "description_zh": "线条、星形与箭头逐步绘出，围绕人物形成手绘强调。",
+      "uses_zh": [
+        "提醒重点或营造轻松节奏"
+      ],
+      "avoid_zh": [
+        "避免箭头指向错误对象或遮住字幕"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "短标题",
+        "强调位置"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-12.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "757a3ec7aab8b9abdb89bf03b4ad23f66002d8f5fe85be14837529aee9580713",
+          "bytes": 183477
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 12
+    },
+    {
+      "id": "presenter-effect-13",
+      "label_zh": "标题墙",
+      "layer": "effect",
+      "category_zh": "文字与标题",
+      "description_zh": "重复大字在人物后方交错移动，形成动态文字墙。",
+      "uses_zh": [
+        "强化主题词或品牌关键词"
+      ],
+      "avoid_zh": [
+        "避免长句与高密度信息同时出现"
+      ],
+      "inputs_zh": [
+        "同步人物透明视频",
+        "短主题词"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-13.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "555ee13a56e3cc784140f85f6ba30bc95f1a498104918c27a0e5f9ad9122e17c",
+          "bytes": 197458
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 13
+    },
+    {
+      "id": "presenter-effect-14",
+      "label_zh": "手机画面",
+      "layer": "effect",
+      "category_zh": "界面与设备",
+      "description_zh": "口播装入带旋转动作的手机轮廓与播放信息层。",
+      "uses_zh": [
+        "展示竖屏内容或手机场景"
+      ],
+      "avoid_zh": [
+        "这是设备示意，不是已完成真实手机实操"
+      ],
+      "inputs_zh": [
+        "竖屏视频",
+        "设备内标题与信息"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-14.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "eedbec9378e024aa0b60c848279c480b05955babea25752b2284804c4cfa5dc5",
+          "bytes": 161813
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 14
+    },
+    {
+      "id": "presenter-effect-15",
+      "label_zh": "人物破框",
+      "layer": "effect",
+      "category_zh": "人物与背景",
+      "description_zh": "同源画面在倾斜窗口内显示，透明人物延伸到窗口外。",
+      "uses_zh": [
+        "人物登场或突出主体"
+      ],
+      "avoid_zh": [
+        "前后两层必须同步，避免双重人物边缘"
+      ],
+      "inputs_zh": [
+        "同步口播视频与人物透明视频",
+        "窗口位置"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-15.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "ca3a70796ee2ea0d17d568c969aa9b2921373c5702720dada2c65ae236f385c7",
+          "bytes": 131764
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 15
+    },
+    {
+      "id": "presenter-effect-16",
+      "label_zh": "环绕文字",
+      "layer": "effect",
+      "category_zh": "装饰与强调",
+      "description_zh": "三张中文词卡沿椭圆轨迹环绕人物，并表现前后遮挡。",
+      "uses_zh": [
+        "展示围绕核心人物的几个关键词"
+      ],
+      "avoid_zh": [
+        "避免词卡盖脸或把并列关系暗示为先后步骤"
+      ],
+      "inputs_zh": [
+        "同步人物透明视频",
+        "三个短关键词"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-16.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "b4655458608978b51de8d3e2ea80ce6438b231ee52df69497322d558a9b6207f",
+          "bytes": 166415
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 16
+    },
+    {
+      "id": "presenter-effect-17",
+      "label_zh": "数字推近",
+      "layer": "effect",
+      "category_zh": "镜头与转场",
+      "description_zh": "围绕人物焦点逐步放大原画面，叠加构图框。",
+      "uses_zh": [
+        "强调一句原声重点"
+      ],
+      "avoid_zh": [
+        "低清晰度素材不宜过度放大"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "焦点坐标",
+        "目标倍率"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-17.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "1ec5db6fd70c5ad8b56d7bc70fa98596a4e5e90a94bf9c2bef5165ebacf56b1e",
+          "bytes": 210017
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 17
+    },
+    {
+      "id": "presenter-effect-18",
+      "label_zh": "收据列表",
+      "layer": "effect",
+      "category_zh": "列表与步骤",
+      "description_zh": "纸张从打印口逐步出现，列出三项内容并打勾。",
+      "uses_zh": [
+        "总结清单或展示内容目录"
+      ],
+      "avoid_zh": [
+        "示意收据不能冒充真实交易凭据"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "列表文字",
+        "出现时间"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-18.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "3f87f12933c97f859645ba2dcb43afd7ebf3435b5c64bf79be0fa58eba2eccf3",
+          "bytes": 143318
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 18
+    },
+    {
+      "id": "presenter-effect-19",
+      "label_zh": "贴纸轮播",
+      "layer": "effect",
+      "category_zh": "装饰与强调",
+      "description_zh": "五枚原创图标贴纸沿椭圆轨道轮转，并改变前后大小。",
+      "uses_zh": [
+        "串联几个创作主题或轻量装饰"
+      ],
+      "avoid_zh": [
+        "避免遮挡关键内容与连续无意义转动"
+      ],
+      "inputs_zh": [
+        "口播视频",
+        "授权贴纸或原创图标"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+      "source_id": "talking-head-effects",
+      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
+      "availability": "available",
+      "validation": {
+        "state": "verified",
+        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/presenter/presenter-effect-19.mp4",
+          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
+          "sha256": "f90679d92c4f04dd955f88b08b0ab191c06828b55f8c293dda3c9370e5668135",
+          "bytes": 221899
+        }
+      ],
+      "ratio": "9:16",
+      "base_composition_id": "TalkingHeadShowcase",
+      "effect_kind": 19
+    }
+  ]
+}

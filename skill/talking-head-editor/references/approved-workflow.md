@@ -4,6 +4,8 @@
 
 这是总 Skill 的工作流程和教学入口。完整质量规则在 [master-playbook](master-playbook.md)，当前视觉/声音预设在 [user-preferences](user-preferences.md)，动画细节在 [reference-motion](reference-motion.md)。无需把多个入口全部读进每一次局部修改。
 
+完整制作先读[剪辑路线](editing-routes.md)，按实际素材与叙事目标分类，再进入下列步骤。下文口播粗剪、1.2倍速度和教学包装适用于本Skill的真人知识口播、实操讲解及长访谈切片；旅行Vlog和剧情片不直接套用，应先走各自的镜头与声音方案。
+
 ## 已认可的标准及适用范围
 
 2026-09-21音乐最终认可：用户认可AIVD4 R6并要求未来沿用。所有带配乐口播采用[user-preferences](user-preferences.md)的aivd4-r6-quiet-bgm-v1极轻标准，替代旧15～20LU起点及R4/R5音量；同片不重复衰减，新曲按实际响度/听感校准，SFX与人声保持独立。
@@ -24,7 +26,7 @@
 
 | 顺序 | 文件或 Skill | 读后做什么 |
 |---|---|---|
-| 1 | talking-head-editor / SKILL.md | 找到唯一主控，读取任务、工程和创作者选择 |
+| 1 | talking-head-editor / SKILL.md → editing-routes | 找到唯一主控，先判断本条叙事路线；口播及长访谈切片再进入下列流程，Vlog和剧情片转各自方案 |
 | 2 | 本页 → user-preferences → master-playbook | 理解完整路线、选定样式与质量门槛；局部修改只读相关章节 |
 | 3 | ChatCut 路线：references/chatcut.md → 官方 chatcut:chatcut-plugin-basics | 检查当前插件工具、账号和已有工程；其他路线看 operations 或 jianying |
 | 4 | editorial → chatcut:talking-head-guide；需要时 transcription | 转写核对、删除失败重录、完整语义粗剪 |
@@ -114,4 +116,4 @@
 
 ## 剪辑交互更新0.2.8
 
-每条新视频把[比例确认与原片1.2倍](user-preferences.md)作为剪辑之前的第0步：先问比例，回答后保存简报、按选定比例构图；未来速度一律以原始录音直接1.2倍一次为默认，不沿用历史1.44倍追加版本。用户本条已提供比例或同片局部修改无需重复问。封面三图与视频比例分开；其余制作顺序、工具分工和五项发布素材交付不变。
+本Skill的每条新真人知识口播、实操讲解及长访谈切片，把[比例确认与原片1.2倍](user-preferences.md)作为剪辑之前的第0步：先取得本条比例，回答后保存简报、按选定比例构图；这些路线的口播与原声默认以原始录音直接1.2倍一次，不沿用历史1.44倍追加版本。该速度不扩展到旅行Vlog、剧情片或其环境声。用户本条已提供比例或同片局部修改无需重复问。封面三图与视频比例分开；其余制作顺序、工具分工和五项发布素材交付不变。

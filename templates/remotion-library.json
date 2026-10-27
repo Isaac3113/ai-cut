@@ -1,0 +1,3008 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-27",
+  "counting_note_zh": "55个注册项 = 50个 RenderComp 模板 + 2个 RemotionUI 适配演示 + 3个已有基础的中文参数示例；共52个实现基础，不与19项口播效果混加。",
+  "runtime": {
+    "engine": "Remotion",
+    "version": "4.0.523",
+    "license_url": "https://www.remotion.dev/license"
+  },
+  "entries": [
+    {
+      "id": "remotion-brush-stroke-reveal",
+      "label_zh": "笔刷揭示",
+      "layer": "remotion",
+      "category_zh": "Logo与品牌",
+      "description_zh": "笔刷扫过后显现标记",
+      "uses_zh": [
+        "品牌标记登场",
+        "活动或栏目开场"
+      ],
+      "avoid_zh": [
+        "不要代替本用户已确定的固定片尾",
+        "不应遮挡证据或频繁打断口播"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/brush-stroke-reveal.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "d719f0e8754e5d267b231506a3abed4f45bc0ada0db353fb95857f73702d2ef3",
+          "bytes": 39353
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "brush-stroke-reveal",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "title": "笔刷揭示",
+        "description": "逐笔显现 · 动画示意"
+      }
+    },
+    {
+      "id": "remotion-logo-blur-reveal",
+      "label_zh": "Logo由模糊变清晰",
+      "layer": "remotion",
+      "category_zh": "Logo与品牌",
+      "description_zh": "由虚焦过渡到清晰",
+      "uses_zh": [
+        "品牌标记登场",
+        "活动或栏目开场"
+      ],
+      "avoid_zh": [
+        "不要代替本用户已确定的固定片尾",
+        "不应遮挡证据或频繁打断口播"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/logo-blur-reveal.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "811b607eb65c6fa161d8e2417568805c31a116f1f548f2df000228afec1dfbbd",
+          "bytes": 51763
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "logo-blur-reveal",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "logoText": "看清重点",
+        "fontSize": 210
+      }
+    },
+    {
+      "id": "remotion-logo-bounce-drop",
+      "label_zh": "Logo弹落",
+      "layer": "remotion",
+      "category_zh": "Logo与品牌",
+      "description_zh": "标记下落后弹性停稳",
+      "uses_zh": [
+        "品牌标记登场",
+        "活动或栏目开场"
+      ],
+      "avoid_zh": [
+        "不要代替本用户已确定的固定片尾",
+        "不应遮挡证据或频繁打断口播"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/logo-bounce-drop.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "93905aa8760b4ed3ca49f91563f2303cf8bda0cb618005e59e992eedba9f4bf9",
+          "bytes": 40411
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "logo-bounce-drop",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 90,
+      "default_parameters": {
+        "logoText": "轻快登场",
+        "fontSize": 210
+      }
+    },
+    {
+      "id": "remotion-logo-mask-wipe",
+      "label_zh": "Logo遮罩擦入",
+      "layer": "remotion",
+      "category_zh": "Logo与品牌",
+      "description_zh": "斜向遮罩显现标记",
+      "uses_zh": [
+        "品牌标记登场",
+        "活动或栏目开场"
+      ],
+      "avoid_zh": [
+        "不要代替本用户已确定的固定片尾",
+        "不应遮挡证据或频繁打断口播"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/logo-mask-wipe.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "434dcb225edbdb50bdb282fbd3452ab7dfb017f378f93c64259f37ea19a952e8",
+          "bytes": 75481
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "logo-mask-wipe",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 100,
+      "default_parameters": {
+        "monogram": "创",
+        "brandText": "创意工作室"
+      }
+    },
+    {
+      "id": "remotion-logo-split-reveal",
+      "label_zh": "Logo分裂揭示",
+      "layer": "remotion",
+      "category_zh": "Logo与品牌",
+      "description_zh": "左右面板分开显现标记",
+      "uses_zh": [
+        "品牌标记登场",
+        "活动或栏目开场"
+      ],
+      "avoid_zh": [
+        "不要代替本用户已确定的固定片尾",
+        "不应遮挡证据或频繁打断口播"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/logo-split-reveal.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "74ae7442ebff2429ce01114a3d2d2a9fa555351eca828483d6908167076a97dd",
+          "bytes": 45641
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "logo-split-reveal",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "logoText": "分合有序",
+        "fontSize": 210
+      }
+    },
+    {
+      "id": "remotion-logo-stroke-draw",
+      "label_zh": "Logo描边绘制",
+      "layer": "remotion",
+      "category_zh": "Logo与品牌",
+      "description_zh": "轮廓逐段描绘后填充",
+      "uses_zh": [
+        "品牌标记登场",
+        "活动或栏目开场"
+      ],
+      "avoid_zh": [
+        "不要代替本用户已确定的固定片尾",
+        "不应遮挡证据或频繁打断口播"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/logo-stroke-draw.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "7c0be85c747da9bdb1269f86f473b96544833bc2674ae16bd7d85b3524b43d8b",
+          "bytes": 65591
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "logo-stroke-draw",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 110,
+      "default_parameters": {
+        "monogram": "创",
+        "brandText": "创意工作室"
+      }
+    },
+    {
+      "id": "remotion-neon-sign",
+      "label_zh": "霓虹文字闪烁",
+      "layer": "remotion",
+      "category_zh": "Logo与品牌",
+      "description_zh": "霓虹文字闪动后亮起",
+      "uses_zh": [
+        "品牌标记登场",
+        "活动或栏目开场"
+      ],
+      "avoid_zh": [
+        "不要代替本用户已确定的固定片尾",
+        "不应遮挡证据或频繁打断口播"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/neon-sign.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "eaa24ed8190fe1f4c20d344439ff5673e9b71fcd7ed92c6bc4c1a6d8d7707198",
+          "bytes": 36175
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "neon-sign",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 100,
+      "default_parameters": {
+        "signText": "欢迎",
+        "subText": "霓虹灯牌 · 动画示意"
+      }
+    },
+    {
+      "id": "remotion-shatter-reveal",
+      "label_zh": "碎片揭示",
+      "layer": "remotion",
+      "category_zh": "Logo与品牌",
+      "description_zh": "覆盖层碎裂并显现后层",
+      "uses_zh": [
+        "品牌标记登场",
+        "活动或栏目开场"
+      ],
+      "avoid_zh": [
+        "不要代替本用户已确定的固定片尾",
+        "不应遮挡证据或频繁打断口播"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/shatter-reveal.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "8848bb81c49f49cff77807acda0347d682eb9e876f8eed6e40a131c5813d74c1",
+          "bytes": 350142
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "shatter-reveal",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "title": "聚焦",
+        "subtitle": "碎片汇合，重点显现"
+      }
+    },
+    {
+      "id": "remotion-bounce-in-headline",
+      "label_zh": "标题弹入",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "整段标题从上方弹入，带回弹。并非逐词分拍。",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/bounce-in-headline.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "762667f5009bb538fb71761751492b35d08ee63580e39dce0966615608ec8e99",
+          "bytes": 32726
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "bounce-in-headline",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "headline": "重点来了"
+      }
+    },
+    {
+      "id": "remotion-chapter-title",
+      "label_zh": "章节标题卡",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "编号与章节标题显现",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/chapter-title.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "810af7ab02c6bd45139962c30a5194316b5f57a4472a0d2cf102e8c222589de8",
+          "bytes": 30443
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "chapter-title",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "chapterLabel": "第一章",
+        "title": "从这里开始",
+        "subtitle": "章节标题 · 动画示意"
+      }
+    },
+    {
+      "id": "remotion-four-tone-mono-titler",
+      "label_zh": "四色标题切换",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "标题块切换四组颜色；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/four-tone-mono-titler.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "ca3b0da5cb94a0b91af5f9488893568b0dc5f1cad11fd518a50b76c807842cc7",
+          "bytes": 50256
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "four-tone-mono-titler",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "title": "复古片头",
+        "subtitle": "第一章 · 出发"
+      }
+    },
+    {
+      "id": "remotion-glitch-text",
+      "label_zh": "故障文字",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "RGB错位抖动后稳定",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/glitch-text.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "90a5872e9ab566d8b4c23b6f09e53343d8589fb5f86dfa4544fd8dd7afad89b3",
+          "bytes": 177743
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "glitch-text",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "text": "信号重组",
+        "fontSize": 200
+      }
+    },
+    {
+      "id": "remotion-gradient-text-sweep",
+      "label_zh": "文字渐变扫过",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "颜色渐变经过标题",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/gradient-text-sweep.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "cf42ba16c24732d9e6c16ec2abbeb1cab86f685fb902cacfca65a4e82803c484",
+          "bytes": 77764
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "gradient-text-sweep",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 110,
+      "default_parameters": {
+        "headline": "让重点发光",
+        "subline": "渐变扫光 · 动画示意"
+      }
+    },
+    {
+      "id": "remotion-kinetic-word-stack",
+      "label_zh": "动态词语堆叠",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "词语逐个入场形成文字块",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/kinetic-word-stack.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "9207b085f81276e0be6df9c867fd6369af38be544f5333ade6f0de7ff520b447",
+          "bytes": 77838
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "kinetic-word-stack",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "words": [
+          "观察",
+          "提炼",
+          "表达",
+          "行动"
+        ]
+      }
+    },
+    {
+      "id": "remotion-pixel-typewriter-quote",
+      "label_zh": "像素打字引语",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "像素风格逐字输入引语；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/pixel-typewriter-quote.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "41e58e71d3f5503df421df3f329b0beee814a0957753f1765a1f3d7cb4d9b16e",
+          "bytes": 118358
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "pixel-typewriter-quote",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 180,
+      "default_parameters": {
+        "quote": "把复杂 说清楚",
+        "attribution": "文字示意",
+        "cps": 0.12
+      }
+    },
+    {
+      "id": "remotion-scramble-text",
+      "label_zh": "乱序文字归位",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "字符变化后组成目标标题",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/scramble-text.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "cf327b73d3d8c95df354d77769cb8115b84cf8e16a61e17a95f2aad3b23ed72e",
+          "bytes": 166347
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "scramble-text",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "text": "重点已解锁",
+        "label": "文字正在重组",
+        "charset": "观察提炼表达重点行动准备开始"
+      }
+    },
+    {
+      "id": "remotion-text-mask-reveal",
+      "label_zh": "文字遮罩揭示",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "文字从遮罩边界内滑出",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/text-mask-reveal.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "df9073216cfd47e00f9144f91699167864f216beb79158bc98a86551ad9a4e52",
+          "bytes": 30564
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "text-mask-reveal",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 110,
+      "default_parameters": {
+        "lines": [
+          "看见",
+          "理解",
+          "行动"
+        ]
+      }
+    },
+    {
+      "id": "remotion-typewriter",
+      "label_zh": "打字机",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "逐字输入并显示光标",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/typewriter.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "85f03bcfb50c79ec4f7e7b2c6835000c0f6b446c176cbdcfcb3bdd2c961d0533",
+          "bytes": 36695
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "typewriter",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 100,
+      "default_parameters": {
+        "messageText": "正在书写",
+        "subText": "让想法逐字出现"
+      }
+    },
+    {
+      "id": "remotion-wave-text",
+      "label_zh": "波浪文字",
+      "layer": "remotion",
+      "category_zh": "文字与标题",
+      "description_zh": "文字按波形上下移动",
+      "uses_zh": [
+        "口播重点词与章节",
+        "旅行视频地点或段落标题"
+      ],
+      "avoid_zh": [
+        "长段字幕不直接塞入大标题",
+        "按实际画幅重新检查安全区"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/wave-text.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "f36864920e8a3e6347daca9ac1902e2882ed08d48ec5ad3c9cc38887cead8678",
+          "bytes": 42036
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "wave-text",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "text": "文字律动",
+        "subText": "波浪文字 · 动画示意"
+      }
+    },
+    {
+      "id": "remotion-camera-shake",
+      "label_zh": "镜头震动",
+      "layer": "remotion",
+      "category_zh": "转场",
+      "description_zh": "短促镜头抖动基础",
+      "uses_zh": [
+        "语义转折或明确换场",
+        "旅行地点与时间转换"
+      ],
+      "avoid_zh": [
+        "不要在一句话尚未说完时强切",
+        "不将演示色块当成已接入的真实素材"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/camera-shake.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "18a36051cb065954d19509a0f278ca9414912a8ef4103a023a5d7adbcf2b15c2",
+          "bytes": 138884
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "camera-shake",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "title": "注意这里",
+        "subtitle": "强调转折 · 动画示意"
+      }
+    },
+    {
+      "id": "remotion-card-flip-transition",
+      "label_zh": "卡片翻面转场",
+      "layer": "remotion",
+      "category_zh": "转场",
+      "description_zh": "画面按卡片方式翻转",
+      "uses_zh": [
+        "语义转折或明确换场",
+        "旅行地点与时间转换"
+      ],
+      "avoid_zh": [
+        "不要在一句话尚未说完时强切",
+        "不将演示色块当成已接入的真实素材"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/card-flip-transition.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "455b5de6295db775dc9ea91e945699a0c96c8016b448e14a788fb62e1b4141fa",
+          "bytes": 49094
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "card-flip-transition",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "labelBefore": "场景一",
+        "labelAfter": "场景二"
+      }
+    },
+    {
+      "id": "remotion-transition-circle-wipe",
+      "label_zh": "圆形擦除转场",
+      "layer": "remotion",
+      "category_zh": "转场",
+      "description_zh": "圆形遮罩由中心扩张",
+      "uses_zh": [
+        "语义转折或明确换场",
+        "旅行地点与时间转换"
+      ],
+      "avoid_zh": [
+        "不要在一句话尚未说完时强切",
+        "不将演示色块当成已接入的真实素材"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/transition-circle-wipe.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "57df0eb501bffff361d24dc87c56a06a3f598fab253959be3a95bec0c72a13d7",
+          "bytes": 35505
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "transition-circle-wipe",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 90,
+      "default_parameters": {
+        "fromLabel": "场景一",
+        "toLabel": "场景二"
+      }
+    },
+    {
+      "id": "remotion-ink-spread-transition",
+      "label_zh": "墨迹扩散转场",
+      "layer": "remotion",
+      "category_zh": "转场",
+      "description_zh": "墨迹扩散覆盖画面",
+      "uses_zh": [
+        "语义转折或明确换场",
+        "旅行地点与时间转换"
+      ],
+      "avoid_zh": [
+        "不要在一句话尚未说完时强切",
+        "不将演示色块当成已接入的真实素材"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/ink-spread-transition.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "87475ca600677e4abf49aa875d5a6122c8bfa55652f992caf202e5a2ed40cbb7",
+          "bytes": 45079
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "ink-spread-transition",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "labelBefore": "场景一",
+        "labelAfter": "场景二"
+      }
+    },
+    {
+      "id": "remotion-flip-page-transition",
+      "label_zh": "翻页转场",
+      "layer": "remotion",
+      "category_zh": "转场",
+      "description_zh": "页面翻动切换场景",
+      "uses_zh": [
+        "语义转折或明确换场",
+        "旅行地点与时间转换"
+      ],
+      "avoid_zh": [
+        "不要在一句话尚未说完时强切",
+        "不将演示色块当成已接入的真实素材"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/flip-page-transition.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "62bd10cf0f2f36694a637309970162b89b8a5ea68b1fdc1e62c5347776f5e60e",
+          "bytes": 75275
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "flip-page-transition",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "labelBefore": "上一页",
+        "labelAfter": "下一页"
+      }
+    },
+    {
+      "id": "remotion-pixel-mosaic-transition",
+      "label_zh": "像素马赛克转场",
+      "layer": "remotion",
+      "category_zh": "转场",
+      "description_zh": "画面拆成像素块再组合",
+      "uses_zh": [
+        "语义转折或明确换场",
+        "旅行地点与时间转换"
+      ],
+      "avoid_zh": [
+        "不要在一句话尚未说完时强切",
+        "不将演示色块当成已接入的真实素材"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/pixel-mosaic-transition.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "0cc0a6adc53014e0b71746b8affc33aecc76ddc2c99c417fe1dac25de05ec7bf",
+          "bytes": 420926
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "pixel-mosaic-transition",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 90,
+      "default_parameters": {}
+    },
+    {
+      "id": "remotion-slide-wipe",
+      "label_zh": "滑动擦除转场",
+      "layer": "remotion",
+      "category_zh": "转场",
+      "description_zh": "面板滑动切换场景",
+      "uses_zh": [
+        "语义转折或明确换场",
+        "旅行地点与时间转换"
+      ],
+      "avoid_zh": [
+        "不要在一句话尚未说完时强切",
+        "不将演示色块当成已接入的真实素材"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/slide-wipe.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "0d92607f02e5150d490b9d607226f71c723fa5a3d32c2924cc3be30c628131a6",
+          "bytes": 37604
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "slide-wipe",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "labelBefore": "场景一",
+        "labelAfter": "场景二"
+      }
+    },
+    {
+      "id": "remotion-whip-pan",
+      "label_zh": "快速甩镜",
+      "layer": "remotion",
+      "category_zh": "转场",
+      "description_zh": "快速横移与模糊转场",
+      "uses_zh": [
+        "语义转折或明确换场",
+        "旅行地点与时间转换"
+      ],
+      "avoid_zh": [
+        "不要在一句话尚未说完时强切",
+        "不将演示色块当成已接入的真实素材"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/whip-pan.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "e153739eca9b510c6e14b313f20d610cd750744059fc7212612cc9739511c39b",
+          "bytes": 46013
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "whip-pan",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "scenes": [
+          {
+            "background": "#0f172a",
+            "title": "发现",
+            "subtitle": "寻找故事线索",
+            "textColor": "#f1f5f9"
+          },
+          {
+            "background": "#7c3aed",
+            "title": "创作",
+            "subtitle": "组织画面内容",
+            "textColor": "#ffffff"
+          },
+          {
+            "background": "#ea580c",
+            "title": "呈现",
+            "subtitle": "让表达更清楚",
+            "textColor": "#fff7ed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "remotion-bar-chart-anim",
+      "label_zh": "长条图成长",
+      "layer": "remotion",
+      "category_zh": "数据与图表",
+      "description_zh": "柱状图按数值依次增长",
+      "uses_zh": [
+        "有来源的数据比较",
+        "步骤进度与指标解释"
+      ],
+      "avoid_zh": [
+        "示意数据不能当成真实业绩或改善结果",
+        "无可靠数据时不用图表暗示结论"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/bar-chart-anim.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "0eed5058bada079b7de6924bf6fed2db5adfb93547a12721e31837150f912dfc",
+          "bytes": 29183
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "bar-chart-anim",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "title": "进度对比",
+        "subtitle": "动画测试数值，不代表业务结果",
+        "bars": [
+          {
+            "label": "阶段一",
+            "value": 120,
+            "color": "#60a5fa"
+          },
+          {
+            "label": "阶段二",
+            "value": 180,
+            "color": "#34d399"
+          },
+          {
+            "label": "阶段三",
+            "value": 240,
+            "color": "#fbbf24"
+          },
+          {
+            "label": "阶段四",
+            "value": 320,
+            "color": "#f472b6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "remotion-line-chart-anim",
+      "label_zh": "折线图绘制",
+      "layer": "remotion",
+      "category_zh": "数据与图表",
+      "description_zh": "折线沿横轴逐步绘出",
+      "uses_zh": [
+        "有来源的数据比较",
+        "步骤进度与指标解释"
+      ],
+      "avoid_zh": [
+        "示意数据不能当成真实业绩或改善结果",
+        "无可靠数据时不用图表暗示结论"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/line-chart-anim.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "fbc0e09051edde2144d939dc27c974ebf654b73c055034a0d6585fd1a65bbdf2",
+          "bytes": 23029
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "line-chart-anim",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "title": "趋势变化",
+        "subtitle": "以下为虚构示意数据",
+        "points": [
+          {
+            "label": "一月",
+            "value": 40
+          },
+          {
+            "label": "二月",
+            "value": 55
+          },
+          {
+            "label": "三月",
+            "value": 50
+          },
+          {
+            "label": "四月",
+            "value": 72
+          },
+          {
+            "label": "五月",
+            "value": 88
+          },
+          {
+            "label": "六月",
+            "value": 95
+          }
+        ]
+      }
+    },
+    {
+      "id": "remotion-pourover-drip-fill-gauge",
+      "label_zh": "滴入式填充计量",
+      "layer": "remotion",
+      "category_zh": "数据与图表",
+      "description_zh": "滴落式动画填满目标比例；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。",
+      "uses_zh": [
+        "有来源的数据比较",
+        "步骤进度与指标解释"
+      ],
+      "avoid_zh": [
+        "示意数据不能当成真实业绩或改善结果",
+        "无可靠数据时不用图表暗示结论"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/pourover-drip-fill-gauge.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "899a3f2c65ae66b33e688e0a4a10552b5c64258078836e5b235f4e9968d60840",
+          "bytes": 249338
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "pourover-drip-fill-gauge",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 180,
+      "default_parameters": {}
+    },
+    {
+      "id": "remotion-kpi-counter",
+      "label_zh": "数字计数器",
+      "layer": "remotion",
+      "category_zh": "数据与图表",
+      "description_zh": "数字递增到目标值",
+      "uses_zh": [
+        "有来源的数据比较",
+        "步骤进度与指标解释"
+      ],
+      "avoid_zh": [
+        "示意数据不能当成真实业绩或改善结果",
+        "无可靠数据时不用图表暗示结论"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/kpi-counter.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "aa5d7852cd776578c20a3ac6ac705a859b56490c965267207d892cdcb37508eb",
+          "bytes": 62176
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "kpi-counter",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "title": "指标看板",
+        "subtitle": "以下为虚构示意数据",
+        "metrics": [
+          {
+            "label": "项目数",
+            "value": 120,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 0,
+            "color": "#22c55e",
+            "icon": "+"
+          },
+          {
+            "label": "完成度",
+            "value": 75,
+            "prefix": "",
+            "suffix": "%",
+            "decimals": 0,
+            "color": "#6366f1",
+            "icon": "^"
+          },
+          {
+            "label": "步骤数",
+            "value": 8,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 0,
+            "color": "#f59e0b",
+            "icon": "#"
+          },
+          {
+            "label": "示意分数",
+            "value": 72,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 0,
+            "color": "#ec4899",
+            "icon": "★"
+          }
+        ]
+      }
+    },
+    {
+      "id": "remotion-pixel-candlestick-ohlc",
+      "label_zh": "像素蜡烛图",
+      "layer": "remotion",
+      "category_zh": "数据与图表",
+      "description_zh": "像素风格OHLC数据演示；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。",
+      "uses_zh": [
+        "有来源的数据比较",
+        "步骤进度与指标解释"
+      ],
+      "avoid_zh": [
+        "示意数据不能当成真实业绩或改善结果",
+        "无可靠数据时不用图表暗示结论"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/pixel-candlestick-ohlc.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "570edc41d9901a0f1ebf28b49ca0412d85ec4b95f0df7cf24bc8485c7d7499f0",
+          "bytes": 150098
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "pixel-candlestick-ohlc",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 180,
+      "default_parameters": {
+        "ticker": "示意行情"
+      }
+    },
+    {
+      "id": "remotion-racing-chart",
+      "label_zh": "排名竞速长条图",
+      "layer": "remotion",
+      "category_zh": "数据与图表",
+      "description_zh": "长条随数据变化交换排名",
+      "uses_zh": [
+        "有来源的数据比较",
+        "步骤进度与指标解释"
+      ],
+      "avoid_zh": [
+        "示意数据不能当成真实业绩或改善结果",
+        "无可靠数据时不用图表暗示结论"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/racing-chart.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "c8d17198dc230471962d2581ff0d7c2d7c75a845fa69b1952e87bcfb0633d32f",
+          "bytes": 47768
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "racing-chart",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 210,
+      "default_parameters": {
+        "title": "动态排名 · 示例数据",
+        "data": [
+          {
+            "label": "项目甲",
+            "values": [
+              22,
+              28,
+              34,
+              41,
+              48
+            ],
+            "color": "#d4af37"
+          },
+          {
+            "label": "项目乙",
+            "values": [
+              30,
+              32,
+              33,
+              35,
+              36
+            ],
+            "color": "#2563eb"
+          },
+          {
+            "label": "项目丙",
+            "values": [
+              18,
+              24,
+              30,
+              32,
+              38
+            ],
+            "color": "#10b981"
+          },
+          {
+            "label": "项目丁",
+            "values": [
+              26,
+              25,
+              24,
+              22,
+              20
+            ],
+            "color": "#ef4444"
+          },
+          {
+            "label": "项目戊",
+            "values": [
+              12,
+              16,
+              20,
+              28,
+              34
+            ],
+            "color": "#a855f7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "remotion-community-chat",
+      "label_zh": "聊天界面",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "竖屏聊天消息逐条展示；独立演示层把桌面尺寸字体放大，方便阅读竖版中文界面。",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/community-chat.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "625f336cd116021bdd702b108b04019440b82b40ae26fa66c15486805fe85591",
+          "bytes": 501821
+        }
+      ],
+      "ratio": "9:16",
+      "composition_id": "community-chat",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        540,
+        960
+      ],
+      "duration_frames": 270,
+      "default_parameters": {
+        "workspaceName": "创意社区",
+        "channelName": "讨论示意",
+        "messages": [
+          {
+            "authorName": "小林",
+            "avatarLabel": "林",
+            "avatarColor": "#2f9e8f",
+            "time": "今天 10:24",
+            "text": "先确定这次的主题。",
+            "reactions": [
+              {
+                "emoji": "🎉",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "authorName": "小陈",
+            "avatarLabel": "陈",
+            "avatarColor": "#5cc89a",
+            "time": "今天 10:25",
+            "text": "再选适合内容的画面。"
+          },
+          {
+            "authorName": "小周",
+            "avatarLabel": "周",
+            "avatarColor": "#7a5cd6",
+            "time": "今天 10:26",
+            "text": "字幕记得留出安全区。"
+          },
+          {
+            "authorName": "小林",
+            "avatarLabel": "林",
+            "avatarColor": "#d68a3c",
+            "time": "今天 10:28",
+            "text": "最后一起核对成片。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "remotion-end-card",
+      "label_zh": "通用结束卡",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "通用CTA结束卡；不替换用户固定片尾",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户",
+        "只作模板展示，不能自动覆盖用户固定结尾模板"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/end-card.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "e1f93a6aa111e1e1f5742300b59e3cc5126e0f73604ec4a2afcefc0067f6e1ae",
+          "bytes": 78480
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "end-card",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "title": "感谢观看",
+        "subtitle": "片尾卡片 · 仅供演示",
+        "ctaText": "查看下一篇"
+      }
+    },
+    {
+      "id": "remotion-eye-reveal",
+      "label_zh": "眼睛揭示动画",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "代码图形的眼睛开合揭示",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/eye-reveal.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "aa9ffb99ff8a09b029f11aa89e354757697feefcefd97716017aae5b0698224c",
+          "bytes": 44586
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "eye-reveal",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 90,
+      "default_parameters": {
+        "messageText": "发现重点",
+        "subText": "睁眼揭示 · 动画示意"
+      }
+    },
+    {
+      "id": "remotion-lower-third-glass-card",
+      "label_zh": "玻璃信息卡",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "半透明玻璃下三分之一信息卡",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/lower-third-glass-card.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "28070a8c6419507a4368d937275e1ca681fd71145ebe32e62699d6f50869df9e",
+          "bytes": 44930
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "lower-third-glass-card",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "nameText": "人物姓名",
+        "titleText": "身份说明 · 玻璃卡片示意"
+      }
+    },
+    {
+      "id": "remotion-character-jumping",
+      "label_zh": "角色跳动",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "代码图形角色弹跳；独立演示层修正原版重复扣除跳跃位移并降低跳高，防止角色跳出画框；原始源码未改。",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/character-jumping.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "1f27d088af224ca0f792cafed47c59979f2694d26f5dca51a8bcfc705a2161c6",
+          "bytes": 90197
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "character-jumping",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "label": "出发吧"
+      }
+    },
+    {
+      "id": "remotion-social-reel",
+      "label_zh": "短视频播放器界面",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "代码绘制竖屏播放器与信息层",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/social-reel.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "3099230518a0d86d1dabcc7527c6995f32018790bff33f9beb058623bf04f4eb",
+          "bytes": 74719
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "social-reel",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "brandName": "创意展示",
+        "handle": "@示意账号",
+        "headline": "一段故事",
+        "headlineAccent": "一个重点",
+        "secondCopy": "整理内容\n清楚呈现",
+        "infoLines": [
+          "手机界面示意",
+          "图形不是实拍素材",
+          "参数可以替换"
+        ],
+        "ctaText": "继续观看",
+        "caption": "创作过程示意",
+        "likeCount": "示意"
+      }
+    },
+    {
+      "id": "remotion-split-screen",
+      "label_zh": "分屏布局",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "两个画面区域进入并排布局",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/split-screen.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "3214dd4b6d101ceaf568416603bedf94bf76c189a5017bbc0b3b930d9a2b96df",
+          "bytes": 31859
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "split-screen",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "panelA": {
+          "heading": "方案一",
+          "sub": "左侧画面示意",
+          "bg": "#1f2937",
+          "textColor": "#f1f5f9"
+        },
+        "panelB": {
+          "heading": "方案二",
+          "sub": "右侧画面示意",
+          "bg": "#0ea5e9",
+          "textColor": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "remotion-thinking-bubble",
+      "label_zh": "思考气泡",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "代码图形思考气泡",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/thinking-bubble.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "d54cacc54be656369c9b43e303d35688f8a35acf70a3829a7eefcecbf2ea56ad",
+          "bytes": 22507
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "thinking-bubble",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "thoughtText": "让我想想"
+      }
+    },
+    {
+      "id": "remotion-wave-hello",
+      "label_zh": "角色招手",
+      "layer": "remotion",
+      "category_zh": "社交与界面",
+      "description_zh": "代码图形招手动画",
+      "uses_zh": [
+        "人物介绍与界面示意",
+        "对比、对话或行动提示"
+      ],
+      "avoid_zh": [
+        "虚构对话与界面不能当成客户见证",
+        "未接入真人的图形人物不得冒充用户"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/wave-hello.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "765153ab2b341d02785c390b9ab07ab025f4ced9940ea53a5d5c869575ee0395",
+          "bytes": 82188
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "wave-hello",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 90,
+      "default_parameters": {
+        "title": "你好",
+        "subtitle": "欢迎来到这里"
+      }
+    },
+    {
+      "id": "remotion-bokeh-circles",
+      "label_zh": "散景光圈背景",
+      "layer": "remotion",
+      "category_zh": "循环与背景",
+      "description_zh": "柔焦圆形漂浮背景",
+      "uses_zh": [
+        "标题背板与氛围衬底",
+        "有意使用的图形过场"
+      ],
+      "avoid_zh": [
+        "不要替代有证据价值的实拍画面",
+        "背景运动不能干扰正文阅读"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/bokeh-circles.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "22b281ac74bfa397a47a0054b924025e221fe5cb4fcc0699c9b179d3b6c56cfb",
+          "bytes": 121561
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "bokeh-circles",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "label": "柔光背景"
+      }
+    },
+    {
+      "id": "remotion-fireworks-burst",
+      "label_zh": "烟花爆开",
+      "layer": "remotion",
+      "category_zh": "循环与背景",
+      "description_zh": "放射粒子爆开",
+      "uses_zh": [
+        "标题背板与氛围衬底",
+        "有意使用的图形过场"
+      ],
+      "avoid_zh": [
+        "不要替代有证据价值的实拍画面",
+        "背景运动不能干扰正文阅读"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/fireworks-burst.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "205dab9c9b40980c12748f7210097d8b55e9af30302d73260874e35b2eaa8e04",
+          "bytes": 131477
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "fireworks-burst",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 110,
+      "default_parameters": {
+        "messageText": "值得庆祝",
+        "subText": "烟花动画示意"
+      }
+    },
+    {
+      "id": "remotion-loop-grid-wave",
+      "label_zh": "网格波浪循环",
+      "layer": "remotion",
+      "category_zh": "循环与背景",
+      "description_zh": "网格按波形循环变化",
+      "uses_zh": [
+        "标题背板与氛围衬底",
+        "有意使用的图形过场"
+      ],
+      "avoid_zh": [
+        "不要替代有证据价值的实拍画面",
+        "背景运动不能干扰正文阅读"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/loop-grid-wave.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "fa7b11f1c5e1a73c1b1fb42f5336f691757b48b78e9225c6b446da5e85ce2963",
+          "bytes": 250097
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "loop-grid-wave",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 90,
+      "default_parameters": {}
+    },
+    {
+      "id": "remotion-parallax-pan",
+      "label_zh": "视差平移",
+      "layer": "remotion",
+      "category_zh": "循环与背景",
+      "description_zh": "多层图形以不同速度移动",
+      "uses_zh": [
+        "标题背板与氛围衬底",
+        "有意使用的图形过场"
+      ],
+      "avoid_zh": [
+        "不要替代有证据价值的实拍画面",
+        "背景运动不能干扰正文阅读"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/parallax-pan.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "f3c5de0d9e6330666b92c3c710110d0d381b9c2a66e7e80ca9314d5b9e3a586b",
+          "bytes": 68735
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "parallax-pan",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "title": "走向远方",
+        "subtitle": "多层景深 · 图形示意"
+      }
+    },
+    {
+      "id": "remotion-pencil-draw",
+      "label_zh": "铅笔绘制",
+      "layer": "remotion",
+      "category_zh": "循环与背景",
+      "description_zh": "铅笔沿星形路径绘制",
+      "uses_zh": [
+        "标题背板与氛围衬底",
+        "有意使用的图形过场"
+      ],
+      "avoid_zh": [
+        "不要替代有证据价值的实拍画面",
+        "背景运动不能干扰正文阅读"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/pencil-draw.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "78806a3670c61e1faff1955eaf1a813140cc5021182ecb278a6404fbd2b0bb31",
+          "bytes": 43224
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "pencil-draw",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 100,
+      "default_parameters": {
+        "messageText": "开始创作",
+        "subText": "一笔一画，表达想法"
+      }
+    },
+    {
+      "id": "remotion-pixel-waterfall-cycle",
+      "label_zh": "像素瀑布循环",
+      "layer": "remotion",
+      "category_zh": "循环与背景",
+      "description_zh": "竖屏像素图形循环",
+      "uses_zh": [
+        "标题背板与氛围衬底",
+        "有意使用的图形过场"
+      ],
+      "avoid_zh": [
+        "不要替代有证据价值的实拍画面",
+        "背景运动不能干扰正文阅读"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/pixel-waterfall-cycle.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "47870601017c2c536834328437a1b857231b51026b65352cb83bb2ce030ebb91",
+          "bytes": 380495
+        }
+      ],
+      "ratio": "9:16",
+      "composition_id": "pixel-waterfall-cycle",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        540,
+        960
+      ],
+      "duration_frames": 180,
+      "default_parameters": {}
+    },
+    {
+      "id": "remotion-particle-snow",
+      "label_zh": "粒子雪花",
+      "layer": "remotion",
+      "category_zh": "循环与背景",
+      "description_zh": "图形粒子持续飘落",
+      "uses_zh": [
+        "标题背板与氛围衬底",
+        "有意使用的图形过场"
+      ],
+      "avoid_zh": [
+        "不要替代有证据价值的实拍画面",
+        "背景运动不能干扰正文阅读"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/particle-snow.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "c1efb526ed3b81bf9e0af27e6fdfcf93c7a4ba33dfa56443745532351d1c3fd4",
+          "bytes": 121005
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "particle-snow",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "title": "冬日来信",
+        "subtitle": "雪花背景 · 动画示意"
+      }
+    },
+    {
+      "id": "remotion-starfield",
+      "label_zh": "星空穿行背景",
+      "layer": "remotion",
+      "category_zh": "循环与背景",
+      "description_zh": "星点向外运动的空间背景",
+      "uses_zh": [
+        "标题背板与氛围衬底",
+        "有意使用的图形过场"
+      ],
+      "avoid_zh": [
+        "不要替代有证据价值的实拍画面",
+        "背景运动不能干扰正文阅读"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/starfield.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "26b4f71fa7586fba8f662a9c40258028ec6124bb8c6b54bb8ee11d5aea01c150",
+          "bytes": 130025
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "starfield",
+      "registration_kind": "upstream_template",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "label": "星空背景"
+      }
+    },
+    {
+      "id": "remotion-library-orbit",
+      "label_zh": "前后环绕卡片演示",
+      "layer": "remotion",
+      "category_zh": "RemotionUI本地适配",
+      "description_zh": "卡片绕原创几何示意人物前后运动；没有真人抠像输入",
+      "uses_zh": [
+        "可参数化的图形动画",
+        "按表达任务选择局部使用"
+      ],
+      "avoid_zh": [
+        "真实素材合成与其他比例须另测",
+        "不声称演示等同于本条成片验收",
+        "此项为几何人物占位；本人环绕效果另见口播效果16"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "0aecaca2b61a167992e1205d10e4da16d8a71331+zh-gallery.1",
+      "source_url": "https://github.com/riaz37/remotion-ui/tree/0aecaca2b61a167992e1205d10e4da16d8a71331",
+      "source_id": "remotion-ui",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/library-orbit.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "c8bfd95699f22dd22849545fc75c5cd0613d9983738c1bd2177151dd167cba94",
+          "bytes": 101445
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "library-orbit",
+      "registration_kind": "adapted_component_demo",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 180,
+      "default_parameters": {
+        "labels": [
+          "观察",
+          "创作",
+          "复用"
+        ],
+        "title": "前后环绕 · 空间层次",
+        "note": "几何人物示意，并非真人抠像",
+        "periodInFrames": 180
+      }
+    },
+    {
+      "id": "remotion-library-text-mask",
+      "label_zh": "文字镂空媒体演示",
+      "layer": "remotion",
+      "category_zh": "RemotionUI本地适配",
+      "description_zh": "SVG文字镂空与渐变移动；演示使用合成渐变",
+      "uses_zh": [
+        "可参数化的图形动画",
+        "按表达任务选择局部使用"
+      ],
+      "avoid_zh": [
+        "真实素材合成与其他比例须另测",
+        "不声称演示等同于本条成片验收",
+        "此项演示渐变填充；真人镂空视频另见口播效果11"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "0aecaca2b61a167992e1205d10e4da16d8a71331+zh-gallery.1",
+      "source_url": "https://github.com/riaz37/remotion-ui/tree/0aecaca2b61a167992e1205d10e4da16d8a71331",
+      "source_id": "remotion-ui",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/library-text-mask.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "b0695e95f7939965abae48d416f182046dd6302e1ebbcdfefe6aa24cb8d623cc",
+          "bytes": 38609
+        }
+      ],
+      "ratio": "1:1",
+      "composition_id": "library-text-mask",
+      "registration_kind": "adapted_component_demo",
+      "demo_dimensions": [
+        720,
+        720
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "text": "创意\n呈现",
+        "title": "动态镂空字",
+        "note": "渐变填充示意，可替换为已授权画面",
+        "media": "gradient",
+        "fontFamily": "TemplateNoto, sans-serif"
+      }
+    },
+    {
+      "id": "remotion-library-bar-zh",
+      "label_zh": "中文长条成长示例",
+      "layer": "remotion",
+      "category_zh": "中文示例",
+      "description_zh": "柱状图按数值依次增长；已有基础模板的中文参数示例，不新增模板家族。",
+      "uses_zh": [
+        "可参数化的图形动画",
+        "按表达任务选择局部使用"
+      ],
+      "avoid_zh": [
+        "真实素材合成与其他比例须另测",
+        "不声称演示等同于本条成片验收"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/library-bar-zh.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "7afa76aed5954fadb339ba809e4f90fab35429caebcacd71e70c74960d68f61f",
+          "bytes": 35592
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "library-bar-zh",
+      "registration_kind": "localized_example",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "title": "长条成长｜模板演示",
+        "subtitle": "以下为动画测试数值，不代表业务结果",
+        "bars": [
+          {
+            "label": "项目一",
+            "value": 40
+          },
+          {
+            "label": "项目二",
+            "value": 80
+          }
+        ],
+        "accentColor": "#06b6d4"
+      },
+      "base_composition_id": "bar-chart-anim"
+    },
+    {
+      "id": "remotion-library-glass-zh",
+      "label_zh": "中文玻璃卡片示例",
+      "layer": "remotion",
+      "category_zh": "中文示例",
+      "description_zh": "半透明玻璃下三分之一信息卡；已有基础模板的中文参数示例，不新增模板家族。",
+      "uses_zh": [
+        "可参数化的图形动画",
+        "按表达任务选择局部使用"
+      ],
+      "avoid_zh": [
+        "真实素材合成与其他比例须另测",
+        "不声称演示等同于本条成片验收"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/library-glass-zh.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "aa58c7bfce15b1230a221c39d6576874362d0f54f017965021982eca663f1731",
+          "bytes": 45581
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "library-glass-zh",
+      "registration_kind": "localized_example",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 120,
+      "default_parameters": {
+        "nameText": "玻璃卡片",
+        "titleText": "文字、颜色可以替换"
+      },
+      "base_composition_id": "lower-third-glass-card"
+    },
+    {
+      "id": "remotion-library-player-zh",
+      "label_zh": "中文播放器界面示例",
+      "layer": "remotion",
+      "category_zh": "中文示例",
+      "description_zh": "代码绘制竖屏播放器与信息层；已有基础模板的中文参数示例，不新增模板家族。",
+      "uses_zh": [
+        "可参数化的图形动画",
+        "按表达任务选择局部使用"
+      ],
+      "avoid_zh": [
+        "真实素材合成与其他比例须另测",
+        "不声称演示等同于本条成片验收"
+      ],
+      "inputs_zh": [
+        "中文文案与颜色参数",
+        "按本条素材确认的时间长度",
+        "对应画幅的安全区检查"
+      ],
+      "version": "f648980e528defb7594e24c6447055f0540f340b+zh-gallery.1",
+      "source_url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
+      "source_id": "rendercomp",
+      "license": "MIT（模板源码）；Remotion 运行时与字体许可分别适用",
+      "availability": "local_rendered_demo",
+      "validation": {
+        "state": "validated_demo",
+        "scope": "55项真实Remotion渲染；每项完整解码、帧数、比例、静音及2 MB限额通过；实际查看每项18%/52%/82%编码帧联系表。不是逐帧连续观看，不代表其他画幅、真人合成、用户审美认可或最终视频QA。"
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/remotion/library-player-zh.mp4",
+          "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
+          "sha256": "0acf93900d29a041c6b666a27b60ee5ea34293028e1f9132564e47a467d7b502",
+          "bytes": 74722
+        }
+      ],
+      "ratio": "16:9",
+      "composition_id": "library-player-zh",
+      "registration_kind": "localized_example",
+      "demo_dimensions": [
+        960,
+        540
+      ],
+      "duration_frames": 150,
+      "default_parameters": {
+        "brandName": "界面示意",
+        "handle": "@示意",
+        "headline": "手机画面",
+        "headlineAccent": "模板演示",
+        "secondCopy": "后续替换\n自己的素材",
+        "infoLines": [
+          "此处为图形示意",
+          "尚未接入真人视频"
+        ],
+        "ctaText": "参数可以替换",
+        "caption": "模板预览",
+        "likeCount": "示意"
+      },
+      "base_composition_id": "social-reel"
+    }
+  ]
+}

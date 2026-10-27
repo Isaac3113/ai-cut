@@ -7,6 +7,9 @@
 > 2026-09-21 GitHub总Skill整合与ChatCut主路线：用户指定仓库已合入后续规则与配套代码，ChatCut为默认主路线，缺连接不静默换工具；本轮无视频迁移。当前证据读[26_GitHub_Skill_Integration.md](26_GitHub_Skill_Integration.md)。
 
 # Start here
+
+2026-10-27: [KB31 中文模板中心与剪辑路线](31_Template_Center_And_Editing_Routes.md)记录72官网条目、70控件、55代码注册项与19真人分支，27中文分类、145个本地Demo及适配器。先选路线再选模板；代表演示不等于全变体或新片验收，Git与跨电脑恢复分别核对。
+
 2026-10-27: [KB30 MotionGit接入评估](30_MotionGit_Evaluation.md)记录当前Skill审计、官网2.7.17-alpha.2隔离实测及同音轨A/B。建议保留现有主时间轴、按内容局部接入；未设为默认，个人模板包和测试媒体不进入Git。技术检查、抽帧审阅与完整听审／用户风格认可分别记录。
 
 2026-10-26 封面风格认可：用户已认可原片暗背景、真人轮廓描边、hook及主副辅助文字层级的样图，命名为`dark-frame-cutout-hook-v1`，并明确这是多种风格之一。可按内容与画幅尝试其他风格，不固定样图标题、斜黑体或右下布局；旧亮浅渐层加居中大头像及普通主题词不再作为默认。规则和Hub参考图入口见[当前用户偏好](../../skill/talking-head-editor/references/user-preferences.md)与[封面提示词员工](../../skill/talking-head-editor/references/cover-prompt-worker.md)。本次风格认可不替代实际片头替换、重新导出或全片验收；0.1秒片头规则保持。

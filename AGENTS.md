@@ -4,7 +4,7 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 
 - Preserve a single authoritative editing timeline, source files, semantic meaning, revisions and independently adjustable voice/music/SFX.
 - The approved teaching preset is reusable, but another user's footage, credentials, permissions, likeness and validation are not inherited.
-- Never commit footage, portraits, accounts, .env files, models, node_modules, generated videos or local job history. Preserve dependency licenses.
+- Never commit original footage, full deliveries, source portraits/masks, accounts, personal .motion packages, .env files, models, node_modules or local job history. Preserve dependency licenses. The owner explicitly requested curated template demos on 2026-10-27: reviewed small demo MP4s and posters are allowed only under docs/template-gallery/demos, with source/rights and validation records. This does not authorize automatically uploading future videos or private project media. Keep the repository private.
 - Only report checks actually run; code tests and user style feedback do not prove continuous viewing/listening or new-machine success.
 - Run relevant regression tests for behavior changes. Preserve user files except for explicitly authorized cleanup; validate new exports before replacing superseded deliveries.
 - Update the project knowledge base for changes and teaching workflows. Use normal Git commits without rewriting existing histories.

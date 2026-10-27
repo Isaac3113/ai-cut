@@ -31,13 +31,21 @@ GitHub同步本仓库代码、Skill与技术说明；OneDrive同步Project Hub�
 
 正确仓库在main、工作区干净且允许快进时，git fetch origin，再git pull --ff-only origin main，核对HEAD==origin/main；遇到本地修改或分叉先比较和说明，不强制同步。
 
-读取AGENTS.md、README.md、03_Documentation/Knowledge_Base/00_Start_Here.md、03_Documentation/Knowledge_Base/28_Intro_Outro_And_Cross_Computer.md、skill/talking-head-editor/SKILL.md、skill/talking-head-editor/references/intro-outro.md和docs/CROSS_COMPUTER_UPDATE.md。保护并核对个人Skill installation.json归属及改动后，用本仓库scripts/install_skill.py更新安装，运行doctor，分别报告规则和运行环境结果。
+读取AGENTS.md、README.md、03_Documentation/Knowledge_Base/00_Start_Here.md、03_Documentation/Knowledge_Base/31_Template_Center_And_Editing_Routes.md、03_Documentation/Knowledge_Base/28_Intro_Outro_And_Cross_Computer.md、skill/talking-head-editor/SKILL.md、skill/talking-head-editor/references/intro-outro.md和docs/CROSS_COMPUTER_UPDATE.md。保护并核对个人Skill installation.json归属及改动后，用本仓库scripts/install_skill.py更新安装，运行doctor，分别报告规则和运行环境结果。
 
-当前规则：片头封面只闪0.1秒，30fps为3帧，无淡入淡出；以后结尾用用户提供的原始“结尾模板.mp4”。当前实施参数是原始片尾直接1.2倍一次，只加快片尾；正文速度不变，BGM不整体加速。保留片尾自己的音轨，只播放一次；正文BGM在正文结束处收尾。适配本条已确认比例，不裁关键Logo文字，片尾不重复叠Logo水印或强加真人圆窗、口播字幕。独立封面与社媒五项不取消。
+当前规则：片头封面只闪0.1秒，30fps为3帧，无淡入淡出；以后结尾用用户提供的原始“结尾模板.mp4”。当前实施参数是原始片尾直接1.2倍一次，只加快片尾；正文速度不变，BGM不整体加速。保留片尾自己的音轨，只播放一次；正文BGM在正文结束处收尾。适配本条已确认比例，不裁关键Logo文字，片尾不重复叠Logo水印或强加真人圆窗、口播字幕。独立封面仍须16:9和9:16两张；最新版交付只保留一个MP4、两张封面及发布素材内Facebook文案、小红书文案、固定第一评论三份TXT。检查资料、ZIP、字幕与旧版留在本机工作区，不混入最新版。
 
-素材不在Git中。请从本机OneDrive的口播Project Hub/公共素材/固定片尾/结尾模板.mp4取得完整原件，核对KB28的SHA256；不能把旧电脑Videos路径当唯一入口。代码、运行时和缓存留在C盘非OneDrive repo。
+正式视频的原片、完整成片和固定片尾不在Git中；2026-10-27本次授权的精简模板Demo位于docs/template-gallery/demos并随私人Git同步。请从本机OneDrive的口播Project Hub/公共素材/固定片尾/结尾模板.mp4取得完整原件，核对KB28的SHA256；不能把旧电脑Videos路径当唯一入口。代码、运行时和缓存留在C盘非OneDrive repo。
 
 默认继续ChatCut同一个项目与唯一有效时间轴。先从当前任务交接或Hub资料核对projectId/timelineId，再读取在线最新状态；不要重复创建，也不要用旧快照覆盖新工程。缩短片头时同步平移正文画面、原声、字幕、MG、圆窗和SFX；跨片头的连续BGM可保留0帧起点并按正文新终点裁定，贴正文起点的BGM随正文平移。保护完整字音，重新导出字幕；已完成的位移不能重复执行。当前账号、工具、导出额度当场核对；工程修改、MP4真实导出、完整观看/试听和另一电脑恢复验证分开报告。没有真实导出就不要说视频已经完成，不静默改用其他主路线。
 
-更新完成后告诉我实际commit、Skill安装结果、素材哈希和在线工程状态，以及仍需完成的项目。
+同时阅读templates/README.zh-CN.md、来源说明及references/editing-routes.md和template-selection.md（references位于skill/talking-head-editor下）。模板中心分为72官网条目、70控件/210变体、55代码注册项、19真人效果，不能称216套完整视频模板。先选剪辑路线再选模板；知识口播与旅行Vlog不同，Vlog专用自动流程尚未实现。个人.motion与Key不入Git，需要本机自己的授权包及配置，不复制旧电脑运行内核。
+
+更新完成后告诉我实际commit、Skill安装结果、模板中心是否能浏览、素材哈希和在线工程状态，以及仍需完成的项目。
 ```
+
+## 中文模板中心与MotionGit（2026-10-27）
+
+安全pull后，中文清单在`templates/README.zh-CN.md`，精选演示小样位于`docs/template-gallery/demos`并随本次私人仓库同步。运行`python scripts/serve_template_gallery.py`可在本机看可搜索目录；GitHub本身不执行HTML。目录与Demo可看，不等于这台电脑已能重渲或剪好新片。
+
+MotionGit使用自己的原始个人.motion，切勿把原包或Key发到GitHub。将`motiongit.example.json`复制为被忽略的`motiongit.local.json`并填写本机原包路径与标准Node22+路径（需npm时使用含npm的安装），再由`scripts/motiongit_adapter.py start --summary`验签；未知helper先核官方元数据，不跳过SHA检查。按实际包公开guide/schema检查依赖与输入；不复制旧电脑保护内核、.venv或node_modules代替安装。旅行Vlog专用自动流程尚未实现，不能由目录出现旅行类素材就推断已支持。

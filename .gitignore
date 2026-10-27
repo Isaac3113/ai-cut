@@ -28,3 +28,12 @@ extensions/hyperframes-vd44/assets/gsap.min.js
 /项目资料/
 
 storage-repair.local.json
+
+# Owner-approved curated template demos, 2026-10-27; raw media stays excluded.
+*.motion
+motiongit.local.json
+!/docs/template-gallery/demos/**/*.mp4
+
+# Internal gallery rendering work, not the reviewed demo delivery.
+extensions/remotion-vd44/gallery-tools/remotion-work/
+extensions/remotion-vd44/gallery-tools/presenter-work/

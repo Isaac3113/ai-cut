@@ -1,0 +1,4829 @@
+{
+  "schema_version": "1.0",
+  "source": {
+    "package_version": "2.7.17-alpha.2",
+    "library_version": "0.3.0",
+    "official_helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+    "public_schema_sha256": "f9e18424a7a50c137984515a618395916d26c40f0de25938b4c51aecdcd7e6ac",
+    "control_count": 70,
+    "variant_count": 210
+  },
+  "scope_zh": "每项只渲染一个代表变体；全部210个变体登记不等于全部已渲染。中文名称与变体说明来自原作者。",
+  "entries": [
+    {
+      "id": "mg-control-title",
+      "label_zh": "两行标题",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "开场、段落开头：一行陈述 + 一行重点（重点行砸入）",
+      "uses_zh": [
+        "开场、段落开头：一行陈述 + 一行重点（重点行砸入）"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "title",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "slam",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/title.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "slam",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "a7a9cb2f305df55804433631df6278356c842dfc76b1b8d7833fabce2fea2c26",
+          "bytes": 63004,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "slam",
+          "label_zh": "砸入"
+        },
+        {
+          "id": "split",
+          "label_zh": "左右滑入 + 光线"
+        },
+        {
+          "id": "type",
+          "label_zh": "逐字打出 + 遮罩"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "slam",
+        "t0": 0,
+        "t1": 6,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-keyword",
+      "label_zh": "关键词砸入",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "一个词或短语是这段话的重点；后面可以补 1–3 句解释，逐句出现",
+      "uses_zh": [
+        "一个词或短语是这段话的重点；后面可以补 1–3 句解释，逐句出现"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "keyword",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "focus",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/keyword.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "focus",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "36b4926913c153200eb5537985ec5d2764a924ecb03acbc955504aab78a4dc0c",
+          "bytes": 59409,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "slam",
+          "label_zh": "砸入 + 火花"
+        },
+        {
+          "id": "glitch",
+          "label_zh": "干扰闪烁"
+        },
+        {
+          "id": "focus",
+          "label_zh": "模糊聚焦 + 取景框"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "focus",
+        "t0": 6,
+        "t1": 12,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-number",
+      "label_zh": "数字滚动",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "一个关键数字：时长、数量、百分比、价格。可带 1–3 句注释",
+      "uses_zh": [
+        "一个关键数字：时长、数量、百分比、价格。可带 1–3 句注释"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "number",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "ring",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/number.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "ring",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "57823a0ffdfd5ef4142e75b1bfdcf1941e5f008d69ec65b09c2cc14a75b00f65",
+          "bytes": 40101,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "ring",
+          "label_zh": "环形进度"
+        },
+        {
+          "id": "gauge",
+          "label_zh": "半圆仪表"
+        },
+        {
+          "id": "flip",
+          "label_zh": "逐位翻入 + 刻度"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "ring",
+        "t0": 12,
+        "t1": 18,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-list",
+      "label_zh": "要点列表",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "1–6 个并列要点，逐条出现；全部出现后高亮依次轮转",
+      "uses_zh": [
+        "1–6 个并列要点，逐条出现；全部出现后高亮依次轮转"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "list",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "rail",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/list.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "rail",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "b0b6b53412fa0b906a1cccd87126970d3d93758c054d33c97d1bf8e3588602a9",
+          "bytes": 60966,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "rail",
+          "label_zh": "竖轨编号"
+        },
+        {
+          "id": "cards",
+          "label_zh": "玻璃卡翻起"
+        },
+        {
+          "id": "check",
+          "label_zh": "方框打勾"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "rail",
+        "t0": 18,
+        "t1": 24,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-compare",
+      "label_zh": "左右对比",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "两种做法、前后变化、A 和 B 的差别；可给结论并标出胜者",
+      "uses_zh": [
+        "两种做法、前后变化、A 和 B 的差别；可给结论并标出胜者"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "compare",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "split",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/compare.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "split",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "68d50e8a6cae31b8292b702ea6dcc528936ffc4189d74d32566a0f94d087dc05",
+          "bytes": 43783,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "split",
+          "label_zh": "两侧滑入"
+        },
+        {
+          "id": "panels",
+          "label_zh": "玻璃面板"
+        },
+        {
+          "id": "flip",
+          "label_zh": "先单侧再翻出另一侧"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "split",
+        "t0": 24,
+        "t1": 30,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-steps",
+      "label_zh": "步骤流程",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "2–5 个先后步骤；光点沿轨道依次点亮",
+      "uses_zh": [
+        "2–5 个先后步骤；光点沿轨道依次点亮"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "steps",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "track",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/steps.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "track",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "e70b6f0fa60fd39c459a21e419e2242877fdd53c1a21a281cc937855a19a2f74",
+          "bytes": 54894,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "track",
+          "label_zh": "轨道光点"
+        },
+        {
+          "id": "ladder",
+          "label_zh": "阶梯上升"
+        },
+        {
+          "id": "cards",
+          "label_zh": "卡片接力"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "track",
+        "t0": 30,
+        "t1": 36,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-quote",
+      "label_zh": "金句 / 引用",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "一句原话、观点或引用，逐字打出；*星号* 包住的词高亮",
+      "uses_zh": [
+        "一句原话、观点或引用，逐字打出；*星号* 包住的词高亮"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "quote",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "type",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/quote.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "type",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "2116da148e89fade2f1903c2240b1ac06b87ca366e3ae2bb2ec188b79a19222e",
+          "bytes": 35195,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "type",
+          "label_zh": "逐字打出"
+        },
+        {
+          "id": "reveal",
+          "label_zh": "短语浮现 + 下划线"
+        },
+        {
+          "id": "card",
+          "label_zh": "玻璃卡翻入"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "type",
+        "t0": 36,
+        "t1": 42,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-bars",
+      "label_zh": "数据条",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "2–5 项数值比较；数值必须来自真实数据",
+      "uses_zh": [
+        "2–5 项数值比较；数值必须来自真实数据"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "bars",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "rows",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/bars.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "rows",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "05764be70e9cf9914707dd0c7c3f1c0b1fa303be45883b67bc4e41b353c1136d",
+          "bytes": 29314,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "rows",
+          "label_zh": "横条"
+        },
+        {
+          "id": "columns",
+          "label_zh": "竖柱"
+        },
+        {
+          "id": "rank",
+          "label_zh": "排序 + 第一名高亮"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "rows",
+        "t0": 42,
+        "t1": 48,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-media",
+      "label_zh": "录屏 / 图片窗",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "展示用户的录屏、截图、产品图；可在画面上标出 1–3 处重点",
+      "uses_zh": [
+        "展示用户的录屏、截图、产品图；可在画面上标出 1–3 处重点"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "media",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "tilt",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/media.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "tilt",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "e8415ad56fe2c05b6d480ff56db01b0f4fd442a59217194ff474e0e395390323",
+          "bytes": 61269,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "tilt",
+          "label_zh": "透视转入"
+        },
+        {
+          "id": "zoom",
+          "label_zh": "推近标注处"
+        },
+        {
+          "id": "scan",
+          "label_zh": "扫描刷出"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "tilt",
+        "t0": 48,
+        "t1": 54,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-stamp",
+      "label_zh": "印章强调",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "下结论、表态：免费、已上线、不推荐",
+      "uses_zh": [
+        "下结论、表态：免费、已上线、不推荐"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "stamp",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "badge",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/stamp.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "badge",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "53c4001688e5a8697e85457bcc38baac145d414df69449474fd3efdaccd33fac",
+          "bytes": 33857,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "stamp",
+          "label_zh": "盖章"
+        },
+        {
+          "id": "badge",
+          "label_zh": "圆徽章旋入"
+        },
+        {
+          "id": "neon",
+          "label_zh": "霓虹点亮"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "badge",
+        "t0": 54,
+        "t1": 60,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-chapter",
+      "label_zh": "章节卡",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "长视频分段：编号 + 段名",
+      "uses_zh": [
+        "长视频分段：编号 + 段名"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "chapter",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "outline",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/chapter.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "outline",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "ce55a660dc3cdf9b08dc561954aa8aee5493ef9c3cd30115d9d03f013aac4a96",
+          "bytes": 28501,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "outline",
+          "label_zh": "描边编号"
+        },
+        {
+          "id": "center",
+          "label_zh": "居中 + 两侧光线"
+        },
+        {
+          "id": "wipe",
+          "label_zh": "色带扫过"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "outline",
+        "t0": 60,
+        "t1": 66,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-fusion",
+      "label_zh": "光球合成",
+      "layer": "control",
+      "category_zh": "基础讲解",
+      "description_zh": "A × B 合在一起得到结果 C",
+      "uses_zh": [
+        "A × B 合在一起得到结果 C"
+      ],
+      "avoid_zh": [
+        "不替代原始证据；重点字不能改变原话的限定条件。"
+      ],
+      "inputs_zh": [
+        "短标题或重点词",
+        "清楚的解释关系",
+        "真实数值或标明示例的数据"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "fusion",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "orbs",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/fusion.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "orbs",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "b3404c1e12413edf836193620e8187578f525dc91ce250cf82095b214bbecc8e",
+          "bytes": 63254,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "orbs",
+          "label_zh": "牵引合成"
+        },
+        {
+          "id": "orbit",
+          "label_zh": "绕转收拢"
+        },
+        {
+          "id": "collide",
+          "label_zh": "高速相撞"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "base",
+        "variant": "orbs",
+        "t0": 66,
+        "t1": 72,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-logo",
+      "label_zh": "Logo 揭示",
+      "layer": "control",
+      "category_zh": "品牌与行动",
+      "description_zh": "片头或片尾亮出品牌/频道标志：有 logo 图片就用图片，没有就用名字首字或图标生成字标；下方可带一句标语",
+      "uses_zh": [
+        "片头或片尾亮出品牌/频道标志：有 logo 图片就用图片，没有就用名字首字或图标生成字标；下方可带一句标语"
+      ],
+      "avoid_zh": [
+        "只在需要品牌开场或行动引导时使用；示例价格与互动数不能当成事实。"
+      ],
+      "inputs_zh": [
+        "品牌名称或有权使用的 Logo",
+        "明确的行动引导或章节信息"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "logo",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "burst",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/logo.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "burst",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "e51e8396008b839dba51834dc5d37103901ba1e31b88b4b2910ba745395bb2d7",
+          "bytes": 104629,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "burst",
+          "label_zh": "粒子旋入汇聚后爆闪弹出"
+        },
+        {
+          "id": "draw",
+          "label_zh": "外框描线后填色、字标擦出"
+        },
+        {
+          "id": "glitch",
+          "label_zh": "错位色散干扰后定格"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "brand",
+        "variant": "burst",
+        "t0": 0,
+        "t1": 6,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-intro",
+      "label_zh": "片头",
+      "layer": "control",
+      "category_zh": "品牌与行动",
+      "description_zh": "视频开头的节目标题卡：标题 + 副标题 + 可选期数/日期。电影感开场、系列节目、栏目包装",
+      "uses_zh": [
+        "视频开头的节目标题卡：标题 + 副标题 + 可选期数/日期。电影感开场、系列节目、栏目包装"
+      ],
+      "avoid_zh": [
+        "只在需要品牌开场或行动引导时使用；示例价格与互动数不能当成事实。"
+      ],
+      "inputs_zh": [
+        "品牌名称或有权使用的 Logo",
+        "明确的行动引导或章节信息"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "intro",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "minimal",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/intro.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "minimal",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "27f257be020968a3347e8dcfc5f0564ed464542f64ff4ec94ba145364e9cb133",
+          "bytes": 38321,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cinema",
+          "label_zh": "遮幅黑边打开 + 光带扫过 + 字距收拢"
+        },
+        {
+          "id": "bold",
+          "label_zh": "色块弹出 + 巨大期数 + 标题升起"
+        },
+        {
+          "id": "minimal",
+          "label_zh": "中线画出、标题上升副标题下落、四角括号"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "brand",
+        "variant": "minimal",
+        "t0": 6,
+        "t1": 12,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-outro",
+      "label_zh": "片尾",
+      "layer": "control",
+      "category_zh": "品牌与行动",
+      "description_zh": "视频结尾：感谢语 + 1–3 个下一步（推荐视频、下期预告、关注/链接文字），可带头像",
+      "uses_zh": [
+        "视频结尾：感谢语 + 1–3 个下一步（推荐视频、下期预告、关注/链接文字），可带头像"
+      ],
+      "avoid_zh": [
+        "只在需要品牌开场或行动引导时使用；示例价格与互动数不能当成事实。"
+      ],
+      "inputs_zh": [
+        "品牌名称或有权使用的 Logo",
+        "明确的行动引导或章节信息"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "outro",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "next",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/outro.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "next",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "3bc185062eb342fa9be14ec03cccbfc8d711db0616e3e5fbeb89f349add5645f",
+          "bytes": 128054,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "endcard",
+          "label_zh": "推荐位方框描边 + 头像 + 关注按钮呼吸"
+        },
+        {
+          "id": "thanks",
+          "label_zh": "巨大感谢语弹落 + 彩纸炮 + 胶囊"
+        },
+        {
+          "id": "next",
+          "label_zh": "下期预告卡三维摆入 + 自动播放进度环"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "brand",
+        "variant": "next",
+        "t0": 12,
+        "t1": 18,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-cta",
+      "label_zh": "行动号召",
+      "layer": "control",
+      "category_zh": "品牌与行动",
+      "description_zh": "引导观众做一个动作：点链接、领取、评论、往下看、上滑。一个按钮文字 + 一句补充",
+      "uses_zh": [
+        "引导观众做一个动作：点链接、领取、评论、往下看、上滑。一个按钮文字 + 一句补充"
+      ],
+      "avoid_zh": [
+        "只在需要品牌开场或行动引导时使用；示例价格与互动数不能当成事实。"
+      ],
+      "inputs_zh": [
+        "品牌名称或有权使用的 Logo",
+        "明确的行动引导或章节信息"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "cta",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "button",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/cta.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "button",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "1a3193d688c9b805cb06f7ee92d8dad4fcb0232208866a24e3f9978724fbd359",
+          "bytes": 116345,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "button",
+          "label_zh": "胶囊按钮弹入 + 光标点击 + 波纹，之后呼吸"
+        },
+        {
+          "id": "arrow",
+          "label_zh": "文字弹起 + 大箭头描出反复顶出"
+        },
+        {
+          "id": "swipe",
+          "label_zh": "滑轨触点反复上滑"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "brand",
+        "variant": "button",
+        "t0": 18,
+        "t1": 24,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-subscribe",
+      "label_zh": "关注 / 三连",
+      "layer": "control",
+      "category_zh": "品牌与行动",
+      "description_zh": "求关注、求三连、开铃铛：按钮依次被光标点亮，图标弹跳、数字 +1。items 可自定义 2–3 个按钮",
+      "uses_zh": [
+        "求关注、求三连、开铃铛：按钮依次被光标点亮，图标弹跳、数字 +1。items 可自定义 2–3 个按钮"
+      ],
+      "avoid_zh": [
+        "只在需要品牌开场或行动引导时使用；示例价格与互动数不能当成事实。"
+      ],
+      "inputs_zh": [
+        "品牌名称或有权使用的 Logo",
+        "明确的行动引导或章节信息"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "subscribe",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "triple",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/subscribe.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "triple",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "40cc511eb52595a74f6a28c3c9e484d8f77e5ad84c8a0e39aee649d86cffbdd1",
+          "bytes": 79045,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "triple",
+          "label_zh": "圆按钮依次点亮 + +1 + 彩纸"
+        },
+        {
+          "id": "follow",
+          "label_zh": "头像名片、关注按钮变已关注、粉丝数 +1"
+        },
+        {
+          "id": "bell",
+          "label_zh": "订阅变已订阅 + 铃铛阻尼摇摆、声波、角标"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "brand",
+        "variant": "triple",
+        "t0": 24,
+        "t1": 30,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-countdown",
+      "label_zh": "倒计时",
+      "layer": "control",
+      "category_zh": "品牌与行动",
+      "description_zh": "3–10 秒倒数：开奖、开播、限时、揭晓前的紧张感；归零时爆开出现结束语",
+      "uses_zh": [
+        "3–10 秒倒数：开奖、开播、限时、揭晓前的紧张感；归零时爆开出现结束语"
+      ],
+      "avoid_zh": [
+        "只在需要品牌开场或行动引导时使用；示例价格与互动数不能当成事实。"
+      ],
+      "inputs_zh": [
+        "品牌名称或有权使用的 Logo",
+        "明确的行动引导或章节信息"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "countdown",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "ring",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/countdown.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "ring",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "1a47738b3b67d1c5cde08dff2259ca60d6e825e7a2c56bf8e0274f9bfd5270e6",
+          "bytes": 216518,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "ring",
+          "label_zh": "圆环每秒倒走、最后三下变暖色"
+        },
+        {
+          "id": "flip",
+          "label_zh": "翻页牌"
+        },
+        {
+          "id": "slam",
+          "label_zh": "巨大数字砸入、上一个冲散"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "brand",
+        "variant": "ring",
+        "t0": 30,
+        "t1": 36,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-price",
+      "label_zh": "价格 / 优惠",
+      "layer": "control",
+      "category_zh": "品牌与行动",
+      "description_zh": "亮出价格与优惠：原价划掉、新价砸入、标签盖章；可带 1–3 个卖点",
+      "uses_zh": [
+        "亮出价格与优惠：原价划掉、新价砸入、标签盖章；可带 1–3 个卖点"
+      ],
+      "avoid_zh": [
+        "只在需要品牌开场或行动引导时使用；示例价格与互动数不能当成事实。"
+      ],
+      "inputs_zh": [
+        "品牌名称或有权使用的 Logo",
+        "明确的行动引导或章节信息"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "price",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "tag",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/price.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "tag",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "ef2d24aeeb9e0bf43b9cc59b3d746949f6f1fb8c7d8cb0ef66845261d67d1fce",
+          "bytes": 86004,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "tag",
+          "label_zh": "吊牌钟摆摆入 + 扫光"
+        },
+        {
+          "id": "card",
+          "label_zh": "套餐卡、数字逐位滚动、卖点打勾、流光边框"
+        },
+        {
+          "id": "sale",
+          "label_zh": "旋转爆炸贴 + 速度线 + 彩纸"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "brand",
+        "variant": "tag",
+        "t0": 36,
+        "t1": 42,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-reveal",
+      "label_zh": "揭晓 / 抽奖",
+      "layer": "control",
+      "category_zh": "品牌与行动",
+      "description_zh": "悬念揭晓：抽奖结果、答案、排名第一、新品名。鼓点悬念 → 打开 → 彩纸",
+      "uses_zh": [
+        "悬念揭晓：抽奖结果、答案、排名第一、新品名。鼓点悬念 → 打开 → 彩纸"
+      ],
+      "avoid_zh": [
+        "只在需要品牌开场或行动引导时使用；示例价格与互动数不能当成事实。"
+      ],
+      "inputs_zh": [
+        "品牌名称或有权使用的 Logo",
+        "明确的行动引导或章节信息"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "reveal",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "curtain",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/reveal.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "curtain",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "9f70988d4ec16b2b13772e63ccfac8ccc44266590c07e0da8d5ce7a08ea9e36d",
+          "bytes": 218676,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "curtain",
+          "label_zh": "帘幕颤动后拉开 + 聚光灯"
+        },
+        {
+          "id": "card",
+          "label_zh": "背面卡片越抖越快后三维翻开 + 光芒"
+        },
+        {
+          "id": "box",
+          "label_zh": "礼物盒抖动、盒盖飞起、结果升起"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "brand",
+        "variant": "curtain",
+        "t0": 42,
+        "t1": 48,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-iconcards",
+      "label_zh": "图标要点卡",
+      "layer": "control",
+      "category_zh": "概念教学",
+      "description_zh": "2–4 个并列要点，每个配一个图标：功能亮点、方法要素、几个理由。比 list 更有画面感；要点有顺序/因果时改用 steps",
+      "uses_zh": [
+        "2–4 个并列要点，每个配一个图标：功能亮点、方法要素、几个理由。比 list 更有画面感；要点有顺序/因果时改用 steps"
+      ],
+      "avoid_zh": [
+        "简化概念不能省略关键前提；完成章和勾选不能冒充实际验收。"
+      ],
+      "inputs_zh": [
+        "定义、问题、对比或清单文案",
+        "关键限定条件"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "iconcards",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "row",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/iconcards.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "row",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "5a63ae21ea3a8e42d8649a3a6c33780ba4e262bb585f1fedb7b145990e633b46",
+          "bytes": 108954,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "row",
+          "label_zh": "并排竖卡以底边翻起"
+        },
+        {
+          "id": "grid",
+          "label_zh": "2×2 横卡左右翻开"
+        },
+        {
+          "id": "stack",
+          "label_zh": "卡组发牌、飞行中翻面；停留时轮流浮起高亮"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "concept",
+        "variant": "row",
+        "t0": 0,
+        "t1": 6,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-qa",
+      "label_zh": "问答",
+      "layer": "control",
+      "category_zh": "概念教学",
+      "description_zh": "先抛出一个问题，停顿后揭晓答案：设问、观众常问、知识小测。cue 对准口播说出答案的那一刻",
+      "uses_zh": [
+        "先抛出一个问题，停顿后揭晓答案：设问、观众常问、知识小测。cue 对准口播说出答案的那一刻"
+      ],
+      "avoid_zh": [
+        "简化概念不能省略关键前提；完成章和勾选不能冒充实际验收。"
+      ],
+      "inputs_zh": [
+        "定义、问题、对比或清单文案",
+        "关键限定条件"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "qa",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "reveal",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/qa.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "reveal",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "18437b118cc30c1102311c453317208de029254078e025b3a8c9d564f9015665",
+          "bytes": 67439,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "reveal",
+          "label_zh": "条纹挡板 + 倒计时条后对开"
+        },
+        {
+          "id": "flip",
+          "label_zh": "大卡翻面"
+        },
+        {
+          "id": "chat",
+          "label_zh": "提问气泡、思考中、问号翻成灯泡"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "concept",
+        "variant": "reveal",
+        "t0": 6,
+        "t1": 12,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-myth",
+      "label_zh": "误区与真相",
+      "layer": "control",
+      "category_zh": "概念教学",
+      "description_zh": "纠正一个常见错误说法：先摆出误区、否定它、再给出正确说法。辟谣、避坑、常见误解",
+      "uses_zh": [
+        "纠正一个常见错误说法：先摆出误区、否定它、再给出正确说法。辟谣、避坑、常见误解"
+      ],
+      "avoid_zh": [
+        "简化概念不能省略关键前提；完成章和勾选不能冒充实际验收。"
+      ],
+      "inputs_zh": [
+        "定义、问题、对比或清单文案",
+        "关键限定条件"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "myth",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "cross",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/myth.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "cross",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "b3da4a8f80e40f3de450838c8344a44888a39d753dcf7fc037b409e7279f4461",
+          "bytes": 83369,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cross",
+          "label_zh": "红叉打掉 + 逐行划线，真相砸入"
+        },
+        {
+          "id": "shatter",
+          "label_zh": "裂纹后碎成玻璃片"
+        },
+        {
+          "id": "swap",
+          "label_zh": "开关拨到绿色，文字逐字翻牌换成真相"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "concept",
+        "variant": "cross",
+        "t0": 12,
+        "t1": 18,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-prosCons",
+      "label_zh": "优缺点",
+      "layer": "control",
+      "category_zh": "概念教学",
+      "description_zh": "权衡一件事的好处与代价，最后给结论（偏向哪边）。选购、方案评估、利弊分析",
+      "uses_zh": [
+        "权衡一件事的好处与代价，最后给结论（偏向哪边）。选购、方案评估、利弊分析"
+      ],
+      "avoid_zh": [
+        "简化概念不能省略关键前提；完成章和勾选不能冒充实际验收。"
+      ],
+      "inputs_zh": [
+        "定义、问题、对比或清单文案",
+        "关键限定条件"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "prosCons",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "columns",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/prosCons.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "columns",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "052893b7d00c805a7fec28df856a5eb5b3b1e1dcb9dbffe63cca62c0d68d42d0",
+          "bytes": 45331,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "columns",
+          "label_zh": "中线两栏 + 拔河条拉向占优一方"
+        },
+        {
+          "id": "scale",
+          "label_zh": "砝码落入托盘、天平倾斜"
+        },
+        {
+          "id": "cards",
+          "label_zh": "两张卡翻入，胜方前推发光、败方后退"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "concept",
+        "variant": "columns",
+        "t0": 18,
+        "t1": 24,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-definition",
+      "label_zh": "名词解释",
+      "layer": "control",
+      "category_zh": "概念教学",
+      "description_zh": "解释一个术语/概念：词条 + 注音/英文 + 类别 + 一句定义 + 可选例句。知识科普、行业黑话、新概念",
+      "uses_zh": [
+        "解释一个术语/概念：词条 + 注音/英文 + 类别 + 一句定义 + 可选例句。知识科普、行业黑话、新概念"
+      ],
+      "avoid_zh": [
+        "简化概念不能省略关键前提；完成章和勾选不能冒充实际验收。"
+      ],
+      "inputs_zh": [
+        "定义、问题、对比或清单文案",
+        "关键限定条件"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "definition",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "dictionary",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/definition.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "dictionary",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "4c561bba2ebbf299515225732f26b69ecf0db3a9f1ab5b8da581fa617e14b683",
+          "bytes": 60079,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "dictionary",
+          "label_zh": "词典条目，词头逐字落下、注音打出"
+        },
+        {
+          "id": "wiki",
+          "label_zh": "搜索框打字回车后展开百科卡"
+        },
+        {
+          "id": "sticky",
+          "label_zh": "便签贴上、记号笔写出并圈词"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "concept",
+        "variant": "dictionary",
+        "t0": 24,
+        "t1": 30,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-tip",
+      "label_zh": "小贴士 / 警告",
+      "layer": "control",
+      "category_zh": "概念教学",
+      "description_zh": "插一句提醒：小技巧（tip）、注意事项（warn）、补充信息（info）、确认无误（ok）。类型决定图标与颜色",
+      "uses_zh": [
+        "插一句提醒：小技巧（tip）、注意事项（warn）、补充信息（info）、确认无误（ok）。类型决定图标与颜色"
+      ],
+      "avoid_zh": [
+        "简化概念不能省略关键前提；完成章和勾选不能冒充实际验收。"
+      ],
+      "inputs_zh": [
+        "定义、问题、对比或清单文案",
+        "关键限定条件"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "tip",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "banner",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/tip.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "banner",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "64f5aeb93ed66499b3173adaf4e25431639520678188c42ca67634b12c0cf2f6",
+          "bytes": 46501,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "banner",
+          "label_zh": "横幅展开、色块砸入（warn 带滚动警示条）"
+        },
+        {
+          "id": "card",
+          "label_zh": "图标徽章弹跳落下、卡片展开"
+        },
+        {
+          "id": "bubble",
+          "label_zh": "圆形角色 + 气泡逐字打出"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "concept",
+        "variant": "banner",
+        "t0": 30,
+        "t1": 36,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-checklist",
+      "label_zh": "待办清单",
+      "layer": "control",
+      "category_zh": "概念教学",
+      "description_zh": "逐项完成的清单：准备步骤、检查项、已做到的事。和 list 的区别是有打勾过程、进度计数和最后的完成章",
+      "uses_zh": [
+        "逐项完成的清单：准备步骤、检查项、已做到的事。和 list 的区别是有打勾过程、进度计数和最后的完成章"
+      ],
+      "avoid_zh": [
+        "简化概念不能省略关键前提；完成章和勾选不能冒充实际验收。"
+      ],
+      "inputs_zh": [
+        "定义、问题、对比或清单文案",
+        "关键限定条件"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "checklist",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "todo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/checklist.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "todo",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "fa935a9e156ec679b1315cc32862ecd5d3ad3d4320424383060aee6cf8cdb365",
+          "bytes": 95222,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "todo",
+          "label_zh": "玻璃面板 + 计数 + 进度条，完成章砸下"
+        },
+        {
+          "id": "clipboard",
+          "label_zh": "写字板手绘勾与划线、圆章盖下"
+        },
+        {
+          "id": "progress",
+          "label_zh": "分段进度环与清单同步、光点飞入"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "concept",
+        "variant": "todo",
+        "t0": 36,
+        "t1": 42,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-vs",
+      "label_zh": "两方对决",
+      "layer": "control",
+      "category_zh": "概念教学",
+      "description_zh": "两个对象正面比拼 1–3 项数值并分出胜负：产品 A/B、方案、两个人或团队。只比观点不比数值时用 compare",
+      "uses_zh": [
+        "两个对象正面比拼 1–3 项数值并分出胜负：产品 A/B、方案、两个人或团队。只比观点不比数值时用 compare"
+      ],
+      "avoid_zh": [
+        "简化概念不能省略关键前提；完成章和勾选不能冒充实际验收。"
+      ],
+      "inputs_zh": [
+        "定义、问题、对比或清单文案",
+        "关键限定条件"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "vs",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "cards",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/vs.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "cards",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "eb2f7b63f94eba9a5c0fad721e2aec74d059fe1c9ef8a3b5d717dbc943f338cb",
+          "bytes": 107610,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "fight",
+          "label_zh": "格斗游戏式冲入相撞、VS 闪电、属性条对冲、胜方光环王冠"
+        },
+        {
+          "id": "scale",
+          "label_zh": "头像滚入、双色比例条拔河"
+        },
+        {
+          "id": "cards",
+          "label_zh": "对战卡牌飞入翻开、逐项比数值、胜方浮起 WIN"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "concept",
+        "variant": "cards",
+        "t0": 42,
+        "t1": 48,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-donut",
+      "label_zh": "环形占比",
+      "layer": "control",
+      "category_zh": "数据与进度",
+      "description_zh": "几个部分占整体多少：构成、份额、预算分配、用户来源（2–5 项）。数值按占比换算成百分比",
+      "uses_zh": [
+        "几个部分占整体多少：构成、份额、预算分配、用户来源（2–5 项）。数值按占比换算成百分比"
+      ],
+      "avoid_zh": [
+        "正式视频必须绑定真实数据及单位；本演示数字全部为示例。"
+      ],
+      "inputs_zh": [
+        "有来源的数值、标签和单位"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "donut",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "ring",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/donut.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "ring",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "12c905d730ed5e4760a1eddfd76e1646e8df267ff00313074c7a94bd3bb8d23b",
+          "bytes": 48838,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "ring",
+          "label_zh": "环形 + 引线标注、中心合计滚动"
+        },
+        {
+          "id": "pie",
+          "label_zh": "实心扇区逐块弹出"
+        },
+        {
+          "id": "split",
+          "label_zh": "环形 + 侧边图例逐条点亮"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "data",
+        "variant": "ring",
+        "t0": 0,
+        "t1": 6,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-linechart",
+      "label_zh": "折线趋势",
+      "layer": "control",
+      "category_zh": "数据与进度",
+      "description_zh": "随时间的变化：增长、下降、波动、两条对比（4–12 个点）。终点标注最后一个值",
+      "uses_zh": [
+        "随时间的变化：增长、下降、波动、两条对比（4–12 个点）。终点标注最后一个值"
+      ],
+      "avoid_zh": [
+        "正式视频必须绑定真实数据及单位；本演示数字全部为示例。"
+      ],
+      "inputs_zh": [
+        "有来源的数值、标签和单位"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "linechart",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "line",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/linechart.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "line",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "ed8cda05827402a93cbcd38e77aa0dfaa233b434af0599da5cfe893834db19ed",
+          "bytes": 45267,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "line",
+          "label_zh": "描线生长 + 拖尾光点 + 数据点弹出"
+        },
+        {
+          "id": "area",
+          "label_zh": "面积弹起 + 扫描线读数"
+        },
+        {
+          "id": "spark",
+          "label_zh": "大数字跟随走势 + 涨跌幅（只画第一条）"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "data",
+        "variant": "line",
+        "t0": 6,
+        "t1": 12,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-counter",
+      "label_zh": "KPI 数字卡",
+      "layer": "control",
+      "category_zh": "数据与进度",
+      "description_zh": "2–4 个关键数字并排：用户数、营收、增长率、时长；可带涨跌",
+      "uses_zh": [
+        "2–4 个关键数字并排：用户数、营收、增长率、时长；可带涨跌"
+      ],
+      "avoid_zh": [
+        "正式视频必须绑定真实数据及单位；本演示数字全部为示例。"
+      ],
+      "inputs_zh": [
+        "有来源的数值、标签和单位"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "counter",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "cards",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/counter.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "cards",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "68924374a9d86d2f970ac35f7759ed359bc7e3ce4ea351c8d34c9b283c91896a",
+          "bytes": 49368,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cards",
+          "label_zh": "三维翻牌 + 滚动计数"
+        },
+        {
+          "id": "odometer",
+          "label_zh": "里程表滚轮逐位停"
+        },
+        {
+          "id": "ticker",
+          "label_zh": "行情板逐行扫入、乱码锁定"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "data",
+        "variant": "cards",
+        "t0": 12,
+        "t1": 18,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-progress",
+      "label_zh": "进度 / 完成度",
+      "layer": "control",
+      "category_zh": "数据与进度",
+      "description_zh": "完成了多少：项目进度、目标达成、技能熟练度、电量式的程度（1–4 条，百分比）",
+      "uses_zh": [
+        "完成了多少：项目进度、目标达成、技能熟练度、电量式的程度（1–4 条，百分比）"
+      ],
+      "avoid_zh": [
+        "正式视频必须绑定真实数据及单位；本演示数字全部为示例。"
+      ],
+      "inputs_zh": [
+        "有来源的数值、标签和单位"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "progress",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "bars",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/progress.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "bars",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "2792b15aa643f0a046a4dc72aa354c3a6cf348af4f1518f8664269b7560adbae",
+          "bytes": 44122,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "bars",
+          "label_zh": "斜纹横条（100% 打勾）"
+        },
+        {
+          "id": "rings",
+          "label_zh": "同心环 + 中心轮显"
+        },
+        {
+          "id": "battery",
+          "label_zh": "分段电量格（颜色随电量）"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "data",
+        "variant": "bars",
+        "t0": 18,
+        "t1": 24,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-timeline",
+      "label_zh": "时间线 / 里程碑",
+      "layer": "control",
+      "category_zh": "数据与进度",
+      "description_zh": "按时间顺序的 3–6 个节点：发展历程、计划路线图、事件经过；current 标出「现在」",
+      "uses_zh": [
+        "按时间顺序的 3–6 个节点：发展历程、计划路线图、事件经过；current 标出「现在」"
+      ],
+      "avoid_zh": [
+        "正式视频必须绑定真实数据及单位；本演示数字全部为示例。"
+      ],
+      "inputs_zh": [
+        "有来源的数值、标签和单位"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "timeline",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "horizontal",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/timeline.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "horizontal",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "755498b0baf4c990ef83faa533e2046bc565ced46327e3908154bb9504d51be7",
+          "bytes": 48012,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "horizontal",
+          "label_zh": "横向沿线点亮（竖屏自动纵向）"
+        },
+        {
+          "id": "vertical",
+          "label_zh": "竖线 + 卡片滑入"
+        },
+        {
+          "id": "zigzag",
+          "label_zh": "折线上下交替"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "data",
+        "variant": "horizontal",
+        "t0": 24,
+        "t1": 30,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-table",
+      "label_zh": "对比表 / 功能矩阵",
+      "layer": "control",
+      "category_zh": "数据与进度",
+      "description_zh": "2–3 个方案在 2–5 项上逐项比较；单元格写 ✓ / ✗ 或短文字；赢家列高亮",
+      "uses_zh": [
+        "2–3 个方案在 2–5 项上逐项比较；单元格写 ✓ / ✗ 或短文字；赢家列高亮"
+      ],
+      "avoid_zh": [
+        "正式视频必须绑定真实数据及单位；本演示数字全部为示例。"
+      ],
+      "inputs_zh": [
+        "有来源的数值、标签和单位"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "table",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "grid",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/table.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "grid",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "61d60904e019e995e58e8278599cb0f7d7f5dd8c15a1476bef9cf27f066fc23d",
+          "bytes": 37997,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "grid",
+          "label_zh": "表格逐行扫入 + 赢家列光框"
+        },
+        {
+          "id": "scorecard",
+          "label_zh": "每方案一张卡、赢家抬起戴冠"
+        },
+        {
+          "id": "checklist",
+          "label_zh": "盖章清单 + 底部计票"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "data",
+        "variant": "grid",
+        "t0": 30,
+        "t1": 36,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-ranking",
+      "label_zh": "排行榜",
+      "layer": "control",
+      "category_zh": "数据与进度",
+      "description_zh": "3–6 项按数值排名：榜单、名次、Top N；自动按 value 从大到小排序",
+      "uses_zh": [
+        "3–6 项按数值排名：榜单、名次、Top N；自动按 value 从大到小排序"
+      ],
+      "avoid_zh": [
+        "正式视频必须绑定真实数据及单位；本演示数字全部为示例。"
+      ],
+      "inputs_zh": [
+        "有来源的数值、标签和单位"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "ranking",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "list",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/ranking.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "list",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "7e8a248e3802a5ca64ffcfeac7c3ba6d72db4fd462dca9583711b110abe81cb4",
+          "bytes": 49991,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "race",
+          "label_zh": "条形赛跑后重新排序换位"
+        },
+        {
+          "id": "podium",
+          "label_zh": "领奖台升起 + 鼓点揭晓第一"
+        },
+        {
+          "id": "list",
+          "label_zh": "名次牌自下而上翻入"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "data",
+        "variant": "list",
+        "t0": 36,
+        "t1": 42,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-flow",
+      "label_zh": "流程图",
+      "layer": "control",
+      "category_zh": "关系与系统结构",
+      "description_zh": "3–6 个有先后顺序的环节（步骤、流水线、因果链），或一个起点分出多个去向（branch）；节点可带图标",
+      "uses_zh": [
+        "3–6 个有先后顺序的环节（步骤、流水线、因果链），或一个起点分出多个去向（branch）；节点可带图标"
+      ],
+      "avoid_zh": [
+        "关系图须反映实际流程；不能把假设关系写成已实现功能。"
+      ],
+      "inputs_zh": [
+        "真实节点、顺序、层级或关系"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "flow",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "chain",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/flow.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "chain",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "572d38c3533606527e20ec34b5da49c73047e5a2f5580021e853e194ef651f00",
+          "bytes": 111495,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "chain",
+          "label_zh": "单行（竖屏单列）箭头链"
+        },
+        {
+          "id": "snake",
+          "label_zh": "两行折返"
+        },
+        {
+          "id": "branch",
+          "label_zh": "一个起点分出多个分支"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "diagram",
+        "variant": "chain",
+        "t0": 0,
+        "t1": 6,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-cycle",
+      "label_zh": "循环图",
+      "layer": "control",
+      "category_zh": "关系与系统结构",
+      "description_zh": "首尾相接、周而复始的 3–6 个环节：飞轮、迭代闭环、生命周期；中心可写主题",
+      "uses_zh": [
+        "首尾相接、周而复始的 3–6 个环节：飞轮、迭代闭环、生命周期；中心可写主题"
+      ],
+      "avoid_zh": [
+        "关系图须反映实际流程；不能把假设关系写成已实现功能。"
+      ],
+      "inputs_zh": [
+        "真实节点、顺序、层级或关系"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "cycle",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "ring",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/cycle.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "ring",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "df5df32bd345e3cd71a29d7e94eecb71fd6846180075f32bb72b668411839615",
+          "bytes": 75292,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "ring",
+          "label_zh": "圆环 + 弧形箭头逐段描出"
+        },
+        {
+          "id": "orbit",
+          "label_zh": "节点在椭圆轨道上绕转"
+        },
+        {
+          "id": "wheel",
+          "label_zh": "扇区转盘轮流弹出"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "diagram",
+        "variant": "ring",
+        "t0": 6,
+        "t1": 12,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-funnel",
+      "label_zh": "漏斗 / 层级",
+      "layer": "control",
+      "category_zh": "关系与系统结构",
+      "description_zh": "逐层收窄的转化、筛选（funnel），或自下而上的层级、金字塔、技术栈（pyramid / layers）；每层可带一个数值",
+      "uses_zh": [
+        "逐层收窄的转化、筛选（funnel），或自下而上的层级、金字塔、技术栈（pyramid / layers）；每层可带一个数值"
+      ],
+      "avoid_zh": [
+        "关系图须反映实际流程；不能把假设关系写成已实现功能。"
+      ],
+      "inputs_zh": [
+        "真实节点、顺序、层级或关系"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "funnel",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "funnel",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/funnel.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "funnel",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "65d64f08bdbde4af53533662f8b70998dab603d613aac3fa30c587d4ab9dd4ef",
+          "bytes": 92586,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "funnel",
+          "label_zh": "漏斗逐层落下、粒子流过"
+        },
+        {
+          "id": "pyramid",
+          "label_zh": "金字塔自下而上"
+        },
+        {
+          "id": "layers",
+          "label_zh": "等轴测叠层板"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "diagram",
+        "variant": "funnel",
+        "t0": 12,
+        "t1": 18,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-venn",
+      "label_zh": "交集图",
+      "layer": "control",
+      "category_zh": "关系与系统结构",
+      "description_zh": "两三个概念的交集或合成：A + B 的重叠点、三者兼得；merge 变体表示合而为一",
+      "uses_zh": [
+        "两三个概念的交集或合成：A + B 的重叠点、三者兼得；merge 变体表示合而为一"
+      ],
+      "avoid_zh": [
+        "关系图须反映实际流程；不能把假设关系写成已实现功能。"
+      ],
+      "inputs_zh": [
+        "真实节点、顺序、层级或关系"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "venn",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "overlap",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/venn.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "overlap",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "6847b46beba565fc20b9a09f6c473707e61d425fe7a28694dba67b105950c1ea",
+          "bytes": 114498,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "overlap",
+          "label_zh": "圆从两侧靠拢重叠、交集闪光"
+        },
+        {
+          "id": "outline",
+          "label_zh": "轮廓描出、交集斜纹填满"
+        },
+        {
+          "id": "merge",
+          "label_zh": "汇合成一个大圆"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "diagram",
+        "variant": "overlap",
+        "t0": 18,
+        "t1": 24,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-mindmap",
+      "label_zh": "思维导图",
+      "layer": "control",
+      "category_zh": "关系与系统结构",
+      "description_zh": "一个主题展开 3–6 个方面，每个方面可再列 0–2 个要点：知识框架、话题拆解",
+      "uses_zh": [
+        "一个主题展开 3–6 个方面，每个方面可再列 0–2 个要点：知识框架、话题拆解"
+      ],
+      "avoid_zh": [
+        "关系图须反映实际流程；不能把假设关系写成已实现功能。"
+      ],
+      "inputs_zh": [
+        "真实节点、顺序、层级或关系"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "mindmap",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "radial",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/mindmap.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "radial",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "de257a2a1c3586bb73a7cfd4d9b75670cc6ce90187324f0b39d68cf3d64898f2",
+          "bytes": 50489,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "radial",
+          "label_zh": "放射状（竖屏上下两排）"
+        },
+        {
+          "id": "tree",
+          "label_zh": "右展树（竖屏左侧主干）"
+        },
+        {
+          "id": "bubbles",
+          "label_zh": "气泡簇漂浮"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "diagram",
+        "variant": "radial",
+        "t0": 24,
+        "t1": 30,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-matrix",
+      "label_zh": "2×2 象限",
+      "layer": "control",
+      "category_zh": "关系与系统结构",
+      "description_zh": "两个维度把事物分成四类：重要/紧急、投入/回报、定位分析；可在象限里落几个点，priority 变体突出一个象限",
+      "uses_zh": [
+        "两个维度把事物分成四类：重要/紧急、投入/回报、定位分析；可在象限里落几个点，priority 变体突出一个象限"
+      ],
+      "avoid_zh": [
+        "关系图须反映实际流程；不能把假设关系写成已实现功能。"
+      ],
+      "inputs_zh": [
+        "真实节点、顺序、层级或关系"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "matrix",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "quadrant",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/matrix.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "quadrant",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "f6e0ae43ed446867a0ccfac56f17ad07c5f04231c6e0b95f5577b8cdad75b3c7",
+          "bytes": 63673,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "quadrant",
+          "label_zh": "十字轴 + 象限翻起"
+        },
+        {
+          "id": "scatter",
+          "label_zh": "L 形坐标 + 网格 + 扫描线"
+        },
+        {
+          "id": "priority",
+          "label_zh": "四色象限、重点放大其余变暗"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "diagram",
+        "variant": "quadrant",
+        "t0": 30,
+        "t1": 36,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-hub",
+      "label_zh": "中心辐射",
+      "layer": "control",
+      "category_zh": "关系与系统结构",
+      "description_zh": "一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景",
+      "uses_zh": [
+        "一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景"
+      ],
+      "avoid_zh": [
+        "关系图须反映实际流程；不能把假设关系写成已实现功能。"
+      ],
+      "inputs_zh": [
+        "真实节点、顺序、层级或关系"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "hub",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "star",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/hub.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "star",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "7bd3494d603effaadfd53374ace73eb0b64ae6af2dc5ef8c95f02b7f65332112",
+          "bytes": 56652,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "star",
+          "label_zh": "环形卫星卡 + 信号往返"
+        },
+        {
+          "id": "grid",
+          "label_zh": "两列（竖屏上下两排）电路折线"
+        },
+        {
+          "id": "constellation",
+          "label_zh": "星点 + 星座连线"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "diagram",
+        "variant": "star",
+        "t0": 36,
+        "t1": 42,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-gallery",
+      "label_zh": "图集",
+      "layer": "control",
+      "category_zh": "真实素材展示",
+      "description_zh": "3–8 张图片/视频一起亮相：作品集、案例合集、活动照片、产品多角度；每个 cue 出一张（carousel/stack 是每个 cue 转到下一张）",
+      "uses_zh": [
+        "3–8 张图片/视频一起亮相：作品集、案例合集、活动照片、产品多角度；每个 cue 出一张（carousel/stack 是每个 cue 转到下一张）"
+      ],
+      "avoid_zh": [
+        "必须使用有权使用的真实素材；对照动画不能冒充真实修复结果。"
+      ],
+      "inputs_zh": [
+        "本人视频帧、照片、产品图或真实截图",
+        "需要强调的区域"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "gallery",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "grid",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/gallery.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "grid",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "6adc2af115beea1d9e5b0a2c7d253c2b9596b3b59071c795cbfb45351b9ee64a",
+          "bytes": 104600,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "grid",
+          "label_zh": "网格错峰三维翻入后轮流放大"
+        },
+        {
+          "id": "carousel",
+          "label_zh": "3D 旋转木马逐张转到正前"
+        },
+        {
+          "id": "stack",
+          "label_zh": "照片堆一张张甩向两侧"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "showcase",
+        "variant": "grid",
+        "t0": 0,
+        "t1": 6,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-beforeafter",
+      "label_zh": "前后对比",
+      "layer": "control",
+      "category_zh": "真实素材展示",
+      "description_zh": "同一对象改造前后、修图前后、旧版新版：两张素材对照，第二个 cue 揭示 after",
+      "uses_zh": [
+        "同一对象改造前后、修图前后、旧版新版：两张素材对照，第二个 cue 揭示 after"
+      ],
+      "avoid_zh": [
+        "必须使用有权使用的真实素材；对照动画不能冒充真实修复结果。"
+      ],
+      "inputs_zh": [
+        "本人视频帧、照片、产品图或真实截图",
+        "需要强调的区域"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "beforeafter",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "split",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/beforeafter.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "split",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "9dd4f3d0ccd252a99cc221860063f77f6bf8d882b264342bd150208e30ad3ac2",
+          "bytes": 168381,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "slider",
+          "label_zh": "分割线扫过揭示并来回轻扫"
+        },
+        {
+          "id": "flip",
+          "label_zh": "卡片三维翻面"
+        },
+        {
+          "id": "split",
+          "label_zh": "并排后 before 压暗退后、after 推近"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "showcase",
+        "variant": "split",
+        "t0": 6,
+        "t1": 12,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-kenburns",
+      "label_zh": "纪录片推拉",
+      "layer": "control",
+      "category_zh": "真实素材展示",
+      "description_zh": "讲故事、回顾、旅程、案例背景：1–4 张图片纪录片式慢推慢移、交叉溶解，底部逐字打出说明；每个 cue 换一张",
+      "uses_zh": [
+        "讲故事、回顾、旅程、案例背景：1–4 张图片纪录片式慢推慢移、交叉溶解，底部逐字打出说明；每个 cue 换一张"
+      ],
+      "avoid_zh": [
+        "必须使用有权使用的真实素材；对照动画不能冒充真实修复结果。"
+      ],
+      "inputs_zh": [
+        "本人视频帧、照片、产品图或真实截图",
+        "需要强调的区域"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "kenburns",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "pan",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/kenburns.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "pan",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "ea7de387156cc6148ead9ce5359673a488f472ecb9d94b29c47d73935e6c60b5",
+          "bytes": 152899,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "pan",
+          "label_zh": "横向慢移"
+        },
+        {
+          "id": "zoom",
+          "label_zh": "交替推近拉远"
+        },
+        {
+          "id": "parallax",
+          "label_zh": "虚化背景 + 前景小窗反向视差"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "showcase",
+        "variant": "pan",
+        "t0": 12,
+        "t1": 18,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-polaroid",
+      "label_zh": "拍立得",
+      "layer": "control",
+      "category_zh": "真实素材展示",
+      "description_zh": "生活感、回忆、幕后花絮、团队/人物照片：1–4 张照片卡 + 手写说明；每个 cue 出一张",
+      "uses_zh": [
+        "生活感、回忆、幕后花絮、团队/人物照片：1–4 张照片卡 + 手写说明；每个 cue 出一张"
+      ],
+      "avoid_zh": [
+        "必须使用有权使用的真实素材；对照动画不能冒充真实修复结果。"
+      ],
+      "inputs_zh": [
+        "本人视频帧、照片、产品图或真实截图",
+        "需要强调的区域"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "polaroid",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "pin",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/polaroid.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "pin",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "233f4a6c0113dd7d0e0286f0fb85f83cd299e892b372683922c888bea9d4f843",
+          "bytes": 167647,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "drop",
+          "label_zh": "掉落弹跳后显影"
+        },
+        {
+          "id": "pin",
+          "label_zh": "拍在软木板上钉住、红线相连"
+        },
+        {
+          "id": "film",
+          "label_zh": "胶片条滚过、当前格放大"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "showcase",
+        "variant": "pin",
+        "t0": 18,
+        "t1": 24,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-device",
+      "label_zh": "设备样机",
+      "layer": "control",
+      "category_zh": "真实素材展示",
+      "description_zh": "展示 App、网页、录屏、作品画面：素材放进手机 / 平板 / 显示器屏幕里，视频按成片时钟播放；可配标题",
+      "uses_zh": [
+        "展示 App、网页、录屏、作品画面：素材放进手机 / 平板 / 显示器屏幕里，视频按成片时钟播放；可配标题"
+      ],
+      "avoid_zh": [
+        "必须使用有权使用的真实素材；对照动画不能冒充真实修复结果。"
+      ],
+      "inputs_zh": [
+        "本人视频帧、照片、产品图或真实截图",
+        "需要强调的区域"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "device",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "monitor",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/device.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "monitor",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "3f7004b92198cf1fc9db2faac5dab7033a118707937bf9a8afce0100422ed121",
+          "bytes": 101809,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "phone",
+          "label_zh": "手机三维旋入"
+        },
+        {
+          "id": "tablet",
+          "label_zh": "平板从平放立起"
+        },
+        {
+          "id": "monitor",
+          "label_zh": "显示器落位后开机亮线展开"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "showcase",
+        "variant": "monitor",
+        "t0": 24,
+        "t1": 30,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-collage",
+      "label_zh": "拼贴墙",
+      "layer": "control",
+      "category_zh": "真实素材展示",
+      "description_zh": "大量作品/截图/用户照片的气势感：作品墙、社区、合集封面。masonry / wall 用 4–9 张（不够会循环）；mosaic 只用第一张，碎片拼成整图",
+      "uses_zh": [
+        "大量作品/截图/用户照片的气势感：作品墙、社区、合集封面。masonry / wall 用 4–9 张（不够会循环）；mosaic 只用第一张，碎片拼成整图"
+      ],
+      "avoid_zh": [
+        "必须使用有权使用的真实素材；对照动画不能冒充真实修复结果。"
+      ],
+      "inputs_zh": [
+        "本人视频帧、照片、产品图或真实截图",
+        "需要强调的区域"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "collage",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "masonry",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/collage.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "masonry",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "64348024064028e0da0c1a1c61e01c12fe572990ebc6480703276d4fb819cd92",
+          "bytes": 332868,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "masonry",
+          "label_zh": "瀑布流逐块落下后分列滚动"
+        },
+        {
+          "id": "mosaic",
+          "label_zh": "碎片飞入拼合成整图"
+        },
+        {
+          "id": "wall",
+          "label_zh": "多行无限滚动 + 中心高亮"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "showcase",
+        "variant": "masonry",
+        "t0": 30,
+        "t1": 36,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-spotlight",
+      "label_zh": "聚光放大",
+      "layer": "control",
+      "category_zh": "真实素材展示",
+      "description_zh": "在一张截图/照片/视频画面里依次指出 1–3 个关注点（x、y 为 0–1 的相对位置），每个点带一个短标签",
+      "uses_zh": [
+        "在一张截图/照片/视频画面里依次指出 1–3 个关注点（x、y 为 0–1 的相对位置），每个点带一个短标签"
+      ],
+      "avoid_zh": [
+        "必须使用有权使用的真实素材；对照动画不能冒充真实修复结果。"
+      ],
+      "inputs_zh": [
+        "本人视频帧、照片、产品图或真实截图",
+        "需要强调的区域"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "spotlight",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "spotlight",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/spotlight.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "spotlight",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "fc215c487f4e037d9c765571f2648e9ebee87166347c7107b99690cf5362dc83",
+          "bytes": 109860,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "spotlight",
+          "label_zh": "暗场聚光圈移动"
+        },
+        {
+          "id": "magnifier",
+          "label_zh": "放大镜跟随"
+        },
+        {
+          "id": "blur",
+          "label_zh": "其余区域虚化"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "showcase",
+        "variant": "spotlight",
+        "t0": 36,
+        "t1": 42,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-kinetic",
+      "label_zh": "逐行动态排版",
+      "layer": "control",
+      "category_zh": "文字动态",
+      "description_zh": "一句有节奏的观点拆成 2–5 个短行，跟着口播一行一行冲出来；适合开场钩子、口号、情绪句",
+      "uses_zh": [
+        "一句有节奏的观点拆成 2–5 个短行，跟着口播一行一行冲出来；适合开场钩子、口号、情绪句"
+      ],
+      "avoid_zh": [
+        "保持可读停留时间；不宜持续堆叠或覆盖字幕。"
+      ],
+      "inputs_zh": [
+        "适合阅读的短词和短句"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "kinetic",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "stack",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/kinetic.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "stack",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "6235aeb0ebcc4f3f7d8a0bcfc39c420b4f2af3a7b5e5ee4d6009e6eb18569ad4",
+          "bytes": 70552,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "stack",
+          "label_zh": "按字数撑满宽度、左右交替滑入"
+        },
+        {
+          "id": "beat",
+          "label_zh": "一次一行居中砸入、推镜头"
+        },
+        {
+          "id": "wave",
+          "label_zh": "逐字波浪弹起"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "typo",
+        "variant": "stack",
+        "t0": 0,
+        "t1": 6,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-highlight",
+      "label_zh": "重点词标记",
+      "layer": "control",
+      "category_zh": "文字动态",
+      "description_zh": "一句完整的话里有 1–2 个必须被看见的词（用 *星号* 标出）：先出整句，再在重点上画标记",
+      "uses_zh": [
+        "一句完整的话里有 1–2 个必须被看见的词（用 *星号* 标出）：先出整句，再在重点上画标记"
+      ],
+      "avoid_zh": [
+        "保持可读停留时间；不宜持续堆叠或覆盖字幕。"
+      ],
+      "inputs_zh": [
+        "适合阅读的短词和短句"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "highlight",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "underline",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/highlight.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "underline",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "14751d6803ac33479cf4900f3abc7069817c643b2c040e0c8699da204cd25030",
+          "bytes": 56415,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "marker",
+          "label_zh": "荧光笔涂过"
+        },
+        {
+          "id": "circle",
+          "label_zh": "手绘圈出"
+        },
+        {
+          "id": "underline",
+          "label_zh": "波浪下划线 + 放大"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "typo",
+        "variant": "underline",
+        "t0": 6,
+        "t1": 12,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-scramble",
+      "label_zh": "乱码解码",
+      "layer": "control",
+      "category_zh": "文字动态",
+      "description_zh": "揭晓一个名字、术语、答案、代号：乱码逐位锁定。科技、数据、揭秘类内容",
+      "uses_zh": [
+        "揭晓一个名字、术语、答案、代号：乱码逐位锁定。科技、数据、揭秘类内容"
+      ],
+      "avoid_zh": [
+        "保持可读停留时间；不宜持续堆叠或覆盖字幕。"
+      ],
+      "inputs_zh": [
+        "适合阅读的短词和短句"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "scramble",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "decode",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/scramble.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "decode",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "15431d3dc9eae98d4aa719e9ba4377d5a4439058cbee133385988c3f81384afa",
+          "bytes": 58536,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "decode",
+          "label_zh": "原地逐位锁定"
+        },
+        {
+          "id": "matrix",
+          "label_zh": "字符雨中逐字落下"
+        },
+        {
+          "id": "terminal",
+          "label_zh": "终端输入命令 + 回车出结果"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "typo",
+        "variant": "decode",
+        "t0": 12,
+        "t1": 18,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-rotator",
+      "label_zh": "轮换词",
+      "layer": "control",
+      "category_zh": "文字动态",
+      "description_zh": "同一句话换不同的词：「适合 学生 / 老师 / 公司」、「它能 写 / 画 / 剪」。最后一个词停住",
+      "uses_zh": [
+        "同一句话换不同的词：「适合 学生 / 老师 / 公司」、「它能 写 / 画 / 剪」。最后一个词停住"
+      ],
+      "avoid_zh": [
+        "保持可读停留时间；不宜持续堆叠或覆盖字幕。"
+      ],
+      "inputs_zh": [
+        "适合阅读的短词和短句"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "rotator",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "slot",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/rotator.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "slot",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "42004fbd1472c7f530a75690e94cfa59a86d6827c124aac0d7283c4488cc8820",
+          "bytes": 77580,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "slot",
+          "label_zh": "老虎机滚轮"
+        },
+        {
+          "id": "flip",
+          "label_zh": "三维翻牌"
+        },
+        {
+          "id": "type",
+          "label_zh": "删除后重新输入"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "typo",
+        "variant": "slot",
+        "t0": 18,
+        "t1": 24,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-marquee",
+      "label_zh": "滚动横幅",
+      "layer": "control",
+      "category_zh": "文字动态",
+      "description_zh": "一串关键词/标签/口号持续滚动：活动、清单很长、节奏型过渡；可在横幅上砸入一个大词",
+      "uses_zh": [
+        "一串关键词/标签/口号持续滚动：活动、清单很长、节奏型过渡；可在横幅上砸入一个大词"
+      ],
+      "avoid_zh": [
+        "保持可读停留时间；不宜持续堆叠或覆盖字幕。"
+      ],
+      "inputs_zh": [
+        "适合阅读的短词和短句"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "marquee",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "belt",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/marquee.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "belt",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "da1ee72c5b82d01ce3712c922aa74404a113ea09bc4e3f4a449d13e61dd0f42c",
+          "bytes": 216353,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "belt",
+          "label_zh": "两条交叉色带"
+        },
+        {
+          "id": "ticker",
+          "label_zh": "新闻滚动条"
+        },
+        {
+          "id": "wall",
+          "label_zh": "满屏描边大字"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "typo",
+        "variant": "belt",
+        "t0": 24,
+        "t1": 30,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-bigtype",
+      "label_zh": "巨字",
+      "layer": "control",
+      "category_zh": "文字动态",
+      "description_zh": "一个词撑满画面的冲击时刻：段落主题、结论词、品牌词；mask 变体可让图片/视频透过字显示",
+      "uses_zh": [
+        "一个词撑满画面的冲击时刻：段落主题、结论词、品牌词；mask 变体可让图片/视频透过字显示"
+      ],
+      "avoid_zh": [
+        "保持可读停留时间；不宜持续堆叠或覆盖字幕。"
+      ],
+      "inputs_zh": [
+        "适合阅读的短词和短句"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "bigtype",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "outline",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/bigtype.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "outline",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "ee9c0bdcd7c1a2a2faf52a23419dbb30365f7acd516d385bea908129c965d7ae",
+          "bytes": 73772,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "mask",
+          "label_zh": "素材透过巨字"
+        },
+        {
+          "id": "outline",
+          "label_zh": "描边后液体灌满"
+        },
+        {
+          "id": "split",
+          "label_zh": "光线切开上下错位"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "typo",
+        "variant": "outline",
+        "t0": 30,
+        "t1": 36,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-chat",
+      "label_zh": "聊天对话",
+      "layer": "control",
+      "category_zh": "界面与交互演示",
+      "description_zh": "把一段对话演出来：用户与客服/朋友的聊天、群里的讨论、向 AI 助手提问并得到回答；2–6 条消息逐条出现",
+      "uses_zh": [
+        "把一段对话演出来：用户与客服/朋友的聊天、群里的讨论、向 AI 助手提问并得到回答；2–6 条消息逐条出现"
+      ],
+      "avoid_zh": [
+        "模拟界面必须标明示例；不能冒充真实操作、通知或用户反馈。"
+      ],
+      "inputs_zh": [
+        "明确标示的模拟文案或真实界面截图"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "chat",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "bubbles",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/chat.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "bubbles",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "6915eb949bda1168bc8938bb34691e0f3c56bd4151612175c8fa97a4cd7b5351",
+          "bytes": 169400,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "bubbles",
+          "label_zh": "手机聊天：输入框打字发送"
+        },
+        {
+          "id": "thread",
+          "label_zh": "宽面板群聊：头像 + 名字"
+        },
+        {
+          "id": "ai",
+          "label_zh": "助手问答：问题发出，回答逐字流式输出"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "ui",
+        "variant": "bubbles",
+        "t0": 0,
+        "t1": 6,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-comment",
+      "label_zh": "评论 / 弹幕",
+      "layer": "control",
+      "category_zh": "界面与交互演示",
+      "description_zh": "展示观众反馈、网友评论、热评、弹幕刷屏：2–5 条评论逐条浮现，点赞数上涨，最高赞那条被强调（热评 / 置顶 / 放大停住）",
+      "uses_zh": [
+        "展示观众反馈、网友评论、热评、弹幕刷屏：2–5 条评论逐条浮现，点赞数上涨，最高赞那条被强调（热评 / 置顶 / 放大停住）"
+      ],
+      "avoid_zh": [
+        "模拟界面必须标明示例；不能冒充真实操作、通知或用户反馈。"
+      ],
+      "inputs_zh": [
+        "明确标示的模拟文案或真实界面截图"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "comment",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "cards",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/comment.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "cards",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "f3aa4c0c57935dabf4bb0de739ac56ccd07ad28fc270f2a218a2c307dad8ba3a",
+          "bytes": 75247,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cards",
+          "label_zh": "评论卡翻起浮现、点赞数增长、盖热评章"
+        },
+        {
+          "id": "danmaku",
+          "label_zh": "弹幕从右飞过播放画面，热评放大停在中央"
+        },
+        {
+          "id": "pinned",
+          "label_zh": "评论卡落下，最高赞那条被拎起移到最上方置顶"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "ui",
+        "variant": "cards",
+        "t0": 6,
+        "t1": 12,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-notify",
+      "label_zh": "通知横幅",
+      "layer": "control",
+      "category_zh": "界面与交互演示",
+      "description_zh": "表现「消息来了」：订单、提醒、私信、系统通知一条接一条弹出；也可做锁屏收到通知的画面",
+      "uses_zh": [
+        "表现「消息来了」：订单、提醒、私信、系统通知一条接一条弹出；也可做锁屏收到通知的画面"
+      ],
+      "avoid_zh": [
+        "模拟界面必须标明示例；不能冒充真实操作、通知或用户反馈。"
+      ],
+      "inputs_zh": [
+        "明确标示的模拟文案或真实界面截图"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "notify",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "toast",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/notify.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "toast",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "cad81037f185000e546444ac4768981960b6b6d4a0c16a0d4c68eb5f7d645a91",
+          "bytes": 91159,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "stack",
+          "label_zh": "从顶部依次滑下叠成一摞、铃铛角标跳动，最后展开"
+        },
+        {
+          "id": "toast",
+          "label_zh": "中心弹窗依次弹出，最后按下查看"
+        },
+        {
+          "id": "lock",
+          "label_zh": "锁屏亮起、通知滑入、手机震动"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "ui",
+        "variant": "toast",
+        "t0": 12,
+        "t1": 18,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-search",
+      "label_zh": "搜索框",
+      "layer": "control",
+      "category_zh": "界面与交互演示",
+      "description_zh": "演示「搜一下」：输入关键词 → 回车 → 联想/结果出现、命中词高亮；适合讲搜索热度、怎么找资料、工具里的命令面板",
+      "uses_zh": [
+        "演示「搜一下」：输入关键词 → 回车 → 联想/结果出现、命中词高亮；适合讲搜索热度、怎么找资料、工具里的命令面板"
+      ],
+      "avoid_zh": [
+        "模拟界面必须标明示例；不能冒充真实操作、通知或用户反馈。"
+      ],
+      "inputs_zh": [
+        "明确标示的模拟文案或真实界面截图"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "search",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "bar",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "source_render",
+          "path": "demos/motiongit/search.mp4",
+          "description_zh": "官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "bar",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "224720743cfdad319592aa3a818836b1a44662eef17b1004fc14d60d273e3d28",
+          "bytes": 68100,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "bar",
+          "label_zh": "大搜索框展开、打字、联想列表下拉"
+        },
+        {
+          "id": "spotlight",
+          "label_zh": "背景压暗的居中命令面板、方向键选中后回车"
+        },
+        {
+          "id": "results",
+          "label_zh": "结果页：加载条 + 骨架屏，结果卡片替换骨架，第一条标最佳匹配"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "ui",
+        "variant": "bar",
+        "t0": 18,
+        "t1": 24,
+        "kind": "source_render"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-browser",
+      "label_zh": "浏览器 / 应用窗口",
+      "layer": "control",
+      "category_zh": "界面与交互演示",
+      "description_zh": "演示「打开一个网页 / 网站 / 应用」：地址栏输入网址、加载、页面滚动，再用 1–3 个高亮框标出重点区域。只需要静态录屏展示用 0.2.0 的 media",
+      "uses_zh": [
+        "演示「打开一个网页 / 网站 / 应用」：地址栏输入网址、加载、页面滚动，再用 1–3 个高亮框标出重点区域。只需要静态录屏展示用 0.2.0 的 media"
+      ],
+      "avoid_zh": [
+        "模拟界面必须标明示例；不能冒充真实操作、通知或用户反馈。"
+      ],
+      "inputs_zh": [
+        "明确标示的模拟文案或真实界面截图"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "browser",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "browser",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/browser.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "browser",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "f905c721f8673d11a61919e5aac7d1702e9c4640f5576646ab50cd32b33a523a",
+          "bytes": 205802,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "browser",
+          "label_zh": "桌面浏览器窗口透视转正"
+        },
+        {
+          "id": "phone",
+          "label_zh": "手机浏览器从下方升起"
+        },
+        {
+          "id": "laptop",
+          "label_zh": "笔记本开盖、屏幕亮起"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "ui",
+        "variant": "browser",
+        "t0": 24,
+        "t1": 30,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-social",
+      "label_zh": "社交数据卡",
+      "layer": "control",
+      "category_zh": "界面与交互演示",
+      "description_zh": "展示一条内容的反响：帖子被点赞、主页涨粉、三项互动数据；数字滚动上涨。数字请标注示意",
+      "uses_zh": [
+        "展示一条内容的反响：帖子被点赞、主页涨粉、三项互动数据；数字滚动上涨。数字请标注示意"
+      ],
+      "avoid_zh": [
+        "模拟界面必须标明示例；不能冒充真实操作、通知或用户反馈。"
+      ],
+      "inputs_zh": [
+        "明确标示的模拟文案或真实界面截图"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "social",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "post",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/social.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "post",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "f615d1f86a86a58c54ca122f639b1fd440a6d82794ffcbe799e52c09f63947d6",
+          "bytes": 95176,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "post",
+          "label_zh": "帖子卡翻起、点赞爱心爆开、三个数字滚动上涨"
+        },
+        {
+          "id": "profile",
+          "label_zh": "个人主页按下关注、粉丝数滚动、+N 飘起"
+        },
+        {
+          "id": "stats",
+          "label_zh": "三个指标并排、数字滚动 + 迷你折线描出"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "ui",
+        "variant": "post",
+        "t0": 30,
+        "t1": 36,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-cursor",
+      "label_zh": "鼠标点击演示",
+      "layer": "control",
+      "category_zh": "界面与交互演示",
+      "description_zh": "演示软件操作步骤：依次点几个按钮、把文件拖进某个区域、打开菜单选一项。可以放截图作为背景",
+      "uses_zh": [
+        "演示软件操作步骤：依次点几个按钮、把文件拖进某个区域、打开菜单选一项。可以放截图作为背景"
+      ],
+      "avoid_zh": [
+        "模拟界面必须标明示例；不能冒充真实操作、通知或用户反馈。"
+      ],
+      "inputs_zh": [
+        "明确标示的模拟文案或真实界面截图"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "cursor",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "click",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/cursor.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "click",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "6f0b58c314da7967819b7ef1c8fc74fd4f9d41c36c63ce9591dc9667f115b6ec",
+          "bytes": 99211,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "click",
+          "label_zh": "鼠标沿弧线依次点按钮、波纹 + 打勾"
+        },
+        {
+          "id": "drag",
+          "label_zh": "把卡片逐张拖进放置区"
+        },
+        {
+          "id": "menu",
+          "label_zh": "打开下拉菜单、逐项悬停后选中"
+        }
+      ],
+      "layer_kind": "segment",
+      "demo_plan": {
+        "group": "ui",
+        "variant": "click",
+        "t0": 36,
+        "t1": 42,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-lowerthird",
+      "label_zh": "人名条",
+      "layer": "control",
+      "category_zh": "叠加标注与装饰",
+      "description_zh": "第一次出现某个人、讲者、嘉宾或角色时标出名字和身份；也可当一条短字幕条。贴在左下（或右下），横屏在口播卡左侧、字幕之上",
+      "uses_zh": [
+        "第一次出现某个人、讲者、嘉宾或角色时标出名字和身份；也可当一条短字幕条。贴在左下（或右下），横屏在口播卡左侧、字幕之上"
+      ],
+      "avoid_zh": [
+        "避开脸部、字幕与关键证据；装饰不应抢走讲解重点。"
+      ],
+      "inputs_zh": [
+        "叠加底图或视频",
+        "短标签及标注位置"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "lowerthird",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "bar",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/lowerthird.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "bar",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "2a5f4c0eb2bd3b811843ad5016bf8adfb478a90936a71e035188ec5d2c423269",
+          "bytes": 51701,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "bar",
+          "label_zh": "色块 + 擦条推出深色名字条与主色头衔条"
+        },
+        {
+          "id": "glass",
+          "label_zh": "玻璃卡三维翻入、头像描圈"
+        },
+        {
+          "id": "line",
+          "label_zh": "细线描出、名字从线上升起（极简）"
+        }
+      ],
+      "layer_kind": "overlay",
+      "demo_plan": {
+        "group": "overlay",
+        "variant": "bar",
+        "t0": 0,
+        "t1": 6,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-callout",
+      "label_zh": "箭头标注",
+      "layer": "control",
+      "category_zh": "叠加标注与装饰",
+      "description_zh": "指出画面里的某个位置（录屏按钮、图片细节、口播卡外的内容）：给目标点 x/y（0–1 画面比例）和一句短标注",
+      "uses_zh": [
+        "指出画面里的某个位置（录屏按钮、图片细节、口播卡外的内容）：给目标点 x/y（0–1 画面比例）和一句短标注"
+      ],
+      "avoid_zh": [
+        "避开脸部、字幕与关键证据；装饰不应抢走讲解重点。"
+      ],
+      "inputs_zh": [
+        "叠加底图或视频",
+        "短标签及标注位置"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "callout",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "arrow",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/callout.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "arrow",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "4d339461c013385cc2b4959925d812337d0a115174773d32d0a75df05730e14a",
+          "bytes": 48847,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "arrow",
+          "label_zh": "手绘弯箭头指向目标 + 波纹"
+        },
+        {
+          "id": "circle",
+          "label_zh": "手绘圈出目标 + 引线"
+        },
+        {
+          "id": "box",
+          "label_zh": "四角飞入框选、虚线流动"
+        }
+      ],
+      "layer_kind": "overlay",
+      "demo_plan": {
+        "group": "overlay",
+        "variant": "arrow",
+        "t0": 6,
+        "t1": 12,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-sticker",
+      "label_zh": "贴纸",
+      "layer": "control",
+      "category_zh": "叠加标注与装饰",
+      "description_zh": "给一句话盖个情绪章：「绝了」「重点」「NEW」「必看」，或一个图标贴纸。位置 x/y 可选（默认右上），不压口播卡和字幕",
+      "uses_zh": [
+        "给一句话盖个情绪章：「绝了」「重点」「NEW」「必看」，或一个图标贴纸。位置 x/y 可选（默认右上），不压口播卡和字幕"
+      ],
+      "avoid_zh": [
+        "避开脸部、字幕与关键证据；装饰不应抢走讲解重点。"
+      ],
+      "inputs_zh": [
+        "叠加底图或视频",
+        "短标签及标注位置"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "sticker",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "pop",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/sticker.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "pop",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "a57fc2a4f9a56fe5e1dd22afb39f8b181447dabe4e60144ba276a5536fd4d731",
+          "bytes": 71055,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "pop",
+          "label_zh": "白边贴纸从镜头前砸下压扁回弹"
+        },
+        {
+          "id": "badge",
+          "label_zh": "锯齿圆徽旋入、外圈慢转"
+        },
+        {
+          "id": "burst",
+          "label_zh": "漫画爆炸星弹开、边缘沸腾抖动"
+        }
+      ],
+      "layer_kind": "overlay",
+      "demo_plan": {
+        "group": "overlay",
+        "variant": "pop",
+        "t0": 12,
+        "t1": 18,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-emoji",
+      "label_zh": "表情飘赞",
+      "layer": "control",
+      "category_zh": "叠加标注与装饰",
+      "description_zh": "情绪时刻的一阵表情：点赞、比心、火、笑。icon 用图标名（彩色圆泡），或 text 填 1–2 个 emoji 字符；n 为数量",
+      "uses_zh": [
+        "情绪时刻的一阵表情：点赞、比心、火、笑。icon 用图标名（彩色圆泡），或 text 填 1–2 个 emoji 字符；n 为数量"
+      ],
+      "avoid_zh": [
+        "避开脸部、字幕与关键证据；装饰不应抢走讲解重点。"
+      ],
+      "inputs_zh": [
+        "叠加底图或视频",
+        "短标签及标注位置"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "emoji",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "float",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/emoji.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "float",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "6fed416ca571c839513fbcdc1d7b34b4737f983c491305bdbcdd6c29bab5b7be",
+          "bytes": 49521,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "float",
+          "label_zh": "直播点赞从下往上飘、摇摆"
+        },
+        {
+          "id": "rain",
+          "label_zh": "从上落下弹跳停住"
+        },
+        {
+          "id": "burst",
+          "label_zh": "中心大表情心跳、分波向四周喷射"
+        }
+      ],
+      "layer_kind": "overlay",
+      "demo_plan": {
+        "group": "overlay",
+        "variant": "float",
+        "t0": 18,
+        "t1": 24,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-progressbar",
+      "label_zh": "章节进度条",
+      "layer": "control",
+      "category_zh": "叠加标注与装饰",
+      "description_zh": "告诉观众「现在讲到第几部分」：2–6 个章节名 + 当前章节序号。放在章节切换处，停留 2–6 秒",
+      "uses_zh": [
+        "告诉观众「现在讲到第几部分」：2–6 个章节名 + 当前章节序号。放在章节切换处，停留 2–6 秒"
+      ],
+      "avoid_zh": [
+        "避开脸部、字幕与关键证据；装饰不应抢走讲解重点。"
+      ],
+      "inputs_zh": [
+        "叠加底图或视频",
+        "短标签及标注位置"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "progressbar",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "top",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/progressbar.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "top",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "605369ce2eb7d8a83bd7081bbeabe64f93f46be05b99bfa1edd01065dce768cf",
+          "bytes": 27804,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "top",
+          "label_zh": "顶部分段条、指针滑过已完成段"
+        },
+        {
+          "id": "bottom",
+          "label_zh": "底部胶囊组、选中块弹性滑到当前章"
+        },
+        {
+          "id": "dots",
+          "label_zh": "节点步进器、当前节点展开成带名字的胶囊"
+        }
+      ],
+      "layer_kind": "overlay",
+      "demo_plan": {
+        "group": "overlay",
+        "variant": "top",
+        "t0": 24,
+        "t1": 30,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-tag",
+      "label_zh": "角标",
+      "layer": "control",
+      "category_zh": "叠加标注与装饰",
+      "description_zh": "画面角落的话题标签、集数、属性：「#干货」「第 3 集」「新」，1–3 条，可整段常驻",
+      "uses_zh": [
+        "画面角落的话题标签、集数、属性：「#干货」「第 3 集」「新」，1–3 条，可整段常驻"
+      ],
+      "avoid_zh": [
+        "避开脸部、字幕与关键证据；装饰不应抢走讲解重点。"
+      ],
+      "inputs_zh": [
+        "叠加底图或视频",
+        "短标签及标注位置"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "tag",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "corner",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/tag.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "corner",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "b831897d601544b17d0d1633e8ee34f281bb68c4e29c0f1646ff693f98d6823d",
+          "bytes": 27499,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "corner",
+          "label_zh": "角落叠块斜切滑入、红点闪"
+        },
+        {
+          "id": "pill",
+          "label_zh": "胶囊组弹落、轮流点亮"
+        },
+        {
+          "id": "ribbon",
+          "label_zh": "燕尾斜丝带展开、轻飘"
+        }
+      ],
+      "layer_kind": "overlay",
+      "demo_plan": {
+        "group": "overlay",
+        "variant": "corner",
+        "t0": 30,
+        "t1": 36,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-confetti",
+      "label_zh": "庆祝特效",
+      "layer": "control",
+      "category_zh": "叠加标注与装饰",
+      "description_zh": "里程碑、达成、好消息、结尾致谢：彩纸 / 烟花，可选一句短字居中弹出。每个 cue 一波（最多 3 波）",
+      "uses_zh": [
+        "里程碑、达成、好消息、结尾致谢：彩纸 / 烟花，可选一句短字居中弹出。每个 cue 一波（最多 3 波）"
+      ],
+      "avoid_zh": [
+        "避开脸部、字幕与关键证据；装饰不应抢走讲解重点。"
+      ],
+      "inputs_zh": [
+        "叠加底图或视频",
+        "短标签及标注位置"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "confetti",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "cannons",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/confetti.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "cannons",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "03985a7a11b6d65e70afe5bfce4f3c15677cf9d40fe3628991e5980739fe67e1",
+          "bytes": 213725,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cannons",
+          "label_zh": "两侧礼花炮向内喷出"
+        },
+        {
+          "id": "rain",
+          "label_zh": "彩纸从顶上飘落 + 闪星"
+        },
+        {
+          "id": "fireworks",
+          "label_zh": "烟花升空炸开"
+        }
+      ],
+      "layer_kind": "overlay",
+      "demo_plan": {
+        "group": "overlay",
+        "variant": "cannons",
+        "t0": 36,
+        "t1": 42,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    },
+    {
+      "id": "mg-control-frame",
+      "label_zh": "画面装饰框",
+      "layer": "control",
+      "category_zh": "叠加标注与装饰",
+      "description_zh": "给整段画面加氛围：拍摄感取景框、录制中、霓虹边框。框住内容区（避开口播卡与字幕），可整段常驻",
+      "uses_zh": [
+        "给整段画面加氛围：拍摄感取景框、录制中、霓虹边框。框住内容区（避开口播卡与字幕），可整段常驻"
+      ],
+      "avoid_zh": [
+        "避开脸部、字幕与关键证据；装饰不应抢走讲解重点。"
+      ],
+      "inputs_zh": [
+        "叠加底图或视频",
+        "短标签及标注位置"
+      ],
+      "version": "0.3.0 (package2.7.17-alpha.2)",
+      "source_url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+      "source_id": "frame",
+      "license": "MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。",
+      "availability": "available",
+      "validation": {
+        "state": "rendered_verified",
+        "scope": "一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。",
+        "rendered_variant": "viewfinder",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "sampled_motion": true,
+        "continuous_watch": false,
+        "owner_artistic_acceptance": false
+      },
+      "demos": [
+        {
+          "kind": "own",
+          "path": "demos/motiongit/frame.mp4",
+          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
+          "variant_id": "viewfinder",
+          "duration_seconds": 6,
+          "width": 540,
+          "height": 960,
+          "sha256": "7a819e2d2ba9219a2ec3023a8615c733028bd57a15184505cc099d6abe308329",
+          "bytes": 66637,
+          "audio": "none"
+        }
+      ],
+      "variants": [
+        {
+          "id": "viewfinder",
+          "label_zh": "四角取景框飞入、对焦框确认"
+        },
+        {
+          "id": "rec",
+          "label_zh": "开机展开 + 红点 REC 时间码 + 扫描线"
+        },
+        {
+          "id": "glow",
+          "label_zh": "霓虹边框描出、光点环绕"
+        }
+      ],
+      "layer_kind": "overlay",
+      "demo_plan": {
+        "group": "overlay",
+        "variant": "viewfinder",
+        "t0": 42,
+        "t1": 48,
+        "kind": "own"
+      },
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+    }
+  ]
+}
