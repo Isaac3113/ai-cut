@@ -47,6 +47,23 @@ HTML 已内嵌数据、样式和脚本。推荐以上 HTTP 打开方式；直接
 
 看 Demo 和生成新动画是两个阶段。Remotion／HyperFrames 需要相应 Node/npm、浏览器、FFmpeg、字体及许可；使用根 README 和[安装说明](INSTALL_SKILLS.md)，不要复制别人电脑的node_modules、虚拟环境或运行缓存。
 
+已有动画引擎的安装、检查与小样渲染入口如下。在仓库根目录执行，只选择本次需要的一组；源码不附你的原片或个人头像。`CustomerJourney`是已有四步教学示例，不是每条新片的固定文案或时长。
+
+```powershell
+.\extensions\remotion-vd44\run.ps1 -Action Install
+.\extensions\remotion-vd44\run.ps1 -Action Check
+.\extensions\remotion-vd44\run.ps1 -Action Render -Composition CustomerJourney
+```
+
+```powershell
+.\extensions\hyperframes-vd44\run.ps1 -Action Install
+.\extensions\hyperframes-vd44\run.ps1 -Action Doctor
+.\extensions\hyperframes-vd44\run.ps1 -Action Check
+.\extensions\hyperframes-vd44\run.ps1 -Action Render
+```
+
+脚本支持显式Node/npm路径；Remotion可传BrowserPath，HyperFrames可传FfmpegDirectory，具体参数读相应run.ps1。先检查输出中的真实状态，缺依赖时完成本机安装，不借用讲师电脑路径或假定另一电脑已能运行。55项代码库的独立入口及参数见[模板库说明](../extensions/remotion-vd44/TEMPLATE_LIBRARY.md)。
+
 MotionGit 先准备自己有权使用的原始.motion，并复制仓库的motiongit.example.json为被Git忽略的motiongit.local.json，填写本机package与node路径。不要把Key粘到JSON、聊天或Git。
 
 ```powershell
