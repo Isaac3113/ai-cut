@@ -31,6 +31,18 @@
       "entries": 19
     }
   ],
+  "baseline_counts_by_layer": {
+    "style": 72,
+    "control": 70,
+    "remotion": 55,
+    "effect": 19
+  },
+  "integration_source": {
+    "path": "templates/template-integrations.json",
+    "sha256": "d7094948fa0b0615b91de0e61e0a695c324560fddba72c6a8c8f80263365085d",
+    "records": 0
+  },
+  "integrations": [],
   "entries": [
     {
       "id": "mg-style-314486",
@@ -63,7 +75,8 @@
           "path": "demos/case-studies/approved-b-highlight.mp4",
           "description_zh": "本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。",
           "sha256": "3be466abdde60e536a0b3b15222e43e3d7b36ad50296baa54a076585d41456e1",
-          "bytes": 78189
+          "bytes": 78189,
+          "poster_path": "demos/case-studies/approved-b-highlight.jpg"
         },
         {
           "kind": "official",
@@ -3088,7 +3101,8 @@
           "height": 960,
           "sha256": "a7a9cb2f305df55804433631df6278356c842dfc76b1b8d7833fabce2fea2c26",
           "bytes": 63004,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/title.jpg"
         }
       ],
       "variants": [
@@ -3158,7 +3172,8 @@
           "height": 960,
           "sha256": "36b4926913c153200eb5537985ec5d2764a924ecb03acbc955504aab78a4dc0c",
           "bytes": 59409,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/keyword.jpg"
         }
       ],
       "variants": [
@@ -3228,7 +3243,8 @@
           "height": 960,
           "sha256": "57823a0ffdfd5ef4142e75b1bfdcf1941e5f008d69ec65b09c2cc14a75b00f65",
           "bytes": 40101,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/number.jpg"
         }
       ],
       "variants": [
@@ -3298,7 +3314,8 @@
           "height": 960,
           "sha256": "b0b6b53412fa0b906a1cccd87126970d3d93758c054d33c97d1bf8e3588602a9",
           "bytes": 60966,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/list.jpg"
         }
       ],
       "variants": [
@@ -3368,7 +3385,8 @@
           "height": 960,
           "sha256": "68d50e8a6cae31b8292b702ea6dcc528936ffc4189d74d32566a0f94d087dc05",
           "bytes": 43783,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/compare.jpg"
         }
       ],
       "variants": [
@@ -3438,7 +3456,8 @@
           "height": 960,
           "sha256": "e70b6f0fa60fd39c459a21e419e2242877fdd53c1a21a281cc937855a19a2f74",
           "bytes": 54894,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/steps.jpg"
         }
       ],
       "variants": [
@@ -3508,7 +3527,8 @@
           "height": 960,
           "sha256": "2116da148e89fade2f1903c2240b1ac06b87ca366e3ae2bb2ec188b79a19222e",
           "bytes": 35195,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/quote.jpg"
         }
       ],
       "variants": [
@@ -3578,7 +3598,8 @@
           "height": 960,
           "sha256": "05764be70e9cf9914707dd0c7c3f1c0b1fa303be45883b67bc4e41b353c1136d",
           "bytes": 29314,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/bars.jpg"
         }
       ],
       "variants": [
@@ -3648,7 +3669,8 @@
           "height": 960,
           "sha256": "e8415ad56fe2c05b6d480ff56db01b0f4fd442a59217194ff474e0e395390323",
           "bytes": 61269,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/media.jpg"
         }
       ],
       "variants": [
@@ -3718,7 +3740,8 @@
           "height": 960,
           "sha256": "53c4001688e5a8697e85457bcc38baac145d414df69449474fd3efdaccd33fac",
           "bytes": 33857,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/stamp.jpg"
         }
       ],
       "variants": [
@@ -3788,7 +3811,8 @@
           "height": 960,
           "sha256": "ce55a660dc3cdf9b08dc561954aa8aee5493ef9c3cd30115d9d03f013aac4a96",
           "bytes": 28501,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/chapter.jpg"
         }
       ],
       "variants": [
@@ -3858,7 +3882,8 @@
           "height": 960,
           "sha256": "b3404c1e12413edf836193620e8187578f525dc91ce250cf82095b214bbecc8e",
           "bytes": 63254,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/fusion.jpg"
         }
       ],
       "variants": [
@@ -3927,7 +3952,8 @@
           "height": 960,
           "sha256": "e51e8396008b839dba51834dc5d37103901ba1e31b88b4b2910ba745395bb2d7",
           "bytes": 104629,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/logo.jpg"
         }
       ],
       "variants": [
@@ -3996,7 +4022,8 @@
           "height": 960,
           "sha256": "27f257be020968a3347e8dcfc5f0564ed464542f64ff4ec94ba145364e9cb133",
           "bytes": 38321,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/intro.jpg"
         }
       ],
       "variants": [
@@ -4065,7 +4092,8 @@
           "height": 960,
           "sha256": "3bc185062eb342fa9be14ec03cccbfc8d711db0616e3e5fbeb89f349add5645f",
           "bytes": 128054,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/outro.jpg"
         }
       ],
       "variants": [
@@ -4134,7 +4162,8 @@
           "height": 960,
           "sha256": "1a3193d688c9b805cb06f7ee92d8dad4fcb0232208866a24e3f9978724fbd359",
           "bytes": 116345,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/cta.jpg"
         }
       ],
       "variants": [
@@ -4203,7 +4232,8 @@
           "height": 960,
           "sha256": "40cc511eb52595a74f6a28c3c9e484d8f77e5ad84c8a0e39aee649d86cffbdd1",
           "bytes": 79045,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/subscribe.jpg"
         }
       ],
       "variants": [
@@ -4272,7 +4302,8 @@
           "height": 960,
           "sha256": "1a47738b3b67d1c5cde08dff2259ca60d6e825e7a2c56bf8e0274f9bfd5270e6",
           "bytes": 216518,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/countdown.jpg"
         }
       ],
       "variants": [
@@ -4341,7 +4372,8 @@
           "height": 960,
           "sha256": "ef2d24aeeb9e0bf43b9cc59b3d746949f6f1fb8c7d8cb0ef66845261d67d1fce",
           "bytes": 86004,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/price.jpg"
         }
       ],
       "variants": [
@@ -4410,7 +4442,8 @@
           "height": 960,
           "sha256": "9f70988d4ec16b2b13772e63ccfac8ccc44266590c07e0da8d5ce7a08ea9e36d",
           "bytes": 218676,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/reveal.jpg"
         }
       ],
       "variants": [
@@ -4479,7 +4512,8 @@
           "height": 960,
           "sha256": "5a63ae21ea3a8e42d8649a3a6c33780ba4e262bb585f1fedb7b145990e633b46",
           "bytes": 108954,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/iconcards.jpg"
         }
       ],
       "variants": [
@@ -4548,7 +4582,8 @@
           "height": 960,
           "sha256": "18437b118cc30c1102311c453317208de029254078e025b3a8c9d564f9015665",
           "bytes": 67439,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/qa.jpg"
         }
       ],
       "variants": [
@@ -4617,7 +4652,8 @@
           "height": 960,
           "sha256": "b3da4a8f80e40f3de450838c8344a44888a39d753dcf7fc037b409e7279f4461",
           "bytes": 83369,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/myth.jpg"
         }
       ],
       "variants": [
@@ -4686,7 +4722,8 @@
           "height": 960,
           "sha256": "052893b7d00c805a7fec28df856a5eb5b3b1e1dcb9dbffe63cca62c0d68d42d0",
           "bytes": 45331,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/prosCons.jpg"
         }
       ],
       "variants": [
@@ -4755,7 +4792,8 @@
           "height": 960,
           "sha256": "4c561bba2ebbf299515225732f26b69ecf0db3a9f1ab5b8da581fa617e14b683",
           "bytes": 60079,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/definition.jpg"
         }
       ],
       "variants": [
@@ -4824,7 +4862,8 @@
           "height": 960,
           "sha256": "64f5aeb93ed66499b3173adaf4e25431639520678188c42ca67634b12c0cf2f6",
           "bytes": 46501,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/tip.jpg"
         }
       ],
       "variants": [
@@ -4893,7 +4932,8 @@
           "height": 960,
           "sha256": "fa935a9e156ec679b1315cc32862ecd5d3ad3d4320424383060aee6cf8cdb365",
           "bytes": 95222,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/checklist.jpg"
         }
       ],
       "variants": [
@@ -4962,7 +5002,8 @@
           "height": 960,
           "sha256": "eb2f7b63f94eba9a5c0fad721e2aec74d059fe1c9ef8a3b5d717dbc943f338cb",
           "bytes": 107610,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/vs.jpg"
         }
       ],
       "variants": [
@@ -5030,7 +5071,8 @@
           "height": 960,
           "sha256": "12c905d730ed5e4760a1eddfd76e1646e8df267ff00313074c7a94bd3bb8d23b",
           "bytes": 48838,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/donut.jpg"
         }
       ],
       "variants": [
@@ -5098,7 +5140,8 @@
           "height": 960,
           "sha256": "ed8cda05827402a93cbcd38e77aa0dfaa233b434af0599da5cfe893834db19ed",
           "bytes": 45267,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/linechart.jpg"
         }
       ],
       "variants": [
@@ -5166,7 +5209,8 @@
           "height": 960,
           "sha256": "68924374a9d86d2f970ac35f7759ed359bc7e3ce4ea351c8d34c9b283c91896a",
           "bytes": 49368,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/counter.jpg"
         }
       ],
       "variants": [
@@ -5234,7 +5278,8 @@
           "height": 960,
           "sha256": "2792b15aa643f0a046a4dc72aa354c3a6cf348af4f1518f8664269b7560adbae",
           "bytes": 44122,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/progress.jpg"
         }
       ],
       "variants": [
@@ -5302,7 +5347,8 @@
           "height": 960,
           "sha256": "755498b0baf4c990ef83faa533e2046bc565ced46327e3908154bb9504d51be7",
           "bytes": 48012,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/timeline.jpg"
         }
       ],
       "variants": [
@@ -5370,7 +5416,8 @@
           "height": 960,
           "sha256": "61d60904e019e995e58e8278599cb0f7d7f5dd8c15a1476bef9cf27f066fc23d",
           "bytes": 37997,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/table.jpg"
         }
       ],
       "variants": [
@@ -5438,7 +5485,8 @@
           "height": 960,
           "sha256": "7e8a248e3802a5ca64ffcfeac7c3ba6d72db4fd462dca9583711b110abe81cb4",
           "bytes": 49991,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/ranking.jpg"
         }
       ],
       "variants": [
@@ -5506,7 +5554,8 @@
           "height": 960,
           "sha256": "572d38c3533606527e20ec34b5da49c73047e5a2f5580021e853e194ef651f00",
           "bytes": 111495,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/flow.jpg"
         }
       ],
       "variants": [
@@ -5574,7 +5623,8 @@
           "height": 960,
           "sha256": "df5df32bd345e3cd71a29d7e94eecb71fd6846180075f32bb72b668411839615",
           "bytes": 75292,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/cycle.jpg"
         }
       ],
       "variants": [
@@ -5642,7 +5692,8 @@
           "height": 960,
           "sha256": "65d64f08bdbde4af53533662f8b70998dab603d613aac3fa30c587d4ab9dd4ef",
           "bytes": 92586,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/funnel.jpg"
         }
       ],
       "variants": [
@@ -5710,7 +5761,8 @@
           "height": 960,
           "sha256": "6847b46beba565fc20b9a09f6c473707e61d425fe7a28694dba67b105950c1ea",
           "bytes": 114498,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/venn.jpg"
         }
       ],
       "variants": [
@@ -5778,7 +5830,8 @@
           "height": 960,
           "sha256": "de257a2a1c3586bb73a7cfd4d9b75670cc6ce90187324f0b39d68cf3d64898f2",
           "bytes": 50489,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/mindmap.jpg"
         }
       ],
       "variants": [
@@ -5846,7 +5899,8 @@
           "height": 960,
           "sha256": "f6e0ae43ed446867a0ccfac56f17ad07c5f04231c6e0b95f5577b8cdad75b3c7",
           "bytes": 63673,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/matrix.jpg"
         }
       ],
       "variants": [
@@ -5914,7 +5968,8 @@
           "height": 960,
           "sha256": "7bd3494d603effaadfd53374ace73eb0b64ae6af2dc5ef8c95f02b7f65332112",
           "bytes": 56652,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/hub.jpg"
         }
       ],
       "variants": [
@@ -5983,7 +6038,8 @@
           "height": 960,
           "sha256": "6adc2af115beea1d9e5b0a2c7d253c2b9596b3b59071c795cbfb45351b9ee64a",
           "bytes": 104600,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/gallery.jpg"
         }
       ],
       "variants": [
@@ -6052,7 +6108,8 @@
           "height": 960,
           "sha256": "9dd4f3d0ccd252a99cc221860063f77f6bf8d882b264342bd150208e30ad3ac2",
           "bytes": 168381,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/beforeafter.jpg"
         }
       ],
       "variants": [
@@ -6121,7 +6178,8 @@
           "height": 960,
           "sha256": "ea7de387156cc6148ead9ce5359673a488f472ecb9d94b29c47d73935e6c60b5",
           "bytes": 152899,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/kenburns.jpg"
         }
       ],
       "variants": [
@@ -6190,7 +6248,8 @@
           "height": 960,
           "sha256": "233f4a6c0113dd7d0e0286f0fb85f83cd299e892b372683922c888bea9d4f843",
           "bytes": 167647,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/polaroid.jpg"
         }
       ],
       "variants": [
@@ -6259,7 +6318,8 @@
           "height": 960,
           "sha256": "3f7004b92198cf1fc9db2faac5dab7033a118707937bf9a8afce0100422ed121",
           "bytes": 101809,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/device.jpg"
         }
       ],
       "variants": [
@@ -6328,7 +6388,8 @@
           "height": 960,
           "sha256": "64348024064028e0da0c1a1c61e01c12fe572990ebc6480703276d4fb819cd92",
           "bytes": 332868,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/collage.jpg"
         }
       ],
       "variants": [
@@ -6397,7 +6458,8 @@
           "height": 960,
           "sha256": "fc215c487f4e037d9c765571f2648e9ebee87166347c7107b99690cf5362dc83",
           "bytes": 109860,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/spotlight.jpg"
         }
       ],
       "variants": [
@@ -6465,7 +6527,8 @@
           "height": 960,
           "sha256": "6235aeb0ebcc4f3f7d8a0bcfc39c420b4f2af3a7b5e5ee4d6009e6eb18569ad4",
           "bytes": 70552,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/kinetic.jpg"
         }
       ],
       "variants": [
@@ -6533,7 +6596,8 @@
           "height": 960,
           "sha256": "14751d6803ac33479cf4900f3abc7069817c643b2c040e0c8699da204cd25030",
           "bytes": 56415,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/highlight.jpg"
         }
       ],
       "variants": [
@@ -6601,7 +6665,8 @@
           "height": 960,
           "sha256": "15431d3dc9eae98d4aa719e9ba4377d5a4439058cbee133385988c3f81384afa",
           "bytes": 58536,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/scramble.jpg"
         }
       ],
       "variants": [
@@ -6669,7 +6734,8 @@
           "height": 960,
           "sha256": "42004fbd1472c7f530a75690e94cfa59a86d6827c124aac0d7283c4488cc8820",
           "bytes": 77580,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/rotator.jpg"
         }
       ],
       "variants": [
@@ -6737,7 +6803,8 @@
           "height": 960,
           "sha256": "da1ee72c5b82d01ce3712c922aa74404a113ea09bc4e3f4a449d13e61dd0f42c",
           "bytes": 216353,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/marquee.jpg"
         }
       ],
       "variants": [
@@ -6805,7 +6872,8 @@
           "height": 960,
           "sha256": "ee9c0bdcd7c1a2a2faf52a23419dbb30365f7acd516d385bea908129c965d7ae",
           "bytes": 73772,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/bigtype.jpg"
         }
       ],
       "variants": [
@@ -6873,7 +6941,8 @@
           "height": 960,
           "sha256": "6915eb949bda1168bc8938bb34691e0f3c56bd4151612175c8fa97a4cd7b5351",
           "bytes": 169400,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/chat.jpg"
         }
       ],
       "variants": [
@@ -6941,7 +7010,8 @@
           "height": 960,
           "sha256": "f3aa4c0c57935dabf4bb0de739ac56ccd07ad28fc270f2a218a2c307dad8ba3a",
           "bytes": 75247,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/comment.jpg"
         }
       ],
       "variants": [
@@ -7009,7 +7079,8 @@
           "height": 960,
           "sha256": "cad81037f185000e546444ac4768981960b6b6d4a0c16a0d4c68eb5f7d645a91",
           "bytes": 91159,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/notify.jpg"
         }
       ],
       "variants": [
@@ -7077,7 +7148,8 @@
           "height": 960,
           "sha256": "224720743cfdad319592aa3a818836b1a44662eef17b1004fc14d60d273e3d28",
           "bytes": 68100,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/search.jpg"
         }
       ],
       "variants": [
@@ -7145,7 +7217,8 @@
           "height": 960,
           "sha256": "f905c721f8673d11a61919e5aac7d1702e9c4640f5576646ab50cd32b33a523a",
           "bytes": 205802,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/browser.jpg"
         }
       ],
       "variants": [
@@ -7213,7 +7286,8 @@
           "height": 960,
           "sha256": "f615d1f86a86a58c54ca122f639b1fd440a6d82794ffcbe799e52c09f63947d6",
           "bytes": 95176,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/social.jpg"
         }
       ],
       "variants": [
@@ -7281,7 +7355,8 @@
           "height": 960,
           "sha256": "6f0b58c314da7967819b7ef1c8fc74fd4f9d41c36c63ce9591dc9667f115b6ec",
           "bytes": 99211,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/cursor.jpg"
         }
       ],
       "variants": [
@@ -7350,7 +7425,8 @@
           "height": 960,
           "sha256": "2a5f4c0eb2bd3b811843ad5016bf8adfb478a90936a71e035188ec5d2c423269",
           "bytes": 51701,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/lowerthird.jpg"
         }
       ],
       "variants": [
@@ -7419,7 +7495,8 @@
           "height": 960,
           "sha256": "4d339461c013385cc2b4959925d812337d0a115174773d32d0a75df05730e14a",
           "bytes": 48847,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/callout.jpg"
         }
       ],
       "variants": [
@@ -7488,7 +7565,8 @@
           "height": 960,
           "sha256": "a57fc2a4f9a56fe5e1dd22afb39f8b181447dabe4e60144ba276a5536fd4d731",
           "bytes": 71055,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/sticker.jpg"
         }
       ],
       "variants": [
@@ -7557,7 +7635,8 @@
           "height": 960,
           "sha256": "6fed416ca571c839513fbcdc1d7b34b4737f983c491305bdbcdd6c29bab5b7be",
           "bytes": 49521,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/emoji.jpg"
         }
       ],
       "variants": [
@@ -7626,7 +7705,8 @@
           "height": 960,
           "sha256": "605369ce2eb7d8a83bd7081bbeabe64f93f46be05b99bfa1edd01065dce768cf",
           "bytes": 27804,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/progressbar.jpg"
         }
       ],
       "variants": [
@@ -7695,7 +7775,8 @@
           "height": 960,
           "sha256": "b831897d601544b17d0d1633e8ee34f281bb68c4e29c0f1646ff693f98d6823d",
           "bytes": 27499,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/tag.jpg"
         }
       ],
       "variants": [
@@ -7764,7 +7845,8 @@
           "height": 960,
           "sha256": "03985a7a11b6d65e70afe5bfce4f3c15677cf9d40fe3628991e5980739fe67e1",
           "bytes": 213725,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/confetti.jpg"
         }
       ],
       "variants": [
@@ -7833,7 +7915,8 @@
           "height": 960,
           "sha256": "7a819e2d2ba9219a2ec3023a8615c733028bd57a15184505cc099d6abe308329",
           "bytes": 66637,
-          "audio": "none"
+          "audio": "none",
+          "poster_path": "demos/motiongit/frame.jpg"
         }
       ],
       "variants": [
@@ -7894,7 +7977,8 @@
           "path": "demos/remotion/brush-stroke-reveal.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "d719f0e8754e5d267b231506a3abed4f45bc0ada0db353fb95857f73702d2ef3",
-          "bytes": 39353
+          "bytes": 39353,
+          "poster_path": "demos/remotion/brush-stroke-reveal.jpg"
         }
       ],
       "ratio": "16:9",
@@ -7944,7 +8028,8 @@
           "path": "demos/remotion/logo-blur-reveal.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "811b607eb65c6fa161d8e2417568805c31a116f1f548f2df000228afec1dfbbd",
-          "bytes": 51763
+          "bytes": 51763,
+          "poster_path": "demos/remotion/logo-blur-reveal.jpg"
         }
       ],
       "ratio": "16:9",
@@ -7994,7 +8079,8 @@
           "path": "demos/remotion/logo-bounce-drop.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "93905aa8760b4ed3ca49f91563f2303cf8bda0cb618005e59e992eedba9f4bf9",
-          "bytes": 40411
+          "bytes": 40411,
+          "poster_path": "demos/remotion/logo-bounce-drop.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8044,7 +8130,8 @@
           "path": "demos/remotion/logo-mask-wipe.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "434dcb225edbdb50bdb282fbd3452ab7dfb017f378f93c64259f37ea19a952e8",
-          "bytes": 75481
+          "bytes": 75481,
+          "poster_path": "demos/remotion/logo-mask-wipe.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8094,7 +8181,8 @@
           "path": "demos/remotion/logo-split-reveal.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "74ae7442ebff2429ce01114a3d2d2a9fa555351eca828483d6908167076a97dd",
-          "bytes": 45641
+          "bytes": 45641,
+          "poster_path": "demos/remotion/logo-split-reveal.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8144,7 +8232,8 @@
           "path": "demos/remotion/logo-stroke-draw.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "7c0be85c747da9bdb1269f86f473b96544833bc2674ae16bd7d85b3524b43d8b",
-          "bytes": 65591
+          "bytes": 65591,
+          "poster_path": "demos/remotion/logo-stroke-draw.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8194,7 +8283,8 @@
           "path": "demos/remotion/neon-sign.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "eaa24ed8190fe1f4c20d344439ff5673e9b71fcd7ed92c6bc4c1a6d8d7707198",
-          "bytes": 36175
+          "bytes": 36175,
+          "poster_path": "demos/remotion/neon-sign.jpg"
         }
       ],
       "ratio": "1:1",
@@ -8244,7 +8334,8 @@
           "path": "demos/remotion/shatter-reveal.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "8848bb81c49f49cff77807acda0347d682eb9e876f8eed6e40a131c5813d74c1",
-          "bytes": 350142
+          "bytes": 350142,
+          "poster_path": "demos/remotion/shatter-reveal.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8294,7 +8385,8 @@
           "path": "demos/remotion/bounce-in-headline.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "762667f5009bb538fb71761751492b35d08ee63580e39dce0966615608ec8e99",
-          "bytes": 32726
+          "bytes": 32726,
+          "poster_path": "demos/remotion/bounce-in-headline.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8343,7 +8435,8 @@
           "path": "demos/remotion/chapter-title.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "810af7ab02c6bd45139962c30a5194316b5f57a4472a0d2cf102e8c222589de8",
-          "bytes": 30443
+          "bytes": 30443,
+          "poster_path": "demos/remotion/chapter-title.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8394,7 +8487,8 @@
           "path": "demos/remotion/four-tone-mono-titler.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "ca3b0da5cb94a0b91af5f9488893568b0dc5f1cad11fd518a50b76c807842cc7",
-          "bytes": 50256
+          "bytes": 50256,
+          "poster_path": "demos/remotion/four-tone-mono-titler.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8444,7 +8538,8 @@
           "path": "demos/remotion/glitch-text.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "90a5872e9ab566d8b4c23b6f09e53343d8589fb5f86dfa4544fd8dd7afad89b3",
-          "bytes": 177743
+          "bytes": 177743,
+          "poster_path": "demos/remotion/glitch-text.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8494,7 +8589,8 @@
           "path": "demos/remotion/gradient-text-sweep.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "cf42ba16c24732d9e6c16ec2abbeb1cab86f685fb902cacfca65a4e82803c484",
-          "bytes": 77764
+          "bytes": 77764,
+          "poster_path": "demos/remotion/gradient-text-sweep.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8544,7 +8640,8 @@
           "path": "demos/remotion/kinetic-word-stack.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "9207b085f81276e0be6df9c867fd6369af38be544f5333ade6f0de7ff520b447",
-          "bytes": 77838
+          "bytes": 77838,
+          "poster_path": "demos/remotion/kinetic-word-stack.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8598,7 +8695,8 @@
           "path": "demos/remotion/pixel-typewriter-quote.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "41e58e71d3f5503df421df3f329b0beee814a0957753f1765a1f3d7cb4d9b16e",
-          "bytes": 118358
+          "bytes": 118358,
+          "poster_path": "demos/remotion/pixel-typewriter-quote.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8649,7 +8747,8 @@
           "path": "demos/remotion/scramble-text.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "cf327b73d3d8c95df354d77769cb8115b84cf8e16a61e17a95f2aad3b23ed72e",
-          "bytes": 166347
+          "bytes": 166347,
+          "poster_path": "demos/remotion/scramble-text.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8700,7 +8799,8 @@
           "path": "demos/remotion/text-mask-reveal.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "df9073216cfd47e00f9144f91699167864f216beb79158bc98a86551ad9a4e52",
-          "bytes": 30564
+          "bytes": 30564,
+          "poster_path": "demos/remotion/text-mask-reveal.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8753,7 +8853,8 @@
           "path": "demos/remotion/typewriter.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "85f03bcfb50c79ec4f7e7b2c6835000c0f6b446c176cbdcfcb3bdd2c961d0533",
-          "bytes": 36695
+          "bytes": 36695,
+          "poster_path": "demos/remotion/typewriter.jpg"
         }
       ],
       "ratio": "1:1",
@@ -8803,7 +8904,8 @@
           "path": "demos/remotion/wave-text.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "f36864920e8a3e6347daca9ac1902e2882ed08d48ec5ad3c9cc38887cead8678",
-          "bytes": 42036
+          "bytes": 42036,
+          "poster_path": "demos/remotion/wave-text.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8853,7 +8955,8 @@
           "path": "demos/remotion/camera-shake.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "18a36051cb065954d19509a0f278ca9414912a8ef4103a023a5d7adbcf2b15c2",
-          "bytes": 138884
+          "bytes": 138884,
+          "poster_path": "demos/remotion/camera-shake.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8903,7 +9006,8 @@
           "path": "demos/remotion/card-flip-transition.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "455b5de6295db775dc9ea91e945699a0c96c8016b448e14a788fb62e1b4141fa",
-          "bytes": 49094
+          "bytes": 49094,
+          "poster_path": "demos/remotion/card-flip-transition.jpg"
         }
       ],
       "ratio": "16:9",
@@ -8953,7 +9057,8 @@
           "path": "demos/remotion/transition-circle-wipe.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "57df0eb501bffff361d24dc87c56a06a3f598fab253959be3a95bec0c72a13d7",
-          "bytes": 35505
+          "bytes": 35505,
+          "poster_path": "demos/remotion/transition-circle-wipe.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9003,7 +9108,8 @@
           "path": "demos/remotion/ink-spread-transition.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "87475ca600677e4abf49aa875d5a6122c8bfa55652f992caf202e5a2ed40cbb7",
-          "bytes": 45079
+          "bytes": 45079,
+          "poster_path": "demos/remotion/ink-spread-transition.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9053,7 +9159,8 @@
           "path": "demos/remotion/flip-page-transition.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "62bd10cf0f2f36694a637309970162b89b8a5ea68b1fdc1e62c5347776f5e60e",
-          "bytes": 75275
+          "bytes": 75275,
+          "poster_path": "demos/remotion/flip-page-transition.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9103,7 +9210,8 @@
           "path": "demos/remotion/pixel-mosaic-transition.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "0cc0a6adc53014e0b71746b8affc33aecc76ddc2c99c417fe1dac25de05ec7bf",
-          "bytes": 420926
+          "bytes": 420926,
+          "poster_path": "demos/remotion/pixel-mosaic-transition.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9150,7 +9258,8 @@
           "path": "demos/remotion/slide-wipe.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "0d92607f02e5150d490b9d607226f71c723fa5a3d32c2924cc3be30c628131a6",
-          "bytes": 37604
+          "bytes": 37604,
+          "poster_path": "demos/remotion/slide-wipe.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9200,7 +9309,8 @@
           "path": "demos/remotion/whip-pan.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "e153739eca9b510c6e14b313f20d610cd750744059fc7212612cc9739511c39b",
-          "bytes": 46013
+          "bytes": 46013,
+          "poster_path": "demos/remotion/whip-pan.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9268,7 +9378,8 @@
           "path": "demos/remotion/bar-chart-anim.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "0eed5058bada079b7de6924bf6fed2db5adfb93547a12721e31837150f912dfc",
-          "bytes": 29183
+          "bytes": 29183,
+          "poster_path": "demos/remotion/bar-chart-anim.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9340,7 +9451,8 @@
           "path": "demos/remotion/line-chart-anim.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "fbc0e09051edde2144d939dc27c974ebf654b73c055034a0d6585fd1a65bbdf2",
-          "bytes": 23029
+          "bytes": 23029,
+          "poster_path": "demos/remotion/line-chart-anim.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9416,7 +9528,8 @@
           "path": "demos/remotion/pourover-drip-fill-gauge.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "899a3f2c65ae66b33e688e0a4a10552b5c64258078836e5b235f4e9968d60840",
-          "bytes": 249338
+          "bytes": 249338,
+          "poster_path": "demos/remotion/pourover-drip-fill-gauge.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9463,7 +9576,8 @@
           "path": "demos/remotion/kpi-counter.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "aa5d7852cd776578c20a3ac6ac705a859b56490c965267207d892cdcb37508eb",
-          "bytes": 62176
+          "bytes": 62176,
+          "poster_path": "demos/remotion/kpi-counter.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9551,7 +9665,8 @@
           "path": "demos/remotion/pixel-candlestick-ohlc.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "570edc41d9901a0f1ebf28b49ca0412d85ec4b95f0df7cf24bc8485c7d7499f0",
-          "bytes": 150098
+          "bytes": 150098,
+          "poster_path": "demos/remotion/pixel-candlestick-ohlc.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9600,7 +9715,8 @@
           "path": "demos/remotion/racing-chart.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "c8d17198dc230471962d2581ff0d7c2d7c75a845fa69b1952e87bcfb0633d32f",
-          "bytes": 47768
+          "bytes": 47768,
+          "poster_path": "demos/remotion/racing-chart.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9706,7 +9822,8 @@
           "path": "demos/remotion/community-chat.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "625f336cd116021bdd702b108b04019440b82b40ae26fa66c15486805fe85591",
-          "bytes": 501821
+          "bytes": 501821,
+          "poster_path": "demos/remotion/community-chat.jpg"
         }
       ],
       "ratio": "9:16",
@@ -9793,7 +9910,8 @@
           "path": "demos/remotion/end-card.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "e1f93a6aa111e1e1f5742300b59e3cc5126e0f73604ec4a2afcefc0067f6e1ae",
-          "bytes": 78480
+          "bytes": 78480,
+          "poster_path": "demos/remotion/end-card.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9844,7 +9962,8 @@
           "path": "demos/remotion/eye-reveal.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "aa9ffb99ff8a09b029f11aa89e354757697feefcefd97716017aae5b0698224c",
-          "bytes": 44586
+          "bytes": 44586,
+          "poster_path": "demos/remotion/eye-reveal.jpg"
         }
       ],
       "ratio": "1:1",
@@ -9894,7 +10013,8 @@
           "path": "demos/remotion/lower-third-glass-card.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "28070a8c6419507a4368d937275e1ca681fd71145ebe32e62699d6f50869df9e",
-          "bytes": 44930
+          "bytes": 44930,
+          "poster_path": "demos/remotion/lower-third-glass-card.jpg"
         }
       ],
       "ratio": "16:9",
@@ -9944,7 +10064,8 @@
           "path": "demos/remotion/character-jumping.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "1f27d088af224ca0f792cafed47c59979f2694d26f5dca51a8bcfc705a2161c6",
-          "bytes": 90197
+          "bytes": 90197,
+          "poster_path": "demos/remotion/character-jumping.jpg"
         }
       ],
       "ratio": "1:1",
@@ -9993,7 +10114,8 @@
           "path": "demos/remotion/social-reel.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "3099230518a0d86d1dabcc7527c6995f32018790bff33f9beb058623bf04f4eb",
-          "bytes": 74719
+          "bytes": 74719,
+          "poster_path": "demos/remotion/social-reel.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10054,7 +10176,8 @@
           "path": "demos/remotion/split-screen.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "3214dd4b6d101ceaf568416603bedf94bf76c189a5017bbc0b3b930d9a2b96df",
-          "bytes": 31859
+          "bytes": 31859,
+          "poster_path": "demos/remotion/split-screen.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10114,7 +10237,8 @@
           "path": "demos/remotion/thinking-bubble.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "d54cacc54be656369c9b43e303d35688f8a35acf70a3829a7eefcecbf2ea56ad",
-          "bytes": 22507
+          "bytes": 22507,
+          "poster_path": "demos/remotion/thinking-bubble.jpg"
         }
       ],
       "ratio": "1:1",
@@ -10163,7 +10287,8 @@
           "path": "demos/remotion/wave-hello.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "765153ab2b341d02785c390b9ab07ab025f4ced9940ea53a5d5c869575ee0395",
-          "bytes": 82188
+          "bytes": 82188,
+          "poster_path": "demos/remotion/wave-hello.jpg"
         }
       ],
       "ratio": "1:1",
@@ -10213,7 +10338,8 @@
           "path": "demos/remotion/bokeh-circles.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "22b281ac74bfa397a47a0054b924025e221fe5cb4fcc0699c9b179d3b6c56cfb",
-          "bytes": 121561
+          "bytes": 121561,
+          "poster_path": "demos/remotion/bokeh-circles.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10262,7 +10388,8 @@
           "path": "demos/remotion/fireworks-burst.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "205dab9c9b40980c12748f7210097d8b55e9af30302d73260874e35b2eaa8e04",
-          "bytes": 131477
+          "bytes": 131477,
+          "poster_path": "demos/remotion/fireworks-burst.jpg"
         }
       ],
       "ratio": "1:1",
@@ -10312,7 +10439,8 @@
           "path": "demos/remotion/loop-grid-wave.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "fa7b11f1c5e1a73c1b1fb42f5336f691757b48b78e9225c6b446da5e85ce2963",
-          "bytes": 250097
+          "bytes": 250097,
+          "poster_path": "demos/remotion/loop-grid-wave.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10359,7 +10487,8 @@
           "path": "demos/remotion/parallax-pan.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "f3c5de0d9e6330666b92c3c710110d0d381b9c2a66e7e80ca9314d5b9e3a586b",
-          "bytes": 68735
+          "bytes": 68735,
+          "poster_path": "demos/remotion/parallax-pan.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10409,7 +10538,8 @@
           "path": "demos/remotion/pencil-draw.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "78806a3670c61e1faff1955eaf1a813140cc5021182ecb278a6404fbd2b0bb31",
-          "bytes": 43224
+          "bytes": 43224,
+          "poster_path": "demos/remotion/pencil-draw.jpg"
         }
       ],
       "ratio": "1:1",
@@ -10459,7 +10589,8 @@
           "path": "demos/remotion/pixel-waterfall-cycle.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "47870601017c2c536834328437a1b857231b51026b65352cb83bb2ce030ebb91",
-          "bytes": 380495
+          "bytes": 380495,
+          "poster_path": "demos/remotion/pixel-waterfall-cycle.jpg"
         }
       ],
       "ratio": "9:16",
@@ -10506,7 +10637,8 @@
           "path": "demos/remotion/particle-snow.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "c1efb526ed3b81bf9e0af27e6fdfcf93c7a4ba33dfa56443745532351d1c3fd4",
-          "bytes": 121005
+          "bytes": 121005,
+          "poster_path": "demos/remotion/particle-snow.jpg"
         }
       ],
       "ratio": "1:1",
@@ -10556,7 +10688,8 @@
           "path": "demos/remotion/starfield.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "26b4f71fa7586fba8f662a9c40258028ec6124bb8c6b54bb8ee11d5aea01c150",
-          "bytes": 130025
+          "bytes": 130025,
+          "poster_path": "demos/remotion/starfield.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10606,7 +10739,8 @@
           "path": "demos/remotion/library-orbit.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "c8bfd95699f22dd22849545fc75c5cd0613d9983738c1bd2177151dd167cba94",
-          "bytes": 101445
+          "bytes": 101445,
+          "poster_path": "demos/remotion/library-orbit.jpg"
         }
       ],
       "ratio": "1:1",
@@ -10663,7 +10797,8 @@
           "path": "demos/remotion/library-text-mask.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "b0695e95f7939965abae48d416f182046dd6302e1ebbcdfefe6aa24cb8d623cc",
-          "bytes": 38609
+          "bytes": 38609,
+          "poster_path": "demos/remotion/library-text-mask.jpg"
         }
       ],
       "ratio": "1:1",
@@ -10716,7 +10851,8 @@
           "path": "demos/remotion/library-bar-zh.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "7afa76aed5954fadb339ba809e4f90fab35429caebcacd71e70c74960d68f61f",
-          "bytes": 35592
+          "bytes": 35592,
+          "poster_path": "demos/remotion/library-bar-zh.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10778,7 +10914,8 @@
           "path": "demos/remotion/library-glass-zh.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "aa58c7bfce15b1230a221c39d6576874362d0f54f017965021982eca663f1731",
-          "bytes": 45581
+          "bytes": 45581,
+          "poster_path": "demos/remotion/library-glass-zh.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10829,7 +10966,8 @@
           "path": "demos/remotion/library-player-zh.mp4",
           "description_zh": "原注册动画的中文参数演示；静音；示例文字与数值不是实际业务结果",
           "sha256": "0acf93900d29a041c6b666a27b60ee5ea34293028e1f9132564e47a467d7b502",
-          "bytes": 74722
+          "bytes": 74722,
+          "poster_path": "demos/remotion/library-player-zh.jpg"
         }
       ],
       "ratio": "16:9",
@@ -10887,7 +11025,8 @@
           "path": "demos/presenter/presenter-effect-01.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "dc03313f44234bdf679ba1e636809099e9da39fd1504114a4588058ec3b7b573",
-          "bytes": 202701
+          "bytes": 202701,
+          "poster_path": "demos/presenter/presenter-effect-01.jpg"
         }
       ],
       "ratio": "9:16",
@@ -10926,7 +11065,8 @@
           "path": "demos/presenter/presenter-effect-02.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "aa1f61e58323d2973631729a52a9e676d155792de653e837cfb20a09524e453e",
-          "bytes": 157301
+          "bytes": 157301,
+          "poster_path": "demos/presenter/presenter-effect-02.jpg"
         }
       ],
       "ratio": "9:16",
@@ -10964,7 +11104,8 @@
           "path": "demos/presenter/presenter-effect-03.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "905270f1c34ea1f6193f3c442fb771bc34b417ad0458dea62547aefacb4ec560",
-          "bytes": 262925
+          "bytes": 262925,
+          "poster_path": "demos/presenter/presenter-effect-03.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11002,7 +11143,8 @@
           "path": "demos/presenter/presenter-effect-04.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "c2102e488d794bcd48412a4f992db8e55c7977d6104749d68adcaafebb1b6d2b",
-          "bytes": 95445
+          "bytes": 95445,
+          "poster_path": "demos/presenter/presenter-effect-04.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11040,7 +11182,8 @@
           "path": "demos/presenter/presenter-effect-05.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "fec61c3de256e4f28cf3561997a4bef0ff600be99f1313f83b3bd499a250f1ea",
-          "bytes": 152837
+          "bytes": 152837,
+          "poster_path": "demos/presenter/presenter-effect-05.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11079,7 +11222,8 @@
           "path": "demos/presenter/presenter-effect-06.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "065c3e7c74b4e48d39a88095a5556dc50040ef242c81a70077bba7ecba848b5d",
-          "bytes": 171293
+          "bytes": 171293,
+          "poster_path": "demos/presenter/presenter-effect-06.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11118,7 +11262,8 @@
           "path": "demos/presenter/presenter-effect-07.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "9f437717c0127f943f6e302edc7680d1e03dd7cd9e97db045482d9704c46b332",
-          "bytes": 121651
+          "bytes": 121651,
+          "poster_path": "demos/presenter/presenter-effect-07.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11157,7 +11302,8 @@
           "path": "demos/presenter/presenter-effect-08.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "5318ac41ac8701204138dc71bddc4267893dd6b25063f3deb74d4586d3cf9e3f",
-          "bytes": 178558
+          "bytes": 178558,
+          "poster_path": "demos/presenter/presenter-effect-08.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11195,7 +11341,8 @@
           "path": "demos/presenter/presenter-effect-09.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "54d2954fae9d8b6c6a4e0436f06ada56917ea62c427d26f7fd8c26371c22c57c",
-          "bytes": 180512
+          "bytes": 180512,
+          "poster_path": "demos/presenter/presenter-effect-09.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11234,7 +11381,8 @@
           "path": "demos/presenter/presenter-effect-10.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "fffaba149cf39490b9bb534104887688975a1d11906672ea2654c72fe614bdd8",
-          "bytes": 198454
+          "bytes": 198454,
+          "poster_path": "demos/presenter/presenter-effect-10.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11273,7 +11421,8 @@
           "path": "demos/presenter/presenter-effect-11.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "caf65295375a0b887f8d962fa47ab3ed3e6cb434e88bca76b1e6f288c37bc740",
-          "bytes": 76259
+          "bytes": 76259,
+          "poster_path": "demos/presenter/presenter-effect-11.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11312,7 +11461,8 @@
           "path": "demos/presenter/presenter-effect-12.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "757a3ec7aab8b9abdb89bf03b4ad23f66002d8f5fe85be14837529aee9580713",
-          "bytes": 183477
+          "bytes": 183477,
+          "poster_path": "demos/presenter/presenter-effect-12.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11350,7 +11500,8 @@
           "path": "demos/presenter/presenter-effect-13.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "555ee13a56e3cc784140f85f6ba30bc95f1a498104918c27a0e5f9ad9122e17c",
-          "bytes": 197458
+          "bytes": 197458,
+          "poster_path": "demos/presenter/presenter-effect-13.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11388,7 +11539,8 @@
           "path": "demos/presenter/presenter-effect-14.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "eedbec9378e024aa0b60c848279c480b05955babea25752b2284804c4cfa5dc5",
-          "bytes": 161813
+          "bytes": 161813,
+          "poster_path": "demos/presenter/presenter-effect-14.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11426,7 +11578,8 @@
           "path": "demos/presenter/presenter-effect-15.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "ca3a70796ee2ea0d17d568c969aa9b2921373c5702720dada2c65ae236f385c7",
-          "bytes": 131764
+          "bytes": 131764,
+          "poster_path": "demos/presenter/presenter-effect-15.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11464,7 +11617,8 @@
           "path": "demos/presenter/presenter-effect-16.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "b4655458608978b51de8d3e2ea80ce6438b231ee52df69497322d558a9b6207f",
-          "bytes": 166415
+          "bytes": 166415,
+          "poster_path": "demos/presenter/presenter-effect-16.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11503,7 +11657,8 @@
           "path": "demos/presenter/presenter-effect-17.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "1ec5db6fd70c5ad8b56d7bc70fa98596a4e5e90a94bf9c2bef5165ebacf56b1e",
-          "bytes": 210017
+          "bytes": 210017,
+          "poster_path": "demos/presenter/presenter-effect-17.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11542,7 +11697,8 @@
           "path": "demos/presenter/presenter-effect-18.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "3f87f12933c97f859645ba2dcb43afd7ebf3435b5c64bf79be0fa58eba2eccf3",
-          "bytes": 143318
+          "bytes": 143318,
+          "poster_path": "demos/presenter/presenter-effect-18.jpg"
         }
       ],
       "ratio": "9:16",
@@ -11580,7 +11736,8 @@
           "path": "demos/presenter/presenter-effect-19.mp4",
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "f90679d92c4f04dd955f88b08b0ab191c06828b55f8c293dda3c9370e5668135",
-          "bytes": 221899
+          "bytes": 221899,
+          "poster_path": "demos/presenter/presenter-effect-19.jpg"
         }
       ],
       "ratio": "9:16",

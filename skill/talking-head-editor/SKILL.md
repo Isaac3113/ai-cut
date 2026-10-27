@@ -1,6 +1,6 @@
 ---
 name: talking-head-editor
-description: 剪辑真人知识口播、AI教学、营销方法与系统实操，保留原声原意；先确认本条视频比例，再做可恢复的语义粗剪、字幕、画面包装与社媒素材。支持Zoom或长访谈按独立主题切片、局部修正及中文模板选型。只有文稿先收集原片；旅游Vlog和剧情片先识别专用路线，不直接套用口播规则。
+description: 剪辑真人知识口播、AI教学、营销方法与系统实操，保留原声原意；先确认本条视频比例，再做可恢复的语义粗剪、字幕、画面包装与社媒素材。支持Zoom或长访谈按独立主题切片、局部修正、中文模板选型及按新片接入官方模板。只有文稿先收集原片；旅游Vlog和剧情片先识别专用路线，不直接套用口播规则。
 ---
 
 # 真人知识口播剪辑
@@ -21,6 +21,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 | ChatCut执行与连接核对 | [ChatCut流程](references/chatcut.md) |
 | 电脑实操区间 | [实操重点与同步音效](references/practical-demo.md)、需要本机辅助时读[实操渲染器](references/practical-renderer.md) |
 | 中文模板／控件选型 | [模板选择](references/template-selection.md)、已有代码效果读[特效库](references/effect-library.md) |
+| 官网更新／新片接入与本人Demo积累 | [模板长期接入规则](references/template-lifecycle.md) |
 | 长访谈／Zoom切片 | [长访谈策划](references/long-form-clips.md) |
 | Logo、同源人像与素材 | [品牌和动态圆窗](references/brand-and-presenter.md)、[画面执行](references/visual-storytelling.md) |
 | 片头片尾、封面和交付 | [固定片头片尾](references/intro-outro.md)、[封面提示词员工](references/cover-prompt-worker.md)、[精简交付](references/final-delivery.md) |
@@ -58,6 +59,8 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 
 ## 动画工具与可复用目录
 
+每条新片同时评估已接入与未接入官方候选；免费可取得且许可/输入合适时，沿既有授权直接核验、试做和接入，并将已验证本人小样与调用记录同步私有库和首页。更新监测只通知，不自动替换旧工程。详细执行与状态边界读[模板长期接入规则](references/template-lifecycle.md)。
+
 中文目录、分类、来源、许可、变体和逐项Demo在CODE_ROOT的`templates/README.zh-CN.md`与`templates/catalog.json`。先按表达任务筛选，再读所选控件合同；不要因AI行业就强制科技风，也不要为模板凑步骤或数据。
 
 - 简单可编辑重点字：优先ChatCut原生MG。
@@ -66,7 +69,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 - jianying-editor：仅用户明确选择国内剪映时按[剪映流程](references/jianying.md)复用同一时间轴，生成草稿与原生打开／导出分别验证。
 - video-use：辅助核查重录、接缝、流程与局部音画，回到本Skill主流程，不另建权威转写或剪辑。
 
-不因引用辅助Skill安装新引擎、云服务或订阅；付费素材先展示预览、价格和用途并取得授权。用户这次明确要求将精选Demo放私人GitHub，仅在目录限定路径提交小样；不扩展为以后自动上传原片、完整成片、个人模板包或客户信息。
+不因仅引用辅助Skill就无故安装引擎或订阅；本次已授权接入所必需的免费可信依赖可按实际合同准备，先说明新增项及用途，不全局替换既有引擎。付费素材先展示预览、价格和用途并取得授权。用户已于2026-10-27授权以后每条视频将必要的已验证精选本人Demo与调用记录同步私人GitHub，按模板长期接入规则执行；不扩大到完整原片、完整成片、个人包、Key或客户敏感信息，也不代表公开授权。
 
 ## 声音、验收与交付确认
 

@@ -24,7 +24,7 @@
 
 70控件未来更新仍须逐项保存变体、真实文件与validation.state/scope；未渲染保留registered，不能批量改状态冒充验证。`scripts/motiongit_adapter.py`通过已核官方helper调用本人原包；本机motiongit.local.json保存package/node路径，也可用--package/--node指定。未知helper先核来源，不改预期哈希蒙混通过。句级motion-kit与需真实词时的native合同分别处理，外部画面回到唯一ChatCut时间轴。再生目录的配置与新片制作不同，详见脚本说明；另一电脑仍需依赖、自己的模板包及本期素材。
 
-本轮演示媒体获准进入私人Git的指定路径仅为docs/template-gallery/demos。个人.motion、Key、原片、完整成片、源人像/遮罩、依赖及work缓存保持排除；小样授权不扩展到未来视频。
+本轮演示媒体获准进入私人Git的指定路径仅为docs/template-gallery/demos。个人.motion、Key、原片、完整成片、源人像/遮罩、依赖及work缓存保持排除；本日后续用户已扩为每条新片必要精选本人Demo与集成记录的私人同步授权，完整媒体及公开范围仍排除；当前执行见总Skill的template-lifecycle。
 
 ## 路线与事实边界
 

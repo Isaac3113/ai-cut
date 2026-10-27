@@ -49,3 +49,8 @@ GitHub同步本仓库代码、Skill与技术说明；OneDrive同步Project Hub�
 安全pull后，中文清单在`templates/README.zh-CN.md`，精选演示小样位于`docs/template-gallery/demos`并随本次私人仓库同步。运行`python scripts/serve_template_gallery.py`可在本机看可搜索目录；GitHub本身不执行HTML。目录与Demo可看，不等于这台电脑已能重渲或剪好新片。
 
 MotionGit使用自己的原始个人.motion，切勿把原包或Key发到GitHub。将`motiongit.example.json`复制为被忽略的`motiongit.local.json`并填写本机原包路径与标准Node22+路径（需npm时使用含npm的安装），再由`scripts/motiongit_adapter.py start --summary`验签；未知helper先核官方元数据，不跳过SHA检查。按实际包公开guide/schema检查依赖与输入；不复制旧电脑保护内核、.venv或node_modules代替安装。旅行Vlog专用自动流程尚未实现，不能由目录出现旅行类素材就推断已支持。
+
+
+## 官方模板按新片接入与监测
+
+每条新片同时考虑已接入和未接入官方候选；适合、免费可取得且许可允许时可直接核验/实测/接入，并把已验证精选本人Demo及调用记录同步现有私人库。读取template-lifecycle规则与docs/MOTIONGIT_UPDATES.md，不把完整原片、个人包或Key带入Git。更新通知不自动替换已认可素材。定时监测和本机基线不随git pull自动迁移，换电脑先核对已有监测任务及运行机器，避免重复创建。
