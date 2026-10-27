@@ -19,6 +19,7 @@
 | HyperFrames | **0.8.35**按短状态卡／HTML动画场景调用，已有历史201帧渲染与采样验证 | 不是每条片必用，本次MotionGit组件也不由它渲染 |
 
 已有特效可以继续参数化，但人像遮罩、源时钟、画幅、品牌及素材质量必须分别适配。
+当前主流程适合真人知识口播、AI教学、营销方法及系统功能讲解；长访谈先走主题切片分支。剧情改编需要另外的分镜流程；只有文稿时先收集真人原片，不自动配音或生成数字人。
 源入口：[总Skill](../../skill/talking-head-editor/SKILL.md)、[两引擎分工](../../skill/talking-head-editor/references/reference-motion.md)、[KB29](29_Reusable_Effect_Library.md)。
 版本证据：[Remotion依赖](../../extensions/remotion-vd44/package.json)、[HyperFrames入口](../../extensions/hyperframes-vd44/package.json)。
 
@@ -109,6 +110,7 @@ A取AIVD8正式导出的`[0.1,55.133333)`秒区间，从0计时为55.033333秒�
 
 官网tail-v3真实render退出0，helper总耗时**30.824秒**；最终拼接**4.801秒**。
 这不是全流程制作时长，更不是官网与ChatCut速度的严格基准比较。
+本轮没有调用付费生成或购买云渲染，使用已有素材与本机算力；未查询账号积分账单，也未统计完整人工选型、调参与排错工时，不能据此给出端到端费用或投资回报。官网路线已有一次真实渲染成功，尚无批量或跨机器稳定性结论；后续改稿仍需重新计划、预览与渲染。
 公开classic的15.7秒／75.5秒候选只作补充研究；其UI缩小、残余时钟与品牌文字问题不混成官网tail的结果。
 
 | 最终文件 | SHA256／大小 |
