@@ -3,9 +3,11 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import argparse
+import sys
 
 
 def main():
+    sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(description='本机中文剪辑模板中心')
     parser.add_argument('--port', type=int, default=8768)
     args = parser.parse_args()

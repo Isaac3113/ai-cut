@@ -1,0 +1,20 @@
+{
+  "range_seconds": [
+    44.8,
+    48.8
+  ],
+  "playback_rate": 1,
+  "a": {
+    "sha256": "4bc96ec55da2acd50af5fa3d4050e8ae85036bd0c8699da9b3bfef7399e77b8d",
+    "label": "A：现有方案"
+  },
+  "b": {
+    "sha256": "b38c0754fd858677a438a7285bcdd26e9e65f00ddd9275009a8a877f6cb3d5c8",
+    "label": "B：官网highlight/underline局部升级"
+  },
+  "gif_sha256": "f9070aee8d412d61197c9eec01e2d48821bfdca4c689e7460aea02f1279fbdda",
+  "bytes": 937564,
+  "scope_zh": "同一源区间4秒静音节选；不表示全片或所有模板都已完成对照",
+  "gif_path": "docs/template-gallery/demos/homepage/ab-existing-vs-official.gif",
+  "rights_zh": "本人已授权的私人仓库对比小样；本次准备不扩大为公开肖像或原素材再分发授权。"
+}
