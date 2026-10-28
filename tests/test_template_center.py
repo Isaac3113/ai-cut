@@ -123,6 +123,49 @@ class IntegrationGrowthTests(unittest.TestCase):
         self.assertEqual(len(merged[0]['demos']),2)
         self.assertEqual(len(merged[0]['integrations']),2)
 
+    def ratio_cases(self):
+        portrait=self.record('portrait'); landscape=self.record('landscape')
+        portrait['source']['version']='portrait-version'
+        portrait['demo'].update(width=720,height=1280)
+        landscape['source']['version']='landscape-version'
+        landscape['integrated_at']='2026-10-28T10:00:00Z'
+        media=self.media.with_name('landscape.mp4');media.write_bytes(b'landscape unit-test fixture')
+        landscape['demo'].update(path='demos/cases/landscape.mp4',width=1280,height=720,
+                                 sha256=sha256(media.read_bytes()).hexdigest(),bytes=media.stat().st_size)
+        return portrait,landscape
+
+    def test_matching_ratio_preview_preserves_true_latest_case(self):
+        self.base['ratio']='9:16';portrait,landscape=self.ratio_cases()
+        merged,_,_=self.apply([landscape,portrait]); row=merged[0]
+        self.assertEqual(row['latest_integration_id'],'landscape')
+        self.assertEqual([c['id'] for c in row['integrations']],['landscape','portrait'])
+        self.assertEqual(row['preview_integration_id'],'portrait')
+        self.assertEqual([d.get('integration_id') for d in row['demos'][:2]],['portrait','landscape'])
+        self.assertEqual(self.gallery.preview_integration(row)['source']['version'],'portrait-version')
+
+    def test_ratio_label_fallback_and_no_match_keep_newest(self):
+        self.base['ratio']='16:9';portrait,landscape=self.ratio_cases()
+        landscape['demo'].pop('width');landscape['demo'].pop('height');landscape['demo']['ratio']='16:9'
+        merged,_,_=self.apply([portrait,landscape])
+        self.assertEqual(merged[0]['preview_integration_id'],'landscape')
+        self.base['ratio']='1:1'
+        merged,_,_=self.apply([portrait,landscape])
+        self.assertEqual(merged[0]['preview_integration_id'],'landscape')
+
+    def test_preview_metadata_matches_ratio_on_homepage_and_markdown(self):
+        self.base['ratio']='9:16';portrait,landscape=self.ratio_cases()
+        merged,records,_=self.apply([landscape,portrait])
+        home=module('build_homepage_showcase')
+        asset={'kind':'local_gif','path':'fixture.gif','duration_seconds':3,'width':180,'source_demo':'fixture.mp4'}
+        fragment=home.make_fragment({'entries':merged,'integrations':records},{'one':asset})
+        self.assertIn('当前本人Demo版本：portrait-version',fragment)
+        self.assertNotIn('当前本人Demo版本：landscape-version',fragment)
+        with patch.object(self.gallery,'read_sources',return_value=([self.base],[],[])):
+            self.gallery.build(self.root,False)
+        markdown=(self.root/'templates/README.zh-CN.md').read_text(encoding='utf-8')
+        self.assertIn('当前本人Demo版本：portrait-version',markdown)
+        self.assertNotIn('当前本人Demo版本：landscape-version',markdown)
+
     def test_new_candidate_joins_existing_layer_only_after_verified_case(self):
         rec=self.record(target='new-style'); new=entry(None)
         new.update(id='new-style',layer='style',source_url=rec['source']['url'],demos=[])

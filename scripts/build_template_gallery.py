@@ -118,6 +118,27 @@ def verify_integration_demo(root, demo, strict):
             raise ValueError('Integration demo failed full decode')
 
 
+def demo_matches_ratio(demo, ratio):
+    """Prefer a matching preview without changing integration chronology."""
+    try:
+        rw, rh = (float(part) for part in ratio.split(':'))
+        width, height = demo.get('width'), demo.get('height')
+        if not width or not height:
+            width, height = (float(part) for part in demo.get('ratio', '').split(':'))
+        if min(rw, rh, width, height) <= 0:
+            return False
+        # Allow dimensions rounded to whole pixels, but never another layout.
+        return abs((width / height) / (rw / rh) - 1) < 0.015
+    except (AttributeError, TypeError, ValueError, ZeroDivisionError):
+        return False
+
+
+def preview_integration(entry):
+    cases = entry.get('integrations', [])
+    return next((c for c in cases if c['id'] == entry.get('preview_integration_id')),
+                cases[0] if cases else None)
+
+
 def apply_integrations(root, entries, strict):
     """Attach version-scoped cases, never promote the frozen source validation."""
     path = root / 'templates/template-integrations.json'
@@ -179,8 +200,10 @@ def apply_integrations(root, entries, strict):
         cases = row.setdefault('integrations', [])
         cases.append(deepcopy(record))
         cases.sort(key=lambda c: datetime.fromisoformat(c['integrated_at'].replace('Z', '+00:00')), reverse=True)
-        # Keep prior demos and baseline provenance. Only the first preview changes.
-        case_demos = [dict(c['demo'], integration_id=c['id']) for c in cases]
+        # Keep the true newest case separate from the entry's matching preview.
+        preferred = next((c for c in cases if demo_matches_ratio(c['demo'], row.get('ratio'))), cases[0])
+        preview_cases = [preferred] + [c for c in cases if c['id'] != preferred['id']]
+        case_demos = [dict(c['demo'], integration_id=c['id']) for c in preview_cases]
         ordered = case_demos + [d for d in row['demos'] if not d.get('integration_id')]
         unique = {}; row['demos'] = []
         for item in ordered:
@@ -191,6 +214,7 @@ def apply_integrations(root, entries, strict):
                 continue
             unique[key] = item; row['demos'].append(item)
         row['latest_integration_id'] = cases[0]['id']
+        row['preview_integration_id'] = preferred['id']
         records.append(deepcopy(record))
     # Paths may be reused within one entry, but must never overwrite another entry.
     owners = {}
@@ -225,14 +249,15 @@ HTML = r'''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
 <div class="result" id="result"></div><div class="grid" id="grid"></div><div id="extra"></div>
 <p class="foot">来源、许可证与更新口径：<a href="https://github.com/Isaac3113/talking-head-editor/blob/main/templates/PROVENANCE.zh-CN.md">来源说明</a> · <a href="https://github.com/Isaac3113/talking-head-editor/blob/main/templates/README.zh-CN.md">完整中文清单</a> · <a href="https://github.com/Isaac3113/talking-head-editor/blob/main/docs/template-gallery/CATEGORIES.md">分类动画预览</a> · <a href="https://github.com/Isaac3113/talking-head-editor/blob/main/skill/talking-head-editor/references/template-selection.md">Skill选择规则</a><br>2026-10-27长期授权：以后每片经QA精选的本人静音Demo与集成说明可进入私人Git；完整原片、完整成片、源人像蒙版、Key、个人包与客户敏感信息不进入Git。这不是公开发布授权。其他电脑仍需独立准备运行环境、个人模板授权和新片素材。</p></main>
 <script>const DATA=__DATA__;const LAYERS=__LAYERS__;
-function integrationInfo(e){if(!e.integrations?.length)return '';const c=e.integrations[0],s=c.source,i=c.invocation;return '<details><summary>本片接入与复用边界</summary><p>'+esc(c.project_id+' · '+s.package_id+' · '+s.version)+'</p><p>输入：'+esc(i.inputs_zh.join('；'))+'</p><p>调用：<code>'+esc(i.command)+'</code></p><p>本片检查：'+esc(c.qa.scope)+'</p><p>仅此版本与Demo；原条目和全部变体验证状态不因此改变。</p></details>'}
+function previewIntegration(e){return e.integrations?.find(c=>c.id===e.preview_integration_id)||e.integrations?.[0]}
+function integrationInfo(e){const c=previewIntegration(e);if(!c)return '';const s=c.source,i=c.invocation;return '<details><summary>本片接入与复用边界</summary><p>'+esc(c.project_id+' · '+s.package_id+' · '+s.version)+'</p><p>输入：'+esc(i.inputs_zh.join('；'))+'</p><p>调用：<code>'+esc(i.command)+'</code></p><p>本片检查：'+esc(c.qa.scope)+'</p><p>仅此版本与Demo；原条目和全部变体验证状态不因此改变。</p></details>'}
 const stateName=x=>({'integrated_case_verified':'仅本片接入已检查','registered':'已登记，演示生成中','registered_pending_render':'演示生成中','validated_demo':'本机演示已检查','verified':'本机演示已检查','rendered_verified':'本机演示已检查'}[x]||x);const availabilityName=x=>({'local_rendered_demo':'已有本地演示','available':'可按条件使用','registered_pending_render':'本地演示生成中'}[x]||x);const $=x=>document.getElementById(x), esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let layer='';
 function safe(x){return typeof x==='string'&&(x.startsWith('https://')||x.startsWith('demos/'))?esc(x):''}
 function bullet(items){return '<ul>'+(items||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>'}
 function renderTabs(){const tabs=[['','全部'],...Object.entries(LAYERS)];$('tabs').innerHTML=tabs.map(([id,label])=>'<button data-layer="'+id+'" class="'+(layer===id?'active':'')+'">'+label+'</button>').join('');$('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{layer=b.dataset.layer;renderTabs();render()})}
 function render(){const q=$('search').value.trim().toLowerCase(),cat=$('category').value,type=$('demoType').value;const rows=DATA.entries.filter(e=>(!layer||e.layer===layer)&&(!cat||e.category_zh===cat)&&(!q||JSON.stringify(e).toLowerCase().includes(q))&&(!type||e.demos.some(d=>type==='local'?d.path:!d.path)));
 $('result').textContent='显示 '+rows.length+' / '+DATA.entries.length+' 条；这些条目属于不同层级，不相加称为完整视频模板。';
-$('grid').innerHTML=rows.map(e=>{if(!e.demos.length)return '<article class="card"><div class="preview"><p style="color:white">演示生成中</p></div><div class="body"><div class="eyebrow">'+esc(LAYERS[e.layer])+'</div><h3>'+esc(e.label_zh)+'</h3><p>'+esc(e.description_zh)+'</p><span class="chip status">尚未完成真实演示</span></div></article>';const d=e.demos[0],src=safe(d.path||d.url),poster=d.poster_path||'',latest=e.integrations?.[0];return '<article class="card"><div class="preview"><video controls muted playsinline preload="none" '+(poster?'poster="'+safe(poster)+'"':'')+' src="'+src+'" aria-label="'+esc(e.label_zh)+' Demo"></video></div><div class="body"><div class="eyebrow">'+esc(LAYERS[e.layer])+' · '+esc(e.id)+'</div><h3>'+esc(e.label_zh)+'</h3><div class="chips"><span class="chip">'+esc(e.category_zh)+'</span><span class="chip status">'+esc(stateName(e.validation.state))+'</span></div><p>'+esc(e.description_zh)+'</p><p class="small">'+esc(d.description_zh||'')+'</p>'+(latest?'<p class="small">当前本人Demo版本：'+esc(latest.source.version)+' · 本片QA：'+esc(latest.qa.state)+'（仅已解码与抽帧检查）</p>':'')+'<details><summary>适用情况、输入与验证边界</summary><b>适合</b>'+bullet(e.uses_zh)+'<b>需要</b>'+bullet(e.inputs_zh)+'<b>注意</b>'+bullet(e.avoid_zh)+'<p>'+esc(e.validation.scope)+'</p><p>登记基线版本：'+esc(e.version||'见来源')+'<br>许可：'+esc(e.license||'见来源；素材另核')+'<br>可取得状态：'+esc(availabilityName(e.availability)||'按实际环境核对')+'</p>'+(e.variants?.length?'<b>变体（不表示全部实测）</b>'+bullet(e.variants.map(v=>typeof v==='string'?v:((v.label_zh||v.id)+' / '+v.id))):'')+'</details><div class="links"><a href="'+src+'" target="_blank" rel="noopener">打开Demo</a>'+(e.source_url?'<a href="'+esc(e.source_url)+'" target="_blank" rel="noopener">原始来源</a>':'')+'</div>'+(e.demos.length>1?'<p class="small">其他演示：'+e.demos.slice(1).map((x,i)=>'<a target="_blank" rel="noopener" href="'+safe(x.path||x.url)+'">'+esc(x.description_zh||('版本'+(i+2)))+'</a>').join(' · ')+'</p>':'')+integrationInfo(e)+'</div></article>'}).join('')||'<div class="empty">没有匹配项，试试另一个关键词。</div>';
+$('grid').innerHTML=rows.map(e=>{if(!e.demos.length)return '<article class="card"><div class="preview"><p style="color:white">演示生成中</p></div><div class="body"><div class="eyebrow">'+esc(LAYERS[e.layer])+'</div><h3>'+esc(e.label_zh)+'</h3><p>'+esc(e.description_zh)+'</p><span class="chip status">尚未完成真实演示</span></div></article>';const d=e.demos[0],src=safe(d.path||d.url),poster=d.poster_path||'',latest=previewIntegration(e);return '<article class="card"><div class="preview"><video controls muted playsinline preload="none" '+(poster?'poster="'+safe(poster)+'"':'')+' src="'+src+'" aria-label="'+esc(e.label_zh)+' Demo"></video></div><div class="body"><div class="eyebrow">'+esc(LAYERS[e.layer])+' · '+esc(e.id)+'</div><h3>'+esc(e.label_zh)+'</h3><div class="chips"><span class="chip">'+esc(e.category_zh)+'</span><span class="chip status">'+esc(stateName(e.validation.state))+'</span></div><p>'+esc(e.description_zh)+'</p><p class="small">'+esc(d.description_zh||'')+'</p>'+(latest?'<p class="small">当前本人Demo版本：'+esc(latest.source.version)+' · 本片QA：'+esc(latest.qa.state)+'（仅已解码与抽帧检查）</p>':'')+'<details><summary>适用情况、输入与验证边界</summary><b>适合</b>'+bullet(e.uses_zh)+'<b>需要</b>'+bullet(e.inputs_zh)+'<b>注意</b>'+bullet(e.avoid_zh)+'<p>'+esc(e.validation.scope)+'</p><p>登记基线版本：'+esc(e.version||'见来源')+'<br>许可：'+esc(e.license||'见来源；素材另核')+'<br>可取得状态：'+esc(availabilityName(e.availability)||'按实际环境核对')+'</p>'+(e.variants?.length?'<b>变体（不表示全部实测）</b>'+bullet(e.variants.map(v=>typeof v==='string'?v:((v.label_zh||v.id)+' / '+v.id))):'')+'</details><div class="links"><a href="'+src+'" target="_blank" rel="noopener">打开Demo</a>'+(e.source_url?'<a href="'+esc(e.source_url)+'" target="_blank" rel="noopener">原始来源</a>':'')+'</div>'+(e.demos.length>1?'<p class="small">其他演示：'+e.demos.slice(1).map((x,i)=>'<a target="_blank" rel="noopener" href="'+safe(x.path||x.url)+'">'+esc(x.description_zh||('版本'+(i+2)))+'</a>').join(' · ')+'</p>':'')+integrationInfo(e)+'</div></article>'}).join('')||'<div class="empty">没有匹配项，试试另一个关键词。</div>';
 document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>document.querySelectorAll('video').forEach(other=>{if(other!==v)other.pause()})));
 }
 const categories=[...new Set(DATA.entries.map(e=>e.category_zh))].sort((a,b)=>a.localeCompare(b,'zh'));categories.forEach(c=>{let o=document.createElement('option');o.value=c;o.textContent=c;$('category').append(o)});
@@ -288,7 +313,7 @@ def build(root: Path, strict=False):
                 links = ' / '.join('[演示'+str(i+1)+']('+demo_href(d, True)+')' for i,d in enumerate(e['demos']))
                 md.append('| '+escape(e['label_zh']).replace('|','／')+' `'+e['id']+'` | '+e['description_zh'].replace('|','／').replace('\n',' ')+' | '+{'validated_demo':'本机演示已检查','verified':'本机演示已检查','registered':'演示制作中','rendered_verified':'本机演示已检查'}.get(e['validation']['state'],e['validation']['state']).replace('|','／')+' | '+links+' |')
             for e in (x for x in rows if x['category_zh']==category and x.get('integrations')):
-                c=e['integrations'][0]
+                c=preview_integration(e)
                 md += ['- `'+e['id']+'` 登记基线版本：'+e.get('version','见来源')+'；当前本人Demo版本：'+c['source']['version']+'；本片QA：'+c['qa']['state']+'。'+c['qa']['scope']+'（不改变原条目验证范围，不代表用户审美认可）']
             md.append('')
     md += ['## 附加预览', '', '3D书籍等preview只作为效果参考，不计入上方目录条目；可取得情况按官网当前页面核对。', '',

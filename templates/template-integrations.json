@@ -528,6 +528,906 @@
         "audio": "none",
         "poster_path": "demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.jpg"
       }
+    },
+    {
+      "id": "owner-native-20261028-modern-portrait-2.7.18-alpha.4-v1",
+      "entry_id": "mg-style-314486",
+      "project_id": "owner-native-demo-20261028",
+      "integrated_at": "2026-10-28T23:35:20.302029+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+        "package_id": "template-01-integrated-portrait",
+        "version": "2.7.18-alpha.4",
+        "sha256": "5ab1de647c77f9c86567ce78954b0cbe23926818f5886f5620cf3a6c7206a658",
+        "official": true,
+        "verification_note": "实际官方个人包整包SHA256与公开guide/currentTemplate版本相互核对；经固定哈希的官方helper执行公开native合同，未读取保护内核。本包竖屏输出。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "public_schema_sha256": "564aafc8f6f25266372ec96adf91e9fa5cdfc0c853c55f6f3d501a901e8a2f10"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py运行native流程：check-params→plan→人工核对公开计划→prepare→preview→render。FFmpeg随后仅叠加低透明品牌Logo、缩小及降为30fps，并移除Demo音轨；未改变原生动画时间或再次加速本人。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包公开guide.json、native.params.schema.json、NATIVE-INPUTS.md、NARRATION-MAP.md及capacity-matrix.json",
+        "inputs_zh": [
+          "本人真实口播与同源原声，源4.75—26.95秒相对原片绝对1.2倍一次，形成18.5秒标准输入；三风格使用同一内容与原始词时。",
+          "词时来自已有原片转写并按同一时钟换算；“一人公司”“景深”沿用用户已确认术语，不按字数伪造时间，不使用AI配音。",
+          "brief.schema=adu-auto-brief/1；layout=portrait；narrationDuration=18.5；allowedStyles=[01-D]；presenterLabel=Isaac。",
+          "正文讲AI短视频质量不错但有瑕疵、一人公司字样缺失且剧情应保留、接着尝试景深功能；只使用已讲到的主张，不补写效果承诺。",
+          "本包竖屏输出。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。"
+        ],
+        "actual_parameters": {
+          "workflow": "native",
+          "brief_schema": "adu-auto-brief/1",
+          "layout": "portrait",
+          "ratio": "9:16",
+          "allowed_styles": [
+            "01-D"
+          ],
+          "narration_duration_seconds": 18.5,
+          "native_fps": 60,
+          "native_frames": 1110,
+          "scenes": [
+            {
+              "scene_id": "01-D:basic-keyword",
+              "start_frame": 0,
+              "end_frame": 570,
+              "slots": {
+                "heading": "AI视频有瑕疵",
+                "body-0": "用AI生成短视频，质量不错也会有一点瑕疵"
+              }
+            },
+            {
+              "scene_id": "01-D:basic-summary",
+              "start_frame": 570,
+              "end_frame": 1110,
+              "slots": {
+                "heading": "今天遇到的问题",
+                "body-0": "一人公司字样不见，剧情却不错；这次尝试景深功能"
+              }
+            }
+          ],
+          "caption_evidence_units": 11
+        },
+        "demo_postprocess": {
+          "output_size": [
+            720,
+            1280
+          ],
+          "fps": 30,
+          "duration_seconds": 18.5,
+          "frames": 555,
+          "audio": "none",
+          "playback_speed_from_native": 1.0,
+          "brand_logo_opacity": 0.12,
+          "official_signature_preserved": true
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权与2026-10-28明确请求“本人Demo”允许将已检查的本人短静音案例积累到同一私人Git演示库；仅含本人画面、对应中文内容及官方包渲染。原片、源人像、个人包、Key、保护代码与客户资料不入Git；不扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "continuous_listening": false,
+        "owner_artistic_acceptance": false,
+        "scope": "现代图文 01-D 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。",
+        "native_preview_sample_times_seconds": [
+          0.3,
+          1.0,
+          2.0,
+          4.0,
+          7.5,
+          9.4,
+          9.8,
+          11.65,
+          12.25,
+          15.8,
+          18.3
+        ],
+        "encoded_poster_sample_time_seconds": 4.0,
+        "privacy_review": "输入是本人独立口播及自有背景，不含Loom客户私信；已查看的原生预览及静音成品海报未见电话、email、地址或客户画面。抽样不等于逐帧隐私验收。",
+        "timeline_usage": "独立模板对比Demo；未放回、替换或修改AIVD正式ChatCut工程与已认可成片，不改变默认剪辑风格。",
+        "known_limitations_zh": [
+          "原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。",
+          "本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。"
+        ]
+      },
+      "actual_variants": [
+        "01-D:basic-keyword",
+        "01-D:basic-summary"
+      ],
+      "production_mapping": {
+        "source_seconds": [
+          4.75,
+          26.95
+        ],
+        "absolute_source_speed": 1.2,
+        "native_frames": [
+          0,
+          1110
+        ],
+        "native_fps": 60,
+        "curated_frames": [
+          0,
+          555
+        ],
+        "curated_fps": 30,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true,
+        "source_narration_sha256": "afb7ad3bf8ad9c4b5d452f6442ab41f49dd0677489c3baf8a17d672493309458"
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/owner-native-20261028/modern/portrait.mp4",
+        "description_zh": "现代图文 01-D 本人Demo · 9:16 · 18.5秒静音。本包竖屏输出。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。",
+        "sha256": "978812bd02fe6272a981699a82c70b5ebf35543c4bdba099851d674926a0ed53",
+        "bytes": 776394,
+        "variant_id": "01-D",
+        "ratio": "9:16",
+        "width": 720,
+        "height": 1280,
+        "duration_seconds": 18.5,
+        "fps": 30,
+        "frames": 555,
+        "audio": "none",
+        "poster_path": "demos/integrated/owner-native-20261028/modern/portrait.jpg"
+      }
+    },
+    {
+      "id": "owner-native-20261028-modern-landscape-2.7.18-alpha.4-v1",
+      "entry_id": "mg-style-314486",
+      "project_id": "owner-native-demo-20261028",
+      "integrated_at": "2026-10-28T23:35:20.324055+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-01-integrated-portrait",
+        "package_id": "template-01-integrated-portrait",
+        "version": "2.7.18-alpha.4",
+        "sha256": "5ab1de647c77f9c86567ce78954b0cbe23926818f5886f5620cf3a6c7206a658",
+        "official": true,
+        "verification_note": "实际官方个人包整包SHA256与公开guide/currentTemplate版本相互核对；经固定哈希的官方helper执行公开native合同，未读取保护内核。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "public_schema_sha256": "564aafc8f6f25266372ec96adf91e9fa5cdfc0c853c55f6f3d501a901e8a2f10"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py运行native流程：check-params→plan→人工核对公开计划→prepare→preview→render。FFmpeg随后仅叠加低透明品牌Logo、缩小及降为30fps，并移除Demo音轨；未改变原生动画时间或再次加速本人。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包公开guide.json、native.params.schema.json、NATIVE-INPUTS.md、NARRATION-MAP.md及capacity-matrix.json",
+        "inputs_zh": [
+          "本人真实口播与同源原声，源4.75—26.95秒相对原片绝对1.2倍一次，形成18.5秒标准输入；三风格使用同一内容与原始词时。",
+          "词时来自已有原片转写并按同一时钟换算；“一人公司”“景深”沿用用户已确认术语，不按字数伪造时间，不使用AI配音。",
+          "brief.schema=adu-auto-brief/1；layout=landscape；narrationDuration=18.5；allowedStyles=[01-D]；presenterLabel=Isaac。",
+          "正文讲AI短视频质量不错但有瑕疵、一人公司字样缺失且剧情应保留、接着尝试景深功能；只使用已讲到的主张，不补写效果承诺。",
+          "同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。"
+        ],
+        "actual_parameters": {
+          "workflow": "native",
+          "brief_schema": "adu-auto-brief/1",
+          "layout": "landscape",
+          "ratio": "16:9",
+          "allowed_styles": [
+            "01-D"
+          ],
+          "narration_duration_seconds": 18.5,
+          "native_fps": 60,
+          "native_frames": 1110,
+          "scenes": [
+            {
+              "scene_id": "01-D:basic-keyword",
+              "start_frame": 0,
+              "end_frame": 570,
+              "slots": {
+                "heading": "AI视频有瑕疵",
+                "body-0": "用AI生成短视频，质量不错也会有一点瑕疵"
+              }
+            },
+            {
+              "scene_id": "01-D:basic-summary",
+              "start_frame": 570,
+              "end_frame": 1110,
+              "slots": {
+                "heading": "今天遇到的问题",
+                "body-0": "一人公司字样不见，剧情却不错；这次尝试景深功能"
+              }
+            }
+          ],
+          "caption_evidence_units": 11
+        },
+        "demo_postprocess": {
+          "output_size": [
+            1280,
+            720
+          ],
+          "fps": 30,
+          "duration_seconds": 18.5,
+          "frames": 555,
+          "audio": "none",
+          "playback_speed_from_native": 1.0,
+          "brand_logo_opacity": 0.12,
+          "official_signature_preserved": true
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权与2026-10-28明确请求“本人Demo”允许将已检查的本人短静音案例积累到同一私人Git演示库；仅含本人画面、对应中文内容及官方包渲染。原片、源人像、个人包、Key、保护代码与客户资料不入Git；不扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "continuous_listening": false,
+        "owner_artistic_acceptance": false,
+        "scope": "现代图文 01-D 16:9 本人独立小样：1280×720、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。",
+        "native_preview_sample_times_seconds": [
+          0.3,
+          1.0,
+          2.0,
+          4.0,
+          7.5,
+          9.4,
+          9.8,
+          11.65,
+          12.25,
+          15.8,
+          18.3
+        ],
+        "encoded_poster_sample_time_seconds": 4.0,
+        "privacy_review": "输入是本人独立口播及自有背景，不含Loom客户私信；已查看的原生预览及静音成品海报未见电话、email、地址或客户画面。抽样不等于逐帧隐私验收。",
+        "timeline_usage": "独立模板对比Demo；未放回、替换或修改AIVD正式ChatCut工程与已认可成片，不改变默认剪辑风格。",
+        "known_limitations_zh": [
+          "原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。",
+          "本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。"
+        ]
+      },
+      "actual_variants": [
+        "01-D:basic-keyword",
+        "01-D:basic-summary"
+      ],
+      "production_mapping": {
+        "source_seconds": [
+          4.75,
+          26.95
+        ],
+        "absolute_source_speed": 1.2,
+        "native_frames": [
+          0,
+          1110
+        ],
+        "native_fps": 60,
+        "curated_frames": [
+          0,
+          555
+        ],
+        "curated_fps": 30,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true,
+        "source_narration_sha256": "afb7ad3bf8ad9c4b5d452f6442ab41f49dd0677489c3baf8a17d672493309458"
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/owner-native-20261028/modern/landscape.mp4",
+        "description_zh": "现代图文 01-D 本人Demo · 16:9 · 18.5秒静音。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。",
+        "sha256": "69c9a5a0791b3be62c9fbaa9fb5c547511a68cb3f4ed0c75d19d1a302973df17",
+        "bytes": 1461234,
+        "variant_id": "01-D",
+        "ratio": "16:9",
+        "width": 1280,
+        "height": 720,
+        "duration_seconds": 18.5,
+        "fps": 30,
+        "frames": 555,
+        "audio": "none",
+        "poster_path": "demos/integrated/owner-native-20261028/modern/landscape.jpg"
+      }
+    },
+    {
+      "id": "owner-native-20261028-paper-portrait-2.7.18-alpha.5-v1",
+      "entry_id": "mg-style-295450",
+      "project_id": "owner-native-demo-20261028",
+      "integrated_at": "2026-10-28T23:35:20.345735+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-02-expanded-portrait",
+        "package_id": "template-02-expanded-portrait",
+        "version": "2.7.18-alpha.5",
+        "sha256": "a92249c05012567ac98a2d6b23bee58d5f19003ca83a9e441253ff0ef0b9b585",
+        "official": true,
+        "verification_note": "实际官方个人包整包SHA256与公开guide/currentTemplate版本相互核对；经固定哈希的官方helper执行公开native合同，未读取保护内核。本包竖屏输出。本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "public_schema_sha256": "06c63919c4e3d6faffbd8d18bc96599feb62a267e576db823d245f454672c158"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py运行native流程：check-params→plan→人工核对公开计划→prepare→preview→render。FFmpeg随后仅叠加低透明品牌Logo、缩小及降为30fps，并移除Demo音轨；未改变原生动画时间或再次加速本人。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包公开guide.json、native.params.schema.json、NATIVE-INPUTS.md、NARRATION-MAP.md及capacity-matrix.json",
+        "inputs_zh": [
+          "本人真实口播与同源原声，源4.75—26.95秒相对原片绝对1.2倍一次，形成18.5秒标准输入；三风格使用同一内容与原始词时。",
+          "词时来自已有原片转写并按同一时钟换算；“一人公司”“景深”沿用用户已确认术语，不按字数伪造时间，不使用AI配音。",
+          "brief.schema=adu-auto-brief/1；layout=portrait；narrationDuration=18.5；allowedStyles=[02-X]；presenterLabel=Isaac。",
+          "正文讲AI短视频质量不错但有瑕疵、一人公司字样缺失且剧情应保留、接着尝试景深功能；只使用已讲到的主张，不补写效果承诺。",
+          "本包竖屏输出。本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。"
+        ],
+        "actual_parameters": {
+          "workflow": "native",
+          "brief_schema": "adu-auto-brief/1",
+          "layout": "portrait",
+          "ratio": "9:16",
+          "allowed_styles": [
+            "02-X"
+          ],
+          "narration_duration_seconds": 18.5,
+          "native_fps": 60,
+          "native_frames": 1110,
+          "scenes": [
+            {
+              "scene_id": "02-X:fold-pin-opinion",
+              "start_frame": 0,
+              "end_frame": 570,
+              "slots": {
+                "title": "AI视频细节",
+                "claim": "用AI生成短视频",
+                "condition": "会遇到一点瑕疵"
+              }
+            },
+            {
+              "scene_id": "02-X:glyph-thread-keyword",
+              "start_frame": 570,
+              "end_frame": 1110,
+              "slots": {
+                "title": "今天遇到的问题",
+                "keyword": "我的公司",
+                "explanation": "一人公司"
+              }
+            }
+          ],
+          "caption_evidence_units": 11
+        },
+        "demo_postprocess": {
+          "output_size": [
+            720,
+            1280
+          ],
+          "fps": 30,
+          "duration_seconds": 18.5,
+          "frames": 555,
+          "audio": "none",
+          "playback_speed_from_native": 1.0,
+          "brand_logo_opacity": 0.12,
+          "official_signature_preserved": true
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权与2026-10-28明确请求“本人Demo”允许将已检查的本人短静音案例积累到同一私人Git演示库；仅含本人画面、对应中文内容及官方包渲染。原片、源人像、个人包、Key、保护代码与客户资料不入Git；不扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "continuous_listening": false,
+        "owner_artistic_acceptance": false,
+        "scope": "纸面透视 02-X 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。",
+        "native_preview_sample_times_seconds": [
+          0.3,
+          1.0,
+          2.0,
+          4.0,
+          7.5,
+          9.4,
+          9.8,
+          11.65,
+          12.25,
+          15.8,
+          18.3
+        ],
+        "encoded_poster_sample_time_seconds": 4.0,
+        "privacy_review": "输入是本人独立口播及自有背景，不含Loom客户私信；已查看的原生预览及静音成品海报未见电话、email、地址或客户画面。抽样不等于逐帧隐私验收。",
+        "timeline_usage": "独立模板对比Demo；未放回、替换或修改AIVD正式ChatCut工程与已认可成片，不改变默认剪辑风格。",
+        "known_limitations_zh": [
+          "原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。",
+          "本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。"
+        ]
+      },
+      "actual_variants": [
+        "02-X:fold-pin-opinion",
+        "02-X:glyph-thread-keyword"
+      ],
+      "production_mapping": {
+        "source_seconds": [
+          4.75,
+          26.95
+        ],
+        "absolute_source_speed": 1.2,
+        "native_frames": [
+          0,
+          1110
+        ],
+        "native_fps": 60,
+        "curated_frames": [
+          0,
+          555
+        ],
+        "curated_fps": 30,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true,
+        "source_narration_sha256": "afb7ad3bf8ad9c4b5d452f6442ab41f49dd0677489c3baf8a17d672493309458"
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/owner-native-20261028/paper/portrait.mp4",
+        "description_zh": "纸面透视 02-X 本人Demo · 9:16 · 18.5秒静音。本包竖屏输出。本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。",
+        "sha256": "4e08e547e5cddac3ee0c021efec5eb32021d784cfe9eaa1c793d66dd74612c2a",
+        "bytes": 674106,
+        "variant_id": "02-X",
+        "ratio": "9:16",
+        "width": 720,
+        "height": 1280,
+        "duration_seconds": 18.5,
+        "fps": 30,
+        "frames": 555,
+        "audio": "none",
+        "poster_path": "demos/integrated/owner-native-20261028/paper/portrait.jpg"
+      }
+    },
+    {
+      "id": "owner-native-20261028-paper-landscape-2.7.18-alpha.5-v1",
+      "entry_id": "mg-style-295450",
+      "project_id": "owner-native-demo-20261028",
+      "integrated_at": "2026-10-28T23:35:20.366746+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-02-expanded-portrait",
+        "package_id": "template-02-expanded-portrait",
+        "version": "2.7.18-alpha.5",
+        "sha256": "a92249c05012567ac98a2d6b23bee58d5f19003ca83a9e441253ff0ef0b9b585",
+        "official": true,
+        "verification_note": "实际官方个人包整包SHA256与公开guide/currentTemplate版本相互核对；经固定哈希的官方helper执行公开native合同，未读取保护内核。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "public_schema_sha256": "06c63919c4e3d6faffbd8d18bc96599feb62a267e576db823d245f454672c158"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py运行native流程：check-params→plan→人工核对公开计划→prepare→preview→render。FFmpeg随后仅叠加低透明品牌Logo、缩小及降为30fps，并移除Demo音轨；未改变原生动画时间或再次加速本人。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包公开guide.json、native.params.schema.json、NATIVE-INPUTS.md、NARRATION-MAP.md及capacity-matrix.json",
+        "inputs_zh": [
+          "本人真实口播与同源原声，源4.75—26.95秒相对原片绝对1.2倍一次，形成18.5秒标准输入；三风格使用同一内容与原始词时。",
+          "词时来自已有原片转写并按同一时钟换算；“一人公司”“景深”沿用用户已确认术语，不按字数伪造时间，不使用AI配音。",
+          "brief.schema=adu-auto-brief/1；layout=landscape；narrationDuration=18.5；allowedStyles=[02-X]；presenterLabel=Isaac。",
+          "正文讲AI短视频质量不错但有瑕疵、一人公司字样缺失且剧情应保留、接着尝试景深功能；只使用已讲到的主张，不补写效果承诺。",
+          "同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。"
+        ],
+        "actual_parameters": {
+          "workflow": "native",
+          "brief_schema": "adu-auto-brief/1",
+          "layout": "landscape",
+          "ratio": "16:9",
+          "allowed_styles": [
+            "02-X"
+          ],
+          "narration_duration_seconds": 18.5,
+          "native_fps": 60,
+          "native_frames": 1110,
+          "scenes": [
+            {
+              "scene_id": "02-X:fold-pin-opinion",
+              "start_frame": 0,
+              "end_frame": 570,
+              "slots": {
+                "title": "AI视频细节",
+                "claim": "用AI生成短视频",
+                "condition": "会遇到一点瑕疵"
+              }
+            },
+            {
+              "scene_id": "02-X:glyph-thread-keyword",
+              "start_frame": 570,
+              "end_frame": 1110,
+              "slots": {
+                "title": "今天遇到的问题",
+                "keyword": "我的公司",
+                "explanation": "一人公司"
+              }
+            }
+          ],
+          "caption_evidence_units": 11
+        },
+        "demo_postprocess": {
+          "output_size": [
+            1280,
+            720
+          ],
+          "fps": 30,
+          "duration_seconds": 18.5,
+          "frames": 555,
+          "audio": "none",
+          "playback_speed_from_native": 1.0,
+          "brand_logo_opacity": 0.12,
+          "official_signature_preserved": true
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权与2026-10-28明确请求“本人Demo”允许将已检查的本人短静音案例积累到同一私人Git演示库；仅含本人画面、对应中文内容及官方包渲染。原片、源人像、个人包、Key、保护代码与客户资料不入Git；不扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "continuous_listening": false,
+        "owner_artistic_acceptance": false,
+        "scope": "纸面透视 02-X 16:9 本人独立小样：1280×720、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。",
+        "native_preview_sample_times_seconds": [
+          0.3,
+          1.0,
+          2.0,
+          4.0,
+          7.5,
+          9.4,
+          9.8,
+          11.65,
+          12.25,
+          15.8,
+          18.3
+        ],
+        "encoded_poster_sample_time_seconds": 4.0,
+        "privacy_review": "输入是本人独立口播及自有背景，不含Loom客户私信；已查看的原生预览及静音成品海报未见电话、email、地址或客户画面。抽样不等于逐帧隐私验收。",
+        "timeline_usage": "独立模板对比Demo；未放回、替换或修改AIVD正式ChatCut工程与已认可成片，不改变默认剪辑风格。",
+        "known_limitations_zh": [
+          "原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。",
+          "本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。"
+        ]
+      },
+      "actual_variants": [
+        "02-X:fold-pin-opinion",
+        "02-X:glyph-thread-keyword"
+      ],
+      "production_mapping": {
+        "source_seconds": [
+          4.75,
+          26.95
+        ],
+        "absolute_source_speed": 1.2,
+        "native_frames": [
+          0,
+          1110
+        ],
+        "native_fps": 60,
+        "curated_frames": [
+          0,
+          555
+        ],
+        "curated_fps": 30,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true,
+        "source_narration_sha256": "afb7ad3bf8ad9c4b5d452f6442ab41f49dd0677489c3baf8a17d672493309458"
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/owner-native-20261028/paper/landscape.mp4",
+        "description_zh": "纸面透视 02-X 本人Demo · 16:9 · 18.5秒静音。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。",
+        "sha256": "a7238e1dfb6471ccc78903c85d6043145f2bb7216e81943b3edcdabac9523208",
+        "bytes": 770984,
+        "variant_id": "02-X",
+        "ratio": "16:9",
+        "width": 1280,
+        "height": 720,
+        "duration_seconds": 18.5,
+        "fps": 30,
+        "frames": 555,
+        "audio": "none",
+        "poster_path": "demos/integrated/owner-native-20261028/paper/landscape.jpg"
+      }
+    },
+    {
+      "id": "owner-native-20261028-dark-portrait-2.7.18-alpha.4-v1",
+      "entry_id": "mg-style-569615",
+      "project_id": "owner-native-demo-20261028",
+      "integrated_at": "2026-10-28T23:35:20.388985+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-03-native-portrait",
+        "package_id": "template-03-native-portrait",
+        "version": "2.7.18-alpha.4",
+        "sha256": "fb9c3b9e32aca5fe44684573d71ffda4bb4b4ed822b2a3cf854013dd25b77747",
+        "official": true,
+        "verification_note": "实际官方个人包整包SHA256与公开guide/currentTemplate版本相互核对；经固定哈希的官方helper执行公开native合同，未读取保护内核。本包竖屏输出。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "public_schema_sha256": "1baf052d633be65ed1cbc73e117de0bddb5a3c98467116f7443a5684344d1c93"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py运行native流程：check-params→plan→人工核对公开计划→prepare→preview→render。FFmpeg随后仅叠加低透明品牌Logo、缩小及降为30fps，并移除Demo音轨；未改变原生动画时间或再次加速本人。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包公开guide.json、native.params.schema.json、NATIVE-INPUTS.md、NARRATION-MAP.md及capacity-matrix.json",
+        "inputs_zh": [
+          "本人真实口播与同源原声，源4.75—26.95秒相对原片绝对1.2倍一次，形成18.5秒标准输入；三风格使用同一内容与原始词时。",
+          "词时来自已有原片转写并按同一时钟换算；“一人公司”“景深”沿用用户已确认术语，不按字数伪造时间，不使用AI配音。",
+          "brief.schema=adu-auto-brief/1；layout=portrait；narrationDuration=18.5；allowedStyles=[03-X]；presenterLabel=Isaac。",
+          "正文讲AI短视频质量不错但有瑕疵、一人公司字样缺失且剧情应保留、接着尝试景深功能；只使用已讲到的主张，不补写效果承诺。",
+          "本包竖屏输出。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。"
+        ],
+        "actual_parameters": {
+          "workflow": "native",
+          "brief_schema": "adu-auto-brief/1",
+          "layout": "portrait",
+          "ratio": "9:16",
+          "allowed_styles": [
+            "03-X"
+          ],
+          "narration_duration_seconds": 18.5,
+          "native_fps": 60,
+          "native_frames": 1110,
+          "scenes": [
+            {
+              "scene_id": "03-X:universal-points",
+              "start_frame": 0,
+              "end_frame": 570,
+              "slots": {
+                "title": "AI视频有瑕疵",
+                "points-0": "画面质量很不错",
+                "points-1": "只想改掉一点瑕疵"
+              }
+            },
+            {
+              "scene_id": "03-X:universal-summary",
+              "start_frame": 570,
+              "end_frame": 1110,
+              "slots": {
+                "title": "一人公司",
+                "body": "字样不见了，剧情却不错；这次尝试景深功能。"
+              }
+            }
+          ],
+          "caption_evidence_units": 10
+        },
+        "demo_postprocess": {
+          "output_size": [
+            720,
+            1280
+          ],
+          "fps": 30,
+          "duration_seconds": 18.5,
+          "frames": 555,
+          "audio": "none",
+          "playback_speed_from_native": 1.0,
+          "brand_logo_opacity": 0.12,
+          "official_signature_preserved": true
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权与2026-10-28明确请求“本人Demo”允许将已检查的本人短静音案例积累到同一私人Git演示库；仅含本人画面、对应中文内容及官方包渲染。原片、源人像、个人包、Key、保护代码与客户资料不入Git；不扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "continuous_listening": false,
+        "owner_artistic_acceptance": false,
+        "scope": "深色立体 03-X 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。约11.65—12.25秒官方圆窗局部裁到头发/上额，眼鼻口仍可见；公开native合同未提供可核实的人脸中心或裁切参数，因此保留原布局，审美待用户确认。",
+        "native_preview_sample_times_seconds": [
+          0.3,
+          1.0,
+          2.0,
+          4.0,
+          7.5,
+          9.4,
+          9.8,
+          11.65,
+          12.25,
+          15.8,
+          18.3
+        ],
+        "encoded_poster_sample_time_seconds": 4.0,
+        "privacy_review": "输入是本人独立口播及自有背景，不含Loom客户私信；已查看的原生预览及静音成品海报未见电话、email、地址或客户画面。抽样不等于逐帧隐私验收。",
+        "timeline_usage": "独立模板对比Demo；未放回、替换或修改AIVD正式ChatCut工程与已认可成片，不改变默认剪辑风格。",
+        "known_limitations_zh": [
+          "约11.65—12.25秒官方圆窗局部裁到头发/上额，眼鼻口仍可见；公开native合同未提供可核实的人脸中心或裁切参数，因此保留原布局，审美待用户确认。",
+          "本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。"
+        ]
+      },
+      "actual_variants": [
+        "03-X:universal-points",
+        "03-X:universal-summary"
+      ],
+      "production_mapping": {
+        "source_seconds": [
+          4.75,
+          26.95
+        ],
+        "absolute_source_speed": 1.2,
+        "native_frames": [
+          0,
+          1110
+        ],
+        "native_fps": 60,
+        "curated_frames": [
+          0,
+          555
+        ],
+        "curated_fps": 30,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true,
+        "source_narration_sha256": "afb7ad3bf8ad9c4b5d452f6442ab41f49dd0677489c3baf8a17d672493309458"
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/owner-native-20261028/dark/portrait.mp4",
+        "description_zh": "深色立体 03-X 本人Demo · 9:16 · 18.5秒静音。本包竖屏输出。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。",
+        "sha256": "d7e3da54bad2caa2eea5e436a278d9b516aa078ed5d67a36f05797fc424b6fea",
+        "bytes": 467705,
+        "variant_id": "03-X",
+        "ratio": "9:16",
+        "width": 720,
+        "height": 1280,
+        "duration_seconds": 18.5,
+        "fps": 30,
+        "frames": 555,
+        "audio": "none",
+        "poster_path": "demos/integrated/owner-native-20261028/dark/portrait.jpg"
+      }
+    },
+    {
+      "id": "owner-native-20261028-dark-landscape-2.7.18-alpha.4-v1",
+      "entry_id": "mg-style-569615",
+      "project_id": "owner-native-demo-20261028",
+      "integrated_at": "2026-10-28T23:35:20.411518+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-03-native-portrait",
+        "package_id": "template-03-native-portrait",
+        "version": "2.7.18-alpha.4",
+        "sha256": "fb9c3b9e32aca5fe44684573d71ffda4bb4b4ed822b2a3cf854013dd25b77747",
+        "official": true,
+        "verification_note": "实际官方个人包整包SHA256与公开guide/currentTemplate版本相互核对；经固定哈希的官方helper执行公开native合同，未读取保护内核。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "public_schema_sha256": "1baf052d633be65ed1cbc73e117de0bddb5a3c98467116f7443a5684344d1c93"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py运行native流程：check-params→plan→人工核对公开计划→prepare→preview→render。FFmpeg随后仅叠加低透明品牌Logo、缩小及降为30fps，并移除Demo音轨；未改变原生动画时间或再次加速本人。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "原包公开guide.json、native.params.schema.json、NATIVE-INPUTS.md、NARRATION-MAP.md及capacity-matrix.json",
+        "inputs_zh": [
+          "本人真实口播与同源原声，源4.75—26.95秒相对原片绝对1.2倍一次，形成18.5秒标准输入；三风格使用同一内容与原始词时。",
+          "词时来自已有原片转写并按同一时钟换算；“一人公司”“景深”沿用用户已确认术语，不按字数伪造时间，不使用AI配音。",
+          "brief.schema=adu-auto-brief/1；layout=landscape；narrationDuration=18.5；allowedStyles=[03-X]；presenterLabel=Isaac。",
+          "正文讲AI短视频质量不错但有瑕疵、一人公司字样缺失且剧情应保留、接着尝试景深功能；只使用已讲到的主张，不补写效果承诺。",
+          "同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。"
+        ],
+        "actual_parameters": {
+          "workflow": "native",
+          "brief_schema": "adu-auto-brief/1",
+          "layout": "landscape",
+          "ratio": "16:9",
+          "allowed_styles": [
+            "03-X"
+          ],
+          "narration_duration_seconds": 18.5,
+          "native_fps": 60,
+          "native_frames": 1110,
+          "scenes": [
+            {
+              "scene_id": "03-X:universal-points",
+              "start_frame": 0,
+              "end_frame": 570,
+              "slots": {
+                "title": "AI视频有瑕疵",
+                "points-0": "画面质量很不错",
+                "points-1": "只想改掉一点瑕疵"
+              }
+            },
+            {
+              "scene_id": "03-X:universal-summary",
+              "start_frame": 570,
+              "end_frame": 1110,
+              "slots": {
+                "title": "一人公司",
+                "body": "字样不见了，剧情却不错；这次尝试景深功能。"
+              }
+            }
+          ],
+          "caption_evidence_units": 10
+        },
+        "demo_postprocess": {
+          "output_size": [
+            1280,
+            720
+          ],
+          "fps": 30,
+          "duration_seconds": 18.5,
+          "frames": 555,
+          "audio": "none",
+          "playback_speed_from_native": 1.0,
+          "brand_logo_opacity": 0.12,
+          "official_signature_preserved": true
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权与2026-10-28明确请求“本人Demo”允许将已检查的本人短静音案例积累到同一私人Git演示库；仅含本人画面、对应中文内容及官方包渲染。原片、源人像、个人包、Key、保护代码与客户资料不入Git；不扩大为公开再分发许可。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "continuous_listening": false,
+        "owner_artistic_acceptance": false,
+        "scope": "深色立体 03-X 16:9 本人独立小样：1280×720、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。约11.65—12.25秒官方圆窗局部裁到头发/上额，眼鼻口仍可见；公开native合同未提供可核实的人脸中心或裁切参数，因此保留原布局，审美待用户确认。",
+        "native_preview_sample_times_seconds": [
+          0.3,
+          1.0,
+          2.0,
+          4.0,
+          7.5,
+          9.4,
+          9.8,
+          11.65,
+          12.25,
+          15.8,
+          18.3
+        ],
+        "encoded_poster_sample_time_seconds": 4.0,
+        "privacy_review": "输入是本人独立口播及自有背景，不含Loom客户私信；已查看的原生预览及静音成品海报未见电话、email、地址或客户画面。抽样不等于逐帧隐私验收。",
+        "timeline_usage": "独立模板对比Demo；未放回、替换或修改AIVD正式ChatCut工程与已认可成片，不改变默认剪辑风格。",
+        "known_limitations_zh": [
+          "约11.65—12.25秒官方圆窗局部裁到头发/上额，眼鼻口仍可见；公开native合同未提供可核实的人脸中心或裁切参数，因此保留原布局，审美待用户确认。",
+          "本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。"
+        ]
+      },
+      "actual_variants": [
+        "03-X:universal-points",
+        "03-X:universal-summary"
+      ],
+      "production_mapping": {
+        "source_seconds": [
+          4.75,
+          26.95
+        ],
+        "absolute_source_speed": 1.2,
+        "native_frames": [
+          0,
+          1110
+        ],
+        "native_fps": 60,
+        "curated_frames": [
+          0,
+          555
+        ],
+        "curated_fps": 30,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true,
+        "source_narration_sha256": "afb7ad3bf8ad9c4b5d452f6442ab41f49dd0677489c3baf8a17d672493309458"
+      },
+      "demo": {
+        "kind": "own",
+        "path": "demos/integrated/owner-native-20261028/dark/landscape.mp4",
+        "description_zh": "深色立体 03-X 本人Demo · 16:9 · 18.5秒静音。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。",
+        "sha256": "11c47d9d793ff74e53df86ab2fe98aacfa5e1c7791af9095c31c45cca6cd49a9",
+        "bytes": 473415,
+        "variant_id": "03-X",
+        "ratio": "16:9",
+        "width": 1280,
+        "height": 720,
+        "duration_seconds": 18.5,
+        "fps": 30,
+        "frames": 555,
+        "audio": "none",
+        "poster_path": "demos/integrated/owner-native-20261028/dark/landscape.jpg"
+      }
     }
   ]
 }

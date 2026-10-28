@@ -10,7 +10,7 @@
 | 官网控件 | 70 | 原包基线70项/210变体冻结，新接入另记版本；不代表所有变体实测 |
 | 代码库注册项 | 55 | 基线55注册项/52实现基础，新接入按来源区分 |
 | 真人特效分支 | 19 | 基线19分支；不是完整剪辑系统 |
-| 本片接入记录 | 4 | 版本与本人Demo记录，不加入上方模板条目总数 |
+| 本片接入记录 | 10 | 版本与本人Demo记录，不加入上方模板条目总数 |
 
 ## 浏览方式
 
@@ -50,12 +50,12 @@ Set-Location "C:\Codex Workspace\talking-head-editor"
 
 | 名称 | 用途 | 当前验证 | Demo |
 |---|---|---|---|
-| 现代图文 · 口播讲解 · 竖屏 `mg-style-314486` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。 | 局部实测 | [演示1](../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4) / [演示2](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4) |
+| 现代图文 · 口播讲解 · 竖屏 `mg-style-314486` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。 | 局部实测 | [演示1](../docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.mp4) / [演示2](../docs/template-gallery/demos/integrated/owner-native-20261028/modern/landscape.mp4) / [演示3](../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4) / [演示4](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4) |
 | 现代图文 · 口播讲解 `mg-style-336980` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4) |
 | 纸面透视 · 口播讲解 `mg-style-358192` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4) |
-| 纸面透视 · 口播讲解 · 竖屏 `mg-style-295450` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4) |
+| 纸面透视 · 口播讲解 · 竖屏 `mg-style-295450` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。 | 官方Demo可看 | [演示1](../docs/template-gallery/demos/integrated/owner-native-20261028/paper/portrait.mp4) / [演示2](../docs/template-gallery/demos/integrated/owner-native-20261028/paper/landscape.mp4) / [演示3](https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4) |
 | 深色立体 · 多屏展陈 `mg-style-304634` | 用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/609/draft-zh-a33d6dc67131.mp4) |
-| 深色立体 · 多屏展陈 · 竖屏 `mg-style-569615` | 用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4) |
+| 深色立体 · 多屏展陈 · 竖屏 `mg-style-569615` | 用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。 | 官方Demo可看 | [演示1](../docs/template-gallery/demos/integrated/owner-native-20261028/dark/portrait.mp4) / [演示2](../docs/template-gallery/demos/integrated/owner-native-20261028/dark/landscape.mp4) / [演示3](https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4) |
 | 科技控制台 · 口播讲解 `mg-style-553346` | 用科技控制台、紫色玻璃质感与动态信息组件配合口播，适合技术与数据说明。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/611/2.5.7-zh-96b144413879.mp4) |
 | 科技控制台 · 口播讲解 · 竖屏 `mg-style-738182` | 用科技控制台、紫色玻璃质感与动态信息组件配合口播，适合技术与数据说明。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/612/2.5.7-zh-a93efdfb29ba.mp4) |
 | 鲜色角色 · 叙事讲解 `mg-style-960723` | 用鲜明配色、角色素材与叙事动效配合口播，适合故事、观点和情境解释。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/613/draft-zh-9454c905098e.mp4) |
@@ -71,6 +71,9 @@ Set-Location "C:\Codex Workspace\talking-head-editor"
 | 字符剧场 `mg-style-148294` | 字符角色、作品墙与剧场式动画。内测版，新文案适配仍在完善。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/897/draft-zh-1bc9e79516df.mp4) |
 | 卡通讲解风 `mg-style-875206` | 手绘卡通讲解、步骤演示与原生转场。内测版，新文案适配仍在完善。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/898/draft-zh-07d37803544c.mp4) |
 | 像素海洋 `mg-style-966597` | 像素海浪、水位上涨与过关式动画。内测版，新文案适配仍在完善。 | 官方Demo可看 | [演示1](https://media.openaicut.com/previews/899/draft-zh-e97c782669c1.mp4) |
+- `mg-style-314486` 登记基线版本：2.7.17-alpha.2；当前本人Demo版本：2.7.18-alpha.4；本片QA：verified_demo。现代图文 01-D 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。（不改变原条目验证范围，不代表用户审美认可）
+- `mg-style-295450` 登记基线版本：2.7.17-alpha.2；当前本人Demo版本：2.7.18-alpha.5；本片QA：verified_demo。纸面透视 02-X 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。（不改变原条目验证范围，不代表用户审美认可）
+- `mg-style-569615` 登记基线版本：2.7.17-alpha.2；当前本人Demo版本：2.7.18-alpha.4；本片QA：verified_demo。深色立体 03-X 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。约11.65—12.25秒官方圆窗局部裁到头发/上额，眼鼻口仍可见；公开native合同未提供可核实的人脸中心或裁切参数，因此保留原布局，审美待用户确认。（不改变原条目验证范围，不代表用户审美认可）
 
 ### 知识解说与流程图
 

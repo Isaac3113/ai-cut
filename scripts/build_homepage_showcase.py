@@ -196,7 +196,8 @@ def card(entry, asset):
     integration = ''
     demo_version = ''
     if entry.get('integrations'):
-        case = entry['integrations'][0]
+        case = next((c for c in entry['integrations'] if primary and c['id'] == primary.get('integration_id')),
+                    entry['integrations'][0])
         info = case['source']; call = case['invocation']; qa = case['qa']
         demo_version = '<p><sub>当前本人Demo版本：' + esc(info['version']) + ' · 本片QA：' + esc(qa['state']) + '（已解码与抽帧检查）</sub></p>'
         integration = ('<details><summary>本片接入与复用边界</summary>'
