@@ -210,7 +210,8 @@
           "path": "demos/case-studies/approved-b-highlight.mp4",
           "description_zh": "本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。",
           "sha256": "3be466abdde60e536a0b3b15222e43e3d7b36ad50296baa54a076585d41456e1",
-          "bytes": 78189
+          "bytes": 78189,
+          "subject": "owner"
         },
         {
           "kind": "official",

@@ -10,6 +10,8 @@
 
 ## 引用既有条目或加入新候选
 
+所有接入与本人对比共用`docs/template-gallery/index.html`，不维护第二份独立HTML目录。来源、用途、四层与画幅共同筛选；卡内所选Demo绑定自己的版本和QA。`subject=owner`表示已有明确本人肖像依据；本人集成记录也可提供该身份依据，普通`kind=own`不等于用户本人。本机原声可经原服务的被忽略配置补充，Git里的精选库样例仍无音轨。配置与回退方式见[新手入门](../docs/GETTING_STARTED.zh-CN.md#在同一个中心比较本人官网与不同画幅)。
+
 - **既有条目**：填写稳定 `entry_id`，不提供 `new_entry`。构建只附加接入记录与本人 Demo；保留原版本、来源、原 Demo 和原验证状态。`latest_integration_id`按带时区的`integrated_at`保留真实最新记录；`preview_integration_id`优先选择与条目比例相符的最近Demo，无匹配才回退最新记录。页面的Demo版本与QA跟随实际预览，不重复增加模板条目。
 - **新官方候选**：完成真实小样与审核后，提供完整 `new_entry`，放入既有 `style`／`control`／`remotion`／`effect` 层。`new_entry.id` 必须等于 `entry_id`，`source_url` 与本次官方来源一致；`demos` 留空，使用本次已验证的 `demo`。不能用它覆盖已有 ID。
 - 每次接入用独立记录 ID。相同条目可以有多次不同版本接入；MP4 使用独立版本路径，不覆盖旧素材。不同条目不能共用同一个输出路径。本人 Demo 只是本片、本版本、本输入的证据，不代表所有模板、变体或另一台电脑已可运行。

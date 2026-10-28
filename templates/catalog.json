@@ -12,7 +12,7 @@
   "sources": [
     {
       "path": "templates/motiongit-styles.json",
-      "sha256": "7880f778f21a8182e73cbaabab648c694759a17b36f6fb72f7972c123eaa0c5c",
+      "sha256": "3d54ef284d7281ba9bdff854e53ca74d12232f165c77e07961441638f3c5e275",
       "entries": 72
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "path": "templates/presenter-effects.json",
-      "sha256": "32b60e4d200dcfa65bfb5dc58d98ebca263e64c7ae9fb6853a7ea90ab65c499a",
+      "sha256": "c93e8bba98dfc31fa89ccfb00b8a3c9cd79ed0fe505abe1d9c7e3e8a69a7b145",
       "entries": 19
     }
   ],
@@ -1538,6 +1538,7 @@
           "description_zh": "本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。",
           "sha256": "3be466abdde60e536a0b3b15222e43e3d7b36ad50296baa54a076585d41456e1",
           "bytes": 78189,
+          "subject": "owner",
           "poster_path": "demos/case-studies/approved-b-highlight.jpg"
         },
         {
@@ -14067,6 +14068,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "dc03313f44234bdf679ba1e636809099e9da39fd1504114a4588058ec3b7b573",
           "bytes": 202701,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-01.jpg"
         }
       ],
@@ -14107,6 +14109,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "aa1f61e58323d2973631729a52a9e676d155792de653e837cfb20a09524e453e",
           "bytes": 157301,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-02.jpg"
         }
       ],
@@ -14146,6 +14149,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "905270f1c34ea1f6193f3c442fb771bc34b417ad0458dea62547aefacb4ec560",
           "bytes": 262925,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-03.jpg"
         }
       ],
@@ -14185,6 +14189,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "c2102e488d794bcd48412a4f992db8e55c7977d6104749d68adcaafebb1b6d2b",
           "bytes": 95445,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-04.jpg"
         }
       ],
@@ -14224,6 +14229,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "fec61c3de256e4f28cf3561997a4bef0ff600be99f1313f83b3bd499a250f1ea",
           "bytes": 152837,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-05.jpg"
         }
       ],
@@ -14264,6 +14270,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "065c3e7c74b4e48d39a88095a5556dc50040ef242c81a70077bba7ecba848b5d",
           "bytes": 171293,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-06.jpg"
         }
       ],
@@ -14304,6 +14311,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "9f437717c0127f943f6e302edc7680d1e03dd7cd9e97db045482d9704c46b332",
           "bytes": 121651,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-07.jpg"
         }
       ],
@@ -14344,6 +14352,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "5318ac41ac8701204138dc71bddc4267893dd6b25063f3deb74d4586d3cf9e3f",
           "bytes": 178558,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-08.jpg"
         }
       ],
@@ -14383,6 +14392,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "54d2954fae9d8b6c6a4e0436f06ada56917ea62c427d26f7fd8c26371c22c57c",
           "bytes": 180512,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-09.jpg"
         }
       ],
@@ -14423,6 +14433,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "fffaba149cf39490b9bb534104887688975a1d11906672ea2654c72fe614bdd8",
           "bytes": 198454,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-10.jpg"
         }
       ],
@@ -14463,6 +14474,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "caf65295375a0b887f8d962fa47ab3ed3e6cb434e88bca76b1e6f288c37bc740",
           "bytes": 76259,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-11.jpg"
         }
       ],
@@ -14503,6 +14515,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "757a3ec7aab8b9abdb89bf03b4ad23f66002d8f5fe85be14837529aee9580713",
           "bytes": 183477,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-12.jpg"
         }
       ],
@@ -14542,6 +14555,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "555ee13a56e3cc784140f85f6ba30bc95f1a498104918c27a0e5f9ad9122e17c",
           "bytes": 197458,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-13.jpg"
         }
       ],
@@ -14581,6 +14595,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "eedbec9378e024aa0b60c848279c480b05955babea25752b2284804c4cfa5dc5",
           "bytes": 161813,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-14.jpg"
         }
       ],
@@ -14620,6 +14635,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "ca3a70796ee2ea0d17d568c969aa9b2921373c5702720dada2c65ae236f385c7",
           "bytes": 131764,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-15.jpg"
         }
       ],
@@ -14659,6 +14675,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "b4655458608978b51de8d3e2ea80ce6438b231ee52df69497322d558a9b6207f",
           "bytes": 166415,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-16.jpg"
         }
       ],
@@ -14699,6 +14716,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "1ec5db6fd70c5ad8b56d7bc70fa98596a4e5e90a94bf9c2bef5165ebacf56b1e",
           "bytes": 210017,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-17.jpg"
         }
       ],
@@ -14739,6 +14757,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "3f87f12933c97f859645ba2dcb43afd7ebf3435b5c64bf79be0fa58eba2eccf3",
           "bytes": 143318,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-18.jpg"
         }
       ],
@@ -14778,6 +14797,7 @@
           "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
           "sha256": "f90679d92c4f04dd955f88b08b0ab191c06828b55f8c293dda3c9370e5668135",
           "bytes": 221899,
+          "subject": "owner",
           "poster_path": "demos/presenter/presenter-effect-19.jpg"
         }
       ],

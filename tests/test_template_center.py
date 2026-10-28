@@ -1,6 +1,7 @@
 from copy import deepcopy
 import json
 import shutil
+import subprocess
 from hashlib import sha256
 import importlib.util
 from pathlib import Path
@@ -241,6 +242,102 @@ class IntegrationGrowthTests(unittest.TestCase):
         asset={'kind':'local_gif','path':'fixture.gif','duration_seconds':3,'width':180,'source_demo':'fixture.mp4'}
         fragment=home.make_fragment({'entries':[row],'integrations':[]},{'fixture':asset})
         self.assertIn('1 条目录',fragment);self.assertNotIn('216 条目录',fragment)
+
+
+class GalleryDemoSelectionTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.gallery=module('build_template_gallery')
+        candidate=Path(shutil.which('node') or ROOT/'work/motiongit-evaluation-20261026/prototype/node-v24.19.0-win-x64/node.exe')
+        if not candidate.is_file():
+            raise unittest.SkipTest('Node is required to execute the real browser selection functions')
+        cls.node=candidate
+        cls.model=cls.gallery.HTML.split('// BEGIN_DEMO_MODEL',1)[1].split('\n',1)[1].split('// END_DEMO_MODEL',1)[0]
+
+    def setUp(self):
+        self.entry={
+            'id':'style-one','ratio':'9:16',
+            'integrations':[
+                {'id':'portrait-case','project_id':'owner-demo','source':{'version':'portrait-version','package_id':'portrait-package'},'qa':{'state':'verified_demo','scope':'portrait scope'},'invocation':{'inputs_zh':['actual portrait inputs'],'command':'render portrait'}},
+                {'id':'landscape-case','project_id':'owner-demo','source':{'version':'landscape-version','package_id':'landscape-package'},'qa':{'state':'verified_demo','scope':'landscape scope'},'invocation':{'inputs_zh':['actual landscape inputs'],'command':'render landscape'}},
+            ],
+            'demos':[
+                {'kind':'own','integration_id':'portrait-case','path':'demos/owner/portrait.mp4','ratio':'9:16'},
+                {'kind':'own','integration_id':'landscape-case','path':'demos/owner/landscape.mp4','ratio':'16:9'},
+                {'kind':'official','url':'https://official.example/demo.mp4','ratio':'9:16'},
+                {'kind':'own','path':'demos/controls/logo.mp4','ratio':'16:9'},
+                {'kind':'source_render','path':'demos/code.mp4','ratio':'1:1'},
+                {'kind':'own','subject':'owner','path':'demos/legacy-owner.mp4','ratio':'1:1'},
+            ]}
+
+    def evaluate(self,statement,payload=None,extra=''):
+        program=self.model+'\n'+extra+'\nconst input=JSON.parse(require("fs").readFileSync(0,"utf8"));\n'+statement
+        proc=subprocess.run([str(self.node),'-e',program],input=json.dumps(payload if payload is not None else self.entry),capture_output=True,text=True,encoding='utf-8')
+        self.assertEqual(proc.returncode,0,proc.stderr)
+        return json.loads(proc.stdout)
+
+    def test_source_filter_selects_the_playing_demo_not_only_the_card(self):
+        result=self.evaluate("const official=selectedDemo(input,'official','',input.demos[0].path);console.log(JSON.stringify({src:demoKey(official),case:demoCase(input,official),other:candidateDemos(input,'other').map(d=>demoKey(d))}));")
+        self.assertEqual(result['src'],'https://official.example/demo.mp4')
+        self.assertIsNone(result['case'])
+        self.assertEqual(result['other'],['demos/controls/logo.mp4','demos/code.mp4'])
+
+    def test_ratio_switch_does_not_reuse_an_incompatible_selected_demo(self):
+        result=self.evaluate("console.log(JSON.stringify({landscape:demoKey(selectedDemo(input,'own','16:9',input.demos[0].path)),portrait:demoKey(selectedDemo(input,'own','9:16',input.demos[1].path)),none:selectedDemo(input,'own','4:3',input.demos[0].path)}));")
+        self.assertEqual(result['landscape'],'demos/owner/landscape.mp4')
+        self.assertEqual(result['portrait'],'demos/owner/portrait.mp4')
+        self.assertIsNone(result['none'])
+
+    def test_personal_identity_requires_registered_evidence_or_explicit_subject(self):
+        result=self.evaluate("console.log(JSON.stringify({own:candidateDemos(input,'own').map(d=>demoKey(d)),ordinary:demoSource(input,input.demos[3]),remote:demoSource(input,{kind:'own',subject:'owner',url:'https://example.com/avatar.mp4'}),render:demoSource(input,{kind:'source_render',subject:'owner',path:'demos/render.mp4'})}));")
+        self.assertEqual(result['own'],['demos/owner/portrait.mp4','demos/owner/landscape.mp4','demos/legacy-owner.mp4'])
+        self.assertEqual(result['ordinary'],'other')
+        self.assertEqual(result['remote'],'other')
+        self.assertEqual(result['render'],'other')
+
+    def test_local_manifest_accepts_only_registered_paths_and_opaque_relative_media(self):
+        fixture={'entry':self.entry,'manifest':{'schema':'talking-head-local-demos/1','clips':{
+            'demos/owner/portrait.mp4':{'url':'local-owner-media/abc_123-xyz.mp4','audio':True},
+            'demos/owner/landscape.mp4':{'url':'https://other.example/upload.mp4','audio':True},
+            'demos/controls/logo.mp4':{'url':'local-owner-media/logo.mp4','audio':True},
+            'demos/legacy-owner.mp4':{'url':'local-owner-media/legacy.mp4','audio':True},
+            'unknown-private.mp4':{'url':'local-owner-media/unknown.mp4','audio':True}}}}
+        result=self.evaluate("console.log(JSON.stringify(localOverrides(input.manifest,[input.entry])));",fixture)
+        self.assertEqual(result,{'demos/owner/portrait.mp4':{'url':'local-owner-media/abc_123-xyz.mp4','audio':True}})
+
+    def test_local_manifest_rejects_traversal_queries_and_non_boolean_audio(self):
+        fixture={'entry':self.entry,'urls':['../private.mp4','local-owner-media/../private.mp4','local-owner-media/%2e%2e.mp4','local-owner-media/a.mp4?path=private','local-owner-media/nested/a.mp4','//other.example/a.mp4']}
+        result=self.evaluate("const key=input.entry.demos[0].path;const accepted=input.urls.map(url=>Object.keys(localOverrides({schema:'talking-head-local-demos/1',clips:{[key]:{url,audio:true}}},[input.entry])).length);const stringAudio=localOverrides({schema:'talking-head-local-demos/1',clips:{[key]:{url:'local-owner-media/a.mp4',audio:'true'}}},[input.entry]);console.log(JSON.stringify({accepted,stringAudio}));",fixture)
+        self.assertEqual(result['accepted'],[0]*6)
+        self.assertEqual(result['stringAudio'],{})
+
+    def test_missing_manifest_keeps_silent_library_and_valid_manifest_enables_local_voice(self):
+        result=self.evaluate("const d=input.demos[0],fallback=demoPlayback(input,d,localOverrides(null,[input]));const valid=localOverrides({schema:'talking-head-local-demos/1',clips:{[d.path]:{url:'local-owner-media/voice.mp4',audio:true}}},[input]);console.log(JSON.stringify({fallback,voice:demoPlayback(input,d,valid),official:demoPlayback(input,input.demos[2],valid)}));")
+        self.assertEqual(result['fallback']['src'],'demos/owner/portrait.mp4')
+        self.assertFalse(result['fallback']['audio'])
+        self.assertIn('静音库样例',result['fallback']['label'])
+        self.assertEqual(result['voice']['src'],'local-owner-media/voice.mp4')
+        self.assertTrue(result['voice']['audio'])
+        self.assertIn('原声版',result['voice']['label'])
+        self.assertEqual(result['official']['src'],'https://official.example/demo.mp4')
+
+    def test_selected_demo_metadata_tracks_its_own_integration(self):
+        self.entry['demos'][1]['description_zh']='18.5秒静音；原始Git登记说明。'
+        extra="const esc=x=>String(x),overrides={'demos/owner/landscape.mp4':{url:'local-owner-media/voice.mp4',audio:true}};\n"+'\n'.join(line for line in self.gallery.HTML.splitlines() if line.startswith(('function integrationInfo(', 'function demoMetadata(')))
+        result=self.evaluate("console.log(JSON.stringify({official:demoMetadata(input,input.demos[2]),landscape:demoMetadata(input,input.demos[1])}));",extra=extra)
+        self.assertNotIn('当前本人Demo版本',result['official'])
+        self.assertNotIn('portrait-version',result['official'])
+        self.assertIn('landscape-version',result['landscape'])
+        self.assertIn('landscape scope',result['landscape'])
+        self.assertNotIn('portrait scope',result['landscape'])
+        self.assertIn('原声版 · 仅本机',result['landscape'].split('<details>',1)[0])
+        self.assertNotIn('18.5秒静音',result['landscape'].split('<details>',1)[0])
+        self.assertIn('Git库样例登记说明：18.5秒静音；原始Git登记说明。',result['landscape'])
+
+    def test_real_browser_script_compiles_and_ratio_uses_actual_demo_dimensions(self):
+        script=self.gallery.HTML.split('<script>',1)[1].split('</script>',1)[0].replace('__DATA__','{"entries":[],"previews":[]}').replace('__LAYERS__','{}')
+        result=self.evaluate("new (require('vm').Script)(input.script);console.log(JSON.stringify({ratio:demoRatio({ratio:'9:16'},{width:1920,height:1080}),invalid:demoRatio({}, {ratio:'NaN:1'})}));",{'script':script})
+        self.assertEqual(result,{'ratio':'16:9','invalid':'unknown'})
 
 
 if __name__=='__main__':
