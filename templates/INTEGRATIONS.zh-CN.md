@@ -10,6 +10,8 @@
 
 ## 引用既有条目或加入新候选
 
+2026-10-29新增`aivd11-paper-keyword`：沿用`mg-style-295450`的纸面透视2.7.18-alpha.5，仅验证`02-X:glyph-thread-keyword`在本条角色一致性口播中的11秒9:16输入。精选本人Demo为720×1280、30fps、330帧、无音轨，598,099 bytes；已完整解码并查看9个编码阶段样本。接入记录现为11条，原四层216条不变。原生配色保持青绿关键词与橙红墨圈：native公开合同未提供已验证的palette覆盖，不能把另一组件路线的`timeline.theme`套进来。辅助素材、正式主时间轴、最终导出及用户审美认可分别验证；本条完整成片不因登记Demo而视为已通过。
+
 所有接入与本人对比共用`docs/template-gallery/index.html`，不维护第二份独立HTML目录。来源、用途、四层与画幅共同筛选；卡内所选Demo绑定自己的版本和QA。`subject=owner`表示已有明确本人肖像依据；本人集成记录也可提供该身份依据，普通`kind=own`不等于用户本人。本机原声可经原服务的被忽略配置补充，Git里的精选库样例仍无音轨。配置与回退方式见[新手入门](../docs/GETTING_STARTED.zh-CN.md#在同一个中心比较本人官网与不同画幅)。
 
 - **既有条目**：填写稳定 `entry_id`，不提供 `new_entry`。构建只附加接入记录与本人 Demo；保留原版本、来源、原 Demo 和原验证状态。`latest_integration_id`按带时区的`integrated_at`保留真实最新记录；`preview_integration_id`优先选择与条目比例相符的最近Demo，无匹配才回退最新记录。页面的Demo版本与QA跟随实际预览，不重复增加模板条目。

@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "built_at_utc": "2026-10-28T15:50:24.120292+00:00",
+  "built_at_utc": "2026-10-29T07:12:16.866924+00:00",
   "catalog": "templates/catalog.json",
-  "catalog_sha256": "16bfabf565772572115bf4fc99bce5251825b99ec223a4e4d50fbbbac020c858",
+  "catalog_sha256": "1d80908b0b3dcffc7f571b316ebbea38765f535adff3c440ec4687fbed917a9b",
   "snapshot": "templates/sources/motiongit-catalog.snapshot.json",
   "snapshot_sha256": "c4bb605a22a3529c0dcbe8acb720ae50df3f5bc0c4ede8577f6caf8218d9a485",
   "counts": {
     "catalog_entries": 216,
     "local_gifs": 147,
     "official_posters": 69,
-    "integration_records": 10,
-    "reused_local_gifs": 147,
+    "integration_records": 11,
+    "reused_local_gifs": 146,
     "extra_preview_posters": 1,
-    "local_gif_bytes": 20347206
+    "local_gif_bytes": 20356747
   },
   "limits": {
     "max_gif_seconds": 3.0,
@@ -74,22 +74,22 @@
       "id": "mg-style-295450",
       "kind": "local_gif",
       "path": "docs/template-gallery/demos/homepage/mg-style-295450.gif",
-      "source_demo": "docs/template-gallery/demos/integrated/owner-native-20261028/paper/portrait.mp4",
-      "source_sha256": "4e08e547e5cddac3ee0c021efec5eb32021d784cfe9eaa1c793d66dd74612c2a",
-      "source_bytes": 674106,
-      "source_duration_seconds": 18.5,
+      "source_demo": "docs/template-gallery/demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.mp4",
+      "source_sha256": "f1c2b57f86e40bf2c56e8847e188ec01985c46462f09c8249196f372e1654e73",
+      "source_bytes": 598099,
+      "source_duration_seconds": 11.0,
       "source_start_seconds": 0.5,
       "source_excerpt_seconds": 3.0,
       "playback_speed": 1,
       "sampling_fps": 10,
       "palette_colors": 96,
-      "cache_reused": true,
+      "cache_reused": false,
       "width": 202,
       "height": 360,
       "frames": 30,
       "duration_seconds": 3.0,
-      "bytes": 127030,
-      "sha256": "a7fb84905c8e9baa329c18f4050be690feff66f795b8ae6dd8f6b6bdf23b35c0"
+      "bytes": 136571,
+      "sha256": "9b1bcd0b778b6452567af315a501d33a70da5c2957b92131192de1692683fd98"
     },
     {
       "id": "mg-style-304634",

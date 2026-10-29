@@ -1428,6 +1428,156 @@
         "audio": "none",
         "poster_path": "demos/integrated/owner-native-20261028/dark/landscape.jpg"
       }
+    },
+    {
+      "id": "aivd11-paper-keyword",
+      "entry_id": "mg-style-295450",
+      "project_id": "aivd-11",
+      "integrated_at": "2026-10-29T15:11:06.624338+08:00",
+      "source": {
+        "url": "https://motiongit.com/@adunext/template-02-expanded-portrait",
+        "package_id": "template-02-expanded-portrait",
+        "version": "2.7.18-alpha.5",
+        "sha256": "a92249c05012567ac98a2d6b23bee58d5f19003ca83a9e441253ff0ef0b9b585",
+        "official": true,
+        "verification_note": "本人原包SHA256与已核验公开guide/currentTemplate身份一致，经固定SHA256的官方helper1.0.0-rc.50执行native合同；本例仅覆盖02-X:glyph-thread-keyword，不扩大其他场景、组件路线或官网全部模板的验证状态。",
+        "helper_version": "1.0.0-rc.50",
+        "helper_sha256": "7004609ddbc0ccf6451beeb477aff0d3c85bda74f902e5922465c85cd347f6f3",
+        "public_schema_sha256": "06c63919c4e3d6faffbd8d18bc96599feb62a267e576db823d245f454672c158"
+      },
+      "invocation": {
+        "method": "官方个人包经scripts/motiongit_adapter.py执行native的check-params、plan、人工公开计划核对、prepare、实际preview和render；最后仅降为30fps、720×1280并移除声音，原生动作速度不变。",
+        "command": ".\\.venv\\Scripts\\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh",
+        "guide_url": "https://motiongit.com/spec",
+        "guide_document": "本包公开guide.json、native.params.schema.json、NATIVE-INPUTS.md、NARRATION-MAP.md与capacity-matrix.json",
+        "inputs_zh": [
+          "本条本人真实口播，源4.175—17.375秒相对原始源绝对1.2倍一次，形成11秒同期人物输入；这只是辅助视觉片段，主讲话时轴不变。",
+          "71个范围内完整原词使用实际ChatCut ASR词时，9张中文字幕卡；范围边缘穿过的词不裁改或伪造时钟，原完整发言保留在主时间轴。",
+          "brief.schema=adu-auto-brief/1，layout=portrait，allowedStyles=[02-X]，narrationDuration=11；glyph-thread-keyword原生660帧/60fps。",
+          "标题AI短视频、关键词角色一致性、解释AI短视频的常见难题；解释是原话支持的概括，不冒充新增口述结论。",
+          "官方keyword129帧/60fps=2.15秒；真实关键词局部2.158333秒，仅有约8毫秒量化差，未改变受保护动作窗。",
+          "作为静音辅助视觉导回同一ChatCut时间轴；人声、BGM和逐事件音效由主时间轴独立管理，不能重复播放模板内声音。",
+          "公开native合同未发现palette/theme覆盖字段；组件路线timeline.theme不能混用于native，本例保留原生青绿关键词与橙红墨圈，不能声称已完全品牌化。"
+        ],
+        "actual_parameters": {
+          "workflow": "native",
+          "brief_schema": "adu-auto-brief/1",
+          "layout": "portrait",
+          "ratio": "9:16",
+          "allowed_styles": [
+            "02-X"
+          ],
+          "narration_duration_seconds": 11.0,
+          "native_fps": 60,
+          "native_frames": 660,
+          "scenes": [
+            {
+              "scene_id": "02-X:glyph-thread-keyword",
+              "start_frame": 0,
+              "end_frame": 660,
+              "slots": {
+                "title": "AI短视频",
+                "keyword": "角色一致性",
+                "explanation": "AI短视频的常见难题"
+              }
+            }
+          ],
+          "caption_evidence_units": 9,
+          "source_word_count": 71,
+          "music_mode": "none"
+        },
+        "demo_postprocess": {
+          "output_size": [
+            720,
+            1280
+          ],
+          "fps": 30,
+          "duration_seconds": 11,
+          "frames": 330,
+          "audio": "none",
+          "playback_speed_from_native": 1.0,
+          "official_signature_preserved": true,
+          "native_palette_preserved": true
+        }
+      },
+      "rights": {
+        "private_demo_redistribution": true,
+        "evidence": "用户2026-10-27模板生命周期长期授权及2026-10-29新片制作允许将已检查的本人短静音案例积累到同一私人Git演示库；仅含本人画面、对应中文内容和官方模板渲染。此授权不包含完整原片、完整成片、源人像、原声音轨、个人包、Key、保护内核或公开再分发。"
+      },
+      "qa": {
+        "state": "verified_demo",
+        "decode_verified": true,
+        "sample_images_viewed": true,
+        "continuous_watch": false,
+        "continuous_listening": false,
+        "owner_artistic_acceptance": false,
+        "scope": "本片Paper 02-X:glyph-thread-keyword的9:16、11秒本人静音小样；原生1080×1920/60fps660帧完成，精选库720×1280/30fps330帧，完整解码通过。9个原生预览、9个1080编码样本及9个精选编码样本实际查看，包含散字牵引、锁定冲击、墨圈、解释拉出及退出阶段。只验证本版本/本输入/本场景；未连续观看、未做主成片声音验收、未获用户审美认可。",
+        "native_preview_sample_times_seconds": [
+          0.3,
+          1.2,
+          2.1,
+          2.2,
+          2.8,
+          3.5,
+          5.0,
+          8.0,
+          10.8
+        ],
+        "encoded_poster_sample_time_seconds": 3.5,
+        "privacy_review": "本人口播及自有背景，无客户私信、电话、email、地址；查看的预览和编码样本未发现客户资料。抽样不代替最终全片隐私验收。",
+        "timeline_usage": "本条辅助素材已制作，唯一ChatCut主时间轴的实际放置/导出由主线程另行回读验证；登记小样不等于完整成片已验收。",
+        "known_limitations_zh": [
+          "本例保留官方青绿关键词、橙红墨圈及原生时码/署名，native公开合同无已验证品牌palette覆盖，不冒称全部品牌化。",
+          "约3.5—10.2秒为原生阅读持留；成片需依实际讲述安排额外语义重点，本小样不声称满足整片每5秒变化。",
+          "烧录中文卡需避免与主字幕重叠；样例是11秒局部视觉，不是独立完整发言。"
+        ]
+      },
+      "actual_variants": [
+        "02-X:glyph-thread-keyword"
+      ],
+      "production_mapping": {
+        "source_seconds": [
+          4.175,
+          17.375
+        ],
+        "absolute_source_speed": 1.2,
+        "body_frames": [
+          59,
+          389
+        ],
+        "body_fps": 30,
+        "cover_offset_frames": 3,
+        "native_frames": [
+          0,
+          660
+        ],
+        "native_fps": 60,
+        "curated_frames": [
+          0,
+          330
+        ],
+        "curated_fps": 30,
+        "demo_media_rate": 1.0,
+        "same_source_presenter": true,
+        "source_narration_sha256": "a2417414104d962a65333078cdd409a4403f89bcd882a0d094520380a7dc3835"
+      },
+      "demo": {
+        "kind": "own",
+        "subject": "owner",
+        "path": "demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.mp4",
+        "description_zh": "AIVD 11本人案例 · 纸面透视 · 散字牵引成词 · 9:16 · 11秒静音；仅本片角色一致性局部输入，保留官方青绿/橙红设计，不代表整片或整个模板库通过。",
+        "sha256": "f1c2b57f86e40bf2c56e8847e188ec01985c46462f09c8249196f372e1654e73",
+        "bytes": 598099,
+        "variant_id": "02-X:glyph-thread-keyword",
+        "ratio": "9:16",
+        "width": 720,
+        "height": 1280,
+        "duration_seconds": 11.0,
+        "fps": 30,
+        "frames": 330,
+        "audio": "none",
+        "poster_path": "demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.jpg"
+      }
     }
   ]
 }
