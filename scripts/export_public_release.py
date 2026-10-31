@@ -17,7 +17,7 @@ PREFIXES=('src/','tests/','schemas/','skill/','skill-adapters/','profiles/','pub
 SCRIPTS={'bootstrap.ps1','bootstrap_runtime.py','install_skill.py','install_extensions.py',
  'adapt_jianying_skill.py','build_jianying_project.py','audit_chatcut_snapshot.py',
  'verify_review_media.py','video_use_review.py','smoke_asr.py','smoke_asr_core.py',
- 'audit_visual_contract.py','delivery_names.py','export_final_subtitles.py','create_video_folder.py','package_social_delivery.py','smoke_media.py','smoke_motion.py','smoke_render.py','export_student_skill.py','export_public_release.py'}
+ 'audit_visual_contract.py','delivery_names.py','delivery_library.py','export_final_subtitles.py','create_video_folder.py','package_social_delivery.py','smoke_media.py','smoke_motion.py','smoke_render.py','export_student_skill.py','export_public_release.py'}
 EXTENSIONS=('extensions/remotion-vd44/','extensions/hyperframes-vd44/','extensions/chatcut-vd44/')
 EXCLUDE={'extensions/hyperframes-vd44/assets/gsap.min.js',
  'extensions/hyperframes-vd44/meta.json','extensions/remotion-vd44/src/Composition.tsx'}

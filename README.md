@@ -1925,7 +1925,9 @@ Set-Location talking-head-editor
 - `extensions/`：可分发的动画源码及其许可证；`scripts/`：执行、安装、目录与验收工具。
 - `03_Documentation/Knowledge_Base/`：技术知识库。`work/`、依赖和缓存留在本机，不随 Git 提交。
 
-本仓库所有者当前的 `05_成片/最新版` 只放一个最新 MP4、16:9／9:16 两张封面，以及发布素材内三份 TXT（Facebook 文案、小红书文案、固定第一评论）。字幕、检查记录、ZIP 和旧版不混入该入口；其他创作者使用自己的明确交付约定。完整规则见[精简交付](skill/talking-head-editor/references/final-delivery.md)。
+本仓库所有者自2026-10-31起使用三个位置：Active Repo仍为 C:\Codex Workspace\talking-head-editor，放代码、Skill、技术KB、运行环境和工作缓存；旧Hub C:\Users\User\OneDrive\Documents\Codex Workspace\Projects-AI-Talking-Head-Editor 保留原片、工作材料、发布资料与工程入口；正式交付进入 C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库。
+
+作品按全库统一的 AIVD-三位编号 - 主要制作来源 - 简短标题登记，先查新Hub索引与映射，不按旧口播编号新建同片。作品目录只放非空的参考图、AI 成片，以及项目根已有字幕；不为归档创建空目录或新增字幕。两张封面和最新视频继续制作与核验，Facebook／小红书文案、固定首评继续交付并留原工作入口，不放入作品库；报告、ZIP、缓存和可编辑工程也不搬入。具体边界、旧名兼容和当日编号状态见[统一作品库说明](03_Documentation/Knowledge_Base/34_Unified_Video_Library.md)与[当前交付规则](skill/talking-head-editor/references/final-delivery.md)，其他创作者按自己的明确约定。
 
 换电脑先保护本地工作并安全 pull，再分别核对 Skill、依赖、媒体和在线工程，见[换电脑说明](docs/CROSS_COMPUTER_UPDATE.md)。学习阅读顺序：[总 Skill](skill/talking-head-editor/SKILL.md) → [完整流程](skill/talking-head-editor/references/approved-workflow.md) → [质量检查](skill/talking-head-editor/references/quality.md)。
 
