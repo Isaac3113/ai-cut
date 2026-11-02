@@ -214,7 +214,7 @@ def build(mapping):
         kind, label, category, description, use, avoid, inputs = meta
         entries.append({"id": f"presenter-effect-{kind:02d}", "label_zh": label, "layer": "effect", "category_zh": category,
                         "description_zh": description, "uses_zh": [use], "avoid_zh": [avoid], "inputs_zh": inputs.split("、"),
-                        "version": "1.0.0", "source_url": "https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
+                        "version": "1.0.0", "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
                         "source_id": "talking-head-effects", "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
                         "availability": "available", "validation": {"state": "technical_verified_visual_pending", "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数和文件大小；起中末联系表待实际审看。"},
                         "demos": [{"kind": "own", "path": f"demos/presenter/presenter-effect-{kind:02d}.mp4", "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。", "sha256": record["sha256"], "bytes": record["bytes"]}],

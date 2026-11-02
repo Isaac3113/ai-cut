@@ -1,4 +1,4 @@
-# Talking Head Editor · 教学口播剪辑总 Skill
+# AI Cut · 教学口播剪辑总 Skill
 
 2026-09-21整合版：保留原Python执行器0.2.5及动画扩展；合入比例确认、双平台五项素材、类型命名、AIVD连续编号、实操六类效果与ChatCut主路线规则。规则更新不等于已连接云端或完成新视频验收。
 
@@ -8,13 +8,13 @@
 
 ## 第一次按这个顺序看
 
-1. **[总 Skill 入口](skill/talking-head-editor/SKILL.md)**：决定路线，守住单一主时间轴。
-2. **[完整执行流程与小 Skill 顺序](skill/talking-head-editor/references/approved-workflow.md)**：从接收、粗剪、选材、动画到导出的完整步骤；包含历次反馈形成的规则。
-3. **[已认可预设](skill/talking-head-editor/references/user-preferences.md)** 与 **[完整质量规则](skill/talking-head-editor/references/master-playbook.md)**。
-4. 使用网页编辑时读 **[ChatCut流程](skill/talking-head-editor/references/chatcut.md)**；动画选型看 **[两引擎分工](skill/talking-head-editor/references/reference-motion.md)**。
-5. **[验收](skill/talking-head-editor/references/quality.md)** → **[手动修改/恢复](skill/talking-head-editor/references/manual-editing.md)**。
+1. **[总 Skill 入口](skill/ai-cut/SKILL.md)**：决定路线，守住单一主时间轴。
+2. **[完整执行流程与小 Skill 顺序](skill/ai-cut/references/approved-workflow.md)**：从接收、粗剪、选材、动画到导出的完整步骤；包含历次反馈形成的规则。
+3. **[已认可预设](skill/ai-cut/references/user-preferences.md)** 与 **[完整质量规则](skill/ai-cut/references/master-playbook.md)**。
+4. 使用网页编辑时读 **[ChatCut流程](skill/ai-cut/references/chatcut.md)**；动画选型看 **[两引擎分工](skill/ai-cut/references/reference-motion.md)**。
+5. **[验收](skill/ai-cut/references/quality.md)** → **[手动修改/恢复](skill/ai-cut/references/manual-editing.md)**。
 
-日常只调用 `$talking-head-editor`。辅助Skill按场景加载，不需要把所有工具依次运行一遍。
+日常只调用 `$ai-cut`。辅助Skill按场景加载，不需要把所有工具依次运行一遍。
 
 ## 当前统一路线
 
@@ -38,8 +38,8 @@
 需要Git和Python3.11/3.12。ChatCut使用你自己的官方插件/账号；密码与授权确认由你输入。
 
 ```powershell
-git clone https://github.com/Isaac3113/talking-head-editor.git
-Set-Location talking-head-editor
+git clone https://github.com/Isaac3113/ai-cut.git
+Set-Location ai-cut
 .\scripts\bootstrap.ps1
 .\.venv\Scripts\python.exe scripts/install_skill.py
 .\.venv\Scripts\python.exe -m talking_head_editor.cli doctor
@@ -76,7 +76,7 @@ Node>=22（案例使用24）、npm、Chrome与FFmpeg。安装不包含商业许�
 ## 给Codex的启动消息
 
 ```text
-使用 $talking-head-editor，沿用已认可动作节奏，使用我的Logo品牌配色、淡水印和全屏素材动态圆窗。
+使用 $ai-cut，沿用已认可动作节奏，使用我的Logo品牌配色、淡水印和全屏素材动态圆窗。
 原片：<路径>；文稿/术语：<可选>；素材：<可选文件夹>。
 用ChatCut作为主时间轴，开始前核对工具连接和已有工程；缺连接先说明，不静默换路线。按场景选HyperFrames/Remotion或本机实操素材工具。
 保留原意原声，先确认本条视频比例再做所选一版，口播相对原片绝对1.2倍一次，音乐轻且能听见、重点音效同步可听。
@@ -98,7 +98,7 @@ Node>=22（案例使用24）、npm、Chrome与FFmpeg。安装不包含商业许�
 
 ## Complete deliveries and project storage
 
-Each full video includes MP4 with cover, standalone cover, plain TXT, SRT, full production explanation, per-second/per-frame records and honest QA. Read `skill/talking-head-editor/references/final-delivery.md`. Keep active code, dependencies and work/cache outside OneDrive. Use `scripts/create_video_folder.py --hub "YOUR_PROJECT_HUB" --name "AIVD 5 - Your confirmed topic"` to create separate per-video media/delivery and local-work folders; revisions reuse the pair. The Hub has no implicit code-root default. Private footage and exports are excluded from Git. Repository visibility remains the owner’s explicit choice.
+Each full video includes MP4 with cover, standalone cover, plain TXT, SRT, full production explanation, per-second/per-frame records and honest QA. Read `skill/ai-cut/references/final-delivery.md`. Keep active code, dependencies and work/cache outside OneDrive. Use `scripts/create_video_folder.py --hub "YOUR_PROJECT_HUB" --name "AIVD 5 - Your confirmed topic"` to create separate per-video media/delivery and local-work folders; revisions reuse the pair. The Hub has no implicit code-root default. Private footage and exports are excluded from Git. Repository visibility remains the owner’s explicit choice.
 
 
 编号5仅为例子，创建前核对已有AIVD编号；已有视频修改不增加编号。缺主题先询问，不以原片001或拍摄日期代替正式项目名。每条完整视频还交付Facebook/小红书两篇文案、Facebook封面、小红书竖版与4:3横版封面；既有原片/历史交付不批量改名。音乐“降低30%”仅是已指定案例相对已认可音轨乘0.70，不是每条重复降低或所有音乐的默认值。

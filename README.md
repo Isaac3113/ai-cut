@@ -1,10 +1,10 @@
-# Talking Head Editor · 知识口播剪辑
+# AI Cut · 知识口播剪辑
 
 专门用于真人知识口播、AI 教学、营销方法与系统实操的剪辑代码与 Skill 项目：保留原声原意，先完成语义粗剪，再按内容添加字幕、画面、动画和声音。
 
 **开源发布准备中，当前仓库保持 Private。** 原创代码与规则采用 [MIT](LICENSE)，第三方引擎、模板、字体和媒体分别遵循自己的许可。当前没有对公众开放下载，也没有把模板中心部署成网站。
 
-[学员领取与 Notion 教学](docs/NOTION_GUIDE.zh-CN.md) · [中文新手入门](docs/GETTING_STARTED.zh-CN.md) · [全部模板与逐项 Demo](templates/README.zh-CN.md) · [分类动画预览](docs/template-gallery/CATEGORIES.md) · [正式总 Skill](skill/talking-head-editor/SKILL.md) · [后续公开发布约定](docs/RELEASE_PREPARATION.md)
+[AI Cut 改名与换电脑](docs/AI_CUT_RENAME.md) · [Vercel 与域名教学](docs/VERCEL_AI_CUT.zh-CN.md) · [学员领取与 Notion 教学](docs/NOTION_GUIDE.zh-CN.md) · [中文新手入门](docs/GETTING_STARTED.zh-CN.md) · [全部模板与逐项 Demo](templates/README.zh-CN.md) · [分类动画预览](docs/template-gallery/CATEGORIES.md) · [正式总 Skill](skill/ai-cut/SKILL.md) · [后续公开发布约定](docs/RELEASE_PREPARATION.md)
 
 首次领取：先提供 GitHub 用户名并接受私人仓库邀请，再按学员教学安装。Notion 阅读教学、GitHub 获取文件、HTML 浏览效果和实际剪辑是不同步骤；模板中心仍为本机入口，尚未部署。
 
@@ -1633,7 +1633,7 @@
 <strong>条形增长</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-01.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-01.gif" width="202" alt="条形增长 · 原速节选 · 1.4 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.4 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-01.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-01.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%"></td>
 </tr>
@@ -1650,13 +1650,13 @@
 <strong>玻璃标签</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-02.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-02.gif" width="202" alt="玻璃标签 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-02.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-02.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%" align="center" valign="top">
 <strong>视频镂空字</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-11.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-11.gif" width="202" alt="视频镂空字 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-11.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-11.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 </tr>
 <tr>
@@ -1664,7 +1664,7 @@
 <strong>标题墙</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-13.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-13.gif" width="202" alt="标题墙 · 原速节选 · 1.1 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.1 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-13.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-13.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%"></td>
 </tr>
@@ -1681,13 +1681,13 @@
 <strong>冲击缩放</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-03.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-03.gif" width="202" alt="冲击缩放 · 原速节选 · 1.6 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.6 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-03.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-03.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%" align="center" valign="top">
 <strong>拉远揭幕</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-06.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-06.gif" width="202" alt="拉远揭幕 · 原速节选 · 1.2 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.2 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-06.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-06.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 </tr>
 <tr>
@@ -1695,7 +1695,7 @@
 <strong>数字推近</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-17.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-17.gif" width="202" alt="数字推近 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-17.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-17.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%"></td>
 </tr>
@@ -1712,13 +1712,13 @@
 <strong>剪纸描边</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-04.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-04.gif" width="202" alt="剪纸描边 · 原速节选 · 0.7 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 0.7 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-04.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-04.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%" align="center" valign="top">
 <strong>照片墙</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-05.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-05.gif" width="202" alt="照片墙 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-05.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-05.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 </tr>
 <tr>
@@ -1726,13 +1726,13 @@
 <strong>杂志封面</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-08.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-08.gif" width="202" alt="杂志封面 · 原速节选 · 1.2 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.2 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-08.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-08.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%" align="center" valign="top">
 <strong>抠像换景</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-09.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-09.gif" width="202" alt="抠像换景 · 原速节选 · 1.5 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.5 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-09.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-09.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 </tr>
 <tr>
@@ -1740,7 +1740,7 @@
 <strong>人物破框</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-15.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-15.gif" width="202" alt="人物破框 · 原速节选 · 1.4 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.4 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-15.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-15.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%"></td>
 </tr>
@@ -1757,13 +1757,13 @@
 <strong>界面窗框</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-07.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-07.gif" width="202" alt="界面窗框 · 原速节选 · 1.1 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.1 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-07.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-07.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%" align="center" valign="top">
 <strong>手机画面</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-14.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-14.gif" width="202" alt="手机画面 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-14.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-14.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 </tr>
 </table>
@@ -1779,13 +1779,13 @@
 <strong>打勾清单</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-10.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-10.gif" width="202" alt="打勾清单 · 原速节选 · 1.5 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.5 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-10.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-10.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%" align="center" valign="top">
 <strong>收据列表</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-18.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-18.gif" width="202" alt="收据列表 · 原速节选 · 1.1 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.1 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-18.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-18.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 </tr>
 </table>
@@ -1801,13 +1801,13 @@
 <strong>手绘涂鸦</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-12.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-12.gif" width="202" alt="手绘涂鸦 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-12.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-12.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%" align="center" valign="top">
 <strong>环绕文字</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-16.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-16.gif" width="202" alt="环绕文字 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-16.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-16.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 </tr>
 <tr>
@@ -1815,7 +1815,7 @@
 <strong>贴纸轮播</strong><br>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-19.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-19.gif" width="202" alt="贴纸轮播 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-19.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/talking-head-editor/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-19.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
 </td>
 <td width="50%"></td>
 </tr>
@@ -1848,7 +1848,7 @@
 
 ## 按新视频持续积累官方模板
 
-每条新片会同时评估已接入库与官方未接入候选；免费可取得且符合输入和许可时，沿既有授权直接核验、试做和接入，把真实本人Demo、版本、调用与QA同步私人库和首页。官网目录展示不等于所有模板已可执行。更新监测只通知，不自动改旧包或旧工程。[长期接入规则](skill/talking-head-editor/references/template-lifecycle.md) · [更新通知说明](docs/MOTIONGIT_UPDATES.md)。
+每条新片会同时评估已接入库与官方未接入候选；免费可取得且符合输入和许可时，沿既有授权直接核验、试做和接入，把真实本人Demo、版本、调用与QA同步私人库和首页。官网目录展示不等于所有模板已可执行。更新监测只通知，不自动改旧包或旧工程。[长期接入规则](skill/ai-cut/references/template-lifecycle.md) · [更新通知说明](docs/MOTIONGIT_UPDATES.md)。
 
 ## 适合剪什么
 
@@ -1859,7 +1859,7 @@
 | 长访谈／Zoom 切片 | 先按独立主题保留完整观点，再做画面包装 | 已有分支 |
 | 旅行／生活 Vlog、剧情多场景 | 地点、事件、环境声、镜头连续性和故事节奏 | 专用自动流程尚未实现 |
 
-先判断剪辑路线，再选模板。同一条知识口播可以插入 B-roll；不能因此把整片套成旅行 Vlog。完整边界见[剪辑路线](skill/talking-head-editor/references/editing-routes.md)。
+先判断剪辑路线，再选模板。同一条知识口播可以插入 B-roll；不能因此把整片套成旅行 Vlog。完整边界见[剪辑路线](skill/ai-cut/references/editing-routes.md)。
 
 ## 在自己的电脑打开 HTML
 
@@ -1886,8 +1886,8 @@ Windows 使用 Git 和 Python 3.11／3.12。先在非 OneDrive 的源码目录�
 ```powershell
 New-Item -ItemType Directory -Force -Path "C:\Codex Workspace" | Out-Null
 Set-Location "C:\Codex Workspace"
-git clone https://github.com/Isaac3113/talking-head-editor.git
-Set-Location talking-head-editor
+git clone https://github.com/Isaac3113/ai-cut.git
+Set-Location ai-cut
 .\scripts\bootstrap.ps1
 .\.venv\Scripts\python.exe scripts/install_skill.py
 .\.venv\Scripts\python.exe -m talking_head_editor.cli doctor
@@ -1897,10 +1897,10 @@ Set-Location talking-head-editor
 
 | 组件 | 用途 | 继续阅读 |
 |---|---|---|
-| talking-head-editor | 剪辑判断、规则与流程总入口 | [完整调用顺序](skill/talking-head-editor/references/approved-workflow.md) |
+| ai-cut | 剪辑判断、规则与流程总入口 | [完整调用顺序](skill/ai-cut/references/approved-workflow.md) |
 | Remotion 4.0.523／React | 帧驱动动画、图表和真人效果 | [已有模板库](extensions/remotion-vd44/TEMPLATE_LIBRARY.md) |
 | HyperFrames 0.8.35／HTML | 短状态卡和 HTML 动画 | [动画与小 Skill 安装](docs/INSTALL_SKILLS.md) |
-| MotionGit 官方入口 | 按各包的公开合同制作所选控件 | [模板选择与适配器](skill/talking-head-editor/references/template-selection.md) |
+| MotionGit 官方入口 | 按各包的公开合同制作所选控件 | [模板选择与适配器](skill/ai-cut/references/template-selection.md) |
 | ChatCut | 当前默认在线主时间轴与最终导出 | [工具及工程说明](docs/WORKFLOW_AND_TOOLS.md) |
 
 动画运行时还可能需要 Node 22+、npm、浏览器、FFmpeg 和字体，按所选引擎安装；不要求每条视频都运行所有引擎。目录、运行环境、真实合成和新片验收分别核对。
@@ -1910,7 +1910,7 @@ Set-Location talking-head-editor
 ## 给 Codex 的启动消息
 
 ```text
-使用 $talking-head-editor 处理我的真人知识口播。
+使用 $ai-cut 处理我的真人知识口播。
 先读取仓库规则、中文新手入门和总 Skill，核对实际工具、素材与已有主时间轴。
 原片：<我的原片路径>。
 主题：<我提供或授权你看完命名>。
@@ -1922,16 +1922,16 @@ Set-Location talking-head-editor
 
 ## 文件位置、交付与维护
 
-- `skill/talking-head-editor/`：总 Skill、按需规则和辅助脚本。
+- `skill/ai-cut/`：总 Skill、按需规则和辅助脚本。
 - `templates/`：四层登记、来源与中文清单；`docs/template-gallery/`：HTML 及经授权的精简演示。
 - `extensions/`：可分发的动画源码及其许可证；`scripts/`：执行、安装、目录与验收工具。
 - `03_Documentation/Knowledge_Base/`：技术知识库。`work/`、依赖和缓存留在本机，不随 Git 提交。
 
-本仓库所有者自2026-10-31起使用三个位置：Active Repo仍为 C:\Codex Workspace\talking-head-editor，放代码、Skill、技术KB、运行环境和工作缓存；旧Hub C:\Users\User\OneDrive\Documents\Codex Workspace\Projects-AI-Talking-Head-Editor 保留原片、工作材料、发布资料与工程入口；正式交付进入 C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库。
+本仓库所有者自2026-10-31起使用三个位置：Active Repo仍为 C:\Codex Workspace\ai-cut，放代码、Skill、技术KB、运行环境和工作缓存；旧Hub C:\Users\User\OneDrive\Documents\Codex Workspace\Project-AI Cut 保留原片、工作材料、发布资料与工程入口；正式交付进入 C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库。
 
-作品按全库统一的 AIVD-三位编号 - 主要制作来源 - 简短标题登记，先查新Hub索引与映射，不按旧口播编号新建同片。作品目录只放非空的参考图、AI 成片，以及项目根已有字幕；不为归档创建空目录或新增字幕。两张封面和最新视频继续制作与核验，Facebook／小红书文案、固定首评继续交付并留原工作入口，不放入作品库；报告、ZIP、缓存和可编辑工程也不搬入。具体边界、旧名兼容和当日编号状态见[统一作品库说明](03_Documentation/Knowledge_Base/34_Unified_Video_Library.md)与[当前交付规则](skill/talking-head-editor/references/final-delivery.md)，其他创作者按自己的明确约定。
+作品按全库统一的 AIVD-三位编号 - 主要制作来源 - 简短标题登记，先查新Hub索引与映射，不按旧口播编号新建同片。作品目录只放非空的参考图、AI 成片，以及项目根已有字幕；不为归档创建空目录或新增字幕。两张封面和最新视频继续制作与核验，Facebook／小红书文案、固定首评继续交付并留原工作入口，不放入作品库；报告、ZIP、缓存和可编辑工程也不搬入。具体边界、旧名兼容和当日编号状态见[统一作品库说明](03_Documentation/Knowledge_Base/34_Unified_Video_Library.md)与[当前交付规则](skill/ai-cut/references/final-delivery.md)，其他创作者按自己的明确约定。
 
-换电脑先保护本地工作并安全 pull，再分别核对 Skill、依赖、媒体和在线工程，见[换电脑说明](docs/CROSS_COMPUTER_UPDATE.md)。学习阅读顺序：[总 Skill](skill/talking-head-editor/SKILL.md) → [完整流程](skill/talking-head-editor/references/approved-workflow.md) → [质量检查](skill/talking-head-editor/references/quality.md)。
+换电脑先保护本地工作并安全 pull，再分别核对 Skill、依赖、媒体和在线工程，见[换电脑说明](docs/CROSS_COMPUTER_UPDATE.md)。学习阅读顺序：[总 Skill](skill/ai-cut/SKILL.md) → [完整流程](skill/ai-cut/references/approved-workflow.md) → [质量检查](skill/ai-cut/references/quality.md)。
 
 维护者更新模板登记与演示后，可以重建目录和首页；首页生成器只更新SHOWCASE区块，保留独立A/B比较与正文。需已有FFmpeg/ffprobe；默认只生成片段，显式参数才写首页。
 

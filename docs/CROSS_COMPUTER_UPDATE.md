@@ -6,16 +6,16 @@ GitHub同步本仓库代码、Skill与技术说明；OneDrive同步Project Hub�
 
 | 位置 | 当前职责 |
 |---|---|
-| C:\Codex Workspace\talking-head-editor | Active Repo、总Skill源码、唯一技术KB、运行环境、工作工程与缓存；继续用private GitHub同步源码 |
-| C:\Users\User\OneDrive\Documents\Codex Workspace\Projects-AI-Talking-Head-Editor | 旧工作Hub；原片、素材、固定片尾、品牌资料、发布TXT及旧工程入口保留原位 |
+| C:\Codex Workspace\ai-cut | Active Repo、总Skill源码、唯一技术KB、运行环境、工作工程与缓存；继续用private GitHub同步源码 |
+| C:\Users\User\OneDrive\Documents\Codex Workspace\Project-AI Cut | 旧工作Hub；原片、素材、固定片尾、品牌资料、发布TXT及旧工程入口保留原位 |
 | C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库 | 统一正式交付入口；每片非空参考图、AI 成片，以及项目根已有字幕 |
 
 先读新Hub的AGENTS.md、素材索引.md和04_整理记录/2026-10-31_统一AI视频作品库/项目映射.json，再以统一ID找到旧工程。旧AIVD11对应AIVD-027，旧5-01～5-08对应015～022；旧6无映射，不按同号创建。005、006预留不建空目录，028只是2026-10-31当日下一号，运行时仍查实际目录、索引和映射。详见[KB34](../03_Documentation/Knowledge_Base/34_Unified_Video_Library.md)。不要把旧工作Hub配置直接改成作品库根，否则会让Logo、片尾和原片定位失效。
 
 ## 更新前后顺序
 
-1. 在本机`C:\Codex Workspace\talking-head-editor`核对repo；如果使用了其他本机路径，先核对remote再采用实际位置。不要在OneDrive旧副本开发，不覆盖本地修改或迁入缓存。
-2. 确认`origin`是`Isaac3113/talking-head-editor`且仓库仍为PRIVATE。用GitHub账户的当前权限核对可见性，不根据旧文档就宣称已验证；不要求用户贴密码或token。
+1. 在本机`C:\Codex Workspace\ai-cut`核对repo；如果使用了其他本机路径，先核对remote再采用实际位置。不要在OneDrive旧副本开发，不覆盖本地修改或迁入缓存。
+2. 确认`origin`是`Isaac3113/ai-cut`且仓库仍为PRIVATE。用GitHub账户的当前权限核对可见性，不根据旧文档就宣称已验证；不要求用户贴密码或token。
 3. 查看当前分支、`git status --short`和diff。存在本地工作、不同分支或分叉时先说明并保留，比较后处理；不自动`reset --hard`、`clean`、强制checkout、删除或覆盖。
 4. 仅在正确仓库、main干净、提交关系允许快进时执行`git fetch origin`、`git pull --ff-only origin main`。核对本地HEAD与`origin/main`；快进失败时保留现场，不能用强制同步掩盖冲突。
 5. 阅读`AGENTS.md`、`README.md`、KB入口、KB34、总Skill、`references/intro-outro.md`及新Hub当前索引／映射和任务相关规则。安装前查看个人Skill的`installation.json`和本地改动，按`docs/INSTALL_SKILLS.md`保留并协调已有安装；运行现有`scripts/install_skill.py`更新Skill。没有Python运行环境时先核对现有依赖，再按README恢复必要环境，不复制另一台电脑的`.venv`、模型、`node_modules`或缓存。
@@ -35,13 +35,13 @@ GitHub同步本仓库代码、Skill与技术说明；OneDrive同步Project Hub�
 以下提示词可交给另一台电脑的Codex。执行时使用当前GitHub主线和实时工程状态，不把文字里的要求当作已经完成的验证。
 
 ```text
-请更新这台电脑的 talking-head-editor 项目，并按最新规则继续工作。
+请更新这台电脑的 ai-cut 项目，并按最新规则继续工作。
 
-先在 C:\Codex Workspace\talking-head-editor 核对实际repo、origin、当前分支和git status/diff。origin应为Isaac3113/talking-head-editor，并核对PRIVATE可见性。若实际repo在别的非OneDrive本机路径，核对remote后使用该路径。保留本地未提交工作、未推送提交和个人Skill修改；不要reset --hard、clean、强制覆盖或删除。
+先在 C:\Codex Workspace\ai-cut 核对实际repo、origin、当前分支和git status/diff。origin应为Isaac3113/ai-cut，并核对PRIVATE可见性。若实际repo在别的非OneDrive本机路径，核对remote后使用该路径。保留本地未提交工作、未推送提交和个人Skill修改；不要reset --hard、clean、强制覆盖或删除。
 
 正确仓库在main、工作区干净且允许快进时，git fetch origin，再git pull --ff-only origin main，核对HEAD==origin/main；遇到本地修改或分叉先比较和说明，不强制同步。
 
-读取AGENTS.md、README.md、03_Documentation/Knowledge_Base/00_Start_Here.md、03_Documentation/Knowledge_Base/31_Template_Center_And_Editing_Routes.md、03_Documentation/Knowledge_Base/28_Intro_Outro_And_Cross_Computer.md、03_Documentation/Knowledge_Base/34_Unified_Video_Library.md、skill/talking-head-editor/SKILL.md、skill/talking-head-editor/references/intro-outro.md和docs/CROSS_COMPUTER_UPDATE.md。保护并核对个人Skill installation.json归属及改动后，用本仓库scripts/install_skill.py更新安装，运行doctor，分别报告规则和运行环境结果。
+读取AGENTS.md、README.md、03_Documentation/Knowledge_Base/00_Start_Here.md、03_Documentation/Knowledge_Base/31_Template_Center_And_Editing_Routes.md、03_Documentation/Knowledge_Base/28_Intro_Outro_And_Cross_Computer.md、03_Documentation/Knowledge_Base/34_Unified_Video_Library.md、skill/ai-cut/SKILL.md、skill/ai-cut/references/intro-outro.md和docs/CROSS_COMPUTER_UPDATE.md。保护并核对个人Skill installation.json归属及改动后，用本仓库scripts/install_skill.py更新安装，运行doctor，分别报告规则和运行环境结果。
 
 先从本机OneDrive定位AI 短视频创作Hub，读AGENTS.md、素材索引.md及04_整理记录/2026-10-31_统一AI视频作品库/项目映射.json。作品采用全库唯一的AIVD-三位编号 - 主要制作来源 - 简短标题；同片重剪或换工具不换ID，旧AIVD11查为027，旧5-01～08查为015～022，旧6无映射不能按006创建。005/006预留；028只是2026-10-31当日快照，新片仍核对实际目录、索引与映射。
 
@@ -51,7 +51,7 @@ GitHub同步本仓库代码、Skill与技术说明；OneDrive同步Project Hub�
 
 默认继续ChatCut同一个项目与唯一有效时间轴。先从当前任务交接或Hub资料核对projectId/timelineId，再读取在线最新状态；不要重复创建，也不要用旧快照覆盖新工程。缩短片头时同步平移正文画面、原声、字幕、MG、圆窗和SFX；跨片头的连续BGM可保留0帧起点并按正文新终点裁定，贴正文起点的BGM随正文平移。保护完整字音，重新导出字幕；已完成的位移不能重复执行。当前账号、工具、导出额度当场核对；工程修改、MP4真实导出、完整观看/试听和另一电脑恢复验证分开报告。没有真实导出就不要说视频已经完成，不静默改用其他主路线。
 
-同时阅读templates/README.zh-CN.md、来源说明及references/editing-routes.md和template-selection.md（references位于skill/talking-head-editor下）。模板中心分为72官网条目、70控件/210变体、55代码注册项、19真人效果，不能称216套完整视频模板。先选剪辑路线再选模板；知识口播与旅行Vlog不同，Vlog专用自动流程尚未实现。个人.motion与Key不入Git，需要本机自己的授权包及配置，不复制旧电脑运行内核。
+同时阅读templates/README.zh-CN.md、来源说明及references/editing-routes.md和template-selection.md（references位于skill/ai-cut下）。模板中心分为72官网条目、70控件/210变体、55代码注册项、19真人效果，不能称216套完整视频模板。先选剪辑路线再选模板；知识口播与旅行Vlog不同，Vlog专用自动流程尚未实现。个人.motion与Key不入Git，需要本机自己的授权包及配置，不复制旧电脑运行内核。
 
 更新完成后告诉我实际commit、Skill安装结果、模板中心是否能浏览、素材哈希和在线工程状态，以及仍需完成的项目。
 ```

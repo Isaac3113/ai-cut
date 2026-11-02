@@ -54,7 +54,7 @@ def unlock(job,asr=False):
 
 
 def parser():
-    p=argparse.ArgumentParser(description="Local, versioned talking-head editing tools. Semantic decisions belong to the Codex skill.")
+    p=argparse.ArgumentParser(description="AI Cut: local, versioned knowledge-video editing tools. Semantic decisions belong to the agent Skill.")
     sub=p.add_subparsers(dest="cmd",required=True)
     sub.add_parser("doctor")
     def command(name):

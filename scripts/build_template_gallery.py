@@ -236,12 +236,12 @@ def demo_href(demo, markdown=False):
 
 
 HTML = r'''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>AGI TOP · 中文剪辑模板中心</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Cut · 中文剪辑模板中心</title>
 <style>
 :root{font-family:"Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;color:#153340;background:#f4f7f9;--cyan:#148bad}*{box-sizing:border-box}body{margin:0}header{background:#153340;color:white;padding:34px max(24px,calc((100vw - 1400px)/2));border-top:5px solid #47b4d0}h1{font-size:30px;margin:8px 0 12px}p{line-height:1.75}header p{max-width:1100px;color:#d4e4eb;font-size:14px}.topline{font-size:12px;letter-spacing:.08em;color:#77d8ed}.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.stat{border:1px solid #3c606d;padding:10px 18px;border-radius:10px}.stat strong{font-size:24px;margin-right:6px}main{max-width:1448px;padding:24px;margin:auto}.notice{border:1px solid #c4d9e2;background:#eaf5f8;padding:14px 18px;border-radius:10px;font-size:13px}.toolbar{position:sticky;top:0;background:#f4f7f9f5;backdrop-filter:blur(8px);z-index:3;padding:16px 0;display:flex;gap:9px;flex-wrap:wrap}input,select,button{font:inherit;border:1px solid #c6d6df;border-radius:8px;padding:10px 12px;background:white;color:#153340}input{flex:1;min-width:230px}button{cursor:pointer}button.active{background:#153340;color:white}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0 0}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px}.card{background:white;border:1px solid #dce6eb;border-radius:13px;overflow:hidden;box-shadow:0 2px 7px #15334008}.preview{background:#0a1820;height:215px;display:flex;align-items:center;justify-content:center}.preview video{width:100%;height:100%;object-fit:contain}.body{padding:17px}.body h3{font-size:18px;margin:8px 0}.body p{font-size:13px;margin:9px 0}.eyebrow{font-size:11px;color:#507582}.chips{display:flex;gap:5px;flex-wrap:wrap}.chip{font-size:11px;background:#e8f4f8;border-radius:5px;padding:4px 7px;color:#126581}.status{background:#f0f2f4;color:#5e6870}details{font-size:12px;line-height:1.8;margin-top:12px;border-top:1px solid #edf1f4;padding-top:10px}summary{cursor:pointer;font-weight:600}ul{padding-left:18px;margin:7px 0}.links{display:flex;gap:12px;font-size:12px;margin-top:12px}a{color:#08769a;text-decoration:none}a:hover{text-decoration:underline}.result{font-size:13px;margin:15px 0;color:#567080}.empty{padding:60px;text-align:center}.routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:20px 0}.route{border:1px solid #d4e3ea;border-radius:10px;padding:14px;background:white;font-size:12px}.route strong{font-size:15px}.route p{margin:8px 0}.foot{font-size:12px;color:#66808b;margin:30px 0}dialog{border:0;border-radius:12px;max-width:95vw;padding:15px}dialog::backdrop{background:#000a}dialog video{max-width:90vw;max-height:80vh}.small{font-size:11px;color:#6a828e}.preview-only{margin:20px 0;padding:15px;border:1px dashed #a6bfc9;border-radius:10px}@media(max-width:600px){h1{font-size:24px}main{padding:15px}.toolbar{position:static}.grid{grid-template-columns:1fr}}
 .views{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:18px}.views p{margin:0 0 0 8px}.version-label{display:block;font-size:12px;color:#507582;margin:12px 0 8px}.demo-version{display:block;width:100%;margin-top:5px;font-size:12px;min-width:0}.preview.portrait{height:350px}.playback-note{padding:8px 10px;background:#eef7f8;border-radius:7px;font-size:12px!important;color:#235d68}.demo-meta:empty{display:none}.card select:focus-visible,.views button:focus-visible{outline:3px solid #47b4d0;outline-offset:2px}
 </style>
-<header><div class="topline">AGI TOP / TEMPLATE CENTER / 中文目录</div><h1>先看效果，再选择适合内容的模板</h1>
+<header><div class="topline">AGI TOP / AI CUT / 中文效果目录</div><h1>先看效果，再选择适合内容的模板</h1>
 <p>整套风格、动画控件、代码模板与真人特效分别登记。中文名称、使用条件、来源和 Demo 放在同一个入口；有演示不等于已通过新片验收。</p>
 <div class="stats">__STATS__</div></header>
 <main><div class="notice">本次 B 版获认可的是局部重点文字效果。模板按实际内容选择，不强套整片。官网 Demo 需要联网；本地控件 Demo 为静音版式演示，示例数值与模拟界面不代表真实业务成果。个人 .motion、Key 和完整原片不在本目录。</div>
@@ -249,7 +249,7 @@ HTML = r'''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
 <div class="views" role="group" aria-label="浏览入口"><button id="allTemplates" type="button">全部模板</button><button id="ownerDemos" type="button">本人Demo（已登记案例）</button><p class="small" id="localPlayback">本人库样例为静音版；已关联的本机原声版可在同一张卡直接播放。</p></div>
 <div class="tabs" id="tabs"></div><div class="toolbar"><input id="search" aria-label="搜索模板" placeholder="搜索中文名称、用途、控件ID…"><select id="category" aria-label="分类"><option value="">全部分类</option></select><select id="demoType" aria-label="Demo来源"><option value="">全部Demo来源</option><option value="own">本人Demo（已登记案例）</option><option value="official">官网示例</option><option value="other">其他本地演示</option></select><select id="ratio" aria-label="视频比例"><option value="">全部比例</option></select><button id="reset">重置</button></div>
 <div class="result" id="result"></div><div class="grid" id="grid"></div><div id="extra"></div>
-<p class="foot">来源、许可证与更新口径：<a href="https://github.com/Isaac3113/talking-head-editor/blob/main/templates/PROVENANCE.zh-CN.md">来源说明</a> · <a href="https://github.com/Isaac3113/talking-head-editor/blob/main/templates/README.zh-CN.md">完整中文清单</a> · <a href="https://github.com/Isaac3113/talking-head-editor/blob/main/docs/template-gallery/CATEGORIES.md">分类动画预览</a> · <a href="https://github.com/Isaac3113/talking-head-editor/blob/main/skill/talking-head-editor/references/template-selection.md">Skill选择规则</a><br>2026-10-27长期授权：以后每片经QA精选的本人静音Demo与集成说明可进入私人Git；完整原片、完整成片、源人像蒙版、Key、个人包与客户敏感信息不进入Git。这不是公开发布授权。其他电脑仍需独立准备运行环境、个人模板授权和新片素材。</p></main>
+<p class="foot">来源、许可证与更新口径：<a href="https://github.com/Isaac3113/ai-cut/blob/main/templates/PROVENANCE.zh-CN.md">来源说明</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md">完整中文清单</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/docs/template-gallery/CATEGORIES.md">分类动画预览</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/skill/ai-cut/references/template-selection.md">Skill选择规则</a><br>2026-10-27长期授权：以后每片经QA精选的本人静音Demo与集成说明可进入私人Git；完整原片、完整成片、源人像蒙版、Key、个人包与客户敏感信息不进入Git。这不是公开发布授权。其他电脑仍需独立准备运行环境、个人模板授权和新片素材。</p></main>
 <script>const DATA=__DATA__;const LAYERS=__LAYERS__;
 // BEGIN_DEMO_MODEL — shared by the browser and focused interaction tests.
 function demoKey(d){return d.path||d.url||''}
@@ -342,7 +342,7 @@ def build(root: Path, strict=False):
     if not strict:
         page=page.replace('<main><div class="notice">','<main><div class="notice">开发预览：部分演示仍在制作，不能当成全部完成。<br>')
     (gallery/'index.html').write_text(page, encoding='utf-8')
-    md = ['# 中文剪辑模板中心', '', '由四份固定基线和独立接入记录生成。更新后运行 `scripts/build_template_gallery.py --strict`，不要手工维护另一套重复清单。', '',
+    md = ['# AI Cut · 中文剪辑模板中心', '', '由四份固定基线和独立接入记录生成。更新后运行 `scripts/build_template_gallery.py --strict`，不要手工维护另一套重复清单。', '',
           '本次B版获认可的是局部重点文字效果。目录完整性、实际运行和新片验收分别记录；有Demo不代表自动适合口播。', '',
           '| 层级 | 数量 | 计数说明 |', '|---|---:|---|',
           f'| 官网集合 | {counts["style"]} | 基线72项，加已验证的新候选；不是全站总数 |',
@@ -352,10 +352,10 @@ def build(root: Path, strict=False):
           f'| 本片接入记录 | {len(integrations)} | 版本与本人Demo记录，不加入上方模板条目总数 |', '',
           '## 浏览方式', '',
           'GitHub里可按下方中文分类直接打开每条Demo；在本机运行以下命令打开可搜索、可播放的完整目录：', '',
-          '```powershell', 'Set-Location "C:\\Codex Workspace\\talking-head-editor"',
+          '```powershell', 'Set-Location "C:\\Codex Workspace\\ai-cut"',
           '.\\.venv\\Scripts\\python.exe scripts/serve_template_gallery.py', '```', '',
           '浏览器访问命令返回的本机地址。官网示例需要联网，本地演示随仓库同步。', '',
-          '[分类动画预览](../docs/template-gallery/CATEGORIES.md) · [来源与中文化说明](PROVENANCE.zh-CN.md) · [路线边界](../skill/talking-head-editor/references/editing-routes.md) · [模板选择规则](../skill/talking-head-editor/references/template-selection.md)', '']
+          '[分类动画预览](../docs/template-gallery/CATEGORIES.md) · [来源与中文化说明](PROVENANCE.zh-CN.md) · [路线边界](../skill/ai-cut/references/editing-routes.md) · [模板选择规则](../skill/ai-cut/references/template-selection.md)', '']
     for layer, title in LAYERS.items():
         md += ['## '+title, '']
         rows = [e for e in entries if e['layer']==layer]
@@ -374,7 +374,7 @@ def build(root: Path, strict=False):
         for demo in preview.get('demos',[]):
             md += ['['+preview.get('label_zh','附加效果预览')+']('+demo.get('url','')+')', '']
     (root/'templates/README.zh-CN.md').write_text('\n'.join(md), encoding='utf-8')
-    (gallery/'README.md').write_text('# 可播放中文模板中心\n\n[完整中文清单](https://github.com/Isaac3113/talking-head-editor/blob/main/templates/README.zh-CN.md) · [来源说明](https://github.com/Isaac3113/talking-head-editor/blob/main/templates/PROVENANCE.zh-CN.md)\n\n本机运行 `python scripts/serve_template_gallery.py` 查看可搜索目录。`index.html` 是由机器登记表生成的浏览入口；GitHub本身不会把HTML作为网站执行。\n\n2026-10-27长期授权：`demos/`可收以后每片经QA精选的本人静音Demo与集成说明，限私人Git。完整原片、完整成片、源人像蒙版、Key、个人包和客户敏感信息不进入Git；本规则不授权公开。静音动画演示不代表完整声画剪辑已通过。\n', encoding='utf-8')
+    (gallery/'README.md').write_text('# AI Cut · 可播放中文模板中心\n\n[完整中文清单](https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md) · [来源说明](https://github.com/Isaac3113/ai-cut/blob/main/templates/PROVENANCE.zh-CN.md)\n\n本机运行 `python scripts/serve_template_gallery.py` 查看可搜索目录。`index.html` 是由机器登记表生成的浏览入口；GitHub本身不会把HTML作为网站执行。\n\n2026-10-27长期授权：`demos/`可收以后每片经QA精选的本人静音Demo与集成说明，限私人Git。完整原片、完整成片、源人像蒙版、Key、个人包和客户敏感信息不进入Git；本规则不授权公开。静音动画演示不代表完整声画剪辑已通过。\n', encoding='utf-8')
     return {'entries':len(entries), 'counts':dict(counts), 'local_demo_files':len(local_paths), 'integration_records':len(integrations), 'strict':strict}
 
 

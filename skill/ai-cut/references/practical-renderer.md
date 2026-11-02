@@ -20,15 +20,15 @@
 
 ## CLI
 
-工具解析顺序：JSON 的 `ffmpeg`/`ffprobe` 明确配置 → `TALKING_HEAD_EDITOR_ROOT/.runtime/ffmpeg/bin` → PATH。配置中的 `source` 和显式相对工具路径均以 **JSON 所在目录**为基准，和 shell 工作目录无关。
+工具解析顺序：JSON 的 `ffmpeg`/`ffprobe` 明确配置 → `AI_CUT_ROOT/.runtime/ffmpeg/bin`（未设置时兼容`TALKING_HEAD_EDITOR_ROOT`）→ PATH。配置中的 `source` 和显式相对工具路径均以 **JSON 所在目录**为基准，和 shell 工作目录无关。
 
 以下命令从源码仓库根目录运行，配置与输出路径请换为本条的实际位置。
 
 ```powershell
-python skill/talking-head-editor/scripts/render_practical_demo.py --config work/practical.json --validate-only
-python skill/talking-head-editor/scripts/render_practical_demo.py --config work/practical.json --out-dir work/practical-previews-r1 --stills-only --preview-times "1,3.9,6.9,9.9,15.9,21.4"
-python skill/talking-head-editor/scripts/render_practical_demo.py --config work/practical.json --out-dir work/practical-sample-r1 --range-start 0 --range-duration 6
-python skill/talking-head-editor/scripts/render_practical_demo.py --config work/practical.json --out-dir work/practical-full-r1
+python skill/ai-cut/scripts/render_practical_demo.py --config work/practical.json --validate-only
+python skill/ai-cut/scripts/render_practical_demo.py --config work/practical.json --out-dir work/practical-previews-r1 --stills-only --preview-times "1,3.9,6.9,9.9,15.9,21.4"
+python skill/ai-cut/scripts/render_practical_demo.py --config work/practical.json --out-dir work/practical-sample-r1 --range-start 0 --range-duration 6
+python skill/ai-cut/scripts/render_practical_demo.py --config work/practical.json --out-dir work/practical-full-r1
 ```
 
 `--validate-only` 只读，不要求 `--out-dir`，不创建文件。输出真实事件数量、类型、相邻效果起点最大间隔、超过 3 秒的间隔及首尾覆盖提示。配置错误返回非零；节奏遗漏报告 `cadence_ok: false` 和 `warnings`，不擅自修改计划。是否允许语义上的例外由主流程记录。

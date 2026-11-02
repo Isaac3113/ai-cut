@@ -1,6 +1,6 @@
 # 自动剪辑 Skill 使用教学｜从领取到剪出第一支口播
 
-欢迎领取 Talking Head Editor（知识口播剪辑 Skill）。这份指南先带你完成安装，再用自己的素材试剪。第一次使用，按顺序做到第六步即可；进阶模板稍后再学。
+欢迎领取 AI Cut（知识口播剪辑 Skill）。这份指南先带你完成安装，再用自己的素材试剪。第一次使用，按顺序做到第六步即可；进阶模板稍后再学。
 
 当前领取方式：私人 GitHub 仓库逐个授权。收到这份教学不等于已经取得仓库访问权限。
 
@@ -18,7 +18,7 @@ Skill 是 AI 的工作流程与规则。实际制作还需要能读取本机文�
 2. 讲师邀请后，用被邀请的账号接受仓库邀请。
 3. 登录同一账号，确认能打开下方项目主页，再开始安装。
 
-[项目主页与完整文件](https://github.com/Isaac3113/talking-head-editor)
+[项目主页与完整文件](https://github.com/Isaac3113/ai-cut)
 
 看到 404、Repository not found 或没有下载入口时，先核对账号、邀请和权限；不要反复重新安装软件。
 
@@ -42,16 +42,16 @@ Codex、ChatCut、云端转写、生成和导出的可用功能与费用，取�
 
 ## 四、安装到自己的电脑
 
-建议源码目录：`C:\Codex Workspace\talking-head-editor`。这是推荐示例，不是讲师电脑的共享文件夹；不要把正在运行的源码、依赖和缓存放进 OneDrive 同步目录。
+建议源码目录：`C:\Codex Workspace\ai-cut`。这是推荐示例，不是讲师电脑的共享文件夹；不要把正在运行的源码、依赖和缓存放进 OneDrive 同步目录。
 
 ### 方法 A：让 Codex 带你安装
 
 打开能访问本机文件的 Codex，复制以下内容。若需要登录 GitHub，请你自己在官方登录窗口完成。
 
 ```text
-请帮我安装 talking-head-editor。我使用 Windows，已经接受私人 GitHub 仓库的邀请。
-仓库：https://github.com/Isaac3113/talking-head-editor
-建议源码目录：C:\Codex Workspace\talking-head-editor
+请帮我安装 ai-cut。我使用 Windows，已经接受私人 GitHub 仓库的邀请。
+仓库：https://github.com/Isaac3113/ai-cut
+建议源码目录：C:\Codex Workspace\ai-cut
 
 先检查本机 Git、Python 3.11／3.12、是否已有源码及同名 Skill，再读取仓库的 docs/NOTION_GUIDE.zh-CN.md、docs/GETTING_STARTED.zh-CN.md 和 docs/INSTALL_SKILLS.md。
 没有源码时再 clone；已有源码时先保护本地修改，不能删除或强制覆盖。
@@ -69,10 +69,10 @@ Codex、ChatCut、云端转写、生成和导出的可用功能与费用，取�
 ```powershell
 New-Item -ItemType Directory -Force -Path "C:\Codex Workspace" | Out-Null
 Set-Location "C:\Codex Workspace"
-git clone https://github.com/Isaac3113/talking-head-editor.git
-Set-Location "C:\Codex Workspace\talking-head-editor"
+git clone https://github.com/Isaac3113/ai-cut.git
+Set-Location "C:\Codex Workspace\ai-cut"
 .\scripts\bootstrap.ps1
-.\.venv\Scripts\python.exe scripts/install_skill.py --target "$env:USERPROFILE\.agents\skills\talking-head-editor"
+.\.venv\Scripts\python.exe scripts/install_skill.py --target "$env:USERPROFILE\.agents\skills\ai-cut"
 .\.venv\Scripts\python.exe -m talking_head_editor.cli doctor
 ```
 
@@ -80,9 +80,9 @@ Set-Location "C:\Codex Workspace\talking-head-editor"
 
 任何一步报错，先停在该步，把命令和完整错误发给 Codex。不要忽略失败继续往下执行，也不需要为了本项目全局放宽脚本执行策略。
 
-完成后让 Codex确认能发现 `talking-head-editor`，并读到本仓库的规则。新 Skill 没出现时可重启客户端再检查。`doctor` 成功不代表 ChatCut 已连接，也不代表任何新视频已经完成。
+完成后让 Codex确认能发现 `ai-cut`，并读到本仓库的规则。新 Skill 没出现时可重启客户端再检查。`doctor` 成功不代表 ChatCut 已连接，也不代表任何新视频已经完成。
 
-[详细环境、动画及辅助 Skill 安装](https://github.com/Isaac3113/talking-head-editor/blob/main/docs/INSTALL_SKILLS.md)
+[详细环境、动画及辅助 Skill 安装](https://github.com/Isaac3113/ai-cut/blob/main/docs/INSTALL_SKILLS.md)
 
 ## 五、先连接自己的剪辑工具
 
@@ -97,7 +97,7 @@ Skill 安装、账号登录、工具可调用、素材可读、工程可导出�
 先准备一段 20～30 秒的自有口播，记下 MP4 的完整路径。将下面的方括号内容换成你的真实资料，填写视频比例后发送。
 
 ```text
-请使用 $talking-head-editor 帮我做第一次知识口播试剪。
+请使用 $ai-cut 帮我做第一次知识口播试剪。
 
 原片完整路径：[填写我的 MP4 完整路径]
 本条视频比例：[明确填写 9:16、16:9、1:1 或沿用原片比例]
@@ -124,12 +124,12 @@ Skill 安装、账号登录、工具可调用、素材可读、工程可导出�
 
 先按内容挑表达方式：讲步骤用流程动画，比较方案用对比，讲数据用有依据的图表，演示电脑操作用局部放大和重点引导。
 
-[全部模板、分类与来源](https://github.com/Isaac3113/talking-head-editor/blob/main/templates/README.zh-CN.md)
+[全部模板、分类与来源](https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md)
 
 想在电脑打开现有 HTML 模板中心，在源码根目录运行：
 
 ```powershell
-Set-Location "C:\Codex Workspace\talking-head-editor"
+Set-Location "C:\Codex Workspace\ai-cut"
 python scripts/serve_template_gallery.py
 ```
 
@@ -139,7 +139,7 @@ GitHub 保存 HTML 和 Demo 文件，但 GitHub 文件页不会自动运行这�
 
 看到 Demo、取得模板源码、装好运行环境、用自己的原片验证，是不同阶段。MotionGit 官方预览不等于已经附送该模板的个人 `.motion` 包；真人抠像和多角度效果也不一定只换一个视频文件就能复用。
 
-[看 Demo、制作特效和剪整片的区别](https://github.com/Isaac3113/talking-head-editor/blob/main/docs/GETTING_STARTED.zh-CN.md)
+[看 Demo、制作特效和剪整片的区别](https://github.com/Isaac3113/ai-cut/blob/main/docs/GETTING_STARTED.zh-CN.md)
 
 ## 八、检查成片与提出修改
 
@@ -163,13 +163,13 @@ GitHub 保存 HTML 和 Demo 文件，但 GitHub 文件页不会自动运行这�
 把以下内容发给 Codex，比直接覆盖旧文件更稳妥：
 
 ```text
-请更新我电脑上的 talking-head-editor。
+请更新我电脑上的 ai-cut。
 先定位现有源码和实际安装的 Skill，检查分支、Git 状态、本地改动和安装归属，再按 docs/CROSS_COMPUTER_UPDATE.md 安全获取更新。
 不要删除我的原片、工程、配置和成片，不强制覆盖本地修改，也不要安装第二份同名 Skill。
 代码更新后，按现有安装目标同步 Skill，检查基础环境和工具连接。报告实际更新的内容、需要我重新授权的部分及未验证项。
 ```
 
-[安全更新与换电脑说明](https://github.com/Isaac3113/talking-head-editor/blob/main/docs/CROSS_COMPUTER_UPDATE.md)
+[安全更新与换电脑说明](https://github.com/Isaac3113/ai-cut/blob/main/docs/CROSS_COMPUTER_UPDATE.md)
 
 ## 十、遇到问题先看这里
 
@@ -188,12 +188,12 @@ GitHub 保存 HTML 和 Demo 文件，但 GitHub 文件页不会自动运行这�
 
 ## 完整资料入口
 
-- [项目主页](https://github.com/Isaac3113/talking-head-editor)
-- [完整中文新手入门](https://github.com/Isaac3113/talking-head-editor/blob/main/docs/GETTING_STARTED.zh-CN.md)
-- [安装说明](https://github.com/Isaac3113/talking-head-editor/blob/main/docs/INSTALL_SKILLS.md)
-- [总 Skill](https://github.com/Isaac3113/talking-head-editor/blob/main/skill/talking-head-editor/SKILL.md)
-- [模板与分类](https://github.com/Isaac3113/talking-head-editor/blob/main/templates/README.zh-CN.md)
-- [换电脑与更新](https://github.com/Isaac3113/talking-head-editor/blob/main/docs/CROSS_COMPUTER_UPDATE.md)
+- [项目主页](https://github.com/Isaac3113/ai-cut)
+- [完整中文新手入门](https://github.com/Isaac3113/ai-cut/blob/main/docs/GETTING_STARTED.zh-CN.md)
+- [安装说明](https://github.com/Isaac3113/ai-cut/blob/main/docs/INSTALL_SKILLS.md)
+- [总 Skill](https://github.com/Isaac3113/ai-cut/blob/main/skill/ai-cut/SKILL.md)
+- [模板与分类](https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md)
+- [换电脑与更新](https://github.com/Isaac3113/ai-cut/blob/main/docs/CROSS_COMPUTER_UPDATE.md)
 
 文档核对：2026-11-02。Windows 命令按当前仓库脚本核对；未将此教学视为所有学员电脑已实测通过。界面、套餐和第三方模板会更新，具体以你实际工具和对应官方文档为准。
 
@@ -205,4 +205,4 @@ GitHub 保存 HTML 和 Demo 文件，但 GitHub 文件页不会自动运行这�
 - [Python for Windows](https://www.python.org/downloads/windows/)
 - [ChatCut](https://www.chatcut.io/)
 
-本指南不是 MotionGit 官方产品文档。原创代码与规则及第三方内容的使用范围，分别查看仓库 [LICENSE](https://github.com/Isaac3113/talking-head-editor/blob/main/LICENSE) 与 [THIRD_PARTY.md](https://github.com/Isaac3113/talking-head-editor/blob/main/THIRD_PARTY.md)。
+本指南不是 MotionGit 官方产品文档。原创代码与规则及第三方内容的使用范围，分别查看仓库 [LICENSE](https://github.com/Isaac3113/ai-cut/blob/main/LICENSE) 与 [THIRD_PARTY.md](https://github.com/Isaac3113/ai-cut/blob/main/THIRD_PARTY.md)。

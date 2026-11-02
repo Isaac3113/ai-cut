@@ -1,3 +1,7 @@
+# AI Cut project instructions
+
+> 2026-11-02：品牌与仓库改名为 AI Cut / Isaac3113/ai-cut；源码 C:\Codex Workspace\ai-cut，资料 Hub 为 Project-AI Cut，总 Skill 为 ai-cut。先读 docs/AI_CUT_RENAME.md。旧包名、schema、manager 和冻结ID仅保留为兼容合同，不作为当前项目入口。
+
 # Project instructions
 
 Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_Here.md. Continue the existing Python runtime and animation extensions; do not rebuild the architecture.
@@ -10,20 +14,20 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 - Update the project knowledge base for changes and teaching workflows. Use normal Git commits without rewriting existing histories.
 
 - Keep editing and validation records in local work. From 2026-10-31, this owner's formal delivery is the unified AI video library, not the old 05_成片/最新版. Inside each mapped work, create 参考图 and AI 成片 only when files exist; existing SRT or other subtitle files stay at the work root. Do not generate subtitles or empty categories merely for archiving. Facebook/Xiaohongshu copy and the fixed first comment remain at the existing working-materials entry and in chat, outside the library. Validate a replacement before updating the same work; preserve original footage, assets, recovery dependencies and the active editing project. See final-delivery.md, project-storage.md and KB34. Preserve the private repository visibility.
-- For the owner’s current cover and ending, read skill/talking-head-editor/references/intro-outro.md: 0.1-second cover and the supplied fixed outro; use docs/CROSS_COMPUTER_UPDATE.md for safe rule/media handoff.
+- For the owner’s current cover and ending, read skill/ai-cut/references/intro-outro.md: 0.1-second cover and the supplied fixed outro; use docs/CROSS_COMPUTER_UPDATE.md for safe rule/media handoff.
 
 - Read the owner’s shared storage rules before moving a project. OneDrive is a documentation/media Hub, not an active source or runtime location. Keep the authoritative technical KB in the local Git repo and link it from PROJECT_STRUCTURE.md. Preserve other-computer checkpoints before removing legacy copies.
 
 ## Owner storage and identity (2026-10-31)
 
-- Active code, Skill source, technical KB, runtimes and work/cache remain in C:\Codex Workspace\talking-head-editor. The old Hub at C:\Users\User\OneDrive\Documents\Codex Workspace\Projects-AI-Talking-Head-Editor remains the source/working-materials and project-entry location. The formal delivery root is C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库; resolve this owner's actual OneDrive path on another computer rather than moving code there.
+- Active code, Skill source, technical KB, runtimes and work/cache remain in C:\Codex Workspace\ai-cut. The old Hub at C:\Users\User\OneDrive\Documents\Codex Workspace\Project-AI Cut remains the source/working-materials and project-entry location. The formal delivery root is C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库; resolve this owner's actual OneDrive path on another computer rather than moving code there.
 - Before delivery or assigning a number, read the AI 短视频创作 Hub's AGENTS.md, 素材索引.md and 04_整理记录/2026-10-31_统一AI视频作品库/项目映射.json. All production sources share AIVD-NNN - 主要制作来源 - 简短标题. Codex-edited talking-head/screen footage uses Codex剪辑; later editing does not replace an existing primary generation-source label.
 - Same work keeps its mapped identity across revisions and tools. AIVD-005/006 are reserved without empty directories. AIVD-028 is the next-ID snapshot on 2026-10-31, not a hardcoded allocator. Old AIVD11 maps to AIVD-027, old AIVD5-01…08 map to 015…022; old AIVD6 has no mapping and must not be recreated by matching a number. Preserve frozen IDs, old work paths and historic archive filenames.
 - Copy only the selected verified delivery files; record source/target, byte sizes and SHA256 outside the media work folder. Same-name/different-hash conflicts stop that copy; identical copies may be reused after checking. Existing archived source files and prior migration records are not a new cleanup target. AIVD-023 has covers pending video validation and no successfully archived current film. This storage update changes no editing, audio, branding, tool or publishing-authorization preference.
 
 ## Repository visibility
 
-The owner explicitly requested PRIVATE upload on 2026-09-13. Keep Isaac3113/talking-head-editor private. Preparing an open-source package is not permission to make the repository public. A visibility change requires a new explicit owner request.
+The owner explicitly requested PRIVATE upload on 2026-09-13. Keep Isaac3113/ai-cut private. Preparing an open-source package is not permission to make the repository public. A visibility change requires a new explicit owner request.
 
 
 ## Homepage and future public release
@@ -33,4 +37,4 @@ The owner authorized preparing the knowledge-talking-head project homepage, all 
 
 ## On-demand official template integration and update monitoring
 
-For each new video, consider both integrated templates and suitable official candidates not yet integrated. The owner authorizes free, permitted acquisition, verified official execution, actual input testing and private-library enrichment without a repeated per-template approval. Read skill/talking-head-editor/references/template-lifecycle.md. Store stable-ID case/integration records in templates/template-integrations.json and regenerate both catalogs and homepage after real QA. Never mark all official templates executable from previews. The update monitor notifies only; it does not auto-upgrade approved projects or publish anything.
+For each new video, consider both integrated templates and suitable official candidates not yet integrated. The owner authorizes free, permitted acquisition, verified official execution, actual input testing and private-library enrichment without a repeated per-template approval. Read skill/ai-cut/references/template-lifecycle.md. Store stable-ID case/integration records in templates/template-integrations.json and regenerate both catalogs and homepage after real QA. Never mark all official templates executable from previews. The update monitor notifies only; it does not auto-upgrade approved projects or publish anything.

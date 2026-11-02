@@ -1,6 +1,6 @@
 # 安装哪些Skill，按什么顺序
 
-1. 仓库根执行 `scripts/install_skill.py` 安装唯一总入口 talking-head-editor。直接复制时必须保留references/scripts/agents，并配置源码目录。
+1. 仓库根执行 `scripts/install_skill.py` 安装唯一总入口 ai-cut。直接复制时必须保留references/scripts/agents，并配置源码目录。
 2. ChatCut路线：在自己的Codex插件目录安装官方ChatCut，自己登录/授权；先读官方chatcut-plugin-basics，按总Skill调用asset-import、talking-head-guide、transcription（需要时）、create-motion-graphics、verification、export。插件源码不包含在本项目。
 3. Remotion/video-use：请Codex使用系统skill-installer，严格读取extensions/upstream-lock.json中的repository、commit和path，把上游完整目录放进一个新的暂存目录（每个子目录以锁文件name命名）。然后执行：
 
@@ -23,4 +23,4 @@ GitHub同步规则和代码，不自动同步插件授权、账号登录、素�
 
 已有个人Skill绑定其他源码根时，安装器会保留它并报错。先核对installation.json归属与文件哈希、保留旧安装备份，再由用户明确选择的源码根重新安装；不要绕过归属检查或删除运行环境。本次本机既有运行根的规则同步不等于另一台电脑环境已验证。
 
-实操无声素材helper在skill/talking-head-editor/scripts/render_practical_demo.py；用法与已验证画幅边界见references/practical-renderer.md。它可复用六类画面效果，但不会建立ChatCut项目、上传素材或生成独立音效时间轴，这些仍需主流程实际完成。
+实操无声素材helper在skill/ai-cut/scripts/render_practical_demo.py；用法与已验证画幅边界见references/practical-renderer.md。它可复用六类画面效果，但不会建立ChatCut项目、上传素材或生成独立音效时间轴，这些仍需主流程实际完成。

@@ -29,7 +29,7 @@
 
 | 顺序 | 文件或 Skill | 读后做什么 |
 |---|---|---|
-| 1 | talking-head-editor / SKILL.md → editing-routes | 找到唯一主控，先判断本条叙事路线；口播及长访谈切片再进入下列流程，Vlog和剧情片转各自方案 |
+| 1 | ai-cut / SKILL.md → editing-routes | 找到唯一主控，先判断本条叙事路线；口播及长访谈切片再进入下列流程，Vlog和剧情片转各自方案 |
 | 2 | 本页 → user-preferences → master-playbook | 理解完整路线、选定样式与质量门槛；局部修改只读相关章节 |
 | 3 | ChatCut 路线：references/chatcut.md → 官方 chatcut:chatcut-plugin-basics | 检查当前插件工具、账号和已有工程；其他路线看 operations 或 jianying |
 | 4 | editorial → chatcut:talking-head-guide；需要时 transcription | 转写核对、删除失败重录、完整语义粗剪 |
@@ -45,7 +45,7 @@
 | 10 | final-delivery → export_final_subtitles.py → manual-editing | 交付TXT/SRT、完整说明与逐秒/逐帧数据；核对正确可见版本 |
 | 11 | package_social_delivery.py build → audit | 五项（小红书竖版另加4:3横版）、复制文件、制作依据与同版视频绑定，按平台整理；封面比例不决定视频数量 |
 
-6A/6B/6C 是按场景选择的分支，不是强制每段顺序调用三遍；6D在本用户原片含电脑实操时必走，无实操跳过。所有辅助任务完成后返回 talking-head-editor。HyperFrames 是引擎及项目内官方规则，不编造一个已安装的个人同名 Skill；缺依赖时按官方来源安装所需部分。
+6A/6B/6C 是按场景选择的分支，不是强制每段顺序调用三遍；6D在本用户原片含电脑实操时必走，无实操跳过。所有辅助任务完成后返回 ai-cut。HyperFrames 是引擎及项目内官方规则，不编造一个已安装的个人同名 Skill；缺依赖时按官方来源安装所需部分。
 
 ## 新视频的逐步工作方法
 
@@ -104,7 +104,7 @@
 ## 可直接使用的提示词
 
 ```text
-使用 $talking-head-editor，沿用已认可的动作节奏，使用我提供的Logo品牌配色和轻水印。
+使用 $ai-cut，沿用已认可的动作节奏，使用我提供的Logo品牌配色和轻水印。
 原片：<我的视频路径>
 文稿/术语：<可选>
 自有素材：<可选文件夹>

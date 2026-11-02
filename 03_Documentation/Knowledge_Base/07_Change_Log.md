@@ -96,3 +96,8 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 ## 2026-11-02 Notion 学员教学与入口整理
 
 新增 docs/NOTION_GUIDE.zh-CN.md，提供可复制的中文学员教学、真实源码安装命令、首支试剪及更新提示词。用户明确保留私人仓库、逐个邀请 GitHub 账号；README 首屏与中文新手页加入入口，KB32补充分工与静态部署边界。使用当前官方 `.agents/skills` 作为首次新装显式目标，尊重已有安装与归属，不改本机 Skill 或执行器。私人源码同步、学员访问、新电脑运行、Notion 发布和 Vercel 部署分别核验；本轮不进行后四类外部执行，不重剪或付费生成视频。
+
+
+## 2026-11-02 AI Cut统一名称
+
+按用户确认将品牌、C盘源码、OneDrive Hub、私人GitHub仓库及正式Skill入口统一到AI Cut。更新当前教学、模板生成源及活跃路径映射，保留技术兼容与历史证据，新增KB35、改名／换电脑和Vercel／Namecheap教学。物理改根、环境验证、Git同步和网站发布分别按实际回执记录，不由文档生成宣称部署成功。

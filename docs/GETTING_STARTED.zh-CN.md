@@ -11,8 +11,8 @@
 ```powershell
 New-Item -ItemType Directory -Force -Path "C:\Codex Workspace" | Out-Null
 Set-Location "C:\Codex Workspace"
-git clone https://github.com/Isaac3113/talking-head-editor.git
-Set-Location talking-head-editor
+git clone https://github.com/Isaac3113/ai-cut.git
+Set-Location ai-cut
 ```
 
 如果已经有同一个 repo，先检查本地修改和分支，按[安全换电脑说明](CROSS_COMPUTER_UPDATE.md)更新，不要为更新删除旧目录或强制覆盖。
@@ -108,7 +108,7 @@ MotionGit 先准备自己有权使用的原始.motion，并复制仓库的motion
 
 已有安装被修改或属于另一个源码目录时，安装器会停止保护原文件，先比较再协调。doctor只报告本机环境，不证明ChatCut已连接或成片已完成。
 
-准备自己的原片、本条视频比例、术语、Logo/品牌素材及交付目标。让Codex使用talking-head-editor，按照[完整流程](../skill/talking-head-editor/references/approved-workflow.md)工作。当前默认主路线是ChatCut，需自己的插件、账号、既有工程定位和当场可用工具；缺连接时先说明，继续独立的素材核对，不把本地Demo冒充完整在线工程。
+准备自己的原片、本条视频比例、术语、Logo/品牌素材及交付目标。让Codex使用ai-cut，按照[完整流程](../skill/ai-cut/references/approved-workflow.md)工作。当前默认主路线是ChatCut，需自己的插件、账号、既有工程定位和当场可用工具；缺连接时先说明，继续独立的素材核对，不把本地Demo冒充完整在线工程。
 
 原声语义粗剪 → 冻结最终时间 → 添加相关动画/字幕/SFX → 实际导出 → 全片观看及听审 → 用户确认。外部动画是画面素材，其内部文字可能需要修改源码重渲；不一定成为ChatCut原生可编辑文字层。
 

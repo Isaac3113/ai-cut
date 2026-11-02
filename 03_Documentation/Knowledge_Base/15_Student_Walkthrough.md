@@ -13,7 +13,7 @@
 
 ## 先分清三个东西
 
-- **Skill是工作规则**：规定保留什么、删什么、何时配素材、调用哪个工具、怎样验收。总入口叫talking-head-editor。
+- **Skill是工作规则**：规定保留什么、删什么、何时配素材、调用哪个工具、怎样验收。总入口叫ai-cut。
 - **软件/工具负责执行**：本创作者默认ChatCut负责主时间轴和导出；Remotion/HyperFrames生成复杂动画，Python/Pillow可制作实操效果素材，全部实际导回主时间轴；FFprobe/FFmpeg检查真实文件。识别复用有效转写，或按实际可用能力调用本地识别器/已授权的ChatCut转写，不把所有识别器记作都使用过。
 - **工程与源码负责修改**：ChatCut保留字幕、人声、BGM、逐事件独立SFX及素材位置；复杂动画保存React/HTML/Python源码或配置。仅收到MP4不能还原所有图层，仅安装Skill也不代表软件、账号和模型都已装好。
 
@@ -43,12 +43,12 @@
 
 1. **接收素材并确定角色。**
    输入：真人原片、可选文稿、补充素材、风格参考。读取用户明确提供的本地路径，确认文件存在且可读，分别标记原片/素材/风格参考。不能把参考片当新口播原片，也不自行上传其他文件。
-   工具/Skill：文件读取、talking-head-editor；operations与reference-motion规则。
+   工具/Skill：文件读取、ai-cut；operations与reference-motion规则。
    输出：输入清单、原片哈希、文件角色。没有原片时只准备方案，不造样片交差。本案例VD44只用于学习风格，主体仍是原来的客户流程口播。
 
 2. **检查画面、音轨与比例。**
    核对可解码性、时长、宽高、方向、帧率、颜色和音轨；看实际人物位置。当前新片先询问并收到本条视频比例的明确回答，再只做所选一版；本章旧案例原比例仅为其历史选择。
-   工具/Skill：FFprobe、FFmpeg、本机source-profile；talking-head-editor的operations/quality。
+   工具/Skill：FFprobe、FFmpeg、本机source-profile；ai-cut的operations/quality。
    输出：源片检查与待处理问题。本案例原片为16:9，方形VD44参考没有改变交付比例。
 
 3. **分析参考视频，形成具体样式。**
@@ -63,12 +63,12 @@
 
 5. **先做语义粗剪。**
    比较失败重录、重复表达、口癖与有意强调；保留否定、条件、因果、指代及必要呼吸。只有完整语义成立才删改或重排，每次删除要能定位恢复。
-   工具/Skill：talking-head-editor的editorial/master-playbook；ChatCut read_script/apply_script，必要时manage_transcript修词；仅用户明确选择本机主路线时用粗剪计划与rough render。
+   工具/Skill：ai-cut的editorial/master-playbook；ChatCut read_script/apply_script，必要时manage_transcript修词；仅用户明确选择本机主路线时用粗剪计划与rough render。
    输出：可追溯删改记录和可听的粗剪。不能把简单相似句检测当作完成语义审核。本案例保留已有9对主体/原声片段的粗剪，只重做包装；本轮没有重新完整听审粗剪。
 
 6. **建立唯一主时间轴，按当前要求应用绝对速度一次。**
    当前预设相对原片直接1.2倍一次；用户明确指定其他速度时覆盖，不叠加到已加速成片。确定语句顺序和最终位置，人物和原声同步。字幕、动画、音效都由该时间轴计算位置；动画按最终时长制作后以1.0倍导入，音乐保持自然速度。
-   工具/Skill：ChatCut时间轴与edit_item等实际字段；talking-head-editor的chatcut/data-contract；结构快照审计。
+   工具/Skill：ChatCut时间轴与edit_item等实际字段；ai-cut的chatcut/data-contract；结构快照审计。
    输出：源片时间→成片帧对应。历史案例当时为1.1倍/30fps，某动画在最终第1148帧开始，局部第241帧就对应最终第1389帧；这些只是历史例子，新片按其已确认参数计算，不各自再算另一套语音时间。不能导出后再把整个MP4额外加速。
 
 7. **为每个重点安排观众要看到的东西。**
@@ -103,14 +103,14 @@
 
 13. **交付、手调与用户确认。**
     交付MP4、字幕、来源/删改/检查记录、在线工程与动画源码，写清哪些是原生元素、哪些是外部视频。完整连续观看、试听和人工字幕同步实际完成后才更新相应状态。
-    工具/Skill：talking-head-editor的manual-editing/quality；外部导出归档需另验证兼容性。
+    工具/Skill：ai-cut的manual-editing/quality；外部导出归档需另验证兼容性。
     输出：审阅版或已验证定稿。用户认可后才把参考风格设为后续默认。当前案例用户最终风格已明确认可；代理完整连续视听、人工≤200ms字幕同步仍未完成；新机器/第二条原片成功也未证明。不能说已经把总Skill每一项验收全部做完。
 
 ## 学员应先看哪些 Skill
 
 | 层级 | 名称或文件 | 何时读 |
 |---|---|---|
-| 总入口 | talking-head-editor/SKILL.md | 每条口播开始时，决定路线和必须遵守的约束 |
+| 总入口 | ai-cut/SKILL.md | 每条口播开始时，决定路线和必须遵守的约束 |
 | 完整规则 | references/master-playbook.md | 完整新剪或重剪，理解全流程 |
 | 用户样式 | references/user-preferences.md | 读取这位创作者的参数；学员应换成自己的选择，不能继承案例批准 |
 | 编辑判断 | references/editorial.md | 去重录、口误、离题、重排时 |
@@ -129,7 +129,7 @@
 
 ## 学员拿到完整 Skill 后怎样使用
 
-1. 解压学员包，先读这份流程，再读完整总规则。包内talking-head-editor保留全部入口、参考及辅助文件（以manifest实际数量为准）；单文件阅读版仅便于上课翻阅，不是另外一套需要安装的Skill。
+1. 解压学员包，先读这份流程，再读完整总规则。包内ai-cut保留全部入口、参考及辅助文件（以manifest实际数量为准）；单文件阅读版仅便于上课翻阅，不是另外一套需要安装的Skill。
 2. Skill本身不是全套软件安装包。ChatCut路线需要学员自己的插件、账号及上传授权；Remotion/HyperFrames需要可用Node、依赖、字体、相应官方Skill与动画工程；本机路线还需要本项目Python执行器、FFmpeg和识别模型。
 3. 本项目运行包装已支持TALKING_HEAD_EDITOR_ROOT指向自己的源码目录。不要把讲师电脑的“已安装/已登录/已通过”当成学员机器状态。未提供执行器源码访问时，不能声称仅复制Skill就能运行本机命令。
 4. 学员自己提供有权使用的口播、素材和参考。账号、原片、肖像、私人在线工程链接不随规则包分享。不要复制别人的客户事实或假定讲师的动画商业许可覆盖学员。
@@ -139,7 +139,7 @@
 可交给学员的启动提示词：
 
 ```text
-请先阅读 talking-head-editor/SKILL.md 和相关参考文件，按我选择的剪辑工具处理。
+请先阅读 ai-cut/SKILL.md 和相关参考文件，按我选择的剪辑工具处理。
 我的原片：<实际路径>
 我的文稿和术语：<可选>
 我的素材：<实际文件夹，可空>

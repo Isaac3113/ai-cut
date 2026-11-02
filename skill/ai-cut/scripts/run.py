@@ -9,6 +9,8 @@ from pathlib import Path
 def resolve_root(entry=None, environ=None):
     entry = Path(entry or __file__).resolve()
     environ = os.environ if environ is None else environ
+    if environ.get('AI_CUT_ROOT'):
+        return Path(environ['AI_CUT_ROOT']).expanduser().resolve()
     if environ.get('TALKING_HEAD_EDITOR_ROOT'):
         return Path(environ['TALKING_HEAD_EDITOR_ROOT']).expanduser().resolve()
     manifest = entry.parent.parent / 'installation.json'
@@ -17,7 +19,7 @@ def resolve_root(entry=None, environ=None):
     for parent in entry.parents:
         if (parent / 'pyproject.toml').is_file() and (parent / 'src/talking_head_editor').is_dir():
             return parent
-    raise ValueError('Set TALKING_HEAD_EDITOR_ROOT to your cloned talking-head-editor repository, or install with scripts/install_skill.py.')
+    raise ValueError('Set AI_CUT_ROOT to your cloned ai-cut repository, or install with scripts/install_skill.py. TALKING_HEAD_EDITOR_ROOT remains a legacy compatibility alias.')
 
 
 def main():
@@ -27,7 +29,7 @@ def main():
         raise SystemExit(str(exc)) from exc
     python = root / '.venv' / ('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
     if not python.is_file() or not (root / 'pyproject.toml').is_file():
-        raise SystemExit(f'Runtime missing at {root}. Run scripts/bootstrap.ps1 or configure TALKING_HEAD_EDITOR_ROOT.')
+        raise SystemExit(f'Runtime missing at {root}. Run scripts/bootstrap.ps1 or configure AI_CUT_ROOT (legacy alias: TALKING_HEAD_EDITOR_ROOT).')
     return subprocess.call([str(python), '-m', 'talking_head_editor.cli', *sys.argv[1:]], cwd=root)
 
 

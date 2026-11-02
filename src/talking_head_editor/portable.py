@@ -27,7 +27,7 @@ def package_manifest(job, project, selected, audience):
               'scope':'private editing handoff' if audience=='internal' else 'external handoff with raw-media rights filtering',
               'dependencies':[{'path':x.relative_to(job).as_posix(),'sha256':file_hash(x)} for x in sorted(allowed)],
               'withheld':withheld,'ready_to_rerender':not withheld,
-              'runtime_requirements':['Python package talking-head-editor '+__version__,'FFmpeg with libass','FFprobe','locally licensed Chinese font via THE_FONT'],
+              'runtime_requirements':['Python package ai-cut '+__version__,'FFmpeg with libass','FFprobe','locally licensed Chinese font via THE_FONT'],
               'source_original_unchanged':True,'model_or_font_binaries_included':False}
     return allowed,manifest
 

@@ -1,4 +1,4 @@
-# 中文剪辑模板中心
+# AI Cut · 中文剪辑模板中心
 
 由四份固定基线和独立接入记录生成。更新后运行 `scripts/build_template_gallery.py --strict`，不要手工维护另一套重复清单。
 
@@ -17,13 +17,13 @@
 GitHub里可按下方中文分类直接打开每条Demo；在本机运行以下命令打开可搜索、可播放的完整目录：
 
 ```powershell
-Set-Location "C:\Codex Workspace\talking-head-editor"
+Set-Location "C:\Codex Workspace\ai-cut"
 .\.venv\Scripts\python.exe scripts/serve_template_gallery.py
 ```
 
 浏览器访问命令返回的本机地址。官网示例需要联网，本地演示随仓库同步。
 
-[分类动画预览](../docs/template-gallery/CATEGORIES.md) · [来源与中文化说明](PROVENANCE.zh-CN.md) · [路线边界](../skill/talking-head-editor/references/editing-routes.md) · [模板选择规则](../skill/talking-head-editor/references/template-selection.md)
+[分类动画预览](../docs/template-gallery/CATEGORIES.md) · [来源与中文化说明](PROVENANCE.zh-CN.md) · [路线边界](../skill/ai-cut/references/editing-routes.md) · [模板选择规则](../skill/ai-cut/references/template-selection.md)
 
 ## 官网模板与片段
 

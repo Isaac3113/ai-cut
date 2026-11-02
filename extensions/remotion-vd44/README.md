@@ -3,7 +3,7 @@
 > 当前状态更新（2026-09-12）：原创作者已明确认可最后完整视频及HyperFrames/Remotion的做法，并要求作为后续默认。此前“风格待认可”记录为历史；本次不补写代理未执行的连续视听或人工同步。完整流程与顺序见总Skill的references/approved-workflow.md。
 
 
-这里是现有 talking-head-editor 的素材扩展。Remotion 4.0.523 与 React 19.2.3 实际生成动画，主剪辑、字幕和声音仍在原 ChatCut 工程。没有用动画重新定义语义剪辑。
+这里是现有 ai-cut 的素材扩展。Remotion 4.0.523 与 React 19.2.3 实际生成动画，主剪辑、字幕和声音仍在原 ChatCut 工程。没有用动画重新定义语义剪辑。
 
 ## 实际组成
 

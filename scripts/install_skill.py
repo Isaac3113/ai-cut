@@ -5,8 +5,8 @@ import shutil
 from pathlib import Path
 from talking_head_editor.util import ROOT, file_hash, atomic_json, require
 
-p=argparse.ArgumentParser(); p.add_argument("--target",type=Path,default=Path.home()/".codex/skills/talking-head-editor")
-a=p.parse_args(); source=ROOT/"skill/talking-head-editor"; target=a.target.resolve()
+p=argparse.ArgumentParser(); p.add_argument("--target",type=Path,default=Path.home()/".codex/skills/ai-cut")
+a=p.parse_args(); source=ROOT/"skill/ai-cut"; target=a.target.resolve()
 manifest=target/"installation.json"
 if target.exists() and any(target.iterdir()):
     require(manifest.is_file() and Path(json.loads(manifest.read_text())["source_root"]).resolve()==ROOT,"existing_skill","Existing unrecognized skill preserved")

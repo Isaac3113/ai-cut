@@ -1,3 +1,5 @@
+> 2026-11-02现行入口：[AI Cut改名与路径衔接](../../docs/AI_CUT_RENAME.md)。旧名称／旧绝对路径所在的历史段保留为来源证据；当前代码、Skill与Hub读新说明。
+
 > 2026-10-31现行存放与编号：[KB34 统一AI视频作品库与旧工程衔接](34_Unified_Video_Library.md)。正式交付进入新作品库，源码与旧工作Hub原位保留；先查统一索引／映射。下方有日期的旧05、AIVD旧编号与迁移状态仅作历史记录，不用来重建或覆盖当前作品。
 
 > 2026-09-21追加 long-form-clips-v2：用户指定AIVD5 Zoom母项目，1:1已确认，自主选题/命名，条数不限5条；逐句筛选痛点、真实卖点、原声钩子与必要条件，删除啰嗦。要求ChatCut与完整A到Z操作录屏。每片用AIVD5子序号。当前已注册官方MCP并登录成功，但本会话及子代理尚无ChatCut工具，待新会话加载。未开始正式剪辑。详见KB27最新段落。
@@ -10,6 +12,8 @@
 
 # Start here
 
+2026-11-02: [KB35 AI Cut名称与路径](35_AI_Cut_Identity_And_Paths.md)说明当前统一品牌、技术兼容、改名回执与Vercel教学入口。
+
 2026-11-02: [Notion 学员教学与私有授权](../../docs/NOTION_GUIDE.zh-CN.md)提供领取、安装、首片提示词、排错与安全更新。主仓库继续私有，学员提供 GitHub 用户名并接受邀请；HTML 展厅、网站托管和本机剪辑分开，技术边界见[KB32 新增教学段](32_Homepage_And_Local_Gallery.md#2026-11-02-notion-教学与私有学员领取)。
 
 2026-10-27: [KB33 官网更新与按新片接入](33_MotionGit_Updates_And_On_Demand_Integration.md)记录每小时通知、逐片免费接入与私人Demo长期授权、overlay增长及实际验证边界。
@@ -20,11 +24,11 @@
 
 2026-10-27: [KB30 MotionGit接入评估](30_MotionGit_Evaluation.md)记录当前Skill审计、官网2.7.17-alpha.2隔离实测及同音轨A/B。建议保留现有主时间轴、按内容局部接入；未设为默认，个人模板包和测试媒体不进入Git。技术检查、抽帧审阅与完整听审／用户风格认可分别记录。
 
-2026-10-26 封面风格认可：用户已认可原片暗背景、真人轮廓描边、hook及主副辅助文字层级的样图，命名为`dark-frame-cutout-hook-v1`，并明确这是多种风格之一。可按内容与画幅尝试其他风格，不固定样图标题、斜黑体或右下布局；旧亮浅渐层加居中大头像及普通主题词不再作为默认。规则和Hub参考图入口见[当前用户偏好](../../skill/talking-head-editor/references/user-preferences.md)与[封面提示词员工](../../skill/talking-head-editor/references/cover-prompt-worker.md)。本次风格认可不替代实际片头替换、重新导出或全片验收；0.1秒片头规则保持。
+2026-10-26 封面风格认可：用户已认可原片暗背景、真人轮廓描边、hook及主副辅助文字层级的样图，命名为`dark-frame-cutout-hook-v1`，并明确这是多种风格之一。可按内容与画幅尝试其他风格，不固定样图标题、斜黑体或右下布局；旧亮浅渐层加居中大头像及普通主题词不再作为默认。规则和Hub参考图入口见[当前用户偏好](../../skill/ai-cut/references/user-preferences.md)与[封面提示词员工](../../skill/ai-cut/references/cover-prompt-worker.md)。本次风格认可不替代实际片头替换、重新导出或全片验收；0.1秒片头规则保持。
 
 2026-10-26: [KB29 可复用代码特效库](29_Reusable_Effect_Library.md)记录50套现成模板、两项适配组件、独立调用入口、参考19项差距与本次真实渲染范围。
 
-Read ../../README.md and ../../skill/talking-head-editor/references/approved-workflow.md. The approved teaching preset is reusable; every new video is separately checked. This public snapshot contains source, not private footage or account permissions.
+Read ../../README.md and ../../skill/ai-cut/references/approved-workflow.md. The approved teaching preset is reusable; every new video is separately checked. This public snapshot contains source, not private footage or account permissions.
 
 2026-10-08: [KB28 固定片头片尾与跨电脑更新](28_Intro_Outro_And_Cross_Computer.md)记录0.1秒封面、用户视频片尾、媒体哈希及安全更新边界。规则正文在master Skill的references/intro-outro.md；一键复制交接与安全pull见docs/CROSS_COMPUTER_UPDATE.md。
 

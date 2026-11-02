@@ -6,8 +6,8 @@
 
 ## 位置与来源
 
-- Active Repo：`C:\Codex Workspace\talking-head-editor`。
-- 本扩展：`C:\Codex Workspace\talking-head-editor\extensions\remotion-vd44`。
+- Active Repo：`C:\Codex Workspace\ai-cut`。
+- 本扩展：`C:\Codex Workspace\ai-cut\extensions\remotion-vd44`。
 - 独立入口：`src/template-library/index.ts`，调用 `LibraryRoot.tsx`；没有替换原 `src/Root.tsx`，原工程继续由原 `run.ps1` 管理。
 - 机器目录：`template-catalog.json`；含来源、默认参数入口、画幅/帧率/时长和 19 项差距，后续效果继续追加。
 - RenderComp 原文件：`src/vendor/rendercomp/`，固定 commit `f648980e528defb7594e24c6447055f0540f340b`；[上游仓库](https://github.com/RenderComp/free-remotion-templates)。
@@ -20,7 +20,7 @@
 在 PowerShell 进入扩展目录，列出模板并打开独立预览：
 
 ```powershell
-Set-Location "C:\Codex Workspace\talking-head-editor\extensions\remotion-vd44"
+Set-Location "C:\Codex Workspace\ai-cut\extensions\remotion-vd44"
 .\run-library.ps1 -Action List
 .\run-library.ps1 -Action Preview
 ```
@@ -62,7 +62,7 @@ Set-Location "C:\Codex Workspace\talking-head-editor\extensions\remotion-vd44"
 ```
 
 ```powershell
-.\run-library.ps1 -Action Render -TemplateId library-bar-zh -PropsPath "C:\Codex Workspace\talking-head-editor\work\template-library\bar-props.json"
+.\run-library.ps1 -Action Render -TemplateId library-bar-zh -PropsPath "C:\Codex Workspace\ai-cut\work\template-library\bar-props.json"
 ```
 
 ## 50 个上游模板目录

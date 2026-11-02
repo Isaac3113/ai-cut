@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "built_at_utc": "2026-10-29T07:12:16.866924+00:00",
+  "built_at_utc": "2026-11-02T12:18:13.834291+00:00",
   "catalog": "templates/catalog.json",
-  "catalog_sha256": "1d80908b0b3dcffc7f571b316ebbea38765f535adff3c440ec4687fbed917a9b",
+  "catalog_sha256": "e30dbd9b7d14c4a7ce6a4cc694294cde685377e91030cafd6ee9d2c89724c43b",
   "snapshot": "templates/sources/motiongit-catalog.snapshot.json",
   "snapshot_sha256": "c4bb605a22a3529c0dcbe8acb720ae50df3f5bc0c4ede8577f6caf8218d9a485",
   "counts": {
@@ -10,7 +10,7 @@
     "local_gifs": 147,
     "official_posters": 69,
     "integration_records": 11,
-    "reused_local_gifs": 146,
+    "reused_local_gifs": 147,
     "extra_preview_posters": 1,
     "local_gif_bytes": 20356747
   },
@@ -83,7 +83,7 @@
       "playback_speed": 1,
       "sampling_fps": 10,
       "palette_colors": 96,
-      "cache_reused": false,
+      "cache_reused": true,
       "width": 202,
       "height": 360,
       "frames": 30,

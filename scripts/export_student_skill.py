@@ -6,9 +6,11 @@ import json
 import re
 import zipfile
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'skill/talking-head-editor'
+SOURCE = ROOT / 'skill/ai-cut'
+SOURCE_REPOSITORY = 'https://github.com/Isaac3113/ai-cut'
 
 
 def sanitize(text):
@@ -17,6 +19,27 @@ def sanitize(text):
     text = re.sub(r'\b[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}\b', '<EXAMPLE_ID>', text)
     text = re.sub(r'\b[0-9a-f]{64}\b', '<EXAMPLE_SHA256>', text)
     return text
+
+
+def link_source_documents(text, source_path):
+    """Keep bundled references local; link separate runtime docs to their source."""
+    def rewrite(match):
+        target = match.group(1)
+        if re.match(r'[a-z]+://|#', target):
+            return match.group(0)
+        relative, separator, fragment = target.partition('#')
+        resolved = (source_path.parent / relative).resolve()
+        if resolved.is_relative_to(SOURCE.resolve()):
+            return match.group(0)
+        if not resolved.is_relative_to(ROOT.resolve()):
+            raise ValueError('Skill document link escapes the source repository')
+        if not resolved.is_file():
+            raise ValueError('Missing source documentation: ' + str(resolved.relative_to(ROOT)))
+        url = SOURCE_REPOSITORY + '/blob/main/' + quote(resolved.relative_to(ROOT).as_posix())
+        if separator:
+            url += '#' + fragment
+        return '](' + url + ')'
+    return re.sub(r'\]\(([^)]+)\)', rewrite, text)
 
 
 def export(destination):
@@ -37,14 +60,16 @@ def export(destination):
             raise ValueError(f'Unexpected file type in the skill: {path.name}')
         raw = path.read_bytes()
         content = sanitize(raw.decode('utf-8-sig'))
-        relative = 'talking-head-editor/' + path.relative_to(SOURCE).as_posix()
+        if path.suffix == '.md':
+            content = link_source_documents(content, path)
+        relative = 'ai-cut/' + path.relative_to(SOURCE).as_posix()
         prepared[relative] = content
         source_records.append({'file': relative, 'source_sha256': hashlib.sha256(raw).hexdigest(), 'redacted': content != raw.decode('utf-8-sig')})
     guide = ROOT / '03_Documentation/Knowledge_Base/15_Student_Walkthrough.md'
     prepared['01_逐步流程与Skill对照.md'] = sanitize(guide.read_text(encoding='utf-8-sig'))
-    prepared['00_学员先读.md'] = '''# 口播剪辑完整Skill学员包
+    prepared['00_学员先读.md'] = '''# AI Cut 完整 Skill 学员包
 
-先读01_逐步流程与Skill对照.md，随后看02_完整规则阅读版.md。真正的Skill目录为talking-head-editor，入口是SKILL.md，其所有参考文件均包含在包内。
+先读01_逐步流程与Skill对照.md，随后看02_完整规则阅读版.md。真正的Skill目录为ai-cut，入口是SKILL.md，其所有参考文件均包含在包内。
 
 本包保留全部总Skill文件（数量以manifest.json为准）。02是这些Markdown规则的合订阅读版，不要把它额外安装成第二个Skill。辅助规则文件用于理解本项目的调用范围；Remotion、video-use和ChatCut官方完整依赖须另外取得，不能把辅助说明当完整软件。
 
@@ -54,7 +79,7 @@ def export(destination):
 
 本创作者默认ChatCut为唯一主时间轴、最终导出和在线手改；学员明确选择自己的工具与素材授权。采用ChatCut路线时核对当前可调用工具、账号、项目及活动时间轴，不借用讲师账号。缺工具先说明，继续独立检查/分析/素材准备，不静默切换本地主路线。只有用户明确改选本机或剪映才切换。
 
-本机路线的scripts/run.py从TALKING_HEAD_EDITOR_ROOT读取源码根；需要另有本项目源码与.venv。没有执行器源码先解决依赖，不把安装Skill说成已能剪片。本地实操/动画工具也可以只制作无声素材，再实际导入ChatCut，不等于自动建立在线工程。
+本机路线的scripts/run.py从AI_CUT_ROOT读取源码根；需要另有本项目源码与.venv。没有执行器源码先解决依赖，不把安装Skill说成已能剪片。本地实操/动画工具也可以只制作无声素材，再实际导入ChatCut，不等于自动建立在线工程。
 
 环境状态、商业许可和最终验收均不继承。每条新视频先询问并收到本条视频比例的明确答复，再布局和剪辑；读取原片或封面比例不代替用户选择。同片修改沿用已确认比例。实际转写与声音逐片检查，不套用案例人声增益；讲师的风格认可不代替学员选择。
 
@@ -66,17 +91,17 @@ def export(destination):
     dependencies = {
         'bundle_scope': 'Complete project-owned master skill plus reading guide; external products and runtime dependencies are separate.',
         'main_skill_files': len(source_files),
-        'skill_names': ['talking-head-editor', 'remotion-best-practices', 'video-use', 'chatcut:chatcut-plugin-basics', 'chatcut:asset-import', 'chatcut:talking-head-guide', 'chatcut:create-motion-graphics', 'chatcut:verification', 'chatcut:export'],
+        'skill_names': ['ai-cut', 'remotion-best-practices', 'video-use', 'chatcut:chatcut-plugin-basics', 'chatcut:asset-import', 'chatcut:talking-head-guide', 'chatcut:create-motion-graphics', 'chatcut:verification', 'chatcut:export'],
         'hyperframes_project_skills': list(json.loads((ROOT/'extensions/hyperframes-vd44/skills-lock.json').read_text())['skills']),
         'runtime_versions_used_in_case': {'Remotion':'4.0.523', 'HyperFrames':'0.8.35', 'ChatCut_plugin':'1.10.12', 'Node':'24.19.0'},
         'version_note': 'These are verified case versions, not a claim about the newest release or the student machine.',
         'official_sources': [{'skill':s['name'], 'repository':'https://github.com/'+s['repository'], 'commit_used':s['commit']} for s in lock['skills'] if s['name'] in {'remotion-best-practices','video-use'}],
         'hyperframes_source': 'https://github.com/heygen-com/hyperframes',
         'chatcut_installation': 'Install the official ChatCut plugin from your own Codex plugin catalog and authorize your own account.',
-        'local_runtime': 'Separate AI-Talking-Head-Editor source + Python environment, FFmpeg/FFprobe; FunASR if choosing local transcription.',
+        'local_runtime': 'Separate AI Cut source + Python environment, FFmpeg/FFprobe; FunASR if choosing local transcription.',
         'licenses': ['https://www.remotion.dev/license','https://gsap.com/standard-license/','https://github.com/google/fonts/tree/main/ofl/notosanssc'],
         'social_delivery': {
-            'rules': 'talking-head-editor/references/social-delivery.md',
+            'rules': 'ai-cut/references/social-delivery.md',
             'required_source_tool': 'scripts/package_social_delivery.py from the source repository',
             'image_generation': 'Use the available built-in imagegen; actual generation and image review are required.',
             'optional_skills': ['facebook-copywriter', 'xiaohongshu-copywriter', 'image-prompt-designer'],
@@ -89,7 +114,7 @@ def export(destination):
         content = sanitize((ROOT/'skill-adapters'/name/'SKILL.md').read_text(encoding='utf-8-sig'))
         prepared[f'辅助规则/{name}.md'] = '# 本项目辅助入口的阅读副本\n\n此文件供教学说明；其中上游参考由官方Skill另行安装，不把本文件视为完整独立安装包。\n\n' + content
     order = ['SKILL.md', 'references/project-storage.md', 'references/approved-workflow.md','references/brand-and-presenter.md','references/master-playbook.md','references/user-preferences.md','references/editorial.md','references/visual-storytelling.md','references/reference-motion.md','references/chatcut.md','references/final-delivery.md','references/cover-prompt-worker.md','references/quality.md','references/manual-editing.md','references/tool-stack.md','references/operations.md','references/data-contract.md','references/jianying.md']
-    combined = ['# 完整口播总Skill · 学员合订阅读版\n\n这份文件合并全部Markdown规则供上课阅读；可安装版本仍是旁边的talking-head-editor目录。案例参数与历史状态不代表学员机器已通过。\n']
+    combined = ['# AI Cut 总 Skill · 学员合订阅读版\n\n这份文件合并全部Markdown规则供上课阅读；可安装版本仍是旁边的ai-cut目录。案例参数与历史状态不代表学员机器已通过。\n']
     order.insert(order.index('references/cover-prompt-worker.md'), 'references/social-delivery.md')
     # A new routed reference must also be present in the complete reading edition.
     order += sorted(p.relative_to(SOURCE).as_posix() for p in source_files
@@ -98,8 +123,8 @@ def export(destination):
         def rebase_link(match):
             target=match.group(1)
             if re.match(r'[a-z]+://|#',target):return match.group(0)
-            return ']('+ (Path('talking-head-editor')/Path(relative).parent/target).as_posix()+')'
-        reading=re.sub(r'\]\(([^)]+)\)',rebase_link,prepared['talking-head-editor/'+relative])
+            return ']('+ (Path('ai-cut')/Path(relative).parent/target).as_posix()+')'
+        reading=re.sub(r'\]\(([^)]+)\)',rebase_link,prepared['ai-cut/'+relative])
         combined.extend(['\n\n---\n\n# 文件：'+relative+'\n\n', reading])
     prepared['02_完整规则阅读版.md'] = ''.join(combined)
     for relative, content in prepared.items():
@@ -110,7 +135,7 @@ def export(destination):
     # Check all local links in the complete master skill before any write.
     broken=[]
     for relative,content in prepared.items():
-        if not (relative.startswith('talking-head-editor/') or relative=='02_完整规则阅读版.md') or not relative.endswith('.md'): continue
+        if not (relative.startswith('ai-cut/') or relative=='02_完整规则阅读版.md') or not relative.endswith('.md'): continue
         for target in re.findall(r'\]\(([^)]+)\)',content):
             if re.match(r'[a-z]+://|#',target): continue
             key=(Path(relative).parent/target.split('#')[0]).as_posix()

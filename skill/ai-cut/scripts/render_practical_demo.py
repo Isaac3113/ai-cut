@@ -301,7 +301,7 @@ def tool_path(name, cfg, config_dir):
         if found:
             return str(Path(found).resolve())
         raise ValueError(f"Configured {name} was not found: {explicit}")
-    runtime_root = os.environ.get("TALKING_HEAD_EDITOR_ROOT")
+    runtime_root = os.environ.get("AI_CUT_ROOT") or os.environ.get("TALKING_HEAD_EDITOR_ROOT")
     if runtime_root:
         for executable in (name + ".exe", name):
             candidate = Path(runtime_root).expanduser() / ".runtime" / "ffmpeg" / "bin" / executable
@@ -310,7 +310,7 @@ def tool_path(name, cfg, config_dir):
     found = shutil.which(name)
     if found:
         return str(Path(found).resolve())
-    raise ValueError(f"{name} unavailable: set config {name}, PATH, or TALKING_HEAD_EDITOR_ROOT.")
+    raise ValueError(f"{name} unavailable: set config {name}, PATH, or AI_CUT_ROOT (legacy alias: TALKING_HEAD_EDITOR_ROOT).")
 
 
 def load_config(config_path):

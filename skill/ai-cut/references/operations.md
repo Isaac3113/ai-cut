@@ -4,7 +4,7 @@
 
 当前用户最新要求见 [用户剪辑偏好](user-preferences.md)。先问并记录本条视频比例，得到答复后才开始剪辑；原片直接1.2倍一次。下方历史默认source仅是底层兼容值，不能绕过提问；选定比例不受当前后端支持时应报告限制或使用已授权可用后端，不可偷偷退回source。0.1.3已接入单比例、1.1倍速和逐步流程。plan中设置output_formats=["source"]（默认）或明确的["landscape","portrait"]；style.playback_speed控制统一时间轴，原版无该字段时保持1倍速。用户要求重剪完整内容可用draft模式输出完整1080p审阅版；不等于final风格批准。
 
-用可用的Python执行本Skill的`scripts/run.py`，它会按`TALKING_HEAD_EDITOR_ROOT` → 已安装Skill的`installation.json.source_root` → 入口所在目录向上查找有效源码根的顺序定位checkout，再调用该根的`.venv`，并以该根作为工作目录。缺少有效根或运行时会明确失败，不会自动借用另一台电脑或另一份仓库。当前电脑的`C:\Codex Workspace\AI-Talking-Head-Editor`仍是有效维护目录，但不能把它硬编码成换电脑后的默认；先核对实际解析根与本次选定仓库一致。有空格的路径加引号，参数不拼成shell指令。
+用可用的Python执行本Skill的`scripts/run.py`，它会按`AI_CUT_ROOT` → 兼容旧变量`TALKING_HEAD_EDITOR_ROOT` → 已安装Skill的`installation.json.source_root` → 入口所在目录向上查找有效源码根的顺序定位checkout，再调用该根的`.venv`，并以该根作为工作目录。缺少有效根或运行时会明确失败，不会自动借用另一台电脑或另一份仓库。当前正式源码根为`C:\Codex Workspace\ai-cut`；旧`AI-Talking-Head-Editor`与`talking-head-editor`名称仅用于历史兼容，不作为新安装默认。换电脑先核对实际解析根与本次选定仓库一致。有空格的路径加引号，参数不拼成shell指令。
 
 ```
 doctor
