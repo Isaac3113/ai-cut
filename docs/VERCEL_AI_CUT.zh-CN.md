@@ -1,6 +1,17 @@
 # AI Cut：把模板展厅放到自己的域名
 
-目标地址：`https://aicut.agi-top.com`。现有私人仓库为 https://github.com/Isaac3113/ai-cut 。本说明是操作教学；写好说明或连接GitHub不代表网站已发布。
+正式地址：[AI Cut 模板展厅](https://aicut.agi-top.com)。2026-11-02已验证上线，现有私人仓库仍为 https://github.com/Isaac3113/ai-cut 。本页保留操作教学，并单独记录实际部署与验证，避免把连接GitHub当作网站已发布。
+
+## 当前已验证状态（2026-11-02）
+
+- 用途：用户确认个人学习与免费交流，不用于业务获客或销售；使用Hobby，未开通付费套餐。
+- Vercel Team：`Isaac Chong's projects`；项目：`ai-cut`；仓库：`Isaac3113/ai-cut`，保持Private并按GitHub账号逐个授权。
+- 生产部署：`dpl_7KNHHdXEmjJtuZAKA4PLUma8Cdp5`，状态`READY`，环境`production`，来源提交`3b34674974741c33bb6d170e78fefd151c8c855f`。
+- 构建配置：Root Directory=`docs/template-gallery`，Preset=`Other`，Build/Install Command为空，Output Directory=`.`，不包含根目录以外文件。
+- Namecheap CNAME：Host=`aicut`，Value=`a36ff3d4d2816e20.vercel-dns-017.com.`；由用户填写，Vercel回读`verified=true`、`misconfigured=false`。该值是本次配置记录，未来重建项目时重新读取Vercel要求。
+- HTTPS首页200，线上HTML与该部署提交的Git文件逐字节一致；本机仅有CRLF/LF换行差异。312份本地MP4/JPG的HEAD状态与类型全部通过，4条官方代表预览HEAD通过。浏览器分类与本人横竖比例筛选通过；代表性本人横版和官网流程动画已播放至结束，竖版样本确认时间推进，样本无视频错误；不代表全部视频已连续看听验收。
+
+以下步骤用于理解与维护现有项目，不需要重新创建第二个同名项目。
 
 ## 两边各负责什么
 
@@ -16,7 +27,7 @@
 
 本机 `/local-demo-manifest.json` 与 `/local-owner-media/` 来自Python服务，Vercel静态托管不会自动读取个人电脑原声素材；没有这些本机路由时页面回退已登记静音Demo。不要把整个工作Hub、原片、私人MotionGit包、密钥、客户资料或运行缓存放入部署范围。
 
-发布前确认采用的Demo可以公开；官网示例保留来源、许可及候选状态，不把全部预览写成已附送的可执行模板。确认对外内容后，再点击下面的Deploy。公开网站不会自动给访客私人GitHub的访问权。
+现有精选预览已获本次公开展示授权；新增或替换Demo时仍核对采用范围和第三方许可。官网示例保留来源、许可及候选状态，不把全部预览写成已附送的可执行模板。公开网站不会自动给访客私人GitHub的访问权。
 
 ## 第二步：在Vercel建立项目
 
@@ -27,7 +38,7 @@
 5. Framework Preset选 `Other`。
 6. Root Directory选 `docs/template-gallery`。
 7. 这是现成静态目录，不需要安装Python、Node动画引擎或运行剪辑：Build Command留空并覆盖默认自动构建；Install Command设置为不执行依赖安装；Output Directory使用当前Root目录 `.`，以预览界面的实际选项为准。
-8. 审阅本次文件、访问范围和套餐后，自己点击 `Deploy`。
+8. 核对本次文件、访问范围、套餐及发布授权后执行 `Deploy`；本项目已完成首次部署，维护时复用现有项目。
 9. 等待Ready，先打开Vercel生成的网址，检查分类、视频、海报、手机排版及来源链接。出现404或缺视频先修部署目录，不急着加DNS。
 
 如果界面设置与本说明不同，把当前页面给AI助手看，按实际界面解释，不盲填其他项目的配置值。广告营销属商业用途，Vercel Hobby限个人非商业用途，应按自己的实际套餐处理；不要由助手自动购买或升级。
@@ -68,11 +79,11 @@ aicut.agi-top.com
 - 分类、本人Demo、官网示例和配套媒体可用，实际访问范围符合你的选择。
 - 私人仓库仍为Private，未邀请的用户看不到源码。
 
-只有完成这一步，才把正式域名放到广告或Notion领取页。
+只有完成这一步，才把正式域名放到学习分享或Notion教学页。本次用途已明确为个人非商业交流；将来若改为业务推广、获客或销售，先重新核对托管套餐与实际用途。
 
 ## 后续更新
 
-正式建立Git集成后，Vercel可按所选Production Branch构建部署。新增模板先更新真实登记与QA，再重建同一HTML、检查配套文件、commit/push；是否自动上线以这个Vercel项目的实际Git集成和部署设置为准。
+现有项目已连接GitHub主线，本次推送后的生产部署已实际验证。后续更新仍使用同一份HTML：新增模板先更新真实登记与QA，检查公开展示范围，重建目录并核对配套文件，再commit/push；每次以Vercel实际部署状态、来源提交和正式网址检查确认是否上线。文档或仓库连接成功不能替代部署验收。
 
 官网版本监测继续沿用每周安排，只监测通知，不因此下载或升级模板、修改旧工程或自动发布网站。需要扩展成自动更新线上展厅时，另按明确范围配置并验证，不能把通知任务写成已经接通发布流程。
 

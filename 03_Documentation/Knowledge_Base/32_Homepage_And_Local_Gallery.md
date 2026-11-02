@@ -42,3 +42,18 @@ MotionGit[官网About](https://motiongit.com/about)自述创始团队背景来�
 HTML 仍唯一维护在 `docs/template-gallery/index.html`。它是模板展厅，GitHub 是源码与获授权文件入口，Notion 是教学，Vercel 是可选网站托管，域名是网址。技术上可静态部署该目录，须包含采用的相对 `demos/` 视频与海报；官方 HTTPS 预览依赖外部网络。当前本机原声映射由 Python 服务读取 `gallery.local.json` 并提供本地路由，不能作为静态目录自动迁移；网站将回退已登记静音版本。
 
 网页公开与仓库私有分别配置，网页公开不会授予私有仓库权限。对外发布需明确采用媒体与访问范围，现有私人本人 Demo 授权不自动扩大。完整模板包、私人 `.motion`、Key、原片与本机目录不因此公开。Vercel 自定义域名连接是后续任务，本次仅核对现有文件与官方说明，不宣称网站已上线。
+
+
+## 2026-11-02 个人交流展厅正式上线
+
+以上为各阶段历史记录。用户随后明确授权在Vercel配置和发布现有精选展厅，并确认用途是个人学习与免费交流、不用于业务获客或销售。正式入口为 https://aicut.agi-top.com ，Hobby免费版，未购买或升级套餐；源码仓库 https://github.com/Isaac3113/ai-cut 仍Private，按GitHub账号逐个授权。公开展厅和私人源码权限分别管理，不公开完整原片、私人.motion包、Key、运行缓存或客户资料。
+
+现有项目为Isaac Chong's projects下的ai-cut。Root Directory为docs/template-gallery，Preset为Other，Build与Install Command为空，Output Directory为`.`，关闭包含根目录外文件。Namecheap CNAME由用户填写：aicut → a36ff3d4d2816e20.vercel-dns-017.com.；Vercel回读verified=true、misconfigured=false。域名配置通过与网页部署成功是两个独立检查。
+
+本次生产部署dpl_7KNHHdXEmjJtuZAKA4PLUma8Cdp5为READY，来源提交3b34674974741c33bb6d170e78fefd151c8c855f。HTTPS首页200，线上HTML的SHA256与该提交Git blob逐字节相同；本机工作文件仅有CRLF/LF换行差异。312/312本地MP4、JPG仅做HEAD检查，状态与MIME正确，4条官网代表预览HEAD通过。浏览器确认本人横竖比例筛选与知识流程分类；代表性本人横版及官网流程动画已播放至结束，竖版样本确认时间推进，样本无视频错误；不把这些结果扩大为全部媒体的连续声画QA。HTTP详细回执留本机work/vercel-setup-20261102/media-http-validation.json，不进入公开作品目录。
+
+线上沿用同一生成器、登记表、中文分类和精选静音预览。本机Python服务可按个人gallery.local.json提供原声路由，静态网站不自动读取该本机配置。官网候选、取得原包、已接入、Demo检查及新片验收继续分别标记；官网预览不表示官方原包附送或全部模板可执行。
+
+GitHub主线连接及本次推送后的生产部署已验证。今后新增模板要先核对来源、许可、公开范围和QA，再重建同一HTML并push，最后核对具体部署及正式网址。MotionGit每周监测仍只通知变化，不自动下载、接入、改旧工程或发布网站；Git部署连接不能冒称整个模板发现到发布的自动流程已接通。
+
+当前操作说明见[网站与域名教学](../../docs/VERCEL_AI_CUT.zh-CN.md)，面向领取者的教学见[Notion使用指南](../../docs/NOTION_GUIDE.zh-CN.md)。

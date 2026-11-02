@@ -14,7 +14,7 @@
 | 新调用名 | `$ai-cut` |
 | 本机安装 | 以实际安装回执为准；本机由原 `.codex/skills/talking-head-editor` 迁到 `.codex/skills/ai-cut`，其他新装客户端可用 `.agents/skills/ai-cut` |
 | 正式媒体交付 | `C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库` |
-| 计划展示网址 | `aicut.agi-top.com`；本文件不表示已绑定或上线 |
+| 正式模板展厅 | https://aicut.agi-top.com ；2026-11-02 已验证上线，供个人学习与免费交流 |
 
 统一作品库不是本项目的源码目录，不随 AI Cut 改名。最新映射从 2026-11-01 的 AIVD032 归档记录派生到 `AI 短视频创作/04_整理记录/2026-11-02_AI-Cut改名/项目映射.json`，保留历史快照和旧工作 Hub 别名。当前下一号033是本次快照，后续先查实际索引与目录；005、006仍预留。
 
@@ -71,4 +71,4 @@ OneDrive资料入口：Project-AI Cut
 
 HTML仍是同一份 `docs/template-gallery/index.html`，由登记表和接入记录生成；不是另做一个长期目录。新模板／本人小样仍按原生命周期规则更新同一中心，官方候选和已实测条目保留不同状态。
 
-Vercel与Namecheap的操作步骤读 [AI Cut 网站与域名教学](VERCEL_AI_CUT.zh-CN.md)。本次用户要求教学操作，不授权助手代为发布网站、修改DNS、购买套餐或更改仓库可见性。
+Vercel与Namecheap的操作步骤及实际上线记录读 [AI Cut 网站与域名教学](VERCEL_AI_CUT.zh-CN.md)。用户于2026-11-02明确授权助手配置并上线现有精选展厅，随后确认仅用于个人学习与免费交流、不用于业务获客或销售；Namecheap CNAME由用户填写。当前Hobby免费版已部署并验证HTTPS，未购买或升级套餐，GitHub仍保持私有。此次展厅授权不扩大为原片、私人包、缓存或客户资料公开；历史准备阶段的“尚未部署”记录不能作为当前状态。

@@ -124,9 +124,11 @@ Skill 安装、账号登录、工具可调用、素材可读、工程可导出�
 
 先按内容挑表达方式：讲步骤用流程动画，比较方案用对比，讲数据用有依据的图表，演示电脑操作用局部放大和重点引导。
 
-[全部模板、分类与来源](https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md)
+[直接打开 AI Cut 线上模板展厅](https://aicut.agi-top.com)
 
-想在电脑打开现有 HTML 模板中心，在源码根目录运行：
+这里可以查看分类、本人Demo和官网候选预览，供个人学习与免费交流，不用于业务获客或销售。浏览网页不需要先安装本机环境，也不代表取得私人GitHub源码权限；[完整模板登记与来源](https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md)仍需接受仓库邀请后查看。线上使用已登记静音Demo，官方示例依赖外部网络。
+
+如果需要在自己电脑打开同一份HTML模板中心，在源码根目录运行：
 
 ```powershell
 Set-Location "C:\Codex Workspace\ai-cut"
@@ -182,12 +184,13 @@ GitHub 保存 HTML 和 Demo 文件，但 GitHub 文件页不会自动运行这�
 | 工程提示 relink／缺素材 | 原片或外部素材是否还在原位置，需要重新关联哪些文件 |
 | Demo 能看，特效不能生成 | 所选引擎、依赖、自己有权使用的包及素材是否齐全 |
 | 不能导出／提示额度 | 当前工具的实际错误、账号权限、格式和套餐；不是看到提示就直接购买 |
-| localhost 发给别人打不开 | 这是本机地址，对方需自己启动服务或使用另行部署的网站 |
+| localhost 发给别人打不开 | 这是访问者自己的电脑地址；看效果可直接用 https://aicut.agi-top.com ，本机版本则需自行启动服务 |
 
 排错时提供：你进行到哪一步、完整错误文字、软件版本、当前工程与相关文件位置。登录密码、Key 和其他凭据不需要发到聊天或 GitHub。
 
 ## 完整资料入口
 
+- [线上模板展厅：直接看分类与Demo](https://aicut.agi-top.com)
 - [项目主页](https://github.com/Isaac3113/ai-cut)
 - [完整中文新手入门](https://github.com/Isaac3113/ai-cut/blob/main/docs/GETTING_STARTED.zh-CN.md)
 - [安装说明](https://github.com/Isaac3113/ai-cut/blob/main/docs/INSTALL_SKILLS.md)

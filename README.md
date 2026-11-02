@@ -2,11 +2,11 @@
 
 专门用于真人知识口播、AI 教学、营销方法与系统实操的剪辑代码与 Skill 项目：保留原声原意，先完成语义粗剪，再按内容添加字幕、画面、动画和声音。
 
-**开源发布准备中，当前仓库保持 Private。** 原创代码与规则采用 [MIT](LICENSE)，第三方引擎、模板、字体和媒体分别遵循自己的许可。当前没有对公众开放下载，也没有把模板中心部署成网站。
+**模板展厅已上线，源码仓库保持 Private。** [打开 AI Cut 模板展厅](https://aicut.agi-top.com)可浏览现有分类与精选预览，供个人学习与免费交流，不用于业务获客或销售。原创代码与规则采用 [MIT](LICENSE)，第三方引擎、模板、字体和媒体分别遵循自己的许可；源码仍按 GitHub 账号逐个授权，未对公众开放下载。
 
 [AI Cut 改名与换电脑](docs/AI_CUT_RENAME.md) · [Vercel 与域名教学](docs/VERCEL_AI_CUT.zh-CN.md) · [学员领取与 Notion 教学](docs/NOTION_GUIDE.zh-CN.md) · [中文新手入门](docs/GETTING_STARTED.zh-CN.md) · [全部模板与逐项 Demo](templates/README.zh-CN.md) · [分类动画预览](docs/template-gallery/CATEGORIES.md) · [正式总 Skill](skill/ai-cut/SKILL.md) · [后续公开发布约定](docs/RELEASE_PREPARATION.md)
 
-首次领取：先提供 GitHub 用户名并接受私人仓库邀请，再按学员教学安装。Notion 阅读教学、GitHub 获取文件、HTML 浏览效果和实际剪辑是不同步骤；模板中心仍为本机入口，尚未部署。
+首次领取：先提供 GitHub 用户名并接受私人仓库邀请，再按学员教学安装。Notion 阅读教学、GitHub 获取文件、[线上展厅](https://aicut.agi-top.com)浏览效果和实际剪辑是不同步骤。线上使用已登记静音 Demo；官网候选预览不代表原包附送或全部模板已可执行，本机服务仍可保留自己的原声映射。
 
 ## 先看效果，再选适合内容的表达
 
