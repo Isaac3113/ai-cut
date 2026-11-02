@@ -1,11 +1,11 @@
 # AI Cut：把模板展厅放到自己的域名
 
-正式地址：[AI Cut 模板展厅](https://aicut.agi-top.com)。2026-11-02已验证上线，现有私人仓库仍为 https://github.com/Isaac3113/ai-cut 。本页保留操作教学，并单独记录实际部署与验证，避免把连接GitHub当作网站已发布。
+正式地址：[AI Cut 模板展厅](https://aicut.agi-top.com)。2026-11-02已验证上线，公开源码入口为 https://github.com/Isaac3113/ai-cut 。本页保留操作教学，并单独记录实际部署与验证，避免把连接GitHub当作网站已发布。
 
 ## 当前已验证状态（2026-11-02）
 
 - 用途：用户确认个人学习与免费交流，不用于业务获客或销售；使用Hobby，未开通付费套餐。
-- Vercel Team：`Isaac Chong's projects`；项目：`ai-cut`；仓库：`Isaac3113/ai-cut`，保持Private并按GitHub账号逐个授权。
+- Vercel Team：`Isaac Chong's projects`；项目：`ai-cut`；仓库：`Isaac3113/ai-cut`，按同日后续用户请求开放下载，无需逐个邀请。
 - 生产部署：`dpl_7KNHHdXEmjJtuZAKA4PLUma8Cdp5`，状态`READY`，环境`production`，来源提交`3b34674974741c33bb6d170e78fefd151c8c855f`。
 - 构建配置：Root Directory=`docs/template-gallery`，Preset=`Other`，Build/Install Command为空，Output Directory=`.`，不包含根目录以外文件。
 - Namecheap CNAME：Host=`aicut`，Value=`a36ff3d4d2816e20.vercel-dns-017.com.`；由用户填写，Vercel回读`verified=true`、`misconfigured=false`。该值是本次配置记录，未来重建项目时重新读取Vercel要求。
@@ -17,7 +17,7 @@
 
 - Vercel：存放可访问的网站、连接GitHub、管理部署和自定义域名。
 - Namecheap：管理 `agi-top.com` 的DNS，把 `aicut` 子域名指向Vercel。
-- GitHub：继续私有；网站可见范围与仓库可见范围分开。
+- GitHub：公开代码与教学入口；网站托管、源码许可和剪辑工具账号分别管理。
 
 `aicut` 是现有域名的子域名，不需要重新买一个域名。不要改根域名、Nameservers、现有邮件MX或其他业务的DNS记录。
 
@@ -27,7 +27,7 @@
 
 本机 `/local-demo-manifest.json` 与 `/local-owner-media/` 来自Python服务，Vercel静态托管不会自动读取个人电脑原声素材；没有这些本机路由时页面回退已登记静音Demo。不要把整个工作Hub、原片、私人MotionGit包、密钥、客户资料或运行缓存放入部署范围。
 
-现有精选预览已获本次公开展示授权；新增或替换Demo时仍核对采用范围和第三方许可。官网示例保留来源、许可及候选状态，不把全部预览写成已附送的可执行模板。公开网站不会自动给访客私人GitHub的访问权。
+现有精选预览已获本次公开展示授权；新增或替换Demo时仍核对采用范围和第三方许可。官网示例保留来源、许可及候选状态，不把全部预览写成已附送的可执行模板。当前GitHub源码也可直接下载；下载者的账号、运行环境及个人模板授权仍需自行准备。
 
 ## 第二步：在Vercel建立项目
 
@@ -77,7 +77,7 @@ aicut.agi-top.com
 - 域名配置显示有效，HTTPS正常。
 - `https://aicut.agi-top.com`能打开AI Cut页面。
 - 分类、本人Demo、官网示例和配套媒体可用，实际访问范围符合你的选择。
-- 私人仓库仍为Private，未邀请的用户看不到源码。
+- GitHub公开状态与匿名访问通过；不把公开仓库误写成需要邀请，写入权限仍受GitHub管理。
 
 只有完成这一步，才把正式域名放到学习分享或Notion教学页。本次用途已明确为个人非商业交流；将来若改为业务推广、获客或销售，先重新核对托管套餐与实际用途。
 

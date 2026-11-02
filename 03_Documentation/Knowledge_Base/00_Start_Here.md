@@ -14,7 +14,7 @@
 
 2026-11-02: [KB35 AI Cut名称与路径](35_AI_Cut_Identity_And_Paths.md)说明当前统一品牌、技术兼容、改名回执与Vercel教学入口。
 
-2026-11-02: [Notion 学员教学与私有授权](../../docs/NOTION_GUIDE.zh-CN.md)提供领取、安装、首片提示词、排错与安全更新。主仓库继续私有，学员提供 GitHub 用户名并接受邀请；HTML 展厅、网站托管和本机剪辑分开，技术边界见[KB32 新增教学段](32_Homepage_And_Local_Gallery.md#2026-11-02-notion-教学与私有学员领取)。
+2026-11-02现行: [Notion 下载与安装教学](../../docs/NOTION_GUIDE.zh-CN.md)提供公开源码下载、安装、首片提示词、排错与安全更新。用户已明确要求仓库公开，不再逐个邀请；HTML展厅、源码下载、本机安装和剪辑导出分别验证。原先私人领取阶段保留为[KB32历史记录](32_Homepage_And_Local_Gallery.md#2026-11-02-notion-教学与私有学员领取)，当前发布边界见[公开发布约定](../../docs/RELEASE_PREPARATION.md)。
 
 2026-10-27: [KB33 官网更新与按新片接入](33_MotionGit_Updates_And_On_Demand_Integration.md)记录每小时通知、逐片免费接入与私人Demo长期授权、overlay增长及实际验证边界。
 

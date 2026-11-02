@@ -1,12 +1,12 @@
 # 中文新手入门：看效果、重渲动画、剪自己的口播
 
-> 首次从领取入口来的学员，先读[可复制到 Notion 的领取与安装教学](NOTION_GUIDE.zh-CN.md)：私人仓库逐个邀请、Windows 新装、自己的账号及首支试剪。本文保留较详细的环境与模板说明。
+> 首次从领取入口来的学员，先读[可复制到 Notion 的领取与安装教学](NOTION_GUIDE.zh-CN.md)：公开源码直接下载、Windows 新装、自己的工具账号及首支试剪。本文保留较详细的环境与模板说明。
 
 这个项目专门处理真人知识口播、教学、营销方法、系统实操和长访谈切片。先选择自己的目标；只想看效果的人不用先安装完整剪辑环境。
 
 ## 1. 取得文件
 
-当前仓库保持私有。获得仓库访问权限后可以 clone；也可以由所有者交付有权分发的完整浏览目录。将 active repo 放在非 OneDrive 的本机文件夹。
+当前仓库开放下载。浏览、下载 ZIP 与 HTTPS clone 无需 GitHub 邀请或登录。推荐 clone 以便以后更新；Code → Download ZIP 适合只取文件，解压目录不能直接 git pull。将 active repo 放在非 OneDrive 的本机文件夹。
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "C:\Codex Workspace" | Out-Null
@@ -118,7 +118,7 @@ MotionGit 先准备自己有权使用的原始.motion，并复制仓库的motion
 
 | 情况 | 判断和处理 |
 |---|---|
-| 仓库404或clone拒绝 | 当前是私人仓库，先核对账号与访问权限 |
+| 仓库404或clone拒绝 | 核对 Isaac3113/ai-cut 网址、网络、代理或 GitHub 服务状态；无需申请仓库权限 |
 | python命令找不到 | 先安装/选择本机Python；不要把未安装解释成项目失败 |
 | 目录可打开但视频缺失 | 核对demos目录、相对路径与文件完整性；官方链接另需网络 |
 | localhost别人打不开 | 对方须取得文件并启动自己的服务；对外访问是另一个网站部署任务 |

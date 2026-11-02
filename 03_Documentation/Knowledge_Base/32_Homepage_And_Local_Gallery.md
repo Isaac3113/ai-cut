@@ -57,3 +57,11 @@ HTML 仍唯一维护在 `docs/template-gallery/index.html`。它是模板展厅�
 GitHub主线连接及本次推送后的生产部署已验证。今后新增模板要先核对来源、许可、公开范围和QA，再重建同一HTML并push，最后核对具体部署及正式网址。MotionGit每周监测仍只通知变化，不自动下载、接入、改旧工程或发布网站；Git部署连接不能冒称整个模板发现到发布的自动流程已接通。
 
 当前操作说明见[网站与域名教学](../../docs/VERCEL_AI_CUT.zh-CN.md)，面向领取者的教学见[Notion使用指南](../../docs/NOTION_GUIDE.zh-CN.md)。
+
+## 2026-11-02 后续公开源码与直接下载教学
+
+同日用户进一步明确要求将Isaac3113/ai-cut由Private改为Public，取消领取GitHub权限的步骤。此前私人仓库和逐个邀请的段落保留为阶段历史，以本段为当前访问状态。GitHub设置页已显示Public；无登录凭据的公开REST接口返回private=false、visibility=public、license=MIT，raw README匿名访问HTTP 200。公开浏览、ZIP下载和HTTPS clone不需要邀请或登录，写入仓库仍需相应权限。ZIP不含Git历史，长期更新优先clone。
+
+当前README、中文新手页、Notion教学源文件、生成展厅页脚与规则入口均按公开分发更新。Notion原页40c0a6f4-5e60-8030-97b0-fc6a2990f0b6通过7处针对性内容更新，工具返回成功且无warning；保留图片、同步区块和其他原有内容，网页验收由当前执行线程单独核对。没有因开源改变剪辑风格、媒体身份、作品编号或收费工具权限。
+
+原创代码与规则继续MIT；第三方代码、模板、肖像、品牌和媒体的权利独立。现有经审查的精选Demo属于此次公开范围，完整原片、完整成片、个人.motion包、Key、客户敏感资料与工作缓存保持排除。后续新片先在本机积累，只有已有明确公开授权且许可与隐私检查通过的小样才进入公开仓库；不把历史私人归档权限扩成所有未来视频公开授权。实际规则见[模板长期接入规则](../../skill/ai-cut/references/template-lifecycle.md)。

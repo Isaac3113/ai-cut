@@ -2,11 +2,11 @@
 
 专门用于真人知识口播、AI 教学、营销方法与系统实操的剪辑代码与 Skill 项目：保留原声原意，先完成语义粗剪，再按内容添加字幕、画面、动画和声音。
 
-**模板展厅已上线，源码仓库保持 Private。** [打开 AI Cut 模板展厅](https://aicut.agi-top.com)可浏览现有分类与精选预览，供个人学习与免费交流，不用于业务获客或销售。原创代码与规则采用 [MIT](LICENSE)，第三方引擎、模板、字体和媒体分别遵循自己的许可；源码仍按 GitHub 账号逐个授权，未对公众开放下载。
+**模板展厅已上线，源码开放下载。** [打开 AI Cut 模板展厅](https://aicut.agi-top.com)可浏览现有分类与精选预览，供个人学习与免费交流，不用于业务获客或销售。原创代码与规则采用 [MIT](LICENSE)，第三方引擎、模板、字体和媒体分别遵循自己的许可；大家可直接浏览、下载或 clone，无需申请仓库权限。
 
 [AI Cut 改名与换电脑](docs/AI_CUT_RENAME.md) · [Vercel 与域名教学](docs/VERCEL_AI_CUT.zh-CN.md) · [学员领取与 Notion 教学](docs/NOTION_GUIDE.zh-CN.md) · [中文新手入门](docs/GETTING_STARTED.zh-CN.md) · [全部模板与逐项 Demo](templates/README.zh-CN.md) · [分类动画预览](docs/template-gallery/CATEGORIES.md) · [正式总 Skill](skill/ai-cut/SKILL.md) · [后续公开发布约定](docs/RELEASE_PREPARATION.md)
 
-首次领取：先提供 GitHub 用户名并接受私人仓库邀请，再按学员教学安装。Notion 阅读教学、GitHub 获取文件、[线上展厅](https://aicut.agi-top.com)浏览效果和实际剪辑是不同步骤。线上使用已登记静音 Demo；官网候选预览不代表原包附送或全部模板已可执行，本机服务仍可保留自己的原声映射。
+首次使用：直接打开本仓库，按学员教学 clone 或选择 Code → Download ZIP；只读浏览、下载和 HTTPS clone 无需 GitHub 邀请或登录。Notion 阅读教学、GitHub 获取文件、[线上展厅](https://aicut.agi-top.com)浏览效果和实际剪辑是不同步骤。线上使用已登记静音 Demo；官网候选预览不代表原包附送或全部模板已可执行，本机服务仍可保留自己的原声映射。
 
 ## 先看效果，再选适合内容的表达
 
@@ -1848,7 +1848,7 @@
 
 ## 按新视频持续积累官方模板
 
-每条新片会同时评估已接入库与官方未接入候选；免费可取得且符合输入和许可时，沿既有授权直接核验、试做和接入，把真实本人Demo、版本、调用与QA同步私人库和首页。官网目录展示不等于所有模板已可执行。更新监测只通知，不自动改旧包或旧工程。[长期接入规则](skill/ai-cut/references/template-lifecycle.md) · [更新通知说明](docs/MOTIONGIT_UPDATES.md)。
+每条新片会同时评估已接入库与官方未接入候选；免费可取得且符合输入和许可时，沿既有授权直接核验、试做和接入，把真实版本、调用与QA积累到本机库；仅将本次允许公开且许可与隐私检查通过的精选本人Demo同步公开仓库和首页。官网目录展示不等于所有模板已可执行。更新监测只通知，不自动改旧包或旧工程。[长期接入规则](skill/ai-cut/references/template-lifecycle.md) · [更新通知说明](docs/MOTIONGIT_UPDATES.md)。
 
 ## 适合剪什么
 
@@ -1881,7 +1881,7 @@ python scripts/serve_template_gallery.py
 
 ## 想实际剪辑，先准备运行环境
 
-Windows 使用 Git 和 Python 3.11／3.12。先在非 OneDrive 的源码目录取得仓库；当前私人仓库需要访问权限。
+Windows 使用 Git 和 Python 3.11／3.12。先在非 OneDrive 的源码目录取得仓库；本公开仓库可直接 clone，无需申请访问权限。
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "C:\Codex Workspace" | Out-Null

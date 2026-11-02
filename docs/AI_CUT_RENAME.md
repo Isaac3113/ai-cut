@@ -1,6 +1,6 @@
 # AI Cut 改名、位置与换电脑说明
 
-更新：2026-11-02。用户确认统一品牌 AI Cut，OneDrive 资料入口用 Project-AI Cut，C 盘源码和私人 GitHub 仓库用 ai-cut。本次调整名称和现行入口，不更改剪辑风格、原声、速度、比例确认、字幕、音乐、品牌素材或片头片尾偏好。
+更新：2026-11-02。用户确认统一品牌 AI Cut，OneDrive 资料入口用 Project-AI Cut，C 盘源码和 GitHub 仓库用 ai-cut；同日后续用户授权仓库公开下载。本次调整名称和现行入口，不更改剪辑风格、原声、速度、比例确认、字幕、音乐、品牌素材或片头片尾偏好。
 
 ## 现行入口
 
@@ -9,7 +9,7 @@
 | 项目品牌 | AI Cut |
 | 源码、总 Skill 源码、技术 KB、运行环境、工作缓存 | `C:\Codex Workspace\ai-cut` |
 | 原片、工作素材、公共素材、发布文案和已有工程入口 | `C:\Users\User\OneDrive\Documents\Codex Workspace\Project-AI Cut` |
-| 私人 GitHub 仓库 | https://github.com/Isaac3113/ai-cut |
+| 公开 GitHub 仓库 | https://github.com/Isaac3113/ai-cut |
 | 总 Skill 源码 | `skill/ai-cut/SKILL.md` |
 | 新调用名 | `$ai-cut` |
 | 本机安装 | 以实际安装回执为准；本机由原 `.codex/skills/talking-head-editor` 迁到 `.codex/skills/ai-cut`，其他新装客户端可用 `.agents/skills/ai-cut` |
@@ -41,7 +41,7 @@
 3. 只发现一份有效 AI Cut 总 Skill；安装清单的 source_root 和各文件哈希正确。
 4. HTML 首页、示例视频与本机原声映射可访问；分类、模板 ID、Demo 媒体内容保持。
 5. 原 Hub 媒体按相对路径、字节数和选定哈希核对；最新统一作品映射的作品身份不变。
-6. GitHub 实际名称和 private 状态、Git push 远端 SHA、本机检查分别记录。
+6. GitHub 实际名称和当前可见性、Git push 远端 SHA、本机检查分别记录。
 
 本次发现5份更早的 `AI-Talking-Head-Editor` 工程指针在改名前就未找到对应目录，原文保留并标待恢复；不为“修复路径”虚构工程。其余当前可达的工程保留下级冻结名称，只调整根入口。
 
@@ -53,7 +53,7 @@
 
 ```text
 这个项目已统一改名为 AI Cut。
-GitHub 私人仓库：https://github.com/Isaac3113/ai-cut
+GitHub 公开仓库：https://github.com/Isaac3113/ai-cut
 C盘源码目标：C:\Codex Workspace\ai-cut
 OneDrive资料入口：Project-AI Cut
 正式Skill：ai-cut，源码skill/ai-cut/SKILL.md。
@@ -71,4 +71,4 @@ OneDrive资料入口：Project-AI Cut
 
 HTML仍是同一份 `docs/template-gallery/index.html`，由登记表和接入记录生成；不是另做一个长期目录。新模板／本人小样仍按原生命周期规则更新同一中心，官方候选和已实测条目保留不同状态。
 
-Vercel与Namecheap的操作步骤及实际上线记录读 [AI Cut 网站与域名教学](VERCEL_AI_CUT.zh-CN.md)。用户于2026-11-02明确授权助手配置并上线现有精选展厅，随后确认仅用于个人学习与免费交流、不用于业务获客或销售；Namecheap CNAME由用户填写。当前Hobby免费版已部署并验证HTTPS，未购买或升级套餐，GitHub仍保持私有。此次展厅授权不扩大为原片、私人包、缓存或客户资料公开；历史准备阶段的“尚未部署”记录不能作为当前状态。
+Vercel与Namecheap的操作步骤及实际上线记录读 [AI Cut 网站与域名教学](VERCEL_AI_CUT.zh-CN.md)。用户于2026-11-02明确授权助手配置并上线现有精选展厅，随后确认仅用于个人学习与免费交流、不用于业务获客或销售；Namecheap CNAME由用户填写。当前Hobby免费版已部署并验证HTTPS，未购买或升级套餐；同日后续按用户明确要求将GitHub源码开放下载，无需逐个邀请。此次展厅授权不扩大为原片、私人包、缓存或客户资料公开；历史准备阶段的“尚未部署”记录不能作为当前状态。
