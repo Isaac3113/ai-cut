@@ -38,3 +38,8 @@ The owner authorized preparing the knowledge-talking-head project homepage, all 
 ## On-demand official template integration and update monitoring
 
 For each new video, consider both integrated templates and suitable official candidates not yet integrated. The owner authorizes free, permitted acquisition, verified official execution, actual input testing and private-library enrichment without a repeated per-template approval. Read skill/ai-cut/references/template-lifecycle.md. Store stable-ID case/integration records in templates/template-integrations.json and regenerate both catalogs and homepage after real QA. Never mark all official templates executable from previews. The update monitor notifies only; it does not auto-upgrade approved projects or publish anything.
+
+
+## Public gallery scope (2026-11-02)
+
+The owner explicitly authorized publishing the existing curated template gallery and its current selected previews at https://aicut.agi-top.com for personal learning and free exchange, not business lead generation or sales. This dated authorization supplements the earlier private-Git-only archival permission; it does not make Isaac3113/ai-cut public or authorize full originals, full deliveries, personal .motion packages, credentials, caches, or sensitive client material. GitHub source and document access remains private and is granted individually. Preserve third-party sources, licenses, candidate/integrated distinctions, and historical rights/QA records; official previews do not mean original packages are included or all templates are executable. Deployment success and DNS/HTTPS verification must be reported from actual evidence, not inferred from this authorization.
