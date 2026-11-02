@@ -10,6 +10,8 @@
 
 # Start here
 
+2026-11-02: [Notion 学员教学与私有授权](../../docs/NOTION_GUIDE.zh-CN.md)提供领取、安装、首片提示词、排错与安全更新。主仓库继续私有，学员提供 GitHub 用户名并接受邀请；HTML 展厅、网站托管和本机剪辑分开，技术边界见[KB32 新增教学段](32_Homepage_And_Local_Gallery.md#2026-11-02-notion-教学与私有学员领取)。
+
 2026-10-27: [KB33 官网更新与按新片接入](33_MotionGit_Updates_And_On_Demand_Integration.md)记录每小时通知、逐片免费接入与私人Demo长期授权、overlay增长及实际验证边界。
 
 2026-10-27: [KB32 首页效果与本机浏览](32_Homepage_And_Local_Gallery.md)说明GitHub首页、HTML本机服务、中文新手路径及当前私有的公开准备约定。

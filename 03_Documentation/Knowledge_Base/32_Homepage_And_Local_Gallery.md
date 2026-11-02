@@ -30,3 +30,15 @@ MotionGit[官网About](https://motiongit.com/about)自述创始团队背景来�
 ## 本轮首页检查
 
 145个本地原速动图节选共20,098,343 bytes，每个不超过512KiB，源视频及输出哈希全部匹配；制作代理完成全解码、时长和比例核对，实际抽看16个GIF的三个时点。另有同源A/B四秒对比动图，源及输出身份单独记录。72个官网图片HEAD均200且image类型，读取正文0 bytes。GitHub官方Markdown渲染保留218张图片（216条目＋附加预告＋A/B）、34折叠组和32表格；此项不等于逐张浏览器加载或连续观看。
+
+## 2026-11-02 Notion 教学与私有学员领取
+
+用户选择不购买 Notion 自定义域名，直接制作可复制教学并配 GitHub 链接；明确保留私人仓库，按学员 GitHub 账号逐个授权。本次不改变可见性、不发送邀请、不发布 Notion 页面、不部署网站或配置 DNS。
+
+唯一学员简版位于 [docs/NOTION_GUIDE.zh-CN.md](../../docs/NOTION_GUIDE.zh-CN.md)，README 首屏及中文新手页直接引用。教程说明接受邀请、Windows Git/Python 环境、源码获取、安装、自己的 ChatCut、首支 20～30 秒试剪、比例与交付约定、模板边界、局部修改和安全更新；Isaac 个人品牌、固定片尾、速度、路径、编号、社媒设置都不是学员默认授权。
+
+安装命令按当前脚本核对。新的手动安装示例显式传 `--target "$env:USERPROFILE\.agents\skills\talking-head-editor"`，参照 [OpenAI 当前 Skill 发现文档](https://learn.chatgpt.com/docs/build-skills)；已有安装先核对位置与归属，不改所有者当前 `.codex/skills` 安装，不创建同名重复项。未在另一电脑安装，不把脚本静态核对或本机 doctor 等同于学员环境与 ChatCut 已连接。
+
+HTML 仍唯一维护在 `docs/template-gallery/index.html`。它是模板展厅，GitHub 是源码与获授权文件入口，Notion 是教学，Vercel 是可选网站托管，域名是网址。技术上可静态部署该目录，须包含采用的相对 `demos/` 视频与海报；官方 HTTPS 预览依赖外部网络。当前本机原声映射由 Python 服务读取 `gallery.local.json` 并提供本地路由，不能作为静态目录自动迁移；网站将回退已登记静音版本。
+
+网页公开与仓库私有分别配置，网页公开不会授予私有仓库权限。对外发布需明确采用媒体与访问范围，现有私人本人 Demo 授权不自动扩大。完整模板包、私人 `.motion`、Key、原片与本机目录不因此公开。Vercel 自定义域名连接是后续任务，本次仅核对现有文件与官方说明，不宣称网站已上线。

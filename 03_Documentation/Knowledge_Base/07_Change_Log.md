@@ -92,3 +92,7 @@ Added brand-driven styles, subtle logo watermarks, mandatory synchronized presen
 保存用户长期要求：监测公开更新只提醒；新片同时匹配已接入和未接入官方候选，免费可得且许可/可信入口/真实输入验证允许时直接接入，并把精选本人短静音Demo、版本、调用与QA同步私人库。新增模板生命周期规则与monitor说明；30份Skill安装检查，18项增量目录测试通过。保留原四层来源，空overlay仍216条/145MP4，145GIF复用。已发现并通知官网现代图文竖屏alpha.3，未替换alpha.2旧工程。自动化及监测具体状态见[KB33](33_MotionGit_Updates_And_On_Demand_Integration.md)与实际运行回执。
 
 本阶段收口补充：每小时本机任务motiongit已保存为ACTIVE并回读；最后完整手工监测覆盖73条公开合集记录与官网4页/72详情，单页获取状态不明最多重读一次。19监测＋18目录测试通过，通知展示后回执；首次定时触发/跨电脑运行尚未验证，详见KB33。
+
+## 2026-11-02 Notion 学员教学与入口整理
+
+新增 docs/NOTION_GUIDE.zh-CN.md，提供可复制的中文学员教学、真实源码安装命令、首支试剪及更新提示词。用户明确保留私人仓库、逐个邀请 GitHub 账号；README 首屏与中文新手页加入入口，KB32补充分工与静态部署边界。使用当前官方 `.agents/skills` 作为首次新装显式目标，尊重已有安装与归属，不改本机 Skill 或执行器。私人源码同步、学员访问、新电脑运行、Notion 发布和 Vercel 部署分别核验；本轮不进行后四类外部执行，不重剪或付费生成视频。

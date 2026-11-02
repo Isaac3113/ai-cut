@@ -4,7 +4,9 @@
 
 **开源发布准备中，当前仓库保持 Private。** 原创代码与规则采用 [MIT](LICENSE)，第三方引擎、模板、字体和媒体分别遵循自己的许可。当前没有对公众开放下载，也没有把模板中心部署成网站。
 
-[中文新手入门](docs/GETTING_STARTED.zh-CN.md) · [全部模板与逐项 Demo](templates/README.zh-CN.md) · [分类动画预览](docs/template-gallery/CATEGORIES.md) · [正式总 Skill](skill/talking-head-editor/SKILL.md) · [后续公开发布约定](docs/RELEASE_PREPARATION.md)
+[学员领取与 Notion 教学](docs/NOTION_GUIDE.zh-CN.md) · [中文新手入门](docs/GETTING_STARTED.zh-CN.md) · [全部模板与逐项 Demo](templates/README.zh-CN.md) · [分类动画预览](docs/template-gallery/CATEGORIES.md) · [正式总 Skill](skill/talking-head-editor/SKILL.md) · [后续公开发布约定](docs/RELEASE_PREPARATION.md)
+
+首次领取：先提供 GitHub 用户名并接受私人仓库邀请，再按学员教学安装。Notion 阅读教学、GitHub 获取文件、HTML 浏览效果和实际剪辑是不同步骤；模板中心仍为本机入口，尚未部署。
 
 ## 先看效果，再选适合内容的表达
 
