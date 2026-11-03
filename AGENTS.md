@@ -43,3 +43,19 @@ For each new video, consider both integrated templates and suitable official can
 ## Public gallery scope (2026-11-02)
 
 The owner explicitly authorized publishing the existing curated template gallery and its current selected previews at https://aicut.agi-top.com for personal learning and free exchange, not business lead generation or sales. The website authorization supplemented the earlier private-Git-only archival permission; the subsequent explicit repository-publication request is recorded above. GitHub teaching should use direct public access rather than individual invitations once visibility is verified. Neither authorization includes full originals, full deliveries, personal .motion packages, credentials, caches, or sensitive client material. Preserve third-party sources, licenses, candidate/integrated distinctions, and historical rights/QA records; official previews do not mean original packages are included or all templates are executable. Deployment success and DNS/HTTPS verification must be reported from actual evidence, not inferred from this authorization.
+
+## 中文定位、双入口与逐项说明（2026-11-03）
+
+- 用户确认保留仓库网址 `Isaac3113/ai-cut`、本机目录和 Skill 调用名，首页名称与简介加入「AI知识口播自动剪辑特效模板」。不再为中文展示名重命名仓库、目录或域名。
+- GitHub 首页分为「学习自动剪辑」和「选择、使用特效模板」两条路径。前者教环境、原片到成片的流程；后者按实际表达用途看 Demo、准备输入并使用效果。模板重渲不等于整片剪辑，也不附送讲师账号、原片或个人包。
+- 参考 `motiontemplates/all` 的图文说明顺序；它是现有上游来源之一，不是 AI Cut 全部功能的来源，也不意味着官网更新已全部接入。继续保留四层来源、稳定 ID、版本和验证范围，用用户能理解的用途分类作为主要入口。
+- 所有模板及预告统一七项顺序：**效果预览 → 适用内容 → 所需素材 → 可改参数与限制 → 怎样使用 → 当前可用与验证状态 → 来源和许可**。逐项依据源码、参数合同或明确来源填写；未知字段写待核对，不从 Demo 推测能力。使用方法提供可复制的指令，长 QA 与维护命令折叠。
+- GitHub、中文目录和 HTML 从同一登记资料生成；不得手工维护分叉的分类/数量/状态。改动展示或用法后检查 Notion 教学是否需要对应更新。原有媒体、ID、剪辑偏好、声音、速度和交付位置继续沿用。
+
+## 自制效果沉淀为通用模板（2026-11-03）
+
+当 Isaac 指定一段好效果并询问来源，先依据该片源码、时间轴和模板记录说明它属于现成模板、自行实现或混合方案，并给出来源、版本和实际改动。不能把第三方模板换字、换色或本人 Demo 称为原创。
+
+用户已要求：指定效果若为自行实现，继续将其整理为自己和他人均可复用的 Motion Graphics 模板；按 [模板创作规则](skill/ai-cut/references/template-authoring.md)推进参数化、去个人化、独立内容验证、说明和目录登记，并核对当前官方规范制作 `.motion` 交付。遇到只具备 MP4、缺源码或其他实际阻碍时说明阶段，不能把旧成片改后缀冒充模板。修改现成模板时保留来源和许可，只对自制部分作相应原创声明。
+
+本条授权覆盖该指定效果的可分享通用源码、文档及已确认可再分发的去个人化示例，完成验证后按常规 Git 流程公开，无需重复征求同一范围的泛化许可。它不授权公开完整原片/成片、客户资料、私人 `.motion` 包或凭据，也不授权付费生成或任意发布新视频。其他学员不继承 Isaac 的私人素材与长期授权。源码已整理、参数已验证、`.motion` 已验收、GitHub 已同步和网站已部署分别报告。

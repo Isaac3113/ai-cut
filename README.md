@@ -1,16 +1,54 @@
-# AI Cut · 知识口播剪辑
+# AI Cut｜AI知识口播自动剪辑特效模板
 
-专门用于真人知识口播、AI 教学、营销方法与系统实操的剪辑代码与 Skill 项目：保留原声原意，先完成语义粗剪，再按内容添加字幕、画面、动画和声音。
+用 AI 辅助完成真人知识口播、AI 教学和系统操作演示的剪辑，并按内容选用动画、流程图、数据对比与真人特效。保留你的原声和原意，让画面帮助观众听懂。
 
-**模板展厅已上线，源码开放下载。** [打开 AI Cut 模板展厅](https://aicut.agi-top.com)可浏览现有分类与精选预览，供个人学习与免费交流，不用于业务获客或销售。原创代码与规则采用 [MIT](LICENSE)，第三方引擎、模板、字体和媒体分别遵循自己的许可；大家可直接浏览、下载或 clone，无需申请仓库权限。
+**本项目分成两部分：学习怎么剪辑，以及选择、使用特效模板。** 你可以从原片开始做一支完整视频，也可以只选一个效果，加入自己已有的剪辑工程。
 
-[AI Cut 改名与换电脑](docs/AI_CUT_RENAME.md) · [Vercel 与域名教学](docs/VERCEL_AI_CUT.zh-CN.md) · [学员领取与 Notion 教学](docs/NOTION_GUIDE.zh-CN.md) · [中文新手入门](docs/GETTING_STARTED.zh-CN.md) · [全部模板与逐项 Demo](templates/README.zh-CN.md) · [分类动画预览](docs/template-gallery/CATEGORIES.md) · [正式总 Skill](skill/ai-cut/SKILL.md) · [后续公开发布约定](docs/RELEASE_PREPARATION.md)
+| 你想做什么 | 从这里开始 | 你会得到什么 |
+|---|---|---|
+| **学习自动剪辑** | [完整中文教学](docs/NOTION_GUIDE.zh-CN.md) · [安装说明](docs/INSTALL_SKILLS.md) | 环境检查、自己的工具连接、首片提示词、精剪到导出的流程 |
+| **选择和使用模板** | [直接看动画展厅](https://aicut.agi-top.com) · [逐项模板使用说明](templates/README.zh-CN.md) | Demo、适用场景、素材、参数、使用方法、可用状态和来源 |
 
-首次使用：直接打开本仓库，按学员教学 clone 或选择 Code → Download ZIP；只读浏览、下载和 HTTPS clone 无需 GitHub 邀请或登录。Notion 阅读教学、GitHub 获取文件、[线上展厅](https://aicut.agi-top.com)浏览效果和实际剪辑是不同步骤。线上使用已登记静音 Demo；官网候选预览不代表原包附送或全部模板已可执行，本机服务仍可保留自己的原声映射。
+仓库公开，可直接 clone 或点击 **Code → Download ZIP**，无需领取权限。长期使用推荐 clone，便于安全更新。原创代码与规则采用 [MIT](LICENSE)，第三方模板、字体和媒体遵循各自许可；软件账号、素材和服务额度使用你自己的。线上展厅供个人学习与免费交流，不用于业务获客或销售。
 
-## 先看效果，再选适合内容的表达
+## 一｜学习自动剪辑
 
-下面的动图是节选，保留原播放速度；点击可看完整 Demo。数字、价格、评论、头像或界面示例均不代表真实业务成果。效果演示、完整视频剪辑和新片验收是不同阶段。
+适合知识口播、方法讲解、电脑实操和长访谈主题切片。旅行 Vlog、剧情与多场景叙事需要另选专用路线。
+
+1. **准备自己的环境**：按[安装教学](docs/NOTION_GUIDE.zh-CN.md)下载源码、安装 `ai-cut` Skill；检查本机和实际可调用工具。
+2. **连接自己的剪辑工具**：当前教学默认使用 ChatCut；账号、素材可读和工程可导出分别核对。
+3. **先用短片试剪**：提供自己的 20～30 秒 MP4、比例、主题和要保留的重点；AI 先理解内容、删掉无用重复和停顿，再加字幕与合适的效果。
+4. **看真实导出**：检查完整字音、接缝、字幕、动画与音乐；确认 MP4 确实保存并能播放，再继续正式制作。
+
+安装完成后，将下方内容交给能读取文件、运行工具的 AI 助手：
+
+```text
+请使用 $ai-cut 帮我剪辑知识口播。
+原片：[我的 MP4 完整路径]
+视频比例：[9:16／16:9／1:1／沿用原片比例]
+主题：[填写主题，或看完后帮我命名]
+重点保留：[填写重点]
+交付目录：[我自己的目录]
+
+先检查原片、规则和工具，保留完整原声、因果与条件；不确定的术语向我核对。
+先做语义精剪，再根据内容选择模板库里的效果；用我的文字和获授权素材，不能为了套模板编造步骤或数据。
+讲师的品牌、速度、固定片尾、路径与历史授权不自动套用到我；本次先保持原速，没有提供的品牌素材先省略。
+实际导出后检查并展示成品，说明保存位置和未完成检查。涉及付费、公开发布或上传我的私人素材时，先说明并取得相应授权。
+```
+
+[首片详细流程与局部修改](docs/NOTION_GUIDE.zh-CN.md) · [常见问题](docs/GETTING_STARTED.zh-CN.md) · [已有安装怎样更新](docs/CROSS_COMPUTER_UPDATE.md)
+
+## 二｜选择和使用特效模板
+
+**模板提供可重复使用的画面表现。** 例如口播讲三个步骤，可以选流程动画，换成自己的步骤文字，并把动画对齐讲解；已有剪辑工程也可以单独使用一个效果。
+
+[线上展厅：按用途找效果](https://aicut.agi-top.com) · [完整目录：逐项七步说明](templates/README.zh-CN.md) · [进阶：把自己的效果做成模板](docs/TEMPLATE_AUTHORING.zh-CN.md)
+
+每个条目固定介绍：**①效果预览 → ②适用内容 → ③需要素材 → ④可改参数与限制 → ⑤怎样使用 → ⑥当前可用状态 → ⑦来源与许可**。先按表达任务选择，再核对所选效果是否已接入、需要适配，或仍是官方参考。
+
+既有库包含 MotionGit、Remotion 和真人特效等不同来源；[MotionGit 合集](https://github.com/motiontemplates/all)是其中一个上游目录。看得到 Demo 不代表所有原包已附送或所有效果已通用。现有实例的参数范围、画幅和时间限制会逐项说明；没有证据的能力明确保留待核对。
+
+下面先看同一片段的局部效果比较，再按分类展开目录。动图为原速度静音节选，点击可看完整 Demo；示例中的数字、价格、评论或头像不代表真实业务成果。
 
 <!-- HOMEPAGE_COMPARISON:START -->
 
@@ -29,426 +67,692 @@
 
 本地 GIF 是 **最多 3 秒、原速度、无声节选**，不是完整视频。官网项目使用官方预览图；演示、可下载状态、实际运行和本条成片验收分别核对。
 
-<details open>
-<summary><strong>官网模板与片段 · 72 项</strong></summary>
+按内容用途浏览；每条统一提供七项说明。原来源层级与细类保留，长检查记录可展开。
 
-<details open>
-<summary>口播与讲解 · 21 项</summary>
+[完整模板说明](templates/README.zh-CN.md) · [在线筛选与播放](https://aicut.agi-top.com)
+
+<details>
+<summary><strong>真人口播 · 34 项</strong></summary>
 
 <table>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>现代图文 · 口播讲解 · 竖屏</strong><br>
+<p>真人口播 · 口播与讲解 · 已有接入案例 · 新片仍需适配</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.mp4"><img src="docs/template-gallery/demos/homepage/mg-style-314486.gif" width="202" alt="现代图文 · 口播讲解 · 竖屏 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<p><sub>当前本人Demo版本：2.7.18-alpha.4 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/integrated/owner-native-20261028/modern/landscape.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/case-studies/approved-b-highlight.mp4">完整本地 Demo</a> · <a href="https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4">官方 Demo · 9:16</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<p><sub>当前本人Demo版本：2.7.18-alpha.4 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/integrated/owner-native-20261028/modern/landscape.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/case-studies/approved-b-highlight.mp4">完整本地 Demo</a> · <a href="https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4">官方 Demo · 9:16</a>
+<p>用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。</p>
+<p><a href="templates/categories/talk.md#mg-style-314486">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 <details><summary>本片接入与复用边界</summary><p>owner-native-demo-20261028 · template-01-integrated-portrait · 2.7.18-alpha.4</p><p>输入：本人真实口播与同源原声，源4.75—26.95秒相对原片绝对1.2倍一次，形成18.5秒标准输入；三风格使用同一内容与原始词时。；词时来自已有原片转写并按同一时钟换算；“一人公司”“景深”沿用用户已确认术语，不按字数伪造时间，不使用AI配音。；brief.schema=adu-auto-brief/1；layout=portrait；narrationDuration=18.5；allowedStyles=[01-D]；presenterLabel=Isaac。；正文讲AI短视频质量不错但有瑕疵、一人公司字样缺失且剧情应保留、接着尝试景深功能；只使用已讲到的主张，不补写效果承诺。；本包竖屏输出。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。</p><p>调用：<code>.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance &lt;instance&gt; render &lt;reviewed-project&gt; --out &lt;native-demo.mp4&gt; --language zh</code></p><p>本片检查：现代图文 01-D 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。</p><p>登记基线版本：2.7.17-alpha.2。仅此版本与Demo；不扩展原条目或全部变体的验证状态，不代表用户审美认可。</p></details></td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>现代图文 · 口播讲解</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4"><img src="https://media.openaicut.com/covers/605/draft-zh-7942d81ce917.jpg" width="360" alt="现代图文 · 口播讲解 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/template-01-integrated">来源</a>
+<a href="https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4">官方 Demo · 16:9</a>
+<p>用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。</p>
+<p><a href="templates/categories/talk.md#mg-style-336980">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>纸面透视 · 口播讲解</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4"><img src="https://media.openaicut.com/covers/607/draft-zh-b7af2ac6dee6.jpg" width="360" alt="纸面透视 · 口播讲解 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/template-02-expanded">来源</a>
+<a href="https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4">官方 Demo · 16:9</a>
+<p>用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。</p>
+<p><a href="templates/categories/talk.md#mg-style-358192">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>纸面透视 · 口播讲解 · 竖屏</strong><br>
+<p>真人口播 · 口播与讲解 · 已有接入案例 · 新片仍需适配</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.mp4"><img src="docs/template-gallery/demos/homepage/mg-style-295450.gif" width="202" alt="纸面透视 · 口播讲解 · 竖屏 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<p><sub>当前本人Demo版本：2.7.18-alpha.5 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/integrated/owner-native-20261028/paper/landscape.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/integrated/owner-native-20261028/paper/portrait.mp4">完整本地 Demo</a> · <a href="https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4">官方 Demo · 9:16</a> · <a href="https://motiongit.com/@adunext/template-02-expanded-portrait">来源</a>
+<p><sub>当前本人Demo版本：2.7.18-alpha.5 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/integrated/owner-native-20261028/paper/landscape.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/integrated/owner-native-20261028/paper/portrait.mp4">完整本地 Demo</a> · <a href="https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4">官方 Demo · 9:16</a>
+<p>用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。</p>
+<p><a href="templates/categories/talk.md#mg-style-295450">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 <details><summary>本片接入与复用边界</summary><p>aivd-11 · template-02-expanded-portrait · 2.7.18-alpha.5</p><p>输入：本条本人真实口播，源4.175—17.375秒相对原始源绝对1.2倍一次，形成11秒同期人物输入；这只是辅助视觉片段，主讲话时轴不变。；71个范围内完整原词使用实际ChatCut ASR词时，9张中文字幕卡；范围边缘穿过的词不裁改或伪造时钟，原完整发言保留在主时间轴。；brief.schema=adu-auto-brief/1，layout=portrait，allowedStyles=[02-X]，narrationDuration=11；glyph-thread-keyword原生660帧/60fps。；标题AI短视频、关键词角色一致性、解释AI短视频的常见难题；解释是原话支持的概括，不冒充新增口述结论。；官方keyword129帧/60fps=2.15秒；真实关键词局部2.158333秒，仅有约8毫秒量化差，未改变受保护动作窗。；作为静音辅助视觉导回同一ChatCut时间轴；人声、BGM和逐事件音效由主时间轴独立管理，不能重复播放模板内声音。；公开native合同未发现palette/theme覆盖字段；组件路线timeline.theme不能混用于native，本例保留原生青绿关键词与橙红墨圈，不能声称已完全品牌化。</p><p>调用：<code>.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance &lt;instance&gt; render &lt;reviewed-project&gt; --out &lt;native-demo.mp4&gt; --language zh</code></p><p>本片检查：本片Paper 02-X:glyph-thread-keyword的9:16、11秒本人静音小样；原生1080×1920/60fps660帧完成，精选库720×1280/30fps330帧，完整解码通过。9个原生预览、9个1080编码样本及9个精选编码样本实际查看，包含散字牵引、锁定冲击、墨圈、解释拉出及退出阶段。只验证本版本/本输入/本场景；未连续观看、未做主成片声音验收、未获用户审美认可。</p><p>登记基线版本：2.7.17-alpha.2。仅此版本与Demo；不扩展原条目或全部变体的验证状态，不代表用户审美认可。</p></details></td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>深色立体 · 多屏展陈</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/609/draft-zh-a33d6dc67131.mp4"><img src="https://media.openaicut.com/covers/609/draft-zh-0b9cc00ce402.jpg" width="360" alt="深色立体 · 多屏展陈 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/609/draft-zh-a33d6dc67131.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/template-03-native">来源</a>
+<a href="https://media.openaicut.com/previews/609/draft-zh-a33d6dc67131.mp4">官方 Demo · 16:9</a>
+<p>用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。</p>
+<p><a href="templates/categories/talk.md#mg-style-304634">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>深色立体 · 多屏展陈 · 竖屏</strong><br>
+<p>真人口播 · 口播与讲解 · 已有接入案例 · 新片仍需适配</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/integrated/owner-native-20261028/dark/portrait.mp4"><img src="docs/template-gallery/demos/homepage/mg-style-569615.gif" width="202" alt="深色立体 · 多屏展陈 · 竖屏 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<p><sub>当前本人Demo版本：2.7.18-alpha.4 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/owner-native-20261028/dark/portrait.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/integrated/owner-native-20261028/dark/landscape.mp4">完整本地 Demo</a> · <a href="https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4">官方 Demo · 9:16</a> · <a href="https://motiongit.com/@adunext/template-03-native-portrait">来源</a>
+<p><sub>当前本人Demo版本：2.7.18-alpha.4 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/owner-native-20261028/dark/portrait.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/integrated/owner-native-20261028/dark/landscape.mp4">完整本地 Demo</a> · <a href="https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4">官方 Demo · 9:16</a>
+<p>用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。</p>
+<p><a href="templates/categories/talk.md#mg-style-569615">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 <details><summary>本片接入与复用边界</summary><p>owner-native-demo-20261028 · template-03-native-portrait · 2.7.18-alpha.4</p><p>输入：本人真实口播与同源原声，源4.75—26.95秒相对原片绝对1.2倍一次，形成18.5秒标准输入；三风格使用同一内容与原始词时。；词时来自已有原片转写并按同一时钟换算；“一人公司”“景深”沿用用户已确认术语，不按字数伪造时间，不使用AI配音。；brief.schema=adu-auto-brief/1；layout=portrait；narrationDuration=18.5；allowedStyles=[03-X]；presenterLabel=Isaac。；正文讲AI短视频质量不错但有瑕疵、一人公司字样缺失且剧情应保留、接着尝试景深功能；只使用已讲到的主张，不补写效果承诺。；本包竖屏输出。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。</p><p>调用：<code>.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance &lt;instance&gt; render &lt;reviewed-project&gt; --out &lt;native-demo.mp4&gt; --language zh</code></p><p>本片检查：深色立体 03-X 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。约11.65—12.25秒官方圆窗局部裁到头发/上额，眼鼻口仍可见；公开native合同未提供可核实的人脸中心或裁切参数，因此保留原布局，审美待用户确认。</p><p>登记基线版本：2.7.17-alpha.2。仅此版本与Demo；不扩展原条目或全部变体的验证状态，不代表用户审美认可。</p></details></td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>科技控制台 · 口播讲解</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/611/2.5.7-zh-96b144413879.mp4"><img src="https://media.openaicut.com/covers/611/2.5.7-zh-8e20f0acb55c.jpg" width="360" alt="科技控制台 · 口播讲解 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/611/2.5.7-zh-96b144413879.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/template-04-dark-console">来源</a>
+<a href="https://media.openaicut.com/previews/611/2.5.7-zh-96b144413879.mp4">官方 Demo · 16:9</a>
+<p>用科技控制台、紫色玻璃质感与动态信息组件配合口播，适合技术与数据说明。</p>
+<p><a href="templates/categories/talk.md#mg-style-553346">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>科技控制台 · 口播讲解 · 竖屏</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/612/2.5.7-zh-a93efdfb29ba.mp4"><img src="https://media.openaicut.com/covers/612/2.5.7-zh-3586eaac0c77.jpg" width="202" alt="科技控制台 · 口播讲解 · 竖屏 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/612/2.5.7-zh-a93efdfb29ba.mp4">官方 Demo · 9:16</a> · <a href="https://motiongit.com/@adunext/template-04-dark-console-portrait">来源</a>
+<a href="https://media.openaicut.com/previews/612/2.5.7-zh-a93efdfb29ba.mp4">官方 Demo · 9:16</a>
+<p>用科技控制台、紫色玻璃质感与动态信息组件配合口播，适合技术与数据说明。</p>
+<p><a href="templates/categories/talk.md#mg-style-738182">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>鲜色角色 · 叙事讲解</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/613/draft-zh-9454c905098e.mp4"><img src="https://media.openaicut.com/covers/613/draft-zh-23a19c51650d.jpg" width="360" alt="鲜色角色 · 叙事讲解 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/613/draft-zh-9454c905098e.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/template-05-native">来源</a>
+<a href="https://media.openaicut.com/previews/613/draft-zh-9454c905098e.mp4">官方 Demo · 16:9</a>
+<p>用鲜明配色、角色素材与叙事动效配合口播，适合故事、观点和情境解释。</p>
+<p><a href="templates/categories/talk.md#mg-style-960723">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>鲜色角色 · 叙事讲解 · 竖屏</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/614/draft-zh-6382724d35a0.mp4"><img src="https://media.openaicut.com/covers/614/draft-zh-3f92eea2b709.jpg" width="202" alt="鲜色角色 · 叙事讲解 · 竖屏 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/614/draft-zh-6382724d35a0.mp4">官方 Demo · 9:16</a> · <a href="https://motiongit.com/@adunext/template-05-native-portrait">来源</a>
+<a href="https://media.openaicut.com/previews/614/draft-zh-6382724d35a0.mp4">官方 Demo · 9:16</a>
+<p>用鲜明配色、角色素材与叙事动效配合口播，适合故事、观点和情境解释。</p>
+<p><a href="templates/categories/talk.md#mg-style-293151">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>活力海报 · 口播讲解</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/623/draft-zh-e8e43fce1aae.mp4"><img src="https://media.openaicut.com/covers/623/draft-zh-6b4b2398b532.jpg" width="360" alt="活力海报 · 口播讲解 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/623/draft-zh-e8e43fce1aae.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/vibrant-poster">来源</a>
+<a href="https://media.openaicut.com/previews/623/draft-zh-e8e43fce1aae.mp4">官方 Demo · 16:9</a>
+<p>用高对比海报、大字、清单和图形关系配合口播，含原生动画与新增组件，横屏独立编排。</p>
+<p><a href="templates/categories/talk.md#mg-style-762139">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>活力海报 · 口播讲解 · 竖屏</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/624/draft-zh-11cf23913cdd.mp4"><img src="https://media.openaicut.com/covers/624/draft-zh-01638b2220a1.jpg" width="202" alt="活力海报 · 口播讲解 · 竖屏 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/624/draft-zh-11cf23913cdd.mp4">官方 Demo · 9:16</a> · <a href="https://motiongit.com/@adunext/vibrant-poster-portrait">来源</a>
+<a href="https://media.openaicut.com/previews/624/draft-zh-11cf23913cdd.mp4">官方 Demo · 9:16</a>
+<p>用高对比海报、大字、清单和图形关系配合口播，含原生动画与新增组件，竖屏独立编排。</p>
+<p><a href="templates/categories/talk.md#mg-style-721489">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>口播宣传动效 10 秒</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/870/1.0.0-6dcf8b7863ca.mp4"><img src="https://media.openaicut.com/covers/870/1.0.0-99c20483f4b4.jpg" width="360" alt="口播宣传动效 10 秒 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/870/1.0.0-6dcf8b7863ca.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/kouboo-motion">来源</a>
+<a href="https://media.openaicut.com/previews/870/1.0.0-6dcf8b7863ca.mp4">官方 Demo · 16:9</a>
+<p>10 秒横版宣传动效：用一个数字、一句大字和品牌收尾，做短视频开场或产品预告片头。</p>
+<p><a href="templates/categories/talk.md#mg-style-854836">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>3D 口播开场</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/871/draft-40ddede10a69.mp4"><img src="https://media.openaicut.com/covers/871/draft-5ad5f68adb8d.jpg" width="360" alt="3D 口播开场 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/871/draft-40ddede10a69.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/cool-3d-intro">来源</a>
+<a href="https://media.openaicut.com/previews/871/draft-40ddede10a69.mp4">官方 Demo · 16:9</a>
+<p>3D 口播开场</p>
+<p><a href="templates/categories/talk.md#mg-style-554769">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>DEEP STAGE 口播主舞台</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/880/1.0.0-2c8e89fea7a8.mp4"><img src="https://media.openaicut.com/covers/880/1.0.0-53419c8f2925.jpg" width="360" alt="DEEP STAGE 口播主舞台 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/880/1.0.0-2c8e89fea7a8.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deep-stage-host-stage">来源</a>
+<a href="https://media.openaicut.com/previews/880/1.0.0-2c8e89fea7a8.mp4">官方 Demo · 16:9</a>
+<p>口播主舞台动效：9:16 人物画面（CAM 01 / REC 取景标签）与主信息屏、竖向章节导航屏三层错峰入位，下三分之一人名条滑入，镜头全程缓慢横移。14 秒，适合口播正文与知识讲解。</p>
+<p><a href="templates/categories/talk.md#mg-style-228996">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>DEEP STAGE 深境舞台完整版</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/885/1.0.0-1d0d4dc1ea23.mp4"><img src="https://media.openaicut.com/covers/885/1.0.0-10251bc4895b.jpg" width="360" alt="DEEP STAGE 深境舞台完整版 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/885/1.0.0-1d0d4dc1ea23.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deep-stage-full-video">来源</a>
+<a href="https://media.openaicut.com/previews/885/1.0.0-1d0d4dc1ea23.mp4">官方 Demo · 16:9</a>
+<p>46 秒整条口播包装视频模板：深色 3D 舞台开场点火 → 口播主舞台（人物画面 + 信息屏 + 章节屏）→ 产品讲解 → 案例数据 → 媒体素材墙 → 收尾锁版，一条连续镜头运动。可替换品牌、标题、人名职务、三屏文案、产品/案例文案、10 句口播字幕与主色；随包可选音效轨（纯合</p>
+<p><a href="templates/categories/talk.md#mg-style-838778">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>Kit 2 · 口播动效包装（竖屏）</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/890/1.0.0-a07dfe35eea8.mp4"><img src="https://media.openaicut.com/covers/890/1.0.0-50bebde67959.jpg" width="202" alt="Kit 2 · 口播动效包装（竖屏） · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/890/1.0.0-a07dfe35eea8.mp4">官方 Demo · 9:16</a> · <a href="https://motiongit.com/@chenyutao0417/kit2-koubo-wrap">来源</a>
+<a href="https://media.openaicut.com/previews/890/1.0.0-a07dfe35eea8.mp4">官方 Demo · 9:16</a>
+<p>给真人出镜的口播视频套上完整动效包装：人像窗口在全屏、圆窗、卡片之间插值过渡，配 10 个段落可视化隐喻与深色药丸双语字幕（重点词橙色）。高潮锚词砸下（震屏+橙闪），片尾手写收尾。1080×1920/30fps，样例 36.5 秒，含程序化动作音效。</p>
+<p><a href="templates/categories/talk.md#mg-style-583549">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>突破边界</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/896/draft-zh-995fe8c7aa31.mp4"><img src="https://media.openaicut.com/covers/896/draft-zh-72bb9b863ff8.jpg" width="270" alt="突破边界 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/896/draft-zh-995fe8c7aa31.mp4">官方 Demo · 3:4</a> · <a href="https://motiongit.com/@adunext/break-boundaries">来源</a>
+<a href="https://media.openaicut.com/previews/896/draft-zh-995fe8c7aa31.mp4">官方 Demo · 3:4</a>
+<p>纸面画框、破框转场与彩蛋动效。内测版，新文案适配仍在完善。</p>
+<p><a href="templates/categories/talk.md#mg-style-178707">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>字符剧场</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/897/draft-zh-1bc9e79516df.mp4"><img src="https://media.openaicut.com/covers/897/draft-zh-2256483498a1.jpg" width="360" alt="字符剧场 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/897/draft-zh-1bc9e79516df.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/character-theater">来源</a>
+<a href="https://media.openaicut.com/previews/897/draft-zh-1bc9e79516df.mp4">官方 Demo · 16:9</a>
+<p>字符角色、作品墙与剧场式动画。内测版，新文案适配仍在完善。</p>
+<p><a href="templates/categories/talk.md#mg-style-148294">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>卡通讲解风</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/898/draft-zh-07d37803544c.mp4"><img src="https://media.openaicut.com/covers/898/draft-zh-2963c6828c9d.jpg" width="360" alt="卡通讲解风 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/898/draft-zh-07d37803544c.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/cartoon-explainer">来源</a>
+<a href="https://media.openaicut.com/previews/898/draft-zh-07d37803544c.mp4">官方 Demo · 16:9</a>
+<p>手绘卡通讲解、步骤演示与原生转场。内测版，新文案适配仍在完善。</p>
+<p><a href="templates/categories/talk.md#mg-style-875206">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>像素海洋</strong><br>
+<p>真人口播 · 口播与讲解 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/899/draft-zh-e97c782669c1.mp4"><img src="https://media.openaicut.com/covers/899/draft-zh-3ede15888cb5.jpg" width="360" alt="像素海洋 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/899/draft-zh-e97c782669c1.mp4">官方 Demo · 4:3</a> · <a href="https://motiongit.com/@adunext/pixel-ocean">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>科技视觉（非口播默认） · 1 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>酷炫科技风</strong><br>
-<a href="https://motiontemplates.github.io/385712/assets/demo.mp4"><img src="https://raw.githubusercontent.com/motiontemplates/385712/9dfbe7d7c6a6d4aa03f6f8e2f2285e631099faae/assets/compositions.jpg" width="360" alt="酷炫科技风 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://motiontemplates.github.io/385712/assets/demo.mp4">官方 Demo · 16:9</a> · <a href="https://media.openaicut.com/previews/626/0.2.9-open-beta-zh-11eae4868d37.mp4">官方 Demo · 9:16</a> · <a href="https://motiongit.com/@adunext/385712">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>知识解说与流程图 · 19 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>量价图表：K线突破与分时动画</strong><br>
-<a href="https://media.openaicut.com/previews/869/1.0.0-zh-d5fd83bc28a8.mp4"><img src="https://media.openaicut.com/covers/869/1.0.0-zh-01708b4a2214.jpg" width="360" alt="量价图表：K线突破与分时动画 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/869/1.0.0-zh-d5fd83bc28a8.mp4">官方 Demo · 1:1</a> · <a href="https://motiongit.com/@oubaba95128/volume-price-kline-charts">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>流程与时间线 · FLOW / TIMELINE</strong><br>
-<a href="https://media.openaicut.com/previews/876/1.0.0-zh-294b6a370e6d.mp4"><img src="https://media.openaicut.com/covers/876/1.0.0-zh-0836cb139a44.jpg" width="360" alt="流程与时间线 · FLOW / TIMELINE · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/876/1.0.0-zh-294b6a370e6d.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/collage-flow">来源</a>
+<a href="https://media.openaicut.com/previews/899/draft-zh-e97c782669c1.mp4">官方 Demo · 4:3</a>
+<p>像素海浪、水位上涨与过关式动画。内测版，新文案适配仍在完善。</p>
+<p><a href="templates/categories/talk.md#mg-style-966597">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>DEEP STAGE 案例数据</strong><br>
-<a href="https://media.openaicut.com/previews/882/1.0.0-5df639825460.mp4"><img src="https://media.openaicut.com/covers/882/1.0.0-20fa9d055973.jpg" width="360" alt="DEEP STAGE 案例数据 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/882/1.0.0-5df639825460.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deep-stage-case-data">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>目标与证据 · 17类语义动效</strong><br>
-<a href="https://media.openaicut.com/previews/886/0.4.0-rc.4-7ab29961149d.mp4"><img src="https://media.openaicut.com/covers/886/0.4.0-rc.4-5ddf2903802d.jpg" width="360" alt="目标与证据 · 17类语义动效 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/886/0.4.0-rc.4-7ab29961149d.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@frankye1211/product-update-story">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>图解口播与图片展示</strong><br>
+<p>真人口播 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/888/0.8.0-rc.2-6971ec2770b7.mp4"><img src="https://media.openaicut.com/covers/888/0.8.0-rc.2-15b068f72745.jpg" width="360" alt="图解口播与图片展示 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/888/0.8.0-rc.2-6971ec2770b7.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@frankye1211/moonwhite-robot-unified">来源</a>
+<a href="https://media.openaicut.com/previews/888/0.8.0-rc.2-6971ec2770b7.mp4">官方 Demo · 16:9</a>
+<p>月白渐变风格的图解与口播模板，支持图形讲解、图片视频展示和人物卡片；新增7种同系列食物SVG与透明PNG。</p>
+<p><a href="templates/categories/talk.md#mg-style-643842">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>Kit 1 · 人文纪录片知识短片</strong><br>
+<p>真人口播 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/889/1.0.0-c28fac802c50.mp4"><img src="https://media.openaicut.com/covers/889/1.0.0-d8681251c776.jpg" width="360" alt="Kit 1 · 人文纪录片知识短片 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/889/1.0.0-c28fac802c50.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@chenyutao0417/kit1-doc-shortfilm">来源</a>
+<a href="https://media.openaicut.com/previews/889/1.0.0-c28fac802c50.mp4">官方 Demo · 16:9</a>
+<p>无口播、画面+字幕叙事的人文纪录片风知识短片模板：暗场开题、锚词砸出（缩放回弹+闪白+震屏）、结尾亮背景重定义。替换锚词与双语字幕即可制作新短片，1920×1080/30fps，样例 20 秒含程序化 BGM 与音效。</p>
+<p><a href="templates/categories/talk.md#mg-style-233154">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>水墨人物志 · 一个人的故事</strong><br>
+<p>真人口播 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/892/1.0.0-zh-1f9aa1a124de.mp4"><img src="https://media.openaicut.com/covers/892/1.0.0-zh-dbe6436265f9.jpg" width="360" alt="水墨人物志 · 一个人的故事 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/892/1.0.0-zh-1f9aa1a124de.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@chenyutao0417/ink-saga">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>瑞士信息设计 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/900/2.5.3-zh-5df29820b59b.mp4"><img src="https://media.openaicut.com/covers/900/2.5.3-zh-a83d8415095a.jpg" width="360" alt="瑞士信息设计 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/900/2.5.3-zh-5df29820b59b.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-swiss">来源</a>
+<a href="https://media.openaicut.com/previews/892/1.0.0-zh-1f9aa1a124de.mp4">官方 Demo · 16:9</a>
+<p>用汉字当角色（韩、刘、萧、项…）的水墨动画，2 分 48 秒讲完一个历史人物的一生，并用心理学解释他为什么落到这个下场。改预设里的对白、成语签、地点年份、括注和场景即可换一个新人物。1920×1080 / 30fps，样例含程序化动作音效。</p>
+<p><a href="templates/categories/talk.md#mg-style-360840">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>黏土实验台 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/901/2.5.3-zh-8f8876c01431.mp4"><img src="https://media.openaicut.com/covers/901/2.5.3-zh-2a04b4956c40.jpg" width="360" alt="黏土实验台 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/901/2.5.3-zh-8f8876c01431.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-clay">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>粉笔黑板 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/902/2.5.3-zh-3d0943b9524d.mp4"><img src="https://media.openaicut.com/covers/902/2.5.3-zh-382331a3ae0a.jpg" width="360" alt="粉笔黑板 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/902/2.5.3-zh-3d0943b9524d.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-chalkboard">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>图标要点卡</strong><br>
+<p>真人口播 · 概念教学 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/iconcards.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-iconcards.gif" width="202" alt="图标要点卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/iconcards.mp4">完整本地 Demo</a>
+<p>2–4 个并列要点，每个配一个图标：功能亮点、方法要素、几个理由。比 list 更有画面感；要点有顺序/因果时改用 steps</p>
+<p><a href="templates/categories/talk.md#mg-control-iconcards">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>生长导图 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/903/2.5.3-zh-fe14805ea913.mp4"><img src="https://media.openaicut.com/covers/903/2.5.3-zh-7299d5905b6d.jpg" width="360" alt="生长导图 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/903/2.5.3-zh-fe14805ea913.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-mindmap">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>博物馆展墙 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/904/2.5.3-zh-12ca8272b15b.mp4"><img src="https://media.openaicut.com/covers/904/2.5.3-zh-309919c56a02.jpg" width="360" alt="博物馆展墙 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/904/2.5.3-zh-12ca8272b15b.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-timeline">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>问答</strong><br>
+<p>真人口播 · 概念教学 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/qa.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-qa.gif" width="202" alt="问答 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/qa.mp4">完整本地 Demo</a>
+<p>先抛出一个问题，停顿后揭晓答案：设问、观众常问、知识小测。cue 对准口播说出答案的那一刻</p>
+<p><a href="templates/categories/talk.md#mg-control-qa">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>发光玻璃板 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/905/2.5.3-zh-90f1d36b5c30.mp4"><img src="https://media.openaicut.com/covers/905/2.5.3-zh-f2c7c211a3fb.jpg" width="360" alt="发光玻璃板 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/905/2.5.3-zh-90f1d36b5c30.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-lightboard">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>等距系统图 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/906/2.5.3-zh-f7f712d44ade.mp4"><img src="https://media.openaicut.com/covers/906/2.5.3-zh-211781250201.jpg" width="360" alt="等距系统图 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/906/2.5.3-zh-f7f712d44ade.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-isometric">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>误区与真相</strong><br>
+<p>真人口播 · 概念教学 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/myth.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-myth.gif" width="202" alt="误区与真相 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/myth.mp4">完整本地 Demo</a>
+<p>纠正一个常见错误说法：先摆出误区、否定它、再给出正确说法。辟谣、避坑、常见误解</p>
+<p><a href="templates/categories/talk.md#mg-control-myth">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>纸雕层叠 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/907/2.5.3-zh-66b986377f2a.mp4"><img src="https://media.openaicut.com/covers/907/2.5.3-zh-cf3c4dad6c15.jpg" width="360" alt="纸雕层叠 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/907/2.5.3-zh-66b986377f2a.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-papercut">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>地铁线路图 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/908/2.5.3-zh-fd8d9dc5ae03.mp4"><img src="https://media.openaicut.com/covers/908/2.5.3-zh-d0159cc738f3.jpg" width="360" alt="地铁线路图 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/908/2.5.3-zh-fd8d9dc5ae03.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-metro">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>名词解释</strong><br>
+<p>真人口播 · 概念教学 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/definition.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-definition.gif" width="202" alt="名词解释 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/definition.mp4">完整本地 Demo</a>
+<p>解释一个术语/概念：词条 + 注音/英文 + 类别 + 一句定义 + 可选例句。知识科普、行业黑话、新概念</p>
+<p><a href="templates/categories/talk.md#mg-control-definition">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>双色孔版 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/909/2.5.3-zh-15d6f65e42f3.mp4"><img src="https://media.openaicut.com/covers/909/2.5.3-zh-a00889e59aec.jpg" width="360" alt="双色孔版 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/909/2.5.3-zh-15d6f65e42f3.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-riso">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>点阵手账 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/910/2.5.3-zh-5ebc896f6930.mp4"><img src="https://media.openaicut.com/covers/910/2.5.3-zh-f998fa61d29d.jpg" width="360" alt="点阵手账 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/910/2.5.3-zh-5ebc896f6930.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-sketchnote">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>小贴士 / 警告</strong><br>
+<p>真人口播 · 概念教学 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/tip.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-tip.gif" width="202" alt="小贴士 / 警告 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/tip.mp4">完整本地 Demo</a>
+<p>插一句提醒：小技巧（tip）、注意事项（warn）、补充信息（info）、确认无误（ok）。类型决定图标与颜色</p>
+<p><a href="templates/categories/talk.md#mg-control-tip">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>彩色几何 · 知识讲解模板</strong><br>
-<a href="https://media.openaicut.com/previews/911/2.5.3-zh-b27b76c06f66.mp4"><img src="https://media.openaicut.com/covers/911/2.5.3-zh-8b47943f7398.jpg" width="360" alt="彩色几何 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/911/2.5.3-zh-b27b76c06f66.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@adunext/knowledge-explainer-byrne">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>剪纸描边</strong><br>
+<p>真人口播 · 人物与背景 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-04.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-04.gif" width="202" alt="剪纸描边 · 原速节选 · 0.7 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 0.7 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-04.mp4">完整本地 Demo</a>
+<p>动态抠像人物加白色纸边和阴影，置于纸张纹理背景。</p>
+<p><a href="templates/categories/talk.md#presenter-effect-04">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%"></td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>照片墙</strong><br>
+<p>真人口播 · 人物与背景 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-05.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-05.gif" width="202" alt="照片墙 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-05.mp4">完整本地 Demo</a>
+<p>多张照片组成错位移动墙，动态人物位于前景。</p>
+<p><a href="templates/categories/talk.md#presenter-effect-05">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>杂志封面</strong><br>
+<p>真人口播 · 人物与背景 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-08.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-08.gif" width="202" alt="杂志封面 · 原速节选 · 1.2 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.2 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-08.mp4">完整本地 Demo</a>
+<p>人物与封面标题分层，形成杂志封面式口播包装。</p>
+<p><a href="templates/categories/talk.md#presenter-effect-08">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>抠像换景</strong><br>
+<p>真人口播 · 人物与背景 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-09.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-09.gif" width="202" alt="抠像换景 · 原速节选 · 1.5 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.5 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-09.mp4">完整本地 Demo</a>
+<p>已抠像的人物合成到原创蓝色空间背景。</p>
+<p><a href="templates/categories/talk.md#presenter-effect-09">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>人物破框</strong><br>
+<p>真人口播 · 人物与背景 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-15.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-15.gif" width="202" alt="人物破框 · 原速节选 · 1.4 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.4 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-15.mp4">完整本地 Demo</a>
+<p>同源画面在倾斜窗口内显示，透明人物延伸到窗口外。</p>
+<p><a href="templates/categories/talk.md#presenter-effect-15">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
 </tr>
 </table>
 
 </details>
 
 <details>
-<summary>产品宣传与教程 · 14 项</summary>
+<summary><strong>录屏与操作教学 · 22 项</strong></summary>
 
 <table>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>多屏拼贴 · 品牌宣传</strong><br>
-<a href="https://media.openaicut.com/previews/585/draft-zh-78bba5fd21f6.mp4"><img src="https://media.openaicut.com/covers/585/draft-zh-c7db529e9ef8.jpg" width="360" alt="多屏拼贴 · 品牌宣传 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/585/draft-zh-78bba5fd21f6.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@motiongit/motiongit-promo-main">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>像素闯关 · 产品宣传</strong><br>
-<a href="https://media.openaicut.com/previews/586/draft-zh-b8792f9887ad.mp4"><img src="https://media.openaicut.com/covers/586/quality-zh-086e631771b2.jpg" width="360" alt="像素闯关 · 产品宣传 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/586/draft-zh-b8792f9887ad.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@motiongit/motiongit-promo-pixel">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>明暗快切 · 产品宣传</strong><br>
-<a href="https://media.openaicut.com/previews/587/draft-zh-89b65ccfd5ce.mp4"><img src="https://media.openaicut.com/covers/587/quality-zh-89ff4394136c.jpg" width="360" alt="明暗快切 · 产品宣传 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/587/draft-zh-89b65ccfd5ce.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@motiongit/motiongit-promo-velocity">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>流程演示 · 产品教程</strong><br>
+<p>录屏与操作教学 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://media.openaicut.com/previews/588/draft-zh-ca08bac0650e.mp4"><img src="https://media.openaicut.com/covers/588/quality-zh-aa230abfebe6.jpg" width="360" alt="流程演示 · 产品教程 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/588/draft-zh-ca08bac0650e.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@motiongit/motiongit-promo-user">来源</a>
+<a href="https://media.openaicut.com/previews/588/draft-zh-ca08bac0650e.mp4">官方 Demo · 16:9</a>
+<p>沿着选择模板、提供内容、生成视频的流程讲解产品使用，适合工具教程和上手演示。</p>
+<p><a href="templates/categories/screen.md#mg-style-670021">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>模块拼贴 · 创作者宣传</strong><br>
-<a href="https://media.openaicut.com/previews/589/draft-zh-4d806a380523.mp4"><img src="https://media.openaicut.com/covers/589/quality-zh-879117ad36da.jpg" width="360" alt="模块拼贴 · 创作者宣传 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/589/draft-zh-4d806a380523.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@motiongit/motiongit-promo-creator">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>工程蓝图 · 产品拆解</strong><br>
-<a href="https://media.openaicut.com/previews/590/draft-zh-308a5a69232f.mp4"><img src="https://media.openaicut.com/covers/590/quality-zh-d5509b8e4f82.jpg" width="360" alt="工程蓝图 · 产品拆解 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/590/draft-zh-308a5a69232f.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@motiongit/motiongit-promo-blueprint">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>设备样机</strong><br>
+<p>录屏与操作教学 · 真实素材展示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/device.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-device.gif" width="202" alt="设备样机 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/device.mp4">完整本地 Demo</a>
+<p>展示 App、网页、录屏、作品画面：素材放进手机 / 平板 / 显示器屏幕里，视频按成片时钟播放；可配标题</p>
+<p><a href="templates/categories/screen.md#mg-control-device">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>发布会舞台 · 产品演示</strong><br>
-<a href="https://media.openaicut.com/previews/591/draft-zh-958b2690a669.mp4"><img src="https://media.openaicut.com/covers/591/quality-zh-da4888e5e350.jpg" width="360" alt="发布会舞台 · 产品演示 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/591/draft-zh-958b2690a669.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@motiongit/motiongit-promo-keynote">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>宣纸手卷 · 品牌叙事</strong><br>
-<a href="https://media.openaicut.com/previews/592/draft-zh-eba2e4e6f671.mp4"><img src="https://media.openaicut.com/covers/592/quality-zh-666ac61ebd83.jpg" width="360" alt="宣纸手卷 · 品牌叙事 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/592/draft-zh-eba2e4e6f671.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@motiongit/motiongit-promo-ink">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>聚光放大</strong><br>
+<p>录屏与操作教学 · 真实素材展示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/spotlight.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-spotlight.gif" width="202" alt="聚光放大 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/spotlight.mp4">完整本地 Demo</a>
+<p>在一张截图/照片/视频画面里依次指出 1–3 个关注点（x、y 为 0–1 的相对位置），每个点带一个短标签</p>
+<p><a href="templates/categories/screen.md#mg-control-spotlight">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>拼贴出场 · COLLAGE OPEN</strong><br>
-<a href="https://media.openaicut.com/previews/873/1.0.0-zh-6b7b749b3dc5.mp4"><img src="https://media.openaicut.com/covers/873/1.0.0-zh-12a46d4c356c.jpg" width="360" alt="拼贴出场 · COLLAGE OPEN · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/873/1.0.0-zh-6b7b749b3dc5.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/collage-open">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>多屏墙换版 · WALL SWAP</strong><br>
-<a href="https://media.openaicut.com/previews/874/1.0.0-zh-7831dd69bc6b.mp4"><img src="https://media.openaicut.com/covers/874/1.0.0-zh-4340b94c82ff.jpg" width="360" alt="多屏墙换版 · WALL SWAP · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/874/1.0.0-zh-7831dd69bc6b.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/collage-wall">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>聊天对话</strong><br>
+<p>录屏与操作教学 · 界面与交互演示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/chat.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-chat.gif" width="202" alt="聊天对话 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/chat.mp4">完整本地 Demo</a>
+<p>把一段对话演出来：用户与客服/朋友的聊天、群里的讨论、向 AI 助手提问并得到回答；2–6 条消息逐条出现</p>
+<p><a href="templates/categories/screen.md#mg-control-chat">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>四种看法与片格 · VIEWS / STRIP</strong><br>
-<a href="https://media.openaicut.com/previews/875/1.0.0-zh-cd8ad1570460.mp4"><img src="https://media.openaicut.com/covers/875/1.0.0-zh-3c1d5e7cd796.jpg" width="360" alt="四种看法与片格 · VIEWS / STRIP · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/875/1.0.0-zh-cd8ad1570460.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/collage-views">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>产品与品牌 · PRODUCT → BRAND</strong><br>
-<a href="https://media.openaicut.com/previews/877/1.0.0-zh-97910ee13592.mp4"><img src="https://media.openaicut.com/covers/877/1.0.0-zh-a24df31e704a.jpg" width="360" alt="产品与品牌 · PRODUCT → BRAND · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/877/1.0.0-zh-97910ee13592.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/collage-product">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>评论 / 弹幕</strong><br>
+<p>录屏与操作教学 · 界面与交互演示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/comment.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-comment.gif" width="202" alt="评论 / 弹幕 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/comment.mp4">完整本地 Demo</a>
+<p>展示观众反馈、网友评论、热评、弹幕刷屏：2–5 条评论逐条浮现，点赞数上涨，最高赞那条被强调（热评 / 置顶 / 放大停住）</p>
+<p><a href="templates/categories/screen.md#mg-control-comment">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>DEEP STAGE 产品讲解</strong><br>
-<a href="https://media.openaicut.com/previews/881/1.0.0-bf4d2ce8953d.mp4"><img src="https://media.openaicut.com/covers/881/1.0.0-7dadaa0a595d.jpg" width="360" alt="DEEP STAGE 产品讲解 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/881/1.0.0-bf4d2ce8953d.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deep-stage-product-focus">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>通知横幅</strong><br>
+<p>录屏与操作教学 · 界面与交互演示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/notify.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-notify.gif" width="202" alt="通知横幅 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/notify.mp4">完整本地 Demo</a>
+<p>表现「消息来了」：订单、提醒、私信、系统通知一条接一条弹出；也可做锁屏收到通知的画面</p>
+<p><a href="templates/categories/screen.md#mg-control-notify">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
-<strong>多屏商务 · 动态图表</strong><br>
-<a href="https://media.openaicut.com/previews/891/0.1.1-candidate-zh-a43ff10687ec.mp4"><img src="https://media.openaicut.com/covers/891/0.1.1-candidate-zh-007e520a3b97.jpg" width="360" alt="多屏商务 · 动态图表 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/891/0.1.1-candidate-zh-a43ff10687ec.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@frankye1211/corporate-multiscreen-charts">来源</a>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>搜索框</strong><br>
+<p>录屏与操作教学 · 界面与交互演示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/search.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-search.gif" width="202" alt="搜索框 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/search.mp4">完整本地 Demo</a>
+<p>演示「搜一下」：输入关键词 → 回车 → 联想/结果出现、命中词高亮；适合讲搜索热度、怎么找资料、工具里的命令面板</p>
+<p><a href="templates/categories/screen.md#mg-control-search">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>浏览器 / 应用窗口</strong><br>
+<p>录屏与操作教学 · 界面与交互演示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/browser.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-browser.gif" width="202" alt="浏览器 / 应用窗口 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/browser.mp4">完整本地 Demo</a>
+<p>演示「打开一个网页 / 网站 / 应用」：地址栏输入网址、加载、页面滚动，再用 1–3 个高亮框标出重点区域。只需要静态录屏展示用 0.2.0 的 media</p>
+<p><a href="templates/categories/screen.md#mg-control-browser">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>社交数据卡</strong><br>
+<p>录屏与操作教学 · 界面与交互演示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/social.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-social.gif" width="202" alt="社交数据卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/social.mp4">完整本地 Demo</a>
+<p>展示一条内容的反响：帖子被点赞、主页涨粉、三项互动数据；数字滚动上涨。数字请标注示意</p>
+<p><a href="templates/categories/screen.md#mg-control-social">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>鼠标点击演示</strong><br>
+<p>录屏与操作教学 · 界面与交互演示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/cursor.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-cursor.gif" width="202" alt="鼠标点击演示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/cursor.mp4">完整本地 Demo</a>
+<p>演示软件操作步骤：依次点几个按钮、把文件拖进某个区域、打开菜单选一项。可以放截图作为背景</p>
+<p><a href="templates/categories/screen.md#mg-control-cursor">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>箭头标注</strong><br>
+<p>录屏与操作教学 · 叠加标注与装饰 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/callout.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-callout.gif" width="202" alt="箭头标注 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/callout.mp4">完整本地 Demo</a>
+<p>指出画面里的某个位置（录屏按钮、图片细节、口播卡外的内容）：给目标点 x/y（0–1 画面比例）和一句短标注</p>
+<p><a href="templates/categories/screen.md#mg-control-callout">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>章节进度条</strong><br>
+<p>录屏与操作教学 · 叠加标注与装饰 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/progressbar.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-progressbar.gif" width="202" alt="章节进度条 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/progressbar.mp4">完整本地 Demo</a>
+<p>告诉观众「现在讲到第几部分」：2–6 个章节名 + 当前章节序号。放在章节切换处，停留 2–6 秒</p>
+<p><a href="templates/categories/screen.md#mg-control-progressbar">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>聊天界面</strong><br>
+<p>录屏与操作教学 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/community-chat.mp4"><img src="docs/template-gallery/demos/homepage/remotion-community-chat.gif" width="202" alt="聊天界面 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/community-chat.mp4">完整本地 Demo</a>
+<p>竖屏聊天消息逐条展示；独立演示层把桌面尺寸字体放大，方便阅读竖版中文界面。</p>
+<p><a href="templates/categories/screen.md#remotion-community-chat">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>眼睛揭示动画</strong><br>
+<p>录屏与操作教学 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/eye-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-eye-reveal.gif" width="360" alt="眼睛揭示动画 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/eye-reveal.mp4">完整本地 Demo</a>
+<p>代码图形的眼睛开合揭示</p>
+<p><a href="templates/categories/screen.md#remotion-eye-reveal">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>玻璃信息卡</strong><br>
+<p>录屏与操作教学 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/lower-third-glass-card.mp4"><img src="docs/template-gallery/demos/homepage/remotion-lower-third-glass-card.gif" width="360" alt="玻璃信息卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/lower-third-glass-card.mp4">完整本地 Demo</a>
+<p>半透明玻璃下三分之一信息卡</p>
+<p><a href="templates/categories/screen.md#remotion-lower-third-glass-card">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>角色跳动</strong><br>
+<p>录屏与操作教学 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/character-jumping.mp4"><img src="docs/template-gallery/demos/homepage/remotion-character-jumping.gif" width="360" alt="角色跳动 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/character-jumping.mp4">完整本地 Demo</a>
+<p>代码图形角色弹跳；独立演示层修正原版重复扣除跳跃位移并降低跳高，防止角色跳出画框；原始源码未改。</p>
+<p><a href="templates/categories/screen.md#remotion-character-jumping">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>短视频播放器界面</strong><br>
+<p>录屏与操作教学 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/social-reel.mp4"><img src="docs/template-gallery/demos/homepage/remotion-social-reel.gif" width="360" alt="短视频播放器界面 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/social-reel.mp4">完整本地 Demo</a>
+<p>代码绘制竖屏播放器与信息层</p>
+<p><a href="templates/categories/screen.md#remotion-social-reel">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>思考气泡</strong><br>
+<p>录屏与操作教学 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/thinking-bubble.mp4"><img src="docs/template-gallery/demos/homepage/remotion-thinking-bubble.gif" width="360" alt="思考气泡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/thinking-bubble.mp4">完整本地 Demo</a>
+<p>代码图形思考气泡</p>
+<p><a href="templates/categories/screen.md#remotion-thinking-bubble">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>角色招手</strong><br>
+<p>录屏与操作教学 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/wave-hello.mp4"><img src="docs/template-gallery/demos/homepage/remotion-wave-hello.gif" width="360" alt="角色招手 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/wave-hello.mp4">完整本地 Demo</a>
+<p>代码图形招手动画</p>
+<p><a href="templates/categories/screen.md#remotion-wave-hello">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>中文播放器界面示例</strong><br>
+<p>录屏与操作教学 · 中文示例 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/library-player-zh.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-player-zh.gif" width="360" alt="中文播放器界面示例 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/library-player-zh.mp4">完整本地 Demo</a>
+<p>代码绘制竖屏播放器与信息层；已有基础模板的中文参数示例，不新增模板家族。</p>
+<p><a href="templates/categories/screen.md#remotion-library-player-zh">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>界面窗框</strong><br>
+<p>录屏与操作教学 · 界面与设备 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-07.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-07.gif" width="202" alt="界面窗框 · 原速节选 · 1.1 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.1 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-07.mp4">完整本地 Demo</a>
+<p>口播被放入带标题栏的悬浮窗框，形成界面容器效果。</p>
+<p><a href="templates/categories/screen.md#presenter-effect-07">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>手机画面</strong><br>
+<p>录屏与操作教学 · 界面与设备 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-14.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-14.gif" width="202" alt="手机画面 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-14.mp4">完整本地 Demo</a>
+<p>口播装入带旋转动作的手机轮廓与播放信息层。</p>
+<p><a href="templates/categories/screen.md#presenter-effect-14">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 </table>
@@ -456,1336 +760,307 @@
 </details>
 
 <details>
-<summary>视觉与场景动效（非口播默认） · 17 项</summary>
+<summary><strong>流程与时间线 · 25 项</strong></summary>
 
 <table>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>半调网点 · 人像标题</strong><br>
-<a href="https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4"><img src="https://media.openaicut.com/covers/615/draft-zh-2de1eb992fcf.jpg" width="360" alt="半调网点 · 人像标题 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>流程与时间线 · FLOW / TIMELINE</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/876/1.0.0-zh-294b6a370e6d.mp4"><img src="https://media.openaicut.com/covers/876/1.0.0-zh-0836cb139a44.jpg" width="360" alt="流程与时间线 · FLOW / TIMELINE · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@prism-studio/visual-art-a-halftone">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>照片马赛克 · 拼图揭幕</strong><br>
-<a href="https://media.openaicut.com/previews/616/draft-zh-3c3bc74e9591.mp4"><img src="https://media.openaicut.com/covers/616/draft-zh-b95e73a79f9c.jpg" width="360" alt="照片马赛克 · 拼图揭幕 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/616/draft-zh-3c3bc74e9591.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@prism-studio/visual-art-b-mosaic">来源</a>
+<a href="https://media.openaicut.com/previews/876/1.0.0-zh-294b6a370e6d.mp4">官方 Demo · 16:9</a>
+<p>四步创作流程（说戏→分镜→画面→成片）推进到一条时间线，四轨片段铺开、播放头扫过、统计落位；9.8 秒，适合 AIGC/创作工具的能力说明。</p>
+<p><a href="templates/categories/flow.md#mg-style-876">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>几何拼贴 · 动态海报</strong><br>
-<a href="https://media.openaicut.com/previews/617/draft-zh-d014a696e0ba.mp4"><img src="https://media.openaicut.com/covers/617/draft-zh-84c721155840.jpg" width="360" alt="几何拼贴 · 动态海报 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>目标与证据 · 17类语义动效</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/886/0.4.0-rc.4-7ab29961149d.mp4"><img src="https://media.openaicut.com/covers/886/0.4.0-rc.4-5ddf2903802d.jpg" width="360" alt="目标与证据 · 17类语义动效 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/617/draft-zh-d014a696e0ba.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@prism-studio/visual-art-c-collage">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>笔触重绘 · 艺术照片</strong><br>
-<a href="https://media.openaicut.com/previews/618/draft-zh-9a122d6aac1e.mp4"><img src="https://media.openaicut.com/covers/618/draft-zh-c88f1a5a67a8.jpg" width="360" alt="笔触重绘 · 艺术照片 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/618/draft-zh-9a122d6aac1e.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@prism-studio/visual-art-d-brushwork">来源</a>
+<a href="https://media.openaicut.com/previews/886/0.4.0-rc.4-7ab29961149d.mp4">官方 Demo · 16:9</a>
+<p>暖灰米白与绿色的17类语义动效，适用于知识讲解、产品说明、指标比较与观点表达。</p>
+<p><a href="templates/categories/flow.md#mg-style-509099">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>信号故障 · 照片转场</strong><br>
-<a href="https://media.openaicut.com/previews/619/draft-zh-567d566f31a3.mp4"><img src="https://media.openaicut.com/covers/619/draft-zh-b96f0b6469fe.jpg" width="360" alt="信号故障 · 照片转场 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>黏土实验台 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/901/2.5.3-zh-8f8876c01431.mp4"><img src="https://media.openaicut.com/covers/901/2.5.3-zh-2a04b4956c40.jpg" width="360" alt="黏土实验台 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/619/draft-zh-567d566f31a3.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@prism-studio/visual-art-e-glitch">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>双重曝光 · 人像叠影</strong><br>
-<a href="https://media.openaicut.com/previews/620/draft-zh-eb40eb882b43.mp4"><img src="https://media.openaicut.com/covers/620/draft-zh-d8cadbd1b296.jpg" width="360" alt="双重曝光 · 人像叠影 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/620/draft-zh-eb40eb882b43.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@prism-studio/visual-art-f-double">来源</a>
+<a href="https://media.openaicut.com/previews/901/2.5.3-zh-8f8876c01431.mp4">官方 Demo · 16:9</a>
+<p>把拆分、附着和搬运变成可追踪的黏土实验。适合对象变化与过程解释，由AI助手选择图标和图示，可选真人全屏开头后缩成圆窗。</p>
+<p><a href="templates/categories/flow.md#mg-style-517652">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>空间画廊 · 回忆相册</strong><br>
-<a href="https://media.openaicut.com/previews/621/draft-zh-13dffcc71ff3.mp4"><img src="https://media.openaicut.com/covers/621/draft-zh-78b8670e7b7d.jpg" width="360" alt="空间画廊 · 回忆相册 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>粉笔黑板 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/902/2.5.3-zh-3d0943b9524d.mp4"><img src="https://media.openaicut.com/covers/902/2.5.3-zh-382331a3ae0a.jpg" width="360" alt="粉笔黑板 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/621/draft-zh-13dffcc71ff3.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@prism-studio/visual-art-g-gallery">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>镜像万花筒 · 照片变幻</strong><br>
-<a href="https://media.openaicut.com/previews/622/draft-zh-3a7bf4639a39.mp4"><img src="https://media.openaicut.com/covers/622/draft-zh-f09b29170a66.jpg" width="360" alt="镜像万花筒 · 照片变幻 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/622/draft-zh-3a7bf4639a39.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@prism-studio/visual-art-h-kaleido">来源</a>
+<a href="https://media.openaicut.com/previews/902/2.5.3-zh-3d0943b9524d.mp4">官方 Demo · 16:9</a>
+<p>用粉笔线条把光线、视角与遮挡条件逐步画清。适合轨道、投影和几何原因辨析，提供图标图示选择引导，可选真人开场后圆窗陪讲。</p>
+<p><a href="templates/categories/flow.md#mg-style-173723">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>DeepSeek 鲸鱼粒子聚合</strong><br>
-<a href="https://media.openaicut.com/previews/628/1.1.0-e0d9c9e4a5b8.mp4"><img src="https://media.openaicut.com/covers/628/1.1.0-a864a56cec62.jpg" width="360" alt="DeepSeek 鲸鱼粒子聚合 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>生长导图 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/903/2.5.3-zh-fe14805ea913.mp4"><img src="https://media.openaicut.com/covers/903/2.5.3-zh-7299d5905b6d.jpg" width="360" alt="生长导图 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/628/1.1.0-e0d9c9e4a5b8.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deepseek-whale-assemble">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>DeepSeek 粒子形变</strong><br>
-<a href="https://media.openaicut.com/previews/629/1.1.0-0892fa4bf82d.mp4"><img src="https://media.openaicut.com/covers/629/1.1.0-72cc2b4731d0.jpg" width="360" alt="DeepSeek 粒子形变 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/629/1.1.0-0892fa4bf82d.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deepseek-form-morph">来源</a>
+<a href="https://media.openaicut.com/previews/903/2.5.3-zh-fe14805ea913.mp4">官方 Demo · 16:9</a>
+<p>让关系沿分支生长，让对象沿路径前进。适合层级、分流、局部放大与不同时间尺度的解释，配有图示选择引导，可选真人开场后缩圆窗。</p>
+<p><a href="templates/categories/flow.md#mg-style-880856">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>DeepSeek 词语粒子</strong><br>
-<a href="https://media.openaicut.com/previews/630/1.1.0-7b16186bd6b2.mp4"><img src="https://media.openaicut.com/covers/630/1.1.0-7cf1d6e6ddc9.jpg" width="360" alt="DeepSeek 词语粒子 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>博物馆展墙 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/904/2.5.3-zh-12ca8272b15b.mp4"><img src="https://media.openaicut.com/covers/904/2.5.3-zh-309919c56a02.jpg" width="360" alt="博物馆展墙 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/630/1.1.0-7b16186bd6b2.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deepseek-word-morph">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>光带文字</strong><br>
-<a href="https://media.openaicut.com/previews/872/1.0.0-08a812711d78.mp4"><img src="https://media.openaicut.com/covers/872/1.0.0-04d5f44d203b.jpg" width="360" alt="光带文字 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/872/1.0.0-08a812711d78.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/light-ribbon-word">来源</a>
+<a href="https://media.openaicut.com/previews/904/2.5.3-zh-12ca8272b15b.mp4">官方 Demo · 16:9</a>
+<p>以展墙与展品机制串起一段知识历程。适合日影、液位、齿轮、摆动、分频与共振的解释，由AI助手选图示，可选真人开场后圆窗陪讲。</p>
+<p><a href="templates/categories/flow.md#mg-style-949192">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>面板擦除 · WIPE PACK</strong><br>
-<a href="https://media.openaicut.com/previews/878/1.0.0-zh-be7dc794ab1a.mp4"><img src="https://media.openaicut.com/covers/878/1.0.0-zh-36c9ef9f02df.jpg" width="360" alt="面板擦除 · WIPE PACK · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>发光玻璃板 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/905/2.5.3-zh-90f1d36b5c30.mp4"><img src="https://media.openaicut.com/covers/905/2.5.3-zh-f2c7c211a3fb.jpg" width="360" alt="发光玻璃板 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/878/1.0.0-zh-be7dc794ab1a.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/collage-wipe">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>DEEP STAGE 开场点火标题</strong><br>
-<a href="https://media.openaicut.com/previews/879/1.0.0-8e74030d1901.mp4"><img src="https://media.openaicut.com/covers/879/1.0.0-12a34d321725.jpg" width="360" alt="DEEP STAGE 开场点火标题 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/879/1.0.0-8e74030d1901.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deep-stage-title-ignition">来源</a>
+<a href="https://media.openaicut.com/previews/905/2.5.3-zh-90f1d36b5c30.mp4">官方 Demo · 16:9</a>
+<p>在发光线条中看见波形怎样相遇、延时怎样留下残余。适合信号叠加、相位与反馈解释，提供图标图示引导，可选真人开头后缩圆窗。</p>
+<p><a href="templates/categories/flow.md#mg-style-803150">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>DEEP STAGE 媒体素材墙</strong><br>
-<a href="https://media.openaicut.com/previews/883/1.0.0-a30bac716f4b.mp4"><img src="https://media.openaicut.com/covers/883/1.0.0-7aea9314e457.jpg" width="360" alt="DEEP STAGE 媒体素材墙 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>等距系统图 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/906/2.5.3-zh-f7f712d44ade.mp4"><img src="https://media.openaicut.com/covers/906/2.5.3-zh-211781250201.jpg" width="360" alt="等距系统图 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/883/1.0.0-a30bac716f4b.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deep-stage-media-wall">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>DEEP STAGE 收尾锁版</strong><br>
-<a href="https://media.openaicut.com/previews/884/1.0.0-651f2839086d.mp4"><img src="https://media.openaicut.com/covers/884/1.0.0-1e5dc2b6dbd5.jpg" width="360" alt="DEEP STAGE 收尾锁版 · 官方预览图 · 点击查看完整 Demo"></a><br>
-<sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/884/1.0.0-651f2839086d.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@thepandaq/deep-stage-outro-lockup">来源</a>
+<a href="https://media.openaicut.com/previews/906/2.5.3-zh-f7f712d44ade.mp4">官方 Demo · 16:9</a>
+<p>用等距剖切把内部结构、物质通路与能量关系分开讲清。适合换热、压缩和能量核算，提供图示选择引导，可选真人开场后缩圆窗。</p>
+<p><a href="templates/categories/flow.md#mg-style-106531">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>3D 吉祥物手把手教程</strong><br>
-<a href="https://media.openaicut.com/previews/895/1.0.0-zh-a15d0b9cfbab.mp4"><img src="https://media.openaicut.com/covers/895/1.0.0-zh-0c4dce4365d8.jpg" width="360" alt="3D 吉祥物手把手教程 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<td width="100%" align="left" valign="top">
+<strong>纸雕层叠 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/907/2.5.3-zh-66b986377f2a.mp4"><img src="https://media.openaicut.com/covers/907/2.5.3-zh-cf3c4dad6c15.jpg" width="360" alt="纸雕层叠 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://media.openaicut.com/previews/895/1.0.0-zh-a15d0b9cfbab.mp4">官方 Demo · 16:9</a> · <a href="https://motiongit.com/@xkkiss12/mascot-tutorial-3d">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-</details>
-
-<details>
-<summary><strong>动画控件 · 70 项</strong></summary>
-
-<details>
-<summary>基础讲解 · 12 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>两行标题</strong><br>
-<a href="docs/template-gallery/demos/motiongit/title.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-title.gif" width="202" alt="两行标题 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/title.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>关键词砸入</strong><br>
-<a href="docs/template-gallery/demos/motiongit/keyword.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-keyword.gif" width="202" alt="关键词砸入 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/keyword.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="https://media.openaicut.com/previews/907/2.5.3-zh-66b986377f2a.mp4">官方 Demo · 16:9</a>
+<p>用层叠纸片看见内部、压缩与搬运。适合层序、褶皱、切面和错动的教学解释，提供图标图示选择引导，可选真人开场后缩成圆窗。</p>
+<p><a href="templates/categories/flow.md#mg-style-546070">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>数字滚动</strong><br>
-<a href="docs/template-gallery/demos/motiongit/number.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-number.gif" width="202" alt="数字滚动 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/number.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>地铁线路图 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/908/2.5.3-zh-fd8d9dc5ae03.mp4"><img src="https://media.openaicut.com/covers/908/2.5.3-zh-d0159cc738f3.jpg" width="360" alt="地铁线路图 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/908/2.5.3-zh-fd8d9dc5ae03.mp4">官方 Demo · 16:9</a>
+<p>沿着线路追踪占用、停车与队列变化。适合安全间隔、状态读数和有限服务流程的教学表达，配有图标图示引导，可选真人开头后缩圆窗。</p>
+<p><a href="templates/categories/flow.md#mg-style-447390">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>点阵手账 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/910/2.5.3-zh-5ebc896f6930.mp4"><img src="https://media.openaicut.com/covers/910/2.5.3-zh-f998fa61d29d.jpg" width="360" alt="点阵手账 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/910/2.5.3-zh-5ebc896f6930.mp4">官方 Demo · 16:9</a>
+<p>把步骤、关键词和修订留在同一本点阵手账里。适合方法拆解与学习回顾，提供图标图示选择引导；页面为19.95秒早期风格短样。</p>
+<p><a href="templates/categories/flow.md#mg-style-968813">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>彩色几何 · 知识讲解模板</strong><br>
+<p>流程与时间线 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/911/2.5.3-zh-b27b76c06f66.mp4"><img src="https://media.openaicut.com/covers/911/2.5.3-zh-8b47943f7398.jpg" width="360" alt="彩色几何 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/911/2.5.3-zh-b27b76c06f66.mp4">官方 Demo · 16:9</a>
+<p>用彩色边、面积与刚体拼图讲清几何等量关系。原生新稿围绕直角三角形模型，提供图示选择引导；页面为23.8667秒早期风格短样。</p>
+<p><a href="templates/categories/flow.md#mg-style-118272">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>要点列表</strong><br>
+<p>流程与时间线 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/motiongit/list.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-list.gif" width="202" alt="要点列表 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/list.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="docs/template-gallery/demos/motiongit/list.mp4">完整本地 Demo</a>
+<p>1–6 个并列要点，逐条出现；全部出现后高亮依次轮转</p>
+<p><a href="templates/categories/flow.md#mg-control-list">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>左右对比</strong><br>
-<a href="docs/template-gallery/demos/motiongit/compare.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-compare.gif" width="202" alt="左右对比 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/compare.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>步骤流程</strong><br>
+<p>流程与时间线 · 基础讲解 · 已有接入案例 · 新片仍需适配</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-steps.gif" width="360" alt="步骤流程 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<p><sub>当前本人Demo版本：2.7.17-alpha.2 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/motiongit/steps.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<p><sub>当前本人Demo版本：2.7.17-alpha.2 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/motiongit/steps.mp4">完整本地 Demo</a>
+<p>2–5 个先后步骤；光点沿轨道依次点亮</p>
+<p><a href="templates/categories/flow.md#mg-control-steps">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 <details><summary>本片接入与复用边界</summary><p>AIVD 10 · template-01-integrated-portrait · 2.7.17-alpha.2</p><p>输入：workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。；知识库与 AI 员工手册两项前提，保留完整条件，轨道依次点亮。；使用本片原始时钟上的同源本人176px人像源，从376.83秒开始绝对1.2倍一次；先裁去窗口边缘/姓名条再做透明圆窗。；素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。</p><p>调用：<code>.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance &lt;instance&gt; render &lt;reviewed-project&gt; --out &lt;scene.mp4&gt; --language zh</code></p><p>本片检查：本片横屏steps/track：1280×720、30fps、398帧、无音轨，完整解码通过；实际查看编码帧6,199,270,397及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。</p><p>登记基线版本：0.3.0 (package2.7.17-alpha.2)。仅此版本与Demo；不扩展原条目或全部变体的验证状态，不代表用户审美认可。</p></details></td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>金句 / 引用</strong><br>
-<a href="docs/template-gallery/demos/motiongit/quote.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-quote.gif" width="202" alt="金句 / 引用 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/quote.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>数据条</strong><br>
-<a href="docs/template-gallery/demos/motiongit/bars.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-bars.gif" width="202" alt="数据条 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/bars.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>录屏 / 图片窗</strong><br>
-<a href="docs/template-gallery/demos/motiongit/media.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-media.gif" width="202" alt="录屏 / 图片窗 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/media.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>印章强调</strong><br>
-<a href="docs/template-gallery/demos/motiongit/stamp.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-stamp.gif" width="202" alt="印章强调 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/stamp.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>章节卡</strong><br>
-<a href="docs/template-gallery/demos/motiongit/chapter.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-chapter.gif" width="202" alt="章节卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/chapter.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>光球合成</strong><br>
-<a href="docs/template-gallery/demos/motiongit/fusion.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-fusion.gif" width="202" alt="光球合成 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/fusion.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>品牌与行动 · 8 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>Logo 揭示</strong><br>
-<a href="docs/template-gallery/demos/motiongit/logo.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-logo.gif" width="202" alt="Logo 揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/logo.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>片头</strong><br>
-<a href="docs/template-gallery/demos/motiongit/intro.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-intro.gif" width="202" alt="片头 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/intro.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>片尾</strong><br>
-<a href="docs/template-gallery/demos/motiongit/outro.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-outro.gif" width="202" alt="片尾 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/outro.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>行动号召</strong><br>
-<a href="docs/template-gallery/demos/motiongit/cta.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-cta.gif" width="202" alt="行动号召 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/cta.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>关注 / 三连</strong><br>
-<a href="docs/template-gallery/demos/motiongit/subscribe.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-subscribe.gif" width="202" alt="关注 / 三连 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/subscribe.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>倒计时</strong><br>
-<a href="docs/template-gallery/demos/motiongit/countdown.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-countdown.gif" width="202" alt="倒计时 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/countdown.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>价格 / 优惠</strong><br>
-<a href="docs/template-gallery/demos/motiongit/price.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-price.gif" width="202" alt="价格 / 优惠 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/price.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>揭晓 / 抽奖</strong><br>
-<a href="docs/template-gallery/demos/motiongit/reveal.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-reveal.gif" width="202" alt="揭晓 / 抽奖 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/reveal.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>概念教学 · 8 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>图标要点卡</strong><br>
-<a href="docs/template-gallery/demos/motiongit/iconcards.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-iconcards.gif" width="202" alt="图标要点卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/iconcards.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>问答</strong><br>
-<a href="docs/template-gallery/demos/motiongit/qa.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-qa.gif" width="202" alt="问答 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/qa.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>误区与真相</strong><br>
-<a href="docs/template-gallery/demos/motiongit/myth.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-myth.gif" width="202" alt="误区与真相 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/myth.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>优缺点</strong><br>
-<a href="docs/template-gallery/demos/motiongit/prosCons.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-prosCons.gif" width="202" alt="优缺点 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/prosCons.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>名词解释</strong><br>
-<a href="docs/template-gallery/demos/motiongit/definition.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-definition.gif" width="202" alt="名词解释 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/definition.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>小贴士 / 警告</strong><br>
-<a href="docs/template-gallery/demos/motiongit/tip.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-tip.gif" width="202" alt="小贴士 / 警告 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/tip.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>待办清单</strong><br>
+<p>流程与时间线 · 概念教学 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/motiongit/checklist.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-checklist.gif" width="202" alt="待办清单 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/checklist.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>两方对决</strong><br>
-<a href="docs/template-gallery/demos/motiongit/vs.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-vs.gif" width="202" alt="两方对决 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/vs.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>数据与进度 · 7 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>环形占比</strong><br>
-<a href="docs/template-gallery/demos/motiongit/donut.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-donut.gif" width="202" alt="环形占比 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/donut.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>折线趋势</strong><br>
-<a href="docs/template-gallery/demos/motiongit/linechart.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-linechart.gif" width="202" alt="折线趋势 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/linechart.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="docs/template-gallery/demos/motiongit/checklist.mp4">完整本地 Demo</a>
+<p>逐项完成的清单：准备步骤、检查项、已做到的事。和 list 的区别是有打勾过程、进度计数和最后的完成章</p>
+<p><a href="templates/categories/flow.md#mg-control-checklist">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>KPI 数字卡</strong><br>
-<a href="docs/template-gallery/demos/motiongit/counter.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-counter.gif" width="202" alt="KPI 数字卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/counter.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>进度 / 完成度</strong><br>
-<a href="docs/template-gallery/demos/motiongit/progress.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-progress.gif" width="202" alt="进度 / 完成度 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/progress.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>时间线 / 里程碑</strong><br>
+<p>流程与时间线 · 数据与进度 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/motiongit/timeline.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-timeline.gif" width="202" alt="时间线 / 里程碑 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/timeline.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>对比表 / 功能矩阵</strong><br>
-<a href="docs/template-gallery/demos/motiongit/table.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-table.gif" width="202" alt="对比表 / 功能矩阵 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/table.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="docs/template-gallery/demos/motiongit/timeline.mp4">完整本地 Demo</a>
+<p>按时间顺序的 3–6 个节点：发展历程、计划路线图、事件经过；current 标出「现在」</p>
+<p><a href="templates/categories/flow.md#mg-control-timeline">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>排行榜</strong><br>
-<a href="docs/template-gallery/demos/motiongit/ranking.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-ranking.gif" width="202" alt="排行榜 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/ranking.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>关系与系统结构 · 7 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>流程图</strong><br>
+<p>流程与时间线 · 关系与系统结构 · 已有接入案例 · 新片仍需适配</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-flow.gif" width="360" alt="流程图 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<p><sub>当前本人Demo版本：2.7.17-alpha.2 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/motiongit/flow.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<p><sub>当前本人Demo版本：2.7.17-alpha.2 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/motiongit/flow.mp4">完整本地 Demo</a>
+<p>3–6 个有先后顺序的环节（步骤、流水线、因果链），或一个起点分出多个去向（branch）；节点可带图标</p>
+<p><a href="templates/categories/flow.md#mg-control-flow">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 <details><summary>本片接入与复用边界</summary><p>AIVD 10 · template-01-integrated-portrait · 2.7.17-alpha.2</p><p>输入：workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。；自动回复→客户未回→自动跟进，按本片实际语义节拍依次出现。；使用本片原始时钟上的同源本人176px人像源，从332.94秒开始绝对1.2倍一次；先裁去窗口边缘/姓名条再做透明圆窗。；素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。</p><p>调用：<code>.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance &lt;instance&gt; render &lt;reviewed-project&gt; --out &lt;scene.mp4&gt; --language zh</code></p><p>本片检查：本片横屏flow/chain：1280×720、30fps、419帧、无音轨，完整解码通过；实际查看编码帧6,209,345,418及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。</p><p>登记基线版本：0.3.0 (package2.7.17-alpha.2)。仅此版本与Demo；不扩展原条目或全部变体的验证状态，不代表用户审美认可。</p></details></td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>循环图</strong><br>
+<p>流程与时间线 · 关系与系统结构 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/motiongit/cycle.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-cycle.gif" width="202" alt="循环图 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/cycle.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="docs/template-gallery/demos/motiongit/cycle.mp4">完整本地 Demo</a>
+<p>首尾相接、周而复始的 3–6 个环节：飞轮、迭代闭环、生命周期；中心可写主题</p>
+<p><a href="templates/categories/flow.md#mg-control-cycle">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>漏斗 / 层级</strong><br>
+<p>流程与时间线 · 关系与系统结构 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/motiongit/funnel.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-funnel.gif" width="202" alt="漏斗 / 层级 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/funnel.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="docs/template-gallery/demos/motiongit/funnel.mp4">完整本地 Demo</a>
+<p>逐层收窄的转化、筛选（funnel），或自下而上的层级、金字塔、技术栈（pyramid / layers）；每层可带一个数值</p>
+<p><a href="templates/categories/flow.md#mg-control-funnel">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>交集图</strong><br>
+<p>流程与时间线 · 关系与系统结构 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/motiongit/venn.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-venn.gif" width="202" alt="交集图 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/venn.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="docs/template-gallery/demos/motiongit/venn.mp4">完整本地 Demo</a>
+<p>两三个概念的交集或合成：A + B 的重叠点、三者兼得；merge 变体表示合而为一</p>
+<p><a href="templates/categories/flow.md#mg-control-venn">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>思维导图</strong><br>
+<p>流程与时间线 · 关系与系统结构 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/motiongit/mindmap.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-mindmap.gif" width="202" alt="思维导图 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/mindmap.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="docs/template-gallery/demos/motiongit/mindmap.mp4">完整本地 Demo</a>
+<p>一个主题展开 3–6 个方面，每个方面可再列 0–2 个要点：知识框架、话题拆解</p>
+<p><a href="templates/categories/flow.md#mg-control-mindmap">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>2×2 象限</strong><br>
+<p>流程与时间线 · 关系与系统结构 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/motiongit/matrix.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-matrix.gif" width="202" alt="2×2 象限 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/matrix.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<a href="docs/template-gallery/demos/motiongit/matrix.mp4">完整本地 Demo</a>
+<p>两个维度把事物分成四类：重要/紧急、投入/回报、定位分析；可在象限里落几个点，priority 变体突出一个象限</p>
+<p><a href="templates/categories/flow.md#mg-control-matrix">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>中心辐射</strong><br>
+<p>流程与时间线 · 关系与系统结构 · 已有接入案例 · 新片仍需适配</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-hub.gif" width="360" alt="中心辐射 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<p><sub>当前本人Demo版本：2.7.17-alpha.2 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/motiongit/hub.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
+<p><sub>当前本人Demo版本：2.7.17-alpha.2 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/motiongit/hub.mp4">完整本地 Demo</a>
+<p>一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景</p>
+<p><a href="templates/categories/flow.md#mg-control-hub">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 <details><summary>本片接入与复用边界</summary><p>AIVD 10 · template-01-integrated-portrait · 2.7.17-alpha.2</p><p>输入：workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。；预约入口连接表格可选、日历与报名页；展示入口关系，不声称已完成预约。；使用本片原始时钟上的同源本人176px人像源，从695.04秒开始绝对1.2倍一次；先裁去窗口边缘/姓名条再做透明圆窗。；素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。</p><p>调用：<code>.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance &lt;instance&gt; render &lt;reviewed-project&gt; --out &lt;scene.mp4&gt; --language zh</code></p><p>本片检查：本片横屏hub/constellation：1280×720、30fps、384帧、无音轨，完整解码通过；实际查看编码帧6,192,300,383及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。</p><p>登记基线版本：0.3.0 (package2.7.17-alpha.2)。仅此版本与Demo；不扩展原条目或全部变体的验证状态，不代表用户审美认可。</p></details></td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>真实素材展示 · 7 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>图集</strong><br>
-<a href="docs/template-gallery/demos/motiongit/gallery.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-gallery.gif" width="202" alt="图集 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/gallery.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>前后对比</strong><br>
-<a href="docs/template-gallery/demos/motiongit/beforeafter.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-beforeafter.gif" width="202" alt="前后对比 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/beforeafter.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>纪录片推拉</strong><br>
-<a href="docs/template-gallery/demos/motiongit/kenburns.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-kenburns.gif" width="202" alt="纪录片推拉 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/kenburns.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>拍立得</strong><br>
-<a href="docs/template-gallery/demos/motiongit/polaroid.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-polaroid.gif" width="202" alt="拍立得 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/polaroid.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>设备样机</strong><br>
-<a href="docs/template-gallery/demos/motiongit/device.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-device.gif" width="202" alt="设备样机 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/device.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>拼贴墙</strong><br>
-<a href="docs/template-gallery/demos/motiongit/collage.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-collage.gif" width="202" alt="拼贴墙 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/collage.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>聚光放大</strong><br>
-<a href="docs/template-gallery/demos/motiongit/spotlight.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-spotlight.gif" width="202" alt="聚光放大 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/spotlight.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>文字动态 · 6 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>逐行动态排版</strong><br>
-<a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-kinetic.gif" width="360" alt="逐行动态排版 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<p><sub>当前本人Demo版本：2.7.17-alpha.2 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/motiongit/kinetic.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-<details><summary>本片接入与复用边界</summary><p>AIVD 10 · template-01-integrated-portrait · 2.7.17-alpha.2</p><p>输入：workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。；Reply、Follow up、AI 三行动态归纳，与本片结尾同期本人圆窗结合。；使用同源结尾800px方形人像，源2104.56–2115.44秒已经绝对1.2倍一次，本Demo圆窗按1.0倍使用，不重复加速。；素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。</p><p>调用：<code>.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance &lt;instance&gt; render &lt;reviewed-project&gt; --out &lt;scene.mp4&gt; --language zh</code></p><p>本片检查：本片横屏kinetic/stack：1280×720、30fps、272帧、无音轨，完整解码通过；实际查看编码帧6,136,195,271及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。</p><p>登记基线版本：0.3.0 (package2.7.17-alpha.2)。仅此版本与Demo；不扩展原条目或全部变体的验证状态，不代表用户审美认可。</p></details></td>
-<td width="50%" align="center" valign="top">
-<strong>重点词标记</strong><br>
-<a href="docs/template-gallery/demos/motiongit/highlight.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-highlight.gif" width="202" alt="重点词标记 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/highlight.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>乱码解码</strong><br>
-<a href="docs/template-gallery/demos/motiongit/scramble.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-scramble.gif" width="202" alt="乱码解码 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/scramble.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>轮换词</strong><br>
-<a href="docs/template-gallery/demos/motiongit/rotator.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-rotator.gif" width="202" alt="轮换词 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/rotator.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>滚动横幅</strong><br>
-<a href="docs/template-gallery/demos/motiongit/marquee.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-marquee.gif" width="202" alt="滚动横幅 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/marquee.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>巨字</strong><br>
-<a href="docs/template-gallery/demos/motiongit/bigtype.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-bigtype.gif" width="202" alt="巨字 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/bigtype.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>界面与交互演示 · 7 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>聊天对话</strong><br>
-<a href="docs/template-gallery/demos/motiongit/chat.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-chat.gif" width="202" alt="聊天对话 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/chat.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>评论 / 弹幕</strong><br>
-<a href="docs/template-gallery/demos/motiongit/comment.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-comment.gif" width="202" alt="评论 / 弹幕 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/comment.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>通知横幅</strong><br>
-<a href="docs/template-gallery/demos/motiongit/notify.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-notify.gif" width="202" alt="通知横幅 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/notify.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>搜索框</strong><br>
-<a href="docs/template-gallery/demos/motiongit/search.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-search.gif" width="202" alt="搜索框 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/search.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>浏览器 / 应用窗口</strong><br>
-<a href="docs/template-gallery/demos/motiongit/browser.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-browser.gif" width="202" alt="浏览器 / 应用窗口 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/browser.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>社交数据卡</strong><br>
-<a href="docs/template-gallery/demos/motiongit/social.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-social.gif" width="202" alt="社交数据卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/social.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>鼠标点击演示</strong><br>
-<a href="docs/template-gallery/demos/motiongit/cursor.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-cursor.gif" width="202" alt="鼠标点击演示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/cursor.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>叠加标注与装饰 · 8 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>人名条</strong><br>
-<a href="docs/template-gallery/demos/motiongit/lowerthird.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-lowerthird.gif" width="202" alt="人名条 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/lowerthird.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>箭头标注</strong><br>
-<a href="docs/template-gallery/demos/motiongit/callout.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-callout.gif" width="202" alt="箭头标注 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/callout.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>贴纸</strong><br>
-<a href="docs/template-gallery/demos/motiongit/sticker.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-sticker.gif" width="202" alt="贴纸 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/sticker.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>表情飘赞</strong><br>
-<a href="docs/template-gallery/demos/motiongit/emoji.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-emoji.gif" width="202" alt="表情飘赞 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/emoji.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>章节进度条</strong><br>
-<a href="docs/template-gallery/demos/motiongit/progressbar.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-progressbar.gif" width="202" alt="章节进度条 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/progressbar.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>角标</strong><br>
-<a href="docs/template-gallery/demos/motiongit/tag.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-tag.gif" width="202" alt="角标 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/tag.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>庆祝特效</strong><br>
-<a href="docs/template-gallery/demos/motiongit/confetti.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-confetti.gif" width="202" alt="庆祝特效 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/confetti.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>画面装饰框</strong><br>
-<a href="docs/template-gallery/demos/motiongit/frame.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-frame.gif" width="202" alt="画面装饰框 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/motiongit/frame.mp4">完整本地 Demo</a> · <a href="https://motiongit.com/@adunext/template-01-integrated-portrait">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-</details>
-
-<details>
-<summary><strong>Remotion 代码注册项 · 55 项</strong></summary>
-
-<details>
-<summary>Logo与品牌 · 8 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>笔刷揭示</strong><br>
-<a href="docs/template-gallery/demos/remotion/brush-stroke-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-brush-stroke-reveal.gif" width="360" alt="笔刷揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/brush-stroke-reveal.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>Logo由模糊变清晰</strong><br>
-<a href="docs/template-gallery/demos/remotion/logo-blur-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-blur-reveal.gif" width="360" alt="Logo由模糊变清晰 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/logo-blur-reveal.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>Logo弹落</strong><br>
-<a href="docs/template-gallery/demos/remotion/logo-bounce-drop.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-bounce-drop.gif" width="360" alt="Logo弹落 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/logo-bounce-drop.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>Logo遮罩擦入</strong><br>
-<a href="docs/template-gallery/demos/remotion/logo-mask-wipe.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-mask-wipe.gif" width="360" alt="Logo遮罩擦入 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/logo-mask-wipe.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>Logo分裂揭示</strong><br>
-<a href="docs/template-gallery/demos/remotion/logo-split-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-split-reveal.gif" width="360" alt="Logo分裂揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/logo-split-reveal.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>Logo描边绘制</strong><br>
-<a href="docs/template-gallery/demos/remotion/logo-stroke-draw.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-stroke-draw.gif" width="360" alt="Logo描边绘制 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/logo-stroke-draw.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>霓虹文字闪烁</strong><br>
-<a href="docs/template-gallery/demos/remotion/neon-sign.mp4"><img src="docs/template-gallery/demos/homepage/remotion-neon-sign.gif" width="360" alt="霓虹文字闪烁 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/neon-sign.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>碎片揭示</strong><br>
-<a href="docs/template-gallery/demos/remotion/shatter-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-shatter-reveal.gif" width="360" alt="碎片揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/shatter-reveal.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>文字与标题 · 11 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>标题弹入</strong><br>
-<a href="docs/template-gallery/demos/remotion/bounce-in-headline.mp4"><img src="docs/template-gallery/demos/homepage/remotion-bounce-in-headline.gif" width="360" alt="标题弹入 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/bounce-in-headline.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>章节标题卡</strong><br>
-<a href="docs/template-gallery/demos/remotion/chapter-title.mp4"><img src="docs/template-gallery/demos/homepage/remotion-chapter-title.gif" width="360" alt="章节标题卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/chapter-title.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>四色标题切换</strong><br>
-<a href="docs/template-gallery/demos/remotion/four-tone-mono-titler.mp4"><img src="docs/template-gallery/demos/homepage/remotion-four-tone-mono-titler.gif" width="360" alt="四色标题切换 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/four-tone-mono-titler.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>故障文字</strong><br>
-<a href="docs/template-gallery/demos/remotion/glitch-text.mp4"><img src="docs/template-gallery/demos/homepage/remotion-glitch-text.gif" width="360" alt="故障文字 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/glitch-text.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>文字渐变扫过</strong><br>
-<a href="docs/template-gallery/demos/remotion/gradient-text-sweep.mp4"><img src="docs/template-gallery/demos/homepage/remotion-gradient-text-sweep.gif" width="360" alt="文字渐变扫过 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/gradient-text-sweep.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>动态词语堆叠</strong><br>
-<a href="docs/template-gallery/demos/remotion/kinetic-word-stack.mp4"><img src="docs/template-gallery/demos/homepage/remotion-kinetic-word-stack.gif" width="360" alt="动态词语堆叠 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/kinetic-word-stack.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>像素打字引语</strong><br>
-<a href="docs/template-gallery/demos/remotion/pixel-typewriter-quote.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pixel-typewriter-quote.gif" width="360" alt="像素打字引语 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/pixel-typewriter-quote.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>乱序文字归位</strong><br>
-<a href="docs/template-gallery/demos/remotion/scramble-text.mp4"><img src="docs/template-gallery/demos/homepage/remotion-scramble-text.gif" width="360" alt="乱序文字归位 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/scramble-text.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>文字遮罩揭示</strong><br>
-<a href="docs/template-gallery/demos/remotion/text-mask-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-text-mask-reveal.gif" width="360" alt="文字遮罩揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/text-mask-reveal.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>打字机</strong><br>
-<a href="docs/template-gallery/demos/remotion/typewriter.mp4"><img src="docs/template-gallery/demos/homepage/remotion-typewriter.gif" width="360" alt="打字机 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/typewriter.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>波浪文字</strong><br>
-<a href="docs/template-gallery/demos/remotion/wave-text.mp4"><img src="docs/template-gallery/demos/homepage/remotion-wave-text.gif" width="360" alt="波浪文字 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/wave-text.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>转场 · 8 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>镜头震动</strong><br>
-<a href="docs/template-gallery/demos/remotion/camera-shake.mp4"><img src="docs/template-gallery/demos/homepage/remotion-camera-shake.gif" width="360" alt="镜头震动 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/camera-shake.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>卡片翻面转场</strong><br>
-<a href="docs/template-gallery/demos/remotion/card-flip-transition.mp4"><img src="docs/template-gallery/demos/homepage/remotion-card-flip-transition.gif" width="360" alt="卡片翻面转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/card-flip-transition.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>圆形擦除转场</strong><br>
-<a href="docs/template-gallery/demos/remotion/transition-circle-wipe.mp4"><img src="docs/template-gallery/demos/homepage/remotion-transition-circle-wipe.gif" width="360" alt="圆形擦除转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/transition-circle-wipe.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>墨迹扩散转场</strong><br>
-<a href="docs/template-gallery/demos/remotion/ink-spread-transition.mp4"><img src="docs/template-gallery/demos/homepage/remotion-ink-spread-transition.gif" width="360" alt="墨迹扩散转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/ink-spread-transition.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>翻页转场</strong><br>
-<a href="docs/template-gallery/demos/remotion/flip-page-transition.mp4"><img src="docs/template-gallery/demos/homepage/remotion-flip-page-transition.gif" width="360" alt="翻页转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/flip-page-transition.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>像素马赛克转场</strong><br>
-<a href="docs/template-gallery/demos/remotion/pixel-mosaic-transition.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pixel-mosaic-transition.gif" width="360" alt="像素马赛克转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/pixel-mosaic-transition.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>滑动擦除转场</strong><br>
-<a href="docs/template-gallery/demos/remotion/slide-wipe.mp4"><img src="docs/template-gallery/demos/homepage/remotion-slide-wipe.gif" width="360" alt="滑动擦除转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/slide-wipe.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>快速甩镜</strong><br>
-<a href="docs/template-gallery/demos/remotion/whip-pan.mp4"><img src="docs/template-gallery/demos/homepage/remotion-whip-pan.gif" width="360" alt="快速甩镜 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/whip-pan.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>数据与图表 · 6 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>长条图成长</strong><br>
-<a href="docs/template-gallery/demos/remotion/bar-chart-anim.mp4"><img src="docs/template-gallery/demos/homepage/remotion-bar-chart-anim.gif" width="360" alt="长条图成长 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/bar-chart-anim.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>折线图绘制</strong><br>
-<a href="docs/template-gallery/demos/remotion/line-chart-anim.mp4"><img src="docs/template-gallery/demos/homepage/remotion-line-chart-anim.gif" width="360" alt="折线图绘制 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/line-chart-anim.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>滴入式填充计量</strong><br>
-<a href="docs/template-gallery/demos/remotion/pourover-drip-fill-gauge.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pourover-drip-fill-gauge.gif" width="360" alt="滴入式填充计量 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/pourover-drip-fill-gauge.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>数字计数器</strong><br>
-<a href="docs/template-gallery/demos/remotion/kpi-counter.mp4"><img src="docs/template-gallery/demos/homepage/remotion-kpi-counter.gif" width="360" alt="数字计数器 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/kpi-counter.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>像素蜡烛图</strong><br>
-<a href="docs/template-gallery/demos/remotion/pixel-candlestick-ohlc.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pixel-candlestick-ohlc.gif" width="360" alt="像素蜡烛图 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/pixel-candlestick-ohlc.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>排名竞速长条图</strong><br>
-<a href="docs/template-gallery/demos/remotion/racing-chart.mp4"><img src="docs/template-gallery/demos/homepage/remotion-racing-chart.gif" width="360" alt="排名竞速长条图 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/racing-chart.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>社交与界面 · 9 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>聊天界面</strong><br>
-<a href="docs/template-gallery/demos/remotion/community-chat.mp4"><img src="docs/template-gallery/demos/homepage/remotion-community-chat.gif" width="202" alt="聊天界面 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/community-chat.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>通用结束卡</strong><br>
-<a href="docs/template-gallery/demos/remotion/end-card.mp4"><img src="docs/template-gallery/demos/homepage/remotion-end-card.gif" width="360" alt="通用结束卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/end-card.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>眼睛揭示动画</strong><br>
-<a href="docs/template-gallery/demos/remotion/eye-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-eye-reveal.gif" width="360" alt="眼睛揭示动画 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/eye-reveal.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>玻璃信息卡</strong><br>
-<a href="docs/template-gallery/demos/remotion/lower-third-glass-card.mp4"><img src="docs/template-gallery/demos/homepage/remotion-lower-third-glass-card.gif" width="360" alt="玻璃信息卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/lower-third-glass-card.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>角色跳动</strong><br>
-<a href="docs/template-gallery/demos/remotion/character-jumping.mp4"><img src="docs/template-gallery/demos/homepage/remotion-character-jumping.gif" width="360" alt="角色跳动 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/character-jumping.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>短视频播放器界面</strong><br>
-<a href="docs/template-gallery/demos/remotion/social-reel.mp4"><img src="docs/template-gallery/demos/homepage/remotion-social-reel.gif" width="360" alt="短视频播放器界面 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/social-reel.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>分屏布局</strong><br>
-<a href="docs/template-gallery/demos/remotion/split-screen.mp4"><img src="docs/template-gallery/demos/homepage/remotion-split-screen.gif" width="360" alt="分屏布局 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/split-screen.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>思考气泡</strong><br>
-<a href="docs/template-gallery/demos/remotion/thinking-bubble.mp4"><img src="docs/template-gallery/demos/homepage/remotion-thinking-bubble.gif" width="360" alt="思考气泡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/thinking-bubble.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>角色招手</strong><br>
-<a href="docs/template-gallery/demos/remotion/wave-hello.mp4"><img src="docs/template-gallery/demos/homepage/remotion-wave-hello.gif" width="360" alt="角色招手 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/wave-hello.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>循环与背景 · 8 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>散景光圈背景</strong><br>
-<a href="docs/template-gallery/demos/remotion/bokeh-circles.mp4"><img src="docs/template-gallery/demos/homepage/remotion-bokeh-circles.gif" width="320" alt="散景光圈背景 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/bokeh-circles.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>烟花爆开</strong><br>
-<a href="docs/template-gallery/demos/remotion/fireworks-burst.mp4"><img src="docs/template-gallery/demos/homepage/remotion-fireworks-burst.gif" width="360" alt="烟花爆开 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/fireworks-burst.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>网格波浪循环</strong><br>
-<a href="docs/template-gallery/demos/remotion/loop-grid-wave.mp4"><img src="docs/template-gallery/demos/homepage/remotion-loop-grid-wave.gif" width="320" alt="网格波浪循环 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/loop-grid-wave.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>视差平移</strong><br>
-<a href="docs/template-gallery/demos/remotion/parallax-pan.mp4"><img src="docs/template-gallery/demos/homepage/remotion-parallax-pan.gif" width="360" alt="视差平移 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/parallax-pan.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>铅笔绘制</strong><br>
-<a href="docs/template-gallery/demos/remotion/pencil-draw.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pencil-draw.gif" width="360" alt="铅笔绘制 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/pencil-draw.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>像素瀑布循环</strong><br>
-<a href="docs/template-gallery/demos/remotion/pixel-waterfall-cycle.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pixel-waterfall-cycle.gif" width="202" alt="像素瀑布循环 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/pixel-waterfall-cycle.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>粒子雪花</strong><br>
-<a href="docs/template-gallery/demos/remotion/particle-snow.mp4"><img src="docs/template-gallery/demos/homepage/remotion-particle-snow.gif" width="360" alt="粒子雪花 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/particle-snow.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>星空穿行背景</strong><br>
-<a href="docs/template-gallery/demos/remotion/starfield.mp4"><img src="docs/template-gallery/demos/homepage/remotion-starfield.gif" width="360" alt="星空穿行背景 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/starfield.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>RemotionUI本地适配 · 2 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>前后环绕卡片演示</strong><br>
-<a href="docs/template-gallery/demos/remotion/library-orbit.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-orbit.gif" width="360" alt="前后环绕卡片演示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/library-orbit.mp4">完整本地 Demo</a> · <a href="https://github.com/riaz37/remotion-ui/tree/0aecaca2b61a167992e1205d10e4da16d8a71331">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>文字镂空媒体演示</strong><br>
-<a href="docs/template-gallery/demos/remotion/library-text-mask.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-text-mask.gif" width="360" alt="文字镂空媒体演示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/library-text-mask.mp4">完整本地 Demo</a> · <a href="https://github.com/riaz37/remotion-ui/tree/0aecaca2b61a167992e1205d10e4da16d8a71331">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>中文示例 · 3 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>中文长条成长示例</strong><br>
-<a href="docs/template-gallery/demos/remotion/library-bar-zh.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-bar-zh.gif" width="360" alt="中文长条成长示例 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/library-bar-zh.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>中文玻璃卡片示例</strong><br>
-<a href="docs/template-gallery/demos/remotion/library-glass-zh.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-glass-zh.gif" width="360" alt="中文玻璃卡片示例 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/library-glass-zh.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>中文播放器界面示例</strong><br>
-<a href="docs/template-gallery/demos/remotion/library-player-zh.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-player-zh.gif" width="360" alt="中文播放器界面示例 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/remotion/library-player-zh.mp4">完整本地 Demo</a> · <a href="https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-</details>
-
-<details>
-<summary><strong>真人口播特效 · 19 项</strong></summary>
-
-<details>
-<summary>数据与图表 · 1 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>条形增长</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-01.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-01.gif" width="202" alt="条形增长 · 原速节选 · 1.4 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.4 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-01.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>文字与标题 · 3 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>玻璃标签</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-02.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-02.gif" width="202" alt="玻璃标签 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-02.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>视频镂空字</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-11.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-11.gif" width="202" alt="视频镂空字 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-11.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>标题墙</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-13.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-13.gif" width="202" alt="标题墙 · 原速节选 · 1.1 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.1 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-13.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>镜头与转场 · 3 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>冲击缩放</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-03.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-03.gif" width="202" alt="冲击缩放 · 原速节选 · 1.6 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.6 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-03.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>拉远揭幕</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-06.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-06.gif" width="202" alt="拉远揭幕 · 原速节选 · 1.2 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.2 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-06.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>数字推近</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-17.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-17.gif" width="202" alt="数字推近 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-17.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>人物与背景 · 5 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>剪纸描边</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-04.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-04.gif" width="202" alt="剪纸描边 · 原速节选 · 0.7 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 0.7 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-04.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>照片墙</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-05.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-05.gif" width="202" alt="照片墙 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-05.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>杂志封面</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-08.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-08.gif" width="202" alt="杂志封面 · 原速节选 · 1.2 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.2 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-08.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>抠像换景</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-09.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-09.gif" width="202" alt="抠像换景 · 原速节选 · 1.5 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.5 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-09.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>人物破框</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-15.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-15.gif" width="202" alt="人物破框 · 原速节选 · 1.4 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.4 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-15.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%"></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>界面与设备 · 2 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<strong>界面窗框</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-07.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-07.gif" width="202" alt="界面窗框 · 原速节选 · 1.1 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.1 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-07.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>手机画面</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-14.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-14.gif" width="202" alt="手机画面 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-14.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>列表与步骤 · 2 项</summary>
-
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>打勾清单</strong><br>
+<p>流程与时间线 · 列表与步骤 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-10.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-10.gif" width="202" alt="打勾清单 · 原速节选 · 1.5 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.5 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-10.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-10.mp4">完整本地 Demo</a>
+<p>清单项依次打勾，顶部进度随演示推进。</p>
+<p><a href="templates/categories/flow.md#presenter-effect-10">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%" align="center" valign="top">
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
 <strong>收据列表</strong><br>
+<p>流程与时间线 · 列表与步骤 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="docs/template-gallery/demos/presenter/presenter-effect-18.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-18.gif" width="202" alt="收据列表 · 原速节选 · 1.1 秒 · 无声 GIF"></a><br>
 <sub>原速节选 · 1.1 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-18.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-18.mp4">完整本地 Demo</a>
+<p>纸张从打印口逐步出现，列出三项内容并打勾。</p>
+<p><a href="templates/categories/flow.md#presenter-effect-18">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 </table>
@@ -1793,35 +1068,1662 @@
 </details>
 
 <details>
-<summary>装饰与强调 · 3 项</summary>
+<summary><strong>数据与对比 · 26 项</strong></summary>
 
 <table>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>手绘涂鸦</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-12.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-12.gif" width="202" alt="手绘涂鸦 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-12.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
-</td>
-<td width="50%" align="center" valign="top">
-<strong>环绕文字</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-16.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-16.gif" width="202" alt="环绕文字 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-16.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>量价图表：K线突破与分时动画</strong><br>
+<p>数据与对比 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/869/1.0.0-zh-d5fd83bc28a8.mp4"><img src="https://media.openaicut.com/covers/869/1.0.0-zh-01708b4a2214.jpg" width="360" alt="量价图表：K线突破与分时动画 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/869/1.0.0-zh-d5fd83bc28a8.mp4">官方 Demo · 1:1</a>
+<p>量价教学图表独立组件，包含两组日K与一组分时动画。</p>
+<p><a href="templates/categories/data.md#mg-style-287792">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
 </tr>
 <tr>
-<td width="50%" align="center" valign="top">
-<strong>贴纸轮播</strong><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-19.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-19.gif" width="202" alt="贴纸轮播 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
-<sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
-<a href="docs/template-gallery/demos/presenter/presenter-effect-19.mp4">完整本地 Demo</a> · <a href="https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects">来源</a>
+<td width="100%" align="left" valign="top">
+<strong>DEEP STAGE 案例数据</strong><br>
+<p>数据与对比 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/882/1.0.0-5df639825460.mp4"><img src="https://media.openaicut.com/covers/882/1.0.0-20fa9d055973.jpg" width="360" alt="DEEP STAGE 案例数据 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/882/1.0.0-5df639825460.mp4">官方 Demo · 16:9</a>
+<p>案例讲解动效：数据仪表盘推入，3 个 KPI 数字滚动，6 根柱图从底部逐根生长（最高值自动主色高亮），前后对比副屏滑入。13 秒，适合案例复盘与成果汇报。</p>
+<p><a href="templates/categories/data.md#mg-style-587362">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%"></td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>瑞士信息设计 · 知识讲解模板</strong><br>
+<p>数据与对比 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/900/2.5.3-zh-5df29820b59b.mp4"><img src="https://media.openaicut.com/covers/900/2.5.3-zh-a83d8415095a.jpg" width="360" alt="瑞士信息设计 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/900/2.5.3-zh-5df29820b59b.mp4">官方 Demo · 16:9</a>
+<p>用清晰网格、对象计数和比例变化讲明白“百分比在除什么”。适合分母、权重与统计比较，可由AI助手按本期文稿选择图示，支持可选真人开场。</p>
+<p><a href="templates/categories/data.md#mg-style-257987">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>双色孔版 · 知识讲解模板</strong><br>
+<p>数据与对比 · 知识解说与流程图 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/909/2.5.3-zh-15d6f65e42f3.mp4"><img src="https://media.openaicut.com/covers/909/2.5.3-zh-a00889e59aec.jpg" width="360" alt="双色孔版 · 知识讲解模板 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/909/2.5.3-zh-15d6f65e42f3.mp4">官方 Demo · 16:9</a>
+<p>用双色套印看清复制、增长和基数差异。适合固定增量与固定比例、谱系和指数规则的解释，提供图示选择引导，可选真人开场后圆窗陪讲。</p>
+<p><a href="templates/categories/data.md#mg-style-808349">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>数字滚动</strong><br>
+<p>数据与对比 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/number.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-number.gif" width="202" alt="数字滚动 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/number.mp4">完整本地 Demo</a>
+<p>一个关键数字：时长、数量、百分比、价格。可带 1–3 句注释</p>
+<p><a href="templates/categories/data.md#mg-control-number">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>左右对比</strong><br>
+<p>数据与对比 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/compare.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-compare.gif" width="202" alt="左右对比 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/compare.mp4">完整本地 Demo</a>
+<p>两种做法、前后变化、A 和 B 的差别；可给结论并标出胜者</p>
+<p><a href="templates/categories/data.md#mg-control-compare">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>数据条</strong><br>
+<p>数据与对比 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/bars.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-bars.gif" width="202" alt="数据条 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/bars.mp4">完整本地 Demo</a>
+<p>2–5 项数值比较；数值必须来自真实数据</p>
+<p><a href="templates/categories/data.md#mg-control-bars">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>价格 / 优惠</strong><br>
+<p>数据与对比 · 品牌与行动 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/price.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-price.gif" width="202" alt="价格 / 优惠 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/price.mp4">完整本地 Demo</a>
+<p>亮出价格与优惠：原价划掉、新价砸入、标签盖章；可带 1–3 个卖点</p>
+<p><a href="templates/categories/data.md#mg-control-price">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>优缺点</strong><br>
+<p>数据与对比 · 概念教学 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/prosCons.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-prosCons.gif" width="202" alt="优缺点 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/prosCons.mp4">完整本地 Demo</a>
+<p>权衡一件事的好处与代价，最后给结论（偏向哪边）。选购、方案评估、利弊分析</p>
+<p><a href="templates/categories/data.md#mg-control-prosCons">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>两方对决</strong><br>
+<p>数据与对比 · 概念教学 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/vs.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-vs.gif" width="202" alt="两方对决 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/vs.mp4">完整本地 Demo</a>
+<p>两个对象正面比拼 1–3 项数值并分出胜负：产品 A/B、方案、两个人或团队。只比观点不比数值时用 compare</p>
+<p><a href="templates/categories/data.md#mg-control-vs">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>环形占比</strong><br>
+<p>数据与对比 · 数据与进度 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/donut.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-donut.gif" width="202" alt="环形占比 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/donut.mp4">完整本地 Demo</a>
+<p>几个部分占整体多少：构成、份额、预算分配、用户来源（2–5 项）。数值按占比换算成百分比</p>
+<p><a href="templates/categories/data.md#mg-control-donut">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>折线趋势</strong><br>
+<p>数据与对比 · 数据与进度 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/linechart.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-linechart.gif" width="202" alt="折线趋势 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/linechart.mp4">完整本地 Demo</a>
+<p>随时间的变化：增长、下降、波动、两条对比（4–12 个点）。终点标注最后一个值</p>
+<p><a href="templates/categories/data.md#mg-control-linechart">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>KPI 数字卡</strong><br>
+<p>数据与对比 · 数据与进度 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/counter.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-counter.gif" width="202" alt="KPI 数字卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/counter.mp4">完整本地 Demo</a>
+<p>2–4 个关键数字并排：用户数、营收、增长率、时长；可带涨跌</p>
+<p><a href="templates/categories/data.md#mg-control-counter">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>进度 / 完成度</strong><br>
+<p>数据与对比 · 数据与进度 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/progress.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-progress.gif" width="202" alt="进度 / 完成度 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/progress.mp4">完整本地 Demo</a>
+<p>完成了多少：项目进度、目标达成、技能熟练度、电量式的程度（1–4 条，百分比）</p>
+<p><a href="templates/categories/data.md#mg-control-progress">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>对比表 / 功能矩阵</strong><br>
+<p>数据与对比 · 数据与进度 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/table.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-table.gif" width="202" alt="对比表 / 功能矩阵 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/table.mp4">完整本地 Demo</a>
+<p>2–3 个方案在 2–5 项上逐项比较；单元格写 ✓ / ✗ 或短文字；赢家列高亮</p>
+<p><a href="templates/categories/data.md#mg-control-table">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>排行榜</strong><br>
+<p>数据与对比 · 数据与进度 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/ranking.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-ranking.gif" width="202" alt="排行榜 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/ranking.mp4">完整本地 Demo</a>
+<p>3–6 项按数值排名：榜单、名次、Top N；自动按 value 从大到小排序</p>
+<p><a href="templates/categories/data.md#mg-control-ranking">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>前后对比</strong><br>
+<p>数据与对比 · 真实素材展示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/beforeafter.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-beforeafter.gif" width="202" alt="前后对比 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/beforeafter.mp4">完整本地 Demo</a>
+<p>同一对象改造前后、修图前后、旧版新版：两张素材对照，第二个 cue 揭示 after</p>
+<p><a href="templates/categories/data.md#mg-control-beforeafter">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>长条图成长</strong><br>
+<p>数据与对比 · 数据与图表 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/bar-chart-anim.mp4"><img src="docs/template-gallery/demos/homepage/remotion-bar-chart-anim.gif" width="360" alt="长条图成长 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/bar-chart-anim.mp4">完整本地 Demo</a>
+<p>柱状图按数值依次增长</p>
+<p><a href="templates/categories/data.md#remotion-bar-chart-anim">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>折线图绘制</strong><br>
+<p>数据与对比 · 数据与图表 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/line-chart-anim.mp4"><img src="docs/template-gallery/demos/homepage/remotion-line-chart-anim.gif" width="360" alt="折线图绘制 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/line-chart-anim.mp4">完整本地 Demo</a>
+<p>折线沿横轴逐步绘出</p>
+<p><a href="templates/categories/data.md#remotion-line-chart-anim">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>滴入式填充计量</strong><br>
+<p>数据与对比 · 数据与图表 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/pourover-drip-fill-gauge.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pourover-drip-fill-gauge.gif" width="360" alt="滴入式填充计量 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/pourover-drip-fill-gauge.mp4">完整本地 Demo</a>
+<p>滴落式动画填满目标比例；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。</p>
+<p><a href="templates/categories/data.md#remotion-pourover-drip-fill-gauge">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>数字计数器</strong><br>
+<p>数据与对比 · 数据与图表 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/kpi-counter.mp4"><img src="docs/template-gallery/demos/homepage/remotion-kpi-counter.gif" width="360" alt="数字计数器 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/kpi-counter.mp4">完整本地 Demo</a>
+<p>数字递增到目标值</p>
+<p><a href="templates/categories/data.md#remotion-kpi-counter">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>像素蜡烛图</strong><br>
+<p>数据与对比 · 数据与图表 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/pixel-candlestick-ohlc.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pixel-candlestick-ohlc.gif" width="360" alt="像素蜡烛图 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/pixel-candlestick-ohlc.mp4">完整本地 Demo</a>
+<p>像素风格OHLC数据演示；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。</p>
+<p><a href="templates/categories/data.md#remotion-pixel-candlestick-ohlc">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>排名竞速长条图</strong><br>
+<p>数据与对比 · 数据与图表 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/racing-chart.mp4"><img src="docs/template-gallery/demos/homepage/remotion-racing-chart.gif" width="360" alt="排名竞速长条图 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/racing-chart.mp4">完整本地 Demo</a>
+<p>长条随数据变化交换排名</p>
+<p><a href="templates/categories/data.md#remotion-racing-chart">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>分屏布局</strong><br>
+<p>数据与对比 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/split-screen.mp4"><img src="docs/template-gallery/demos/homepage/remotion-split-screen.gif" width="360" alt="分屏布局 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/split-screen.mp4">完整本地 Demo</a>
+<p>两个画面区域进入并排布局</p>
+<p><a href="templates/categories/data.md#remotion-split-screen">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>中文长条成长示例</strong><br>
+<p>数据与对比 · 中文示例 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/library-bar-zh.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-bar-zh.gif" width="360" alt="中文长条成长示例 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/library-bar-zh.mp4">完整本地 Demo</a>
+<p>柱状图按数值依次增长；已有基础模板的中文参数示例，不新增模板家族。</p>
+<p><a href="templates/categories/data.md#remotion-library-bar-zh">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>条形增长</strong><br>
+<p>数据与对比 · 数据与图表 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-01.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-01.gif" width="202" alt="条形增长 · 原速节选 · 1.4 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.4 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-01.mp4">完整本地 Demo</a>
+<p>三条横向示意条按顺序增长，叠在口播画面上。</p>
+<p><a href="templates/categories/data.md#presenter-effect-01">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
 </tr>
 </table>
 
 </details>
+
+<details>
+<summary><strong>产品与案例展示 · 29 项</strong></summary>
+
+<table>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>多屏拼贴 · 品牌宣传</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/585/draft-zh-78bba5fd21f6.mp4"><img src="https://media.openaicut.com/covers/585/draft-zh-c7db529e9ef8.jpg" width="360" alt="多屏拼贴 · 品牌宣传 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/585/draft-zh-78bba5fd21f6.mp4">官方 Demo · 16:9</a>
+<p>用多屏拼贴、版面切换和品牌收尾展示产品与创作流程，适合品牌介绍和工具宣传。</p>
+<p><a href="templates/categories/product.md#mg-style-128610">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>像素闯关 · 产品宣传</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/586/draft-zh-b8792f9887ad.mp4"><img src="https://media.openaicut.com/covers/586/quality-zh-086e631771b2.jpg" width="360" alt="像素闯关 · 产品宣传 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/586/draft-zh-b8792f9887ad.mp4">官方 Demo · 16:9</a>
+<p>像素城市、角色闯关和复古游戏音色组成产品介绍，适合数字工具与功能说明。</p>
+<p><a href="templates/categories/product.md#mg-style-252912">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>明暗快切 · 产品宣传</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/587/draft-zh-89b65ccfd5ce.mp4"><img src="https://media.openaicut.com/covers/587/quality-zh-89ff4394136c.jpg" width="360" alt="明暗快切 · 产品宣传 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/587/draft-zh-89b65ccfd5ce.mp4">官方 Demo · 16:9</a>
+<p>明暗画面快速切换，结合大字和界面展示突出产品功能，适合节奏鲜明的宣传片。</p>
+<p><a href="templates/categories/product.md#mg-style-867595">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>模块拼贴 · 创作者宣传</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/589/draft-zh-4d806a380523.mp4"><img src="https://media.openaicut.com/covers/589/quality-zh-879117ad36da.jpg" width="360" alt="模块拼贴 · 创作者宣传 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/589/draft-zh-4d806a380523.mp4">官方 Demo · 16:9</a>
+<p>以模块拼贴呈现内容、素材和动画的组合关系，适合创作者工具与工作方式介绍。</p>
+<p><a href="templates/categories/product.md#mg-style-452365">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>工程蓝图 · 产品拆解</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/590/draft-zh-308a5a69232f.mp4"><img src="https://media.openaicut.com/covers/590/quality-zh-d5509b8e4f82.jpg" width="360" alt="工程蓝图 · 产品拆解 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/590/draft-zh-308a5a69232f.mp4">官方 Demo · 16:9</a>
+<p>以工程蓝图、结构示意和模块拆解展示产品组成，适合技术产品与工作流讲解。</p>
+<p><a href="templates/categories/product.md#mg-style-213827">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>发布会舞台 · 产品演示</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/591/draft-zh-958b2690a669.mp4"><img src="https://media.openaicut.com/covers/591/quality-zh-da4888e5e350.jpg" width="360" alt="发布会舞台 · 产品演示 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/591/draft-zh-958b2690a669.mp4">官方 Demo · 16:9</a>
+<p>以发布会舞台和大屏展示组织产品演示，适合新品介绍、功能发布与品牌展示。</p>
+<p><a href="templates/categories/product.md#mg-style-667934">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>宣纸手卷 · 品牌叙事</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/592/draft-zh-eba2e4e6f671.mp4"><img src="https://media.openaicut.com/covers/592/quality-zh-666ac61ebd83.jpg" width="360" alt="宣纸手卷 · 品牌叙事 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/592/draft-zh-eba2e4e6f671.mp4">官方 Demo · 16:9</a>
+<p>沿宣纸手卷展开品牌故事，以水墨意象和卷轴转场营造东方叙事。</p>
+<p><a href="templates/categories/product.md#mg-style-394243">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>拼贴出场 · COLLAGE OPEN</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/873/1.0.0-zh-6b7b749b3dc5.mp4"><img src="https://media.openaicut.com/covers/873/1.0.0-zh-12a46d4c356c.jpg" width="360" alt="拼贴出场 · COLLAGE OPEN · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/873/1.0.0-zh-6b7b749b3dc5.mp4">官方 Demo · 16:9</a>
+<p>8.5 秒拼贴出场：9 块创作样张依次飞入拼贴墙，主张版块落位。可换品牌名、片头编号、强调色与两行标题。</p>
+<p><a href="templates/categories/product.md#mg-style-873">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>多屏墙换版 · WALL SWAP</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/874/1.0.0-zh-7831dd69bc6b.mp4"><img src="https://media.openaicut.com/covers/874/1.0.0-zh-4340b94c82ff.jpg" width="360" alt="多屏墙换版 · WALL SWAP · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/874/1.0.0-zh-7831dd69bc6b.mp4">官方 Demo · 16:9</a>
+<p>从面板擦除进入多屏拼贴墙，再切到「一个想法，四种看法」的分屏版面；8.6 秒展示多素材并置与版面切换。可换品牌名、片头编号、强调色与两行标题。</p>
+<p><a href="templates/categories/product.md#mg-style-874">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>四种看法与片格 · VIEWS / STRIP</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/875/1.0.0-zh-cd8ad1570460.mp4"><img src="https://media.openaicut.com/covers/875/1.0.0-zh-3c1d5e7cd796.jpg" width="360" alt="四种看法与片格 · VIEWS / STRIP · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/875/1.0.0-zh-cd8ad1570460.mp4">官方 Demo · 16:9</a>
+<p>「一个想法，四种看法」分屏版面切到横滚片格，真实晚霞树影与创作样张横向滚动；8.2 秒，适合多镜头并置与作品条带展示。</p>
+<p><a href="templates/categories/product.md#mg-style-875">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>产品与品牌 · PRODUCT → BRAND</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/877/1.0.0-zh-97910ee13592.mp4"><img src="https://media.openaicut.com/covers/877/1.0.0-zh-a24df31e704a.jpg" width="360" alt="产品与品牌 · PRODUCT → BRAND · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/877/1.0.0-zh-97910ee13592.mp4">官方 Demo · 16:9</a>
+<p>从面板擦除进入产品工作台（分镜/画布/调色/时间线同窗联动），再以墨色擦除收进棱镜标志、字标、主张与 CTA；14.4 秒，适合产品演示与品牌落版。</p>
+<p><a href="templates/categories/product.md#mg-style-877">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>DEEP STAGE 产品讲解</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/881/1.0.0-bf4d2ce8953d.mp4"><img src="https://media.openaicut.com/covers/881/1.0.0-7dadaa0a595d.jpg" width="360" alt="DEEP STAGE 产品讲解 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/881/1.0.0-bf4d2ce8953d.mp4">官方 Demo · 16:9</a>
+<p>产品讲解动效：产品主屏推入并持续推近，3 个参数切片从 3D 空间错峰浮出、数字从 0 滚到终值，右下角人物小画中画入位。12 秒，适合产品卖点与参数讲解。</p>
+<p><a href="templates/categories/product.md#mg-style-648878">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>多屏商务 · 动态图表</strong><br>
+<p>产品与案例展示 · 产品宣传与教程 · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/891/0.1.1-candidate-zh-a43ff10687ec.mp4"><img src="https://media.openaicut.com/covers/891/0.1.1-candidate-zh-007e520a3b97.jpg" width="360" alt="多屏商务 · 动态图表 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/891/0.1.1-candidate-zh-a43ff10687ec.mp4">官方 Demo · 16:9</a>
+<p>固定20秒横屏商务短片，以多屏重排呈现团队、比较、趋势、构成与行动。</p>
+<p><a href="templates/categories/product.md#mg-style-640261">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>录屏 / 图片窗</strong><br>
+<p>产品与案例展示 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/media.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-media.gif" width="202" alt="录屏 / 图片窗 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/media.mp4">完整本地 Demo</a>
+<p>展示用户的录屏、截图、产品图；可在画面上标出 1–3 处重点</p>
+<p><a href="templates/categories/product.md#mg-control-media">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>Logo 揭示</strong><br>
+<p>产品与案例展示 · 品牌与行动 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/logo.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-logo.gif" width="202" alt="Logo 揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/logo.mp4">完整本地 Demo</a>
+<p>片头或片尾亮出品牌/频道标志：有 logo 图片就用图片，没有就用名字首字或图标生成字标；下方可带一句标语</p>
+<p><a href="templates/categories/product.md#mg-control-logo">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>行动号召</strong><br>
+<p>产品与案例展示 · 品牌与行动 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/cta.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-cta.gif" width="202" alt="行动号召 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/cta.mp4">完整本地 Demo</a>
+<p>引导观众做一个动作：点链接、领取、评论、往下看、上滑。一个按钮文字 + 一句补充</p>
+<p><a href="templates/categories/product.md#mg-control-cta">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>揭晓 / 抽奖</strong><br>
+<p>产品与案例展示 · 品牌与行动 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/reveal.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-reveal.gif" width="202" alt="揭晓 / 抽奖 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/reveal.mp4">完整本地 Demo</a>
+<p>悬念揭晓：抽奖结果、答案、排名第一、新品名。鼓点悬念 → 打开 → 彩纸</p>
+<p><a href="templates/categories/product.md#mg-control-reveal">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>图集</strong><br>
+<p>产品与案例展示 · 真实素材展示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/gallery.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-gallery.gif" width="202" alt="图集 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/gallery.mp4">完整本地 Demo</a>
+<p>3–8 张图片/视频一起亮相：作品集、案例合集、活动照片、产品多角度；每个 cue 出一张（carousel/stack 是每个 cue 转到下一张）</p>
+<p><a href="templates/categories/product.md#mg-control-gallery">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>纪录片推拉</strong><br>
+<p>产品与案例展示 · 真实素材展示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/kenburns.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-kenburns.gif" width="202" alt="纪录片推拉 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/kenburns.mp4">完整本地 Demo</a>
+<p>讲故事、回顾、旅程、案例背景：1–4 张图片纪录片式慢推慢移、交叉溶解，底部逐字打出说明；每个 cue 换一张</p>
+<p><a href="templates/categories/product.md#mg-control-kenburns">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>拍立得</strong><br>
+<p>产品与案例展示 · 真实素材展示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/polaroid.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-polaroid.gif" width="202" alt="拍立得 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/polaroid.mp4">完整本地 Demo</a>
+<p>生活感、回忆、幕后花絮、团队/人物照片：1–4 张照片卡 + 手写说明；每个 cue 出一张</p>
+<p><a href="templates/categories/product.md#mg-control-polaroid">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>拼贴墙</strong><br>
+<p>产品与案例展示 · 真实素材展示 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/collage.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-collage.gif" width="202" alt="拼贴墙 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/collage.mp4">完整本地 Demo</a>
+<p>大量作品/截图/用户照片的气势感：作品墙、社区、合集封面。masonry / wall 用 4–9 张（不够会循环）；mosaic 只用第一张，碎片拼成整图</p>
+<p><a href="templates/categories/product.md#mg-control-collage">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>笔刷揭示</strong><br>
+<p>产品与案例展示 · Logo与品牌 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/brush-stroke-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-brush-stroke-reveal.gif" width="360" alt="笔刷揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/brush-stroke-reveal.mp4">完整本地 Demo</a>
+<p>笔刷扫过后显现标记</p>
+<p><a href="templates/categories/product.md#remotion-brush-stroke-reveal">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>Logo由模糊变清晰</strong><br>
+<p>产品与案例展示 · Logo与品牌 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/logo-blur-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-blur-reveal.gif" width="360" alt="Logo由模糊变清晰 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/logo-blur-reveal.mp4">完整本地 Demo</a>
+<p>由虚焦过渡到清晰</p>
+<p><a href="templates/categories/product.md#remotion-logo-blur-reveal">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>Logo弹落</strong><br>
+<p>产品与案例展示 · Logo与品牌 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/logo-bounce-drop.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-bounce-drop.gif" width="360" alt="Logo弹落 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/logo-bounce-drop.mp4">完整本地 Demo</a>
+<p>标记下落后弹性停稳</p>
+<p><a href="templates/categories/product.md#remotion-logo-bounce-drop">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>Logo遮罩擦入</strong><br>
+<p>产品与案例展示 · Logo与品牌 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/logo-mask-wipe.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-mask-wipe.gif" width="360" alt="Logo遮罩擦入 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/logo-mask-wipe.mp4">完整本地 Demo</a>
+<p>斜向遮罩显现标记</p>
+<p><a href="templates/categories/product.md#remotion-logo-mask-wipe">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>Logo分裂揭示</strong><br>
+<p>产品与案例展示 · Logo与品牌 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/logo-split-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-split-reveal.gif" width="360" alt="Logo分裂揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/logo-split-reveal.mp4">完整本地 Demo</a>
+<p>左右面板分开显现标记</p>
+<p><a href="templates/categories/product.md#remotion-logo-split-reveal">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>Logo描边绘制</strong><br>
+<p>产品与案例展示 · Logo与品牌 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/logo-stroke-draw.mp4"><img src="docs/template-gallery/demos/homepage/remotion-logo-stroke-draw.gif" width="360" alt="Logo描边绘制 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/logo-stroke-draw.mp4">完整本地 Demo</a>
+<p>轮廓逐段描绘后填充</p>
+<p><a href="templates/categories/product.md#remotion-logo-stroke-draw">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>霓虹文字闪烁</strong><br>
+<p>产品与案例展示 · Logo与品牌 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/neon-sign.mp4"><img src="docs/template-gallery/demos/homepage/remotion-neon-sign.gif" width="360" alt="霓虹文字闪烁 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/neon-sign.mp4">完整本地 Demo</a>
+<p>霓虹文字闪动后亮起</p>
+<p><a href="templates/categories/product.md#remotion-neon-sign">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>碎片揭示</strong><br>
+<p>产品与案例展示 · Logo与品牌 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/shatter-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-shatter-reveal.gif" width="360" alt="碎片揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/shatter-reveal.mp4">完整本地 Demo</a>
+<p>覆盖层碎裂并显现后层</p>
+<p><a href="templates/categories/product.md#remotion-shatter-reveal">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary><strong>标题与重点字 · 31 项</strong></summary>
+
+<table>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>两行标题</strong><br>
+<p>标题与重点字 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/title.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-title.gif" width="202" alt="两行标题 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/title.mp4">完整本地 Demo</a>
+<p>开场、段落开头：一行陈述 + 一行重点（重点行砸入）</p>
+<p><a href="templates/categories/text.md#mg-control-title">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>关键词砸入</strong><br>
+<p>标题与重点字 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/keyword.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-keyword.gif" width="202" alt="关键词砸入 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/keyword.mp4">完整本地 Demo</a>
+<p>一个词或短语是这段话的重点；后面可以补 1–3 句解释，逐句出现</p>
+<p><a href="templates/categories/text.md#mg-control-keyword">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>金句 / 引用</strong><br>
+<p>标题与重点字 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/quote.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-quote.gif" width="202" alt="金句 / 引用 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/quote.mp4">完整本地 Demo</a>
+<p>一句原话、观点或引用，逐字打出；*星号* 包住的词高亮</p>
+<p><a href="templates/categories/text.md#mg-control-quote">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>印章强调</strong><br>
+<p>标题与重点字 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/stamp.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-stamp.gif" width="202" alt="印章强调 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/stamp.mp4">完整本地 Demo</a>
+<p>下结论、表态：免费、已上线、不推荐</p>
+<p><a href="templates/categories/text.md#mg-control-stamp">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>逐行动态排版</strong><br>
+<p>标题与重点字 · 文字动态 · 已有接入案例 · 新片仍需适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-kinetic.gif" width="360" alt="逐行动态排版 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<p><sub>当前本人Demo版本：2.7.17-alpha.2 · 本片QA：verified_demo（已解码与抽帧检查）</sub></p><a href="docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4">完整本地 Demo</a> · <a href="docs/template-gallery/demos/motiongit/kinetic.mp4">完整本地 Demo</a>
+<p>一句有节奏的观点拆成 2–5 个短行，跟着口播一行一行冲出来；适合开场钩子、口号、情绪句</p>
+<p><a href="templates/categories/text.md#mg-control-kinetic">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+<details><summary>本片接入与复用边界</summary><p>AIVD 10 · template-01-integrated-portrait · 2.7.17-alpha.2</p><p>输入：workflow=motion-kit；layout=landscape；原生动画按剪后时钟1.0倍使用；voiceover/music为空、captions=[]，模板原声音轨从Demo移除。；Reply、Follow up、AI 三行动态归纳，与本片结尾同期本人圆窗结合。；使用同源结尾800px方形人像，源2104.56–2115.44秒已经绝对1.2倍一次，本Demo圆窗按1.0倍使用，不重复加速。；素材源时间与本片最终帧显式映射，不能按字数估计词时；圆窗不遮概念文字，非模板原生自动抠像能力。</p><p>调用：<code>.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance &lt;instance&gt; render &lt;reviewed-project&gt; --out &lt;scene.mp4&gt; --language zh</code></p><p>本片检查：本片横屏kinetic/stack：1280×720、30fps、272帧、无音轨，完整解码通过；实际查看编码帧6,136,195,271及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。</p><p>登记基线版本：0.3.0 (package2.7.17-alpha.2)。仅此版本与Demo；不扩展原条目或全部变体的验证状态，不代表用户审美认可。</p></details></td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>重点词标记</strong><br>
+<p>标题与重点字 · 文字动态 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/highlight.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-highlight.gif" width="202" alt="重点词标记 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/highlight.mp4">完整本地 Demo</a>
+<p>一句完整的话里有 1–2 个必须被看见的词（用 *星号* 标出）：先出整句，再在重点上画标记</p>
+<p><a href="templates/categories/text.md#mg-control-highlight">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>乱码解码</strong><br>
+<p>标题与重点字 · 文字动态 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/scramble.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-scramble.gif" width="202" alt="乱码解码 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/scramble.mp4">完整本地 Demo</a>
+<p>揭晓一个名字、术语、答案、代号：乱码逐位锁定。科技、数据、揭秘类内容</p>
+<p><a href="templates/categories/text.md#mg-control-scramble">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>轮换词</strong><br>
+<p>标题与重点字 · 文字动态 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/rotator.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-rotator.gif" width="202" alt="轮换词 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/rotator.mp4">完整本地 Demo</a>
+<p>同一句话换不同的词：「适合 学生 / 老师 / 公司」、「它能 写 / 画 / 剪」。最后一个词停住</p>
+<p><a href="templates/categories/text.md#mg-control-rotator">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>滚动横幅</strong><br>
+<p>标题与重点字 · 文字动态 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/marquee.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-marquee.gif" width="202" alt="滚动横幅 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/marquee.mp4">完整本地 Demo</a>
+<p>一串关键词/标签/口号持续滚动：活动、清单很长、节奏型过渡；可在横幅上砸入一个大词</p>
+<p><a href="templates/categories/text.md#mg-control-marquee">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>巨字</strong><br>
+<p>标题与重点字 · 文字动态 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/bigtype.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-bigtype.gif" width="202" alt="巨字 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/bigtype.mp4">完整本地 Demo</a>
+<p>一个词撑满画面的冲击时刻：段落主题、结论词、品牌词；mask 变体可让图片/视频透过字显示</p>
+<p><a href="templates/categories/text.md#mg-control-bigtype">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>人名条</strong><br>
+<p>标题与重点字 · 叠加标注与装饰 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/lowerthird.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-lowerthird.gif" width="202" alt="人名条 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/lowerthird.mp4">完整本地 Demo</a>
+<p>第一次出现某个人、讲者、嘉宾或角色时标出名字和身份；也可当一条短字幕条。贴在左下（或右下），横屏在口播卡左侧、字幕之上</p>
+<p><a href="templates/categories/text.md#mg-control-lowerthird">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>角标</strong><br>
+<p>标题与重点字 · 叠加标注与装饰 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/tag.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-tag.gif" width="202" alt="角标 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/tag.mp4">完整本地 Demo</a>
+<p>画面角落的话题标签、集数、属性：「#干货」「第 3 集」「新」，1–3 条，可整段常驻</p>
+<p><a href="templates/categories/text.md#mg-control-tag">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>标题弹入</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/bounce-in-headline.mp4"><img src="docs/template-gallery/demos/homepage/remotion-bounce-in-headline.gif" width="360" alt="标题弹入 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/bounce-in-headline.mp4">完整本地 Demo</a>
+<p>整段标题从上方弹入，带回弹。并非逐词分拍。</p>
+<p><a href="templates/categories/text.md#remotion-bounce-in-headline">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>章节标题卡</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/chapter-title.mp4"><img src="docs/template-gallery/demos/homepage/remotion-chapter-title.gif" width="360" alt="章节标题卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/chapter-title.mp4">完整本地 Demo</a>
+<p>编号与章节标题显现</p>
+<p><a href="templates/categories/text.md#remotion-chapter-title">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>四色标题切换</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/four-tone-mono-titler.mp4"><img src="docs/template-gallery/demos/homepage/remotion-four-tone-mono-titler.gif" width="360" alt="四色标题切换 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/four-tone-mono-titler.mp4">完整本地 Demo</a>
+<p>标题块切换四组颜色；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。</p>
+<p><a href="templates/categories/text.md#remotion-four-tone-mono-titler">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>故障文字</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/glitch-text.mp4"><img src="docs/template-gallery/demos/homepage/remotion-glitch-text.gif" width="360" alt="故障文字 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/glitch-text.mp4">完整本地 Demo</a>
+<p>RGB错位抖动后稳定</p>
+<p><a href="templates/categories/text.md#remotion-glitch-text">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>文字渐变扫过</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/gradient-text-sweep.mp4"><img src="docs/template-gallery/demos/homepage/remotion-gradient-text-sweep.gif" width="360" alt="文字渐变扫过 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/gradient-text-sweep.mp4">完整本地 Demo</a>
+<p>颜色渐变经过标题</p>
+<p><a href="templates/categories/text.md#remotion-gradient-text-sweep">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>动态词语堆叠</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/kinetic-word-stack.mp4"><img src="docs/template-gallery/demos/homepage/remotion-kinetic-word-stack.gif" width="360" alt="动态词语堆叠 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/kinetic-word-stack.mp4">完整本地 Demo</a>
+<p>词语逐个入场形成文字块</p>
+<p><a href="templates/categories/text.md#remotion-kinetic-word-stack">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>像素打字引语</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/pixel-typewriter-quote.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pixel-typewriter-quote.gif" width="360" alt="像素打字引语 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/pixel-typewriter-quote.mp4">完整本地 Demo</a>
+<p>像素风格逐字输入引语；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。</p>
+<p><a href="templates/categories/text.md#remotion-pixel-typewriter-quote">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>乱序文字归位</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/scramble-text.mp4"><img src="docs/template-gallery/demos/homepage/remotion-scramble-text.gif" width="360" alt="乱序文字归位 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/scramble-text.mp4">完整本地 Demo</a>
+<p>字符变化后组成目标标题</p>
+<p><a href="templates/categories/text.md#remotion-scramble-text">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>文字遮罩揭示</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/text-mask-reveal.mp4"><img src="docs/template-gallery/demos/homepage/remotion-text-mask-reveal.gif" width="360" alt="文字遮罩揭示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/text-mask-reveal.mp4">完整本地 Demo</a>
+<p>文字从遮罩边界内滑出</p>
+<p><a href="templates/categories/text.md#remotion-text-mask-reveal">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>打字机</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/typewriter.mp4"><img src="docs/template-gallery/demos/homepage/remotion-typewriter.gif" width="360" alt="打字机 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/typewriter.mp4">完整本地 Demo</a>
+<p>逐字输入并显示光标</p>
+<p><a href="templates/categories/text.md#remotion-typewriter">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>波浪文字</strong><br>
+<p>标题与重点字 · 文字与标题 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/wave-text.mp4"><img src="docs/template-gallery/demos/homepage/remotion-wave-text.gif" width="360" alt="波浪文字 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/wave-text.mp4">完整本地 Demo</a>
+<p>文字按波形上下移动</p>
+<p><a href="templates/categories/text.md#remotion-wave-text">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>文字镂空媒体演示</strong><br>
+<p>标题与重点字 · RemotionUI本地适配 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/library-text-mask.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-text-mask.gif" width="360" alt="文字镂空媒体演示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/library-text-mask.mp4">完整本地 Demo</a>
+<p>SVG文字镂空与渐变移动；演示使用合成渐变</p>
+<p><a href="templates/categories/text.md#remotion-library-text-mask">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>中文玻璃卡片示例</strong><br>
+<p>标题与重点字 · 中文示例 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/library-glass-zh.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-glass-zh.gif" width="360" alt="中文玻璃卡片示例 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/library-glass-zh.mp4">完整本地 Demo</a>
+<p>半透明玻璃下三分之一信息卡；已有基础模板的中文参数示例，不新增模板家族。</p>
+<p><a href="templates/categories/text.md#remotion-library-glass-zh">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>玻璃标签</strong><br>
+<p>标题与重点字 · 文字与标题 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-02.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-02.gif" width="202" alt="玻璃标签 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-02.mp4">完整本地 Demo</a>
+<p>半透明圆角玻璃标签进入画面，突出一个短标题。</p>
+<p><a href="templates/categories/text.md#presenter-effect-02">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>视频镂空字</strong><br>
+<p>标题与重点字 · 文字与标题 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-11.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-11.gif" width="202" alt="视频镂空字 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-11.mp4">完整本地 Demo</a>
+<p>真人视频透过大型中文字显示，并保留圆形人物小窗。</p>
+<p><a href="templates/categories/text.md#presenter-effect-11">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>手绘涂鸦</strong><br>
+<p>标题与重点字 · 装饰与强调 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-12.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-12.gif" width="202" alt="手绘涂鸦 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-12.mp4">完整本地 Demo</a>
+<p>线条、星形与箭头逐步绘出，围绕人物形成手绘强调。</p>
+<p><a href="templates/categories/text.md#presenter-effect-12">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>标题墙</strong><br>
+<p>标题与重点字 · 文字与标题 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-13.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-13.gif" width="202" alt="标题墙 · 原速节选 · 1.1 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.1 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-13.mp4">完整本地 Demo</a>
+<p>重复大字在人物后方交错移动，形成动态文字墙。</p>
+<p><a href="templates/categories/text.md#presenter-effect-13">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>环绕文字</strong><br>
+<p>标题与重点字 · 装饰与强调 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-16.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-16.gif" width="202" alt="环绕文字 · 原速节选 · 1.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-16.mp4">完整本地 Demo</a>
+<p>三张中文词卡沿椭圆轨迹环绕人物，并表现前后遮挡。</p>
+<p><a href="templates/categories/text.md#presenter-effect-16">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>贴纸轮播</strong><br>
+<p>标题与重点字 · 装饰与强调 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-19.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-19.gif" width="202" alt="贴纸轮播 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-19.mp4">完整本地 Demo</a>
+<p>五枚原创图标贴纸沿椭圆轨道轮转，并改变前后大小。</p>
+<p><a href="templates/categories/text.md#presenter-effect-19">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary><strong>转场与片尾 · 17 项</strong></summary>
+
+<table>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>章节卡</strong><br>
+<p>转场与片尾 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/chapter.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-chapter.gif" width="202" alt="章节卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/chapter.mp4">完整本地 Demo</a>
+<p>长视频分段：编号 + 段名</p>
+<p><a href="templates/categories/transition.md#mg-control-chapter">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>片头</strong><br>
+<p>转场与片尾 · 品牌与行动 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/intro.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-intro.gif" width="202" alt="片头 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/intro.mp4">完整本地 Demo</a>
+<p>视频开头的节目标题卡：标题 + 副标题 + 可选期数/日期。电影感开场、系列节目、栏目包装</p>
+<p><a href="templates/categories/transition.md#mg-control-intro">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>片尾</strong><br>
+<p>转场与片尾 · 品牌与行动 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/outro.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-outro.gif" width="202" alt="片尾 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/outro.mp4">完整本地 Demo</a>
+<p>视频结尾：感谢语 + 1–3 个下一步（推荐视频、下期预告、关注/链接文字），可带头像</p>
+<p><a href="templates/categories/transition.md#mg-control-outro">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>关注 / 三连</strong><br>
+<p>转场与片尾 · 品牌与行动 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/subscribe.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-subscribe.gif" width="202" alt="关注 / 三连 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/subscribe.mp4">完整本地 Demo</a>
+<p>求关注、求三连、开铃铛：按钮依次被光标点亮，图标弹跳、数字 +1。items 可自定义 2–3 个按钮</p>
+<p><a href="templates/categories/transition.md#mg-control-subscribe">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>倒计时</strong><br>
+<p>转场与片尾 · 品牌与行动 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/countdown.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-countdown.gif" width="202" alt="倒计时 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/countdown.mp4">完整本地 Demo</a>
+<p>3–10 秒倒数：开奖、开播、限时、揭晓前的紧张感；归零时爆开出现结束语</p>
+<p><a href="templates/categories/transition.md#mg-control-countdown">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>镜头震动</strong><br>
+<p>转场与片尾 · 转场 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/camera-shake.mp4"><img src="docs/template-gallery/demos/homepage/remotion-camera-shake.gif" width="360" alt="镜头震动 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/camera-shake.mp4">完整本地 Demo</a>
+<p>短促镜头抖动基础</p>
+<p><a href="templates/categories/transition.md#remotion-camera-shake">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>卡片翻面转场</strong><br>
+<p>转场与片尾 · 转场 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/card-flip-transition.mp4"><img src="docs/template-gallery/demos/homepage/remotion-card-flip-transition.gif" width="360" alt="卡片翻面转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/card-flip-transition.mp4">完整本地 Demo</a>
+<p>画面按卡片方式翻转</p>
+<p><a href="templates/categories/transition.md#remotion-card-flip-transition">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>圆形擦除转场</strong><br>
+<p>转场与片尾 · 转场 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/transition-circle-wipe.mp4"><img src="docs/template-gallery/demos/homepage/remotion-transition-circle-wipe.gif" width="360" alt="圆形擦除转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/transition-circle-wipe.mp4">完整本地 Demo</a>
+<p>圆形遮罩由中心扩张</p>
+<p><a href="templates/categories/transition.md#remotion-transition-circle-wipe">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>墨迹扩散转场</strong><br>
+<p>转场与片尾 · 转场 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/ink-spread-transition.mp4"><img src="docs/template-gallery/demos/homepage/remotion-ink-spread-transition.gif" width="360" alt="墨迹扩散转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/ink-spread-transition.mp4">完整本地 Demo</a>
+<p>墨迹扩散覆盖画面</p>
+<p><a href="templates/categories/transition.md#remotion-ink-spread-transition">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>翻页转场</strong><br>
+<p>转场与片尾 · 转场 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/flip-page-transition.mp4"><img src="docs/template-gallery/demos/homepage/remotion-flip-page-transition.gif" width="360" alt="翻页转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/flip-page-transition.mp4">完整本地 Demo</a>
+<p>页面翻动切换场景</p>
+<p><a href="templates/categories/transition.md#remotion-flip-page-transition">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>像素马赛克转场</strong><br>
+<p>转场与片尾 · 转场 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/pixel-mosaic-transition.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pixel-mosaic-transition.gif" width="360" alt="像素马赛克转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/pixel-mosaic-transition.mp4">完整本地 Demo</a>
+<p>画面拆成像素块再组合</p>
+<p><a href="templates/categories/transition.md#remotion-pixel-mosaic-transition">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>滑动擦除转场</strong><br>
+<p>转场与片尾 · 转场 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/slide-wipe.mp4"><img src="docs/template-gallery/demos/homepage/remotion-slide-wipe.gif" width="360" alt="滑动擦除转场 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/slide-wipe.mp4">完整本地 Demo</a>
+<p>面板滑动切换场景</p>
+<p><a href="templates/categories/transition.md#remotion-slide-wipe">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>快速甩镜</strong><br>
+<p>转场与片尾 · 转场 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/whip-pan.mp4"><img src="docs/template-gallery/demos/homepage/remotion-whip-pan.gif" width="360" alt="快速甩镜 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/whip-pan.mp4">完整本地 Demo</a>
+<p>快速横移与模糊转场</p>
+<p><a href="templates/categories/transition.md#remotion-whip-pan">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>通用结束卡</strong><br>
+<p>转场与片尾 · 社交与界面 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/end-card.mp4"><img src="docs/template-gallery/demos/homepage/remotion-end-card.gif" width="360" alt="通用结束卡 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/end-card.mp4">完整本地 Demo</a>
+<p>通用CTA结束卡；不替换用户固定片尾</p>
+<p><a href="templates/categories/transition.md#remotion-end-card">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>冲击缩放</strong><br>
+<p>转场与片尾 · 镜头与转场 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-03.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-03.gif" width="202" alt="冲击缩放 · 原速节选 · 1.6 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.6 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-03.mp4">完整本地 Demo</a>
+<p>同一镜头快速推近、模糊并回拉，配合扩散边框。</p>
+<p><a href="templates/categories/transition.md#presenter-effect-03">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>拉远揭幕</strong><br>
+<p>转场与片尾 · 镜头与转场 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-06.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-06.gif" width="202" alt="拉远揭幕 · 原速节选 · 1.2 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.2 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-06.mp4">完整本地 Demo</a>
+<p>口播画面逐步缩小，显露带标题栏的悬浮窗口。</p>
+<p><a href="templates/categories/transition.md#presenter-effect-06">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>数字推近</strong><br>
+<p>转场与片尾 · 镜头与转场 · 样片效果 · 需要源码适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-17.mp4"><img src="docs/template-gallery/demos/homepage/presenter-effect-17.gif" width="202" alt="数字推近 · 原速节选 · 1.3 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 1.3 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/presenter/presenter-effect-17.mp4">完整本地 Demo</a>
+<p>围绕人物焦点逐步放大原画面，叠加构图框。</p>
+<p><a href="templates/categories/transition.md#presenter-effect-17">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary><strong>视觉与背景 · 32 项</strong></summary>
+
+<table>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>酷炫科技风</strong><br>
+<p>视觉与背景 · 科技视觉（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://motiontemplates.github.io/385712/assets/demo.mp4"><img src="https://raw.githubusercontent.com/motiontemplates/385712/9dfbe7d7c6a6d4aa03f6f8e2f2285e631099faae/assets/compositions.jpg" width="360" alt="酷炫科技风 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://motiontemplates.github.io/385712/assets/demo.mp4">官方 Demo · 16:9</a> · <a href="https://media.openaicut.com/previews/626/0.2.9-open-beta-zh-11eae4868d37.mp4">官方 Demo · 9:16</a>
+<p>金属立体字、光效与空间动效；中英横屏、中文竖屏，新增英文竖屏基础表达 B1–B4，支持人脸居中与圆形署名。</p>
+<p><a href="templates/categories/visual.md#mg-style-385712">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>半调网点 · 人像标题</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4"><img src="https://media.openaicut.com/covers/615/draft-zh-2de1eb992fcf.jpg" width="360" alt="半调网点 · 人像标题 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4">官方 Demo · 16:9</a>
+<p>三张人像化为流动的双色网点，散开后重新汇聚成标题，适合人像与主题开场。</p>
+<p><a href="templates/categories/visual.md#mg-style-381814">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>照片马赛克 · 拼图揭幕</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/616/draft-zh-3c3bc74e9591.mp4"><img src="https://media.openaicut.com/covers/616/draft-zh-b95e73a79f9c.jpg" width="360" alt="照片马赛克 · 拼图揭幕 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/616/draft-zh-3c3bc74e9591.mp4">官方 Demo · 16:9</a>
+<p>多张照片组成主视觉，从局部照片拉远揭示完整马赛克，适合集体回忆与拼图揭幕。</p>
+<p><a href="templates/categories/visual.md#mg-style-460349">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>几何拼贴 · 动态海报</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/617/draft-zh-d014a696e0ba.mp4"><img src="https://media.openaicut.com/covers/617/draft-zh-84c721155840.jpg" width="360" alt="几何拼贴 · 动态海报 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/617/draft-zh-d014a696e0ba.mp4">官方 Demo · 16:9</a>
+<p>将四张照片裁成几何形状，在三组包豪斯动态海报中重组，适合活动与视觉主题展示。</p>
+<p><a href="templates/categories/visual.md#mg-style-907345">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>笔触重绘 · 艺术照片</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/618/draft-zh-9a122d6aac1e.mp4"><img src="https://media.openaicut.com/covers/618/draft-zh-c88f1a5a67a8.jpg" width="360" alt="笔触重绘 · 艺术照片 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/618/draft-zh-9a122d6aac1e.mp4">官方 Demo · 16:9</a>
+<p>用三层定向笔触重绘照片，与原图对照后呈现署名标题，适合摄影与艺术展示。</p>
+<p><a href="templates/categories/visual.md#mg-style-328828">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>信号故障 · 照片转场</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/619/draft-zh-567d566f31a3.mp4"><img src="https://media.openaicut.com/covers/619/draft-zh-b96f0b6469fe.jpg" width="360" alt="信号故障 · 照片转场 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/619/draft-zh-567d566f31a3.mp4">官方 Demo · 16:9</a>
+<p>用像素排序、RGB 分离和扫描线改造照片，并以 CRT 关机效果收尾，适合科技视觉片段。</p>
+<p><a href="templates/categories/visual.md#mg-style-638039">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>双重曝光 · 人像叠影</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/620/draft-zh-eb40eb882b43.mp4"><img src="https://media.openaicut.com/covers/620/draft-zh-d8cadbd1b296.jpg" width="360" alt="双重曝光 · 人像叠影 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/620/draft-zh-eb40eb882b43.mp4">官方 Demo · 16:9</a>
+<p>以风景填充人像剪影，双层画面反向漂移，标题从薄雾显现，适合诗意人像叠影。</p>
+<p><a href="templates/categories/visual.md#mg-style-800829">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>空间画廊 · 回忆相册</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/621/draft-zh-13dffcc71ff3.mp4"><img src="https://media.openaicut.com/covers/621/draft-zh-78b8670e7b7d.jpg" width="360" alt="空间画廊 · 回忆相册 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/621/draft-zh-13dffcc71ff3.mp4">官方 Demo · 16:9</a>
+<p>穿行带有文字说明的立体照片画廊，最后推进主照片并揭示全屏标题，适合回忆与作品集。</p>
+<p><a href="templates/categories/visual.md#mg-style-743702">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>镜像万花筒 · 照片变幻</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/622/draft-zh-3a7bf4639a39.mp4"><img src="https://media.openaicut.com/covers/622/draft-zh-f09b29170a66.jpg" width="360" alt="镜像万花筒 · 照片变幻 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/622/draft-zh-3a7bf4639a39.mp4">官方 Demo · 16:9</a>
+<p>将两张照片镜像成旋转的十二分段万花筒，经扩张圆环转场再展开原图，适合视觉主题片。</p>
+<p><a href="templates/categories/visual.md#mg-style-551805">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>DeepSeek 鲸鱼粒子聚合</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/628/1.1.0-e0d9c9e4a5b8.mp4"><img src="https://media.openaicut.com/covers/628/1.1.0-a864a56cec62.jpg" width="360" alt="DeepSeek 鲸鱼粒子聚合 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/628/1.1.0-e0d9c9e4a5b8.mp4">官方 Demo · 16:9</a>
+<p>粒子从散落聚合成品牌鲸鱼 Logo，适合片头、品牌露出或章节转场。</p>
+<p><a href="templates/categories/visual.md#mg-style-404937">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>DeepSeek 粒子形变</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/629/1.1.0-0892fa4bf82d.mp4"><img src="https://media.openaicut.com/covers/629/1.1.0-72cc2b4731d0.jpg" width="360" alt="DeepSeek 粒子形变 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/629/1.1.0-0892fa4bf82d.mp4">官方 Demo · 16:9</a>
+<p>同一批粒子在四种三维形状间形变，适合科技感转场、概念串联或片尾。</p>
+<p><a href="templates/categories/visual.md#mg-style-380710">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>DeepSeek 词语粒子</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/630/1.1.0-7b16186bd6b2.mp4"><img src="https://media.openaicut.com/covers/630/1.1.0-7cf1d6e6ddc9.jpg" width="360" alt="DeepSeek 词语粒子 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/630/1.1.0-7b16186bd6b2.mp4">官方 Demo · 16:9</a>
+<p>粒子按顺序拼出四个关键词，适合概念介绍、能力列表与口号式开场。</p>
+<p><a href="templates/categories/visual.md#mg-style-941301">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>光带文字</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/872/1.0.0-08a812711d78.mp4"><img src="https://media.openaicut.com/covers/872/1.0.0-04d5f44d203b.jpg" width="360" alt="光带文字 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/872/1.0.0-08a812711d78.mp4">官方 Demo · 16:9</a>
+<p>光之丝带汇聚成一个词：丝带流动、粒子成字、光带扫过，再散回丝带。</p>
+<p><a href="templates/categories/visual.md#mg-style-872">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>面板擦除 · WIPE PACK</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/878/1.0.0-zh-be7dc794ab1a.mp4"><img src="https://media.openaicut.com/covers/878/1.0.0-zh-36c9ef9f02df.jpg" width="360" alt="面板擦除 · WIPE PACK · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/878/1.0.0-zh-be7dc794ab1a.mp4">官方 Demo · 16:9</a>
+<p>四套面板擦除过场：竖条合拢、横条下压、纸色竖条、墨色竖条；8 秒转场包，可用于场景切换与章节过渡。</p>
+<p><a href="templates/categories/visual.md#mg-style-878">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>DEEP STAGE 开场点火标题</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/879/1.0.0-8e74030d1901.mp4"><img src="https://media.openaicut.com/covers/879/1.0.0-12a34d321725.jpg" width="360" alt="DEEP STAGE 开场点火标题 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/879/1.0.0-8e74030d1901.mp4">官方 Demo · 16:9</a>
+<p>深色立体舞台开场：地平线点火、地面透视网格生长、远景屏幕墙点亮，两段主标题落下（金属渐变），最后落到副标题与角标。10 秒片头动效，可换品牌、标题、副标题与主色。</p>
+<p><a href="templates/categories/visual.md#mg-style-921052">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>DEEP STAGE 媒体素材墙</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/883/1.0.0-a30bac716f4b.mp4"><img src="https://media.openaicut.com/covers/883/1.0.0-7aea9314e457.jpg" width="360" alt="DEEP STAGE 媒体素材墙 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/883/1.0.0-a30bac716f4b.mp4">官方 Demo · 16:9</a>
+<p>媒体素材墙动效：六宫格（2×3）在 3D 空间逐张落位，每格独立纵深与旋转，落位后极缓慢浮动，镜头持续后拉。10 秒，适合素材盘点与 B-roll 讲解。</p>
+<p><a href="templates/categories/visual.md#mg-style-430770">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>DEEP STAGE 收尾锁版</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/884/1.0.0-651f2839086d.mp4"><img src="https://media.openaicut.com/covers/884/1.0.0-1e5dc2b6dbd5.jpg" width="360" alt="DEEP STAGE 收尾锁版 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/884/1.0.0-651f2839086d.mp4">官方 Demo · 16:9</a>
+<p>收尾锁版动效：屏幕退向纵深，logo 描边锁定，字标、副标、规格行与版本胶囊依次落位，一道横扫光掠过，结尾稳定呼吸。8 秒，适合片尾与版本标识。</p>
+<p><a href="templates/categories/visual.md#mg-style-581039">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>3D 吉祥物手把手教程</strong><br>
+<p>视觉与背景 · 视觉与场景动效（非口播默认） · 官方参考 · 先取得并核对原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="https://media.openaicut.com/previews/895/1.0.0-zh-a15d0b9cfbab.mp4"><img src="https://media.openaicut.com/covers/895/1.0.0-zh-0c4dce4365d8.jpg" width="360" alt="3D 吉祥物手把手教程 · 官方预览图 · 点击查看完整 Demo"></a><br>
+<sub>官方预览图 · 点击查看完整 Demo</sub><br>
+<a href="https://media.openaicut.com/previews/895/1.0.0-zh-a15d0b9cfbab.mp4">官方 Demo · 16:9</a>
+<p>把网页或 App 的一段操作流程（注册、下单、设置等），做成 3D 小宠物带着一步步点、打字、指重点的横屏教程视频</p>
+<p><a href="templates/categories/visual.md#mg-style-887145">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>光球合成</strong><br>
+<p>视觉与背景 · 基础讲解 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/fusion.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-fusion.gif" width="202" alt="光球合成 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/fusion.mp4">完整本地 Demo</a>
+<p>A × B 合在一起得到结果 C</p>
+<p><a href="templates/categories/visual.md#mg-control-fusion">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>贴纸</strong><br>
+<p>视觉与背景 · 叠加标注与装饰 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/sticker.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-sticker.gif" width="202" alt="贴纸 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/sticker.mp4">完整本地 Demo</a>
+<p>给一句话盖个情绪章：「绝了」「重点」「NEW」「必看」，或一个图标贴纸。位置 x/y 可选（默认右上），不压口播卡和字幕</p>
+<p><a href="templates/categories/visual.md#mg-control-sticker">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>表情飘赞</strong><br>
+<p>视觉与背景 · 叠加标注与装饰 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/emoji.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-emoji.gif" width="202" alt="表情飘赞 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/emoji.mp4">完整本地 Demo</a>
+<p>情绪时刻的一阵表情：点赞、比心、火、笑。icon 用图标名（彩色圆泡），或 text 填 1–2 个 emoji 字符；n 为数量</p>
+<p><a href="templates/categories/visual.md#mg-control-emoji">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>庆祝特效</strong><br>
+<p>视觉与背景 · 叠加标注与装饰 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/confetti.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-confetti.gif" width="202" alt="庆祝特效 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/confetti.mp4">完整本地 Demo</a>
+<p>里程碑、达成、好消息、结尾致谢：彩纸 / 烟花，可选一句短字居中弹出。每个 cue 一波（最多 3 波）</p>
+<p><a href="templates/categories/visual.md#mg-control-confetti">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>画面装饰框</strong><br>
+<p>视觉与背景 · 叠加标注与装饰 · 已有控件演示 · 需自备授权原包</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/motiongit/frame.mp4"><img src="docs/template-gallery/demos/homepage/mg-control-frame.gif" width="202" alt="画面装饰框 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/motiongit/frame.mp4">完整本地 Demo</a>
+<p>给整段画面加氛围：拍摄感取景框、录制中、霓虹边框。框住内容区（避开口播卡与字幕），可整段常驻</p>
+<p><a href="templates/categories/visual.md#mg-control-frame">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>散景光圈背景</strong><br>
+<p>视觉与背景 · 循环与背景 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/bokeh-circles.mp4"><img src="docs/template-gallery/demos/homepage/remotion-bokeh-circles.gif" width="320" alt="散景光圈背景 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/bokeh-circles.mp4">完整本地 Demo</a>
+<p>柔焦圆形漂浮背景</p>
+<p><a href="templates/categories/visual.md#remotion-bokeh-circles">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>烟花爆开</strong><br>
+<p>视觉与背景 · 循环与背景 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/fireworks-burst.mp4"><img src="docs/template-gallery/demos/homepage/remotion-fireworks-burst.gif" width="360" alt="烟花爆开 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/fireworks-burst.mp4">完整本地 Demo</a>
+<p>放射粒子爆开</p>
+<p><a href="templates/categories/visual.md#remotion-fireworks-burst">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>网格波浪循环</strong><br>
+<p>视觉与背景 · 循环与背景 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/loop-grid-wave.mp4"><img src="docs/template-gallery/demos/homepage/remotion-loop-grid-wave.gif" width="320" alt="网格波浪循环 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/loop-grid-wave.mp4">完整本地 Demo</a>
+<p>网格按波形循环变化</p>
+<p><a href="templates/categories/visual.md#remotion-loop-grid-wave">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>视差平移</strong><br>
+<p>视觉与背景 · 循环与背景 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/parallax-pan.mp4"><img src="docs/template-gallery/demos/homepage/remotion-parallax-pan.gif" width="360" alt="视差平移 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/parallax-pan.mp4">完整本地 Demo</a>
+<p>多层图形以不同速度移动</p>
+<p><a href="templates/categories/visual.md#remotion-parallax-pan">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>铅笔绘制</strong><br>
+<p>视觉与背景 · 循环与背景 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/pencil-draw.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pencil-draw.gif" width="360" alt="铅笔绘制 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/pencil-draw.mp4">完整本地 Demo</a>
+<p>铅笔沿星形路径绘制</p>
+<p><a href="templates/categories/visual.md#remotion-pencil-draw">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>像素瀑布循环</strong><br>
+<p>视觉与背景 · 循环与背景 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/pixel-waterfall-cycle.mp4"><img src="docs/template-gallery/demos/homepage/remotion-pixel-waterfall-cycle.gif" width="202" alt="像素瀑布循环 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/pixel-waterfall-cycle.mp4">完整本地 Demo</a>
+<p>竖屏像素图形循环</p>
+<p><a href="templates/categories/visual.md#remotion-pixel-waterfall-cycle">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>粒子雪花</strong><br>
+<p>视觉与背景 · 循环与背景 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/particle-snow.mp4"><img src="docs/template-gallery/demos/homepage/remotion-particle-snow.gif" width="360" alt="粒子雪花 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/particle-snow.mp4">完整本地 Demo</a>
+<p>图形粒子持续飘落</p>
+<p><a href="templates/categories/visual.md#remotion-particle-snow">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>星空穿行背景</strong><br>
+<p>视觉与背景 · 循环与背景 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/starfield.mp4"><img src="docs/template-gallery/demos/homepage/remotion-starfield.gif" width="360" alt="星空穿行背景 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/starfield.mp4">完整本地 Demo</a>
+<p>星点向外运动的空间背景</p>
+<p><a href="templates/categories/visual.md#remotion-starfield">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<strong>前后环绕卡片演示</strong><br>
+<p>视觉与背景 · RemotionUI本地适配 · 代码已入库 · 准备环境后适配</p>
+<p><strong>1. 效果预览</strong></p>
+<a href="docs/template-gallery/demos/remotion/library-orbit.mp4"><img src="docs/template-gallery/demos/homepage/remotion-library-orbit.gif" width="360" alt="前后环绕卡片演示 · 原速节选 · 3.0 秒 · 无声 GIF"></a><br>
+<sub>原速节选 · 3.0 秒 · 无声 GIF</sub><br>
+<a href="docs/template-gallery/demos/remotion/library-orbit.mp4">完整本地 Demo</a>
+<p>卡片绕原创几何示意人物前后运动；没有真人抠像输入</p>
+<p><a href="templates/categories/visual.md#remotion-library-orbit">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
+</td>
+</tr>
+</table>
 
 </details>
 
@@ -1832,19 +2734,31 @@
 
 <table>
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="100%" align="left" valign="top">
 <strong>3D书 · 阿杜和那个影响了</strong><br>
+<p>视觉与背景 · 预告（不计入主清单） · 官方预告 · 待开放/核对</p>
+<p><strong>1. 效果预览</strong></p>
 <a href="https://github.com/motiontemplates/all/releases/download/demo-batch-two-2026-10-21/3d-book-demo-6dc0bd1a0e5bc9e8.mp4"><img src="https://motiontemplates.github.io/all/assets/batch-two-3d-book.jpg" width="360" alt="3D书 · 阿杜和那个影响了 · 官方预览图 · 点击查看完整 Demo"></a><br>
 <sub>官方预览图 · 点击查看完整 Demo</sub><br>
-<a href="https://github.com/motiontemplates/all/releases/download/demo-batch-two-2026-10-21/3d-book-demo-6dc0bd1a0e5bc9e8.mp4">官方 Demo · 16:9</a> · <a href="https://github.com/motiontemplates/all/tree/21537c6f49aa9504496d20c14bf597f7eac229f4">来源</a>
+<a href="https://github.com/motiontemplates/all/releases/download/demo-batch-two-2026-10-21/3d-book-demo-6dc0bd1a0e5bc9e8.mp4">官方 Demo · 16:9</a>
+<p>以立体书页、真实照片、翻页镜头和双语字幕串联个人经历，展示可用于回忆与叙事讲解的书本舞台。Demo 使用第8版完整成片。</p>
+<p><a href="templates/categories/visual.md#mg-preview-3d-book">完整七项说明：预览 · 用途 · 素材 · 参数 · 使用 · 状态 · 来源</a></p>
 </td>
-<td width="50%"></td>
 </tr>
 </table>
 
 </details>
 
 <!-- HOMEPAGE_SHOWCASE:END -->
+
+### 把满意的效果沉淀为自己的模板
+
+先问清来源：现成模板、第三方改造、自行实现，还是混合制作。自行实现的效果，可以从可编辑工程中提炼出可替换的文字、素材、颜色、步骤数量和时长，在明确支持的画幅中验证，再整理成可分享的 Motion Graphics 模板；符合当前 MotionGit 格式并通过实际验证后，才标为可用的 `.motion` 包。
+
+[通用模板制作教学与可复制指令](docs/TEMPLATE_AUTHORING.zh-CN.md)。只换色、改标题或展示同一段本人 Demo，不等于已经完成通用化；第三方效果始终保留来源与许可。
+
+<details>
+<summary><strong>进阶：运行环境、技术来源、交付与维护</strong></summary>
 
 ## 按新视频持续积累官方模板
 
@@ -1881,7 +2795,7 @@ python scripts/serve_template_gallery.py
 
 ## 想实际剪辑，先准备运行环境
 
-Windows 使用 Git 和 Python 3.11／3.12。先在非 OneDrive 的源码目录取得仓库；本公开仓库可直接 clone，无需申请访问权限。
+Windows 使用 Git 和 Python 3.11／3.12。以下命令用于首次安装且没有现有源码或同名 Skill 的情况；已有安装先按[安全更新说明](docs/CROSS_COMPUTER_UPDATE.md)核对归属和修改。源码放在非 OneDrive 目录，本公开仓库可直接 clone，无需申请访问权限。
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "C:\Codex Workspace" | Out-Null
@@ -1889,7 +2803,7 @@ Set-Location "C:\Codex Workspace"
 git clone https://github.com/Isaac3113/ai-cut.git
 Set-Location ai-cut
 .\scripts\bootstrap.ps1
-.\.venv\Scripts\python.exe scripts/install_skill.py
+.\.venv\Scripts\python.exe scripts/install_skill.py --target "$env:USERPROFILE\.agents\skills\ai-cut"
 .\.venv\Scripts\python.exe -m talking_head_editor.cli doctor
 ```
 
@@ -1941,3 +2855,5 @@ python scripts/build_homepage_showcase.py --write-readme
 ```
 
 [来源与中文化](templates/PROVENANCE.zh-CN.md) · [第三方许可](THIRD_PARTY.md) · [实际验证状态](docs/VALIDATION.md)。程序通过、抽帧、连续观看、完整听审与用户风格认可分别记录。当前演示不证明另一台电脑或新视频已通过。
+
+</details>

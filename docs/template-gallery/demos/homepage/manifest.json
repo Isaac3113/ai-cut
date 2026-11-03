@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "built_at_utc": "2026-11-02T12:18:13.834291+00:00",
+  "built_at_utc": "2026-11-03T02:09:06.728950+00:00",
   "catalog": "templates/catalog.json",
-  "catalog_sha256": "e30dbd9b7d14c4a7ce6a4cc694294cde685377e91030cafd6ee9d2c89724c43b",
+  "catalog_sha256": "e368714e30972a8f70c2751e97f4501239b9d8bbae054ac5968e587b1d76b6ab",
   "snapshot": "templates/sources/motiongit-catalog.snapshot.json",
   "snapshot_sha256": "c4bb605a22a3529c0dcbe8acb720ae50df3f5bc0c4ede8577f6caf8218d9a485",
   "counts": {
@@ -20,9 +20,11 @@
     "target_total_bytes": 26214400
   },
   "validation": {
-    "full_decode": true,
+    "full_decode": false,
     "source_hashes_checked": true,
-    "timing_and_ratio_checked": true,
+    "timing_and_ratio_checked": false,
+    "media_regenerated": false,
+    "existing_media_only": true,
     "continuous_watch": false,
     "remote_image_network_check": false
   },

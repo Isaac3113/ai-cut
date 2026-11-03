@@ -1,6 +1,6 @@
 ---
 name: ai-cut
-description: 剪辑真人知识口播、AI教学、营销方法与系统实操，保留原声原意；先确认本条视频比例，再做可恢复的语义粗剪、字幕、画面包装与社媒素材。支持Zoom或长访谈按独立主题切片、局部修正、中文模板选型及按新片接入官方模板。只有文稿先收集原片；旅游Vlog和剧情片先识别专用路线，不直接套用口播规则。
+description: 剪辑真人知识口播、AI教学、营销方法与系统实操，保留原声原意；先确认本条视频比例，再做语义粗剪、字幕、画面包装与社媒素材。支持长访谈切片、中文模板选型、按新片接入官方模板，以及指定自制效果的溯源和通用模板沉淀。只有文稿先收集原片；旅游Vlog和剧情片先识别专用路线，不直接套用口播规则。
 ---
 
 # AI Cut · 真人知识口播剪辑
@@ -22,6 +22,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 | 电脑实操区间 | [实操重点与同步音效](references/practical-demo.md)、需要本机辅助时读[实操渲染器](references/practical-renderer.md) |
 | 中文模板／控件选型 | [模板选择](references/template-selection.md)、已有代码效果读[特效库](references/effect-library.md) |
 | 官网更新／新片接入与本人Demo积累 | [模板长期接入规则](references/template-lifecycle.md) |
+| 询问效果来源／把指定效果做成通用模板 | [效果溯源与模板创作](references/template-authoring.md) |
 | 长访谈／Zoom切片 | [长访谈策划](references/long-form-clips.md) |
 | Logo、同源人像与素材 | [品牌和动态圆窗](references/brand-and-presenter.md)、[画面执行](references/visual-storytelling.md) |
 | 片头片尾、封面和交付 | [固定片头片尾](references/intro-outro.md)、[封面提示词员工](references/cover-prompt-worker.md)、[精简交付](references/final-delivery.md) |
@@ -58,6 +59,8 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 已有有效阶段可复用，说明本轮实际重做范围。首次未认可的新风格可用30～60秒小样；用户已认可的风格不因换片再次审批，完整重剪按已授权范围完成。2026-10-27的B版认可仅涵盖该局部效果，不扩大为所有MotionGit模板已验收。
 
 ## 动画工具与可复用目录
+
+对外展示分为学习自动剪辑和使用模板两条路径；调用名仍为 `ai-cut`。每条模板按预览、用途、素材、参数限制、使用方法、可用/验证状态、来源许可七项说明。用户询问片段来源时先查实际制作记录；指定自制效果的通用化按[模板创作规则](references/template-authoring.md)执行，不以旧本人 Demo 代替新内容复用验证。
 
 每条新片同时评估已接入与未接入官方候选；免费可取得且许可/输入合适时，沿既有授权直接核验、试做和接入，并在本机积累已验证本人小样与调用记录；仅将已有明确公开授权且许可与隐私检查通过的小样同步公开库和首页。更新监测只通知，不自动替换旧工程。详细执行与状态边界读[模板长期接入规则](references/template-lifecycle.md)。
 
