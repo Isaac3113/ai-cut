@@ -2,6 +2,26 @@
 
 用 AI 辅助完成真人知识口播、AI 教学和系统操作演示的剪辑，并按内容选用动画、流程图、数据对比与真人特效。保留你的原声和原意，让画面帮助观众听懂。
 
+## 先看 AI Cut 自己的特效与本人 Demo
+
+**这里不只有 MotionGit 官方示例，也有为 AI Cut 制作的真人特效，以及用 Isaac 本人素材完成的模板适配案例。**
+
+| 你要找的内容 | 直接入口 | 看什么 |
+|---|---|---|
+| **AI Cut 自制／适配真人特效（19 项）** | [19 项说明与源码](extensions/remotion-vd44/src/template-library/talking-head-effects/README.md) · [看本人效果 Demo](https://aicut.agi-top.com/#owner-demos) | 剪纸描边、人物破框、杂志封面、视频镂空字等；为本项目制作，部分复用第三方组件 |
+| **本人套用官方模板的案例** | [本人 Demo 展厅](https://aicut.agi-top.com/#owner-demos) | 同样使用 Isaac 本人的画面与内容，但效果来源仍是官方 MotionGit，不能当成原创模板 |
+| **官方与第三方模板目录** | [全部分类与逐项说明](templates/README.zh-CN.md) · [完整展厅](https://aicut.agi-top.com) | MotionGit、Remotion 等来源的效果，逐项说明素材、参数、接入状态与许可 |
+
+**只看上面的 19 项：**打开「本人 Demo」，再点击来源分类「真人口播特效」。本人 Demo 页面也包含套用官方模板的案例，所以“画面里是本人”不等于“模板是原创”。换成你的素材时，需要适配真人抠像、画幅和出现时间；这 19 项是效果分支，不是 19 套已通用化的 `.motion` 包。
+
+下面先看三个已有的本人特效节选，点击进入该项说明与完整 Demo：
+
+| 剪纸描边 | 杂志封面 | 人物破框 |
+|---|---|---|
+| [![本人剪纸描边效果](docs/template-gallery/demos/homepage/presenter-effect-04.gif)](templates/categories/talk.md#presenter-effect-04) | [![本人杂志封面效果](docs/template-gallery/demos/homepage/presenter-effect-08.gif)](templates/categories/talk.md#presenter-effect-08) | [![本人人物破框效果](docs/template-gallery/demos/homepage/presenter-effect-15.gif)](templates/categories/talk.md#presenter-effect-15) |
+
+## 从这里开始使用
+
 **本项目分成两部分：学习怎么剪辑，以及选择、使用特效模板。** 你可以从原片开始做一支完整视频，也可以只选一个效果，加入自己已有的剪辑工程。
 
 | 你想做什么 | 从这里开始 | 你会得到什么 |

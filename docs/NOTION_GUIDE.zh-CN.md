@@ -4,6 +4,22 @@ AI Cut 包含两部分：**学习 AI 怎样剪好一支知识口播**，以及**
 
 AI Cut 已开放下载：无需向讲师提交 GitHub 用户名、等待邀请或申请仓库权限。浏览、下载 ZIP 和 HTTPS clone 均可直接进行；剪辑工具仍使用你自己的账号。
 
+## 先看 AI Cut 自己的特效与本人 Demo
+
+这里不只有 MotionGit 官方示例。先分清三类，就容易找到你想用的效果：
+
+| 内容 | 直接入口与说明 |
+| --- | --- |
+| **AI Cut 自制／适配真人特效（19 项）** | [19 项说明与源码](https://github.com/Isaac3113/ai-cut/blob/main/extensions/remotion-vd44/src/template-library/talking-head-effects/README.md)：包括剪纸描边、人物破框、杂志封面等，为本项目制作，部分复用第三方组件 |
+| **本人套用官方模板的案例** | [打开本人 Demo 展厅](https://aicut.agi-top.com/#owner-demos)：画面与内容使用 Isaac 本人的素材，效果来源仍是官方 MotionGit，不改称原创 |
+| **官方与第三方模板目录** | [全部分类与逐项说明](https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md)：按用途选择 MotionGit、Remotion 等来源的效果，并核对素材、参数、接入状态与许可 |
+
+**只看 19 项真人特效：**打开[本人 Demo](https://aicut.agi-top.com/#owner-demos)，再点击来源分类「真人口播特效」。本人 Demo 也包含套用官方模板的案例，“画面里是本人”不等于“模板是原创”。
+
+使用时换成你自己的素材，并适配真人抠像、画幅和出现时间。这 19 项是效果分支，不是 19 套已通用化的 `.motion` 包；看得到 Demo 与能在你的新视频上使用，需要分别检查。
+
+## 选择你的学习入口
+
 | 你想完成什么 | 从哪里开始 |
 | --- | --- |
 | 学习自动剪辑：从原片到成片 | 按本页第一至第六节准备工具、安装 Skill，用 20～30 秒口播试剪；再学习修改和更新 |
