@@ -16,6 +16,13 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 - Keep editing and validation records in local work. From 2026-10-31, this owner's formal delivery is the unified AI video library, not the old 05_成片/最新版. Inside each mapped work, create 参考图 and AI 成片 only when files exist; existing SRT or other subtitle files stay at the work root. Do not generate subtitles or empty categories merely for archiving. Any separately requested marketing text remains with that task's working materials, outside the media library; it is not a required public editing deliverable. Validate a replacement before updating the same work; preserve original footage, assets, recovery dependencies and the active editing project. See final-delivery.md, project-storage.md and KB34. Follow the current repository visibility and public-release scope below.
 - For the owner’s current cover and ending, read skill/ai-cut/references/intro-outro.md: 0.1-second cover and the supplied fixed outro; use docs/CROSS_COMPUTER_UPDATE.md for safe rule/media handoff.
 
+## 功能与Skill归属（2026-11-06）
+
+- 适合所有使用者的AI Cut通用功能、剪辑规则、模板和本机成片交付，统一维护在公开`ai-cut`仓库。
+- 维护者本人AI Cut专属的私人Skill及个性化业务接续，统一维护在独立PRIVATE仓库`ai-cut-private`，不放入本公开仓库、公开安装器或学员包，也不成为公开剪辑的必需依赖。
+- 新增或修改Skill前先判断归属；可复用部分与个人业务设置混合时分别维护，不为了方便将整套私人流程放回公开项目。与AI Cut无关的私人Skill继续归其所属项目，不把所有私人Skill都集中到AI Cut仓库。
+- 私人账号配置、凭据、原片、成片、缓存和任务回执保留各自位置，不因Skill源码归类而搬入Git。
+
 ## 公开版范围与本机交付（2026-11-06）
 
 - 公开AI Cut负责自动剪辑、字幕、模板与效果、封面以及本机成片交付；默认流程到实际视频和相关本机文件交付结束。剪辑完成或用户认可不自动启动云端归档、建草稿或发帖。
