@@ -1,5 +1,7 @@
 # 文件与数据
 
+2026-11-06本人要求：按[visual-storytelling](visual-storytelling.md)执行正文逐秒实际相关动画。下方visual_rhythm.enforce的5.001秒阈值是现有程序的历史事件间隔合同，不是当前审美通过标准；它不能检测每秒动画是否有意义，也不替代真实输出审阅。本次规则变更不修改冻结项目数据、缓存ID或宣称程序已有新检测能力。
+
 `project.json` 保存 source、transcript、assets、plan、revision、fixture、style_approval、delivery。历史 `history/r000001.json` 为完整快照。输入文件按 SHA256 命名保存；禁止原地编辑受管理文件。项目没有数据库和外部后台。
 
 转写导入最小结构（时间单位为秒）：
