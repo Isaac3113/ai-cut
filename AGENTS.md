@@ -19,7 +19,8 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 ## 剪辑交付与独立发布Skill衔接（2026-11-06）
 
 - `ai-cut`负责剪辑、两比例封面及成品审核；Facebook文案必须调用当前可用的`fb-content`，按ADDA新写AD并保持所选固定DA原文，依据本版字幕和必要画面，不按标题编事实。视频仍用本条已确认比例，不因发布强制改9:16；封面为16:9、9:16各一张，旧五项／三封面包仅作历史或另有明确要求时使用。
-- 只有用户要求Google Drive归档、Marketing OS入库或发布时，才接到独立[video-publish](skill/video-publish/SKILL.md)及[发布SOP](skill/video-publish/references/sop.md)。先核对本版路径／哈希、认可范围和本条授权；具体Drive根、账号、负责人、时区和当前三链接首评读取仓库外Project Hub的`发布流程/owner-profile.json`，不把私人ID或配置拷入公开仓库。其他使用者配置自己的目标，不继承本人的账号权限。
+- 用户明确要求归档／入库，或本人私人配置启用`handoff.auto_prepare_after_all_deliverables_approved`且本条视频、两封面和已交付文案全部认可时，接到独立[video-publish](skill/video-publish/SKILL.md)及[发布SOP](skill/video-publish/references/sop.md)，自动准备Drive和Content Management OS草稿，不重复问是否开始准备。仅剪完、局部认可或只改一项不扩大范围；新平台适配稿在草稿阶段审核，发布始终须本条明确指令。具体Drive根、账号、时区和当前首评读私人`发布流程/owner-profile.json`，不公开私人ID；其他使用者不继承本人的自动上传配置或账号权限。
+- 所有发布提交和获准恢复统一从Content Management OS操作；AGI TOP／HighLevel Social Planner只读核对原帖历史与结果，不新建、Clone、提交、排程、重试或补评。Content OS不可用或结果不明，也不能改走AGI TOP再发一次。
 - 已认可正文不在发布时顺手改写。FB／IG共用与TikTok独立短稿按本条实际内容和平台限制分别判断；hashtag与平台限制冲突先说明并确认，不偷偷删标签或挪入首评。首评只用个人配置当前system、solutions、testimonials三项原文，不回退旧链接，不夹带音乐／许可／来源说明；制作与许可记录仍保留工作区。
 - 成品认可、草稿保存和发布授权分别记录；本条已有明确发布账号、内容与时机的授权直接沿用，最新“立即发布”覆盖旧排程。提交超时、返回未知或pending时先逐账号核查现有任务／帖子和结果，不报成功、不把五账号全部重发；实际保存、提交、发布与首评成功分别核对。
 
