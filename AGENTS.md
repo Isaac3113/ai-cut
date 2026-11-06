@@ -16,6 +16,13 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 - Keep editing and validation records in local work. From 2026-10-31, this owner's formal delivery is the unified AI video library, not the old 05_成片/最新版. Inside each mapped work, create 参考图 and AI 成片 only when files exist; existing SRT or other subtitle files stay at the work root. Do not generate subtitles or empty categories merely for archiving. Facebook/Xiaohongshu copy and the fixed first comment remain at the existing working-materials entry and in chat, outside the library. Validate a replacement before updating the same work; preserve original footage, assets, recovery dependencies and the active editing project. See final-delivery.md, project-storage.md and KB34. Follow the current repository visibility and public-release scope below.
 - For the owner’s current cover and ending, read skill/ai-cut/references/intro-outro.md: 0.1-second cover and the supplied fixed outro; use docs/CROSS_COMPUTER_UPDATE.md for safe rule/media handoff.
 
+## 剪辑交付与独立发布Skill衔接（2026-11-06）
+
+- `ai-cut`负责剪辑、两比例封面及成品审核；Facebook文案必须调用当前可用的`fb-content`，按ADDA新写AD并保持所选固定DA原文，依据本版字幕和必要画面，不按标题编事实。视频仍用本条已确认比例，不因发布强制改9:16；封面为16:9、9:16各一张，旧五项／三封面包仅作历史或另有明确要求时使用。
+- 只有用户要求Google Drive归档、Marketing OS入库或发布时，才接到独立[video-publish](skill/video-publish/SKILL.md)及[发布SOP](skill/video-publish/references/sop.md)。先核对本版路径／哈希、认可范围和本条授权；具体Drive根、账号、负责人、时区和当前三链接首评读取仓库外Project Hub的`发布流程/owner-profile.json`，不把私人ID或配置拷入公开仓库。其他使用者配置自己的目标，不继承本人的账号权限。
+- 已认可正文不在发布时顺手改写。FB／IG共用与TikTok独立短稿按本条实际内容和平台限制分别判断；hashtag与平台限制冲突先说明并确认，不偷偷删标签或挪入首评。首评只用个人配置当前system、solutions、testimonials三项原文，不回退旧链接，不夹带音乐／许可／来源说明；制作与许可记录仍保留工作区。
+- 成品认可、草稿保存和发布授权分别记录；本条已有明确发布账号、内容与时机的授权直接沿用，最新“立即发布”覆盖旧排程。提交超时、返回未知或pending时先逐账号核查现有任务／帖子和结果，不报成功、不把五账号全部重发；实际保存、提交、发布与首评成功分别核对。
+
 ## 本人视觉叙事与封面变化（2026-11-06）
 
 - 最新认可：用户已明确认可 AIVD-034 第二版的完整知识流程讲解及16:9、9:16封面，作为以后同类口播的质量标准。新会话制作前必读 [user-preferences.md](skill/ai-cut/references/user-preferences.md) 和 [visual-storytelling.md](skill/ai-cut/references/visual-storytelling.md)，不能回退到首版贴纸堆叠或旧3～5秒变化要求。本次只记录认可，不再修改该成片或封面；认可不等于社媒发布授权，也不补写未做的连续视听QA。

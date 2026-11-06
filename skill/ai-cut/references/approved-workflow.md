@@ -42,7 +42,7 @@
 | 6D | 有电脑实操：practical-demo → practical-renderer（本地素材制作） | 配真实屏幕目标、约3秒重点锚点与独立SFX，中间仍逐秒有相关动态；产物回第7步ChatCut主时间轴；无实操跳过 |
 | 7 | chatcut:asset-import → 主时间轴合成 | 导入真实渲染出的无声动画；添加人物/字幕及独立人声、BGM、逐事件SFX |
 | 8 | quality → video-use（需要局部检查时）→ chatcut:verification → export | 检查实际合成、正式导出、检查真实 MP4；按官方先后操作 |
-| 9 | final-delivery → social-delivery → 可用的facebook-copywriter / xiaohongshu-copywriter | 最终TXT写各一篇，AIDA不标注、小红书分步分享；事实审核、三段分组、一键复制 |
+| 9 | final-delivery → social-delivery → fb-content / 适用的小红书写作能力 | 本版TXT写各一篇；Facebook按fb-content的ADDA写AD、固定DA原样保留，AD三段分组；小红书分步分享；事实审核、一键复制 |
 | 9A | cover-prompt-worker → 可用的image-prompt-designer → 内置imagegen | 两平台分别审Prompt、生图及看图；Facebook沿用认可方案，小红书3:4；适合片内比例的封面入唯一时间轴并重读字幕 |
 | 10 | final-delivery → export_final_subtitles.py → manual-editing | 交付TXT/SRT、完整说明与逐秒/逐帧数据；核对正确可见版本 |
 | 11 | package_social_delivery.py build → audit | 五项（小红书竖版另加4:3横版）、复制文件、制作依据与同版视频绑定，按平台整理；封面比例不决定视频数量 |

@@ -2,6 +2,8 @@
 
 GitHub同步本仓库代码、Skill与技术说明；OneDrive同步Project Hub资料和私人媒体；ChatCut保存在线主时间轴。三者分别核对，`git pull`不等于视频、依赖、账号或Skill安装已经同步。
 
+2026-11-06新增独立发布技能 `video-publish`：安全更新源码后，按[安装说明](INSTALL_SKILLS.md#剪辑后的归档与发布video-publish)执行 `scripts/install_skill.py --skill video-publish`。自己的 Drive、账号、首评等从公开仓库外的 `owner-profile.json` 读取，或由 `VIDEO_PUBLISH_PROFILE` 指定；配置与登录分别准备。`ai-cut` 仅接到该入口，不因换电脑或安装而开始上传／发布。当前仓库公开可读；下方有日期的 private 验证要求仅属于旧记录。
+
 ## 三个位置先分清（2026-10-31）
 
 | 位置 | 当前职责 |

@@ -12,6 +12,8 @@
 
 # Start here
 
+2026-11-06：[KB36 剪辑交付、Drive与发布](36_Video_Drive_And_Publishing.md)说明独立`video-publish`与AI Cut的衔接、FB Content正确写法、个人配置、真实发布回执与防重复提交；操作唯一入口为[完整SOP](../../skill/video-publish/references/sop.md)。
+
 2026-11-06后续认可：AIVD-034第二版视频及两比例封面已获用户明确认可；未来知识口播正文每秒有实际内容相关动效，提到Facebook／IG等配正确可用icon，本条保持原样。当前标准见[用户偏好](../../skill/ai-cut/references/user-preferences.md)与[画面执行及平台图标](../../skill/ai-cut/references/visual-storytelling.md)。
 
 2026-11-06：[知识讲解的流程画面与封面变化](31_Template_Center_And_Editing_Routes.md#2026-11-06知识讲解的流程画面与封面变化)说明为什么贴纸覆盖不等于流程讲清楚，以及如何按原声组织步骤、分支、资料传递与状态；同品牌的新封面也应改变创意和构图。

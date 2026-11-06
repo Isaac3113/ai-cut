@@ -58,6 +58,8 @@
 
 [首片详细流程与局部修改](docs/NOTION_GUIDE.zh-CN.md) · [常见问题](docs/GETTING_STARTED.zh-CN.md) · [已有安装怎样更新](docs/CROSS_COMPUTER_UPDATE.md)
 
+**剪辑完成后还要归档与发布？** 可另装 [`video-publish`](skill/video-publish/SKILL.md)，按[完整 SOP](skill/video-publish/references/sop.md)完成 Google Drive 媒体归档、Marketing OS 草稿、用户审阅与获准后的多账号发布。它与 `ai-cut` 分工：剪辑、文案、账号配置和发布授权分别核对；安装 Skill 不会后台自动发帖，也不附带讲师的账号或个人配置。见[安装与配置](docs/INSTALL_SKILLS.md#剪辑后的归档与发布video-publish)。
+
 ## 二｜选择和使用特效模板
 
 官方模板目录面向所有行业：每次目录更新都核对全部官方公开条目与分类，不只收录适合讲师本人或知识口播的部分。行业、知识、产品、艺术等原分类会保留；剪某支视频时才从全库按内容选用。当前显示的是已登记快照，未接入或尚未开放的模板会标明状态，不能把目录齐全理解为全部原包已下载或验证。详见[全库收录规则](skill/ai-cut/references/template-lifecycle.md#官方全库收录与分类2026-11-03)。

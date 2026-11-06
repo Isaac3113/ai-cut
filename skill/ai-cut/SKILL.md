@@ -26,7 +26,8 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 | 长访谈／Zoom切片 | [长访谈策划](references/long-form-clips.md) |
 | Logo、同源人像与素材 | [品牌和动态圆窗](references/brand-and-presenter.md)、[画面执行](references/visual-storytelling.md) |
 | 片头片尾、封面和交付 | [固定片头片尾](references/intro-outro.md)、[封面提示词员工](references/cover-prompt-worker.md)、[精简交付](references/final-delivery.md) |
-| 文案、hashtag与发布 | [社媒流程](references/social-delivery.md) |
+| 文案、hashtag与成品审核 | [社媒交付](references/social-delivery.md)；Facebook调用当前可用的`fb-content` Skill |
+| 已认可视频的Google Drive归档、Marketing OS入库或发布 | 用户要求这些操作时转交独立[video-publish](../video-publish/SKILL.md)，完整步骤读其[发布SOP](../video-publish/references/sop.md) |
 | 验收、局部修改与恢复 | [质量检查](references/quality.md)、[工程恢复](references/manual-editing.md) |
 | 本机执行／数据方案 | [操作手册](references/operations.md)、[编辑判断](references/editorial.md)、[数据合同](references/data-contract.md) |
 | 项目编号、命名与位置 | [项目存放](references/project-storage.md) |
@@ -86,6 +87,8 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 
 运行适用的visual-contract、速度、帧数、声音与字幕检查，读取报告中的实际状态；已知检查器画幅／例外缺口不能靠补造圆窗、改固定片尾或伪填通过解决。full_watch／full_listen／full_captions／privacy／color／overall绑定本版证据，恢复工程后另行验证代表片段。公开分发与内部可恢复资料按实际权限分开。
 
-完成后直接展示两篇文案、用户确认比例的视频及16:9／9:16实际封面。文案各至少10个不同hashtag，固定5个标签原文及Google关键词依据按social-delivery；不虚构搜索量。成品全部确认后才准备AGI Top的Facebook／IG／TikTok草稿，回读账号、内容、视频、封面与固定首评，再获本条明确post授权才发布；不使用YouTube、不自动排程，已有确认不重复问。
+完成后直接展示两篇文案、用户确认比例的视频及16:9／9:16实际封面。Facebook必须调用可用的`fb-content`，按ADDA只新写AD并原样追加所选固定DA；AD每三自然段一组，不改DA排版。文案各至少10个不同hashtag，固定5个标签原文、Google关键词依据及平台限制冲突按social-delivery；不虚构搜索量。
+
+剪辑完成或成品认可不自动启动上传、排程或发布。用户明确要求Google Drive归档、Marketing OS入库或发布时，转交独立`video-publish`；优先读已安装入口，未安装时从`CODE_ROOT/skill/video-publish/SKILL.md`及其`references/sop.md`读取。交接本版媒体与封面路径、哈希、字幕／文案、已确认比例、认可范围及本条发布授权。沿用已认可正文和本条选择的时机，不在发布中擅改；具体账号与最新三链接首评从仓库外个人配置读取。FB／IG仅在内容与限制都适合时共用，TikTok按实际限制准备独立短稿，改稿先获确认。提交后按账号回读结果，未知／pending不能报成功或触发全账号重发；完整状态与恢复由发布SOP维护。
 
 新规则保存、Skill安装、测试、实际导出、Git同步和用户认可分别报告。默认不移动或删除既有源码；技术知识库只维护在Active Repo，OneDrive保留资料与交付入口。换电脑读仓库`docs/CROSS_COMPUTER_UPDATE.md`，先保护本地修改并安全pull，媒体与账号授权独立准备。
