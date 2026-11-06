@@ -6,7 +6,7 @@
 
 ## 三个位置，一条权威时间轴
 
-- `CODE_ROOT`：OneDrive之外、本次实际选定的Active Git Repo。按本Skill的`scripts/run.py`现有机制解析：先取`AI_CUT_ROOT`，未设置时兼容旧变量`TALKING_HEAD_EDITOR_ROOT`，再取已安装Skill的`installation.json.source_root`，最后从该入口所在目录向上查找同时含`pyproject.toml`与`src/talking_head_editor`的源码根；找不到就明确报错。本用户当前电脑已核对的Active Repo为`C:\Codex Workspace\ai-cut`；`AI-Talking-Head-Editor`属于历史维护路径，不能据此覆盖当前安装。此处只记录本机现状，跨电脑仍按实际checkout及安装记录定位。源码、总Skill源码、技术知识库、动画源工程、.git、.venv、node_modules、模型、缓存和实际剪辑工作目录在所选根内；代码经private GitHub同步。
+- `CODE_ROOT`：OneDrive之外、本次实际选定的Active Git Repo。按本Skill的`scripts/run.py`现有机制解析：先取`AI_CUT_ROOT`，未设置时兼容旧变量`TALKING_HEAD_EDITOR_ROOT`，再取已安装Skill的`installation.json.source_root`，最后从该入口所在目录向上查找同时含`pyproject.toml`与`src/talking_head_editor`的源码根；找不到就明确报错。本用户当前电脑已核对的Active Repo为`C:\Codex Workspace\ai-cut`；`AI-Talking-Head-Editor`属于历史维护路径，不能据此覆盖当前安装。此处只记录本机现状，跨电脑仍按实际checkout及安装记录定位。源码、总Skill源码、技术知识库、动画源工程、.git、.venv、node_modules、模型、缓存和实际剪辑工作目录在所选根内；代码经当前项目自己的Git仓库同步；AI Cut公开仓库可直接读取，不需要讲师私人仓库权限。
 - `PROJECT_HUB`：本用户OneDrive资料Hub `Project-AI Cut`。原片、素材、参考、品牌公共素材、现有发布文案及旧工程入口继续原位保留；04只记录本机工程入口。旧05属于历史来源，停止作为新交付默认。不把新作品库配置误填为project_hub，否则旧目录助手会再拼一层“视频项目”。
 - `DELIVERY_LIBRARY`：本用户正式媒体交付根为`C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库`。先读其父目录AGENTS.md、素材索引.md与本机`runtime.local.json.delivery_registry`指向的当前映射；历史迁移映射按日期保留，不作为永远固定的下一号来源。作品内仅非空`参考图`、`AI 成片`和根目录已有且匹配当前视频的字幕；不放源码、依赖、工程、日志、发布素材或说明目录，不为归档新增字幕。归档复制记录放外部04整理记录或本机work，工程入口由素材索引关联原Hub。
 - 技术知识库只有CODE_ROOT/03_Documentation/Knowledge_Base一份正式维护位置；Hub记录链接，不另维护同步副本。可供分享的固定ZIP/阅读导出不属于第二份Active Repo。

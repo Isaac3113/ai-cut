@@ -6,7 +6,7 @@ from pathlib import Path
 from talking_head_editor.util import ROOT, file_hash, atomic_json, require
 
 p=argparse.ArgumentParser()
-p.add_argument("--skill", choices=("ai-cut", "video-publish"), default="ai-cut")
+p.add_argument("--skill", choices=("ai-cut",), default="ai-cut")
 p.add_argument("--target",type=Path)
 a=p.parse_args(); source=ROOT/"skill"/a.skill
 target=(a.target or Path.home()/".codex/skills"/a.skill).resolve()

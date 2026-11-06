@@ -12,7 +12,7 @@
 
 # Start here
 
-2026-11-06：[KB36 剪辑交付、Drive与发布](36_Video_Drive_And_Publishing.md)说明独立`video-publish`与AI Cut的衔接、FB Content正确写法、个人配置、真实发布回执与防重复提交；操作唯一入口为[完整SOP](../../skill/video-publish/references/sop.md)。
+2026-11-06：[KB36 公开剪辑与私人业务流程的边界](36_Video_Drive_And_Publishing.md)说明公开AI Cut以本机成片交付结束，不安装或要求讲师的云盘、营销文案及发布系统；私人业务接续由创作者自己的独立环境维护。
 
 2026-11-06后续认可：AIVD-034第二版视频及两比例封面已获用户明确认可；未来知识口播正文每秒有实际内容相关动效，提到Facebook／IG等配正确可用icon，本条保持原样。当前标准见[用户偏好](../../skill/ai-cut/references/user-preferences.md)与[画面执行及平台图标](../../skill/ai-cut/references/visual-storytelling.md)。
 

@@ -1,4 +1,0 @@
-interface:
-  display_name: "视频归档与发布"
-  short_description: "剪辑后归档到 Drive、准备发布草稿，确认后发布并逐账号核对结果"
-  default_prompt: "用 $video-publish 处理这条已剪辑视频，从 Drive 归档、发布素材和草稿开始，给我审阅后再按我的明确指令发布。"

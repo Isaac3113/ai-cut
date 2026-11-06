@@ -60,4 +60,4 @@ video-use只通过已审阅的scripts/video_use_review.py使用。包装使用�
 总入口 → [完整执行顺序](approved-workflow.md)与当前预设 → 已选工具基础Skill → 内容粗剪 → 画面选材 → 原生重点字/HyperFrames/Remotion的对应分支 → 统一合成 → 实际导出验收 → 可见版本交付。每个分支的名字、职责和产物在approved-workflow逐项列出，不要求每步把全部小Skill加载一遍。
 ## 发布素材补充（工作流0.2.7）
 
-总Skill按[social-delivery](social-delivery.md)调度两平台文案和封面。可用的facebook-copywriter、xiaohongshu-copywriter、image-prompt-designer作为专业参考，当前Codex按本页自包含规则也可执行；图片仍用真实imagegen。package_social_delivery.py只整理/检查已完成的五项（两篇文案、Facebook封面、小红书竖版及4:3横版），新包schema 2；旧包仅显式历史审计，不写文案、不生图、不代替事实或看图验收、不发布内容。学员不用安装讲师的私人内容工厂插件。
+总Skill按[social-delivery](social-delivery.md)交付本机真实成片、所需封面和已有对应字幕。附加文案仅在本条明确要求时准备，按用户自己的品牌、素材和目标使用可用写作能力，不要求讲师的私人插件；图片仍用真实imagegen。package_social_delivery.py保留历史完整包能力，只整理／检查已有输入（两篇文案及三张指定封面），不作为默认剪辑步骤；旧包仅显式历史审计。它不写文案、不生图、不代替事实或看图验收，也不发布内容。

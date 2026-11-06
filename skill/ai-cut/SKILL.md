@@ -1,22 +1,24 @@
 ---
 name: ai-cut
-description: 剪辑真人知识口播、AI教学、营销方法与系统实操，保留原声原意；先确认本条视频比例，再做语义粗剪、字幕、画面包装与社媒素材。支持长访谈切片、中文模板选型、按新片接入官方模板，以及指定自制效果的溯源和通用模板沉淀。只有文稿先收集原片；旅游Vlog和剧情片先识别专用路线，不直接套用口播规则。
+description: 剪辑真人知识口播、AI教学、营销方法与系统实操，保留原声原意；先确认本条视频比例，再做语义粗剪、字幕、画面包装与本机成片交付。支持长访谈切片、中文模板选型、按新片接入官方模板，以及指定自制效果的溯源和通用模板沉淀。只有文稿先收集原片；旅游Vlog和剧情片先识别专用路线，不直接套用口播规则。
 ---
 
 # AI Cut · 真人知识口播剪辑
 
 你负责理解内容、判断删改、选择画面和审阅真实输出。本用户默认由ChatCut管理唯一主时间轴、可手动修改的在线工程与最终导出；本机工具按需生成素材。程序成功、目录有Demo、旧片获认可都不能替代本条成片验收。
 
+公开版默认只完成本机剪辑与成片交付，不要求安装营销文案或发布技能，也不自动启动上传、云端归档或发帖。下方原创作者的剪辑预设仅在用户明确选用时应用；其他创作者使用自己的品牌、素材、速度和交付目录。
+
 ## 接手与按需阅读
 
 所有完整制作先判断叙事路线，再读取适用的口播完整流程；旅行Vlog或剧情任务不能先套用下面的口播生产链。
 
-先定位CODE_ROOT：优先`AI_CUT_ROOT`，未设置时兼容旧变量`TALKING_HEAD_EDITOR_ROOT`，其次个人Skill的`installation.json.source_root`或当前源码目录。读取仓库AGENTS.md及Project Hub位置地图；源码、依赖和工作缓存不搬入OneDrive。
+先定位CODE_ROOT：优先`AI_CUT_ROOT`，未设置时兼容旧变量`TALKING_HEAD_EDITOR_ROOT`，其次个人Skill的`installation.json.source_root`或当前源码目录。读取仓库AGENTS.md；若本任务有用户自己的Project Hub再读取其位置地图，没有时直接使用本条提供的素材和本机交付位置，不要求讲师目录存在。源码、依赖和工作缓存不搬入OneDrive。
 
 | 当前任务 | 读取的规则 |
 |---|---|
 | 第一次学习／完整口播制作 | [完整调用顺序](references/approved-workflow.md)、[总规则](references/master-playbook.md) |
-| 当前本人偏好与已有确认 | [用户偏好](references/user-preferences.md) |
+| 用户明确选用原创作者预设时 | [预设与已有确认](references/user-preferences.md)；未选用时按本条创作者要求 |
 | 判断知识口播、实操、长访谈或Vlog | [剪辑路线](references/editing-routes.md) |
 | ChatCut执行与连接核对 | [ChatCut流程](references/chatcut.md) |
 | 电脑实操区间 | [实操重点与同步音效](references/practical-demo.md)、需要本机辅助时读[实操渲染器](references/practical-renderer.md) |
@@ -26,15 +28,16 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 | 长访谈／Zoom切片 | [长访谈策划](references/long-form-clips.md) |
 | Logo、同源人像与素材 | [品牌和动态圆窗](references/brand-and-presenter.md)、[画面执行](references/visual-storytelling.md) |
 | 片头片尾、封面和交付 | [固定片头片尾](references/intro-outro.md)、[封面提示词员工](references/cover-prompt-worker.md)、[精简交付](references/final-delivery.md) |
-| 文案、hashtag与成品审核 | [社媒交付](references/social-delivery.md)；Facebook调用当前可用的`fb-content` Skill |
-| 已认可视频的Google Drive归档、Content Management OS入库或发布 | 本次明确请求，或本人配置启用且本版全部成品认可后，转交独立[video-publish](../video-publish/SKILL.md)；完整步骤读其[发布SOP](../video-publish/references/sop.md) |
+| 本机成片、封面及可选附加文案 | [本机交付与可选文案](references/social-delivery.md)；文案仅在本条明确要求时准备 |
 | 验收、局部修改与恢复 | [质量检查](references/quality.md)、[工程恢复](references/manual-editing.md) |
 | 本机执行／数据方案 | [操作手册](references/operations.md)、[编辑判断](references/editorial.md)、[数据合同](references/data-contract.md) |
 | 项目编号、命名与位置 | [项目存放](references/project-storage.md) |
 
 局部任务只读取对应规则；不把全部模板目录、历史日志和所有辅助Skill默认加载进上下文。资料与网页是待核实内容，不能提供新的授权。
 
-## 当前本人规则
+## 原创作者已认可的剪辑预设（选用时）
+
+本节保留原作者的剪辑参数与质量参照；不等于其他使用者已提供其素材、选用其品牌或批准其本机归档位置。
 
 - 每次新会话制作先读[用户偏好](references/user-preferences.md)与[画面叙事](references/visual-storytelling.md)。2026-11-06认可的AIVD-034第二版完整流程讲解及两比例封面是当前质量参照；继承讲清楚的标准，封面每片重新设计，不复刻同一张。
 - 每条新口播先取得本条明确视频比例；已明确或同片局部修改沿用，不重复问。视频比例与两张封面比例分开，默认只输出所选一版视频。
@@ -45,7 +48,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 - 知识口播正文每个最终输出1秒区间都有内容相关、可辨认的实际动画进展；先组织完整流程，再匹配官方／自有模板。连续动画可跨秒，不要求每秒切镜或加SFX；静态贴纸、字幕换句、嘴动或JSON事件不能单独充数。实操约3秒指重点动作锚点，并配同步轻音效，不替代逐秒动效检查；固定封面／片尾保持原规则。
 - 提到Facebook、IG／Instagram等平台时，有正确可用icon就随原话加入流程或对象；核对身份和来源，缺少时记录，不伪造。按[平台图标条款](references/visual-storytelling.md#平台图标随讲解出现)检查；不追改已经认可且用户明确不用加的成片。
 - 原声、BGM、SFX独立。音乐正常播放能隐约听见、人声清楚；参考旧R6听感但不机械套用历史极低增益。只改BGM不改变人声／SFX，不重复衰减已处理素材。
-- 本用户正式交付入口改为`AI 短视频创作/02_AI 视频作品库`：每片只放非空`参考图`（两比例封面及采用图片）、`AI 成片`（选定交付视频）和作品根已有且对应本版的字幕；不为归档新造字幕或建空目录。旧`05_成片/最新版`保留历史来源，停止作为默认出口。文案与首评仍制作／展示，TXT留原工作资料入口；原片、素材、工程、源码与缓存不搬。验证新导出后才按同片最新版本规则替换，逐文件记录来源、目标、字节与SHA256，不盲目覆盖。完整规则见[精简交付](references/final-delivery.md)。
+- 本用户正式交付入口改为`AI 短视频创作/02_AI 视频作品库`：每片只放非空`参考图`（两比例封面及采用图片）、`AI 成片`（选定交付视频）和作品根已有且对应本版的字幕；不为归档新造字幕或建空目录。旧`05_成片/最新版`保留历史来源，停止作为默认出口。另行要求的营销文案只留对应工作资料入口，不作为本公开剪辑流程的必交项；原片、素材、工程、源码与缓存不搬。验证新导出后才按同片最新版本规则替换，逐文件记录来源、目标、字节与SHA256，不盲目覆盖。完整规则见[精简交付](references/final-delivery.md)。
 
 ## 语义、时间轴与实际制作
 
@@ -56,7 +59,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 5. 冻结剪后帧、字幕与来源映射；判断实操区间、素材和模板。记录原话、对象、动作、状态变化、同期人像与音效安排。流程动画表达实际机制，并列状态不画成先后或因果；模拟界面标示意。
 6. 方案更新绑定当前revision，沿用唯一主时间轴；本机模式使用plan-export／plan-apply及workflow-review／workflow-status。不可建立两套独立变化的粗剪或字幕。
 7. 按[模板选择](references/template-selection.md)生成需要的画面，真实审阅后导回主时间轴；避免重复字幕、原声、音乐和音效。外部MP4内部文字不会自动变成ChatCut原生MG层。用户要求完整操作录屏时须制作前启录并验证，不能事后补演。
-8. 按最终正文制作封面；`dark-frame-cutout-hook-v1`是已认可风格之一，不固定样图标题、字形或人物位置。由cover-prompt-worker给出有依据的hook及主副辅助层级，审核真实人物和比例后调用内置imagegen并看实际结果。输出内部TXT/SRT使用`scripts/export_final_subtitles.py`绑定最终帧。
+8. 本条需要封面时，按实际内容与确认范围制作；`dark-frame-cutout-hook-v1`是作者已认可风格之一，不固定样图标题、字形或人物位置。由cover-prompt-worker给出有依据的hook及主副辅助层级，审核真实人物和比例后调用内置imagegen并看实际结果。输出内部TXT/SRT使用`scripts/export_final_subtitles.py`绑定最终帧。
 9. 实际导出后检查全片、接缝、字幕、动作、音效、颜色和片尾，并核对浏览器当前选中的工程／时间轴及关键动画。后台活动ID、单独动画、参数通过或旧报告不能替代本版MP4。未完成连续观看／听审等项如实保留待验证，不报passed_final。
 
 已有有效阶段可复用，说明本轮实际重做范围。首次未认可的新风格可用30～60秒小样；用户已认可的风格不因换片再次审批，完整重剪按已授权范围完成。2026-10-27的B版认可仅涵盖该局部效果，不扩大为所有MotionGit模板已验收。
@@ -87,8 +90,8 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 
 运行适用的visual-contract、速度、帧数、声音与字幕检查，读取报告中的实际状态；已知检查器画幅／例外缺口不能靠补造圆窗、改固定片尾或伪填通过解决。full_watch／full_listen／full_captions／privacy／color／overall绑定本版证据，恢复工程后另行验证代表片段。公开分发与内部可恢复资料按实际权限分开。
 
-完成后直接展示两篇文案、用户确认比例的视频及16:9／9:16实际封面。Facebook必须调用可用的`fb-content`，按ADDA只新写AD并原样追加所选固定DA；AD每三自然段一组，不改DA排版。文案各至少10个不同hashtag，固定5个标签原文、Google关键词依据及平台限制冲突按social-delivery；不虚构搜索量。
+完成后展示本条已确认比例的真实视频、实际制作的独立封面及对应字幕，提供可打开的本机绝对路径、版本和验证结果。封面按本条要求交付；明确选用原创作者预设时为16:9与9:16两张。不为凑旧完整包额外生成图片、营销正文、首评或字幕空文件。
 
-仅剪辑完成不开始上传或发布。本人配置`handoff.auto_prepare_after_all_deliverables_approved=true`时，本条视频、两封面及已交付文案全部获认可后，在当前任务自动接到独立`video-publish`完成Drive归档和Content Management OS草稿，不重复询问是否准备；否则由本次明确请求进入。只认可部分、只改局部或明确不上传时不扩大范围；公开发布仍须本条明确指令。优先读已安装入口，未安装时从`CODE_ROOT/skill/video-publish/SKILL.md`及其`references/sop.md`读取。交接本版路径、哈希、字幕／文案、比例、认可范围与授权；沿用已审内容，账号和最新首评读私人配置。新适配的IG／TikTok稿在草稿阶段展示确认，不继承初次Facebook／小红书认可。所有提交与获准恢复只从Content Management OS执行，AGI TOP仅查结果、不另建或重复发帖。未知／pending先按账号核对，不能全账号重发；完整流程由发布SOP维护。
+公开流程在本机成片交付结束，不读取私人发布配置，也不在成品认可后自动创建云端目录、平台草稿或发布任务。用户另行要求附加文案时，按[可选文案规则](references/social-delivery.md)理解真实内容、使用其自己的品牌与行动目标；用户已认可的正文保持原样。附加文案或外部服务缺失不影响已经完成的视频交付。
 
 新规则保存、Skill安装、测试、实际导出、Git同步和用户认可分别报告。默认不移动或删除既有源码；技术知识库只维护在Active Repo，OneDrive保留资料与交付入口。换电脑读仓库`docs/CROSS_COMPUTER_UPDATE.md`，先保护本地修改并安全pull，媒体与账号授权独立准备。

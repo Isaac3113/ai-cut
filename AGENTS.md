@@ -13,16 +13,14 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 - Run relevant regression tests for behavior changes. Preserve user files except for explicitly authorized cleanup; validate new exports before replacing superseded deliveries.
 - Update the project knowledge base for changes and teaching workflows. Use normal Git commits without rewriting existing histories.
 
-- Keep editing and validation records in local work. From 2026-10-31, this owner's formal delivery is the unified AI video library, not the old 05_成片/最新版. Inside each mapped work, create 参考图 and AI 成片 only when files exist; existing SRT or other subtitle files stay at the work root. Do not generate subtitles or empty categories merely for archiving. Facebook/Xiaohongshu copy and the fixed first comment remain at the existing working-materials entry and in chat, outside the library. Validate a replacement before updating the same work; preserve original footage, assets, recovery dependencies and the active editing project. See final-delivery.md, project-storage.md and KB34. Follow the current repository visibility and public-release scope below.
+- Keep editing and validation records in local work. From 2026-10-31, this owner's formal delivery is the unified AI video library, not the old 05_成片/最新版. Inside each mapped work, create 参考图 and AI 成片 only when files exist; existing SRT or other subtitle files stay at the work root. Do not generate subtitles or empty categories merely for archiving. Any separately requested marketing text remains with that task's working materials, outside the media library; it is not a required public editing deliverable. Validate a replacement before updating the same work; preserve original footage, assets, recovery dependencies and the active editing project. See final-delivery.md, project-storage.md and KB34. Follow the current repository visibility and public-release scope below.
 - For the owner’s current cover and ending, read skill/ai-cut/references/intro-outro.md: 0.1-second cover and the supplied fixed outro; use docs/CROSS_COMPUTER_UPDATE.md for safe rule/media handoff.
 
-## 剪辑交付与独立发布Skill衔接（2026-11-06）
+## 公开版范围与本机交付（2026-11-06）
 
-- `ai-cut`负责剪辑、两比例封面及成品审核；Facebook文案必须调用当前可用的`fb-content`，按ADDA新写AD并保持所选固定DA原文，依据本版字幕和必要画面，不按标题编事实。视频仍用本条已确认比例，不因发布强制改9:16；封面为16:9、9:16各一张，旧五项／三封面包仅作历史或另有明确要求时使用。
-- 用户明确要求归档／入库，或本人私人配置启用`handoff.auto_prepare_after_all_deliverables_approved`且本条视频、两封面和已交付文案全部认可时，接到独立[video-publish](skill/video-publish/SKILL.md)及[发布SOP](skill/video-publish/references/sop.md)，自动准备Drive和Content Management OS草稿，不重复问是否开始准备。仅剪完、局部认可或只改一项不扩大范围；新平台适配稿在草稿阶段审核，发布始终须本条明确指令。具体Drive根、账号、时区和当前首评读私人`发布流程/owner-profile.json`，不公开私人ID；其他使用者不继承本人的自动上传配置或账号权限。
-- 所有发布提交和获准恢复统一从Content Management OS操作；AGI TOP／HighLevel Social Planner只读核对原帖历史与结果，不新建、Clone、提交、排程、重试或补评。Content OS不可用或结果不明，也不能改走AGI TOP再发一次。
-- 已认可正文不在发布时顺手改写。FB／IG共用与TikTok独立短稿按本条实际内容和平台限制分别判断；hashtag与平台限制冲突先说明并确认，不偷偷删标签或挪入首评。首评只用个人配置当前system、solutions、testimonials三项原文，不回退旧链接，不夹带音乐／许可／来源说明；制作与许可记录仍保留工作区。
-- 成品认可、草稿保存和发布授权分别记录；本条已有明确发布账号、内容与时机的授权直接沿用，最新“立即发布”覆盖旧排程。提交超时、返回未知或pending时先逐账号核查现有任务／帖子和结果，不报成功、不把五账号全部重发；实际保存、提交、发布与首评成功分别核对。
+- 公开AI Cut负责自动剪辑、字幕、模板与效果、封面以及本机成片交付；默认流程到实际视频和相关本机文件交付结束。剪辑完成或用户认可不自动启动云端归档、建草稿或发帖。
+- 基础安装和剪辑不依赖任何个人营销系统、云盘目录、固定文案、账号或发布技能。用户明确要求附加文案时，依据本版实际内容、用户自己的品牌和目标完成；缺少附加写作工具不能阻断视频交付。
+- 下方以“owner／本人／本用户”标注的速度、品牌、片尾、命名和存放规则，是原创作者已有预设及历史依据。其他创作者只在明确选用时应用，使用自己的素材和本机交付位置，不需要建立讲师的目录或复制其账号授权。
 
 ## 本人视觉叙事与封面变化（2026-11-06）
 

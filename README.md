@@ -58,7 +58,7 @@
 
 [首片详细流程与局部修改](docs/NOTION_GUIDE.zh-CN.md) · [常见问题](docs/GETTING_STARTED.zh-CN.md) · [已有安装怎样更新](docs/CROSS_COMPUTER_UPDATE.md)
 
-**剪辑完成后还要归档与发布？** 可另装 [`video-publish`](skill/video-publish/SKILL.md)，按[完整 SOP](skill/video-publish/references/sop.md)完成 Google Drive 媒体归档、Marketing OS 草稿、用户审阅与获准后的多账号发布。它与 `ai-cut` 分工：剪辑、文案、账号配置和发布授权分别核对；安装 Skill 不会后台自动发帖，也不附带讲师的账号或个人配置。见[安装与配置](docs/INSTALL_SKILLS.md#剪辑后的归档与发布video-publish)。
+**公开版交付到本机成片。** AI Cut 提供自动剪辑、字幕、特效模板与封面制作，交付实际 MP4、本版已有字幕及所需封面到你指定的本机目录。使用它不需要 Google Drive、讲师的 Content Management OS、发布账号或私人 `fb-content` Skill。云盘归档及社媒发布属于创作者自行配置的独立工作，不随公开项目安装，也不会在你认可视频后自动开始。营销文案仅在你明确需要时按你的品牌和资料准备。
 
 ## 二｜选择和使用特效模板
 
@@ -2813,7 +2813,7 @@ python scripts/serve_template_gallery.py
 
 ## 从素材到成片
 
-原片与本条比例 → 转写及术语核对 → 语义粗剪 → 冻结最终时间 → 选择相关动画 → 唯一主时间轴合成 → 实际导出、观看和听审 → 封面与发布素材 → 用户确认。
+原片与本条比例 → 转写及术语核对 → 语义粗剪 → 冻结最终时间 → 选择相关动画 → 唯一主时间轴合成 → 实际导出、观看和听审 → 所需封面与本机成片交付 → 用户确认。
 
 本仓库创作者默认由 ChatCut 管理唯一主时间轴；Remotion、HyperFrames 和 MotionGit 按需制作外部画面素材。语音、音乐与音效分开，不能把静音动画 Demo 当成完整视频。
 
@@ -2865,9 +2865,9 @@ Set-Location ai-cut
 - `extensions/`：可分发的动画源码及其许可证；`scripts/`：执行、安装、目录与验收工具。
 - `03_Documentation/Knowledge_Base/`：技术知识库。`work/`、依赖和缓存留在本机，不随 Git 提交。
 
-本仓库所有者自2026-10-31起使用三个位置：Active Repo仍为 C:\Codex Workspace\ai-cut，放代码、Skill、技术KB、运行环境和工作缓存；旧Hub C:\Users\User\OneDrive\Documents\Codex Workspace\Project-AI Cut 保留原片、工作材料、发布资料与工程入口；正式交付进入 C:\Users\User\OneDrive\Documents\Codex Workspace\AI 短视频创作\02_AI 视频作品库。
+源码放在你自己的非同步代码目录，例如 `C:\Codex Workspace\ai-cut`；原片、工程、缓存和交付目录按你本次指定的位置分别保留。讲师自己的 OneDrive 作品库和编号只是个人资料组织示例，不是学员需要建立的目录。
 
-作品按全库统一的 AIVD-三位编号 - 主要制作来源 - 简短标题登记，先查新Hub索引与映射，不按旧口播编号新建同片。作品目录只放非空的参考图、AI 成片，以及项目根已有字幕；不为归档创建空目录或新增字幕。两张封面和最新视频继续制作与核验，Facebook／小红书文案、固定首评继续交付并留原工作入口，不放入作品库；报告、ZIP、缓存和可编辑工程也不搬入。具体边界、旧名兼容和当日编号状态见[统一作品库说明](03_Documentation/Knowledge_Base/34_Unified_Video_Library.md)与[当前交付规则](skill/ai-cut/references/final-delivery.md)，其他创作者按自己的明确约定。
+默认交付当前 MP4、本版已有字幕及明确需要的封面，提供可打开的本机路径；不为交付建立空目录、复制完整工作缓存或添加发布草稿。只在你明确请求时准备营销文案，使用你的品牌、产品事实和行动目标，不套用讲师固定 DA、标签或首评。详见[成片交付规则](skill/ai-cut/references/final-delivery.md)与[公开剪辑和私人业务流程的边界](03_Documentation/Knowledge_Base/36_Video_Drive_And_Publishing.md)。
 
 换电脑先保护本地工作并安全 pull，再分别核对 Skill、依赖、媒体和在线工程，见[换电脑说明](docs/CROSS_COMPUTER_UPDATE.md)。学习阅读顺序：[总 Skill](skill/ai-cut/SKILL.md) → [完整流程](skill/ai-cut/references/approved-workflow.md) → [质量检查](skill/ai-cut/references/quality.md)。
 
