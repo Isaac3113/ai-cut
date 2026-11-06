@@ -12,6 +12,8 @@
 
 # Start here
 
+2026-11-06：[知识讲解的流程画面与封面变化](31_Template_Center_And_Editing_Routes.md#2026-11-06知识讲解的流程画面与封面变化)说明为什么贴纸覆盖不等于流程讲清楚，以及如何按原声组织步骤、分支、资料传递与状态；同品牌的新封面也应改变创意和构图。
+
 2026-11-03：[AI Cut 双入口与模板说明](32_Homepage_And_Local_Gallery.md#2026-11-03-双入口与通用模板积累)记录中文定位、八类用途、七项说明和参数证据；[通用模板制作教学](../../docs/TEMPLATE_AUTHORING.zh-CN.md)区分自制效果、可复用源码与实际验证的 `.motion` 包。仓库网址和 Skill 调用名不变。
 
 2026-11-02: [KB35 AI Cut名称与路径](35_AI_Cut_Identity_And_Paths.md)说明当前统一品牌、技术兼容、改名回执与Vercel教学入口。

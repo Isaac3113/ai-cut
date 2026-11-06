@@ -16,6 +16,14 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 - Keep editing and validation records in local work. From 2026-10-31, this owner's formal delivery is the unified AI video library, not the old 05_成片/最新版. Inside each mapped work, create 参考图 and AI 成片 only when files exist; existing SRT or other subtitle files stay at the work root. Do not generate subtitles or empty categories merely for archiving. Facebook/Xiaohongshu copy and the fixed first comment remain at the existing working-materials entry and in chat, outside the library. Validate a replacement before updating the same work; preserve original footage, assets, recovery dependencies and the active editing project. See final-delivery.md, project-storage.md and KB34. Follow the current repository visibility and public-release scope below.
 - For the owner’s current cover and ending, read skill/ai-cut/references/intro-outro.md: 0.1-second cover and the supplied fixed outro; use docs/CROSS_COMPUTER_UPDATE.md for safe rule/media handoff.
 
+## 本人视觉叙事与封面变化（2026-11-06）
+
+- 用户纠正：知识讲解必须形成完整、可跟随的画面流程，不能以大量贴纸堆叠代替机制说明。“每一帧／每秒都有特效”指正文各段持续用画面表达当前原话中的对象、动作、关系和状态演进，不是每秒强切、不断弹跳或无意义炫技；固定片尾仍按既有规则保留。
+- 完整制作先按剪后原话建立视觉叙事，再逐段选官方与自有模板：同一对象跨步骤保持身份，条件与结果一起表达，顺序、分支和并列关系不能混淆。漂浮贴纸、字幕换字和微缩放可作辅助，不能单独作为已完成流程的证据。执行与检查见 [visual-storytelling.md](skill/ai-cut/references/visual-storytelling.md)。
+- 用户要求整条重做时，重审全片结构、模板覆盖和各段合成，不仅补几处动画；已确认的原声、语义、比例、速度及同源同步规则继续生效。模板选择充分比较当前官方和自有库，但不为凑模板数量虚构步骤或强塞不适合的效果。
+- 如上版只有局部套用官方模板，准确说明对应区间、机制、来源版本与自制部分；不得把少数官方片段、已登记Demo或浮动装饰包装成整片已采用官方流程模板。技术QA、连续视听与用户风格认可仍分别记录。
+- 每条封面保持品牌辨识度，同时重新设计hook、构图、字形层级、真实人物帧／姿态与画面组织；与最近封面对照，不能只换标题、颜色或把同一头像挪一点。人物姿态只能从真实原片选择，不生成新动作或替代脸。16:9与9:16分别排版并展示，详见 [cover-prompt-worker.md](skill/ai-cut/references/cover-prompt-worker.md)及[user-preferences.md](skill/ai-cut/references/user-preferences.md)。
+
 - Read the owner’s shared storage rules before moving a project. OneDrive is a documentation/media Hub, not an active source or runtime location. Keep the authoritative technical KB in the local Git repo and link it from PROJECT_STRUCTURE.md. Preserve other-computer checkpoints before removing legacy copies.
 
 ## Owner storage and identity (2026-10-31)
