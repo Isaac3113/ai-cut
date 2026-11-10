@@ -27,6 +27,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 | 询问效果来源／把指定效果做成通用模板 | [效果溯源与模板创作](references/template-authoring.md) |
 | 长访谈／Zoom切片 | [长访谈策划](references/long-form-clips.md) |
 | Logo、同源人像与素材 | [品牌和动态圆窗](references/brand-and-presenter.md)、[画面执行](references/visual-storytelling.md) |
+| 正文动态文字／作者当前无横线B风格 | [文字B源码、参数与适配](references/kinetic-type-b.md)；先读本条选择或作者预设，不替代知识流程 |
 | 片头片尾、封面和交付 | [固定片头片尾](references/intro-outro.md)、[封面提示词员工](references/cover-prompt-worker.md)、[精简交付](references/final-delivery.md) |
 | 本机成片、封面及可选附加文案 | [本机交付与可选文案](references/social-delivery.md)；文案仅在本条明确要求时准备 |
 | 验收、局部修改与恢复 | [质量检查](references/quality.md)、[工程恢复](references/manual-editing.md) |
@@ -41,6 +42,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 
 - 每次新会话制作先读[用户偏好](references/user-preferences.md)与[画面叙事](references/visual-storytelling.md)。2026-11-06认可的AIVD-034第二版完整流程讲解及两比例封面是质量参照。封面按2026-11-07选择流程：先展示基准01，再给9款不同设计，两张对比图各5款；满意保持，不满意并选定才替换。新片素材和hook对应本片，候选不能自动覆盖已选封面。
 - 每条新口播先取得本条明确视频比例；已明确或同片局部修改沿用，不重复问。视频比例与两张封面比例分开，默认只输出所选一版视频。
+- 作者本人2026-11-10起每集正文默认用[逐字动态排版B](references/kinetic-type-b.md)：文字有实际入场与持续运动，字幕底部不加装饰横线／进度线。新片按语义和构图适配，保留完整流程讲解、原声、可读性与人物安全区；固定封面／片尾不追加强制动效。此为可选作者预设，不强加其他创作者。
 - 口播主体及原声相对**原始视频绝对1.2倍一次**；新外部动画按最终时钟制作并以1.0倍插入，BGM保持自然速度。不能对已加速片再乘1.2。
 - 片内封面仅0.1秒，30fps为3帧，无淡入淡出。固定片尾使用用户原视频1.2倍一次，保留原设计与自带音轨，不叠旧头像卡、正文字幕、水印或圆窗。
 - 本用户2026-10-31起跨平台共用`AIVD-三位编号 - 主要制作来源 - 简短标题`。先查统一作品库、素材索引与项目映射；005、006预留，历史登记的下一号仅为当日快照，分配时重新核对当前索引与映射。旧片按完整旧名／原工程映射复用ID；原AIVD11为AIVD-027，不按裸旧号另建。同片重剪不换号、不改冻结缓存ID；来源沿主要制作来源，不因用Codex重剪而改写即梦／Higgsfield来源。详见[项目存放](references/project-storage.md)。

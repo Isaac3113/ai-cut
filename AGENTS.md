@@ -32,6 +32,8 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 
 ## 本人视觉叙事与封面变化（2026-11-06）
 
+- 2026-11-10本人后续每集正文默认使用逐字动态排版B，字幕底部不要装饰横线／进度线；详细规则唯一维护在[当前文字预设](skill/ai-cut/references/user-preferences.md)及[源码和适配说明](skill/ai-cut/references/kinetic-type-b.md)。保留完整流程图解与解释关系的连线，不把个人预设强加公开使用者。
+
 - 2026-11-07封面选择流程优先：先单独展示当前基准01，再给02—10九款不同设计；两张对比图各5款，顺序01—05、06—10。满意保持原封面，不满意并选定／要求新方案才替换；不能因生成候选自动改正式封面、片内封面或重导视频。新片基准沿用已选格式但内容与真实人物对应本片，候选多样性不强制替换满意成品。最终仍交选定款16:9及9:16两张，候选留工作区。认可要求写回适用Skill，个人选择证据留本机，安全commit/push与本机安装分别核对。完整规则以[user-preferences](skill/ai-cut/references/user-preferences.md#封面先保留基准再给10个选择2026-11-07优先)为准。
 
 - 最新认可：用户已明确认可 AIVD-034 第二版的完整知识流程讲解及16:9、9:16封面，作为以后同类口播的质量标准。新会话制作前必读 [user-preferences.md](skill/ai-cut/references/user-preferences.md) 和 [visual-storytelling.md](skill/ai-cut/references/visual-storytelling.md)，不能回退到首版贴纸堆叠或旧3～5秒变化要求。本次只记录认可，不再修改该成片或封面；认可不等于社媒发布授权，也不补写未做的连续视听QA。

@@ -1,0 +1,60 @@
+[
+  {
+    "key": "fontFamily",
+    "type": "font",
+    "label": "字体",
+    "defaultValue": "Noto Sans SC"
+  },
+  {
+    "key": "fontSize",
+    "max": 110,
+    "min": 56,
+    "type": "number",
+    "label": "字号",
+    "defaultValue": 80
+  },
+  {
+    "key": "textColor",
+    "type": "color",
+    "label": "正文文字",
+    "defaultValue": "#FFFDF7"
+  },
+  {
+    "key": "accent",
+    "type": "color",
+    "label": "重点青蓝",
+    "defaultValue": "#48E0EC"
+  },
+  {
+    "key": "motionAmount",
+    "max": 16,
+    "min": 2,
+    "type": "number",
+    "label": "持续动效幅度",
+    "defaultValue": 8
+  },
+  {
+    "key": "treatment",
+    "type": "select",
+    "label": "文字玩法",
+    "options": [
+      {
+        "label": "三段组合",
+        "value": "mixed"
+      },
+      {
+        "label": "逐字浮雕波浪",
+        "value": "wave"
+      },
+      {
+        "label": "遮罩侧滑",
+        "value": "mask"
+      },
+      {
+        "label": "拆分汇聚",
+        "value": "assemble"
+      }
+    ],
+    "defaultValue": "mixed"
+  }
+]
