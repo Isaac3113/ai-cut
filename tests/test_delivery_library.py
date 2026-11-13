@@ -296,6 +296,160 @@ class DeliveryLibraryTests(unittest.TestCase):
             self.assertEqual(json.loads(result.stdout.decode("utf-8"))["project_id"], "AIVD-028")
             self.assertEqual(snapshot(tmp), before)
 
+    def test_grouped_plan_maps_only_selected_sources_without_writing_or_changing_subtitle_location(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            settings, _, _, _, _ = self.fixture(tmp)
+            sources = {}
+            for kind, name, content in (("voice", "认可音频.mp3", b"audio fixture"),
+                                        ("presenter", "干净数字人.mp4", b"presenter fixture"),
+                                        ("spoken_text", "最终口播.txt", "完整原话。\n".encode("utf-8"))):
+                sources[kind] = Path(tmp) / name
+                sources[kind].write_bytes(content)
+            subtitle = Path(tmp) / "现有字幕.srt"
+            subtitle.write_text("1\n00:00:00,000 --> 00:00:01,000\n完整原话\n", encoding="utf-8")
+            before = snapshot(tmp)
+            result = library.plan(settings, title="新一条", layout="grouped", subtitles=[subtitle], **sources)
+            project = Path(result["project_directory"])
+            self.assertEqual(result["layout"], "grouped")
+            self.assertEqual(Path(result["video_path"]).parent, project / "AI 成片" / "04_剪辑成片")
+            expected = {"voice": "01_语音", "presenter": "02_数字人", "spoken_text": "03_口播内容"}
+            self.assertEqual(len(result["supporting_files"]), 3)
+            for item in result["supporting_files"]:
+                self.assertEqual(Path(item["target"]).parent, project / "AI 成片" / expected[item["kind"]])
+                self.assertEqual(Path(item["source"]), sources[item["kind"]])
+                self.assertEqual(item["bytes"], sources[item["kind"]].stat().st_size)
+            self.assertEqual(Path(result["subtitles"][0]["target"]).parent, project)
+            self.assertEqual(result["directories_created"], [])
+            self.assertEqual(snapshot(tmp), before)
+            no_inputs = library.plan(settings, title="无额外素材", layout="grouped")
+            self.assertEqual(no_inputs["supporting_files"], [])
+            self.assertEqual(library.plan(settings, title="旧式交付")["layout"], "legacy")
+
+    def test_grouped_inputs_require_explicit_layout_and_valid_nonempty_role_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            settings, _, _, _, _ = self.fixture(tmp)
+            valid = Path(tmp) / "voice.mp3"
+            valid.write_bytes(b"audio fixture")
+            with self.assertRaisesRegex(ValueError, "explicit grouped"):
+                library.plan(settings, title="新片", voice=valid)
+            with self.assertRaisesRegex(ValueError, "layout"):
+                library.plan(settings, title="新片", layout="../escape")
+            for kind, name, content in (("voice", "missing.mp3", None), ("voice", "empty.mp3", b""),
+                                        ("voice", "wrong.mp4", b"video fixture"),
+                                        ("presenter", "wrong.png", b"image fixture"),
+                                        ("spoken_text", "AIVD-028_Facebook文案.txt", b"marketing copy"),
+                                        ("spoken_text", "spoken.txt", b" \n\t"),
+                                        ("spoken_text", "binary.txt", b"\xff\xfe\x80")):
+                source = Path(tmp) / name
+                if content is not None:
+                    source.write_bytes(content)
+                before = snapshot(tmp)
+                with self.subTest(kind=kind, name=name), self.assertRaises(ValueError):
+                    library.plan(settings, title="新片", layout="grouped", **{kind: source})
+                self.assertEqual(snapshot(tmp), before)
+
+    def test_audit_understands_both_layouts_and_keeps_presenter_separate_from_final_video(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            settings, _, _, project, _ = self.fixture(tmp)
+            roles = {"01_语音": ("audio.mp3", b"audio fixture"),
+                     "02_数字人": ("presenter.mp4", b"presenter fixture"),
+                     "03_口播内容": ("spoken.md", "完整口播。".encode("utf-8"))}
+            for folder, (name, content) in roles.items():
+                path = project / "AI 成片" / folder / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(content)
+            before = snapshot(tmp)
+            result = library.audit(settings, existing="AIVD-027", include_hash=True)
+            self.assertTrue(result["layout_valid"])
+            self.assertFalse(result["has_nonempty_video"])
+            self.assertEqual({item["kind"] for item in result["files"]}, {"voice", "presenter", "spoken_text"})
+            self.assertTrue(all("sha256" in item for item in result["files"]))
+            self.assertEqual(snapshot(tmp), before)
+            final = project / "AI 成片" / "04_剪辑成片" / "如何写Facebook文案.mp4"
+            final.parent.mkdir()
+            final.write_bytes(b"final fixture")
+            self.assertTrue(library.audit(settings, existing="AIVD-027")["has_nonempty_video"])
+            legacy = project / "AI 成片" / "旧直放成片.mp4"
+            legacy.write_bytes(b"old export fixture")
+            result = library.audit(settings, existing="AIVD-027")
+            self.assertTrue(result["layout_valid"])
+            self.assertEqual(sum(item["kind"] == "video" for item in result["files"]), 2)
+
+    def test_voice_only_is_a_valid_partial_stage_and_grouped_empty_or_wrong_paths_are_invalid(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            settings, _, _, project, _ = self.fixture(tmp)
+            voice = project / "AI 成片" / "01_语音"
+            voice.mkdir(parents=True)
+            (voice / "voice.wav").write_bytes(b"audio fixture")
+            result = library.audit(settings, existing="AIVD-027")
+            self.assertTrue(result["layout_valid"])
+            self.assertFalse(result["has_nonempty_video"])
+            empty = project / "AI 成片" / "02_数字人"
+            empty.mkdir()
+            wrong = voice / "wrong.mp4"
+            wrong.write_bytes(b"video in wrong role")
+            nested = voice / "nested"
+            nested.mkdir()
+            (nested / "audio.mp3").write_bytes(b"unsupported deeper path")
+            copy = project / "AI 成片" / "03_口播内容" / "AIVD-027 - 第一评论.md"
+            copy.parent.mkdir()
+            copy.write_text("publication copy", encoding="utf-8")
+            result = library.audit(settings, existing="AIVD-027")
+            self.assertFalse(result["layout_valid"])
+            self.assertIn(str(empty), result["empty_directories"])
+            self.assertTrue({str(wrong), str(nested), str(copy)}.issubset(result["unexpected_paths"]))
+
+    def test_grouped_targets_cannot_follow_a_directory_link_outside_the_project(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            settings, _, _, project, _ = self.fixture(tmp)
+            outside = Path(tmp) / "outside"
+            outside.mkdir()
+            media = project / "AI 成片"
+            media.mkdir()
+            link = media / "04_剪辑成片"
+            junction = False
+            try:
+                link.symlink_to(outside, target_is_directory=True)
+            except OSError:
+                if os.name != "nt":
+                    self.skipTest("Creating directory links is unavailable on this host")
+                result = subprocess.run(["cmd", "/c", "mklink", "/J", str(link), str(outside)], capture_output=True)
+                if result.returncode:
+                    self.skipTest("Creating directory links is unavailable on this host")
+                junction = True
+            try:
+                before = snapshot(tmp)
+                with self.assertRaisesRegex(ValueError, "outside the project"):
+                    library.plan(settings, existing="AIVD-027", layout="grouped")
+                result = library.audit(settings, existing="AIVD-027")
+                self.assertFalse(result["layout_valid"])
+                self.assertIn(str(link), result["unexpected_paths"])
+                self.assertEqual(snapshot(tmp), before)
+            finally:
+                if junction:
+                    link.rmdir()
+                else:
+                    link.unlink()
+
+    def test_grouped_cli_exposes_optional_source_records_without_copying(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            settings, _, _, _, _ = self.fixture(tmp)
+            audio = Path(tmp) / "approved.mp3"
+            audio.write_bytes(b"audio fixture")
+            text = Path(tmp) / "final.txt"
+            text.write_text("完整口播。", encoding="utf-8")
+            before = snapshot(tmp)
+            result = subprocess.run([sys.executable, "-B", str(ROOT / "scripts/delivery_library.py"), "plan",
+                                     "--library-root", str(settings["library_root"]), "--registry", str(settings["registry"]),
+                                     "--asset-index", str(settings["asset_index"]), "--work-root", str(settings["work_root"]),
+                                     "--title", "中文新主题", "--layout", "grouped", "--voice", str(audio),
+                                     "--spoken-text", str(text)], capture_output=True, encoding="utf-8")
+            self.assertEqual(result.returncode, 0, result.stderr)
+            output = json.loads(result.stdout)
+            self.assertEqual(output["layout"], "grouped")
+            self.assertEqual({item["kind"] for item in output["supporting_files"]}, {"voice", "spoken_text"})
+            self.assertEqual(snapshot(tmp), before)
+
 
 if __name__ == "__main__":
     unittest.main()

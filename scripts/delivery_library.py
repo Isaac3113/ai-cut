@@ -22,6 +22,48 @@ VIDEO_EXTENSIONS = {".mp4", ".mov", ".webm", ".mkv", ".avi", ".m4v", ".ts"}
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".tif", ".tiff"}
 SUBTITLE_EXTENSIONS = {".srt", ".txt", ".vtt", ".ass", ".ssa"}
 PUBLICATION_NAMES = {"Facebook文案.txt", "小红书文案.txt", "第一评论.txt", "一键复制.txt"}
+AUDIO_EXTENSIONS = {".mp3", ".wav", ".m4a", ".aac", ".flac", ".ogg", ".opus"}
+GROUPS = {
+    "01_语音": ("voice", AUDIO_EXTENSIONS),
+    "02_数字人": ("presenter", {".mp4"}),
+    "03_口播内容": ("spoken_text", {".txt", ".md"}),
+    "04_剪辑成片": ("video", VIDEO_EXTENSIONS),
+}
+
+
+def _publication_text(path):
+    path = Path(path)
+    if path.suffix.lower() not in {".txt", ".md"}:
+        return False
+    stem = path.stem.casefold()
+    names = {Path(value).stem.casefold() for value in PUBLICATION_NAMES} | {"首条留言", "首评"}
+    return any(stem == name or stem.endswith(tuple(separator + name for separator in ("_", " - ", "-")))
+               for name in names)
+
+
+def _delivery_target(project, *parts):
+    target = project.joinpath(*parts)
+    if not target.resolve().is_relative_to(project.resolve()):
+        raise ValueError(f"Delivery target points outside the project: {target}")
+    return target
+
+
+def _supporting_file(project, stem, kind, source):
+    folder, (_, extensions) = next((name, value) for name, value in GROUPS.items() if value[0] == kind)
+    path = Path(source).resolve()
+    if path.suffix.lower() not in extensions or _publication_text(path):
+        raise ValueError(f"Select a supported {kind} delivery file; publication copy is excluded")
+    if not path.is_file() or path.stat().st_size == 0:
+        raise ValueError(f"Selected {kind} file is missing or empty: {path}")
+    if kind == "spoken_text":
+        try:
+            if not path.read_text(encoding="utf-8-sig").strip():
+                raise ValueError(f"Selected spoken_text file contains no text: {path}")
+        except UnicodeError as exc:
+            raise ValueError(f"Selected spoken_text must be UTF-8 text: {path}") from exc
+    suffix = {"voice": "语音", "presenter": "数字人原片", "spoken_text": "口播内容"}[kind]
+    target = _delivery_target(project, "AI 成片", folder, stem + "_" + suffix + path.suffix.lower())
+    return {"kind": kind, "source": str(path), "target": str(target), "bytes": path.stat().st_size}
 
 
 def _json(path):
@@ -207,7 +249,12 @@ def _work_entry(row, settings, name):
     return result
 
 
-def plan(settings, *, title=None, source_label=None, existing=None, stem_suffix=None, subtitles=()):
+def plan(settings, *, title=None, source_label=None, existing=None, stem_suffix=None, subtitles=(),
+         layout="legacy", voice=None, presenter=None, spoken_text=None):
+    if layout not in {"legacy", "grouped"}:
+        raise ValueError("Delivery layout must be legacy or grouped")
+    if layout != "grouped" and any(value is not None for value in (voice, presenter, spoken_text)):
+        raise ValueError("Supporting files require the explicit grouped delivery layout")
     catalog = _catalog(settings)
     row = None
     if existing is not None:
@@ -238,15 +285,19 @@ def plan(settings, *, title=None, source_label=None, existing=None, stem_suffix=
     for value in subtitles:
         path = Path(value).resolve()
         extension = path.suffix.lower()
-        if extension not in SUBTITLE_EXTENSIONS or path.name in PUBLICATION_NAMES:
+        if extension not in SUBTITLE_EXTENSIONS or _publication_text(path):
             raise ValueError("Only explicitly selected existing subtitle files may go in the project root; publication TXT is excluded")
         if not path.is_file() or path.stat().st_size == 0:
             raise ValueError(f"Existing subtitle is missing or empty: {path}")
         if extension in extensions:
             raise ValueError("Select at most one existing subtitle of each extension; conflicting versions need explicit review")
         extensions.add(extension)
-        subtitle_paths.append({"source": str(path), "target": str(destination / (stem + "_字幕" + extension)),
+        subtitle_paths.append({"source": str(path), "target": str(_delivery_target(destination, stem + "_字幕" + extension)),
                                "bytes": path.stat().st_size})
+    supporting_files = [_supporting_file(destination, stem, kind, value)
+                        for kind, value in (("voice", voice), ("presenter", presenter), ("spoken_text", spoken_text))
+                        if value is not None]
+    video_parts = ("AI 成片", "04_剪辑成片") if layout == "grouped" else ("AI 成片",)
     work = _work_entry(row, settings, destination.name)
     if existing is not None and row is None:
         work = {"work_directory": None, "work_basis": "existing library ID has no original-work mapping; do not infer or create a replacement cache"}
@@ -254,8 +305,9 @@ def plan(settings, *, title=None, source_label=None, existing=None, stem_suffix=
             "source_label": source, "title": actual_title, "project_name": destination.name,
             "project_directory": str(destination), "project_exists": destination.is_dir(),
             "next_available_id": catalog["next_id"], "reserved_ids": sorted(catalog["reserved"]),
-            "video_path": str(destination / "AI 成片" / (stem + "_视频.mp4")),
-            "cover_paths": {ratio: str(destination / "参考图" / (destination.name + "_封面_" + label + ".png"))
+            "layout": layout, "supporting_files": supporting_files,
+            "video_path": str(_delivery_target(destination, *video_parts, stem + "_视频.mp4")),
+            "cover_paths": {ratio: str(_delivery_target(destination, "参考图", destination.name + "_封面_" + label + ".png"))
                             for ratio, label in (("16:9", "16比9"), ("9:16", "9比16"))},
             "subtitles": subtitle_paths, "publication_materials_archived": False,
             "directories_created": [], "work": work,
@@ -270,6 +322,14 @@ def audit(settings, *, existing, include_hash=False):
         raise ValueError(f"Mapped project directory does not exist: {project}")
     files, unexpected, empty_directories = [], [], []
     candidates = []
+
+    def collect(path, kind, extensions):
+        if (path.is_file() and path.resolve().is_relative_to(project)
+                and path.suffix.lower() in extensions and not _publication_text(path)):
+            candidates.append((path, kind))
+        else:
+            unexpected.append(str(path))
+
     for path in project.iterdir():
         if not path.resolve().is_relative_to(project):
             unexpected.append(str(path)); continue
@@ -278,12 +338,18 @@ def audit(settings, *, existing, include_hash=False):
             if not children:
                 empty_directories.append(str(path))
             for child in children:
-                extensions = IMAGE_EXTENSIONS if path.name == "参考图" else VIDEO_EXTENSIONS
-                if child.is_file() and child.resolve().is_relative_to(project) and child.suffix.lower() in extensions:
-                    candidates.append((child, "image" if path.name == "参考图" else "video"))
+                if (path.name == "AI 成片" and child.is_dir() and child.name in GROUPS
+                        and child.resolve().is_relative_to(project)):
+                    grouped_files = list(child.iterdir())
+                    if not grouped_files:
+                        empty_directories.append(str(child))
+                    kind, extensions = GROUPS[child.name]
+                    for grouped_file in grouped_files:
+                        collect(grouped_file, kind, extensions)
                 else:
-                    unexpected.append(str(child))
-        elif path.is_file() and path.suffix.lower() in SUBTITLE_EXTENSIONS and path.name not in PUBLICATION_NAMES:
+                    collect(child, "image" if path.name == "参考图" else "video",
+                            IMAGE_EXTENSIONS if path.name == "参考图" else VIDEO_EXTENSIONS)
+        elif path.is_file() and path.suffix.lower() in SUBTITLE_EXTENSIONS and not _publication_text(path):
             candidates.append((path, "subtitle"))
         else:
             unexpected.append(str(path))
@@ -321,13 +387,19 @@ def main():
             command.add_argument("--source-label")
             command.add_argument("--stem-suffix")
             command.add_argument("--subtitle", action="append", default=[], type=Path)
+            command.add_argument("--layout", choices=("legacy", "grouped"), default="legacy",
+                                 help="Optional grouped deliverables; default preserves the existing flat video layout")
+            command.add_argument("--voice", type=Path, help="Selected existing audio delivery; requires --layout grouped")
+            command.add_argument("--presenter", type=Path, help="Selected existing clean presenter MP4; requires --layout grouped")
+            command.add_argument("--spoken-text", type=Path, help="Selected existing UTF-8 final spoken TXT/MD; requires --layout grouped")
         else:
             command.add_argument("--hash", action="store_true", dest="include_hash")
     args = parser.parse_args()
     try:
         settings = resolve_settings(args.library_root, args.registry, args.asset_index, args.work_root)
         result = (plan(settings, title=args.title, source_label=args.source_label, existing=args.existing,
-                       stem_suffix=args.stem_suffix, subtitles=args.subtitle) if args.action == "plan"
+                       stem_suffix=args.stem_suffix, subtitles=args.subtitle, layout=args.layout,
+                       voice=args.voice, presenter=args.presenter, spoken_text=args.spoken_text) if args.action == "plan"
                   else audit(settings, existing=args.existing, include_hash=args.include_hash))
     except (ValueError, OSError) as exc:
         parser.exit(2, f"Delivery library: {exc}\n")

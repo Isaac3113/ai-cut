@@ -51,6 +51,12 @@ DELIVERY_LIBRARY/
 
 ## 只读交付规划与本机配置
 
+2026-11-13本人交付更新：本人当前分类由独立私人`ai-cut-owner`的`references/delivery-layout.md`维护，优先于下方历史直放结构。使用既有真实语音、干净数字人、最终口播正文和剪辑成片分组，不要求每片都调用语音或数字人服务；原始制作资料留工作区。公开使用者按自己的交付要求选择，下文通用工具的`--layout grouped`只是可选能力。
+
+通用可选分组：`AI 成片/01_语音`放已选音频、`02_数字人`放干净数字人视频、`03_口播内容`放最终实际讲话TXT、`04_剪辑成片`放最终剪辑视频。没有对应文件就不建分类；仅有数字人原片不等于最终剪辑完成。两封面仍放`参考图`，已有字幕仍放作品根。
+
+显式使用`plan --layout grouped`，可用`--voice`、`--presenter`、`--spoken-text`提供本条已有文件；工具只规划路径，不创建、复制或迁移媒体。不指定分组时保留旧版直放默认，`audit`同时接受旧版和分组结构。费用、生成、质量验收和云端同步不由目录规划授权。
+
 本机`runtime.local.json`保存独立键`delivery_library_root`、`delivery_registry`（项目映射JSON）、`delivery_asset_index`（素材索引）；`project_hub`仍是旧工作Hub，`video_work_root`仍在C盘。路径优先级为明确CLI参数→对应`TALKING_HEAD_DELIVERY_*`环境变量→本机配置。其他电脑先同步媒体／索引，按实际位置配置，不靠Git复制本机运行时或个人路径配置。
 
 在CODE_ROOT执行；以下plan／audit均只读，不创建目录、不复制媒体、不更新索引：
