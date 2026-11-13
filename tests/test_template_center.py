@@ -208,6 +208,41 @@ class IntegrationGrowthTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'Frozen baseline counts changed'):
             self.gallery.read_sources(self.root)
 
+    def test_official_inventory_can_grow_but_missing_registered_id_is_rejected(self):
+        for name in self.gallery.SOURCES:
+            shutil.copy2(ROOT/'templates'/name,self.root/'templates'/name)
+        path=self.root/'templates/motiongit-styles.json'
+        data=json.loads(path.read_text(encoding='utf-8'))
+        added=deepcopy(data['entries'][0]);added['id']='new-public-template'
+        data['entries'].append(added)
+        data['source_manifest']={'expected_entry_ids':[e['id'] for e in data['entries']]}
+        path.write_text(json.dumps(data),encoding='utf-8')
+        rows,_,_=self.gallery.read_sources(self.root)
+        self.assertIn('new-public-template',{e['id'] for e in rows})
+        data['entries'].pop()
+        path.write_text(json.dumps(data),encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'Frozen baseline counts changed'):
+            self.gallery.read_sources(self.root)
+
+    def test_official_template_without_demo_needs_explicit_source_reason(self):
+        row=deepcopy(self.base);row.update(layer='style',demos=[])
+        with self.assertRaisesRegex(ValueError,'no demo'):
+            self.gallery.validate([row],self.root,True)
+        row['no_demo_reason']='Official directory supplies no playable demo.'
+        counts,_=self.gallery.validate([row],self.root,True)
+        self.assertEqual(counts['style'],1)
+
+    def test_directory_only_reference_never_invents_a_demo(self):
+        home=module('build_homepage_showcase')
+        row=deepcopy(self.base)
+        row.update(layer='style',source_id='not-yet-in-github',demos=[])
+        asset=home.official_image(row,{'templates':[],'previews':[]})
+        self.assertEqual(asset['kind'],'source_only')
+        self.assertEqual(asset['source_demo_url'],row['source_url'])
+        self.assertFalse(asset['network_checked'])
+        rendered=home.card(row,asset)
+        self.assertIn('未提供可播放 Demo',rendered)
+
     def test_strict_decode_rejects_non_video_even_with_matching_hash(self):
         # Validate the rejection path with explicit test metadata, no media render.
         with patch.object(self.gallery,'subprocess') as proc:

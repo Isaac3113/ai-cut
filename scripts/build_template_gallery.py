@@ -1,4 +1,4 @@
-"""Build four frozen registry layers plus reviewed per-video integration records."""
+"""Build the current official inventory and preserved local layers/integrations."""
 from __future__ import annotations
 
 import argparse
@@ -35,17 +35,37 @@ def read_sources(root: Path):
         data = json.loads(raw)
         rows = data if isinstance(data, list) else data['entries']
         baseline_layer = list(BASELINE_EXPECTED)[SOURCES.index(filename)]
-        if len(rows) != BASELINE_EXPECTED[baseline_layer] or any(e.get('layer') != baseline_layer for e in rows):
+        # Official inventory grows; local code/control registries retain their baseline.
+        expected = data.get('source_manifest', {}).get('expected_entry_ids') if isinstance(data, dict) else None
+        if baseline_layer == 'style' and expected is not None:
+            if not isinstance(expected, list) or not all(isinstance(x, str) for x in expected):
+                raise ValueError('Invalid official source manifest in ' + filename)
+            wrong_count = set(e['id'] for e in rows) != set(expected) or len(rows) != len(expected)
+        else:
+            wrong_count = len(rows) != BASELINE_EXPECTED[baseline_layer]
+        if wrong_count or any(e.get('layer') != baseline_layer for e in rows):
             raise ValueError('Frozen baseline counts changed in ' + filename)
         entries.extend(rows)
         if isinstance(data, dict):
+            expected_previews = data.get('source_manifest', {}).get('expected_preview_ids')
+            actual_previews = [e['id'] for e in data.get('previews', [])]
+            if expected_previews is not None and (set(actual_previews) != set(expected_previews) or len(actual_previews) != len(expected_previews)):
+                raise ValueError('Official preview inventory is incomplete in ' + filename)
             previews.extend(data.get('previews', []))
         provenance.append({'path': 'templates/' + filename,
                            'sha256': sha256(raw).hexdigest(), 'entries': len(rows)})
     counts = Counter(e['layer'] for e in entries)
-    if dict(counts) != BASELINE_EXPECTED:
+    if any(counts[layer] != count for layer, count in BASELINE_EXPECTED.items() if layer != 'style'):
         raise ValueError(f'Frozen baseline counts changed: {dict(counts)}; expected {BASELINE_EXPECTED}')
     return entries, previews, provenance
+
+
+def source_status(root):
+    path = root / 'templates/motiongit-styles.json'
+    if not path.is_file():
+        return {}
+    source = json.loads(path.read_text(encoding='utf-8'))
+    return source.get('sync_status', {}) if isinstance(source, dict) else {}
 
 
 def validate(entries, gallery: Path, strict: bool):
@@ -59,10 +79,10 @@ def validate(entries, gallery: Path, strict: bool):
         if entry['id'] in identifiers:
             raise ValueError('Duplicate ID: ' + entry['id'])
         identifiers.add(entry['id'])
-        if entry['layer'] not in LAYERS:
+        if entry['layer'] not in LAYERS and entry['layer'] != 'preview':
             raise ValueError('Unknown catalog layer: ' + str(entry['layer']))
         counts[entry['layer']] += 1
-        if not entry['demos'] and strict:
+        if not entry['demos'] and strict and not (entry['layer'] in ('style', 'preview') and entry.get('no_demo_reason')):
             raise ValueError(entry['id'] + ': no demo')
         for demo in entry['demos']:
             if demo.get('path'):
@@ -255,10 +275,11 @@ HTML = r'''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
 <main><div class="notice">本次 B 版获认可的是局部重点文字效果。模板按实际内容选择，不强套整片。官网 Demo 需要联网；本地控件 Demo 为静音版式演示，示例数值与模拟界面不代表真实业务成果。个人 .motion、Key 和完整原片不在本目录。</div>
 <div class="routes"><div class="route"><strong>知识口播</strong><p>讲述与原意驱动画面。优先字幕、概念解释、重点句与关系图。</p></div><div class="route"><strong>系统实操</strong><p>真实按钮与操作证据优先。放大、标注须指向实际目标。</p></div><div class="route"><strong>长访谈切片</strong><p>先按独立主题剪成完整论点，再添加包装与字幕。</p></div><div class="route"><strong>旅行 / Vlog</strong><p>按地点、事件、镜头连续性、环境声与音乐节奏剪辑；当前仅定义路线边界，未实现专用自动流程。</p></div></div>
 <div class="views" role="group" aria-label="浏览入口"><button id="allTemplates" type="button">全部模板</button><button id="ownerDemos" type="button">本人Demo（已登记案例）</button><p class="small" id="localPlayback">本人库样例为静音版；已关联的本机原声版可在同一张卡直接播放。</p></div>
-<h2 id="template-library">按内容选择特效模板</h2><p class="section-note">每条固定七项：预览、用途、素材、可改参数、给 AI 的指令、使用状态、来源许可。先选你想表达的内容，再查看来源层级和细类。</p><p class="source-tabs-label">来源层级（保留技术归属，数量不能合称整片模板）</p><div class="tabs" id="tabs"></div><div class="toolbar"><input id="search" aria-label="搜索模板" placeholder="搜索中文名称、用途、控件ID…"><select id="category" aria-label="用途分类"><option value="">全部用途分类</option></select><select id="sourceCategory" aria-label="原始细类"><option value="">全部原始细类</option></select><select id="demoType" aria-label="Demo来源"><option value="">全部Demo来源</option><option value="own">本人Demo（已登记案例）</option><option value="official">官网示例</option><option value="other">其他本地演示</option></select><select id="ratio" aria-label="视频比例"><option value="">全部比例</option></select><button id="reset">重置</button></div>
-<div class="result" id="result"></div><div class="grid" id="grid"></div><div id="extra"></div>
+<h2 id="template-library">按内容选择特效模板</h2><p class="section-note">每条固定七项：预览、用途、素材、可改参数、给 AI 的指令、使用状态、来源许可。先选你想表达的内容，再查看来源层级和细类。</p><p class="source-tabs-label">来源层级（保留技术归属，数量不能合称整片模板）</p><div class="tabs" id="tabs"></div><div class="toolbar"><input id="search" aria-label="搜索模板" placeholder="搜索中文名称、用途、控件ID…"><select id="category" aria-label="用途分类"><option value="">全部用途分类</option></select><select id="sourceCategory" aria-label="原始细类"><option value="">全部原始细类</option></select><select id="executionStatus" aria-label="调用状态"><option value="">全部调用状态</option></select><select id="demoType" aria-label="Demo来源"><option value="">全部Demo来源</option><option value="own">本人Demo（已登记案例）</option><option value="official">官网示例</option><option value="other">其他本地演示</option></select><select id="ratio" aria-label="视频比例"><option value="">全部比例</option></select><button id="reset">重置</button></div>
+<p class="notice" id="syncStatus"></p><div class="result" id="result"></div><div class="grid" id="grid"></div><p><button id="loadMore" type="button">再看24项</button></p><div id="extra"></div>
 <p class="foot">来源、许可证与更新口径：<a href="https://github.com/Isaac3113/ai-cut/blob/main/templates/PROVENANCE.zh-CN.md">来源说明</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md">完整中文清单</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/docs/template-gallery/CATEGORIES.md">分类动画预览</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/skill/ai-cut/references/template-selection.md">Skill选择规则</a><br>2026-10-27历史归档授权：以后每片经QA精选的本人静音Demo与集成说明可进入私人Git；完整原片、完整成片、源人像蒙版、Key、个人包与客户敏感信息不进入Git。2026-11-02现行展示授权：本页精选的现有预览可在 aicut.agi-top.com 公开展示，供个人学习与免费交流，不用于业务获客或销售。同日后续用户授权将GitHub源码仓库公开，上方源码与教学链接可直接浏览、下载，无需申请仓库权限。官网候选预览保留原来源与许可，不代表附送官方原包或全部模板已可执行。其他电脑仍需独立准备运行环境、个人模板授权和新片素材。</p></main>
 <script>const DATA=__DATA__;const LAYERS=__LAYERS__;
+const ALL_ENTRIES=[...DATA.entries,...DATA.previews];
 // BEGIN_DEMO_MODEL — shared by the browser and focused interaction tests.
 function demoKey(d){return d.path||d.url||''}
 function demoCase(e,d){return d.integration_id?(e.integrations||[]).find(c=>c.id===d.integration_id)||null:null}
@@ -290,14 +311,14 @@ function integrationInfo(e,d){const c=demoCase(e,d);if(!c)return '';const s=c.so
 function demoMetadata(e,d){const p=demoPlayback(e,d,overrides),c=demoCase(e,d),source=demoSource(e,d);return '<p class="playback-note">'+esc(p.label)+'</p>'+(c?'<p class="small">当前本人Demo版本：'+esc(c.source.version)+' · 已解码与抽帧检查'+(c.qa.owner_artistic_acceptance?'':' · 风格待确认')+'</p>':'<p class="small">'+esc(d.description_zh||'')+'</p><p class="small">'+esc(source==='official'?'官网原始示例；不代表本人输入已经验证。':source==='own'?'历史本人素材样例；沿用原登记的检查范围。':'本地效果示例；不据此认定画面人物或业务成果。')+'</p>')+integrationInfo(e,d)}
 function demoStatus(e,d){return {own:'本人案例 · 见本次检查范围',official:'官网示例',other:'本地效果演示'}[demoSource(e,d)]}
 function cardTitle(e){return e.layer==='style'&&e.family_label_zh?e.family_label_zh:e.label_zh}
-function renderTabs(){const tabs=[['','全部'],...Object.entries(LAYERS)];$('tabs').innerHTML=tabs.map(([id,label])=>'<button data-layer="'+id+'" class="'+(layer===id?'active':'')+'">'+label+'</button>').join('');$('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{layer=b.dataset.layer;renderTabs();render()})}
+function renderTabs(){const tabs=[['','全部'],...Object.entries(LAYERS),['preview','官方预告／待开放']];$('tabs').innerHTML=tabs.map(([id,label])=>'<button data-layer="'+id+'" class="'+(layer===id?'active':'')+'">'+label+'</button>').join('');$('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{layer=b.dataset.layer;shownLimit=24;renderTabs();render()})}
 function learnerSection(s){
   if(s.id==='preview')return '';
   let content=s.id==='instructions'?'<pre>'+esc((s.text||[]).join('\n'))+'</pre>':bullet(s.text||[]);
   if(s.notes?.length){content+=s.id==='status'?'<details><summary>原始检查范围</summary>'+bullet(s.notes)+'</details>':bullet(s.notes)}
   if(s.evidence?.length)content+='<p>参数依据：'+s.evidence.map(p=>'<a target="_blank" rel="noopener" href="https://github.com/Isaac3113/ai-cut/blob/main/'+esc(p)+'">'+esc(p.split('/').pop())+'</a>').join(' · ')+'</p>';
   if(s.id==='source')content+='<p>'+(s.url?'<a target="_blank" rel="noopener" href="'+safe(s.url)+'">原始来源</a>':'')+(s.repository_url?' · <a target="_blank" rel="noopener" href="'+safe(s.repository_url)+'">上游技术资料</a>':'')+'</p>';
-  return '<details class="guide-section"'+(s.id==='use'?' open':'')+'><summary>'+esc(s.title)+'</summary>'+content+'</details>'
+  return '<details class="guide-section"'+(['use','status'].includes(s.id)?' open':'')+'><summary>'+esc(s.title)+'</summary>'+content+'</details>'
 }
 function cardHtml(e,choices,d){
   const guide=e.learner_guide||{category_zh:e.category_zh,status:'使用条件待核对',sections:[]};
@@ -312,26 +333,31 @@ function activateDemo(card,e,d,pauseOthers=true){
 }
 function syncOwnerHash(){try{history.replaceState(null,'',$('demoType').value==='own'?'#owner-demos':location.href.split('#')[0])}catch(_){}}
 function updateViewButtons(){const own=$('demoType').value==='own';for(const [id,active] of [['ownerDemos',own],['allTemplates',!own]]){$(id).classList.toggle('active',active);$(id).setAttribute('aria-pressed',String(active))}}
+let shownLimit=24;
 function render(){
-  stopOtherVideos(null);const q=$('search').value.trim().toLowerCase(),cat=$('category').value,sourceCat=$('sourceCategory').value,source=$('demoType').value,ratio=$('ratio').value;
-  const rows=DATA.entries.filter(e=>(!layer||e.layer===layer)&&(!cat||e.learner_guide?.category===cat)&&(!sourceCat||e.category_zh===sourceCat)&&(!q||JSON.stringify(e).toLowerCase().includes(q))).map(e=>({e,choices:candidateDemos(e,source,ratio)})).filter(x=>x.choices.length||(!source&&!ratio&&!(x.e.demos||[]).length));
-  $('result').textContent='显示 '+rows.length+' / '+DATA.entries.length+' 个目录条目 · '+rows.reduce((n,x)=>n+x.choices.length,0)+' 个匹配演示版本；同一条目可在卡内切换来源和比例。';
-  $('grid').innerHTML=rows.map(({e,choices})=>{const d=selectedDemo(e,source,ratio,selectedKeys.get(e.id));if(d)selectedKeys.set(e.id,demoKey(d));return cardHtml(e,choices,d)}).join('')||'<div class="empty">没有匹配的演示。试试其他来源、比例或分类。</div>';
-  $('grid').querySelectorAll('.card[data-entry-id]').forEach(card=>{const e=DATA.entries.find(x=>x.id===card.dataset.entryId),select=card.querySelector('.demo-version');if(!select||!card.querySelector('video'))return;card.querySelector('video').addEventListener('play',event=>stopOtherVideos(event.currentTarget));select.addEventListener('change',()=>{const d=candidateDemos(e,$('demoType').value,$('ratio').value).find(x=>demoKey(x)===select.value);if(d)activateDemo(card,e,d)})});updateViewButtons();
+  stopOtherVideos(null);const q=$('search').value.trim().toLowerCase(),cat=$('category').value,sourceCat=$('sourceCategory').value,source=$('demoType').value,ratio=$('ratio').value,execution=$('executionStatus').value;
+  const rows=ALL_ENTRIES.filter(e=>(!execution||e.learner_guide?.execution_status===execution)&&(!layer||e.layer===layer)&&(!cat||e.learner_guide?.category===cat)&&(!sourceCat||e.category_zh===sourceCat)&&(!q||JSON.stringify(e).toLowerCase().includes(q))).map(e=>({e,choices:candidateDemos(e,source,ratio)})).filter(x=>x.choices.length||(!source&&!(x.e.demos||[]).length&&(!ratio||demoRatio(x.e,{})===ratio)));
+  $('result').textContent='显示 '+rows.length+' / '+ALL_ENTRIES.length+' 个目录条目（含预告） · '+rows.reduce((n,x)=>n+x.choices.length,0)+' 个匹配演示版本；同一条目可在卡内切换来源和比例。';
+  $('loadMore').hidden=rows.length<=shownLimit;$('loadMore').textContent='再看24项（还有 '+Math.max(0,rows.length-shownLimit)+' 项）';
+  $('grid').innerHTML=rows.slice(0,shownLimit).map(({e,choices})=>{const d=selectedDemo(e,source,ratio,selectedKeys.get(e.id));if(d)selectedKeys.set(e.id,demoKey(d));return cardHtml(e,choices,d)}).join('')||'<div class="empty">没有匹配的演示。试试其他来源、比例或分类。</div>';
+  $('grid').querySelectorAll('.card[data-entry-id]').forEach(card=>{const e=ALL_ENTRIES.find(x=>x.id===card.dataset.entryId),select=card.querySelector('.demo-version');if(!select||!card.querySelector('video'))return;card.querySelector('video').addEventListener('play',event=>stopOtherVideos(event.currentTarget));select.addEventListener('change',()=>{const d=candidateDemos(e,$('demoType').value,$('ratio').value).find(x=>demoKey(x)===select.value);if(d)activateDemo(card,e,d)})});updateViewButtons();
 }
-function chooseView(own){layer='';$('search').value='';$('category').value='';$('sourceCategory').value='';$('ratio').value='';$('demoType').value=own?'own':'';syncOwnerHash();renderTabs();render()}
+function chooseView(own){shownLimit=24;layer='';$('search').value='';$('category').value='';$('sourceCategory').value='';$('executionStatus').value='';$('ratio').value='';$('demoType').value=own?'own':'';syncOwnerHash();renderTabs();render()}
 Object.entries(DATA.learner_categories||{}).forEach(([key,label])=>{const o=document.createElement('option');o.value=key;o.textContent=label;$('category').append(o)});
-const categories=[...new Set(DATA.entries.map(e=>e.category_zh))].sort((a,b)=>a.localeCompare(b,'zh'));categories.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;$('sourceCategory').append(o)});
-const ratios=[...new Set(DATA.entries.flatMap(e=>(e.demos||[]).map(d=>demoRatio(e,d))))].sort((a,b)=>{const order=['9:16','16:9','1:1','4:3','3:4'];return (order.indexOf(a)<0?99:order.indexOf(a))-(order.indexOf(b)<0?99:order.indexOf(b))||a.localeCompare(b)});ratios.forEach(r=>{const o=document.createElement('option');o.value=r;o.textContent=r==='unknown'?'比例未标注':r;$('ratio').append(o)});
-['search','category','sourceCategory','demoType','ratio'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',()=>{if(id==='demoType')syncOwnerHash();render()}));$('reset').onclick=()=>chooseView(false);$('allTemplates').onclick=()=>chooseView(false);$('ownerDemos').onclick=()=>chooseView(true);
+const categories=[...new Set(ALL_ENTRIES.map(e=>e.category_zh))].sort((a,b)=>a.localeCompare(b,'zh'));categories.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;$('sourceCategory').append(o)});
+const ratios=[...new Set(ALL_ENTRIES.flatMap(e=>(e.demos||[]).map(d=>demoRatio(e,d))))].sort((a,b)=>{const order=['9:16','16:9','1:1','4:3','3:4'];return (order.indexOf(a)<0?99:order.indexOf(a))-(order.indexOf(b)<0?99:order.indexOf(b))||a.localeCompare(b)});ratios.forEach(r=>{const o=document.createElement('option');o.value=r;o.textContent=r==='unknown'?'比例未标注':r;$('ratio').append(o)});
+['search','category','sourceCategory','executionStatus','demoType','ratio'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',()=>{shownLimit=24;if(id==='demoType')syncOwnerHash();render()}));$('reset').onclick=()=>chooseView(false);$('allTemplates').onclick=()=>chooseView(false);$('ownerDemos').onclick=()=>chooseView(true);
 window.addEventListener('hashchange',()=>{if(location.hash==='#owner-demos')chooseView(true)});if(location.hash==='#owner-demos')$('demoType').value='own';
-if(DATA.previews.length){$('extra').innerHTML='<h2>附加官方预告 · 不计入主清单</h2><p class="section-note">只用于查看效果，取得状态和参数按来源核对。</p><div class="grid">'+DATA.previews.map(e=>cardHtml(e,e.demos||[],(e.demos||[])[0])).join('')+'</div>';$('extra').querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>stopOtherVideos(v)))}
+const executionOptions=new Map(ALL_ENTRIES.map(e=>[e.learner_guide?.execution_status,e.learner_guide?.execution_status_zh]).filter(([k,v])=>k&&v));executionOptions.forEach((label,key)=>{const o=document.createElement('option');o.value=key;o.textContent=label;$('executionStatus').append(o)});
+const sync=DATA.sync_status||{};$('syncStatus').textContent='目录同步：'+(sync.checked_at||DATA.updated_on)+'。目录登记、原包取得、运行接入分别标记；旧案例保留其真实版本。'+(sync.scope_zh||'成功来源与覆盖边界见 GitHub 的本轮同步说明。')+((sync.gaps||[]).length?' 仍有 '+sync.gaps.length+' 项来源缺口，详见同步记录。':'');
+
+$('loadMore').onclick=()=>{shownLimit+=24;render()};
 renderTabs();render();
 if(location.protocol!=='file:'){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),1800);
   fetch('local-demo-manifest.json',{cache:'no-store',credentials:'same-origin',signal:controller.signal}).then(response=>response.ok?response.json():null).then(manifest=>{
     overrides=localOverrides(manifest,DATA.entries);const count=Object.keys(overrides).length;if(!count)return;$('localPlayback').textContent='已关联 '+count+' 个本机版本；原声与静音状态显示在对应卡片里。';
-    $('grid').querySelectorAll('.card[data-entry-id]').forEach(card=>{const v=card.querySelector('video');if(!v.paused||v.currentTime>0)return;const e=DATA.entries.find(x=>x.id===card.dataset.entryId),d=selectedDemo(e,$('demoType').value,$('ratio').value,selectedKeys.get(e.id));if(d&&overrides[d.path])activateDemo(card,e,d,false)})
+    $('grid').querySelectorAll('.card[data-entry-id]').forEach(card=>{const v=card.querySelector('video');if(!v||!v.paused||v.currentTime>0)return;const e=ALL_ENTRIES.find(x=>x.id===card.dataset.entryId),d=selectedDemo(e,$('demoType').value,$('ratio').value,selectedKeys.get(e.id));if(d&&overrides[d.path])activateDemo(card,e,d,false)})
   }).catch(()=>{}).finally(()=>clearTimeout(timer));
 }
 </script></html>'''
@@ -344,6 +370,10 @@ def build(root: Path, strict=False):
     entries, integrations, integration_source = apply_integrations(root, entries, strict)
     entries.sort(key=lambda e: (0 if e['id']=='mg-style-314486' else 1 if e['layer']=='style' and e['category_zh']=='口播与讲解' else 2 if e['layer']=='style' else 3))
     counts, local_paths = validate(entries, gallery, strict)
+    _, preview_paths = validate(previews, gallery, strict)
+    if len({e['id'] for e in entries + previews}) != len(entries) + len(previews):
+        raise ValueError('Duplicate ID across templates and previews')
+    local_paths.update(preview_paths)
     parameter_evidence = load_parameter_evidence(root)
     enrich_entries(entries, parameter_evidence)
     enrich_entries(previews, parameter_evidence)
@@ -354,6 +384,7 @@ def build(root: Path, strict=False):
     data = {'schema': 'talking-head-template-center/1', 'updated_on': datetime.now().astimezone().date().isoformat(),
             'counts_by_layer': dict(counts), 'build_mode':'complete' if strict else 'draft', 'counts_are_not_additive_templates': True,
             'sources': provenance, 'baseline_counts_by_layer': BASELINE_EXPECTED,
+            'sync_status': source_status(root),
             'integration_source': integration_source, 'integrations': integrations,
             'learner_categories': LEARNER_CATEGORIES,
             'entries': entries, 'previews': previews}
@@ -369,7 +400,7 @@ def build(root: Path, strict=False):
     if not strict:
         page=page.replace('<main><div class="notice">','<main><div class="notice">开发预览：部分演示仍在制作，不能当成全部完成。<br>')
     (gallery/'index.html').write_text(page, encoding='utf-8')
-    (root/'templates/README.zh-CN.md').write_text(markdown_catalog(entries, previews, counts, integrations, posters), encoding='utf-8')
+    (root/'templates/README.zh-CN.md').write_text(markdown_catalog(entries, previews, counts, integrations, posters, data['sync_status']), encoding='utf-8')
     category_root = root / 'templates/categories'
     category_root.mkdir(exist_ok=True)
     for category, content in markdown_category_pages(entries, previews, posters).items():

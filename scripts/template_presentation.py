@@ -5,6 +5,7 @@ Presentation fields never change the frozen source, QA, IDs or demo assets.
 from __future__ import annotations
 
 from collections import OrderedDict
+from hashlib import sha256
 import json
 from pathlib import Path
 
@@ -13,6 +14,8 @@ LEARNER_CATEGORIES = OrderedDict([
     ('flow', '流程与时间线'), ('data', '数据与对比'),
     ('product', '产品与案例展示'), ('text', '标题与重点字'),
     ('transition', '转场与片尾'), ('visual', '视觉与背景'),
+    ('industry', '行业应用'), ('innovation', '实验与创新'),
+    ('uncategorized', '分类待核对'),
 ])
 SECTION_TITLES = ['1. 效果预览', '2. 适用内容', '3. 所需素材',
                   '4. 可改参数与限制', '5. 怎样交给 AI 使用',
@@ -29,6 +32,9 @@ CATEGORY_MAP = {
     '循环与背景': 'visual', '科技视觉（非口播默认）': 'visual',
     '视觉与场景动效（非口播默认）': 'visual', '预告（不计入主清单）': 'visual',
     'RemotionUI本地适配': 'visual', '中文示例': 'text',
+    '行业应用': 'industry', '行业模板预告': 'industry',
+    '实验与创新': 'innovation', '创新与实验': 'innovation',
+    '分类待核对': 'uncategorized',
 }
 OVERRIDES = {
     **dict.fromkeys(['mg-control-compare','mg-control-bars','mg-control-number',
@@ -49,23 +55,67 @@ OVERRIDES = {
 
 
 def learner_category(entry):
-    return OVERRIDES.get(entry['id'], CATEGORY_MAP.get(entry.get('category_zh'), 'visual'))
+    if entry['id'] in OVERRIDES:
+        return OVERRIDES[entry['id']]
+    if entry.get('learner_category') in LEARNER_CATEGORIES:
+        return entry['learner_category']
+    group = entry.get('official_group') or entry.get('source_group')
+    if group in ('industry', 'prelaunch') or entry.get('industry_tags'):
+        return 'industry'
+    if entry.get('category_zh') in CATEGORY_MAP:
+        return CATEGORY_MAP[entry['category_zh']]
+    if group == 'innovation':
+        return 'innovation'
+    return 'uncategorized'
+
+
+EXECUTION_STATUSES = OrderedDict([
+    ('integrated_case', '已接入案例 · 按已验证版本使用'),
+    ('source_ready', '仓库源码可调用 · 先检查环境与素材'),
+    ('not_integrated', '尚未接入 · 先取得并核对原包'),
+    ('package_required', '已有控件演示 · 需自备授权原包'),
+    ('adaptation_required', '样片效果 · 需要源码适配'),
+    ('preview', '官方预告 · 待开放/核对'),
+    ('claim_pending', '待认领展示 · 原包未开放'),
+    ('unknown', '使用条件待核对'),
+])
+
+
+def execution_status(entry):
+    if entry.get('stage') == 'claim' or entry.get('catalog_availability') == 'claim':
+        return 'claim_pending'
+    if entry.get('preview_only') or entry.get('layer') == 'preview':
+        return 'preview'
+    if entry.get('integrations'):
+        return 'integrated_case'
+    return {'style': 'not_integrated', 'control': 'package_required',
+            'effect': 'adaptation_required', 'remotion': 'source_ready'}.get(entry.get('layer'), 'unknown')
 
 
 def learner_status(entry):
-    if entry.get('preview_only') or entry.get('layer') == 'preview':
-        return '官方预告 · 待开放/核对'
-    if entry.get('integrations'):
-        return '已有接入案例 · 新片仍需适配'
-    if entry.get('layer') == 'style':
-        return '官方参考 · 先取得并核对原包'
-    if entry.get('layer') == 'control':
-        return '已有控件演示 · 需自备授权原包'
-    if entry.get('layer') == 'effect':
-        return '样片效果 · 需要源码适配'
-    if entry.get('layer') == 'remotion':
-        return '代码已入库 · 准备环境后适配'
-    return '使用条件待核对'
+    state = execution_status(entry)
+    if state == 'integrated_case':
+        versions = {c.get('source', {}).get('version') for c in entry['integrations']}
+        if entry.get('version') not in versions:
+            return '已接入历史版 · 当前公开版尚未验证'
+        return '已有同版本接入案例 · 新片仍需适配'
+    return EXECUTION_STATUSES[state]
+
+
+def official_classification(entry):
+    labels = []
+    group = entry.get('official_group_zh') or entry.get('official_group') or entry.get('source_group')
+    if group:
+        labels.append(str(group))
+    for field in ('official_categories', 'industry_tags'):
+        values = entry.get(field) or []
+        if isinstance(values, str):
+            values = [values]
+        for value in values:
+            label = value if isinstance(value, str) else value.get('name') or value.get('label') or value.get('id')
+            if label and str(label) not in labels:
+                labels.append(str(label))
+    return labels
 
 
 def load_parameter_evidence(root):
@@ -135,10 +185,32 @@ def guide_for(entry, evidence=None):
     case = primary_case(entry)
     if case:
         status.append('目录默认本人Demo版本：' + case['source']['version'] + '；本片QA：' + case['qa']['state'] + '。只对应已登记版本与输入；切换其他演示时，以播放器下方显示的该版本说明为准。')
-    status.append('登记基线版本：' + str(entry.get('version') or '未登记；以来源为准') + '。新输入、新电脑和其他变体须另行验证。')
+    if entry.get('layer') in ('style', 'preview'):
+        latest = entry.get('latest_official') or {}
+        observation = entry.get('source_observation', {}).get('catalog')
+        version = str(latest.get('catalog_version') or entry.get('version') or '来源未提供版本号')
+        if observation == 'temporarily_absent':
+            status.append('公开 GitHub 合集上次记录版本：' + version + '；本轮未观察到此项，保留历史条目，不能据此认定已删除或仍是当前最新版。')
+        elif observation == 'not_in_collection':
+            status.append('公开 GitHub 合集本轮未列此项；本条来自官网公开展示，不能把官网版本当成 GitHub 已发布原包。')
+        else:
+            status.append('公开 GitHub 合集当前版本：' + version + '；这是目录元数据，不代表本机已安装或验证这个版本。')
+        website_version = entry.get('website_version') or latest.get('website_version')
+        status.append('官网独立核对版本：' + str(website_version) if website_version else '官网独立版本：本轮尚无独立详情证据；不把公开合集版本冒称官网已验证版本。')
+        frozen = entry.get('frozen_validation_reference') or {}
+        if frozen.get('version') and frozen['version'] != entry.get('version'):
+            status.append('原检查记录对应版本：' + frozen['version'] + '；原有 Demo、包与检查记录保持原版，新版尚未因目录更新而通过验证。')
+        if execution_status(entry) == 'not_integrated':
+            status.append('尚未接入 AI Cut：可以交给 AI 选型，但须先合法取得原包、核对依赖与参数并做短样，才能确认可用于自己的内容。')
+    else:
+        status.append('本库登记版本：' + str(entry.get('version') or '未登记；以来源为准') + '。新输入、新电脑和其他变体须另行验证。')
+    classifications = official_classification(entry)
+    uses = list(entry.get('uses_zh') or [entry.get('description_zh') or '用途待核对'])
+    if classifications:
+        uses.append('官方分类与行业：' + '、'.join(classifications) + '。用途导航仅帮助查找，不会隐藏其他行业的模板。')
     sections = [
-        {'id':'preview','title':SECTION_TITLES[0], 'text':['点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。']},
-        {'id':'use','title':SECTION_TITLES[1], 'text':entry.get('uses_zh') or [entry.get('description_zh') or '用途待核对'], 'notes':entry.get('avoid_zh') or []},
+        {'id':'preview','title':SECTION_TITLES[0], 'text':['点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。' if entry.get('demos') else '官方来源暂未提供可播放 Demo；保留条目与来源入口，不用其他模板的画面补位。']},
+        {'id':'use','title':SECTION_TITLES[1], 'text':uses, 'notes':entry.get('avoid_zh') or []},
         {'id':'inputs','title':SECTION_TITLES[2], 'text':entry.get('inputs_zh') or ['来源尚未提供完整素材要求；取得制作指南后逐项核对，不从 Demo 猜测。']},
         {'id':'parameters','title':SECTION_TITLES[3], 'text':params, 'notes':limits, 'evidence':(evidence or {}).get('evidence',[])},
         {'id':'instructions','title':SECTION_TITLES[4], 'text':[instructions]},
@@ -148,6 +220,9 @@ def guide_for(entry, evidence=None):
     ]
     return {'schema':'ai-cut-learner-guide/1', 'category':learner_category(entry),
             'category_zh':LEARNER_CATEGORIES[learner_category(entry)],
+            'detail_page':learner_category(entry) + '.md',
+            'execution_status':execution_status(entry),
+            'execution_status_zh':EXECUTION_STATUSES[execution_status(entry)],
             'status':learner_status(entry), 'sections':sections}
 
 
@@ -155,7 +230,22 @@ def enrich_entries(entries, evidence=None):
     evidence = evidence or {}
     for entry in entries:
         entry['learner_guide'] = guide_for(entry, evidence.get(entry['id']))
+    # Keep GitHub documents readable even when the website exposes hundreds of
+    # not-yet-open entries. These are navigation pages, not a second inventory.
+    groups = OrderedDict()
+    for entry in entries:
+        if entry.get('preview_only') or entry.get('layer') == 'preview':
+            groups.setdefault(preview_group(entry), []).append(entry)
+    for label, rows in groups.items():
+        group_id = sha256(label.encode('utf-8')).hexdigest()[:10]
+        for i, entry in enumerate(sorted(rows, key=lambda e: e['id'])):
+            entry['learner_guide']['detail_page'] = f'preview-{group_id}-{i // 50 + 1}.md'
     return entries
+
+
+def preview_group(entry):
+    labels = official_classification(entry)
+    return ' / '.join(labels) if labels else entry.get('category_zh') or '分类待核对'
 
 
 def official_posters(root):
@@ -178,8 +268,8 @@ def demo_link(demo, prefix='../docs/template-gallery/'):
 
 
 def guide_path(entry):
-    category = (entry.get('learner_guide') or guide_for(entry))['category']
-    return 'templates/categories/' + category + '.md#' + entry['id']
+    guide = entry.get('learner_guide') or guide_for(entry)
+    return 'templates/categories/' + guide.get('detail_page', guide['category'] + '.md') + '#' + entry['id']
 
 
 def markdown_card(entry, poster=None, root_prefix='../'):
@@ -189,6 +279,8 @@ def markdown_card(entry, poster=None, root_prefix='../'):
     for section in guide['sections']:
         lines += ['**'+section['title']+'**', '']
         if section['id'] == 'preview':
+            if not entry.get('demos'):
+                lines += section['text'] + ['']
             for index, demo in enumerate(entry.get('demos', []),1):
                 href=demo_link(demo, root_prefix+'docs/template-gallery/')
                 image=root_prefix+'docs/template-gallery/'+demo['poster_path'] if demo.get('poster_path') else (poster if not demo.get('path') else None)
@@ -225,7 +317,7 @@ def markdown_card(entry, poster=None, root_prefix='../'):
     return '\n'.join(lines)
 
 
-def markdown_catalog(entries, previews, counts, integrations, posters=None):
+def markdown_catalog(entries, previews, counts, integrations, posters=None, sync_status=None):
     posters=posters or {}
     lines=['# AI Cut · 特效模板库', '',
         '选择效果时先看内容用途，再看来源与当前状态。每条按同一顺序说明：效果预览 → 适用内容 → 所需素材 → 可改参数与限制 → 怎样交给 AI 使用 → 当前能否使用 → 来源与许可。', '',
@@ -236,22 +328,59 @@ def markdown_catalog(entries, previews, counts, integrations, posters=None):
         n=sum(e['learner_guide']['category']==key for e in entries)
         lines.append(f'| [{label}](#use-{key}) | {n} |')
     lines += ['', f'共 {len(entries)} 条不同层级的目录：{counts["style"]} 项官网模板与片段、{counts["control"]} 个官网控件、{counts["remotion"]} 个代码注册项、{counts["effect"]} 个真人效果分支。另有 {len(integrations)} 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 {len(entries)} 套整片一键模板。', '',
-        '## 状态怎样看', '', '已有案例表示对应输入曾经测试；代码入库仍需自己的运行环境；官方参考需要核对原包和取得状态；样片效果需要适配；官方预告不代表已开放下载。参数未查证的地方会明确保留“待核对”。', '',
-        '原来的四个来源层级和中文细类保留在每张卡及机器目录中。官方集合来自固定快照，并非官网最新全站库存。', '']
+        '## 状态怎样看', '', '已有案例仅证明已登记版本与输入曾经测试；当前公开版本单独显示，目录刷新不会升级旧 Demo 或原包。源码可调用仍需自己的运行环境和素材；未接入模板须先取得并核对原包；样片效果需要适配；官方预告与待认领展示不代表已开放下载。参数未查证的地方保留“待核对”。', '',
+        '| 调用状态 | 条目与预告合计 |', '| --- | ---: |']
+    for state, label in EXECUTION_STATUSES.items():
+        n = sum(execution_status(e) == state for e in entries + previews)
+        if n:
+            lines.append(f'| {label} | {n} |')
+    lines += ['', '## 本轮来源与覆盖', '']
+    if sync_status:
+        lines += ['元数据核对时间：' + str(sync_status.get('checked_at') or '见同步记录') + '。', '']
+        sources = sync_status.get('sources') or {}
+        if isinstance(sources, dict):
+            sources = [dict(value, name=key) if isinstance(value, dict) else {'name': key, 'status': value} for key, value in sources.items()]
+        for source in sources:
+            label = source.get('name') or source.get('source') or source.get('url') or '公开来源'
+            state = source.get('status') or source.get('state') or '见同步记录'
+            state = {'ok':'成功读取', 'not_checked':'本轮未核对', 'failed':'读取失败'}.get(state, state)
+            count = source.get('observed_cards')
+            if count is None and source.get('observed_templates') is not None:
+                count = source['observed_templates'] + source.get('observed_previews', 0)
+            lines.append('- ' + str(label) + '：' + str(state) + (f'；{count} 条来源记录' if count is not None else '') + ('；' + str(source['note']) if source.get('note') else ''))
+        if sync_status.get('scope_zh'):
+            lines += ['', sync_status['scope_zh']]
+        if sync_status.get('gaps'):
+            lines += ['', '本轮仍未完成的来源核对：']
+            for gap in sync_status['gaps']:
+                lines.append('- ' + (gap if isinstance(gap, str) else json.dumps(gap, ensure_ascii=False)))
+        lines += ['', '具体来源、分页、数量及缺口见机器目录的 `sync_status`；无法读取的分区不能视为没有更新。仅覆盖本轮公开可枚举内容，不包含未公开或账号专属原包。', '']
+    else:
+        lines += ['本页按已登记来源生成；本轮来源覆盖尚未登记，不能据此宣称官网最新全站已收齐。', '']
+    lines += ['官方原分类与行业标签保留在每条七项说明中；用途分类只是辅助选型，四个来源层级不能相加当作整片模板数。', '']
     for key,label in LEARNER_CATEGORIES.items():
         lines += [f'<a id="use-{key}"></a>', f'## {label}', '', f'[打开本分类的完整七项说明](categories/{key}.md)', '',
                   '| 模板 | 用途与当前状态 | Demo |', '| --- | --- | --- |']
         for entry in entries:
             if entry['learner_guide']['category']==key:
-                link='categories/'+key+'.md#'+entry['id']
+                link=guide_path(entry).removeprefix('templates/')
                 demos=' · '.join('[Demo '+str(i)+']('+demo_link(d)+')' for i,d in enumerate(entry['demos'],1))
                 case=primary_case(entry)
-                version='<br>当前本人Demo版本：'+case['source']['version'] if case else ''
+                version='<br>公开登记版本：'+str(entry.get('version') or '未提供') if entry.get('layer')=='style' else ''
+                version += '<br>当前本人Demo版本：'+case['source']['version'] if case else ''
                 lines += [f'| [{entry["label_zh"].replace("|","／")}]({link})<br>`{entry["id"]}` | {entry.get("description_zh", "").replace("|","／")}<br>**{entry["learner_guide"]["status"]}**{version} | {demos} |']
         lines += ['']
-    lines += ['## 附加预告 · 不计入主清单', '']
+    lines += [f'## 预告与待认领展示 · {len(previews)} 项 · 不计入主清单', '']
+    groups = OrderedDict()
     for entry in previews:
-        lines += ['['+entry['label_zh']+'](categories/'+entry['learner_guide']['category']+'.md#'+entry['id']+')：'+entry['learner_guide']['status'], '']
+        groups.setdefault(preview_group(entry), []).append(entry)
+    for label, rows in groups.items():
+        lines += ['### ' + label, '', '| 名称 | 状态 | Demo |', '| --- | --- | --- |']
+        for entry in rows:
+            link=guide_path(entry).removeprefix('templates/')
+            demos=' · '.join('[Demo '+str(i)+']('+demo_link(d)+')' for i,d in enumerate(entry.get('demos', []),1)) or '来源未提供'
+            lines += ['| ['+entry['label_zh'].replace('|','／')+']('+link+') | '+entry['learner_guide']['status']+' | '+demos+' |']
+        lines += ['']
     lines += ['## 维护说明', '', '本页和 HTML 由同一登记表及学员说明层生成；参数证据单独记录并验证文件存在。修改后运行：', '',
               '```powershell', 'python scripts/build_template_gallery.py --strict', '```', '',
               '个人 .motion、Key、完整原片、完整成片和工作缓存不包含在模板目录内。源文件与历史验证记录保持不变。', '']
@@ -273,6 +402,22 @@ def markdown_category_pages(entries, previews, posters=None):
         if extra:
             lines += ['## 附加预告 · 不计入上述条目', '']
             for entry in extra:
-                lines += [markdown_card(entry,posters.get(entry['id']),'../../'), '']
+                link = Path(guide_path(entry).split('#', 1)[0]).name + '#' + entry['id']
+                lines += ['- [' + entry['label_zh'] + '](' + link + ') · ' + entry['learner_guide']['status']]
         pages[key]='\n'.join(lines).rstrip()+'\n'
+    grouped = OrderedDict()
+    for entry in previews:
+        page = entry['learner_guide'].get('detail_page', entry['learner_guide']['category'] + '.md')
+        grouped.setdefault(page, []).append(entry)
+    for page, rows in grouped.items():
+        # Callers using un-enriched fixtures keep the historical inline path.
+        if page.removesuffix('.md') in LEARNER_CATEGORIES:
+            pages[page.removesuffix('.md')] += '\n'.join(markdown_card(e,posters.get(e['id']),'../../') for e in rows)
+            continue
+        lines = ['# ' + preview_group(rows[0]) + ' · 预告与待认领详情', '',
+                 '[返回全部分类](../README.zh-CN.md) · [在线筛选与播放](https://aicut.agi-top.com)', '',
+                 '这里是官方公开展示记录。预告、待认领与可下载原包是不同状态；每项按七段说明，未知参数和许可保留待核对。', '']
+        for entry in rows:
+            lines += [markdown_card(entry, posters.get(entry['id']), '../../'), '---', '']
+        pages[page.removesuffix('.md')] = '\n'.join(lines).rstrip() + '\n'
     return pages

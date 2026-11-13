@@ -1,13 +1,20 @@
 # MotionGit 中文目录的来源与验证边界
 
+## 当前同步口径（2026-11-13）
+
+已对照公开 GitHub 固定提交 `e46dbc2ee2856dff2a8fe81b1c20bb46633cebc5`、官网 39 个列表页、8 个分类页和 sitemap。当前公开合集为 100 主条目＋13 预告；官网另有 774 待认领参考展示。本库保留 1 个本轮暂缺的历史条目，合并共 101 主条目＋787 预告／待认领。它们不是全部已接入或可直接下载的模板。
+
+当前 `sources/motiongit-catalog.snapshot.json` 是带 `_sync` 来源信息、并保留暂缺历史元数据的合并快照；不是上游原文字节。原文 SHA256、固定提交和合并快照 SHA256 分别记录在 `motiongit-styles.json` 的 `source`。官网独立版本、公开合集版本和历史验证版本分别显示。完整范围、分类与操作入口见[本轮同步说明](../docs/TEMPLATE_SYNC_2026-11-13.zh-CN.md)。下文 2026-10-27 的数字和哈希只说明当时来源，不是当前数量或最新文件哈希。
+
+
 2026-11-03收录要求：官方目录面向所有行业，后续更新保留全部可公开枚举的官方条目、预告及原始分类，不因不适合Isaac或知识口播而删减。下文72项等数字描述2026-10-27固定快照，不是未来数量上限，也不证明今日全站已经收齐。目录新增不以本人Demo或接入QA为前置；获取、许可与运行状态独立标注。完整执行见[全库收录规则](../skill/ai-cut/references/template-lifecycle.md#官方全库收录与分类2026-11-03)。
 
 更新日期：2026-10-27。本页说明本仓库的中文选型索引；不是 MotionGit 全站库存、下载授权或运行兼容性承诺。
 
-## 固定来源
+## 2026-10-27 历史固定来源
 
 - 上游集合：[motiontemplates/all](https://github.com/motiontemplates/all)，固定 commit `21537c6f49aa9504496d20c14bf597f7eac229f4`，提交时间 `2026-10-27T03:02:25Z`。
-- [固定原始 catalog.json](https://raw.githubusercontent.com/motiontemplates/all/21537c6f49aa9504496d20c14bf597f7eac229f4/catalog.json) 原样保存在 [sources/motiongit-catalog.snapshot.json](sources/motiongit-catalog.snapshot.json)，315398 bytes，SHA-256 `c4bb605a22a3529c0dcbe8acb720ae50df3f5bc0c4ede8577f6caf8218d9a485`。
+- [固定原始 catalog.json](https://raw.githubusercontent.com/motiontemplates/all/21537c6f49aa9504496d20c14bf597f7eac229f4/catalog.json) 当时原样保存于 sources/motiongit-catalog.snapshot.json（原文由该提交的 Git 历史保留；当前路径已更新为下述合并快照），315398 bytes，SHA-256 `c4bb605a22a3529c0dcbe8acb720ae50df3f5bc0c4ede8577f6caf8218d9a485`。
 - 人读来源是同 commit 的 [官方中文 CATALOG.md](https://github.com/motiontemplates/all/blob/21537c6f49aa9504496d20c14bf597f7eac229f4/CATALOG.md)。本地整理结果在 [motiongit-styles.json](motiongit-styles.json)。
 - 快照只包含公开目录元数据，没有个人 `.motion`、Key、账号、模板源码包或 Demo 媒体。上游文本中的 AI 使用建议只是来源资料，不会自动升级成本项目规则或执行授权。
 

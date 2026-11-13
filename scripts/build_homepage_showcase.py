@@ -89,6 +89,15 @@ def official_image(entry, snapshot, preview=False):
     records = snapshot['previews'] if preview else snapshot['templates']
     key = 'previewId' if preview else 'repositoryId'
     matches = [x for x in records if str(x.get(key)) == str(entry['source_id'])]
+    if not matches:
+        # Public directory cards can precede the downloadable GitHub catalog.
+        # Keep them visible without inventing a demo or requiring a package.
+        poster = entry.get('official_poster') or entry.get('learner_poster')
+        demos = [d for d in entry.get('demos', []) if d.get('url')]
+        return {'id': entry['id'], 'kind': 'official_poster' if poster else 'source_only',
+                'url': https_url(poster) if poster else '',
+                'source_demo_url': demos[0]['url'] if demos else entry['source_url'],
+                'network_checked': False}
     if len(matches) != 1:
         raise ValueError(f"{entry['id']}: official image identity is not unique")
     source = matches[0]
@@ -184,9 +193,14 @@ def card(entry, asset):
             continue
         demos.append(f'<a href="{esc(link, quote=True)}">{esc(title)}</a>')
     if not demos:
-        raise ValueError(entry['id'] + ': missing full demo link')
+        demos.append('<a href="' + esc(https_url(entry['source_url']), quote=True) + '">官方页面（未提供可播放 Demo）</a>')
     demo_link = ((Path('docs/template-gallery') / primary['path']).as_posix() if primary else asset['source_demo_url'])
     image_link = asset['path'] if asset['kind'] == 'local_gif' else asset['url']
+    if not image_link:
+        guide = entry.get('learner_guide') or guide_for(entry)
+        return ('<td><strong>' + label + '</strong><p>' + esc(guide['status'])
+                + '</p><p>官方未提供可用预览图；不以其他效果补位。</p><p><a href="'
+                + esc(guide_path(entry)) + '">完整七项说明</a></p>' + ' · '.join(demos) + '</td>')
     if asset['kind'] == 'local_gif':
         caption = f"原速节选 · {asset['duration_seconds']:.1f} 秒 · 无声 GIF"
         if asset['source_demo'].endswith('/approved-b-highlight.mp4'):
@@ -248,7 +262,7 @@ def make_fragment(catalog, assets):
     if catalog.get('previews'):
         lines.extend(['<details>', f'<summary><strong>额外官方预告 · 不计入上述 {len(entries)} 项</strong></summary>', '',
                       '<p>官方标记 <code>previewOnly</code>／<code>coming-soon</code>，当前仅效果预告，不视为已开放下载或已在本机运行。</p>', '',
-                      table(catalog['previews'], assets), '', '</details>', ''])
+                      '<p>含待认领展示与行业预告；按官方分类查看全部条目、Demo及七项使用说明：<a href="templates/README.zh-CN.md">完整目录</a> · <a href="https://aicut.agi-top.com">在线分类筛选</a>。首页不一次加载全部预告视频。</p>', '', '</details>', ''])
     return '\n'.join(lines)
 
 

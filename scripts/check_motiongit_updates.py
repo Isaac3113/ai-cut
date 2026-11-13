@@ -22,6 +22,7 @@ import sys
 import tempfile
 from urllib.parse import parse_qs, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work" / "motiongit-monitor"
@@ -29,6 +30,7 @@ PINNED = ROOT / "templates" / "sources" / "motiongit-catalog.snapshot.json"
 INTEGRATIONS = ROOT / "templates" / "template-integrations.json"
 CATALOG_URL = "https://raw.githubusercontent.com/motiontemplates/all/main/catalog.json"
 LISTING_URL = "https://motiongit.com/templates"
+SITEMAP_URL = "https://motiongit.com/sitemap.xml"
 WATCH_URL = "https://motiongit.com/@adunext/template-01-integrated-portrait"
 # Compatibility annotation for the verified 2026-10-27 first-run event only.
 # Later recurrences have different event IDs; this never acknowledges an event.
@@ -90,10 +92,14 @@ class Document(HTMLParser):
 
 def canonical_detail(url):
     parsed = urlsplit(urljoin(LISTING_URL, url))
+    match = re.fullmatch(r"/@?([^/]+)/([^/]+)/?", parsed.path)
     if (parsed.scheme != "https" or parsed.netloc != "motiongit.com"
-            or not re.fullmatch(r"/@[^/]+/[^/]+/?", parsed.path)):
+            or not match or match.group(1) in {"templates", "help", "legal", "spec", "developers", "assets", "api", "media"}):
         raise ValueError("Not a public MotionGit template detail URL")
-    return urlunsplit(("https", "motiongit.com", parsed.path.rstrip("/"), "", ""))
+    # Keep established event identities stable when the site changes its links.
+    owner, slug = match.groups()
+    path = ("/" if owner == "community" else "/@") + owner + "/" + slug
+    return urlunsplit(("https", "motiongit.com", path, "", ""))
 
 
 def fetch_text(url, timeout=15):
@@ -101,7 +107,9 @@ def fetch_text(url, timeout=15):
     parts = urlsplit(url)
     allowed = (url == CATALOG_URL or
                (parts.scheme == "https" and parts.netloc == "motiongit.com"
-                and (parts.path == "/templates" or re.fullmatch(r"/@[^/]+/[^/]+", parts.path))))
+                and (parts.path in {"/templates", "/sitemap.xml"}
+                     or re.fullmatch(r"/templates/c/[a-z0-9-]+", parts.path)
+                     or re.fullmatch(r"/@?[^/]+/[^/]+", parts.path))))
     if not allowed:
         raise ValueError("URL outside the public monitor scope")
     req = Request(url, headers={"User-Agent": "TalkingHeadEditor-PublicUpdateMonitor/1.0",
@@ -164,15 +172,21 @@ def parse_listing(html, page_url):
 
 def parse_detail(html, card):
     nodes = list(Document(html).root.nodes())
-    versions = [VERSION.fullmatch(n.text()) for n in nodes if n.has_class("mono-pill")]
+    versions = [VERSION.fullmatch(value) for n in nodes if n.has_class("mono-pill")
+                for value in (n.attrs.get("title", ""), n.text())]
     version = next((m.group(1) for m in versions if m), None)
+    acquire = next((n for n in nodes if n.has_class("repo-acquire")), None)
+    if acquire is not None and acquire.has_class("prelaunch-box"):
+        return dict(card, id=card["url"], version=None,
+                    availability={"stage": "prelaunch", "downloadable": False},
+                    release_time=None, release_note=None)
     if not version:
         raise ValueError("Current public version missing; detail structure may have changed")
-    acquire = next((n for n in nodes if n.has_class("repo-acquire")), None)
     if acquire is None:
         raise ValueError("Public acquire section missing; refusing guessed download status")
     acquire_nodes = list(acquire.nodes())
-    price = next((n.text() for n in acquire_nodes if n.has_class("get-price")), None)
+    price = next((n.text() for n in acquire_nodes
+                  if n.has_class("get-price") or n.has_class("free")), None)
     login = any(n.tag == "a" and n.attrs.get("href", "").startswith("/login?")
                 for n in acquire_nodes)
     locked = any(n.attrs.get("id") == "social-support"
@@ -225,19 +239,120 @@ def normalize_catalog(data):
     return entries
 
 
+def directory_navigation(html, page_url):
+    """Discover status sections and categories without following sort/locale copies."""
+    sections, categories = set(), set()
+    for node in Document(html).root.nodes():
+        if node.tag != "a" or not node.attrs.get("href"):
+            continue
+        url = urljoin(page_url, node.attrs["href"])
+        p, query = urlsplit(url), parse_qs(urlsplit(url).query)
+        if p.scheme != "https" or p.netloc != "motiongit.com":
+            continue
+        if p.path == "/templates" and set(query) == {"status"}:
+            if len(query["status"]) != 1 or not re.fullmatch(r"[a-z0-9-]+", query["status"][0]):
+                raise ValueError("Invalid public status navigation")
+            sections.add(urlunsplit((p.scheme, p.netloc, p.path, "status=" + query["status"][0], "")))
+        if re.fullmatch(r"/templates/c/[a-z0-9-]+", p.path):
+            categories.add(urlunsplit((p.scheme, p.netloc, p.path, "", "")))
+        if p.path == "/templates" and set(query) == {"cat"} and len(query["cat"]) == 1:
+            cat = query["cat"][0]
+            if not re.fullmatch(r"[a-z0-9-]+", cat):
+                raise ValueError("Invalid public category navigation")
+            categories.add("https://motiongit.com/templates/c/" + cat)
+    return sections, categories
+
+
+def sitemap_inventory(html):
+    try:
+        root = ET.fromstring(html)
+    except ET.ParseError as error:
+        raise ValueError("Public sitemap XML missing or changed") from error
+    if root.tag.rsplit("}", 1)[-1] != "urlset":
+        raise ValueError("Public sitemap format changed; coverage requires review")
+    categories, details = set(), set()
+    for node in root.iter():
+        if node.tag.rsplit("}", 1)[-1] != "loc" or not node.text:
+            continue
+        p = urlsplit(node.text)
+        if p.scheme != "https" or p.netloc != "motiongit.com":
+            raise ValueError("Unexpected public sitemap origin")
+        if re.fullmatch(r"/templates/c/[a-z0-9-]+", p.path):
+            categories.add(urlunsplit((p.scheme, p.netloc, p.path, "", "")))
+        try:
+            details.add(canonical_detail(node.text))
+        except ValueError:
+            pass  # Site help/legal/developer pages are not templates.
+    return categories, details
+
+
+def audit_category(fetch, start, known, pages):
+    """Read all category pages; a new inventory gap must not advance the baseline."""
+    url, page, seen = start, 1, set()
+    while url:
+        if url in pages or page > 80:
+            raise ValueError("Category pagination cycle or bound reached")
+        nodes = list(Document(fetch(url)).root.nodes())
+        if not any(n.tag == "h1" for n in nodes):
+            raise ValueError("Public category page missing heading")
+        cards = [n for n in nodes if n.tag == "article" and n.has_class("vcard")]
+        current = set()
+        for card in cards:
+            links = [n for n in card.nodes() if n.tag == "a" and n.has_class("vthumb")]
+            if len(links) != 1:
+                raise ValueError("Category template card structure changed")
+            current.add(canonical_detail(links[0].attrs.get("href", "")))
+        if current & seen:
+            raise ValueError("Duplicate category cards across pages")
+        unknown = current - known
+        if unknown:
+            raise ValueError("Public category has templates outside scanned sections: " + ", ".join(sorted(unknown)[:3]))
+        seen.update(current)
+        pages.add(url)
+        pagers = [n for n in nodes if n.tag == "nav" and n.has_class("pager")]
+        if not pagers:
+            if len(cards) >= 24:
+                raise ValueError("Full public category page missing pagination")
+            break  # Explicit empty categories remain part of coverage.
+        next_nodes = [n for n in pagers[0].nodes() if n.text() == "Next"]
+        if len(pagers) != 1 or len(next_nodes) != 1:
+            raise ValueError("Public category pagination missing or ambiguous")
+        node = next_nodes[0]
+        if node.tag == "span" and node.has_class("dis"):
+            break
+        nxt = urljoin(url, node.attrs.get("href", ""))
+        p, q = urlsplit(nxt), parse_qs(urlsplit(nxt).query)
+        if not (node.tag == "a" and p.scheme == "https" and p.netloc == "motiongit.com"
+                and p.path == urlsplit(start).path and set(q) == {"page"}
+                and q["page"] == [str(page + 1)]):
+            raise ValueError("Invalid category next page")
+        url, page = nxt, page + 1
+
+
 def collect_directory(fetch=fetch_text):
     pages, starts, entries = set(), [LISTING_URL], {}
+    categories, sitemap_details = sitemap_inventory(fetch(SITEMAP_URL))
+    pages.add(SITEMAP_URL)
     for start in starts:
         url, section, declared = start, {}, None
         while url:
-            if url in pages or len(pages) >= 40:
+            if url in pages or len(pages) >= 200:
                 raise ValueError("Pagination cycle or bound reached")
-            cards, next_url, innovation, total = parse_listing(fetch(url), url)
+            html = fetch(url)
+            cards, next_url, innovation, total = parse_listing(html, url)
+            sections, discovered_categories = directory_navigation(html, url)
+            categories.update(discovered_categories)
+            for section_url in sorted(sections):
+                if section_url not in starts:
+                    starts.append(section_url)
             if declared is not None and total != declared:
                 raise ValueError("Total changed during pagination; retry next run")
             if set(cards) & set(section):
                 raise ValueError("Duplicate cards across pages; refusing incomplete crawl")
             declared = total
+            if parse_qs(urlsplit(start).query).get("status") == ["claim"]:
+                for card in cards.values():
+                    card["stage"] = "claim"
             section.update(cards)
             pages.add(url)
             if start == LISTING_URL and innovation and innovation not in starts:
@@ -246,11 +361,20 @@ def collect_directory(fetch=fetch_text):
         if len(section) != declared:
             raise ValueError("Unique public card count does not equal declared total")
         entries.update(section)
-    if len(starts) != 2:
+    if LISTING_URL + "?status=innovation" not in starts:
         raise ValueError("Innovation entry missing; public directory coverage uncertain")
-    if len(entries) > 500:
+    if len(entries) > 5000:
         raise ValueError("Template bound reached; coverage requires review")
+    missing = sitemap_details - set(entries)
+    if missing:
+        raise ValueError("Public sitemap has templates outside scanned sections: " + ", ".join(sorted(missing)[:3]))
+    for category in sorted(categories):
+        audit_category(fetch, category, set(entries), pages)
     def read_detail(card):
+        if card.get("stage") == "claim":
+            return dict(card, id=card["url"], version=None,
+                        availability={"stage": "claim", "downloadable": False},
+                        release_time=None, release_note=None)
         first_error = None
         for attempt in range(2):
             try:
@@ -457,8 +581,8 @@ def run_check(state, fetch=fetch_text):
                                "message": str(error)[:350], "baseline_preserved": True}
     return {"schema_version": 1, "checked_at": timestamp, "sources": results,
         "coverage": {"public_catalog": "Fixed curated GitHub collection, additional variant versions and preview-only entries; not the entire site.",
-                     "official_directory": "Actual public default and Innovation pagination plus their public detail versions/status.",
-                     "excluded": ["unclaimed submissions", "private/unlisted templates", "account-only availability", "personal package contents"],
+                     "official_directory": "Discovered public status sections (including Claim), complete pagination, sitemap/category reconciliation, and published/prelaunch detail versions/status; Claim cards are references without callable packages.",
+                     "excluded": ["private/unlisted templates", "account-only availability", "personal package contents"],
                      "watch_314486": "Public detail compared with repo-pinned previously evaluated version; local package is not inspected or upgraded."},
         "pending_events": sorted(state["pending"].values(), key=lambda e: (e["first_seen_at"], e["event_id"])),
         "notification_ack_required": True,

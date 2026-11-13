@@ -12,6 +12,11 @@ SPEC.loader.exec_module(monitor)
 URL = monitor.WATCH_URL
 
 
+def sitemap(paths=()):
+    return '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(
+        '<url><loc>https://motiongit.com' + path + '</loc></url>' for path in paths) + '</urlset>'
+
+
 def catalog(version="2.7.17-alpha.2"):
     return {"format": "motiongit.catalog/1", "templates": [{"website": URL, "repositoryId": "314486",
         "version": version, "title": {"zh": "测试模板"},
@@ -100,6 +105,8 @@ class MonitorTests(unittest.TestCase):
         other = "https://motiongit.com/@test/other"
         def fetch(url):
             visited.append(url)
+            if url == monitor.SITEMAP_URL:
+                return sitemap()
             if url in (URL, other):
                 return detail()
             if url == monitor.LISTING_URL:
@@ -122,6 +129,8 @@ class MonitorTests(unittest.TestCase):
     def test_one_acquire_retry_recovers_only_with_explicit_login_signal(self):
         attempts = []
         def fetch(url):
+            if url == monitor.SITEMAP_URL:
+                return sitemap()
             if url == URL:
                 attempts.append(url)
                 return detail().replace('/login?', '/unknown?') if len(attempts) == 1 else detail()
@@ -135,6 +144,8 @@ class MonitorTests(unittest.TestCase):
         attempts = []
         before = copy.deepcopy(self.state["sources"]["official_directory"])
         def fetch(url):
+            if url == monitor.SITEMAP_URL:
+                return sitemap()
             if url == monitor.CATALOG_URL:
                 return json.dumps(catalog())
             if url == URL:
@@ -244,6 +255,63 @@ class MonitorTests(unittest.TestCase):
                     with monitor.state_lock(path):
                         pass
             self.assertFalse(path.with_suffix(".json.lock").exists())
+
+    def test_new_detail_links_keep_existing_event_identity(self):
+        self.assertEqual(monitor.canonical_detail(URL.replace('/@', '/')), URL)
+        claim = 'https://motiongit.com/community/example'
+        self.assertEqual(monitor.canonical_detail(claim), claim)
+        for url in ['https://motiongit.com/help/download', 'https://motiongit.com/templates/c']:
+            with self.assertRaises(ValueError):
+                monitor.canonical_detail(url)
+
+    def test_current_version_title_and_free_price_are_observed(self):
+        html = detail().replace('<span class="mono-pill">v2.7.17-alpha.3</span>',
+                                '<span class="mono-pill" title="v2.7.17-alpha.3">Updated today</span>')
+        html = html.replace('class="get-price"', 'class="free"')
+        parsed = monitor.parse_detail(html, {'url': URL})
+        self.assertEqual(parsed['version'], '2.7.17-alpha.3')
+        self.assertEqual(parsed['availability']['price_label'], 'Free')
+
+    def test_prelaunch_has_no_invented_version_or_download(self):
+        parsed = monitor.parse_detail('<section class="repo-acquire prelaunch-box">Coming soon</section>', {'url': URL})
+        self.assertIsNone(parsed['version'])
+        self.assertFalse(parsed['availability']['downloadable'])
+        self.assertEqual(parsed['availability']['stage'], 'prelaunch')
+
+    def test_discovered_claim_and_new_category_are_audited(self):
+        claim = 'https://motiongit.com/community/new-reference'
+        category = 'https://motiongit.com/templates/c/new-industry'
+        visited = []
+        def fetch(url):
+            visited.append(url)
+            if url == monitor.SITEMAP_URL:
+                return sitemap(['/templates/c/new-industry', '/community/new-reference'])
+            if url == category:
+                return '<h1>New industry</h1>'
+            if url == URL:
+                return detail()
+            if url == monitor.LISTING_URL + '?status=claim':
+                return listing(url=claim)
+            return listing() + '<a href="/templates?status=claim">Claim</a>'
+        entries, pages = monitor.collect_directory(fetch)
+        self.assertIn(claim, entries)
+        self.assertEqual(entries[claim]['availability'], {'stage': 'claim', 'downloadable': False})
+        self.assertNotIn(claim, visited)  # No need to read every unclaimed detail or video.
+        self.assertIn(category, pages)
+        self.assertIn(monitor.SITEMAP_URL, pages)
+
+    def test_uncovered_sitemap_template_preserves_baseline(self):
+        before = copy.deepcopy(self.state['sources']['official_directory'])
+        def fetch(url):
+            if url == monitor.CATALOG_URL:
+                return json.dumps(catalog())
+            if url == monitor.SITEMAP_URL:
+                return sitemap(['/@other/new-section'])
+            return listing()
+        report = monitor.run_check(self.state, fetch)
+        self.assertEqual(report['sources']['official_directory']['status'], 'failed')
+        self.assertIn('outside scanned sections', report['sources']['official_directory']['message'])
+        self.assertEqual(self.state['sources']['official_directory'], before)
 
     def test_ack_requires_delivery_flag(self):
         with self.assertRaises(SystemExit) as result:
