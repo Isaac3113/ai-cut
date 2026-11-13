@@ -1,0 +1,77 @@
+{
+  "identity": "generic teaching illustration; not the owner, staff or customers",
+  "rights_scope": "Short rendered compositions with original graphic animation and editing; do not redistribute supplier raw footage or infer customer outcomes",
+  "source_assets": [
+    {
+      "page_url": "https://pixabay.com/videos/id-10822/",
+      "author": "Coverr-Free-Footage",
+      "sha256": "6b1df0d32aea00b8d38067370b61a03891fc65dbf8a219aec1c36bfe48bf8e62",
+      "license": "Pixabay Content License",
+      "license_url": "https://pixabay.com/service/license-summary/"
+    },
+    {
+      "page_url": "https://pixabay.com/videos/id-2340/",
+      "author": "Life-Of-Vids",
+      "sha256": "b5ccdf28c17fd474bc27a1f62999667d146853d90a3c9bd2b0e2d5923a9fc2bd",
+      "license": "Pixabay Content License",
+      "license_url": "https://pixabay.com/service/license-summary/"
+    },
+    {
+      "page_url": "https://pixabay.com/videos/id-10824/",
+      "author": "Coverr-Free-Footage",
+      "sha256": "a9f215ab4ab8306d5d7daddb06445e862c39a95074d5c7cbf9494164dcda57fc",
+      "license": "Pixabay Content License",
+      "license_url": "https://pixabay.com/service/license-summary/"
+    }
+  ],
+  "font": {
+    "name": "Noto Sans SC",
+    "license": "SIL Open Font License 1.1",
+    "bundled_in_author_package": false
+  },
+  "code": "AI Cut editorial-canvas 1.0.0; MIT own source; Remotion/React licenses separate",
+  "videos": [
+    {
+      "name": "portrait",
+      "path": "demos/editorial-canvas/portrait.mp4",
+      "poster": "demos/editorial-canvas/portrait.jpg",
+      "bytes": 3621817,
+      "sha256": "486bb59df2030678187bbb30f37bdbddb9c593a98c21c4222a75099b8a41685d",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "frames": 600,
+      "duration": 20.0,
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "final_package_visual_source_match": true,
+      "final_guard_change": "presenterStart validation only, no new visual implementation"
+    },
+    {
+      "name": "landscape",
+      "path": "demos/editorial-canvas/landscape.mp4",
+      "poster": "demos/editorial-canvas/landscape.jpg",
+      "bytes": 3225560,
+      "sha256": "af4276755818f0d709a95dfa4993c0895e9e23dd9ea4e98163ed5579786755bd",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "frames": 480,
+      "duration": 16.0,
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "final_package_visual_source_match": true,
+      "final_guard_change": "presenterStart validation only, no new visual implementation"
+    }
+  ],
+  "continuous_watch": false,
+  "audio": "silent; no original/reference voice or music copied",
+  "author_package": {
+    "bytes": 28979,
+    "sha256": "01801ffb02027e04cf31a0e473e6158e4b548c65970937f09c884de5665d4ea5",
+    "files": 20,
+    "content_spec": "0.1.0-draft.1",
+    "runtime_profile": "ai-cut.remotion/1",
+    "static_check": "7 passed; actual Codex provenance recommendation warning retained"
+  }
+}

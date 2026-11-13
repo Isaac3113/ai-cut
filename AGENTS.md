@@ -14,7 +14,14 @@ Read README.md, the master Skill and 03_Documentation/Knowledge_Base/00_Start_He
 - Update the project knowledge base for changes and teaching workflows. Use normal Git commits without rewriting existing histories.
 
 - Keep editing and validation records in local work. From 2026-10-31, this owner's formal delivery is the unified AI video library, not the old 05_成片/最新版. Inside each mapped work, create 参考图 and AI 成片 only when files exist; existing SRT or other subtitle files stay at the work root. Do not generate subtitles or empty categories merely for archiving. Any separately requested marketing text remains with that task's working materials, outside the media library; it is not a required public editing deliverable. Validate a replacement before updating the same work; preserve original footage, assets, recovery dependencies and the active editing project. See final-delivery.md, project-storage.md and KB34. Follow the current repository visibility and public-release scope below.
-- For the owner’s current cover and ending, read skill/ai-cut/references/intro-outro.md: 0.1-second cover and the supplied fixed outro; use docs/CROSS_COMPUTER_UPDATE.md for safe rule/media handoff.
+- Resolve the selected visual style before cover, captions or ending. The owner's current default lives in the separate private owner Skill; the historical 0.1-second cover and fixed outro apply only when that legacy package or an explicit request selects them. Use docs/CROSS_COMPUTER_UPDATE.md for safe rule/media handoff.
+
+## 风格选择与自制模板（2026-11-13）
+
+- 明确的本条风格要求优先，其次读取使用者自己的风格选择；公开安装不强加维护者本人的默认。通用可选路线见 `skill/ai-cut/references/editorial-canvas-style.md`，本人当前选择由独立私人 `ai-cut-owner` 维护。
+- 「编辑画布式知识口播」使用连贯画布、真人窗口、语义流程与获授权素材组织解释。风格不是固定镜头顺序；每条按内容改变素材、构图、场景组合、空间推进及转场，不能只换标题、颜色或人物。
+- 下方旧版逐字动态排版B、暗底轮廓封面、0.1秒片内封面、固定视频片尾保留为可选旧预设，不能在新路线中静默叠加。原声、语义、同步、已确认比例、费用及发布边界仍各自保持。
+- 通用自制模板登记在 `templates/authored-templates.json`，由现有生成器聚合到同一个目录、GitHub和HTML；不改写四个历史来源层的冻结基线，也不把官方场景或本人套用案例重新标成原创。模板说明区分源码、可重新执行的内容包、MotionGit专属运行方式、已验输入与未验环境。
 
 ## 功能与Skill归属（2026-11-06）
 

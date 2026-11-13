@@ -49,9 +49,10 @@ class LearnerGuideTests(unittest.TestCase):
             self.assertEqual(enriched, old)
 
     def test_parameter_contract_is_evidence_based_and_rejects_missing_or_outside_sources(self):
-        self.assertEqual(len(self.evidence), 144)
-        ids = {r['id'] for r in self.rows if r['layer'] in ('control', 'remotion', 'effect')}
-        self.assertEqual(set(self.evidence), ids)
+        legacy_ids = {r['id'] for r in self.rows if r['layer'] in ('control', 'remotion', 'effect')}
+        self.assertEqual(len(legacy_ids), 144)
+        authored_ids = {r['id'] for r in self.rows if r['layer'] == 'authored'}
+        self.assertEqual(set(self.evidence), legacy_ids | authored_ids)
         with TemporaryDirectory() as directory:
             root = Path(directory)
             (root/'templates').mkdir()

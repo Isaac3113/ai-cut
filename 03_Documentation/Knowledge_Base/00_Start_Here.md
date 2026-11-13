@@ -12,6 +12,8 @@
 
 # Start here
 
+2026-11-13：[编辑画布通用模板与独立作者层](31_Template_Center_And_Editing_Routes.md#2026-11-13编辑画布通用模板与独立作者层)说明同风格不同设计、作者.motion内容包与官网签发的区别，以及独立自制层、双比例去个人化Demo和单源目录生成。
+
 2026-11-06：[KB36 公开剪辑与私人业务流程的边界](36_Video_Drive_And_Publishing.md)说明公开AI Cut以本机成片交付结束，不安装或要求讲师的云盘、营销文案及发布系统；私人业务接续由创作者自己的独立环境维护。
 
 2026-11-06后续认可：AIVD-034第二版视频及两比例封面已获用户明确认可；未来知识口播正文每秒有实际内容相关动效，提到Facebook／IG等配正确可用icon，本条保持原样。当前标准见[用户偏好](../../skill/ai-cut/references/user-preferences.md)与[画面执行及平台图标](../../skill/ai-cut/references/visual-storytelling.md)。

@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "built_at_utc": "2026-11-13T02:37:00.016866+00:00",
+  "built_at_utc": "2026-11-13T06:59:39.339393+00:00",
   "catalog": "templates/catalog.json",
-  "catalog_sha256": "b3d1a0631c64ca8f37a0e7c048ad786383d04bc2ae37b97c5f041d313e5e33fb",
+  "catalog_sha256": "e76e60e851c1c2dfbc652c182c5d75f71c4f20e62ad2eb95e2e49f6c46cd0487",
   "snapshot": "templates/sources/motiongit-catalog.snapshot.json",
   "snapshot_sha256": "e15d053cb2f4a787aab770a798501ed2eab3939147962f03e590639c16abd0a7",
   "counts": {
-    "catalog_entries": 245,
-    "local_gifs": 147,
+    "catalog_entries": 246,
+    "local_gifs": 148,
     "official_posters": 98,
     "integration_records": 11,
-    "reused_local_gifs": 147,
+    "reused_local_gifs": 148,
     "extra_preview_posters": 787,
-    "local_gif_bytes": 20356747
+    "local_gif_bytes": 20415588
   },
   "limits": {
     "max_gif_seconds": 3.0,
@@ -29,6 +29,27 @@
     "remote_image_network_check": false
   },
   "assets": [
+    {
+      "id": "ai-cut-editorial-canvas",
+      "kind": "local_gif",
+      "path": "docs/template-gallery/demos/homepage/ai-cut-editorial-canvas.gif",
+      "source_demo": "docs/template-gallery/demos/editorial-canvas/portrait.mp4",
+      "source_sha256": "486bb59df2030678187bbb30f37bdbddb9c593a98c21c4222a75099b8a41685d",
+      "source_bytes": 3621817,
+      "source_duration_seconds": 20.0,
+      "source_start_seconds": 0.5,
+      "source_excerpt_seconds": 3.0,
+      "playback_speed": 1,
+      "sampling_fps": 10,
+      "palette_colors": 96,
+      "cache_reused": true,
+      "width": 202,
+      "height": 360,
+      "frames": 30,
+      "duration_seconds": 3.0,
+      "bytes": 58841,
+      "sha256": "604f0680e8c1d740bf1c68f1a572b3ef932a1a43d2327f220b55e93ac4985957"
+    },
     {
       "id": "mg-style-314486",
       "kind": "local_gif",

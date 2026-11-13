@@ -1,0 +1,114 @@
+{
+  "template_id": "ai-cut-editorial-canvas",
+  "template_version": "1.0.0",
+  "source_layer": "authored",
+  "content_spec": "0.1.0-draft.1",
+  "runtime_profile": "ai-cut.remotion/1",
+  "tested_environment": {
+    "os": "Windows",
+    "node": "24.22.1",
+    "remotion": "4.0.523",
+    "react": "19.2.3",
+    "chrome": "system Chrome, dedicated headless renderer",
+    "font": "Noto Sans SC variable TTF supplied externally under SIL OFL"
+  },
+  "real_render_cases": [
+    {
+      "input": "independent knowledge topic",
+      "aspect": "9:16",
+      "variant": "paper-editorial",
+      "duration_seconds": 20,
+      "frames": 600,
+      "source_media": "externally supplied Pixabay real hands planning/sketching/typing; no owner portrait",
+      "audio_streams": 0
+    },
+    {
+      "input": "independent education topic and different scene order",
+      "aspect": "16:9",
+      "variant": "dark-workbench",
+      "duration_seconds": 16,
+      "frames": 480,
+      "source_media": "externally supplied Pixabay real hands planning/sketching/typing; no owner portrait",
+      "audio_streams": 0
+    },
+    {
+      "input": "private presenter binding diagnostic",
+      "aspect": "9:16",
+      "variant": "material-wall",
+      "duration_seconds": 3,
+      "frames": 90,
+      "source_media": "private user-supplied presenter source, retained outside public repo/package",
+      "audio_streams": 0
+    }
+  ],
+  "visual_review": {
+    "method": "actual encoded frames plus capacity previews",
+    "sampled_seconds": {
+      "portrait": [
+        2,
+        6.7,
+        10.3,
+        14.5,
+        18
+      ],
+      "landscape": [
+        2,
+        6,
+        10.8,
+        14.5
+      ],
+      "private_presenter": [
+        1.5
+      ]
+    },
+    "observed_fixes": [
+      "Long heading fitted to canvas width",
+      "Presenter-safe headline width reserves right-top window",
+      "Portrait flow details kept within cards",
+      "Landscape shift content card height expanded"
+    ],
+    "continuous_watch": false,
+    "listening": "not applicable to these silent visual outputs"
+  },
+  "boundary_cases": {
+    "rendered_preview": [
+      "one hook item and no media, 3 seconds",
+      "five flow steps, maximum declared Chinese title/emphasis, no media, 6 seconds"
+    ],
+    "rejected": [
+      "invalid color",
+      "unknown field",
+      "clock sum mismatch",
+      "hook label over capacity",
+      "media path traversal",
+      "one-step flow",
+      "more than five flow steps",
+      "five-step flow too short",
+      "negative presenterStart"
+    ],
+    "not_all_combinations_tested": true
+  },
+  "package_checks": {
+    "official_helper_version": "1.0.0-rc.57",
+    "trust": "official HTTPS metadata matches BUILD and actual helper size/SHA256",
+    "structure_manifest_params_guide_integrity_privacy_license": "pass",
+    "provenance_warning": "Actual Codex authoring is retained; official helper recommends Claude but does not make it a conformance requirement"
+  },
+  "not_verified": [
+    "MotionGit website upload/review",
+    "MotionGit signed personal-download package",
+    "automatic execution by unknown runtime hosts",
+    "new physical computer",
+    "all possible content, ratios, fonts and scene combinations"
+  ],
+  "scope": "Composable self-authored/adapted editorial scene family, not the complete private 66-second film. Does not include the third-party modern native scene or personal packages.",
+  "licenses": {
+    "own_source": "MIT",
+    "Remotion": "Remotion License, separate eligibility terms; notice included",
+    "React": "MIT notice included",
+    "demo_stock": "Pixabay Content License; substantially composed teaching demos only, no raw stock redistribution",
+    "font": "External user font under its own license, not bundled"
+  },
+  "rendered_visual_source_sha256": "b3501e09a8266ec3d99f4133c6dfa0ee9d784f090a352874bca80c7a6fe25b55",
+  "final_guard_note": "Only a presenterStart finite/nonnegative input guard was added after full visual renders; scene implementation is unchanged."
+}

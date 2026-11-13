@@ -1,0 +1,86 @@
+{
+  "aspect": "16:9",
+  "variant": "dark-workbench",
+  "accent": "#FFB94E",
+  "secondary": "#9FCEFF",
+  "paper": "#171A20",
+  "ink": "#F6F4EF",
+  "label": "LEARNING WORKBENCH / 示例",
+  "seed": 26,
+  "captions": [],
+  "scenes": [
+    {
+      "kind": "prompt",
+      "title": "一节课程怎么设计",
+      "emphasis": "先找到学习问题",
+      "detail": "用与新主题相关的素材讲解。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "课程目标",
+          "detail": "这一课希望学生学会什么？"
+        },
+        {
+          "title": "明确学习结果",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "kind": "shift",
+      "title": "从零散资料",
+      "emphasis": "到完整学习过程",
+      "detail": "不是把步骤贴上去，而是连起来解释。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "连贯的课程",
+          "detail": "从目标到练习，再到反馈"
+        }
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "课程的真实步骤",
+      "emphasis": "目标 → 练习 → 反馈",
+      "detail": "顺序依据这堂课的真实安排。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "明确目标",
+          "detail": "先说清楚学什么"
+        },
+        {
+          "title": "动手练习",
+          "detail": "把知识用起来"
+        },
+        {
+          "title": "得到反馈",
+          "detail": "知道怎样继续改进"
+        }
+      ]
+    },
+    {
+      "kind": "gallery",
+      "title": "同一套方法",
+      "emphasis": "可以教不同内容",
+      "detail": "从纸笔规划到设计、操作，素材随主题改变。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "课程规划",
+          "detail": "把学习目标写清楚"
+        },
+        {
+          "title": "练习设计",
+          "detail": "准备可以执行的任务"
+        },
+        {
+          "title": "学习反馈",
+          "detail": "观察结果再调整"
+        }
+      ]
+    }
+  ],
+  "duration": 16
+}

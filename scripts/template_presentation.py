@@ -89,7 +89,7 @@ def execution_status(entry):
     if entry.get('integrations'):
         return 'integrated_case'
     return {'style': 'not_integrated', 'control': 'package_required',
-            'effect': 'adaptation_required', 'remotion': 'source_ready'}.get(entry.get('layer'), 'unknown')
+            'effect': 'adaptation_required', 'remotion': 'source_ready', 'authored': 'source_ready'}.get(entry.get('layer'), 'unknown')
 
 
 def learner_status(entry):
@@ -180,6 +180,9 @@ def guide_for(entry, evidence=None):
         status.append('当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。')
     elif entry.get('layer') == 'remotion':
         status.append('本仓库包含相应代码；需准备 Remotion 运行环境及本条素材，参数修改后重新预览检查。')
+    elif entry.get('layer') == 'authored':
+        status.append('本仓库包含AI Cut通用自制源码。请按本条自己的运行入口、素材和参数范围使用；源码可用、.motion打包、本机复验与新电脑验证分别说明。')
+        status.append('当前交付状态：' + str(entry.get('availability_zh') or entry.get('availability') or '读取模板说明核对'))
     else:
         status.append('可取得状态：' + str(entry.get('availability') or '以来源当前页面为准'))
     case = primary_case(entry)
@@ -216,7 +219,9 @@ def guide_for(entry, evidence=None):
         {'id':'instructions','title':SECTION_TITLES[4], 'text':[instructions]},
         {'id':'status','title':SECTION_TITLES[5], 'text':status, 'notes':[entry.get('validation',{}).get('scope') or '验证范围尚未登记'],
          'case':{'id':case['id'], 'qa':{'scope':case['qa']['scope']}, 'invocation':{'command':case['invocation']['command']}} if case else None},
-        {'id':'source','title':SECTION_TITLES[6], 'text':[entry.get('license') or '许可待核对；演示可看不代表素材可再分发。'], 'url':entry.get('source_url',''), 'repository_url':entry.get('source_repository_url','')},
+        {'id':'source','title':SECTION_TITLES[6], 'text':[entry.get('license') or '许可待核对；演示可看不代表素材可再分发。'], 'url':entry.get('source_url',''), 'repository_url':entry.get('source_repository_url',''),
+         **({'package_url':'https://github.com/Isaac3113/ai-cut/blob/main/' + entry['author_package']['path']}
+            if entry.get('layer') == 'authored' and entry.get('author_package', {}).get('path') else {})},
     ]
     return {'schema':'ai-cut-learner-guide/1', 'category':learner_category(entry),
             'category_zh':LEARNER_CATEGORIES[learner_category(entry)],
@@ -313,6 +318,7 @@ def markdown_card(entry, poster=None, root_prefix='../'):
             links=[]
             if section.get('url'): links.append('[原始来源]('+section['url']+')')
             if section.get('repository_url'): links.append('[上游技术资料]('+section['repository_url']+')')
+            if section.get('package_url'): links.append('[作者内容包（.motion，非个人签发包）]('+section['package_url']+')')
             lines += [' · '.join(links), '']
     return '\n'.join(lines)
 
@@ -327,7 +333,7 @@ def markdown_catalog(entries, previews, counts, integrations, posters=None, sync
     for key,label in LEARNER_CATEGORIES.items():
         n=sum(e['learner_guide']['category']==key for e in entries)
         lines.append(f'| [{label}](#use-{key}) | {n} |')
-    lines += ['', f'共 {len(entries)} 条不同层级的目录：{counts["style"]} 项官网模板与片段、{counts["control"]} 个官网控件、{counts["remotion"]} 个代码注册项、{counts["effect"]} 个真人效果分支。另有 {len(integrations)} 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 {len(entries)} 套整片一键模板。', '',
+    lines += ['', f'共 {len(entries)} 条不同层级的目录：{counts.get("authored", 0)} 套AI Cut通用自制模板、{counts["style"]} 项官网模板与片段、{counts["control"]} 个官网控件、{counts["remotion"]} 个代码注册项、{counts["effect"]} 个真人效果分支。另有 {len(integrations)} 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 {len(entries)} 套整片一键模板。', '',
         '## 状态怎样看', '', '已有案例仅证明已登记版本与输入曾经测试；当前公开版本单独显示，目录刷新不会升级旧 Demo 或原包。源码可调用仍需自己的运行环境和素材；未接入模板须先取得并核对原包；样片效果需要适配；官方预告与待认领展示不代表已开放下载。参数未查证的地方保留“待核对”。', '',
         '| 调用状态 | 条目与预告合计 |', '| --- | ---: |']
     for state, label in EXECUTION_STATUSES.items():
@@ -357,7 +363,7 @@ def markdown_catalog(entries, previews, counts, integrations, posters=None, sync
         lines += ['', '具体来源、分页、数量及缺口见机器目录的 `sync_status`；无法读取的分区不能视为没有更新。仅覆盖本轮公开可枚举内容，不包含未公开或账号专属原包。', '']
     else:
         lines += ['本页按已登记来源生成；本轮来源覆盖尚未登记，不能据此宣称官网最新全站已收齐。', '']
-    lines += ['官方原分类与行业标签保留在每条七项说明中；用途分类只是辅助选型，四个来源层级不能相加当作整片模板数。', '']
+    lines += ['官方原分类与行业标签保留在每条七项说明中；用途分类只是辅助选型；四个历史来源层级与独立自制层不能相加当作整片模板数。', '']
     for key,label in LEARNER_CATEGORIES.items():
         lines += [f'<a id="use-{key}"></a>', f'## {label}', '', f'[打开本分类的完整七项说明](categories/{key}.md)', '',
                   '| 模板 | 用途与当前状态 | Demo |', '| --- | --- | --- |']
@@ -383,7 +389,7 @@ def markdown_catalog(entries, previews, counts, integrations, posters=None, sync
         lines += ['']
     lines += ['## 维护说明', '', '本页和 HTML 由同一登记表及学员说明层生成；参数证据单独记录并验证文件存在。修改后运行：', '',
               '```powershell', 'python scripts/build_template_gallery.py --strict', '```', '',
-              '个人 .motion、Key、完整原片、完整成片和工作缓存不包含在模板目录内。源文件与历史验证记录保持不变。', '']
+              '第三方个人 .motion 原包、Key、完整原片、完整成片和工作缓存不包含在模板目录内。公开自制包是否可下载、采用何种适配器及验证到哪一步，按该条实际说明；文件扩展名不等于官方平台审核通过。源文件与历史验证记录保持不变。', '']
     return '\n'.join(lines)
 
 

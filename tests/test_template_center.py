@@ -330,6 +330,17 @@ class GalleryDemoSelectionTests(unittest.TestCase):
         self.assertEqual(result['remote'],'other')
         self.assertEqual(result['render'],'other')
 
+    def test_authored_generic_demo_is_not_owner_media(self):
+        fixture={'id':'authored-example','layer':'authored','demos':[
+            {'kind':'synthetic','subject':'generic','path':'demos/editorial-canvas/portrait.mp4','ratio':'9:16'},
+            {'kind':'synthetic','subject':'generic','path':'demos/editorial-canvas/landscape.mp4','ratio':'16:9'}]}
+        result=self.evaluate("console.log(JSON.stringify({own:candidateDemos(input,'own'),generic:candidateDemos(input,'other').length,label:demoLabel(input,input.demos[0]),playback:demoPlayback(input,input.demos[0],{})}));",fixture)
+        self.assertEqual(result['own'],[])
+        self.assertEqual(result['generic'],2)
+        self.assertIn('自制模板通用示例',result['label'])
+        self.assertFalse(result['playback']['audio'])
+        self.assertEqual(result['playback']['label'],'自制模板通用示例 · 静音')
+
     def test_local_manifest_accepts_only_registered_paths_and_opaque_relative_media(self):
         fixture={'entry':self.entry,'manifest':{'schema':'talking-head-local-demos/1','clips':{
             'demos/owner/portrait.mp4':{'url':'local-owner-media/abc_123-xyz.mp4','audio':True},

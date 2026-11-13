@@ -8,7 +8,7 @@
 
 | 用途分类 | 条目 |
 | --- | ---: |
-| [真人口播](#use-talk) | 38 |
+| [真人口播](#use-talk) | 39 |
 | [录屏与操作教学](#use-screen) | 22 |
 | [流程与时间线](#use-flow) | 25 |
 | [数据与对比](#use-data) | 26 |
@@ -20,7 +20,7 @@
 | [实验与创新](#use-innovation) | 25 |
 | [分类待核对](#use-uncategorized) | 0 |
 
-共 245 条不同层级的目录：101 项官网模板与片段、70 个官网控件、55 个代码注册项、19 个真人效果分支。另有 11 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 245 套整片一键模板。
+共 246 条不同层级的目录：1 套AI Cut通用自制模板、101 项官网模板与片段、70 个官网控件、55 个代码注册项、19 个真人效果分支。另有 11 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 246 套整片一键模板。
 
 ## 状态怎样看
 
@@ -29,7 +29,7 @@
 | 调用状态 | 条目与预告合计 |
 | --- | ---: |
 | 已接入案例 · 按已验证版本使用 | 7 |
-| 仓库源码可调用 · 先检查环境与素材 | 55 |
+| 仓库源码可调用 · 先检查环境与素材 | 56 |
 | 尚未接入 · 先取得并核对原包 | 98 |
 | 已有控件演示 · 需自备授权原包 | 66 |
 | 样片效果 · 需要源码适配 | 19 |
@@ -47,7 +47,7 @@
 
 具体来源、分页、数量及缺口见机器目录的 `sync_status`；无法读取的分区不能视为没有更新。仅覆盖本轮公开可枚举内容，不包含未公开或账号专属原包。
 
-官方原分类与行业标签保留在每条七项说明中；用途分类只是辅助选型，四个来源层级不能相加当作整片模板数。
+官方原分类与行业标签保留在每条七项说明中；用途分类只是辅助选型；四个历史来源层级与独立自制层不能相加当作整片模板数。
 
 <a id="use-talk"></a>
 ## 真人口播
@@ -56,6 +56,7 @@
 
 | 模板 | 用途与当前状态 | Demo |
 | --- | --- | --- |
+| [编辑画布式知识口播](categories/talk.md#ai-cut-editorial-canvas)<br>`ai-cut-editorial-canvas` | 同一编辑画布中的真人窗口、真实素材、输入输出、关系图与资料收束；场景顺序、素材和构图可随每片改变，不固定照抄一套设计。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/editorial-canvas/portrait.mp4) · [Demo 2](../docs/template-gallery/demos/editorial-canvas/landscape.mp4) |
 | [现代图文 · 口播讲解 · 竖屏](categories/talk.md#mg-style-314486)<br>`mg-style-314486` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。<br>**已接入历史版 · 当前公开版尚未验证**<br>公开登记版本：2.7.18-alpha.10<br>当前本人Demo版本：2.7.18-alpha.4 | [Demo 1](../docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.mp4) · [Demo 2](../docs/template-gallery/demos/integrated/owner-native-20261028/modern/landscape.mp4) · [Demo 3](../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4) · [Demo 4](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4) |
 | [现代图文 · 口播讲解](categories/talk.md#mg-style-336980)<br>`mg-style-336980` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.14 | [Demo 1](https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4) |
 | [纸面透视 · 口播讲解](categories/talk.md#mg-style-358192)<br>`mg-style-358192` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.21-alpha.14 | [Demo 1](https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4) |
@@ -1194,4 +1195,4 @@
 python scripts/build_template_gallery.py --strict
 ```
 
-个人 .motion、Key、完整原片、完整成片和工作缓存不包含在模板目录内。源文件与历史验证记录保持不变。
+第三方个人 .motion 原包、Key、完整原片、完整成片和工作缓存不包含在模板目录内。公开自制包是否可下载、采用何种适配器及验证到哪一步，按该条实际说明；文件扩展名不等于官方平台审核通过。源文件与历史验证记录保持不变。

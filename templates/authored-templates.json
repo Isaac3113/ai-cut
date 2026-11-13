@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "scope_zh": "AI Cut独立通用自制模板。与四个历史来源层级分别登记，不改写上游模板、旧真人分支或其验证范围；每项自己的运行入口、参数和作者包状态分别核对。",
+  "entries": [
+    {
+      "id": "ai-cut-editorial-canvas",
+      "label_zh": "编辑画布式知识口播",
+      "layer": "authored",
+      "category_zh": "口播与讲解",
+      "description_zh": "同一编辑画布中的真人窗口、真实素材、输入输出、关系图与资料收束；场景顺序、素材和构图可随每片改变，不固定照抄一套设计。",
+      "uses_zh": [
+        "知识讲解、概念关系和方法拆解",
+        "并列项目展陈、输入输出与步骤推进",
+        "开头hook及结尾方法收束"
+      ],
+      "avoid_zh": [
+        "不适合纯旅行Vlog、多机剧情或精细抠像",
+        "不是原66秒完整成片；官方现代图文alpha.4原场景不在自制包内",
+        "不能把素材演示当作真人客户或实际软件成果"
+      ],
+      "inputs_zh": [
+        "本条标题与短句、场景组合和真实时间",
+        "可选同期人物视频/图片与说明素材",
+        "可选已有字幕真实时间；中文字体需用户提供或检查系统回退"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/ai-cut/blob/main/extensions/editorial-canvas/README.zh-CN.md",
+      "source_id": "ai-cut-editorial-canvas",
+      "source_entry": "extensions/editorial-canvas/render.mjs",
+      "license": "AI Cut自写通用组件MIT；Remotion按自己的License；React MIT；字体与输入媒体各自授权。去个人化实拍合成Demo适用Pixabay Content License，非原始素材再分发。",
+      "availability": "available",
+      "availability_zh": "自制通用源码+本机Remotion适配器可运行；作者.motion静态验收通过；官网上传审核及个人签发包未验证。",
+      "runtime_profile": "ai-cut.remotion/1",
+      "spec_version": "0.1.0-draft.1",
+      "ratio": "9:16 / 16:9",
+      "validation": {
+        "state": "multi_input_render_verified",
+        "scope": "已从正式作者.motion独立解包，双内容/双比例实际渲染20s/16s静音视频并检查代表编码帧，外部真实素材视频确实绑定；私有3秒人物输入绑定另测。仅检查这两组组合与边界，非所有排列、连续视听、新电脑或官网个人下载验收。"
+      },
+      "demos": [
+        {
+          "kind": "synthetic",
+          "subject": "generic",
+          "path": "demos/editorial-canvas/portrait.mp4",
+          "description_zh": "纸面编辑画布，去个人化知识主题与实拍素材的静音合成教学演示；20秒竖版。",
+          "sha256": "486bb59df2030678187bbb30f37bdbddb9c593a98c21c4222a75099b8a41685d",
+          "bytes": 3621817,
+          "width": 1080,
+          "height": 1920,
+          "ratio": "9:16",
+          "fps": "30/1",
+          "duration_seconds": 20.0
+        },
+        {
+          "kind": "synthetic",
+          "subject": "generic",
+          "path": "demos/editorial-canvas/landscape.mp4",
+          "description_zh": "深色工作台，另一组课程主题、不同场景顺序与实拍素材的静音合成教学演示；16秒横版。",
+          "sha256": "af4276755818f0d709a95dfa4993c0895e9e23dd9ea4e98163ed5579786755bd",
+          "bytes": 3225560,
+          "width": 1920,
+          "height": 1080,
+          "ratio": "16:9",
+          "fps": "30/1",
+          "duration_seconds": 16.0
+        }
+      ],
+      "author_package": {
+        "path": "templates/authored-packages/ai-cut-editorial-canvas-1.0.0.motion",
+        "bytes": 28979,
+        "sha256": "01801ffb02027e04cf31a0e473e6158e4b548c65970937f09c884de5665d4ea5",
+        "files": 20,
+        "content_spec": "0.1.0-draft.1",
+        "runtime_profile": "ai-cut.remotion/1",
+        "static_check": "7 passed; actual Codex provenance recommendation warning retained"
+      },
+      "learner_category": "talk",
+      "variants": [
+        {
+          "id": "paper-editorial",
+          "label_zh": "纸面编辑画布"
+        },
+        {
+          "id": "dark-workbench",
+          "label_zh": "深色工作台"
+        },
+        {
+          "id": "material-wall",
+          "label_zh": "蓝色素材墙"
+        }
+      ]
+    }
+  ]
+}

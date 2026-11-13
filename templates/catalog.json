@@ -2,6 +2,7 @@
   "schema": "talking-head-template-center/1",
   "updated_on": "2026-11-13",
   "counts_by_layer": {
+    "authored": 1,
     "style": 101,
     "control": 70,
     "remotion": 55,
@@ -29,6 +30,11 @@
       "path": "templates/presenter-effects.json",
       "sha256": "5fe74dd9c3fb95ada9c9a0c5de2d281a3c16e6bab128d7a13d8d514283b506f7",
       "entries": 19
+    },
+    {
+      "path": "templates/authored-templates.json",
+      "sha256": "d19a499ea1ca9da925e42d0846b0c4a0caba4915ee42ea276d805352598d7e17",
+      "entries": 1
     }
   ],
   "baseline_counts_by_layer": {
@@ -1725,6 +1731,194 @@
     "uncategorized": "分类待核对"
   },
   "entries": [
+    {
+      "id": "ai-cut-editorial-canvas",
+      "label_zh": "编辑画布式知识口播",
+      "layer": "authored",
+      "category_zh": "口播与讲解",
+      "description_zh": "同一编辑画布中的真人窗口、真实素材、输入输出、关系图与资料收束；场景顺序、素材和构图可随每片改变，不固定照抄一套设计。",
+      "uses_zh": [
+        "知识讲解、概念关系和方法拆解",
+        "并列项目展陈、输入输出与步骤推进",
+        "开头hook及结尾方法收束"
+      ],
+      "avoid_zh": [
+        "不适合纯旅行Vlog、多机剧情或精细抠像",
+        "不是原66秒完整成片；官方现代图文alpha.4原场景不在自制包内",
+        "不能把素材演示当作真人客户或实际软件成果"
+      ],
+      "inputs_zh": [
+        "本条标题与短句、场景组合和真实时间",
+        "可选同期人物视频/图片与说明素材",
+        "可选已有字幕真实时间；中文字体需用户提供或检查系统回退"
+      ],
+      "version": "1.0.0",
+      "source_url": "https://github.com/Isaac3113/ai-cut/blob/main/extensions/editorial-canvas/README.zh-CN.md",
+      "source_id": "ai-cut-editorial-canvas",
+      "source_entry": "extensions/editorial-canvas/render.mjs",
+      "license": "AI Cut自写通用组件MIT；Remotion按自己的License；React MIT；字体与输入媒体各自授权。去个人化实拍合成Demo适用Pixabay Content License，非原始素材再分发。",
+      "availability": "available",
+      "availability_zh": "自制通用源码+本机Remotion适配器可运行；作者.motion静态验收通过；官网上传审核及个人签发包未验证。",
+      "runtime_profile": "ai-cut.remotion/1",
+      "spec_version": "0.1.0-draft.1",
+      "ratio": "9:16 / 16:9",
+      "validation": {
+        "state": "multi_input_render_verified",
+        "scope": "已从正式作者.motion独立解包，双内容/双比例实际渲染20s/16s静音视频并检查代表编码帧，外部真实素材视频确实绑定；私有3秒人物输入绑定另测。仅检查这两组组合与边界，非所有排列、连续视听、新电脑或官网个人下载验收。"
+      },
+      "demos": [
+        {
+          "kind": "synthetic",
+          "subject": "generic",
+          "path": "demos/editorial-canvas/portrait.mp4",
+          "description_zh": "纸面编辑画布，去个人化知识主题与实拍素材的静音合成教学演示；20秒竖版。",
+          "sha256": "486bb59df2030678187bbb30f37bdbddb9c593a98c21c4222a75099b8a41685d",
+          "bytes": 3621817,
+          "width": 1080,
+          "height": 1920,
+          "ratio": "9:16",
+          "fps": "30/1",
+          "duration_seconds": 20.0,
+          "poster_path": "demos/editorial-canvas/portrait.jpg"
+        },
+        {
+          "kind": "synthetic",
+          "subject": "generic",
+          "path": "demos/editorial-canvas/landscape.mp4",
+          "description_zh": "深色工作台，另一组课程主题、不同场景顺序与实拍素材的静音合成教学演示；16秒横版。",
+          "sha256": "af4276755818f0d709a95dfa4993c0895e9e23dd9ea4e98163ed5579786755bd",
+          "bytes": 3225560,
+          "width": 1920,
+          "height": 1080,
+          "ratio": "16:9",
+          "fps": "30/1",
+          "duration_seconds": 16.0,
+          "poster_path": "demos/editorial-canvas/landscape.jpg"
+        }
+      ],
+      "author_package": {
+        "path": "templates/authored-packages/ai-cut-editorial-canvas-1.0.0.motion",
+        "bytes": 28979,
+        "sha256": "01801ffb02027e04cf31a0e473e6158e4b548c65970937f09c884de5665d4ea5",
+        "files": 20,
+        "content_spec": "0.1.0-draft.1",
+        "runtime_profile": "ai-cut.remotion/1",
+        "static_check": "7 passed; actual Codex provenance recommendation warning retained"
+      },
+      "learner_category": "talk",
+      "variants": [
+        {
+          "id": "paper-editorial",
+          "label_zh": "纸面编辑画布"
+        },
+        {
+          "id": "dark-workbench",
+          "label_zh": "深色工作台"
+        },
+        {
+          "id": "material-wall",
+          "label_zh": "蓝色素材墙"
+        }
+      ],
+      "learner_guide": {
+        "schema": "ai-cut-learner-guide/1",
+        "category": "talk",
+        "category_zh": "真人口播",
+        "detail_page": "talk.md",
+        "execution_status": "source_ready",
+        "execution_status_zh": "仓库源码可调用 · 先检查环境与素材",
+        "status": "仓库源码可调用 · 先检查环境与素材",
+        "sections": [
+          {
+            "id": "preview",
+            "title": "1. 效果预览",
+            "text": [
+              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+            ]
+          },
+          {
+            "id": "use",
+            "title": "2. 适用内容",
+            "text": [
+              "知识讲解、概念关系和方法拆解",
+              "并列项目展陈、输入输出与步骤推进",
+              "开头hook及结尾方法收束"
+            ],
+            "notes": [
+              "不适合纯旅行Vlog、多机剧情或精细抠像",
+              "不是原66秒完整成片；官方现代图文alpha.4原场景不在自制包内",
+              "不能把素材演示当作真人客户或实际软件成果"
+            ]
+          },
+          {
+            "id": "inputs",
+            "title": "3. 所需素材",
+            "text": [
+              "本条标题与短句、场景组合和真实时间",
+              "可选同期人物视频/图片与说明素材",
+              "可选已有字幕真实时间；中文字体需用户提供或检查系统回退"
+            ]
+          },
+          {
+            "id": "parameters",
+            "title": "4. 可改参数与限制",
+            "text": [
+              "场景kind支持hook、prompt、shift、flow、gallery、folder、closing；1–12段可组合、换序或重复，每段3–12秒，总长为各段相加且不超过120秒。",
+              "标题title≤26字、重点emphasis≤20字、说明detail≤70字；hook项目短标签≤6字，其他项目标题≤12字。流程2–5项、其他场景1–3项；流程项目说明≤20字、其他≤32字。",
+              "variant支持paper-editorial、dark-workbench、material-wall；accent、secondary、paper、ink为#RRGGBB；seed为0–9999，只改变已实现的轻微构图运动，不代替重新设计。",
+              "画幅aspect支持9:16与16:9，按各自布局30fps输出；输入duration必须等于各scene.duration之和。",
+              "presenter及项目media可绑定自己的图片或视频；presenterStart、sourceStart必须非负；素材与font必须是--assets内的安全相对路径。人物按全片时钟，窗口素材按场景局部时钟。",
+              "captions使用已有真实start/end/text，必须有序且不重叠、不能越过总时长；竖版每条≤24字、横版≤45字。空数组表示不烧录字幕，不自动ASR或TTS。",
+              "render.mjs实际入口为Node.js22+、固定依赖、Chrome/Chromium与外部合法素材；输出video-silent.mp4，原声、BGM和SFX在唯一主时间轴合成。"
+            ],
+            "notes": [
+              "实际验证：两个独立主题、20秒9:16纸面／16秒16:9深色工作台的完整静音渲染及代表编码帧；另测3秒人物绑定和1项／5项长中文边界。不是所有内容、顺序、字体与排列均已验证。",
+              "本包不是66秒私人成片，也不包含其中MotionGit现代图文alpha.4官方原生场景、个人包、本人原片、外部字体或原始stock素材。",
+              "作者.motion按content spec 0.1.0-draft.1结构完成静态检查，使用自声明ai-cut.remotion/1适配器；不等于MotionGit官网已审核、个人下载签发包、任意宿主可自动执行或新电脑已验证。",
+              "本适配器只输出静音视觉；不负责自动精剪、人像抠像、音频克隆、真实业务执行或发布。未提供媒体时的中性窗口是示意，不伪装真实软件截图。"
+            ],
+            "evidence": [
+              "extensions/editorial-canvas/params.schema.json",
+              "extensions/editorial-canvas/render.mjs",
+              "extensions/editorial-canvas/motion.json",
+              "extensions/editorial-canvas/README.zh-CN.md",
+              "extensions/editorial-canvas/validation-summary.json"
+            ]
+          },
+          {
+            "id": "instructions",
+            "title": "5. 怎样交给 AI 使用",
+            "text": [
+              "请使用 AI Cut 模板目录中的「编辑画布式知识口播」（编号 ai-cut-editorial-canvas）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
+            ]
+          },
+          {
+            "id": "status",
+            "title": "6. 当前能否使用",
+            "text": [
+              "仓库源码可调用 · 先检查环境与素材",
+              "本仓库包含AI Cut通用自制源码。请按本条自己的运行入口、素材和参数范围使用；源码可用、.motion打包、本机复验与新电脑验证分别说明。",
+              "当前交付状态：自制通用源码+本机Remotion适配器可运行；作者.motion静态验收通过；官网上传审核及个人签发包未验证。",
+              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
+            ],
+            "notes": [
+              "已从正式作者.motion独立解包，双内容/双比例实际渲染20s/16s静音视频并检查代表编码帧，外部真实素材视频确实绑定；私有3秒人物输入绑定另测。仅检查这两组组合与边界，非所有排列、连续视听、新电脑或官网个人下载验收。"
+            ],
+            "case": null
+          },
+          {
+            "id": "source",
+            "title": "7. 来源与许可",
+            "text": [
+              "AI Cut自写通用组件MIT；Remotion按自己的License；React MIT；字体与输入媒体各自授权。去个人化实拍合成Demo适用Pixabay Content License，非原始素材再分发。"
+            ],
+            "url": "https://github.com/Isaac3113/ai-cut/blob/main/extensions/editorial-canvas/README.zh-CN.md",
+            "repository_url": "",
+            "package_url": "https://github.com/Isaac3113/ai-cut/blob/main/templates/authored-packages/ai-cut-editorial-canvas-1.0.0.motion"
+          }
+        ]
+      }
+    },
     {
       "id": "mg-style-314486",
       "label_zh": "现代图文 · 口播讲解 · 竖屏",

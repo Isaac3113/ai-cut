@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
-  "audited_on": "2026-11-03",
+  "audited_on": "2026-11-13",
   "scope_zh": "基于已登记公开参数合同和当前源码类型提炼的展示说明；不是执行包，也不扩大已有渲染、语言、比例或通用化验证。未核对的官方整套模板不补造参数。",
   "counts": {
     "remotion": 55,
     "control": 70,
-    "effect": 19
+    "effect": 19,
+    "authored": 1
   },
   "entries": {
     "remotion-brush-stroke-reveal": {
@@ -10744,6 +10745,31 @@
           "type": "string",
           "support": "shared_showcase_input"
         }
+      ]
+    },
+    "ai-cut-editorial-canvas": {
+      "evidence_kind": "declared_schema_and_actual_adapter_with_multi_input_render",
+      "parameters_zh": [
+        "场景kind支持hook、prompt、shift、flow、gallery、folder、closing；1–12段可组合、换序或重复，每段3–12秒，总长为各段相加且不超过120秒。",
+        "标题title≤26字、重点emphasis≤20字、说明detail≤70字；hook项目短标签≤6字，其他项目标题≤12字。流程2–5项、其他场景1–3项；流程项目说明≤20字、其他≤32字。",
+        "variant支持paper-editorial、dark-workbench、material-wall；accent、secondary、paper、ink为#RRGGBB；seed为0–9999，只改变已实现的轻微构图运动，不代替重新设计。",
+        "画幅aspect支持9:16与16:9，按各自布局30fps输出；输入duration必须等于各scene.duration之和。",
+        "presenter及项目media可绑定自己的图片或视频；presenterStart、sourceStart必须非负；素材与font必须是--assets内的安全相对路径。人物按全片时钟，窗口素材按场景局部时钟。",
+        "captions使用已有真实start/end/text，必须有序且不重叠、不能越过总时长；竖版每条≤24字、横版≤45字。空数组表示不烧录字幕，不自动ASR或TTS。",
+        "render.mjs实际入口为Node.js22+、固定依赖、Chrome/Chromium与外部合法素材；输出video-silent.mp4，原声、BGM和SFX在唯一主时间轴合成。"
+      ],
+      "limits_zh": [
+        "实际验证：两个独立主题、20秒9:16纸面／16秒16:9深色工作台的完整静音渲染及代表编码帧；另测3秒人物绑定和1项／5项长中文边界。不是所有内容、顺序、字体与排列均已验证。",
+        "本包不是66秒私人成片，也不包含其中MotionGit现代图文alpha.4官方原生场景、个人包、本人原片、外部字体或原始stock素材。",
+        "作者.motion按content spec 0.1.0-draft.1结构完成静态检查，使用自声明ai-cut.remotion/1适配器；不等于MotionGit官网已审核、个人下载签发包、任意宿主可自动执行或新电脑已验证。",
+        "本适配器只输出静音视觉；不负责自动精剪、人像抠像、音频克隆、真实业务执行或发布。未提供媒体时的中性窗口是示意，不伪装真实软件截图。"
+      ],
+      "evidence": [
+        "extensions/editorial-canvas/params.schema.json",
+        "extensions/editorial-canvas/render.mjs",
+        "extensions/editorial-canvas/motion.json",
+        "extensions/editorial-canvas/README.zh-CN.md",
+        "extensions/editorial-canvas/validation-summary.json"
       ]
     }
   }

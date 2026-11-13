@@ -1,0 +1,17 @@
+{
+  "profile": "ai-cut.remotion-lock/1",
+  "node": ">=22",
+  "dependencies": {
+    "@remotion/bundler": "4.0.523",
+    "@remotion/renderer": "4.0.523",
+    "remotion": "4.0.523",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "environment": {
+    "browser": "Chrome or Chromium; explicit --chrome path",
+    "ffmpeg": "Remotion renderer environment dependency",
+    "font": "user-provided Chinese font, or checked system fallback"
+  },
+  "onlineDuringRender": false
+}

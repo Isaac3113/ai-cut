@@ -1,0 +1,111 @@
+{
+  "aspect": "9:16",
+  "variant": "material-wall",
+  "accent": "#2D55FF",
+  "secondary": "#FFB5A0",
+  "paper": "#F6F4EF",
+  "ink": "#161616",
+  "label": "EDITORIAL CANVAS / 示例",
+  "seed": 43,
+  "captions": [],
+  "scenes": [
+    {
+      "kind": "hook",
+      "title": "把复杂知识",
+      "emphasis": "讲成看得懂的画面",
+      "detail": "素材、人物与流程在同一画布推进。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "观察",
+          "detail": ""
+        },
+        {
+          "title": "整理",
+          "detail": ""
+        },
+        {
+          "title": "表达",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "先理解关系",
+      "emphasis": "再安排画面",
+      "detail": "先后步骤必须来自真实内容。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "找到问题",
+          "detail": "明确想解释什么"
+        },
+        {
+          "title": "拆解过程",
+          "detail": "展示对象与关系"
+        },
+        {
+          "title": "呈现结果",
+          "detail": "让观众看懂变化"
+        }
+      ]
+    },
+    {
+      "kind": "gallery",
+      "title": "方法保持一致",
+      "emphasis": "每次呈现不同",
+      "detail": "可替换素材，也能改变构图和场景顺序。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "纸笔策划",
+          "detail": "把零散想法整理成结构"
+        },
+        {
+          "title": "设计草图",
+          "detail": "用画面帮助理解"
+        },
+        {
+          "title": "实际操作",
+          "detail": "展示真实的工作动作"
+        }
+      ]
+    },
+    {
+      "kind": "folder",
+      "title": "一次做好的方法",
+      "emphasis": "以后继续复用",
+      "detail": "保留方法，不锁死每支片的设计。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "表达方法",
+          "detail": "先理解再展示"
+        },
+        {
+          "title": "视觉关系",
+          "detail": "按内容重新组织"
+        },
+        {
+          "title": "素材窗口",
+          "detail": "使用新片素材"
+        }
+      ]
+    },
+    {
+      "kind": "closing",
+      "title": "下次讲解",
+      "emphasis": "换一种新呈现",
+      "detail": "同一视觉语言，不同的内容与构图。",
+      "duration": 4,
+      "items": [
+        {
+          "title": "内容由你决定",
+          "detail": "这里可以换成结尾真人画面或主题素材"
+        }
+      ]
+    }
+  ],
+  "duration": 20
+}

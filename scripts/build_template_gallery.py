@@ -22,7 +22,7 @@ from template_presentation import (LEARNER_CATEGORIES, enrich_entries,
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ['motiongit-styles.json', 'motiongit-controls.json',
            'remotion-library.json', 'presenter-effects.json']
-LAYERS = {'style': '官网模板与片段', 'control': '官网动画控件',
+LAYERS = {'authored': 'AI Cut通用自制模板', 'style': '官网模板与片段', 'control': '官网动画控件',
           'remotion': '现有代码模板', 'effect': '真人口播特效'}
 BASELINE_EXPECTED = {'style': 72, 'control': 70, 'remotion': 55, 'effect': 19}
 
@@ -57,6 +57,18 @@ def read_sources(root: Path):
     counts = Counter(e['layer'] for e in entries)
     if any(counts[layer] != count for layer, count in BASELINE_EXPECTED.items() if layer != 'style'):
         raise ValueError(f'Frozen baseline counts changed: {dict(counts)}; expected {BASELINE_EXPECTED}')
+    # Add independently authored templates without rewriting any frozen upstream registry.
+    authored_path = root / 'templates/authored-templates.json'
+    if authored_path.is_file():
+        raw = authored_path.read_bytes()
+        authored = json.loads(raw)
+        if authored.get('schema_version') != 1 or not isinstance(authored.get('entries'), list):
+            raise ValueError('Invalid authored template registry')
+        if any(entry.get('layer') != 'authored' for entry in authored['entries']):
+            raise ValueError('Authored registry must not relabel upstream templates')
+        entries.extend(authored['entries'])
+        provenance.append({'path': 'templates/authored-templates.json',
+                           'sha256': sha256(raw).hexdigest(), 'entries': len(authored['entries'])})
     return entries, previews, provenance
 
 
@@ -66,6 +78,19 @@ def source_status(root):
         return {}
     source = json.loads(path.read_text(encoding='utf-8'))
     return source.get('sync_status', {}) if isinstance(source, dict) else {}
+
+
+def verify_authored_packages(root, entries):
+    """Keep a published author archive bound to its reviewed bytes, never a private package."""
+    for entry in entries:
+        package = entry.get('author_package') if entry.get('layer') == 'authored' else None
+        if not package:
+            continue
+        path = (root / str(package.get('path', ''))).resolve()
+        if not path.is_relative_to((root / 'templates/authored-packages').resolve()) or path.suffix != '.motion':
+            raise ValueError(entry['id'] + ': author package outside approved directory')
+        if not path.is_file() or path.stat().st_size != package.get('bytes') or sha256(path.read_bytes()).hexdigest() != package.get('sha256'):
+            raise ValueError(entry['id'] + ': author package differs from reviewed bytes')
 
 
 def validate(entries, gallery: Path, strict: bool):
@@ -269,10 +294,10 @@ HTML = r'''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
 .entrylinks{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}.entrylinks a{border:1px solid #76bdce;border-radius:8px;color:white;padding:10px 15px}.entrylinks a:first-child{background:#eaf5f8;color:#153340}.guide-section pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f2f6f8;padding:12px;font-size:12px;line-height:1.65}.guide-section summary{font-size:13px}.preview-label{padding:10px 17px;margin:0;font-size:13px;background:#eaf5f8}.section-note{font-size:12px;color:#55717c}.guide-section a{overflow-wrap:anywhere}.learner-status{font-weight:600;color:#126581}.source-tabs-label{margin:18px 0 0;font-size:12px;color:#55717c}.grid{grid-template-columns:repeat(auto-fill,minmax(390px,1fr))}@media(max-width:600px){.grid{grid-template-columns:1fr}}
 </style>
 <header><div class="topline">AGI TOP / AI CUT / 中文效果目录</div><h1>先看效果，再选择适合内容的模板</h1>
-<p>整套风格、动画控件、代码模板与真人特效分别登记。中文名称、使用条件、来源和 Demo 放在同一个入口；有演示不等于已通过新片验收。</p>
+<p>通用自制模板、官方风格、动画控件、代码注册项与真人特效分别登记。中文名称、使用条件、来源和 Demo 放在同一个入口；有演示不等于已通过新片验收。</p>
 <nav class="entrylinks" aria-label="两个使用入口"><a href="https://github.com/Isaac3113/ai-cut/blob/main/docs/NOTION_GUIDE.zh-CN.md">① 学习自动剪辑</a><a href="#template-library">② 选择与使用模板</a></nav>
 <div class="stats">__STATS__</div></header>
-<main><div class="notice">本次 B 版获认可的是局部重点文字效果。模板按实际内容选择，不强套整片。官网 Demo 需要联网；本地控件 Demo 为静音版式演示，示例数值与模拟界面不代表真实业务成果。个人 .motion、Key 和完整原片不在本目录。</div>
+<main><div class="notice">先按内容选择风格与场景，不强套固定整片设计。AI Cut通用自制模板在来源分类中单列；官方预览、旧效果分支与真实可调用状态分别说明。官网 Demo 需要联网；本地演示为静音版，示例数值与模拟界面不代表真实业务成果。第三方个人原包、Key 和完整原片不在本目录，自制包按各条说明取得。</div>
 <div class="routes"><div class="route"><strong>知识口播</strong><p>讲述与原意驱动画面。优先字幕、概念解释、重点句与关系图。</p></div><div class="route"><strong>系统实操</strong><p>真实按钮与操作证据优先。放大、标注须指向实际目标。</p></div><div class="route"><strong>长访谈切片</strong><p>先按独立主题剪成完整论点，再添加包装与字幕。</p></div><div class="route"><strong>旅行 / Vlog</strong><p>按地点、事件、镜头连续性、环境声与音乐节奏剪辑；当前仅定义路线边界，未实现专用自动流程。</p></div></div>
 <div class="views" role="group" aria-label="浏览入口"><button id="allTemplates" type="button">全部模板</button><button id="ownerDemos" type="button">本人Demo（已登记案例）</button><p class="small" id="localPlayback">本人库样例为静音版；已关联的本机原声版可在同一张卡直接播放。</p></div>
 <h2 id="template-library">按内容选择特效模板</h2><p class="section-note">每条固定七项：预览、用途、素材、可改参数、给 AI 的指令、使用状态、来源许可。先选你想表达的内容，再查看来源层级和细类。</p><p class="source-tabs-label">来源层级（保留技术归属，数量不能合称整片模板）</p><div class="tabs" id="tabs"></div><div class="toolbar"><input id="search" aria-label="搜索模板" placeholder="搜索中文名称、用途、控件ID…"><select id="category" aria-label="用途分类"><option value="">全部用途分类</option></select><select id="sourceCategory" aria-label="原始细类"><option value="">全部原始细类</option></select><select id="executionStatus" aria-label="调用状态"><option value="">全部调用状态</option></select><select id="demoType" aria-label="Demo来源"><option value="">全部Demo来源</option><option value="own">本人Demo（已登记案例）</option><option value="official">官网示例</option><option value="other">其他本地演示</option></select><select id="ratio" aria-label="视频比例"><option value="">全部比例</option></select><button id="reset">重置</button></div>
@@ -298,9 +323,9 @@ function localOverrides(manifest,entries){
 }
 function demoPlayback(e,d,overrides){
   const local=d.path&&overrides[d.path];if(local)return {src:local.url,audio:local.audio,label:local.audio?'原声版 · 仅本机':'静音画面版 · 仅本机'};
-  return {src:demoKey(d),audio:false,label:demoSource(e,d)==='official'?'官网示例 · 联网播放':'静音库样例 · 随仓库同步'};
+  return {src:demoKey(d),audio:false,label:e.layer==='authored'?'自制模板通用示例 · 静音':demoSource(e,d)==='official'?'官网示例 · 联网播放':'静音库样例 · 随仓库同步'};
 }
-function demoLabel(e,d){const source={own:'本人',official:'官网示例',other:'本地效果'}[demoSource(e,d)],ratio=demoRatio(e,d),c=demoCase(e,d);return source+' · '+(ratio==='unknown'?'比例未标注':ratio)+(c?' · '+c.source.version:(d.variant_id?' · '+d.variant_id:''))}
+function demoLabel(e,d){const source=e.layer==='authored'?'自制模板通用示例':{own:'本人',official:'官网示例',other:'本地效果'}[demoSource(e,d)],ratio=demoRatio(e,d),c=demoCase(e,d);return source+' · '+(ratio==='unknown'?'比例未标注':ratio)+(c?' · '+c.source.version:(d.variant_id?' · '+d.variant_id:''))}
 // END_DEMO_MODEL
 const stateName=x=>({'integrated_case_verified':'仅本片接入已检查','registered':'已登记，演示生成中','registered_pending_render':'演示生成中','validated_demo':'本机演示已检查','verified':'本机演示已检查','rendered_verified':'本机演示已检查'}[x]||x);
 const availabilityName=x=>({'local_rendered_demo':'已有本地演示','available':'可按条件使用','registered_pending_render':'本地演示生成中'}[x]||x);
@@ -309,7 +334,7 @@ function safe(x){return typeof x==='string'&&(x.startsWith('https://')||x.starts
 function bullet(items){return '<ul>'+(items||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>'}
 function integrationInfo(e,d){const c=demoCase(e,d);if(!c)return '';const s=c.source,i=c.invocation;return '<details><summary>本片接入与复用边界</summary><p>Git库样例登记说明：'+esc(d.description_zh||'见本次记录')+'</p><p>'+esc(c.project_id+' · '+s.package_id+' · '+s.version)+'</p><p>输入：'+esc(i.inputs_zh.join('；'))+'</p><p>调用：<code>'+esc(i.command)+'</code></p><p>本片检查：'+esc(c.qa.scope)+'</p><p>仅此版本与Demo；原条目和全部变体验证状态不因此改变。</p></details>'}
 function demoMetadata(e,d){const p=demoPlayback(e,d,overrides),c=demoCase(e,d),source=demoSource(e,d);return '<p class="playback-note">'+esc(p.label)+'</p>'+(c?'<p class="small">当前本人Demo版本：'+esc(c.source.version)+' · 已解码与抽帧检查'+(c.qa.owner_artistic_acceptance?'':' · 风格待确认')+'</p>':'<p class="small">'+esc(d.description_zh||'')+'</p><p class="small">'+esc(source==='official'?'官网原始示例；不代表本人输入已经验证。':source==='own'?'历史本人素材样例；沿用原登记的检查范围。':'本地效果示例；不据此认定画面人物或业务成果。')+'</p>')+integrationInfo(e,d)}
-function demoStatus(e,d){return {own:'本人案例 · 见本次检查范围',official:'官网示例',other:'本地效果演示'}[demoSource(e,d)]}
+function demoStatus(e,d){return e.layer==='authored'?'自制模板通用示例 · 静音':{own:'本人案例 · 见本次检查范围',official:'官网示例',other:'本地效果演示'}[demoSource(e,d)]}
 function cardTitle(e){return e.layer==='style'&&e.family_label_zh?e.family_label_zh:e.label_zh}
 function renderTabs(){const tabs=[['','全部'],...Object.entries(LAYERS),['preview','官方预告／待开放']];$('tabs').innerHTML=tabs.map(([id,label])=>'<button data-layer="'+id+'" class="'+(layer===id?'active':'')+'">'+label+'</button>').join('');$('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{layer=b.dataset.layer;shownLimit=24;renderTabs();render()})}
 function learnerSection(s){
@@ -317,7 +342,7 @@ function learnerSection(s){
   let content=s.id==='instructions'?'<pre>'+esc((s.text||[]).join('\n'))+'</pre>':bullet(s.text||[]);
   if(s.notes?.length){content+=s.id==='status'?'<details><summary>原始检查范围</summary>'+bullet(s.notes)+'</details>':bullet(s.notes)}
   if(s.evidence?.length)content+='<p>参数依据：'+s.evidence.map(p=>'<a target="_blank" rel="noopener" href="https://github.com/Isaac3113/ai-cut/blob/main/'+esc(p)+'">'+esc(p.split('/').pop())+'</a>').join(' · ')+'</p>';
-  if(s.id==='source')content+='<p>'+(s.url?'<a target="_blank" rel="noopener" href="'+safe(s.url)+'">原始来源</a>':'')+(s.repository_url?' · <a target="_blank" rel="noopener" href="'+safe(s.repository_url)+'">上游技术资料</a>':'')+'</p>';
+  if(s.id==='source')content+='<p>'+(s.url?'<a target="_blank" rel="noopener" href="'+safe(s.url)+'">原始来源</a>':'')+(s.repository_url?' · <a target="_blank" rel="noopener" href="'+safe(s.repository_url)+'">上游技术资料</a>':'')+(s.package_url?' · <a target="_blank" rel="noopener" href="'+safe(s.package_url)+'">作者内容包（.motion，非个人签发包）</a>':'')+'</p>';
   return '<details class="guide-section"'+(['use','status'].includes(s.id)?' open':'')+'><summary>'+esc(s.title)+'</summary>'+content+'</details>'
 }
 function cardHtml(e,choices,d){
@@ -367,8 +392,9 @@ def build(root: Path, strict=False):
     gallery = root / 'docs/template-gallery'
     gallery.mkdir(parents=True, exist_ok=True)
     entries, previews, provenance = read_sources(root)
+    verify_authored_packages(root, entries)
     entries, integrations, integration_source = apply_integrations(root, entries, strict)
-    entries.sort(key=lambda e: (0 if e['id']=='mg-style-314486' else 1 if e['layer']=='style' and e['category_zh']=='口播与讲解' else 2 if e['layer']=='style' else 3))
+    entries.sort(key=lambda e: (-1 if e['layer']=='authored' else 0 if e['id']=='mg-style-314486' else 1 if e['layer']=='style' and e['category_zh']=='口播与讲解' else 2 if e['layer']=='style' else 3))
     counts, local_paths = validate(entries, gallery, strict)
     _, preview_paths = validate(previews, gallery, strict)
     if len({e['id'] for e in entries + previews}) != len(entries) + len(previews):

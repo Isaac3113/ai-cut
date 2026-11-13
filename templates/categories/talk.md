@@ -2,9 +2,101 @@
 
 [返回全部分类](../README.zh-CN.md) · [学习自动剪辑](../../docs/NOTION_GUIDE.zh-CN.md) · [在线筛选与播放](https://aicut.agi-top.com)
 
-本页 38 个目录条目；每项固定七段，参数依据与使用状态独立标注。先准备自己的合法素材，再按对应版本检查依赖和预览。
+本页 39 个目录条目；每项固定七段，参数依据与使用状态独立标注。先准备自己的合法素材，再按对应版本检查依赖和预览。
 
-[现代图文 · 口播讲解 · 竖屏](#mg-style-314486) · [现代图文 · 口播讲解](#mg-style-336980) · [纸面透视 · 口播讲解](#mg-style-358192) · [纸面透视 · 口播讲解 · 竖屏](#mg-style-295450) · [深色立体 · 多屏展陈](#mg-style-304634) · [深色立体 · 多屏展陈 · 竖屏](#mg-style-569615) · [科技控制台 · 口播讲解](#mg-style-553346) · [科技控制台 · 口播讲解 · 竖屏](#mg-style-738182) · [鲜色角色 · 叙事讲解](#mg-style-960723) · [鲜色角色 · 叙事讲解 · 竖屏](#mg-style-293151) · [活力海报 · 口播讲解](#mg-style-762139) · [活力海报 · 口播讲解 · 竖屏](#mg-style-721489) · [口播宣传动效 10 秒](#mg-style-854836) · [3D 口播开场](#mg-style-554769) · [DEEP STAGE 口播主舞台](#mg-style-228996) · [DEEP STAGE 深境舞台完整版](#mg-style-838778) · [Kit 2 · 口播动效包装（竖屏）](#mg-style-583549) · [突破边界](#mg-style-178707) · [字符剧场](#mg-style-148294) · [卡通讲解风](#mg-style-875206) · [像素海洋](#mg-style-966597) · [相机模式](#mg-style-172909) · [快讯台](#mg-style-298118) · [Mac 桌面](#mg-style-423997) · [牌桌洗牌](#mg-style-912092) · [图解口播与图片展示](#mg-style-643842) · [Kit 1 · 人文纪录片知识短片](#mg-style-233154) · [水墨人物志 · 一个人的故事](#mg-style-360840) · [图标要点卡](#mg-control-iconcards) · [问答](#mg-control-qa) · [误区与真相](#mg-control-myth) · [名词解释](#mg-control-definition) · [小贴士 / 警告](#mg-control-tip) · [剪纸描边](#presenter-effect-04) · [照片墙](#presenter-effect-05) · [杂志封面](#presenter-effect-08) · [抠像换景](#presenter-effect-09) · [人物破框](#presenter-effect-15)
+[编辑画布式知识口播](#ai-cut-editorial-canvas) · [现代图文 · 口播讲解 · 竖屏](#mg-style-314486) · [现代图文 · 口播讲解](#mg-style-336980) · [纸面透视 · 口播讲解](#mg-style-358192) · [纸面透视 · 口播讲解 · 竖屏](#mg-style-295450) · [深色立体 · 多屏展陈](#mg-style-304634) · [深色立体 · 多屏展陈 · 竖屏](#mg-style-569615) · [科技控制台 · 口播讲解](#mg-style-553346) · [科技控制台 · 口播讲解 · 竖屏](#mg-style-738182) · [鲜色角色 · 叙事讲解](#mg-style-960723) · [鲜色角色 · 叙事讲解 · 竖屏](#mg-style-293151) · [活力海报 · 口播讲解](#mg-style-762139) · [活力海报 · 口播讲解 · 竖屏](#mg-style-721489) · [口播宣传动效 10 秒](#mg-style-854836) · [3D 口播开场](#mg-style-554769) · [DEEP STAGE 口播主舞台](#mg-style-228996) · [DEEP STAGE 深境舞台完整版](#mg-style-838778) · [Kit 2 · 口播动效包装（竖屏）](#mg-style-583549) · [突破边界](#mg-style-178707) · [字符剧场](#mg-style-148294) · [卡通讲解风](#mg-style-875206) · [像素海洋](#mg-style-966597) · [相机模式](#mg-style-172909) · [快讯台](#mg-style-298118) · [Mac 桌面](#mg-style-423997) · [牌桌洗牌](#mg-style-912092) · [图解口播与图片展示](#mg-style-643842) · [Kit 1 · 人文纪录片知识短片](#mg-style-233154) · [水墨人物志 · 一个人的故事](#mg-style-360840) · [图标要点卡](#mg-control-iconcards) · [问答](#mg-control-qa) · [误区与真相](#mg-control-myth) · [名词解释](#mg-control-definition) · [小贴士 / 警告](#mg-control-tip) · [剪纸描边](#presenter-effect-04) · [照片墙](#presenter-effect-05) · [杂志封面](#presenter-effect-08) · [抠像换景](#presenter-effect-09) · [人物破框](#presenter-effect-15)
+
+<a id="ai-cut-editorial-canvas"></a>
+
+### 编辑画布式知识口播
+
+`ai-cut-editorial-canvas` · 真人口播 · 口播与讲解 · **仓库源码可调用 · 先检查环境与素材**
+
+同一编辑画布中的真人窗口、真实素材、输入输出、关系图与资料收束；场景顺序、素材和构图可随每片改变，不固定照抄一套设计。
+
+**1. 效果预览**
+
+[![编辑画布式知识口播 预览](../../docs/template-gallery/demos/editorial-canvas/portrait.jpg)](../../docs/template-gallery/demos/editorial-canvas/portrait.mp4)
+
+- [本地效果演示 1 · 9:16](../../docs/template-gallery/demos/editorial-canvas/portrait.mp4)：纸面编辑画布，去个人化知识主题与实拍素材的静音合成教学演示；20秒竖版。
+- [本地效果演示 2 · 16:9](../../docs/template-gallery/demos/editorial-canvas/landscape.mp4)：深色工作台，另一组课程主题、不同场景顺序与实拍素材的静音合成教学演示；16秒横版。
+
+**2. 适用内容**
+
+- 知识讲解、概念关系和方法拆解
+- 并列项目展陈、输入输出与步骤推进
+- 开头hook及结尾方法收束
+
+- 不适合纯旅行Vlog、多机剧情或精细抠像
+- 不是原66秒完整成片；官方现代图文alpha.4原场景不在自制包内
+- 不能把素材演示当作真人客户或实际软件成果
+
+**3. 所需素材**
+
+- 本条标题与短句、场景组合和真实时间
+- 可选同期人物视频/图片与说明素材
+- 可选已有字幕真实时间；中文字体需用户提供或检查系统回退
+
+**4. 可改参数与限制**
+
+按已核对的字段与限制修改；尚未核对的能力会明确标注。
+
+<details>
+<summary>查看参数、限制与来源依据</summary>
+
+- 场景kind支持hook、prompt、shift、flow、gallery、folder、closing；1–12段可组合、换序或重复，每段3–12秒，总长为各段相加且不超过120秒。
+- 标题title≤26字、重点emphasis≤20字、说明detail≤70字；hook项目短标签≤6字，其他项目标题≤12字。流程2–5项、其他场景1–3项；流程项目说明≤20字、其他≤32字。
+- variant支持paper-editorial、dark-workbench、material-wall；accent、secondary、paper、ink为#RRGGBB；seed为0–9999，只改变已实现的轻微构图运动，不代替重新设计。
+- 画幅aspect支持9:16与16:9，按各自布局30fps输出；输入duration必须等于各scene.duration之和。
+- presenter及项目media可绑定自己的图片或视频；presenterStart、sourceStart必须非负；素材与font必须是--assets内的安全相对路径。人物按全片时钟，窗口素材按场景局部时钟。
+- captions使用已有真实start/end/text，必须有序且不重叠、不能越过总时长；竖版每条≤24字、横版≤45字。空数组表示不烧录字幕，不自动ASR或TTS。
+- render.mjs实际入口为Node.js22+、固定依赖、Chrome/Chromium与外部合法素材；输出video-silent.mp4，原声、BGM和SFX在唯一主时间轴合成。
+
+- 实际验证：两个独立主题、20秒9:16纸面／16秒16:9深色工作台的完整静音渲染及代表编码帧；另测3秒人物绑定和1项／5项长中文边界。不是所有内容、顺序、字体与排列均已验证。
+- 本包不是66秒私人成片，也不包含其中MotionGit现代图文alpha.4官方原生场景、个人包、本人原片、外部字体或原始stock素材。
+- 作者.motion按content spec 0.1.0-draft.1结构完成静态检查，使用自声明ai-cut.remotion/1适配器；不等于MotionGit官网已审核、个人下载签发包、任意宿主可自动执行或新电脑已验证。
+- 本适配器只输出静音视觉；不负责自动精剪、人像抠像、音频克隆、真实业务执行或发布。未提供媒体时的中性窗口是示意，不伪装真实软件截图。
+
+参数依据：[params.schema.json](../../extensions/editorial-canvas/params.schema.json) · [render.mjs](../../extensions/editorial-canvas/render.mjs) · [motion.json](../../extensions/editorial-canvas/motion.json) · [README.zh-CN.md](../../extensions/editorial-canvas/README.zh-CN.md) · [validation-summary.json](../../extensions/editorial-canvas/validation-summary.json)
+
+</details>
+
+**5. 怎样交给 AI 使用**
+
+<details>
+<summary>复制本模板的使用提示词</summary>
+
+```text
+请使用 AI Cut 模板目录中的「编辑画布式知识口播」（编号 ai-cut-editorial-canvas）。
+我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
+先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
+按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
+若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
+```
+
+</details>
+
+**6. 当前能否使用**
+
+- 仓库源码可调用 · 先检查环境与素材
+- 本仓库包含AI Cut通用自制源码。请按本条自己的运行入口、素材和参数范围使用；源码可用、.motion打包、本机复验与新电脑验证分别说明。
+- 当前交付状态：自制通用源码+本机Remotion适配器可运行；作者.motion静态验收通过；官网上传审核及个人签发包未验证。
+- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
+
+<details>
+<summary>查看原始检查范围与接入记录</summary>
+
+- 已从正式作者.motion独立解包，双内容/双比例实际渲染20s/16s静音视频并检查代表编码帧，外部真实素材视频确实绑定；私有3秒人物输入绑定另测。仅检查这两组组合与边界，非所有排列、连续视听、新电脑或官网个人下载验收。
+
+</details>
+
+**7. 来源与许可**
+
+- AI Cut自写通用组件MIT；Remotion按自己的License；React MIT；字体与输入媒体各自授权。去个人化实拍合成Demo适用Pixabay Content License，非原始素材再分发。
+
+[原始来源](https://github.com/Isaac3113/ai-cut/blob/main/extensions/editorial-canvas/README.zh-CN.md) · [作者内容包（.motion，非个人签发包）](https://github.com/Isaac3113/ai-cut/blob/main/templates/authored-packages/ai-cut-editorial-canvas-1.0.0.motion)
+
+---
 
 <a id="mg-style-314486"></a>
 

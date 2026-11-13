@@ -1,0 +1,17 @@
+{
+  "name": "ai-cut-editorial-canvas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {"node": ">=22"},
+  "scripts": {"render": "node render.mjs", "check": "tsc --noEmit"},
+  "dependencies": {
+    "@remotion/bundler": "4.0.523",
+    "@remotion/renderer": "4.0.523",
+    "remotion": "4.0.523",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {"@types/react": "19.2.7", "typescript": "5.9.3"}
+}

@@ -1,0 +1,158 @@
+{
+  "guideVersion": "0.1",
+  "fit": {
+    "summary": "用同一编辑画布组织知识口播、真实素材和关系图，每片重新选构图与动作。",
+    "genres": [
+      "talking-head",
+      "knowledge",
+      "tutorial"
+    ],
+    "goodFor": [
+      "概念解释与流程推进",
+      "并列岗位或素材展陈",
+      "开头hook和方法收束"
+    ],
+    "notFor": [
+      "纯旅行Vlog或多机剧情",
+      "人物分割抠像",
+      "把所有内容硬塞成同一个流程"
+    ],
+    "placement": "body"
+  },
+  "duration": {
+    "policy": "fit-content",
+    "min": 3,
+    "max": 120,
+    "default": 20,
+    "param": "duration",
+    "rules": [
+      "按真实讲解的时间确定各场景duration，duration等于所有场景秒数之和。",
+      "每段3–12秒，最多12段；原声过长则在唯一主时间轴拆段，不拉伸原声。"
+    ]
+  },
+  "materials": [
+    {
+      "role": "video.presenter",
+      "required": false,
+      "use": "本条同期人物放在人物窗口，按全片同一时钟静音引用。",
+      "ask": "如果要显示人物，请提供本条有权使用的人物视频或图片。",
+      "ifMissing": "不显示人物窗口，保留图形，不冒充本人案例。",
+      "maps": [
+        "presenter",
+        "presenterType",
+        "presenterLabel",
+        "presenterStart"
+      ]
+    },
+    {
+      "role": "video.footage",
+      "required": false,
+      "use": "说明窗口和素材展陈，按场景局部时钟引用；原音静音。",
+      "ask": "有没有和当前讲解相符的实拍或说明素材？",
+      "ifMissing": "显示中性的设计内容窗口，不当作真实软件截图。",
+      "maps": [
+        "scenes"
+      ]
+    },
+    {
+      "role": "text.subtitles",
+      "required": false,
+      "use": "按已有真实起止时间显示短句字幕，不自动猜词级时间。",
+      "ask": "已有对应这版口播的字幕或时间记录吗？",
+      "ifMissing": "不加字幕，不虚构时间。",
+      "maps": [
+        "captions"
+      ]
+    },
+    {
+      "role": "x-font",
+      "required": false,
+      "use": "为中文提供有权使用的字形文件。",
+      "ask": "你是否有可用的中文字体？",
+      "ifMissing": "使用系统中文字体；新机器未验证的回退须另查。",
+      "maps": [
+        "font"
+      ]
+    }
+  ],
+  "copy": [
+    {
+      "param": "aspect",
+      "label": "视频比例",
+      "from": [
+        "conversation"
+      ],
+      "rule": "采用本条已确认比例；9:16或16:9分别布局。"
+    },
+    {
+      "param": "variant",
+      "label": "画布变体",
+      "from": [
+        "conversation"
+      ],
+      "rule": "按内容选纸面编辑、深色工作台或素材墙。"
+    },
+    {
+      "param": "accent",
+      "label": "主强调色",
+      "from": [
+        "conversation"
+      ],
+      "rule": "有效的十六进制颜色，检查字色对比。"
+    },
+    {
+      "param": "secondary",
+      "label": "辅助强调色",
+      "from": [
+        "conversation"
+      ],
+      "rule": "有效颜色，只作次级重点。"
+    },
+    {
+      "param": "paper",
+      "label": "画布颜色",
+      "from": [
+        "conversation"
+      ],
+      "rule": "浅底或深底与墨色成对选择。"
+    },
+    {
+      "param": "ink",
+      "label": "主要文字颜色",
+      "from": [
+        "conversation"
+      ],
+      "rule": "与画布保持可读对比。"
+    },
+    {
+      "param": "label",
+      "label": "画布标记",
+      "from": [
+        "conversation"
+      ],
+      "rule": "使用本片主题或自己的品牌，不继承讲师名字。"
+    },
+    {
+      "param": "seed",
+      "label": "构图变化种子",
+      "from": [
+        "conversation"
+      ],
+      "rule": "只微调确定性运动，不把随机种子当成新设计。"
+    }
+  ],
+  "conversation": [
+    "先理解本条实际内容与已确认比例，再选择场景和素材。",
+    "保留原声原意，不为了模板虚构流程或完成状态。",
+    "同风格可以换构图、媒体、场景组合和节奏。"
+  ],
+  "hostWithoutTools": [
+    "可以读取指南、写内容与素材安排，但不能称已渲染。",
+    "将模板解包后，在具备Node、固定依赖与浏览器的本机按README运行。"
+  ],
+  "audio": {
+    "output": "silent",
+    "voiceover": "原声由唯一主剪辑保存，不裁短或单移音轨"
+  },
+  "usage": "README.zh-CN.md"
+}
