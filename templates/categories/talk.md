@@ -102,18 +102,16 @@
 
 ### 现代图文 · 口播讲解 · 竖屏
 
-`mg-style-314486` · 真人口播 · 口播与讲解 · **已接入历史版 · 当前公开版尚未验证**
+`mg-style-314486` · 真人口播 · 口播与讲解 · **尚未接入 · 先取得并核对原包**
 
 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。
 
 **1. 效果预览**
 
-[![现代图文 · 口播讲解 · 竖屏 预览](../../docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.jpg)](../../docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.mp4)
+[![现代图文 · 口播讲解 · 竖屏 预览](../../docs/template-gallery/demos/case-studies/approved-b-highlight.jpg)](../../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4)
 
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.mp4)：现代图文 01-D 本人Demo · 9:16 · 18.5秒静音。本包竖屏输出。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。
-- [本人案例 2 · 16:9](../../docs/template-gallery/demos/integrated/owner-native-20261028/modern/landscape.mp4)：现代图文 01-D 本人Demo · 16:9 · 18.5秒静音。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例只验证01-D的basic-keyword与basic-summary基础图文路线；不表示01-A至01-C或官网整套动画已接入。
-- [本人案例 3 · 9:16](../../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4)：本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。
-- [官方示例 4 · 9:16](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4)：官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。
+- [本人案例 1 · 9:16](../../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4)：本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。
+- [官方示例 2 · 9:16](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4)：官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。
 
 **2. 适用内容**
 
@@ -134,7 +132,7 @@
 <details>
 <summary>查看参数、限制与来源依据</summary>
 
-- 接入案例曾使用字段：allowed_styles、brief_schema、caption_evidence_units、layout、narration_duration_seconds、native_fps、native_frames、ratio、scenes、workflow。这些是特定案例记录，不作为完整通用参数合同。
+- 尚未核对可替换参数合同；请先读原模板的 guide/schema 或源码。不能根据 Demo 推断能任意换颜色、数量、比例或时长。
 
 - 文字容量、素材数量、颜色、时长和画幅的可调范围，按对应版本的实际合同核对；演示规格不等于任意规格都受支持。
 
@@ -157,27 +155,17 @@
 
 **6. 当前能否使用**
 
-- 已接入历史版 · 当前公开版尚未验证
+- 尚未接入 · 先取得并核对原包
 - 可取得状态：官网：免费 MIT 开放许可；需登录；未验证下载或运行
-- 目录默认本人Demo版本：2.7.18-alpha.4；本片QA：verified_demo。只对应已登记版本与输入；切换其他演示时，以播放器下方显示的该版本说明为准。
 - 公开 GitHub 合集当前版本：2.7.18-alpha.10；这是目录元数据，不代表本机已安装或验证这个版本。
 - 官网独立核对版本：2.7.18-alpha.10
 - 原检查记录对应版本：2.7.17-alpha.2；原有 Demo、包与检查记录保持原版，新版尚未因目录更新而通过验证。
+- 尚未接入 AI Cut：可以交给 AI 选型，但须先合法取得原包、核对依赖与参数并做短样，才能确认可用于自己的内容。
 
 <details>
 <summary>查看原始检查范围与接入记录</summary>
 
 - 官网 2.7.17-alpha.2：仅两段 highlight/underline 用于同一 55.0333 秒 A/B 的末 10.233 秒，其余沿用原画面和整条原音轨。两版各 1651 帧/30fps、全解码成功，AAC 与 PCM 一致，已抽检最终编码画面。完整 native 排版仅预览；模板声音优势、连续观看/完整听审和用户风格认可未完成。
-
-本片接入：owner-native-20261028-modern-portrait-2.7.18-alpha.4-v1
-
-现代图文 01-D 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。原片11.65—12.25秒镜头朝衣服移动；保留真实本人镜头，不以生成头像替换。
-
-```text
-.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh
-```
-
-不改变原条目验证范围，不代表用户审美认可。
 
 </details>
 
@@ -347,18 +335,15 @@
 
 ### 纸面透视 · 口播讲解 · 竖屏
 
-`mg-style-295450` · 真人口播 · 口播与讲解 · **已接入历史版 · 当前公开版尚未验证**
+`mg-style-295450` · 真人口播 · 口播与讲解 · **尚未接入 · 先取得并核对原包**
 
 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。
 
 **1. 效果预览**
 
-[![纸面透视 · 口播讲解 · 竖屏 预览](../../docs/template-gallery/demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.jpg)](../../docs/template-gallery/demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.mp4)
+[![纸面透视 · 口播讲解 · 竖屏 预览](https://media.openaicut.com/covers/608/draft-zh-499f0ea3a15e.jpg)](https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4)
 
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.mp4)：AIVD 11本人案例 · 纸面透视 · 散字牵引成词 · 9:16 · 11秒静音；仅本片角色一致性局部输入，保留官方青绿/橙红设计，不代表整片或整个模板库通过。
-- [本人案例 2 · 16:9](../../docs/template-gallery/demos/integrated/owner-native-20261028/paper/landscape.mp4)：纸面透视 02-X 本人Demo · 16:9 · 18.5秒静音。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。
-- [本人案例 3 · 9:16](../../docs/template-gallery/demos/integrated/owner-native-20261028/paper/portrait.mp4)：纸面透视 02-X 本人Demo · 9:16 · 18.5秒静音。本包竖屏输出。本例是02-X扩展候选fold-pin-opinion与glyph-thread-keyword；不是历史模板完整编舞复原，也不代表整个纸面模板库通过。
-- [官方示例 4 · 9:16](https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4)：官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。
+- [官方示例 1 · 9:16](https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4)：官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。
 
 **2. 适用内容**
 
@@ -378,7 +363,7 @@
 <details>
 <summary>查看参数、限制与来源依据</summary>
 
-- 接入案例曾使用字段：allowed_styles、brief_schema、caption_evidence_units、layout、music_mode、narration_duration_seconds、native_fps、native_frames、ratio、scenes、source_word_count、workflow。这些是特定案例记录，不作为完整通用参数合同。
+- 尚未核对可替换参数合同；请先读原模板的 guide/schema 或源码。不能根据 Demo 推断能任意换颜色、数量、比例或时长。
 
 - 文字容量、素材数量、颜色、时长和画幅的可调范围，按对应版本的实际合同核对；演示规格不等于任意规格都受支持。
 
@@ -401,27 +386,17 @@
 
 **6. 当前能否使用**
 
-- 已接入历史版 · 当前公开版尚未验证
+- 尚未接入 · 先取得并核对原包
 - 可取得状态：官网：免费 MIT 开放许可；需登录；未验证下载或运行
-- 目录默认本人Demo版本：2.7.18-alpha.5；本片QA：verified_demo。只对应已登记版本与输入；切换其他演示时，以播放器下方显示的该版本说明为准。
 - 公开 GitHub 合集当前版本：2.7.18-alpha.10；这是目录元数据，不代表本机已安装或验证这个版本。
 - 官网独立核对版本：2.7.18-alpha.10
 - 原检查记录对应版本：2.7.17-alpha.2；原有 Demo、包与检查记录保持原版，新版尚未因目录更新而通过验证。
+- 尚未接入 AI Cut：可以交给 AI 选型，但须先合法取得原包、核对依赖与参数并做短样，才能确认可用于自己的内容。
 
 <details>
 <summary>查看原始检查范围与接入记录</summary>
 
 - 官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。
-
-本片接入：aivd11-paper-keyword
-
-本片Paper 02-X:glyph-thread-keyword的9:16、11秒本人静音小样；原生1080×1920/60fps660帧完成，精选库720×1280/30fps330帧，完整解码通过。9个原生预览、9个1080编码样本及9个精选编码样本实际查看，包含散字牵引、锁定冲击、墨圈、解释拉出及退出阶段。只验证本版本/本输入/本场景；未连续观看、未做主成片声音验收、未获用户审美认可。
-
-```text
-.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh
-```
-
-不改变原条目验证范围，不代表用户审美认可。
 
 </details>
 
@@ -514,17 +489,15 @@
 
 ### 深色立体 · 多屏展陈 · 竖屏
 
-`mg-style-569615` · 真人口播 · 口播与讲解 · **已接入历史版 · 当前公开版尚未验证**
+`mg-style-569615` · 真人口播 · 口播与讲解 · **尚未接入 · 先取得并核对原包**
 
 用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。
 
 **1. 效果预览**
 
-[![深色立体 · 多屏展陈 · 竖屏 预览](../../docs/template-gallery/demos/integrated/owner-native-20261028/dark/portrait.jpg)](../../docs/template-gallery/demos/integrated/owner-native-20261028/dark/portrait.mp4)
+[![深色立体 · 多屏展陈 · 竖屏 预览](https://media.openaicut.com/covers/610/draft-zh-14409c15ade1.jpg)](https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4)
 
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/integrated/owner-native-20261028/dark/portrait.mp4)：深色立体 03-X 本人Demo · 9:16 · 18.5秒静音。本包竖屏输出。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。
-- [本人案例 2 · 16:9](../../docs/template-gallery/demos/integrated/owner-native-20261028/dark/landscape.mp4)：深色立体 03-X 本人Demo · 16:9 · 18.5秒静音。同一竖屏个人包的16:9输出路线；不代表官网独立横屏包已验证。本例只验证03-X通用重点与总结扩展；不是03-A/03-B完整多屏大场景，也不代表所有深色立体模板已接入。
-- [官方示例 3 · 9:16](https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4)：官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。
+- [官方示例 1 · 9:16](https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4)：官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。
 
 **2. 适用内容**
 
@@ -544,7 +517,7 @@
 <details>
 <summary>查看参数、限制与来源依据</summary>
 
-- 接入案例曾使用字段：allowed_styles、brief_schema、caption_evidence_units、layout、narration_duration_seconds、native_fps、native_frames、ratio、scenes、workflow。这些是特定案例记录，不作为完整通用参数合同。
+- 尚未核对可替换参数合同；请先读原模板的 guide/schema 或源码。不能根据 Demo 推断能任意换颜色、数量、比例或时长。
 
 - 文字容量、素材数量、颜色、时长和画幅的可调范围，按对应版本的实际合同核对；演示规格不等于任意规格都受支持。
 
@@ -567,27 +540,17 @@
 
 **6. 当前能否使用**
 
-- 已接入历史版 · 当前公开版尚未验证
+- 尚未接入 · 先取得并核对原包
 - 可取得状态：官网：免费 MIT 开放许可；需登录；未验证下载或运行
-- 目录默认本人Demo版本：2.7.18-alpha.4；本片QA：verified_demo。只对应已登记版本与输入；切换其他演示时，以播放器下方显示的该版本说明为准。
 - 公开 GitHub 合集当前版本：2.7.18-alpha.10；这是目录元数据，不代表本机已安装或验证这个版本。
 - 官网独立核对版本：2.7.18-alpha.10
 - 原检查记录对应版本：2.7.17-alpha.2；原有 Demo、包与检查记录保持原版，新版尚未因目录更新而通过验证。
+- 尚未接入 AI Cut：可以交给 AI 选型，但须先合法取得原包、核对依赖与参数并做短样，才能确认可用于自己的内容。
 
 <details>
 <summary>查看原始检查范围与接入记录</summary>
 
 - 官方目录提供 Demo 链接；本次核对了来源字段与链接完整性，未逐条播放、验证下载权限、运行或整套成片。
-
-本片接入：owner-native-20261028-dark-portrait-2.7.18-alpha.4-v1
-
-深色立体 03-X 9:16 本人独立小样：720×1280、30fps、555帧、18.5秒、无音轨，完整解码通过；每版11个官方原生预览样本与本条最终静音编码4.0秒海报已实际查看。本人身份与中文输入已核对，抽样未见示例人物或客户资料。仅验证本版本/此输入/列出的两个scene，不代表全帧人工审阅、连续观看、完整听审、用户审美认可、整个官网库或其他电脑通过。约11.65—12.25秒官方圆窗局部裁到头发/上额，眼鼻口仍可见；公开native合同未提供可核实的人脸中心或裁切参数，因此保留原布局，审美待用户确认。
-
-```text
-.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <native-demo.mp4> --language zh
-```
-
-不改变原条目验证范围，不代表用户审美认可。
 
 </details>
 

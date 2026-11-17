@@ -65,7 +65,7 @@ HTML 已内嵌数据、样式和脚本。推荐以上 HTTP 打开方式；直接
   "schema": "talking-head-gallery-local/1",
   "media_root": "<本机原声媒体目录>",
   "clips": {
-    "demos/integrated/owner-native-20261028/paper/portrait.mp4": "纸面透视_9x16.mp4"
+    "demos/integrated/<项目>/<模板版本>/demo.mp4": "<本机原声文件名>.mp4"
   }
 }
 ```

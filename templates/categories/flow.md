@@ -1017,16 +1017,15 @@
 
 ### 步骤流程
 
-`mg-control-steps` · 流程与时间线 · 基础讲解 · **已接入历史版 · 当前公开版尚未验证**
+`mg-control-steps` · 流程与时间线 · 基础讲解 · **已有控件演示 · 需自备授权原包**
 
 2–5 个先后步骤；光点沿轨道依次点亮
 
 **1. 效果预览**
 
-[![步骤流程 预览](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.jpg)](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.mp4)
+[![步骤流程 预览](../../docs/template-gallery/demos/motiongit/steps.jpg)](../../docs/template-gallery/demos/motiongit/steps.mp4)
 
-- [本人案例 1 · 规格见演示](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.mp4)：AIVD 10 本人同期圆窗＋官方 steps/track 横屏概念讲解节选；静音；不含客户画面。知识库与 AI 员工手册两项前提，保留完整条件，轨道依次点亮。
-- [本地效果演示 2 · 规格见演示](../../docs/template-gallery/demos/motiongit/steps.mp4)：官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
+- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/steps.mp4)：官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -1077,25 +1076,14 @@
 
 **6. 当前能否使用**
 
-- 已接入历史版 · 当前公开版尚未验证
+- 已有控件演示 · 需自备授权原包
 - 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
-- 目录默认本人Demo版本：2.7.17-alpha.2；本片QA：verified_demo。只对应已登记版本与输入；切换其他演示时，以播放器下方显示的该版本说明为准。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
 <summary>查看原始检查范围与接入记录</summary>
 
 - 一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。
-
-本片接入：aivd-10-mg-control-steps-2.7.17-alpha.2-v1
-
-本片横屏steps/track：1280×720、30fps、398帧、无音轨，完整解码通过；实际查看编码帧6,199,270,397及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。
-
-```text
-.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <scene.mp4> --language zh
-```
-
-不改变原条目验证范围，不代表用户审美认可。
 
 </details>
 
@@ -1277,16 +1265,15 @@
 
 ### 流程图
 
-`mg-control-flow` · 流程与时间线 · 关系与系统结构 · **已接入历史版 · 当前公开版尚未验证**
+`mg-control-flow` · 流程与时间线 · 关系与系统结构 · **已有控件演示 · 需自备授权原包**
 
 3–6 个有先后顺序的环节（步骤、流水线、因果链），或一个起点分出多个去向（branch）；节点可带图标
 
 **1. 效果预览**
 
-[![流程图 预览](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.jpg)](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.mp4)
+[![流程图 预览](../../docs/template-gallery/demos/motiongit/flow.jpg)](../../docs/template-gallery/demos/motiongit/flow.mp4)
 
-- [本人案例 1 · 规格见演示](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.mp4)：AIVD 10 本人同期圆窗＋官方 flow/chain 横屏概念讲解节选；静音；不含客户画面。自动回复→客户未回→自动跟进，按本片实际语义节拍依次出现。
-- [本地效果演示 2 · 规格见演示](../../docs/template-gallery/demos/motiongit/flow.mp4)：官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
+- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/flow.mp4)：官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -1337,25 +1324,14 @@
 
 **6. 当前能否使用**
 
-- 已接入历史版 · 当前公开版尚未验证
+- 已有控件演示 · 需自备授权原包
 - 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
-- 目录默认本人Demo版本：2.7.17-alpha.2；本片QA：verified_demo。只对应已登记版本与输入；切换其他演示时，以播放器下方显示的该版本说明为准。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
 <summary>查看原始检查范围与接入记录</summary>
 
 - 一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。
-
-本片接入：aivd-10-mg-control-flow-2.7.17-alpha.2-v1
-
-本片横屏flow/chain：1280×720、30fps、419帧、无音轨，完整解码通过；实际查看编码帧6,209,345,418及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。
-
-```text
-.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <scene.mp4> --language zh
-```
-
-不改变原条目验证范围，不代表用户审美认可。
 
 </details>
 
@@ -1787,16 +1763,15 @@
 
 ### 中心辐射
 
-`mg-control-hub` · 流程与时间线 · 关系与系统结构 · **已接入历史版 · 当前公开版尚未验证**
+`mg-control-hub` · 流程与时间线 · 关系与系统结构 · **已有控件演示 · 需自备授权原包**
 
 一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景
 
 **1. 效果预览**
 
-[![中心辐射 预览](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.jpg)](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.mp4)
+[![中心辐射 预览](../../docs/template-gallery/demos/motiongit/hub.jpg)](../../docs/template-gallery/demos/motiongit/hub.mp4)
 
-- [本人案例 1 · 规格见演示](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.mp4)：AIVD 10 本人同期圆窗＋官方 hub/constellation 横屏概念讲解节选；静音；不含客户画面。预约入口连接表格可选、日历与报名页；展示入口关系，不声称已完成预约。
-- [本地效果演示 2 · 规格见演示](../../docs/template-gallery/demos/motiongit/hub.mp4)：官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
+- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/hub.mp4)：官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -1849,25 +1824,14 @@
 
 **6. 当前能否使用**
 
-- 已接入历史版 · 当前公开版尚未验证
+- 已有控件演示 · 需自备授权原包
 - 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
-- 目录默认本人Demo版本：2.7.17-alpha.2；本片QA：verified_demo。只对应已登记版本与输入；切换其他演示时，以播放器下方显示的该版本说明为准。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
 <summary>查看原始检查范围与接入记录</summary>
 
 - 一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。
-
-本片接入：aivd-10-mg-control-hub-2.7.17-alpha.2-v1
-
-本片横屏hub/constellation：1280×720、30fps、384帧、无音轨，完整解码通过；实际查看编码帧6,192,300,383及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。
-
-```text
-.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <scene.mp4> --language zh
-```
-
-不改变原条目验证范围，不代表用户审美认可。
 
 </details>
 

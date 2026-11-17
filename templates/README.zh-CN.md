@@ -20,7 +20,7 @@
 | [实验与创新](#use-innovation) | 25 |
 | [分类待核对](#use-uncategorized) | 0 |
 
-共 246 条不同层级的目录：1 套AI Cut通用自制模板、101 项官网模板与片段、70 个官网控件、55 个代码注册项、19 个真人效果分支。另有 11 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 246 套整片一键模板。
+共 246 条不同层级的目录：1 套AI Cut通用自制模板、101 项官网模板与片段、70 个官网控件、55 个代码注册项、19 个真人效果分支。另有 0 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 246 套整片一键模板。
 
 ## 状态怎样看
 
@@ -28,10 +28,9 @@
 
 | 调用状态 | 条目与预告合计 |
 | --- | ---: |
-| 已接入案例 · 按已验证版本使用 | 7 |
 | 仓库源码可调用 · 先检查环境与素材 | 56 |
-| 尚未接入 · 先取得并核对原包 | 98 |
-| 已有控件演示 · 需自备授权原包 | 66 |
+| 尚未接入 · 先取得并核对原包 | 101 |
+| 已有控件演示 · 需自备授权原包 | 70 |
 | 样片效果 · 需要源码适配 | 19 |
 | 官方预告 · 待开放/核对 | 13 |
 | 待认领展示 · 原包未开放 | 774 |
@@ -57,12 +56,12 @@
 | 模板 | 用途与当前状态 | Demo |
 | --- | --- | --- |
 | [编辑画布式知识口播](categories/talk.md#ai-cut-editorial-canvas)<br>`ai-cut-editorial-canvas` | 同一编辑画布中的真人窗口、真实素材、输入输出、关系图与资料收束；场景顺序、素材和构图可随每片改变，不固定照抄一套设计。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/editorial-canvas/portrait.mp4) · [Demo 2](../docs/template-gallery/demos/editorial-canvas/landscape.mp4) |
-| [现代图文 · 口播讲解 · 竖屏](categories/talk.md#mg-style-314486)<br>`mg-style-314486` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。<br>**已接入历史版 · 当前公开版尚未验证**<br>公开登记版本：2.7.18-alpha.10<br>当前本人Demo版本：2.7.18-alpha.4 | [Demo 1](../docs/template-gallery/demos/integrated/owner-native-20261028/modern/portrait.mp4) · [Demo 2](../docs/template-gallery/demos/integrated/owner-native-20261028/modern/landscape.mp4) · [Demo 3](../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4) · [Demo 4](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4) |
+| [现代图文 · 口播讲解 · 竖屏](categories/talk.md#mg-style-314486)<br>`mg-style-314486` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.10 | [Demo 1](../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4) · [Demo 2](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4) |
 | [现代图文 · 口播讲解](categories/talk.md#mg-style-336980)<br>`mg-style-336980` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.14 | [Demo 1](https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4) |
 | [纸面透视 · 口播讲解](categories/talk.md#mg-style-358192)<br>`mg-style-358192` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.21-alpha.14 | [Demo 1](https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4) |
-| [纸面透视 · 口播讲解 · 竖屏](categories/talk.md#mg-style-295450)<br>`mg-style-295450` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。<br>**已接入历史版 · 当前公开版尚未验证**<br>公开登记版本：2.7.18-alpha.10<br>当前本人Demo版本：2.7.18-alpha.5 | [Demo 1](../docs/template-gallery/demos/integrated/aivd11-paper-keyword/2.7.18-alpha.5/portrait.mp4) · [Demo 2](../docs/template-gallery/demos/integrated/owner-native-20261028/paper/landscape.mp4) · [Demo 3](../docs/template-gallery/demos/integrated/owner-native-20261028/paper/portrait.mp4) · [Demo 4](https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4) |
+| [纸面透视 · 口播讲解 · 竖屏](categories/talk.md#mg-style-295450)<br>`mg-style-295450` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.10 | [Demo 1](https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4) |
 | [深色立体 · 多屏展陈](categories/talk.md#mg-style-304634)<br>`mg-style-304634` | 用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.8 | [Demo 1](https://media.openaicut.com/previews/609/draft-zh-a33d6dc67131.mp4) |
-| [深色立体 · 多屏展陈 · 竖屏](categories/talk.md#mg-style-569615)<br>`mg-style-569615` | 用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。<br>**已接入历史版 · 当前公开版尚未验证**<br>公开登记版本：2.7.18-alpha.10<br>当前本人Demo版本：2.7.18-alpha.4 | [Demo 1](../docs/template-gallery/demos/integrated/owner-native-20261028/dark/portrait.mp4) · [Demo 2](../docs/template-gallery/demos/integrated/owner-native-20261028/dark/landscape.mp4) · [Demo 3](https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4) |
+| [深色立体 · 多屏展陈 · 竖屏](categories/talk.md#mg-style-569615)<br>`mg-style-569615` | 用深色立体舞台、多屏和空间层次展示口播内容，适合产品、案例与媒体素材讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.10 | [Demo 1](https://media.openaicut.com/previews/610/draft-zh-3200b44b2818.mp4) |
 | [科技控制台 · 口播讲解](categories/talk.md#mg-style-553346)<br>`mg-style-553346` | 用科技控制台、紫色玻璃质感与动态信息组件配合口播，适合技术与数据说明。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.20-alpha.8 | [Demo 1](https://media.openaicut.com/previews/611/2.5.7-zh-96b144413879.mp4) |
 | [科技控制台 · 口播讲解 · 竖屏](categories/talk.md#mg-style-738182)<br>`mg-style-738182` | 用科技控制台、紫色玻璃质感与动态信息组件配合口播，适合技术与数据说明。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.8 | [Demo 1](https://media.openaicut.com/previews/612/2.5.7-zh-a93efdfb29ba.mp4) |
 | [鲜色角色 · 叙事讲解](categories/talk.md#mg-style-960723)<br>`mg-style-960723` | 用鲜明配色、角色素材与叙事动效配合口播，适合故事、观点和情境解释。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.8 | [Demo 1](https://media.openaicut.com/previews/613/draft-zh-9454c905098e.mp4) |
@@ -146,16 +145,16 @@
 | [点阵手账 · 知识讲解模板](categories/flow.md#mg-style-968813)<br>`mg-style-968813` | 把步骤、关键词和修订留在同一本点阵手账里。适合方法拆解与学习回顾，提供图标图示选择引导；页面为19.95秒早期风格短样。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.4-alpha.2 | [Demo 1](https://media.openaicut.com/previews/910/2.5.3-zh-5ebc896f6930.mp4) |
 | [彩色几何 · 知识讲解模板](categories/flow.md#mg-style-118272)<br>`mg-style-118272` | 用彩色边、面积与刚体拼图讲清几何等量关系。原生新稿围绕直角三角形模型，提供图示选择引导；页面为23.8667秒早期风格短样。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.4 | [Demo 1](https://media.openaicut.com/previews/911/2.5.3-zh-b27b76c06f66.mp4) |
 | [要点列表](categories/flow.md#mg-control-list)<br>`mg-control-list` | 1–6 个并列要点，逐条出现；全部出现后高亮依次轮转<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/list.mp4) |
-| [步骤流程](categories/flow.md#mg-control-steps)<br>`mg-control-steps` | 2–5 个先后步骤；光点沿轨道依次点亮<br>**已接入历史版 · 当前公开版尚未验证**<br>当前本人Demo版本：2.7.17-alpha.2 | [Demo 1](../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/steps-track-owner-v1.mp4) · [Demo 2](../docs/template-gallery/demos/motiongit/steps.mp4) |
+| [步骤流程](categories/flow.md#mg-control-steps)<br>`mg-control-steps` | 2–5 个先后步骤；光点沿轨道依次点亮<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/steps.mp4) |
 | [待办清单](categories/flow.md#mg-control-checklist)<br>`mg-control-checklist` | 逐项完成的清单：准备步骤、检查项、已做到的事。和 list 的区别是有打勾过程、进度计数和最后的完成章<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/checklist.mp4) |
 | [时间线 / 里程碑](categories/flow.md#mg-control-timeline)<br>`mg-control-timeline` | 按时间顺序的 3–6 个节点：发展历程、计划路线图、事件经过；current 标出「现在」<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/timeline.mp4) |
-| [流程图](categories/flow.md#mg-control-flow)<br>`mg-control-flow` | 3–6 个有先后顺序的环节（步骤、流水线、因果链），或一个起点分出多个去向（branch）；节点可带图标<br>**已接入历史版 · 当前公开版尚未验证**<br>当前本人Demo版本：2.7.17-alpha.2 | [Demo 1](../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/flow-chain-owner-v1.mp4) · [Demo 2](../docs/template-gallery/demos/motiongit/flow.mp4) |
+| [流程图](categories/flow.md#mg-control-flow)<br>`mg-control-flow` | 3–6 个有先后顺序的环节（步骤、流水线、因果链），或一个起点分出多个去向（branch）；节点可带图标<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/flow.mp4) |
 | [循环图](categories/flow.md#mg-control-cycle)<br>`mg-control-cycle` | 首尾相接、周而复始的 3–6 个环节：飞轮、迭代闭环、生命周期；中心可写主题<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/cycle.mp4) |
 | [漏斗 / 层级](categories/flow.md#mg-control-funnel)<br>`mg-control-funnel` | 逐层收窄的转化、筛选（funnel），或自下而上的层级、金字塔、技术栈（pyramid / layers）；每层可带一个数值<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/funnel.mp4) |
 | [交集图](categories/flow.md#mg-control-venn)<br>`mg-control-venn` | 两三个概念的交集或合成：A + B 的重叠点、三者兼得；merge 变体表示合而为一<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/venn.mp4) |
 | [思维导图](categories/flow.md#mg-control-mindmap)<br>`mg-control-mindmap` | 一个主题展开 3–6 个方面，每个方面可再列 0–2 个要点：知识框架、话题拆解<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/mindmap.mp4) |
 | [2×2 象限](categories/flow.md#mg-control-matrix)<br>`mg-control-matrix` | 两个维度把事物分成四类：重要/紧急、投入/回报、定位分析；可在象限里落几个点，priority 变体突出一个象限<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/matrix.mp4) |
-| [中心辐射](categories/flow.md#mg-control-hub)<br>`mg-control-hub` | 一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景<br>**已接入历史版 · 当前公开版尚未验证**<br>当前本人Demo版本：2.7.17-alpha.2 | [Demo 1](../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/hub-constellation-owner-v1.mp4) · [Demo 2](../docs/template-gallery/demos/motiongit/hub.mp4) |
+| [中心辐射](categories/flow.md#mg-control-hub)<br>`mg-control-hub` | 一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/hub.mp4) |
 | [打勾清单](categories/flow.md#presenter-effect-10)<br>`presenter-effect-10` | 清单项依次打勾，顶部进度随演示推进。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-10.mp4) |
 | [收据列表](categories/flow.md#presenter-effect-18)<br>`presenter-effect-18` | 纸张从打印口逐步出现，列出三项内容并打勾。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-18.mp4) |
 
@@ -241,7 +240,7 @@
 | [关键词砸入](categories/text.md#mg-control-keyword)<br>`mg-control-keyword` | 一个词或短语是这段话的重点；后面可以补 1–3 句解释，逐句出现<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/keyword.mp4) |
 | [金句 / 引用](categories/text.md#mg-control-quote)<br>`mg-control-quote` | 一句原话、观点或引用，逐字打出；*星号* 包住的词高亮<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/quote.mp4) |
 | [印章强调](categories/text.md#mg-control-stamp)<br>`mg-control-stamp` | 下结论、表态：免费、已上线、不推荐<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/stamp.mp4) |
-| [逐行动态排版](categories/text.md#mg-control-kinetic)<br>`mg-control-kinetic` | 一句有节奏的观点拆成 2–5 个短行，跟着口播一行一行冲出来；适合开场钩子、口号、情绪句<br>**已接入历史版 · 当前公开版尚未验证**<br>当前本人Demo版本：2.7.17-alpha.2 | [Demo 1](../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4) · [Demo 2](../docs/template-gallery/demos/motiongit/kinetic.mp4) |
+| [逐行动态排版](categories/text.md#mg-control-kinetic)<br>`mg-control-kinetic` | 一句有节奏的观点拆成 2–5 个短行，跟着口播一行一行冲出来；适合开场钩子、口号、情绪句<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/kinetic.mp4) |
 | [重点词标记](categories/text.md#mg-control-highlight)<br>`mg-control-highlight` | 一句完整的话里有 1–2 个必须被看见的词（用 *星号* 标出）：先出整句，再在重点上画标记<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/highlight.mp4) |
 | [乱码解码](categories/text.md#mg-control-scramble)<br>`mg-control-scramble` | 揭晓一个名字、术语、答案、代号：乱码逐位锁定。科技、数据、揭秘类内容<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/scramble.mp4) |
 | [轮换词](categories/text.md#mg-control-rotator)<br>`mg-control-rotator` | 同一句话换不同的词：「适合 学生 / 老师 / 公司」、「它能 写 / 画 / 剪」。最后一个词停住<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/rotator.mp4) |

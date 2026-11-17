@@ -341,16 +341,15 @@
 
 ### 逐行动态排版
 
-`mg-control-kinetic` · 标题与重点字 · 文字动态 · **已接入历史版 · 当前公开版尚未验证**
+`mg-control-kinetic` · 标题与重点字 · 文字动态 · **已有控件演示 · 需自备授权原包**
 
 一句有节奏的观点拆成 2–5 个短行，跟着口播一行一行冲出来；适合开场钩子、口号、情绪句
 
 **1. 效果预览**
 
-[![逐行动态排版 预览](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.jpg)](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4)
+[![逐行动态排版 预览](../../docs/template-gallery/demos/motiongit/kinetic.jpg)](../../docs/template-gallery/demos/motiongit/kinetic.mp4)
 
-- [本人案例 1 · 规格见演示](../../docs/template-gallery/demos/integrated/aivd-10/2.7.17-alpha.2/kinetic-stack-owner-v1.mp4)：AIVD 10 本人同期圆窗＋官方 kinetic/stack 横屏概念讲解节选；静音；不含客户画面。Reply、Follow up、AI 三行动态归纳，与本片结尾同期本人圆窗结合。
-- [本地效果演示 2 · 规格见演示](../../docs/template-gallery/demos/motiongit/kinetic.mp4)：官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
+- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/kinetic.mp4)：官方控件真实渲染；使用中文示例文案或示例数据。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -399,25 +398,14 @@
 
 **6. 当前能否使用**
 
-- 已接入历史版 · 当前公开版尚未验证
+- 已有控件演示 · 需自备授权原包
 - 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
-- 目录默认本人Demo版本：2.7.17-alpha.2；本片QA：verified_demo。只对应已登记版本与输入；切换其他演示时，以播放器下方显示的该版本说明为准。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
 <summary>查看原始检查范围与接入记录</summary>
 
 - 一个代表变体已由官方 helper 渲染；静音小样完整解码，并已查看实际导出抽帧。其他两个变体仅登记，未渲染；不代表连续观看或用户审美认可。
-
-本片接入：aivd-10-mg-control-kinetic-2.7.17-alpha.2-v1
-
-本片横屏kinetic/stack：1280×720、30fps、272帧、无音轨，完整解码通过；实际查看编码帧6,136,195,271及同帧圆窗放大联系表。源参数仅概念文字/图标；抽检未见客户资料或网址；圆窗头脸完整、透明角无黑方块、不遮概念正文。保留原生时码、.m标与出场淡出。仅本版本/此输入/此变体；不等于全帧人工审阅、连续观看、用户美学确认、全部变体或另一台机器通过。
-
-```text
-.\.venv\Scripts\python.exe scripts/motiongit_adapter.py run --instance <instance> render <reviewed-project> --out <scene.mp4> --language zh
-```
-
-不改变原条目验证范围，不代表用户审美认可。
 
 </details>
 
