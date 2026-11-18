@@ -280,6 +280,39 @@ def apply_integrations(root, entries, strict):
     return merged, records, provenance
 
 
+def is_owner_demo(demo):
+    """A demo rendered from the owner's own footage, photos or brand ('own' material)."""
+    return demo.get('kind') == 'own'
+
+
+def gallery_view(root, data):
+    """Public page may hide owner-made content; catalog.json keeps the full registry."""
+    path = root / 'templates/gallery-hidden.json'
+    if not path.is_file():
+        return data
+    rules = json.loads(path.read_text(encoding='utf-8'))
+    hide_layers = rules.get('hide_layers', [])
+    if rules.get('schema_version') != 1 or not isinstance(hide_layers, list) or set(hide_layers) - set(LAYERS):
+        raise ValueError('Invalid gallery hide rules in templates/gallery-hidden.json')
+    hide_owner = rules.get('hide_owner_demos') is True
+    entries = []
+    for entry in data['entries']:
+        if entry['layer'] in hide_layers:
+            continue
+        if hide_owner:
+            kept = [d for d in entry['demos'] if not is_owner_demo(d)]
+            if entry['demos'] and not kept:
+                continue  # nothing public left to preview
+            if len(kept) != len(entry['demos']) or entry.get('integrations'):
+                entry = {k: v for k, v in entry.items() if k not in ('integrations', 'latest_integration_id', 'preview_integration_id')}
+                entry['demos'] = kept
+        entries.append(entry)
+    visible = {e['id'] for e in entries}
+    integrations = [] if hide_owner else [r for r in data['integrations'] if r.get('entry_id') in visible]
+    return dict(data, entries=entries, integrations=integrations,
+                counts_by_layer=dict(Counter(e['layer'] for e in entries)))
+
+
 def demo_href(demo, markdown=False):
     if demo.get('path'):
         return ('../docs/template-gallery/' if markdown else '') + demo['path']
@@ -569,10 +602,10 @@ $('detail').addEventListener('cancel',ev=>{ev.preventDefault();closeDetail(false
 $('detail').addEventListener('keydown',ev=>{if(ev.key==='Escape'){ev.preventDefault();closeDetail(false)}});
 $('detail').addEventListener('close',()=>closeDetail(false));
 $('grid').addEventListener('click',ev=>{const t=ev.target.closest('.tile');if(t&&location.hash===t.getAttribute('href')){ev.preventDefault();openDetail(t.dataset.entryId,false)}});
-function routeHash(fromNav){const h=location.hash;if(h.startsWith('#m=')){openDetail(decodeURIComponent(h.slice(3)),fromNav)}else{if($('detail').open||!detailCleaned)closeDetail(true);if(h==='#owner-demos'&&state.source!=='own'){state.source='own';shownLimit=24;render()}}}
+function routeHash(fromNav){const h=location.hash;if(h.startsWith('#m=')){openDetail(decodeURIComponent(h.slice(3)),fromNav)}else{if($('detail').open||!detailCleaned)closeDetail(true);if(h==='#owner-demos'&&state.source!=='own'&&$('demoType').querySelector('option[value=own]')){state.source='own';shownLimit=24;render()}}}
 window.addEventListener('hashchange',()=>routeHash(true));
 const sync=DATA.sync_status||{};$('syncStatus').textContent='目录同步：'+(sync.checked_at||DATA.updated_on)+'。目录登记、原包取得、运行接入分别标记；旧案例保留其真实版本。'+(sync.scope_zh||'成功来源与覆盖边界见 GitHub 的本轮同步说明。')+((sync.gaps||[]).length?' 仍有 '+sync.gaps.length+' 项来源缺口，详见同步记录。':'');
-if(location.hash==='#owner-demos')state.source='own';
+if(location.hash==='#owner-demos'&&$('demoType').querySelector('option[value=own]'))state.source='own';
 render();if(location.hash.startsWith('#m='))routeHash(false);
 if(location.protocol!=='file:'){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),1800);
@@ -615,9 +648,15 @@ def build(root: Path, strict=False):
                 poster = Path(demo['path']).with_suffix('.jpg')
                 demo['poster_path'] = poster.as_posix() if (gallery / poster).is_file() else ''
     (root/'templates/catalog.json').write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-    page = HTML.replace('__DATA__', json.dumps(data, ensure_ascii=False).replace('<', chr(92)+'u003c'))
-    page = page.replace('__LAYERS__', json.dumps(LAYERS, ensure_ascii=False))
-    page = page.replace('__STATS__', ''.join(f'<div class="stat"><strong>{counts[k]}</strong>{escape(v)}</div>' for k,v in LAYERS.items()) + f'<div class="stat"><strong>{len(integrations)}</strong>本片接入记录（不重复计为模板）</div>')
+    view = gallery_view(root, data)
+    view_counts = view['counts_by_layer']
+    view_layers = {k: v for k, v in LAYERS.items() if view_counts.get(k)}
+    page = HTML.replace('__DATA__', json.dumps(view, ensure_ascii=False).replace('<', chr(92)+'u003c'))
+    page = page.replace('__LAYERS__', json.dumps(view_layers, ensure_ascii=False))
+    page = page.replace('__STATS__', ''.join(f'<div class="stat"><strong>{view_counts[k]}</strong>{escape(v)}</div>' for k,v in view_layers.items()) + f'<div class="stat"><strong>{len(view["integrations"])}</strong>本片接入记录（不重复计为模板）</div>')
+    if not any(is_owner_demo(d) for e in view['entries'] for d in e['demos']):
+        page = page.replace('<option value="own">本人Demo（已登记案例）</option>', '')
+        page = page.replace('<p id="localPlayback">本人库样例为静音版；已关联的本机原声版可在同一条模板里直接播放。</p>', '<p id="localPlayback"></p>')
     if not strict:
         page=page.replace('<!--DRAFT_NOTICE-->','<p class="dev-notice">开发预览：部分演示仍在制作，不能当成全部完成。</p>')
     (gallery/'index.html').write_text(page, encoding='utf-8')

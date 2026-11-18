@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-11-18",
+  "reason_zh": "本人要求公开网站暂时只展示官方与第三方模板：不显示本人自制模板，也不显示用本人素材（本人出镜、照片或品牌）做的演示；模板只剩这类演示时整条不显示。只影响 aicut.agi-top.com 网页；catalog.json、源码、登记表和媒体文件保留不动。要恢复显示，删掉对应设置后重新生成网站。",
+  "hide_layers": ["authored", "effect"],
+  "hide_owner_demos": true
+}
