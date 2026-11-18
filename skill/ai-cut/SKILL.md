@@ -24,7 +24,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 | 电脑实操区间 | [实操重点与同步音效](references/practical-demo.md)、需要本机辅助时读[实操渲染器](references/practical-renderer.md) |
 | 编辑画布式知识口播／按内容变换素材与布局 | [编辑画布风格](references/editorial-canvas-style.md)；按本条或创作者自己的已确认默认选用，不覆盖其他风格 |
 | 中文模板／控件选型 | [模板选择](references/template-selection.md)、已有代码效果读[特效库](references/effect-library.md) |
-| 官网更新／新片接入与本人Demo积累 | [模板长期接入规则](references/template-lifecycle.md) |
+| 官网更新／新片接入（2026-11-18起不再积累本人Demo） | [模板长期接入规则](references/template-lifecycle.md) |
 | 询问效果来源／把指定效果做成通用模板 | [效果溯源与模板创作](references/template-authoring.md) |
 | 长访谈／Zoom切片 | [长访谈策划](references/long-form-clips.md) |
 | Logo、同源人像与素材 | [品牌和动态圆窗](references/brand-and-presenter.md)、[画面执行](references/visual-storytelling.md) |
@@ -83,7 +83,7 @@ description: 剪辑真人知识口播、AI教学、营销方法与系统实操�
 - jianying-editor：仅用户明确选择国内剪映时按[剪映流程](references/jianying.md)复用同一时间轴，生成草稿与原生打开／导出分别验证。
 - video-use：辅助核查重录、接缝、流程与局部音画，回到本Skill主流程，不另建权威转写或剪辑。
 
-不因仅引用辅助Skill就无故安装引擎或订阅；本次已授权接入所必需的免费可信依赖可按实际合同准备，先说明新增项及用途，不全局替换既有引擎。付费素材先展示预览、价格和用途并取得授权。2026-10-27的后续本人Demo私人归档授权保留历史范围；2026-11-02用户另要求现有仓库公开下载。按模板长期接入规则区分本机积累与公开上传，不把历史私人授权自动扩大成每条新片公开；完整原片、完整成片、个人包、Key和客户敏感信息不进入公开库。
+不因仅引用辅助Skill就无故安装引擎或订阅；本次已授权接入所必需的免费可信依赖可按实际合同准备，先说明新增项及用途，不全局替换既有引擎。付费素材先展示预览、价格和用途并取得授权。2026-10-27的本人Demo积累授权已于2026-11-18由本人停用：不再用本人素材做模板示范，本人自己的模板只在本人主动创建后才登记和调用；2026-11-02用户另要求现有仓库公开下载。完整原片、完整成片、个人包、Key和客户敏感信息不进入公开库。
 
 ## 声音、验收与交付确认
 
