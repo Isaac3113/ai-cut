@@ -6,20 +6,16 @@ AI Cut 包含两部分：**学习 AI 怎样剪好一支知识口播**，以及**
 
 AI Cut 已开放下载：无需向讲师提交 GitHub 用户名、等待邀请或申请仓库权限。浏览、下载 ZIP 和 HTTPS clone 均可直接进行；剪辑工具仍使用你自己的账号。
 
-## 先看 AI Cut 自己的特效与本人 Demo
+## 模板从哪里找
 
-这里不只有 MotionGit 官方示例。先分清通用自制模板、已有真人效果分支、本人套用官方案例，以及官方／第三方目录，就容易找到你想用的效果：
+先分清通用自制模板和官方／第三方目录，就容易找到你想用的效果：
 
 | 内容 | 直接入口与说明 |
 | --- | --- |
-| **AI Cut 通用自制模板：编辑画布** | [源码与使用说明](https://github.com/Isaac3113/ai-cut/blob/main/extensions/editorial-canvas/README.zh-CN.md) · [作者.motion包](https://github.com/Isaac3113/ai-cut/blob/main/templates/authored-packages/ai-cut-editorial-canvas-1.0.0.motion) · [参数、Demo 与实际状态](https://github.com/Isaac3113/ai-cut/blob/main/templates/categories/talk.md#ai-cut-editorial-canvas)：可按内容更换窗口、素材、图解与布局，不是19个旧分支的另一个名字 |
-| **AI Cut 自制／适配真人特效（19 项）** | [19 项说明与源码](https://github.com/Isaac3113/ai-cut/blob/main/extensions/remotion-vd44/src/template-library/talking-head-effects/README.md)：包括剪纸描边、人物破框、杂志封面等，为本项目制作，部分复用第三方组件 |
-| **本人套用官方模板的案例** | [打开本人 Demo 展厅](https://aicut.agi-top.com/#owner-demos)：画面与内容使用 Isaac 本人的素材，效果来源仍是官方 MotionGit，不改称原创 |
+| **AI Cut 通用自制模板：编辑画布** | [源码与使用说明](https://github.com/Isaac3113/ai-cut/blob/main/extensions/editorial-canvas/README.zh-CN.md) · [作者.motion包](https://github.com/Isaac3113/ai-cut/blob/main/templates/authored-packages/ai-cut-editorial-canvas-1.0.0.motion) · [参数、Demo 与实际状态](https://github.com/Isaac3113/ai-cut/blob/main/templates/categories/talk.md#ai-cut-editorial-canvas)：可按内容更换窗口、素材、图解与布局 |
 | **官方与第三方模板目录** | [全部分类与逐项说明](https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md)：按用途选择 MotionGit、Remotion 等来源的效果，并核对素材、参数、接入状态与许可 |
 
-**只看 19 项真人特效：**打开[本人 Demo](https://aicut.agi-top.com/#owner-demos)，再点击来源分类「真人口播特效」。本人 Demo 也包含套用官方模板的案例，“画面里是本人”不等于“模板是原创”。
-
-使用时换成你自己的素材，并适配真人抠像、画幅和出现时间。这 19 项是效果分支，不是 19 套已通用化的 `.motion` 包；看得到 Demo 与能在你的新视频上使用，需要分别检查。
+2026-11-18 起，原先 19 项讲师自制真人特效及用讲师本人素材录制的示范视频已按讲师要求移除；对应的官方模板仍在目录中。看得到 Demo 与能在你的新视频上使用，需要分别检查。
 
 ## 风格与模板怎样选？
 

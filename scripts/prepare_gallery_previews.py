@@ -51,13 +51,15 @@ def main():
     records.write_text(json.dumps(cache,ensure_ascii=False,indent=2),encoding='utf-8')
     gif_count=len(category_rows)
     for category in sorted({e['category_zh'] for e in data['entries']}-set(categories)):
-        entry=next(e for e in data['entries'] if e['category_zh']==category and e.get('demos'))
+        entry=next((e for e in data['entries'] if e['category_zh']==category and e.get('demos')),None)
+        if entry is None:continue  # no playable demo left in this category (e.g. owner demos removed)
         demo=next(d for d in entry['demos'] if d.get('url'))
         category_rows.append({'category_zh':category,'url':demo['url'],
                               'source_entry':entry['id'],'description_zh':entry['label_zh']+'：官方在线分类演示'})
     category_rows.sort(key=lambda c:c['category_zh'])
     (GALLERY/'category-demos.json').write_text(json.dumps(category_rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    lines=['# 分类动画预览','','每个分类都有演示入口：23类提供真实本地Demo的动画小样，4类链接官方原片。逐项演示及适用条件见[完整中文清单](../../templates/README.zh-CN.md)。静音演示不代表本条成片已验收。','']
+    no_demo=len({e['category_zh'] for e in data['entries']})-len(category_rows)
+    lines=['# 分类动画预览','',f'{gif_count}类提供真实本地Demo的动画小样，{len(category_rows)-gif_count}类链接官方原片'+(f'；另有{no_demo}类暂无示范视频，条目见完整清单' if no_demo else '')+'。逐项演示及适用条件见[完整中文清单](../../templates/README.zh-CN.md)。静音演示不代表本条成片已验收。','']
     for c in category_rows:
         lines += ['## '+c['category_zh'],'']
         if c.get('path'):

@@ -20,11 +20,11 @@ from template_presentation import (LEARNER_CATEGORIES, enrich_entries,
                                    markdown_category_pages, official_posters)
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCES = ['motiongit-styles.json', 'motiongit-controls.json',
-           'remotion-library.json', 'presenter-effects.json']
+# The 19 owner-made presenter effects (layer 'effect') were removed on 2026-11-18 at the owner's request.
+SOURCES = ['motiongit-styles.json', 'motiongit-controls.json', 'remotion-library.json']
 LAYERS = {'authored': 'AI Cut通用自制模板', 'style': '官网模板与片段', 'control': '官网动画控件',
-          'remotion': '现有代码模板', 'effect': '真人口播特效'}
-BASELINE_EXPECTED = {'style': 72, 'control': 70, 'remotion': 55, 'effect': 19}
+          'remotion': '现有代码模板'}
+BASELINE_EXPECTED = {'style': 72, 'control': 70, 'remotion': 55}
 
 
 def read_sources(root: Path):
@@ -107,7 +107,7 @@ def validate(entries, gallery: Path, strict: bool):
         if entry['layer'] not in LAYERS and entry['layer'] != 'preview':
             raise ValueError('Unknown catalog layer: ' + str(entry['layer']))
         counts[entry['layer']] += 1
-        if not entry['demos'] and strict and not (entry['layer'] in ('style', 'preview') and entry.get('no_demo_reason')):
+        if not entry['demos'] and strict and not (entry['layer'] in ('style', 'control', 'preview') and entry.get('no_demo_reason')):
             raise ValueError(entry['id'] + ': no demo')
         for demo in entry['demos']:
             if demo.get('path'):
@@ -286,11 +286,11 @@ def is_owner_demo(demo):
 
 
 def gallery_view(root, data):
-    """Public page may hide owner-made content; catalog.json keeps the full registry."""
+    """Public page may hide owner-made content; catalog.json keeps the full registry.
+
+    Entries with neither a demo nor an official poster are left off the page (they stay in catalog.json)."""
     path = root / 'templates/gallery-hidden.json'
-    if not path.is_file():
-        return data
-    rules = json.loads(path.read_text(encoding='utf-8'))
+    rules = json.loads(path.read_text(encoding='utf-8')) if path.is_file() else {'schema_version': 1}
     hide_layers = rules.get('hide_layers', [])
     if rules.get('schema_version') != 1 or not isinstance(hide_layers, list) or set(hide_layers) - set(LAYERS):
         raise ValueError('Invalid gallery hide rules in templates/gallery-hidden.json')
@@ -306,6 +306,8 @@ def gallery_view(root, data):
             if len(kept) != len(entry['demos']) or entry.get('integrations'):
                 entry = {k: v for k, v in entry.items() if k not in ('integrations', 'latest_integration_id', 'preview_integration_id')}
                 entry['demos'] = kept
+        if not entry['demos'] and not entry.get('learner_poster'):
+            continue  # nothing to show on a public card
         entries.append(entry)
     visible = {e['id'] for e in entries}
     integrations = [] if hide_owner else [r for r in data['integrations'] if r.get('entry_id') in visible]
@@ -451,10 +453,10 @@ dialog.detail[open]{animation:slide .42s var(--ease)}dialog.detail::backdrop{bac
 <div class="more-row"><button type="button" class="load" id="loadMore">再看 24 个</button></div>
 </main></div>
 <section class="about" id="about"><div class="about-in"><h2>来源与状态说明</h2><div class="about-body">
-<h3>预览和能用是两回事</h3><p>先按内容选择风格与场景，不强套固定整片设计。AI Cut通用自制模板在来源分类中单列；官方预览、旧效果分支与真实可调用状态分别说明。官网 Demo 需要联网；本地演示为静音版，示例数值与模拟界面不代表真实业务成果。第三方个人原包、Key 和完整原片不在本目录，自制包按各条说明取得。</p>
+<h3>预览和能用是两回事</h3><p>先按内容选择风格与场景，不强套固定整片设计。AI Cut通用自制模板在来源分类中单列；官方预览与真实可调用状态分别说明。官网 Demo 需要联网；本地演示为静音版，示例数值与模拟界面不代表真实业务成果。第三方个人原包、Key 和完整原片不在本目录，自制包按各条说明取得。</p>
 <p>每个模板固定七项：预览、用途、素材、可改参数、给 AI 的指令、使用状态、来源许可，点开任意模板即可查看。中文名称、使用条件、来源和 Demo 放在同一个入口；有演示不等于已通过新片验收。</p>
 <p id="syncStatus"></p><p id="localPlayback">本人库样例为静音版；已关联的本机原声版可在同一条模板里直接播放。</p>
-<h3>目录里有什么</h3><p>通用自制模板、官方风格、动画控件、代码注册项与真人特效分别登记，数量不能合称整片模板。</p><div class="stats">__STATS__</div>
+<h3>目录里有什么</h3><p>通用自制模板、官方风格、动画控件与代码注册项分别登记，数量不能合称整片模板。</p><div class="stats">__STATS__</div>
 <h3>四种剪辑路线</h3><div class="routes"><div class="route"><strong>知识口播</strong><p>讲述与原意驱动画面。优先字幕、概念解释、重点句与关系图。</p></div><div class="route"><strong>系统实操</strong><p>真实按钮与操作证据优先。放大、标注须指向实际目标。</p></div><div class="route"><strong>长访谈切片</strong><p>先按独立主题剪成完整论点，再添加包装与字幕。</p></div><div class="route"><strong>旅行 / Vlog</strong><p>按地点、事件、镜头连续性、环境声与音乐节奏剪辑；当前仅定义路线边界，未实现专用自动流程。</p></div></div>
 <h3>来源、许可与授权</h3><p>来源、许可证与更新口径：<a href="https://github.com/Isaac3113/ai-cut/blob/main/templates/PROVENANCE.zh-CN.md">来源说明</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/templates/README.zh-CN.md">完整中文清单</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/docs/template-gallery/CATEGORIES.md">分类动画预览</a> · <a href="https://github.com/Isaac3113/ai-cut/blob/main/skill/ai-cut/references/template-selection.md">Skill选择规则</a></p>
 <p class="foot">2026-10-27历史归档授权：以后每片经QA精选的本人静音Demo与集成说明可进入私人Git；完整原片、完整成片、源人像蒙版、Key、个人包与客户敏感信息不进入Git。2026-11-02现行展示授权：本页精选的现有预览可在 aicut.agi-top.com 公开展示，供个人学习与免费交流，不用于业务获客或销售。同日后续用户授权将GitHub源码仓库公开，上方源码与教学链接可直接浏览、下载，无需申请仓库权限。官网候选预览保留原来源与许可，不代表附送官方原包或全部模板已可执行。其他电脑仍需独立准备运行环境、个人模板授权和新片素材。</p>

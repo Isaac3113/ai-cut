@@ -8,19 +8,19 @@
 
 | 用途分类 | 条目 |
 | --- | ---: |
-| [真人口播](#use-talk) | 39 |
-| [录屏与操作教学](#use-screen) | 22 |
-| [流程与时间线](#use-flow) | 25 |
-| [数据与对比](#use-data) | 26 |
+| [真人口播](#use-talk) | 34 |
+| [录屏与操作教学](#use-screen) | 20 |
+| [流程与时间线](#use-flow) | 23 |
+| [数据与对比](#use-data) | 25 |
 | [产品与案例展示](#use-product) | 29 |
-| [标题与重点字](#use-text) | 31 |
-| [转场与片尾](#use-transition) | 17 |
+| [标题与重点字](#use-text) | 25 |
+| [转场与片尾](#use-transition) | 14 |
 | [视觉与背景](#use-visual) | 32 |
 | [行业应用](#use-industry) | 0 |
 | [实验与创新](#use-innovation) | 25 |
 | [分类待核对](#use-uncategorized) | 0 |
 
-共 246 条不同层级的目录：1 套AI Cut通用自制模板、101 项官网模板与片段、70 个官网控件、55 个代码注册项、19 个真人效果分支。另有 0 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 246 套整片一键模板。
+共 227 条不同层级的目录：1 套AI Cut通用自制模板、101 项官网模板与片段、70 个官网控件、55 个代码注册项。另有 0 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 227 套整片一键模板。
 
 ## 状态怎样看
 
@@ -31,7 +31,6 @@
 | 仓库源码可调用 · 先检查环境与素材 | 56 |
 | 尚未接入 · 先取得并核对原包 | 101 |
 | 已有控件演示 · 需自备授权原包 | 70 |
-| 样片效果 · 需要源码适配 | 19 |
 | 官方预告 · 待开放/核对 | 13 |
 | 待认领展示 · 原包未开放 | 774 |
 
@@ -56,7 +55,7 @@
 | 模板 | 用途与当前状态 | Demo |
 | --- | --- | --- |
 | [编辑画布式知识口播](categories/talk.md#ai-cut-editorial-canvas)<br>`ai-cut-editorial-canvas` | 同一编辑画布中的真人窗口、真实素材、输入输出、关系图与资料收束；场景顺序、素材和构图可随每片改变，不固定照抄一套设计。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/editorial-canvas/portrait.mp4) · [Demo 2](../docs/template-gallery/demos/editorial-canvas/landscape.mp4) |
-| [现代图文 · 口播讲解 · 竖屏](categories/talk.md#mg-style-314486)<br>`mg-style-314486` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.10 | [Demo 1](../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4) · [Demo 2](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4) |
+| [现代图文 · 口播讲解 · 竖屏](categories/talk.md#mg-style-314486)<br>`mg-style-314486` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.10 | [Demo 1](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4) |
 | [现代图文 · 口播讲解](categories/talk.md#mg-style-336980)<br>`mg-style-336980` | 用现代图文版式、文字强调和信息拆解配合口播，适合观点、证据与步骤讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.14 | [Demo 1](https://media.openaicut.com/previews/605/draft-zh-99e0d21cfdd9.mp4) |
 | [纸面透视 · 口播讲解](categories/talk.md#mg-style-358192)<br>`mg-style-358192` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.21-alpha.14 | [Demo 1](https://media.openaicut.com/previews/607/draft-zh-613d68ad449f.mp4) |
 | [纸面透视 · 口播讲解 · 竖屏](categories/talk.md#mg-style-295450)<br>`mg-style-295450` | 用纸面透视、卡片层次和图文关系配合口播，适合方法拆解与结构化知识。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.7.18-alpha.10 | [Demo 1](https://media.openaicut.com/previews/608/draft-zh-927e16779f16.mp4) |
@@ -89,11 +88,6 @@
 | [误区与真相](categories/talk.md#mg-control-myth)<br>`mg-control-myth` | 纠正一个常见错误说法：先摆出误区、否定它、再给出正确说法。辟谣、避坑、常见误解<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/myth.mp4) |
 | [名词解释](categories/talk.md#mg-control-definition)<br>`mg-control-definition` | 解释一个术语/概念：词条 + 注音/英文 + 类别 + 一句定义 + 可选例句。知识科普、行业黑话、新概念<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/definition.mp4) |
 | [小贴士 / 警告](categories/talk.md#mg-control-tip)<br>`mg-control-tip` | 插一句提醒：小技巧（tip）、注意事项（warn）、补充信息（info）、确认无误（ok）。类型决定图标与颜色<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/tip.mp4) |
-| [剪纸描边](categories/talk.md#presenter-effect-04)<br>`presenter-effect-04` | 动态抠像人物加白色纸边和阴影，置于纸张纹理背景。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-04.mp4) |
-| [照片墙](categories/talk.md#presenter-effect-05)<br>`presenter-effect-05` | 多张照片组成错位移动墙，动态人物位于前景。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-05.mp4) |
-| [杂志封面](categories/talk.md#presenter-effect-08)<br>`presenter-effect-08` | 人物与封面标题分层，形成杂志封面式口播包装。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-08.mp4) |
-| [抠像换景](categories/talk.md#presenter-effect-09)<br>`presenter-effect-09` | 已抠像的人物合成到原创蓝色空间背景。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-09.mp4) |
-| [人物破框](categories/talk.md#presenter-effect-15)<br>`presenter-effect-15` | 同源画面在倾斜窗口内显示，透明人物延伸到窗口外。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-15.mp4) |
 
 <a id="use-screen"></a>
 ## 录屏与操作教学
@@ -103,17 +97,17 @@
 | 模板 | 用途与当前状态 | Demo |
 | --- | --- | --- |
 | [流程演示 · 产品教程](categories/screen.md#mg-style-670021)<br>`mg-style-670021` | 沿着选择模板、提供内容、生成视频的流程讲解产品使用，适合工具教程和上手演示。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：2.6.5 | [Demo 1](https://media.openaicut.com/previews/588/draft-zh-ca08bac0650e.mp4) |
-| [设备样机](categories/screen.md#mg-control-device)<br>`mg-control-device` | 展示 App、网页、录屏、作品画面：素材放进手机 / 平板 / 显示器屏幕里，视频按成片时钟播放；可配标题<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/device.mp4) |
-| [聚光放大](categories/screen.md#mg-control-spotlight)<br>`mg-control-spotlight` | 在一张截图/照片/视频画面里依次指出 1–3 个关注点（x、y 为 0–1 的相对位置），每个点带一个短标签<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/spotlight.mp4) |
-| [聊天对话](categories/screen.md#mg-control-chat)<br>`mg-control-chat` | 把一段对话演出来：用户与客服/朋友的聊天、群里的讨论、向 AI 助手提问并得到回答；2–6 条消息逐条出现<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/chat.mp4) |
-| [评论 / 弹幕](categories/screen.md#mg-control-comment)<br>`mg-control-comment` | 展示观众反馈、网友评论、热评、弹幕刷屏：2–5 条评论逐条浮现，点赞数上涨，最高赞那条被强调（热评 / 置顶 / 放大停住）<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/comment.mp4) |
+| [设备样机](categories/screen.md#mg-control-device)<br>`mg-control-device` | 展示 App、网页、录屏、作品画面：素材放进手机 / 平板 / 显示器屏幕里，视频按成片时钟播放；可配标题<br>**暂无示范视频 · 需自备授权原包** |  |
+| [聚光放大](categories/screen.md#mg-control-spotlight)<br>`mg-control-spotlight` | 在一张截图/照片/视频画面里依次指出 1–3 个关注点（x、y 为 0–1 的相对位置），每个点带一个短标签<br>**暂无示范视频 · 需自备授权原包** |  |
+| [聊天对话](categories/screen.md#mg-control-chat)<br>`mg-control-chat` | 把一段对话演出来：用户与客服/朋友的聊天、群里的讨论、向 AI 助手提问并得到回答；2–6 条消息逐条出现<br>**暂无示范视频 · 需自备授权原包** |  |
+| [评论 / 弹幕](categories/screen.md#mg-control-comment)<br>`mg-control-comment` | 展示观众反馈、网友评论、热评、弹幕刷屏：2–5 条评论逐条浮现，点赞数上涨，最高赞那条被强调（热评 / 置顶 / 放大停住）<br>**暂无示范视频 · 需自备授权原包** |  |
 | [通知横幅](categories/screen.md#mg-control-notify)<br>`mg-control-notify` | 表现「消息来了」：订单、提醒、私信、系统通知一条接一条弹出；也可做锁屏收到通知的画面<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/notify.mp4) |
 | [搜索框](categories/screen.md#mg-control-search)<br>`mg-control-search` | 演示「搜一下」：输入关键词 → 回车 → 联想/结果出现、命中词高亮；适合讲搜索热度、怎么找资料、工具里的命令面板<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/search.mp4) |
-| [浏览器 / 应用窗口](categories/screen.md#mg-control-browser)<br>`mg-control-browser` | 演示「打开一个网页 / 网站 / 应用」：地址栏输入网址、加载、页面滚动，再用 1–3 个高亮框标出重点区域。只需要静态录屏展示用 0.2.0 的 media<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/browser.mp4) |
-| [社交数据卡](categories/screen.md#mg-control-social)<br>`mg-control-social` | 展示一条内容的反响：帖子被点赞、主页涨粉、三项互动数据；数字滚动上涨。数字请标注示意<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/social.mp4) |
-| [鼠标点击演示](categories/screen.md#mg-control-cursor)<br>`mg-control-cursor` | 演示软件操作步骤：依次点几个按钮、把文件拖进某个区域、打开菜单选一项。可以放截图作为背景<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/cursor.mp4) |
-| [箭头标注](categories/screen.md#mg-control-callout)<br>`mg-control-callout` | 指出画面里的某个位置（录屏按钮、图片细节、口播卡外的内容）：给目标点 x/y（0–1 画面比例）和一句短标注<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/callout.mp4) |
-| [章节进度条](categories/screen.md#mg-control-progressbar)<br>`mg-control-progressbar` | 告诉观众「现在讲到第几部分」：2–6 个章节名 + 当前章节序号。放在章节切换处，停留 2–6 秒<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/progressbar.mp4) |
+| [浏览器 / 应用窗口](categories/screen.md#mg-control-browser)<br>`mg-control-browser` | 演示「打开一个网页 / 网站 / 应用」：地址栏输入网址、加载、页面滚动，再用 1–3 个高亮框标出重点区域。只需要静态录屏展示用 0.2.0 的 media<br>**暂无示范视频 · 需自备授权原包** |  |
+| [社交数据卡](categories/screen.md#mg-control-social)<br>`mg-control-social` | 展示一条内容的反响：帖子被点赞、主页涨粉、三项互动数据；数字滚动上涨。数字请标注示意<br>**暂无示范视频 · 需自备授权原包** |  |
+| [鼠标点击演示](categories/screen.md#mg-control-cursor)<br>`mg-control-cursor` | 演示软件操作步骤：依次点几个按钮、把文件拖进某个区域、打开菜单选一项。可以放截图作为背景<br>**暂无示范视频 · 需自备授权原包** |  |
+| [箭头标注](categories/screen.md#mg-control-callout)<br>`mg-control-callout` | 指出画面里的某个位置（录屏按钮、图片细节、口播卡外的内容）：给目标点 x/y（0–1 画面比例）和一句短标注<br>**暂无示范视频 · 需自备授权原包** |  |
+| [章节进度条](categories/screen.md#mg-control-progressbar)<br>`mg-control-progressbar` | 告诉观众「现在讲到第几部分」：2–6 个章节名 + 当前章节序号。放在章节切换处，停留 2–6 秒<br>**暂无示范视频 · 需自备授权原包** |  |
 | [聊天界面](categories/screen.md#remotion-community-chat)<br>`remotion-community-chat` | 竖屏聊天消息逐条展示；独立演示层把桌面尺寸字体放大，方便阅读竖版中文界面。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/community-chat.mp4) |
 | [眼睛揭示动画](categories/screen.md#remotion-eye-reveal)<br>`remotion-eye-reveal` | 代码图形的眼睛开合揭示<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/eye-reveal.mp4) |
 | [玻璃信息卡](categories/screen.md#remotion-lower-third-glass-card)<br>`remotion-lower-third-glass-card` | 半透明玻璃下三分之一信息卡<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/lower-third-glass-card.mp4) |
@@ -122,8 +116,6 @@
 | [思考气泡](categories/screen.md#remotion-thinking-bubble)<br>`remotion-thinking-bubble` | 代码图形思考气泡<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/thinking-bubble.mp4) |
 | [角色招手](categories/screen.md#remotion-wave-hello)<br>`remotion-wave-hello` | 代码图形招手动画<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/wave-hello.mp4) |
 | [中文播放器界面示例](categories/screen.md#remotion-library-player-zh)<br>`remotion-library-player-zh` | 代码绘制竖屏播放器与信息层；已有基础模板的中文参数示例，不新增模板家族。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/library-player-zh.mp4) |
-| [界面窗框](categories/screen.md#presenter-effect-07)<br>`presenter-effect-07` | 口播被放入带标题栏的悬浮窗框，形成界面容器效果。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-07.mp4) |
-| [手机画面](categories/screen.md#presenter-effect-14)<br>`presenter-effect-14` | 口播装入带旋转动作的手机轮廓与播放信息层。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-14.mp4) |
 
 <a id="use-flow"></a>
 ## 流程与时间线
@@ -155,8 +147,6 @@
 | [思维导图](categories/flow.md#mg-control-mindmap)<br>`mg-control-mindmap` | 一个主题展开 3–6 个方面，每个方面可再列 0–2 个要点：知识框架、话题拆解<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/mindmap.mp4) |
 | [2×2 象限](categories/flow.md#mg-control-matrix)<br>`mg-control-matrix` | 两个维度把事物分成四类：重要/紧急、投入/回报、定位分析；可在象限里落几个点，priority 变体突出一个象限<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/matrix.mp4) |
 | [中心辐射](categories/flow.md#mg-control-hub)<br>`mg-control-hub` | 一个核心连接 3–8 个周边：平台与生态、能力清单、一个工具对接多个场景<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/hub.mp4) |
-| [打勾清单](categories/flow.md#presenter-effect-10)<br>`presenter-effect-10` | 清单项依次打勾，顶部进度随演示推进。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-10.mp4) |
-| [收据列表](categories/flow.md#presenter-effect-18)<br>`presenter-effect-18` | 纸张从打印口逐步出现，列出三项内容并打勾。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-18.mp4) |
 
 <a id="use-data"></a>
 ## 数据与对比
@@ -174,14 +164,14 @@
 | [数据条](categories/data.md#mg-control-bars)<br>`mg-control-bars` | 2–5 项数值比较；数值必须来自真实数据<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/bars.mp4) |
 | [价格 / 优惠](categories/data.md#mg-control-price)<br>`mg-control-price` | 亮出价格与优惠：原价划掉、新价砸入、标签盖章；可带 1–3 个卖点<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/price.mp4) |
 | [优缺点](categories/data.md#mg-control-prosCons)<br>`mg-control-prosCons` | 权衡一件事的好处与代价，最后给结论（偏向哪边）。选购、方案评估、利弊分析<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/prosCons.mp4) |
-| [两方对决](categories/data.md#mg-control-vs)<br>`mg-control-vs` | 两个对象正面比拼 1–3 项数值并分出胜负：产品 A/B、方案、两个人或团队。只比观点不比数值时用 compare<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/vs.mp4) |
+| [两方对决](categories/data.md#mg-control-vs)<br>`mg-control-vs` | 两个对象正面比拼 1–3 项数值并分出胜负：产品 A/B、方案、两个人或团队。只比观点不比数值时用 compare<br>**暂无示范视频 · 需自备授权原包** |  |
 | [环形占比](categories/data.md#mg-control-donut)<br>`mg-control-donut` | 几个部分占整体多少：构成、份额、预算分配、用户来源（2–5 项）。数值按占比换算成百分比<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/donut.mp4) |
 | [折线趋势](categories/data.md#mg-control-linechart)<br>`mg-control-linechart` | 随时间的变化：增长、下降、波动、两条对比（4–12 个点）。终点标注最后一个值<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/linechart.mp4) |
 | [KPI 数字卡](categories/data.md#mg-control-counter)<br>`mg-control-counter` | 2–4 个关键数字并排：用户数、营收、增长率、时长；可带涨跌<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/counter.mp4) |
 | [进度 / 完成度](categories/data.md#mg-control-progress)<br>`mg-control-progress` | 完成了多少：项目进度、目标达成、技能熟练度、电量式的程度（1–4 条，百分比）<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/progress.mp4) |
 | [对比表 / 功能矩阵](categories/data.md#mg-control-table)<br>`mg-control-table` | 2–3 个方案在 2–5 项上逐项比较；单元格写 ✓ / ✗ 或短文字；赢家列高亮<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/table.mp4) |
 | [排行榜](categories/data.md#mg-control-ranking)<br>`mg-control-ranking` | 3–6 项按数值排名：榜单、名次、Top N；自动按 value 从大到小排序<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/ranking.mp4) |
-| [前后对比](categories/data.md#mg-control-beforeafter)<br>`mg-control-beforeafter` | 同一对象改造前后、修图前后、旧版新版：两张素材对照，第二个 cue 揭示 after<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/beforeafter.mp4) |
+| [前后对比](categories/data.md#mg-control-beforeafter)<br>`mg-control-beforeafter` | 同一对象改造前后、修图前后、旧版新版：两张素材对照，第二个 cue 揭示 after<br>**暂无示范视频 · 需自备授权原包** |  |
 | [长条图成长](categories/data.md#remotion-bar-chart-anim)<br>`remotion-bar-chart-anim` | 柱状图按数值依次增长<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/bar-chart-anim.mp4) |
 | [折线图绘制](categories/data.md#remotion-line-chart-anim)<br>`remotion-line-chart-anim` | 折线沿横轴逐步绘出<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/line-chart-anim.mp4) |
 | [滴入式填充计量](categories/data.md#remotion-pourover-drip-fill-gauge)<br>`remotion-pourover-drip-fill-gauge` | 滴落式动画填满目标比例；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/pourover-drip-fill-gauge.mp4) |
@@ -190,7 +180,6 @@
 | [排名竞速长条图](categories/data.md#remotion-racing-chart)<br>`remotion-racing-chart` | 长条随数据变化交换排名<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/racing-chart.mp4) |
 | [分屏布局](categories/data.md#remotion-split-screen)<br>`remotion-split-screen` | 两个画面区域进入并排布局<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/split-screen.mp4) |
 | [中文长条成长示例](categories/data.md#remotion-library-bar-zh)<br>`remotion-library-bar-zh` | 柱状图按数值依次增长；已有基础模板的中文参数示例，不新增模板家族。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/library-bar-zh.mp4) |
-| [条形增长](categories/data.md#presenter-effect-01)<br>`presenter-effect-01` | 三条横向示意条按顺序增长，叠在口播画面上。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-01.mp4) |
 
 <a id="use-product"></a>
 ## 产品与案例展示
@@ -212,14 +201,14 @@
 | [产品与品牌 · PRODUCT → BRAND](categories/product.md#mg-style-877)<br>`mg-style-877` | 从面板擦除进入产品工作台（分镜/画布/调色/时间线同窗联动），再以墨色擦除收进棱镜标志、字标、主张与 CTA；14.4 秒，适合产品演示与品牌落版。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：1.0.0 | [Demo 1](https://media.openaicut.com/previews/877/1.0.0-zh-97910ee13592.mp4) |
 | [DEEP STAGE 产品讲解](categories/product.md#mg-style-648878)<br>`mg-style-648878` | 产品讲解动效：产品主屏推入并持续推近，3 个参数切片从 3D 空间错峰浮出、数字从 0 滚到终值，右下角人物小画中画入位。12 秒，适合产品卖点与参数讲解。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：1.0.0 | [Demo 1](https://media.openaicut.com/previews/881/1.0.0-bf4d2ce8953d.mp4) |
 | [多屏商务 · 动态图表](categories/product.md#mg-style-640261)<br>`mg-style-640261` | 固定20秒横屏商务短片，以多屏重排呈现团队、比较、趋势、构成与行动。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：0.1.1-candidate | [Demo 1](https://media.openaicut.com/previews/891/0.1.1-candidate-zh-a43ff10687ec.mp4) |
-| [录屏 / 图片窗](categories/product.md#mg-control-media)<br>`mg-control-media` | 展示用户的录屏、截图、产品图；可在画面上标出 1–3 处重点<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/media.mp4) |
-| [Logo 揭示](categories/product.md#mg-control-logo)<br>`mg-control-logo` | 片头或片尾亮出品牌/频道标志：有 logo 图片就用图片，没有就用名字首字或图标生成字标；下方可带一句标语<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/logo.mp4) |
+| [录屏 / 图片窗](categories/product.md#mg-control-media)<br>`mg-control-media` | 展示用户的录屏、截图、产品图；可在画面上标出 1–3 处重点<br>**暂无示范视频 · 需自备授权原包** |  |
+| [Logo 揭示](categories/product.md#mg-control-logo)<br>`mg-control-logo` | 片头或片尾亮出品牌/频道标志：有 logo 图片就用图片，没有就用名字首字或图标生成字标；下方可带一句标语<br>**暂无示范视频 · 需自备授权原包** |  |
 | [行动号召](categories/product.md#mg-control-cta)<br>`mg-control-cta` | 引导观众做一个动作：点链接、领取、评论、往下看、上滑。一个按钮文字 + 一句补充<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/cta.mp4) |
 | [揭晓 / 抽奖](categories/product.md#mg-control-reveal)<br>`mg-control-reveal` | 悬念揭晓：抽奖结果、答案、排名第一、新品名。鼓点悬念 → 打开 → 彩纸<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/reveal.mp4) |
-| [图集](categories/product.md#mg-control-gallery)<br>`mg-control-gallery` | 3–8 张图片/视频一起亮相：作品集、案例合集、活动照片、产品多角度；每个 cue 出一张（carousel/stack 是每个 cue 转到下一张）<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/gallery.mp4) |
-| [纪录片推拉](categories/product.md#mg-control-kenburns)<br>`mg-control-kenburns` | 讲故事、回顾、旅程、案例背景：1–4 张图片纪录片式慢推慢移、交叉溶解，底部逐字打出说明；每个 cue 换一张<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/kenburns.mp4) |
-| [拍立得](categories/product.md#mg-control-polaroid)<br>`mg-control-polaroid` | 生活感、回忆、幕后花絮、团队/人物照片：1–4 张照片卡 + 手写说明；每个 cue 出一张<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/polaroid.mp4) |
-| [拼贴墙](categories/product.md#mg-control-collage)<br>`mg-control-collage` | 大量作品/截图/用户照片的气势感：作品墙、社区、合集封面。masonry / wall 用 4–9 张（不够会循环）；mosaic 只用第一张，碎片拼成整图<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/collage.mp4) |
+| [图集](categories/product.md#mg-control-gallery)<br>`mg-control-gallery` | 3–8 张图片/视频一起亮相：作品集、案例合集、活动照片、产品多角度；每个 cue 出一张（carousel/stack 是每个 cue 转到下一张）<br>**暂无示范视频 · 需自备授权原包** |  |
+| [纪录片推拉](categories/product.md#mg-control-kenburns)<br>`mg-control-kenburns` | 讲故事、回顾、旅程、案例背景：1–4 张图片纪录片式慢推慢移、交叉溶解，底部逐字打出说明；每个 cue 换一张<br>**暂无示范视频 · 需自备授权原包** |  |
+| [拍立得](categories/product.md#mg-control-polaroid)<br>`mg-control-polaroid` | 生活感、回忆、幕后花絮、团队/人物照片：1–4 张照片卡 + 手写说明；每个 cue 出一张<br>**暂无示范视频 · 需自备授权原包** |  |
+| [拼贴墙](categories/product.md#mg-control-collage)<br>`mg-control-collage` | 大量作品/截图/用户照片的气势感：作品墙、社区、合集封面。masonry / wall 用 4–9 张（不够会循环）；mosaic 只用第一张，碎片拼成整图<br>**暂无示范视频 · 需自备授权原包** |  |
 | [笔刷揭示](categories/product.md#remotion-brush-stroke-reveal)<br>`remotion-brush-stroke-reveal` | 笔刷扫过后显现标记<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/brush-stroke-reveal.mp4) |
 | [Logo由模糊变清晰](categories/product.md#remotion-logo-blur-reveal)<br>`remotion-logo-blur-reveal` | 由虚焦过渡到清晰<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/logo-blur-reveal.mp4) |
 | [Logo弹落](categories/product.md#remotion-logo-bounce-drop)<br>`remotion-logo-bounce-drop` | 标记下落后弹性停稳<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/logo-bounce-drop.mp4) |
@@ -246,8 +235,8 @@
 | [轮换词](categories/text.md#mg-control-rotator)<br>`mg-control-rotator` | 同一句话换不同的词：「适合 学生 / 老师 / 公司」、「它能 写 / 画 / 剪」。最后一个词停住<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/rotator.mp4) |
 | [滚动横幅](categories/text.md#mg-control-marquee)<br>`mg-control-marquee` | 一串关键词/标签/口号持续滚动：活动、清单很长、节奏型过渡；可在横幅上砸入一个大词<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/marquee.mp4) |
 | [巨字](categories/text.md#mg-control-bigtype)<br>`mg-control-bigtype` | 一个词撑满画面的冲击时刻：段落主题、结论词、品牌词；mask 变体可让图片/视频透过字显示<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/bigtype.mp4) |
-| [人名条](categories/text.md#mg-control-lowerthird)<br>`mg-control-lowerthird` | 第一次出现某个人、讲者、嘉宾或角色时标出名字和身份；也可当一条短字幕条。贴在左下（或右下），横屏在口播卡左侧、字幕之上<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/lowerthird.mp4) |
-| [角标](categories/text.md#mg-control-tag)<br>`mg-control-tag` | 画面角落的话题标签、集数、属性：「#干货」「第 3 集」「新」，1–3 条，可整段常驻<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/tag.mp4) |
+| [人名条](categories/text.md#mg-control-lowerthird)<br>`mg-control-lowerthird` | 第一次出现某个人、讲者、嘉宾或角色时标出名字和身份；也可当一条短字幕条。贴在左下（或右下），横屏在口播卡左侧、字幕之上<br>**暂无示范视频 · 需自备授权原包** |  |
+| [角标](categories/text.md#mg-control-tag)<br>`mg-control-tag` | 画面角落的话题标签、集数、属性：「#干货」「第 3 集」「新」，1–3 条，可整段常驻<br>**暂无示范视频 · 需自备授权原包** |  |
 | [标题弹入](categories/text.md#remotion-bounce-in-headline)<br>`remotion-bounce-in-headline` | 整段标题从上方弹入，带回弹。并非逐词分拍。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/bounce-in-headline.mp4) |
 | [章节标题卡](categories/text.md#remotion-chapter-title)<br>`remotion-chapter-title` | 编号与章节标题显现<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/chapter-title.mp4) |
 | [四色标题切换](categories/text.md#remotion-four-tone-mono-titler)<br>`remotion-four-tone-mono-titler` | 标题块切换四组颜色；中文演示层使用 NotoSansSC 补字，保留原动画时序；原版像素字库只覆盖英文。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/four-tone-mono-titler.mp4) |
@@ -261,12 +250,6 @@
 | [波浪文字](categories/text.md#remotion-wave-text)<br>`remotion-wave-text` | 文字按波形上下移动<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/wave-text.mp4) |
 | [文字镂空媒体演示](categories/text.md#remotion-library-text-mask)<br>`remotion-library-text-mask` | SVG文字镂空与渐变移动；演示使用合成渐变<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/library-text-mask.mp4) |
 | [中文玻璃卡片示例](categories/text.md#remotion-library-glass-zh)<br>`remotion-library-glass-zh` | 半透明玻璃下三分之一信息卡；已有基础模板的中文参数示例，不新增模板家族。<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/library-glass-zh.mp4) |
-| [玻璃标签](categories/text.md#presenter-effect-02)<br>`presenter-effect-02` | 半透明圆角玻璃标签进入画面，突出一个短标题。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-02.mp4) |
-| [视频镂空字](categories/text.md#presenter-effect-11)<br>`presenter-effect-11` | 真人视频透过大型中文字显示，并保留圆形人物小窗。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-11.mp4) |
-| [手绘涂鸦](categories/text.md#presenter-effect-12)<br>`presenter-effect-12` | 线条、星形与箭头逐步绘出，围绕人物形成手绘强调。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-12.mp4) |
-| [标题墙](categories/text.md#presenter-effect-13)<br>`presenter-effect-13` | 重复大字在人物后方交错移动，形成动态文字墙。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-13.mp4) |
-| [环绕文字](categories/text.md#presenter-effect-16)<br>`presenter-effect-16` | 三张中文词卡沿椭圆轨迹环绕人物，并表现前后遮挡。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-16.mp4) |
-| [贴纸轮播](categories/text.md#presenter-effect-19)<br>`presenter-effect-19` | 五枚原创图标贴纸沿椭圆轨道轮转，并改变前后大小。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-19.mp4) |
 
 <a id="use-transition"></a>
 ## 转场与片尾
@@ -277,8 +260,8 @@
 | --- | --- | --- |
 | [章节卡](categories/transition.md#mg-control-chapter)<br>`mg-control-chapter` | 长视频分段：编号 + 段名<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/chapter.mp4) |
 | [片头](categories/transition.md#mg-control-intro)<br>`mg-control-intro` | 视频开头的节目标题卡：标题 + 副标题 + 可选期数/日期。电影感开场、系列节目、栏目包装<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/intro.mp4) |
-| [片尾](categories/transition.md#mg-control-outro)<br>`mg-control-outro` | 视频结尾：感谢语 + 1–3 个下一步（推荐视频、下期预告、关注/链接文字），可带头像<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/outro.mp4) |
-| [关注 / 三连](categories/transition.md#mg-control-subscribe)<br>`mg-control-subscribe` | 求关注、求三连、开铃铛：按钮依次被光标点亮，图标弹跳、数字 +1。items 可自定义 2–3 个按钮<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/subscribe.mp4) |
+| [片尾](categories/transition.md#mg-control-outro)<br>`mg-control-outro` | 视频结尾：感谢语 + 1–3 个下一步（推荐视频、下期预告、关注/链接文字），可带头像<br>**暂无示范视频 · 需自备授权原包** |  |
+| [关注 / 三连](categories/transition.md#mg-control-subscribe)<br>`mg-control-subscribe` | 求关注、求三连、开铃铛：按钮依次被光标点亮，图标弹跳、数字 +1。items 可自定义 2–3 个按钮<br>**暂无示范视频 · 需自备授权原包** |  |
 | [倒计时](categories/transition.md#mg-control-countdown)<br>`mg-control-countdown` | 3–10 秒倒数：开奖、开播、限时、揭晓前的紧张感；归零时爆开出现结束语<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/countdown.mp4) |
 | [镜头震动](categories/transition.md#remotion-camera-shake)<br>`remotion-camera-shake` | 短促镜头抖动基础<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/camera-shake.mp4) |
 | [卡片翻面转场](categories/transition.md#remotion-card-flip-transition)<br>`remotion-card-flip-transition` | 画面按卡片方式翻转<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/card-flip-transition.mp4) |
@@ -289,9 +272,6 @@
 | [滑动擦除转场](categories/transition.md#remotion-slide-wipe)<br>`remotion-slide-wipe` | 面板滑动切换场景<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/slide-wipe.mp4) |
 | [快速甩镜](categories/transition.md#remotion-whip-pan)<br>`remotion-whip-pan` | 快速横移与模糊转场<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/whip-pan.mp4) |
 | [通用结束卡](categories/transition.md#remotion-end-card)<br>`remotion-end-card` | 通用CTA结束卡；不替换用户固定片尾<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/end-card.mp4) |
-| [冲击缩放](categories/transition.md#presenter-effect-03)<br>`presenter-effect-03` | 同一镜头快速推近、模糊并回拉，配合扩散边框。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-03.mp4) |
-| [拉远揭幕](categories/transition.md#presenter-effect-06)<br>`presenter-effect-06` | 口播画面逐步缩小，显露带标题栏的悬浮窗口。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-06.mp4) |
-| [数字推近](categories/transition.md#presenter-effect-17)<br>`presenter-effect-17` | 围绕人物焦点逐步放大原画面，叠加构图框。<br>**样片效果 · 需要源码适配** | [Demo 1](../docs/template-gallery/demos/presenter/presenter-effect-17.mp4) |
 
 <a id="use-visual"></a>
 ## 视觉与背景
@@ -319,10 +299,10 @@
 | [DEEP STAGE 收尾锁版](categories/visual.md#mg-style-581039)<br>`mg-style-581039` | 收尾锁版动效：屏幕退向纵深，logo 描边锁定，字标、副标、规格行与版本胶囊依次落位，一道横扫光掠过，结尾稳定呼吸。8 秒，适合片尾与版本标识。<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：1.0.0 | [Demo 1](https://media.openaicut.com/previews/884/1.0.0-651f2839086d.mp4) |
 | [3D 吉祥物手把手教程](categories/visual.md#mg-style-887145)<br>`mg-style-887145` | 把网页或 App 的一段操作流程（注册、下单、设置等），做成 3D 小宠物带着一步步点、打字、指重点的横屏教程视频<br>**尚未接入 · 先取得并核对原包**<br>公开登记版本：1.0.0 | [Demo 1](https://media.openaicut.com/previews/895/1.0.0-zh-a15d0b9cfbab.mp4) |
 | [光球合成](categories/visual.md#mg-control-fusion)<br>`mg-control-fusion` | A × B 合在一起得到结果 C<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/fusion.mp4) |
-| [贴纸](categories/visual.md#mg-control-sticker)<br>`mg-control-sticker` | 给一句话盖个情绪章：「绝了」「重点」「NEW」「必看」，或一个图标贴纸。位置 x/y 可选（默认右上），不压口播卡和字幕<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/sticker.mp4) |
-| [表情飘赞](categories/visual.md#mg-control-emoji)<br>`mg-control-emoji` | 情绪时刻的一阵表情：点赞、比心、火、笑。icon 用图标名（彩色圆泡），或 text 填 1–2 个 emoji 字符；n 为数量<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/emoji.mp4) |
-| [庆祝特效](categories/visual.md#mg-control-confetti)<br>`mg-control-confetti` | 里程碑、达成、好消息、结尾致谢：彩纸 / 烟花，可选一句短字居中弹出。每个 cue 一波（最多 3 波）<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/confetti.mp4) |
-| [画面装饰框](categories/visual.md#mg-control-frame)<br>`mg-control-frame` | 给整段画面加氛围：拍摄感取景框、录制中、霓虹边框。框住内容区（避开口播卡与字幕），可整段常驻<br>**已有控件演示 · 需自备授权原包** | [Demo 1](../docs/template-gallery/demos/motiongit/frame.mp4) |
+| [贴纸](categories/visual.md#mg-control-sticker)<br>`mg-control-sticker` | 给一句话盖个情绪章：「绝了」「重点」「NEW」「必看」，或一个图标贴纸。位置 x/y 可选（默认右上），不压口播卡和字幕<br>**暂无示范视频 · 需自备授权原包** |  |
+| [表情飘赞](categories/visual.md#mg-control-emoji)<br>`mg-control-emoji` | 情绪时刻的一阵表情：点赞、比心、火、笑。icon 用图标名（彩色圆泡），或 text 填 1–2 个 emoji 字符；n 为数量<br>**暂无示范视频 · 需自备授权原包** |  |
+| [庆祝特效](categories/visual.md#mg-control-confetti)<br>`mg-control-confetti` | 里程碑、达成、好消息、结尾致谢：彩纸 / 烟花，可选一句短字居中弹出。每个 cue 一波（最多 3 波）<br>**暂无示范视频 · 需自备授权原包** |  |
+| [画面装饰框](categories/visual.md#mg-control-frame)<br>`mg-control-frame` | 给整段画面加氛围：拍摄感取景框、录制中、霓虹边框。框住内容区（避开口播卡与字幕），可整段常驻<br>**暂无示范视频 · 需自备授权原包** |  |
 | [散景光圈背景](categories/visual.md#remotion-bokeh-circles)<br>`remotion-bokeh-circles` | 柔焦圆形漂浮背景<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/bokeh-circles.mp4) |
 | [烟花爆开](categories/visual.md#remotion-fireworks-burst)<br>`remotion-fireworks-burst` | 放射粒子爆开<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/fireworks-burst.mp4) |
 | [网格波浪循环](categories/visual.md#remotion-loop-grid-wave)<br>`remotion-loop-grid-wave` | 网格按波形循环变化<br>**仓库源码可调用 · 先检查环境与素材** | [Demo 1](../docs/template-gallery/demos/remotion/loop-grid-wave.mp4) |

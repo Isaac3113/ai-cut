@@ -4,11 +4,9 @@
 `template-catalog.json` 是目录入口。主Skill仍管理口播和ChatCut主时间轴。
 模板使用独立 `src/template-library/index.ts`，不改变既有 `src/Root.tsx`。
 
-真人原片的19项试剪另读[独立Showcase说明](../../../extensions/remotion-vd44/src/template-library/talking-head-effects/README.md)：
-入口为 `src/template-library/talking-head-effects/index.tsx`，由冻结主时间轴的源区间、
-同期人物alpha和图形层合成。它是独立composition，不改变既有55项模板目录或ChatCut主时间轴。
-蒙版准备按[隔离人物分割扩展](../../../extensions/segmentation/README.md)，不要把灰度蒙版直接当透明人物视频。
-本条部分时间边界仍需按新口播适配，源码/素材改变后使用新的render revision，避免复用旧bundle。
+2026-11-18：原真人原片19项试剪（talking-head-effects Showcase）及其本人素材示范已按本人要求移除，
+不再作为可选模板；本人以后会另做新的一套。需要人物遮罩时仍按[隔离人物分割扩展](../../../extensions/segmentation/README.md)，
+不要把灰度蒙版直接当透明人物视频。
 
 ## 来源与范围
 

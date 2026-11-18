@@ -65,7 +65,7 @@ class AuthoredTemplateExtensionTests(unittest.TestCase):
         self.assertEqual({p.name: p.read_bytes() for p in (self.root / 'templates').iterdir()
                           if p.name != 'authored-templates.json'}, raw_before)
         self.assertEqual(self.gallery.BASELINE_EXPECTED,
-                         {'style': 72, 'control': 70, 'remotion': 55, 'effect': 19})
+                         {'style': 72, 'control': 70, 'remotion': 55})  # 19 owner effects removed 2026-11-18
 
     def test_authored_file_cannot_relabel_an_upstream_source(self):
         row = authored_entry()

@@ -68,7 +68,8 @@
 上方“未执行／候选未安装”等记录对应初次模板库接入阶段；本节追加后续真人试剪范围，
 不改写此前的图形模板验证，也不把后续实现倒填为初次已完成。
 
-- 新增独立 [TalkingHeadShowcase模块说明](../../extensions/remotion-vd44/src/template-library/talking-head-effects/README.md)，
+- （2026-11-18：该模块及19项本人示范已按本人要求从仓库移除，旧版本可在 Git 历史提交 71c2c18 中找回；以下为历史记录。）
+- 新增独立 TalkingHeadShowcase模块说明（`extensions/remotion-vd44/src/template-library/talking-head-effects/README.md`，已移除），
   源码为该目录的 `index.tsx`、`Showcase.tsx`、`GraphicLayers.tsx`；
   扩展根目录 `render-showcase.mjs` 与 `tsconfig.showcase.json` 提供独立运行/检查入口。
 - 一项showcase内部按冻结源区间映射19种效果，并保留本条结尾配图；既有目录仍为55项，

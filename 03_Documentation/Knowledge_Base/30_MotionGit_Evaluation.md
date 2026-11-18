@@ -42,7 +42,7 @@
 | 品牌与人像例外未编码完整 | [visual_contract.py:162](../../src/talking_head_editor/visual_contract.py#L162)无条件PIP；[:184](../../src/talking_head_editor/visual_contract.py#L184)片尾品牌绑定；[:191](../../src/talking_head_editor/visual_contract.py#L191)水印整片覆盖 |
 | 本机无SFX分支缺文件 | [motion.py:207](../../src/talking_head_editor/motion.py#L207)提前返回，而[audio_controls.py:15](../../src/talking_head_editor/audio_controls.py#L15)、[:42](../../src/talking_head_editor/audio_controls.py#L42)仍读SFX报告／WAV；静态控制流判断，未跑媒体复现 |
 | 本机片尾能力落后于规则 | [motion.py:238](../../src/talking_head_editor/motion.py#L238)使用`-an`；不能直接保留固定模板自带音轨和独立1.2倍 |
-| Showcase存在案例耦合 | [Showcase.tsx:25](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx#L25)固定21.75秒；[render-showcase.mjs:17](../../extensions/remotion-vd44/render-showcase.mjs#L17)仅按bundle存在复用，[:20](../../extensions/remotion-vd44/render-showcase.mjs#L20)固定浏览器路径 |
+| Showcase存在案例耦合（2026-11-18 Showcase已移除，仅留历史） | `Showcase.tsx:25`固定21.75秒；`render-showcase.mjs:17`仅按bundle存在复用，`:20`固定浏览器路径 |
 
 字幕映射已有真实实现：[timeline.py:82](../../src/talking_head_editor/timeline.py#L82)、[:271](../../src/talking_head_editor/timeline.py#L271)。
 因此不能把所有问题归因于“缺动画”，也不能把增加模板当作字音、混音与检查器修复。

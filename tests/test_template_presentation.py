@@ -50,8 +50,8 @@ class LearnerGuideTests(unittest.TestCase):
             self.assertEqual(enriched, old)
 
     def test_parameter_contract_is_evidence_based_and_rejects_missing_or_outside_sources(self):
-        legacy_ids = {r['id'] for r in self.rows if r['layer'] in ('control', 'remotion', 'effect')}
-        self.assertEqual(len(legacy_ids), 144)
+        legacy_ids = {r['id'] for r in self.rows if r['layer'] in ('control', 'remotion')}
+        self.assertEqual(len(legacy_ids), 125)  # 70 controls + 55 Remotion; 19 owner effects removed 2026-11-18
         authored_ids = {r['id'] for r in self.rows if r['layer'] == 'authored'}
         self.assertEqual(set(self.evidence), legacy_ids | authored_ids)
         with TemporaryDirectory() as directory:

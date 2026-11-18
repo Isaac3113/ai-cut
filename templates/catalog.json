@@ -1,35 +1,29 @@
 {
   "schema": "talking-head-template-center/1",
-  "updated_on": "2026-11-17",
+  "updated_on": "2026-11-18",
   "counts_by_layer": {
     "authored": 1,
     "style": 101,
     "control": 70,
-    "remotion": 55,
-    "effect": 19
+    "remotion": 55
   },
   "build_mode": "complete",
   "counts_are_not_additive_templates": true,
   "sources": [
     {
       "path": "templates/motiongit-styles.json",
-      "sha256": "7e8b14a685677ae6c5027a6c4a164ca5be01eb2a2b6d8d54da27f5a6f4eace06",
+      "sha256": "df51db7e435b8a8ec9611bcd4dfc840780764c015fc8737479f94f282cbcea16",
       "entries": 101
     },
     {
       "path": "templates/motiongit-controls.json",
-      "sha256": "bfb12733ac529defa6fafa7a9c2deed14ca465caa17f1ec672d186513f1a1e3e",
+      "sha256": "d155c2d9077c401c11e959af394e35fb21857c61b084c28d63eaba87505e06bf",
       "entries": 70
     },
     {
       "path": "templates/remotion-library.json",
       "sha256": "7b36be415d0c7e3a430e9485c21a111e1d7b37a8394af77553316d1bea7aed85",
       "entries": 55
-    },
-    {
-      "path": "templates/presenter-effects.json",
-      "sha256": "5fe74dd9c3fb95ada9c9a0c5de2d281a3c16e6bab128d7a13d8d514283b506f7",
-      "entries": 19
     },
     {
       "path": "templates/authored-templates.json",
@@ -40,8 +34,7 @@
   "baseline_counts_by_layer": {
     "style": 72,
     "control": 70,
-    "remotion": 55,
-    "effect": 19
+    "remotion": 55
   },
   "sync_status": {
     "checked_at": "2026-11-13T02:34:09+00:00",
@@ -367,15 +360,6 @@
         "scope": "官网 2.7.17-alpha.2：仅两段 highlight/underline 用于同一 55.0333 秒 A/B 的末 10.233 秒，其余沿用原画面和整条原音轨。两版各 1651 帧/30fps、全解码成功，AAC 与 PCM 一致，已抽检最终编码画面。完整 native 排版仅预览；模板声音优势、连续观看/完整听审和用户风格认可未完成。"
       },
       "demos": [
-        {
-          "kind": "own",
-          "path": "demos/case-studies/approved-b-highlight.mp4",
-          "description_zh": "本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。",
-          "sha256": "3be466abdde60e536a0b3b15222e43e3d7b36ad50296baa54a076585d41456e1",
-          "bytes": 78189,
-          "subject": "owner",
-          "poster_path": "demos/case-studies/approved-b-highlight.jpg"
-        },
         {
           "kind": "official",
           "url": "https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4",
@@ -17456,7 +17440,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -17614,7 +17598,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -17776,7 +17760,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -17933,7 +17917,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -18098,7 +18082,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -18255,7 +18239,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -18412,7 +18396,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -18573,7 +18557,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -18625,21 +18609,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/media.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "tilt",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "e8415ad56fe2c05b6d480ff56db01b0f4fd442a59217194ff474e0e395390323",
-          "bytes": 61269,
-          "audio": "none",
-          "poster_path": "demos/motiongit/media.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "tilt",
@@ -18663,6 +18633,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "product",
@@ -18670,13 +18641,13 @@
         "detail_page": "product.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -18734,8 +18705,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -18893,7 +18864,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -19051,7 +19022,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -19210,7 +19181,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -19261,21 +19232,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/logo.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "burst",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "e51e8396008b839dba51834dc5d37103901ba1e31b88b4b2910ba745395bb2d7",
-          "bytes": 104629,
-          "audio": "none",
-          "poster_path": "demos/motiongit/logo.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "burst",
@@ -19299,6 +19256,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "product",
@@ -19306,13 +19264,13 @@
         "detail_page": "product.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -19366,8 +19324,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -19523,7 +19481,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -19574,21 +19532,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/outro.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "next",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "3bc185062eb342fa9be14ec03cccbfc8d711db0616e3e5fbeb89f349add5645f",
-          "bytes": 128054,
-          "audio": "none",
-          "poster_path": "demos/motiongit/outro.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "endcard",
@@ -19612,6 +19556,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "transition",
@@ -19619,13 +19564,13 @@
         "detail_page": "transition.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -19683,8 +19628,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -19842,7 +19787,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -19893,21 +19838,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/subscribe.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "triple",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "40cc511eb52595a74f6a28c3c9e484d8f77e5ad84c8a0e39aee649d86cffbdd1",
-          "bytes": 79045,
-          "audio": "none",
-          "poster_path": "demos/motiongit/subscribe.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "triple",
@@ -19931,6 +19862,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "transition",
@@ -19938,13 +19870,13 @@
         "detail_page": "transition.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -20002,8 +19934,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -20159,7 +20091,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -20319,7 +20251,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -20476,7 +20408,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -20635,7 +20567,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -20791,7 +20723,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -20949,7 +20881,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -21110,7 +21042,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -21269,7 +21201,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -21426,7 +21358,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -21583,7 +21515,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -21634,21 +21566,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/vs.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "cards",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "eb2f7b63f94eba9a5c0fad721e2aec74d059fe1c9ef8a3b5d717dbc943f338cb",
-          "bytes": 107610,
-          "audio": "none",
-          "poster_path": "demos/motiongit/vs.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "fight",
@@ -21672,6 +21590,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "data",
@@ -21679,13 +21598,13 @@
         "detail_page": "data.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -21751,8 +21670,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -21909,7 +21828,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -22068,7 +21987,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -22226,7 +22145,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -22381,7 +22300,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -22537,7 +22456,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -22694,7 +22613,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -22850,7 +22769,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -23005,7 +22924,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -23160,7 +23079,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -23315,7 +23234,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -23469,7 +23388,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -23626,7 +23545,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -23786,7 +23705,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -23943,7 +23862,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -23994,21 +23913,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/gallery.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "grid",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "6adc2af115beea1d9e5b0a2c7d253c2b9596b3b59071c795cbfb45351b9ee64a",
-          "bytes": 104600,
-          "audio": "none",
-          "poster_path": "demos/motiongit/gallery.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "grid",
@@ -24032,6 +23937,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "product",
@@ -24039,13 +23945,13 @@
         "detail_page": "product.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -24100,8 +24006,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -24152,21 +24058,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/beforeafter.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "split",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "9dd4f3d0ccd252a99cc221860063f77f6bf8d882b264342bd150208e30ad3ac2",
-          "bytes": 168381,
-          "audio": "none",
-          "poster_path": "demos/motiongit/beforeafter.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "slider",
@@ -24190,6 +24082,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "data",
@@ -24197,13 +24090,13 @@
         "detail_page": "data.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -24259,8 +24152,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -24311,21 +24204,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/kenburns.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "pan",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "ea7de387156cc6148ead9ce5359673a488f472ecb9d94b29c47d73935e6c60b5",
-          "bytes": 152899,
-          "audio": "none",
-          "poster_path": "demos/motiongit/kenburns.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "pan",
@@ -24349,6 +24228,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "product",
@@ -24356,13 +24236,13 @@
         "detail_page": "product.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -24417,8 +24297,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -24469,21 +24349,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/polaroid.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "pin",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "233f4a6c0113dd7d0e0286f0fb85f83cd299e892b372683922c888bea9d4f843",
-          "bytes": 167647,
-          "audio": "none",
-          "poster_path": "demos/motiongit/polaroid.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "drop",
@@ -24507,6 +24373,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "product",
@@ -24514,13 +24381,13 @@
         "detail_page": "product.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -24574,8 +24441,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -24626,21 +24493,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/device.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "monitor",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "3f7004b92198cf1fc9db2faac5dab7033a118707937bf9a8afce0100422ed121",
-          "bytes": 101809,
-          "audio": "none",
-          "poster_path": "demos/motiongit/device.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "phone",
@@ -24664,6 +24517,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -24671,13 +24525,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -24731,8 +24585,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -24783,21 +24637,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/collage.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "masonry",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "64348024064028e0da0c1a1c61e01c12fe572990ebc6480703276d4fb819cd92",
-          "bytes": 332868,
-          "audio": "none",
-          "poster_path": "demos/motiongit/collage.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "masonry",
@@ -24821,6 +24661,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "product",
@@ -24828,13 +24669,13 @@
         "detail_page": "product.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -24888,8 +24729,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -24940,21 +24781,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/spotlight.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "spotlight",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "fc215c487f4e037d9c765571f2648e9ebee87166347c7107b99690cf5362dc83",
-          "bytes": 109860,
-          "audio": "none",
-          "poster_path": "demos/motiongit/spotlight.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "spotlight",
@@ -24978,6 +24805,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -24985,13 +24813,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -25048,8 +24876,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -25202,7 +25030,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -25355,7 +25183,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -25509,7 +25337,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -25664,7 +25492,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -25818,7 +25646,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -25974,7 +25802,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -26024,21 +25852,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/chat.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "bubbles",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "6915eb949bda1168bc8938bb34691e0f3c56bd4151612175c8fa97a4cd7b5351",
-          "bytes": 169400,
-          "audio": "none",
-          "poster_path": "demos/motiongit/chat.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "bubbles",
@@ -26062,6 +25876,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -26069,13 +25884,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -26130,8 +25945,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -26181,21 +25996,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/comment.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "cards",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "f3aa4c0c57935dabf4bb0de739ac56ccd07ad28fc270f2a218a2c307dad8ba3a",
-          "bytes": 75247,
-          "audio": "none",
-          "poster_path": "demos/motiongit/comment.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "cards",
@@ -26219,6 +26020,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -26226,13 +26028,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -26290,8 +26092,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -26450,7 +26252,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -26607,7 +26409,7 @@
             "title": "6. 当前能否使用",
             "text": [
               "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -26657,21 +26459,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/browser.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "browser",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "f905c721f8673d11a61919e5aac7d1702e9c4640f5576646ab50cd32b33a523a",
-          "bytes": 205802,
-          "audio": "none",
-          "poster_path": "demos/motiongit/browser.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "browser",
@@ -26695,6 +26483,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -26702,13 +26491,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -26767,8 +26556,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -26818,21 +26607,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/social.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "post",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "f615d1f86a86a58c54ca122f639b1fd440a6d82794ffcbe799e52c09f63947d6",
-          "bytes": 95176,
-          "audio": "none",
-          "poster_path": "demos/motiongit/social.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "post",
@@ -26856,6 +26631,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -26863,13 +26639,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -26928,8 +26704,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -26979,21 +26755,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/cursor.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "click",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "6f0b58c314da7967819b7ef1c8fc74fd4f9d41c36c63ce9591dc9667f115b6ec",
-          "bytes": 99211,
-          "audio": "none",
-          "poster_path": "demos/motiongit/cursor.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "click",
@@ -27017,6 +26779,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -27024,13 +26787,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -27086,8 +26849,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -27138,21 +26901,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/lowerthird.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "bar",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "2a5f4c0eb2bd3b811843ad5016bf8adfb478a90936a71e035188ec5d2c423269",
-          "bytes": 51701,
-          "audio": "none",
-          "poster_path": "demos/motiongit/lowerthird.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "bar",
@@ -27176,6 +26925,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "text",
@@ -27183,13 +26933,13 @@
         "detail_page": "text.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -27244,8 +26994,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -27296,21 +27046,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/callout.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "arrow",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "4d339461c013385cc2b4959925d812337d0a115174773d32d0a75df05730e14a",
-          "bytes": 48847,
-          "audio": "none",
-          "poster_path": "demos/motiongit/callout.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "arrow",
@@ -27334,6 +27070,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -27341,13 +27078,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -27402,8 +27139,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -27454,21 +27191,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/sticker.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "pop",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "a57fc2a4f9a56fe5e1dd22afb39f8b181447dabe4e60144ba276a5536fd4d731",
-          "bytes": 71055,
-          "audio": "none",
-          "poster_path": "demos/motiongit/sticker.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "pop",
@@ -27492,6 +27215,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "visual",
@@ -27499,13 +27223,13 @@
         "detail_page": "visual.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -27560,8 +27284,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -27612,21 +27336,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/emoji.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "float",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "6fed416ca571c839513fbcdc1d7b34b4737f983c491305bdbcdd6c29bab5b7be",
-          "bytes": 49521,
-          "audio": "none",
-          "poster_path": "demos/motiongit/emoji.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "float",
@@ -27650,6 +27360,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "visual",
@@ -27657,13 +27368,13 @@
         "detail_page": "visual.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -27718,8 +27429,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -27770,21 +27481,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/progressbar.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "top",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "605369ce2eb7d8a83bd7081bbeabe64f93f46be05b99bfa1edd01065dce768cf",
-          "bytes": 27804,
-          "audio": "none",
-          "poster_path": "demos/motiongit/progressbar.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "top",
@@ -27808,6 +27505,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "screen",
@@ -27815,13 +27513,13 @@
         "detail_page": "screen.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -27874,8 +27572,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -27926,21 +27624,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/tag.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "corner",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "b831897d601544b17d0d1633e8ee34f281bb68c4e29c0f1646ff693f98d6823d",
-          "bytes": 27499,
-          "audio": "none",
-          "poster_path": "demos/motiongit/tag.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "corner",
@@ -27964,6 +27648,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "text",
@@ -27971,13 +27656,13 @@
         "detail_page": "text.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -28029,8 +27714,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -28081,21 +27766,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/confetti.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "cannons",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "03985a7a11b6d65e70afe5bfce4f3c15677cf9d40fe3628991e5980739fe67e1",
-          "bytes": 213725,
-          "audio": "none",
-          "poster_path": "demos/motiongit/confetti.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "cannons",
@@ -28119,6 +27790,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "visual",
@@ -28126,13 +27798,13 @@
         "detail_page": "visual.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -28183,8 +27855,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -28235,21 +27907,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/frame.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "viewfinder",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "7a819e2d2ba9219a2ec3023a8615c733028bd57a15184505cc099d6abe308329",
-          "bytes": 66637,
-          "audio": "none",
-          "poster_path": "demos/motiongit/frame.jpg"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "viewfinder",
@@ -28273,6 +27931,7 @@
         "kind": "own"
       },
       "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。",
       "learner_guide": {
         "schema": "ai-cut-learner-guide/1",
         "category": "visual",
@@ -28280,13 +27939,13 @@
         "detail_page": "visual.md",
         "execution_status": "package_required",
         "execution_status_zh": "已有控件演示 · 需自备授权原包",
-        "status": "已有控件演示 · 需自备授权原包",
+        "status": "暂无示范视频 · 需自备授权原包",
         "sections": [
           {
             "id": "preview",
             "title": "1. 效果预览",
             "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
+              "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
             ]
           },
           {
@@ -28337,8 +27996,8 @@
             "id": "status",
             "title": "6. 当前能否使用",
             "text": [
-              "已有控件演示 · 需自备授权原包",
-              "本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
+              "暂无示范视频 · 需自备授权原包",
+              "本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。",
               "本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。"
             ],
             "notes": [
@@ -36331,2380 +35990,6 @@
               "MIT（模板源码）；Remotion 运行时与字体许可分别适用"
             ],
             "url": "https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-01",
-      "label_zh": "条形增长",
-      "layer": "effect",
-      "category_zh": "数据与图表",
-      "description_zh": "三条横向示意条按顺序增长，叠在口播画面上。",
-      "uses_zh": [
-        "比较选项或说明阶段进展"
-      ],
-      "avoid_zh": [
-        "示意长度不能当作真实业绩数据"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "真实标签与数值"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-01.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "dc03313f44234bdf679ba1e636809099e9da39fd1504114a4588058ec3b7b573",
-          "bytes": 202701,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-01.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 1,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "data",
-        "category_zh": "数据与对比",
-        "detail_page": "data.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "比较选项或说明阶段进展"
-            ],
-            "notes": [
-              "示意长度不能当作真实业绩数据"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "真实标签与数值"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=1；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "三条示意数据条及绘制布局需要按新片数据改代码；现有条长不代表可直接传任意真实数据。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「条形增长」（编号 presenter-effect-01）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-02",
-      "label_zh": "玻璃标签",
-      "layer": "effect",
-      "category_zh": "文字与标题",
-      "description_zh": "半透明圆角玻璃标签进入画面，突出一个短标题。",
-      "uses_zh": [
-        "强调一句关键词或术语"
-      ],
-      "avoid_zh": [
-        "避免长段落和低对比背景"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "短标题",
-        "品牌颜色"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-02.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "aa1f61e58323d2973631729a52a9e676d155792de653e837cfb20a09524e453e",
-          "bytes": 157301,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-02.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 2,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "text",
-        "category_zh": "标题与重点字",
-        "detail_page": "text.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "强调一句关键词或术语"
-            ],
-            "notes": [
-              "避免长段落和低对比背景"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "短标题",
-              "品牌颜色"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=2；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "玻璃标签使用固定胶囊尺寸、位置与渐变；标签标题按字长缩放，超长文案仍需重新检查。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「玻璃标签」（编号 presenter-effect-02）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-03",
-      "label_zh": "冲击缩放",
-      "layer": "effect",
-      "category_zh": "镜头与转场",
-      "description_zh": "同一镜头快速推近、模糊并回拉，配合扩散边框。",
-      "uses_zh": [
-        "段落转折或短促强调"
-      ],
-      "avoid_zh": [
-        "不是两个场景间的真正穿越；避免频繁使用"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "推近焦点和切点"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-03.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "905270f1c34ea1f6193f3c442fb771bc34b417ad0458dea62547aefacb4ec560",
-          "bytes": 262925,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-03.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 3,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "transition",
-        "category_zh": "转场与片尾",
-        "detail_page": "transition.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "段落转折或短促强调"
-            ],
-            "notes": [
-              "不是两个场景间的真正穿越；避免频繁使用"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "推近焦点和切点"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=3；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "缩放中心为固定人脸附近位置；换人或换镜头必须重新定位，避免放大到错误区域。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「冲击缩放」（编号 presenter-effect-03）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-04",
-      "label_zh": "剪纸描边",
-      "layer": "effect",
-      "category_zh": "人物与背景",
-      "description_zh": "动态抠像人物加白色纸边和阴影，置于纸张纹理背景。",
-      "uses_zh": [
-        "人物介绍或轻松创意片段"
-      ],
-      "avoid_zh": [
-        "抠像边缘抖动时不宜直接使用"
-      ],
-      "inputs_zh": [
-        "同步人物透明视频",
-        "纸张背景"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-04.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "c2102e488d794bcd48412a4f992db8e55c7977d6104749d68adcaafebb1b6d2b",
-          "bytes": 95445,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-04.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 4,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "talk",
-        "category_zh": "真人口播",
-        "detail_page": "talk.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "人物介绍或轻松创意片段"
-            ],
-            "notes": [
-              "抠像边缘抖动时不宜直接使用"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "同步人物透明视频",
-              "纸张背景"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=4；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "需同源透明人像；背景、轮廓和 CUT 文字当前固定在代码中。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「剪纸描边」（编号 presenter-effect-04）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-05",
-      "label_zh": "照片墙",
-      "layer": "effect",
-      "category_zh": "人物与背景",
-      "description_zh": "多张照片组成错位移动墙，动态人物位于前景。",
-      "uses_zh": [
-        "展示素材集合或个人经历"
-      ],
-      "avoid_zh": [
-        "避免无授权照片及背景信息过密"
-      ],
-      "inputs_zh": [
-        "授权照片",
-        "同步人物透明视频"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-05.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "fec61c3de256e4f28cf3561997a4bef0ff600be99f1313f83b3bd499a250f1ea",
-          "bytes": 152837,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-05.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 5,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "talk",
-        "category_zh": "真人口播",
-        "detail_page": "talk.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "展示素材集合或个人经历"
-            ],
-            "notes": [
-              "避免无授权照片及背景信息过密"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "授权照片",
-              "同步人物透明视频"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=5；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "多层拼贴引用 portrait-01.jpg 至 portrait-08.jpg；必须提供自己的授权图片并重新检查遮挡。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「照片墙」（编号 presenter-effect-05）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-06",
-      "label_zh": "拉远揭幕",
-      "layer": "effect",
-      "category_zh": "镜头与转场",
-      "description_zh": "口播画面逐步缩小，显露带标题栏的悬浮窗口。",
-      "uses_zh": [
-        "从讲述过渡到内容预览"
-      ],
-      "avoid_zh": [
-        "小窗口内的重要文字要另行放大"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "窗口标题",
-        "背景颜色"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-06.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "065c3e7c74b4e48d39a88095a5556dc50040ef242c81a70077bba7ecba848b5d",
-          "bytes": 171293,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-06.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 6,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "transition",
-        "category_zh": "转场与片尾",
-        "detail_page": "transition.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "从讲述过渡到内容预览"
-            ],
-            "notes": [
-              "小窗口内的重要文字要另行放大"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "窗口标题",
-              "背景颜色"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=6；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "播放器舞台和窗口尺寸按当前样片设计；“特效预览.mp4”等显示文字固定在代码。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「拉远揭幕」（编号 presenter-effect-06）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-07",
-      "label_zh": "界面窗框",
-      "layer": "effect",
-      "category_zh": "界面与设备",
-      "description_zh": "口播被放入带标题栏的悬浮窗框，形成界面容器效果。",
-      "uses_zh": [
-        "介绍视频内容或界面场景"
-      ],
-      "avoid_zh": [
-        "此演示没有真实软件操作与点击"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "窗口标题",
-        "背景颜色"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-07.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "9f437717c0127f943f6e302edc7680d1e03dd7cd9e97db045482d9704c46b332",
-          "bytes": 121651,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-07.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 7,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "screen",
-        "category_zh": "录屏与操作教学",
-        "detail_page": "screen.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "介绍视频内容或界面场景"
-            ],
-            "notes": [
-              "此演示没有真实软件操作与点击"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "窗口标题",
-              "背景颜色"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=7；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "窗口外观及尺寸按当前样片设计；原画面中的必要信息仍须保持可读。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「界面窗框」（编号 presenter-effect-07）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-08",
-      "label_zh": "杂志封面",
-      "layer": "effect",
-      "category_zh": "人物与背景",
-      "description_zh": "人物与封面标题分层，形成杂志封面式口播包装。",
-      "uses_zh": [
-        "人物专题或章节开场"
-      ],
-      "avoid_zh": [
-        "避免把装饰标题当作真实媒体背书"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "同步人物透明视频",
-        "封面文字"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-08.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "5318ac41ac8701204138dc71bddc4267893dd6b25063f3deb74d4586d3cf9e3f",
-          "bytes": 178558,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-08.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 8,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "talk",
-        "category_zh": "真人口播",
-        "detail_page": "talk.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "人物专题或章节开场"
-            ],
-            "notes": [
-              "避免把装饰标题当作真实媒体背书"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "同步人物透明视频",
-              "封面文字"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=8；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "前后景穿插需要同源透明人像，不能只换 sourceFile 就得到正确遮罩。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「杂志封面」（编号 presenter-effect-08）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-09",
-      "label_zh": "抠像换景",
-      "layer": "effect",
-      "category_zh": "人物与背景",
-      "description_zh": "已抠像的人物合成到原创蓝色空间背景。",
-      "uses_zh": [
-        "替换环境或建立主题场景"
-      ],
-      "avoid_zh": [
-        "演示使用人物透明层，不代表原片拍摄了绿幕"
-      ],
-      "inputs_zh": [
-        "同步人物透明视频",
-        "替换背景"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-09.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "54d2954fae9d8b6c6a4e0436f06ada56917ea62c427d26f7fd8c26371c22c57c",
-          "bytes": 180512,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-09.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 9,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "talk",
-        "category_zh": "真人口播",
-        "detail_page": "talk.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "替换环境或建立主题场景"
-            ],
-            "notes": [
-              "演示使用人物透明层，不代表原片拍摄了绿幕"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "同步人物透明视频",
-              "替换背景"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=9；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "源时间 21.75 秒用于本样片分到下一效果；新原片必须重建分界，不能照用。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「抠像换景」（编号 presenter-effect-09）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-10",
-      "label_zh": "打勾清单",
-      "layer": "effect",
-      "category_zh": "列表与步骤",
-      "description_zh": "清单项依次打勾，顶部进度随演示推进。",
-      "uses_zh": [
-        "步骤总结或完成项确认"
-      ],
-      "avoid_zh": [
-        "不能把演示勾选当作真实任务完成"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "清单文字",
-        "逐项时间"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-10.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "fffaba149cf39490b9bb534104887688975a1d11906672ea2654c72fe614bdd8",
-          "bytes": 198454,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-10.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 10,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "flow",
-        "category_zh": "流程与时间线",
-        "detail_page": "flow.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "步骤总结或完成项确认"
-            ],
-            "notes": [
-              "不能把演示勾选当作真实任务完成"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "清单文字",
-              "逐项时间"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=10；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "打勾清单的条目与出现时间需按新片讲解重排；本样片通过固定源时间分界进入。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「打勾清单」（编号 presenter-effect-10）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-11",
-      "label_zh": "视频镂空字",
-      "layer": "effect",
-      "category_zh": "文字与标题",
-      "description_zh": "真人视频透过大型中文字显示，并保留圆形人物小窗。",
-      "uses_zh": [
-        "章节主题或短词视觉强调"
-      ],
-      "avoid_zh": [
-        "长句和细笔画会降低视频辨识度"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "粗体中文短词",
-        "人物小窗"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-11.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "caf65295375a0b887f8d962fa47ab3ed3e6cb434e88bca76b1e6f288c37bc740",
-          "bytes": 76259,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-11.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 11,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "text",
-        "category_zh": "标题与重点字",
-        "detail_page": "text.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "章节主题或短词视觉强调"
-            ],
-            "notes": [
-              "长句和细笔画会降低视频辨识度"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "粗体中文短词",
-              "人物小窗"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=11；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "大字遮罩“剪”“辑”固定在代码，改词需重新调整字号、字形和人像小窗。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「视频镂空字」（编号 presenter-effect-11）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-12",
-      "label_zh": "手绘涂鸦",
-      "layer": "effect",
-      "category_zh": "装饰与强调",
-      "description_zh": "线条、星形与箭头逐步绘出，围绕人物形成手绘强调。",
-      "uses_zh": [
-        "提醒重点或营造轻松节奏"
-      ],
-      "avoid_zh": [
-        "避免箭头指向错误对象或遮住字幕"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "短标题",
-        "强调位置"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-12.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "757a3ec7aab8b9abdb89bf03b4ad23f66002d8f5fe85be14837529aee9580713",
-          "bytes": 183477,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-12.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 12,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "text",
-        "category_zh": "标题与重点字",
-        "detail_page": "text.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "提醒重点或营造轻松节奏"
-            ],
-            "notes": [
-              "避免箭头指向错误对象或遮住字幕"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "短标题",
-              "强调位置"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=12；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "涂鸦路径固定在 GraphicLayers；本人轮廓另用同源透明人像叠加，新素材需检查线条是否遮脸。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「手绘涂鸦」（编号 presenter-effect-12）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-13",
-      "label_zh": "标题墙",
-      "layer": "effect",
-      "category_zh": "文字与标题",
-      "description_zh": "重复大字在人物后方交错移动，形成动态文字墙。",
-      "uses_zh": [
-        "强化主题词或品牌关键词"
-      ],
-      "avoid_zh": [
-        "避免长句与高密度信息同时出现"
-      ],
-      "inputs_zh": [
-        "同步人物透明视频",
-        "短主题词"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-13.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "555ee13a56e3cc784140f85f6ba30bc95f1a498104918c27a0e5f9ad9122e17c",
-          "bytes": 197458,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-13.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 13,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "text",
-        "category_zh": "标题与重点字",
-        "detail_page": "text.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "强化主题词或品牌关键词"
-            ],
-            "notes": [
-              "避免长句与高密度信息同时出现"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "同步人物透明视频",
-              "短主题词"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=13；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "背景标题墙的“剪辑/特效”、行列数与颜色固定在源码；换主题需改文字并检查前景人像覆盖。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「标题墙」（编号 presenter-effect-13）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-14",
-      "label_zh": "手机画面",
-      "layer": "effect",
-      "category_zh": "界面与设备",
-      "description_zh": "口播装入带旋转动作的手机轮廓与播放信息层。",
-      "uses_zh": [
-        "展示竖屏内容或手机场景"
-      ],
-      "avoid_zh": [
-        "这是设备示意，不是已完成真实手机实操"
-      ],
-      "inputs_zh": [
-        "竖屏视频",
-        "设备内标题与信息"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-14.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "eedbec9378e024aa0b60c848279c480b05955babea25752b2284804c4cfa5dc5",
-          "bytes": 161813,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-14.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 14,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "screen",
-        "category_zh": "录屏与操作教学",
-        "detail_page": "screen.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "展示竖屏内容或手机场景"
-            ],
-            "notes": [
-              "这是设备示意，不是已完成真实手机实操"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "竖屏视频",
-              "设备内标题与信息"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=14；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "手机窗口为固定位置和比例；新视频需要单独检查裁切。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「手机画面」（编号 presenter-effect-14）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-15",
-      "label_zh": "人物破框",
-      "layer": "effect",
-      "category_zh": "人物与背景",
-      "description_zh": "同源画面在倾斜窗口内显示，透明人物延伸到窗口外。",
-      "uses_zh": [
-        "人物登场或突出主体"
-      ],
-      "avoid_zh": [
-        "前后两层必须同步，避免双重人物边缘"
-      ],
-      "inputs_zh": [
-        "同步口播视频与人物透明视频",
-        "窗口位置"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-15.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "ca3a70796ee2ea0d17d568c969aa9b2921373c5702720dada2c65ae236f385c7",
-          "bytes": 131764,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-15.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 15,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "talk",
-        "category_zh": "真人口播",
-        "detail_page": "talk.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "人物登场或突出主体"
-            ],
-            "notes": [
-              "前后两层必须同步，避免双重人物边缘"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "同步口播视频与人物透明视频",
-              "窗口位置"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=15；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "破框人像依赖普通视频与透明视频严格同步；窗口和人物层必须共用同一变换。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「人物破框」（编号 presenter-effect-15）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-16",
-      "label_zh": "环绕文字",
-      "layer": "effect",
-      "category_zh": "装饰与强调",
-      "description_zh": "三张中文词卡沿椭圆轨迹环绕人物，并表现前后遮挡。",
-      "uses_zh": [
-        "展示围绕核心人物的几个关键词"
-      ],
-      "avoid_zh": [
-        "避免词卡盖脸或把并列关系暗示为先后步骤"
-      ],
-      "inputs_zh": [
-        "同步人物透明视频",
-        "三个短关键词"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-16.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "b4655458608978b51de8d3e2ea80ce6438b231ee52df69497322d558a9b6207f",
-          "bytes": 166415,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-16.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 16,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "text",
-        "category_zh": "标题与重点字",
-        "detail_page": "text.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "展示围绕核心人物的几个关键词"
-            ],
-            "notes": [
-              "避免词卡盖脸或把并列关系暗示为先后步骤"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "同步人物透明视频",
-              "三个短关键词"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=16；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "绕人文字“创作、剪辑、复用”和轨道布局固定在代码；替换文字/人像需重新适配遮挡。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「环绕文字」（编号 presenter-effect-16）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-17",
-      "label_zh": "数字推近",
-      "layer": "effect",
-      "category_zh": "镜头与转场",
-      "description_zh": "围绕人物焦点逐步放大原画面，叠加构图框。",
-      "uses_zh": [
-        "强调一句原声重点"
-      ],
-      "avoid_zh": [
-        "低清晰度素材不宜过度放大"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "焦点坐标",
-        "目标倍率"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-17.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "1ec5db6fd70c5ad8b56d7bc70fa98596a4e5e90a94bf9c2bef5165ebacf56b1e",
-          "bytes": 210017,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-17.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 17,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "transition",
-        "category_zh": "转场与片尾",
-        "detail_page": "transition.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "强调一句原声重点"
-            ],
-            "notes": [
-              "低清晰度素材不宜过度放大"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "焦点坐标",
-              "目标倍率"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=17；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "镜头放大中心与白框固定在代码，换素材须重新定位。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「数字推近」（编号 presenter-effect-17）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-18",
-      "label_zh": "收据列表",
-      "layer": "effect",
-      "category_zh": "列表与步骤",
-      "description_zh": "纸张从打印口逐步出现，列出三项内容并打勾。",
-      "uses_zh": [
-        "总结清单或展示内容目录"
-      ],
-      "avoid_zh": [
-        "示意收据不能冒充真实交易凭据"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "列表文字",
-        "出现时间"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-18.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "3f87f12933c97f859645ba2dcb43afd7ebf3435b5c64bf79be0fa58eba2eccf3",
-          "bytes": 143318,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-18.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 18,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "flow",
-        "category_zh": "流程与时间线",
-        "detail_page": "flow.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "总结清单或展示内容目录"
-            ],
-            "notes": [
-              "示意收据不能冒充真实交易凭据"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "列表文字",
-              "出现时间"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=18；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "收据内“镂空字/手机画面/贴纸轮播”三项文字固定在源码；换清单及项数需修改版面与出纸节奏。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「收据列表」（编号 presenter-effect-18）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-            "repository_url": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "presenter-effect-19",
-      "label_zh": "贴纸轮播",
-      "layer": "effect",
-      "category_zh": "装饰与强调",
-      "description_zh": "五枚原创图标贴纸沿椭圆轨道轮转，并改变前后大小。",
-      "uses_zh": [
-        "串联几个创作主题或轻量装饰"
-      ],
-      "avoid_zh": [
-        "避免遮挡关键内容与连续无意义转动"
-      ],
-      "inputs_zh": [
-        "口播视频",
-        "授权贴纸或原创图标"
-      ],
-      "version": "1.0.0",
-      "source_url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
-      "source_id": "talking-head-effects",
-      "license": "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可",
-      "availability": "available",
-      "validation": {
-        "state": "verified",
-        "scope": "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-      },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/presenter/presenter-effect-19.mp4",
-          "description_zh": "本人素材中文无声演示，来自已渲染母版的对应效果片段。",
-          "sha256": "f90679d92c4f04dd955f88b08b0ab191c06828b55f8c293dda3c9370e5668135",
-          "bytes": 221899,
-          "subject": "owner",
-          "poster_path": "demos/presenter/presenter-effect-19.jpg"
-        }
-      ],
-      "ratio": "9:16",
-      "base_composition_id": "TalkingHeadShowcase",
-      "effect_kind": 19,
-      "learner_guide": {
-        "schema": "ai-cut-learner-guide/1",
-        "category": "text",
-        "category_zh": "标题与重点字",
-        "detail_page": "text.md",
-        "execution_status": "adaptation_required",
-        "execution_status_zh": "样片效果 · 需要源码适配",
-        "status": "样片效果 · 需要源码适配",
-        "sections": [
-          {
-            "id": "preview",
-            "title": "1. 效果预览",
-            "text": [
-              "点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。"
-            ]
-          },
-          {
-            "id": "use",
-            "title": "2. 适用内容",
-            "text": [
-              "串联几个创作主题或轻量装饰"
-            ],
-            "notes": [
-              "避免遮挡关键内容与连续无意义转动"
-            ]
-          },
-          {
-            "id": "inputs",
-            "title": "3. 所需素材",
-            "text": [
-              "口播视频",
-              "授权贴纸或原创图标"
-            ]
-          },
-          {
-            "id": "parameters",
-            "title": "4. 可改参数与限制",
-            "text": [
-              "共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。",
-              "clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。",
-              "本条效果选择 kind=19；标题可由该段 title 提供，其余效果内容不能假定已参数化。"
-            ],
-            "notes": [
-              "当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。",
-              "母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。",
-              "轮播使用源码绘制的五个贴纸图标及固定轨道；替换图标、数量与轨道需适配代码。"
-            ],
-            "evidence": [
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx",
-              "extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx"
-            ]
-          },
-          {
-            "id": "instructions",
-            "title": "5. 怎样交给 AI 使用",
-            "text": [
-              "请使用 AI Cut 模板目录中的「贴纸轮播」（编号 presenter-effect-19）。\n我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。\n先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。\n按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。\n若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。"
-            ]
-          },
-          {
-            "id": "status",
-            "title": "6. 当前能否使用",
-            "text": [
-              "样片效果 · 需要源码适配",
-              "当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。",
-              "本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。"
-            ],
-            "notes": [
-              "已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。"
-            ],
-            "case": null
-          },
-          {
-            "id": "source",
-            "title": "7. 来源与许可",
-            "text": [
-              "MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可"
-            ],
-            "url": "https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects",
             "repository_url": ""
           }
         ]

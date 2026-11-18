@@ -99,6 +99,8 @@ def learner_status(entry):
         if entry.get('version') not in versions:
             return '已接入历史版 · 当前公开版尚未验证'
         return '已有同版本接入案例 · 新片仍需适配'
+    if state == 'package_required' and not entry.get('demos'):
+        return '暂无示范视频 · 需自备授权原包'
     return EXECUTION_STATUSES[state]
 
 
@@ -175,7 +177,7 @@ def guide_for(entry, evidence=None):
     )
     status = [learner_status(entry)]
     if entry.get('layer') == 'control':
-        status.append('本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。')
+        status.append(('本仓库提供目录，' + ('暂无示范视频' if not entry.get('demos') else '附已渲染演示') + '，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。'))
     elif entry.get('layer') == 'effect':
         status.append('当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。')
     elif entry.get('layer') == 'remotion':
@@ -212,7 +214,7 @@ def guide_for(entry, evidence=None):
     if classifications:
         uses.append('官方分类与行业：' + '、'.join(classifications) + '。用途导航仅帮助查找，不会隐藏其他行业的模板。')
     sections = [
-        {'id':'preview','title':SECTION_TITLES[0], 'text':['点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。' if entry.get('demos') else '官方来源暂未提供可播放 Demo；保留条目与来源入口，不用其他模板的画面补位。']},
+        {'id':'preview','title':SECTION_TITLES[0], 'text':['点击本条 Demo 查看实际效果；各版本的来源、画幅和检查范围独立标注。' if entry.get('demos') else (entry['no_demo_reason'] if entry.get('layer') == 'control' and entry.get('no_demo_reason') else '官方来源暂未提供可播放 Demo；保留条目与来源入口，不用其他模板的画面补位。')]},
         {'id':'use','title':SECTION_TITLES[1], 'text':uses, 'notes':entry.get('avoid_zh') or []},
         {'id':'inputs','title':SECTION_TITLES[2], 'text':entry.get('inputs_zh') or ['来源尚未提供完整素材要求；取得制作指南后逐项核对，不从 Demo 猜测。']},
         {'id':'parameters','title':SECTION_TITLES[3], 'text':params, 'notes':limits, 'evidence':(evidence or {}).get('evidence',[])},
@@ -333,7 +335,7 @@ def markdown_catalog(entries, previews, counts, integrations, posters=None, sync
     for key,label in LEARNER_CATEGORIES.items():
         n=sum(e['learner_guide']['category']==key for e in entries)
         lines.append(f'| [{label}](#use-{key}) | {n} |')
-    lines += ['', f'共 {len(entries)} 条不同层级的目录：{counts.get("authored", 0)} 套AI Cut通用自制模板、{counts["style"]} 项官网模板与片段、{counts["control"]} 个官网控件、{counts["remotion"]} 个代码注册项、{counts["effect"]} 个真人效果分支。另有 {len(integrations)} 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 {len(entries)} 套整片一键模板。', '',
+    lines += ['', f'共 {len(entries)} 条不同层级的目录：{counts.get("authored", 0)} 套AI Cut通用自制模板、{counts["style"]} 项官网模板与片段、{counts["control"]} 个官网控件、{counts["remotion"]} 个代码注册项' + (f'、{counts["effect"]} 个真人效果分支' if counts.get('effect') else '') + f'。另有 {len(integrations)} 条接入案例，不重复计为模板；附加预告单列。不能把它们称为 {len(entries)} 套整片一键模板。', '',
         '## 状态怎样看', '', '已有案例仅证明已登记版本与输入曾经测试；当前公开版本单独显示，目录刷新不会升级旧 Demo 或原包。源码可调用仍需自己的运行环境和素材；未接入模板须先取得并核对原包；样片效果需要适配；官方预告与待认领展示不代表已开放下载。参数未查证的地方保留“待核对”。', '',
         '| 调用状态 | 条目与预告合计 |', '| --- | ---: |']
     for state, label in EXECUTION_STATUSES.items():

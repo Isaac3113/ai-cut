@@ -339,14 +339,6 @@
       },
       "demos": [
         {
-          "kind": "own",
-          "path": "demos/case-studies/approved-b-highlight.mp4",
-          "description_zh": "本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。",
-          "sha256": "3be466abdde60e536a0b3b15222e43e3d7b36ad50296baa54a076585d41456e1",
-          "bytes": 78189,
-          "subject": "owner"
-        },
-        {
           "kind": "official",
           "url": "https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4",
           "description_zh": "官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。",

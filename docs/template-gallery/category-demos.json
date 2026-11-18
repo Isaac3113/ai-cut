@@ -24,39 +24,21 @@
     "description_zh": "多屏拼贴 · 品牌宣传：官方在线分类演示"
   },
   {
-    "category_zh": "人物与背景",
-    "path": "demos/categories/category-b82c52b1a37f.gif",
-    "source_entry": "presenter-effect-04",
-    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
-  },
-  {
     "category_zh": "关系与系统结构",
     "path": "demos/categories/category-16ad44f7cf14.gif",
     "source_entry": "mg-control-flow",
     "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
   },
   {
-    "category_zh": "列表与步骤",
-    "path": "demos/categories/category-c56da5b252bc.gif",
-    "source_entry": "presenter-effect-10",
-    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
-  },
-  {
-    "category_zh": "叠加标注与装饰",
-    "path": "demos/categories/category-7c6eac7c2495.gif",
-    "source_entry": "mg-control-lowerthird",
-    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
-  },
-  {
     "category_zh": "口播与讲解",
     "path": "demos/categories/category-e3a35b0b90af.gif",
-    "source_entry": "mg-style-314486",
+    "source_entry": "ai-cut-editorial-canvas",
     "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
   },
   {
     "category_zh": "品牌与行动",
     "path": "demos/categories/category-6893aefa7124.gif",
-    "source_entry": "mg-control-logo",
+    "source_entry": "mg-control-intro",
     "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
   },
   {
@@ -64,6 +46,12 @@
     "path": "demos/categories/category-67110fb27cc6.gif",
     "source_entry": "mg-control-title",
     "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
+  },
+  {
+    "category_zh": "实验与创新",
+    "url": "https://media.openaicut.com/previews/955/1.0.0-zh-a4f8c3690cc4.mp4",
+    "source_entry": "mg-style-126246",
+    "description_zh": "财经知识解说 · 50 页动效包：官方在线分类演示"
   },
   {
     "category_zh": "循环与背景",
@@ -104,19 +92,7 @@
   {
     "category_zh": "界面与交互演示",
     "path": "demos/categories/category-b49e16fe7196.gif",
-    "source_entry": "mg-control-chat",
-    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
-  },
-  {
-    "category_zh": "界面与设备",
-    "path": "demos/categories/category-5297269d2cdb.gif",
-    "source_entry": "presenter-effect-07",
-    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
-  },
-  {
-    "category_zh": "真实素材展示",
-    "path": "demos/categories/category-a8befd61c2a2.gif",
-    "source_entry": "mg-control-gallery",
+    "source_entry": "mg-control-notify",
     "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
   },
   {
@@ -138,12 +114,6 @@
     "description_zh": "酷炫科技风：官方在线分类演示"
   },
   {
-    "category_zh": "装饰与强调",
-    "path": "demos/categories/category-453d878fd5d5.gif",
-    "source_entry": "presenter-effect-12",
-    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
-  },
-  {
     "category_zh": "视觉与场景动效（非口播默认）",
     "url": "https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4",
     "source_entry": "mg-style-381814",
@@ -153,12 +123,6 @@
     "category_zh": "转场",
     "path": "demos/categories/category-12bb64579c19.gif",
     "source_entry": "remotion-camera-shake",
-    "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
-  },
-  {
-    "category_zh": "镜头与转场",
-    "path": "demos/categories/category-e4de82d4b8b9.gif",
-    "source_entry": "presenter-effect-03",
     "description_zh": "该分类的一个实际控件演示；其他条目见完整清单"
   }
 ]

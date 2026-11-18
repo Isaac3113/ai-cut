@@ -2,9 +2,9 @@
 
 [返回全部分类](../README.zh-CN.md) · [学习自动剪辑](../../docs/NOTION_GUIDE.zh-CN.md) · [在线筛选与播放](https://aicut.agi-top.com)
 
-本页 39 个目录条目；每项固定七段，参数依据与使用状态独立标注。先准备自己的合法素材，再按对应版本检查依赖和预览。
+本页 34 个目录条目；每项固定七段，参数依据与使用状态独立标注。先准备自己的合法素材，再按对应版本检查依赖和预览。
 
-[编辑画布式知识口播](#ai-cut-editorial-canvas) · [现代图文 · 口播讲解 · 竖屏](#mg-style-314486) · [现代图文 · 口播讲解](#mg-style-336980) · [纸面透视 · 口播讲解](#mg-style-358192) · [纸面透视 · 口播讲解 · 竖屏](#mg-style-295450) · [深色立体 · 多屏展陈](#mg-style-304634) · [深色立体 · 多屏展陈 · 竖屏](#mg-style-569615) · [科技控制台 · 口播讲解](#mg-style-553346) · [科技控制台 · 口播讲解 · 竖屏](#mg-style-738182) · [鲜色角色 · 叙事讲解](#mg-style-960723) · [鲜色角色 · 叙事讲解 · 竖屏](#mg-style-293151) · [活力海报 · 口播讲解](#mg-style-762139) · [活力海报 · 口播讲解 · 竖屏](#mg-style-721489) · [口播宣传动效 10 秒](#mg-style-854836) · [3D 口播开场](#mg-style-554769) · [DEEP STAGE 口播主舞台](#mg-style-228996) · [DEEP STAGE 深境舞台完整版](#mg-style-838778) · [Kit 2 · 口播动效包装（竖屏）](#mg-style-583549) · [突破边界](#mg-style-178707) · [字符剧场](#mg-style-148294) · [卡通讲解风](#mg-style-875206) · [像素海洋](#mg-style-966597) · [相机模式](#mg-style-172909) · [快讯台](#mg-style-298118) · [Mac 桌面](#mg-style-423997) · [牌桌洗牌](#mg-style-912092) · [图解口播与图片展示](#mg-style-643842) · [Kit 1 · 人文纪录片知识短片](#mg-style-233154) · [水墨人物志 · 一个人的故事](#mg-style-360840) · [图标要点卡](#mg-control-iconcards) · [问答](#mg-control-qa) · [误区与真相](#mg-control-myth) · [名词解释](#mg-control-definition) · [小贴士 / 警告](#mg-control-tip) · [剪纸描边](#presenter-effect-04) · [照片墙](#presenter-effect-05) · [杂志封面](#presenter-effect-08) · [抠像换景](#presenter-effect-09) · [人物破框](#presenter-effect-15)
+[编辑画布式知识口播](#ai-cut-editorial-canvas) · [现代图文 · 口播讲解 · 竖屏](#mg-style-314486) · [现代图文 · 口播讲解](#mg-style-336980) · [纸面透视 · 口播讲解](#mg-style-358192) · [纸面透视 · 口播讲解 · 竖屏](#mg-style-295450) · [深色立体 · 多屏展陈](#mg-style-304634) · [深色立体 · 多屏展陈 · 竖屏](#mg-style-569615) · [科技控制台 · 口播讲解](#mg-style-553346) · [科技控制台 · 口播讲解 · 竖屏](#mg-style-738182) · [鲜色角色 · 叙事讲解](#mg-style-960723) · [鲜色角色 · 叙事讲解 · 竖屏](#mg-style-293151) · [活力海报 · 口播讲解](#mg-style-762139) · [活力海报 · 口播讲解 · 竖屏](#mg-style-721489) · [口播宣传动效 10 秒](#mg-style-854836) · [3D 口播开场](#mg-style-554769) · [DEEP STAGE 口播主舞台](#mg-style-228996) · [DEEP STAGE 深境舞台完整版](#mg-style-838778) · [Kit 2 · 口播动效包装（竖屏）](#mg-style-583549) · [突破边界](#mg-style-178707) · [字符剧场](#mg-style-148294) · [卡通讲解风](#mg-style-875206) · [像素海洋](#mg-style-966597) · [相机模式](#mg-style-172909) · [快讯台](#mg-style-298118) · [Mac 桌面](#mg-style-423997) · [牌桌洗牌](#mg-style-912092) · [图解口播与图片展示](#mg-style-643842) · [Kit 1 · 人文纪录片知识短片](#mg-style-233154) · [水墨人物志 · 一个人的故事](#mg-style-360840) · [图标要点卡](#mg-control-iconcards) · [问答](#mg-control-qa) · [误区与真相](#mg-control-myth) · [名词解释](#mg-control-definition) · [小贴士 / 警告](#mg-control-tip)
 
 <a id="ai-cut-editorial-canvas"></a>
 
@@ -108,10 +108,9 @@
 
 **1. 效果预览**
 
-[![现代图文 · 口播讲解 · 竖屏 预览](../../docs/template-gallery/demos/case-studies/approved-b-highlight.jpg)](../../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4)
+[![现代图文 · 口播讲解 · 竖屏 预览](https://media.openaicut.com/covers/606/draft-zh-ceb203a3fa61.jpg)](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4)
 
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/case-studies/approved-b-highlight.mp4)：本人B版已认可的10.23秒局部画面，静音目录示例；不代表整套原生编舞或全部变体已验收。
-- [官方示例 2 · 9:16](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4)：官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。
+- [官方示例 1 · 9:16](https://media.openaicut.com/previews/606/draft-zh-9086d86d6129.mp4)：官方来源演示；公开登记版本 2.7.18-alpha.10，演示文件未必对应最新包，未本机实测。
 
 **2. 适用内容**
 
@@ -2315,7 +2314,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -2397,7 +2396,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -2481,7 +2480,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -2566,7 +2565,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -2649,7 +2648,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -2664,406 +2663,5 @@
 - MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。
 
 [原始来源](https://motiongit.com/@adunext/template-01-integrated-portrait)
-
----
-
-<a id="presenter-effect-04"></a>
-
-### 剪纸描边
-
-`presenter-effect-04` · 真人口播 · 人物与背景 · **样片效果 · 需要源码适配**
-
-动态抠像人物加白色纸边和阴影，置于纸张纹理背景。
-
-**1. 效果预览**
-
-[![剪纸描边 预览](../../docs/template-gallery/demos/presenter/presenter-effect-04.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-04.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-04.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 人物介绍或轻松创意片段
-
-- 抠像边缘抖动时不宜直接使用
-
-**3. 所需素材**
-
-- 同步人物透明视频
-- 纸张背景
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=4；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 需同源透明人像；背景、轮廓和 CUT 文字当前固定在代码中。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「剪纸描边」（编号 presenter-effect-04）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
-
----
-
-<a id="presenter-effect-05"></a>
-
-### 照片墙
-
-`presenter-effect-05` · 真人口播 · 人物与背景 · **样片效果 · 需要源码适配**
-
-多张照片组成错位移动墙，动态人物位于前景。
-
-**1. 效果预览**
-
-[![照片墙 预览](../../docs/template-gallery/demos/presenter/presenter-effect-05.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-05.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-05.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 展示素材集合或个人经历
-
-- 避免无授权照片及背景信息过密
-
-**3. 所需素材**
-
-- 授权照片
-- 同步人物透明视频
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=5；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 多层拼贴引用 portrait-01.jpg 至 portrait-08.jpg；必须提供自己的授权图片并重新检查遮挡。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「照片墙」（编号 presenter-effect-05）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
-
----
-
-<a id="presenter-effect-08"></a>
-
-### 杂志封面
-
-`presenter-effect-08` · 真人口播 · 人物与背景 · **样片效果 · 需要源码适配**
-
-人物与封面标题分层，形成杂志封面式口播包装。
-
-**1. 效果预览**
-
-[![杂志封面 预览](../../docs/template-gallery/demos/presenter/presenter-effect-08.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-08.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-08.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 人物专题或章节开场
-
-- 避免把装饰标题当作真实媒体背书
-
-**3. 所需素材**
-
-- 口播视频
-- 同步人物透明视频
-- 封面文字
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=8；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 前后景穿插需要同源透明人像，不能只换 sourceFile 就得到正确遮罩。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「杂志封面」（编号 presenter-effect-08）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
-
----
-
-<a id="presenter-effect-09"></a>
-
-### 抠像换景
-
-`presenter-effect-09` · 真人口播 · 人物与背景 · **样片效果 · 需要源码适配**
-
-已抠像的人物合成到原创蓝色空间背景。
-
-**1. 效果预览**
-
-[![抠像换景 预览](../../docs/template-gallery/demos/presenter/presenter-effect-09.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-09.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-09.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 替换环境或建立主题场景
-
-- 演示使用人物透明层，不代表原片拍摄了绿幕
-
-**3. 所需素材**
-
-- 同步人物透明视频
-- 替换背景
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=9；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 源时间 21.75 秒用于本样片分到下一效果；新原片必须重建分界，不能照用。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「抠像换景」（编号 presenter-effect-09）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
-
----
-
-<a id="presenter-effect-15"></a>
-
-### 人物破框
-
-`presenter-effect-15` · 真人口播 · 人物与背景 · **样片效果 · 需要源码适配**
-
-同源画面在倾斜窗口内显示，透明人物延伸到窗口外。
-
-**1. 效果预览**
-
-[![人物破框 预览](../../docs/template-gallery/demos/presenter/presenter-effect-15.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-15.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-15.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 人物登场或突出主体
-
-- 前后两层必须同步，避免双重人物边缘
-
-**3. 所需素材**
-
-- 同步口播视频与人物透明视频
-- 窗口位置
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=15；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 破框人像依赖普通视频与透明视频严格同步；窗口和人物层必须共用同一变换。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「人物破框」（编号 presenter-effect-15）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
 
 ---

@@ -2,9 +2,9 @@
 
 [返回全部分类](../README.zh-CN.md) · [学习自动剪辑](../../docs/NOTION_GUIDE.zh-CN.md) · [在线筛选与播放](https://aicut.agi-top.com)
 
-本页 22 个目录条目；每项固定七段，参数依据与使用状态独立标注。先准备自己的合法素材，再按对应版本检查依赖和预览。
+本页 20 个目录条目；每项固定七段，参数依据与使用状态独立标注。先准备自己的合法素材，再按对应版本检查依赖和预览。
 
-[流程演示 · 产品教程](#mg-style-670021) · [设备样机](#mg-control-device) · [聚光放大](#mg-control-spotlight) · [聊天对话](#mg-control-chat) · [评论 / 弹幕](#mg-control-comment) · [通知横幅](#mg-control-notify) · [搜索框](#mg-control-search) · [浏览器 / 应用窗口](#mg-control-browser) · [社交数据卡](#mg-control-social) · [鼠标点击演示](#mg-control-cursor) · [箭头标注](#mg-control-callout) · [章节进度条](#mg-control-progressbar) · [聊天界面](#remotion-community-chat) · [眼睛揭示动画](#remotion-eye-reveal) · [玻璃信息卡](#remotion-lower-third-glass-card) · [角色跳动](#remotion-character-jumping) · [短视频播放器界面](#remotion-social-reel) · [思考气泡](#remotion-thinking-bubble) · [角色招手](#remotion-wave-hello) · [中文播放器界面示例](#remotion-library-player-zh) · [界面窗框](#presenter-effect-07) · [手机画面](#presenter-effect-14)
+[流程演示 · 产品教程](#mg-style-670021) · [设备样机](#mg-control-device) · [聚光放大](#mg-control-spotlight) · [聊天对话](#mg-control-chat) · [评论 / 弹幕](#mg-control-comment) · [通知横幅](#mg-control-notify) · [搜索框](#mg-control-search) · [浏览器 / 应用窗口](#mg-control-browser) · [社交数据卡](#mg-control-social) · [鼠标点击演示](#mg-control-cursor) · [箭头标注](#mg-control-callout) · [章节进度条](#mg-control-progressbar) · [聊天界面](#remotion-community-chat) · [眼睛揭示动画](#remotion-eye-reveal) · [玻璃信息卡](#remotion-lower-third-glass-card) · [角色跳动](#remotion-character-jumping) · [短视频播放器界面](#remotion-social-reel) · [思考气泡](#remotion-thinking-bubble) · [角色招手](#remotion-wave-hello) · [中文播放器界面示例](#remotion-library-player-zh)
 
 <a id="mg-style-670021"></a>
 
@@ -87,15 +87,14 @@
 
 ### 设备样机
 
-`mg-control-device` · 录屏与操作教学 · 真实素材展示 · **已有控件演示 · 需自备授权原包**
+`mg-control-device` · 录屏与操作教学 · 真实素材展示 · **暂无示范视频 · 需自备授权原包**
 
 展示 App、网页、录屏、作品画面：素材放进手机 / 平板 / 显示器屏幕里，视频按成片时钟播放；可配标题
 
 **1. 效果预览**
 
-[![设备样机 预览](../../docs/template-gallery/demos/motiongit/device.jpg)](../../docs/template-gallery/demos/motiongit/device.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/device.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -147,8 +146,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -170,15 +169,14 @@
 
 ### 聚光放大
 
-`mg-control-spotlight` · 录屏与操作教学 · 真实素材展示 · **已有控件演示 · 需自备授权原包**
+`mg-control-spotlight` · 录屏与操作教学 · 真实素材展示 · **暂无示范视频 · 需自备授权原包**
 
 在一张截图/照片/视频画面里依次指出 1–3 个关注点（x、y 为 0–1 的相对位置），每个点带一个短标签
 
 **1. 效果预览**
 
-[![聚光放大 预览](../../docs/template-gallery/demos/motiongit/spotlight.jpg)](../../docs/template-gallery/demos/motiongit/spotlight.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/spotlight.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -233,8 +231,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -256,15 +254,14 @@
 
 ### 聊天对话
 
-`mg-control-chat` · 录屏与操作教学 · 界面与交互演示 · **已有控件演示 · 需自备授权原包**
+`mg-control-chat` · 录屏与操作教学 · 界面与交互演示 · **暂无示范视频 · 需自备授权原包**
 
 把一段对话演出来：用户与客服/朋友的聊天、群里的讨论、向 AI 助手提问并得到回答；2–6 条消息逐条出现
 
 **1. 效果预览**
 
-[![聊天对话 预览](../../docs/template-gallery/demos/motiongit/chat.jpg)](../../docs/template-gallery/demos/motiongit/chat.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/chat.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -317,8 +314,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -340,15 +337,14 @@
 
 ### 评论 / 弹幕
 
-`mg-control-comment` · 录屏与操作教学 · 界面与交互演示 · **已有控件演示 · 需自备授权原包**
+`mg-control-comment` · 录屏与操作教学 · 界面与交互演示 · **暂无示范视频 · 需自备授权原包**
 
 展示观众反馈、网友评论、热评、弹幕刷屏：2–5 条评论逐条浮现，点赞数上涨，最高赞那条被强调（热评 / 置顶 / 放大停住）
 
 **1. 效果预览**
 
-[![评论 / 弹幕 预览](../../docs/template-gallery/demos/motiongit/comment.jpg)](../../docs/template-gallery/demos/motiongit/comment.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/comment.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -404,8 +400,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -491,7 +487,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -575,7 +571,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -597,15 +593,14 @@
 
 ### 浏览器 / 应用窗口
 
-`mg-control-browser` · 录屏与操作教学 · 界面与交互演示 · **已有控件演示 · 需自备授权原包**
+`mg-control-browser` · 录屏与操作教学 · 界面与交互演示 · **暂无示范视频 · 需自备授权原包**
 
 演示「打开一个网页 / 网站 / 应用」：地址栏输入网址、加载、页面滚动，再用 1–3 个高亮框标出重点区域。只需要静态录屏展示用 0.2.0 的 media
 
 **1. 效果预览**
 
-[![浏览器 / 应用窗口 预览](../../docs/template-gallery/demos/motiongit/browser.jpg)](../../docs/template-gallery/demos/motiongit/browser.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/browser.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -662,8 +657,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -685,15 +680,14 @@
 
 ### 社交数据卡
 
-`mg-control-social` · 录屏与操作教学 · 界面与交互演示 · **已有控件演示 · 需自备授权原包**
+`mg-control-social` · 录屏与操作教学 · 界面与交互演示 · **暂无示范视频 · 需自备授权原包**
 
 展示一条内容的反响：帖子被点赞、主页涨粉、三项互动数据；数字滚动上涨。数字请标注示意
 
 **1. 效果预览**
 
-[![社交数据卡 预览](../../docs/template-gallery/demos/motiongit/social.jpg)](../../docs/template-gallery/demos/motiongit/social.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/social.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -750,8 +744,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -773,15 +767,14 @@
 
 ### 鼠标点击演示
 
-`mg-control-cursor` · 录屏与操作教学 · 界面与交互演示 · **已有控件演示 · 需自备授权原包**
+`mg-control-cursor` · 录屏与操作教学 · 界面与交互演示 · **暂无示范视频 · 需自备授权原包**
 
 演示软件操作步骤：依次点几个按钮、把文件拖进某个区域、打开菜单选一项。可以放截图作为背景
 
 **1. 效果预览**
 
-[![鼠标点击演示 预览](../../docs/template-gallery/demos/motiongit/cursor.jpg)](../../docs/template-gallery/demos/motiongit/cursor.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/cursor.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -835,8 +828,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -858,15 +851,14 @@
 
 ### 箭头标注
 
-`mg-control-callout` · 录屏与操作教学 · 叠加标注与装饰 · **已有控件演示 · 需自备授权原包**
+`mg-control-callout` · 录屏与操作教学 · 叠加标注与装饰 · **暂无示范视频 · 需自备授权原包**
 
 指出画面里的某个位置（录屏按钮、图片细节、口播卡外的内容）：给目标点 x/y（0–1 画面比例）和一句短标注
 
 **1. 效果预览**
 
-[![箭头标注 预览](../../docs/template-gallery/demos/motiongit/callout.jpg)](../../docs/template-gallery/demos/motiongit/callout.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/callout.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -919,8 +911,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -942,15 +934,14 @@
 
 ### 章节进度条
 
-`mg-control-progressbar` · 录屏与操作教学 · 叠加标注与装饰 · **已有控件演示 · 需自备授权原包**
+`mg-control-progressbar` · 录屏与操作教学 · 叠加标注与装饰 · **暂无示范视频 · 需自备授权原包**
 
 告诉观众「现在讲到第几部分」：2–6 个章节名 + 当前章节序号。放在章节切换处，停留 2–6 秒
 
 **1. 效果预览**
 
-[![章节进度条 预览](../../docs/template-gallery/demos/motiongit/progressbar.jpg)](../../docs/template-gallery/demos/motiongit/progressbar.mp4)
+原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。
 
-- [本地效果演示 1 · 规格见演示](../../docs/template-gallery/demos/motiongit/progressbar.mp4)：官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。
 
 **2. 适用内容**
 
@@ -1001,8 +992,8 @@
 
 **6. 当前能否使用**
 
-- 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 暂无示范视频 · 需自备授权原包
+- 本仓库提供目录，暂无示范视频，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1722,166 +1713,5 @@
 - MIT（模板源码）；Remotion 运行时与字体许可分别适用
 
 [原始来源](https://github.com/RenderComp/free-remotion-templates/tree/f648980e528defb7594e24c6447055f0540f340b)
-
----
-
-<a id="presenter-effect-07"></a>
-
-### 界面窗框
-
-`presenter-effect-07` · 录屏与操作教学 · 界面与设备 · **样片效果 · 需要源码适配**
-
-口播被放入带标题栏的悬浮窗框，形成界面容器效果。
-
-**1. 效果预览**
-
-[![界面窗框 预览](../../docs/template-gallery/demos/presenter/presenter-effect-07.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-07.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-07.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 介绍视频内容或界面场景
-
-- 此演示没有真实软件操作与点击
-
-**3. 所需素材**
-
-- 口播视频
-- 窗口标题
-- 背景颜色
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=7；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 窗口外观及尺寸按当前样片设计；原画面中的必要信息仍须保持可读。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「界面窗框」（编号 presenter-effect-07）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
-
----
-
-<a id="presenter-effect-14"></a>
-
-### 手机画面
-
-`presenter-effect-14` · 录屏与操作教学 · 界面与设备 · **样片效果 · 需要源码适配**
-
-口播装入带旋转动作的手机轮廓与播放信息层。
-
-**1. 效果预览**
-
-[![手机画面 预览](../../docs/template-gallery/demos/presenter/presenter-effect-14.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-14.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-14.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 展示竖屏内容或手机场景
-
-- 这是设备示意，不是已完成真实手机实操
-
-**3. 所需素材**
-
-- 竖屏视频
-- 设备内标题与信息
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=14；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 手机窗口为固定位置和比例；新视频需要单独检查裁切。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「手机画面」（编号 presenter-effect-14）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
 
 ---

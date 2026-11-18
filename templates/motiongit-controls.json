@@ -602,20 +602,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/media.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "tilt",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "e8415ad56fe2c05b6d480ff56db01b0f4fd442a59217194ff474e0e395390323",
-          "bytes": 61269,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "tilt",
@@ -638,7 +625,8 @@
         "t1": 54,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-stamp",
@@ -881,20 +869,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/logo.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "burst",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "e51e8396008b839dba51834dc5d37103901ba1e31b88b4b2910ba745395bb2d7",
-          "bytes": 104629,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "burst",
@@ -917,7 +892,8 @@
         "t1": 6,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-intro",
@@ -1019,20 +995,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/outro.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "next",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "3bc185062eb342fa9be14ec03cccbfc8d711db0616e3e5fbeb89f349add5645f",
-          "bytes": 128054,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "endcard",
@@ -1055,7 +1018,8 @@
         "t1": 18,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-cta",
@@ -1157,20 +1121,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/subscribe.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "triple",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "40cc511eb52595a74f6a28c3c9e484d8f77e5ad84c8a0e39aee649d86cffbdd1",
-          "bytes": 79045,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "triple",
@@ -1193,7 +1144,8 @@
         "t1": 30,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-countdown",
@@ -1916,20 +1868,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/vs.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "cards",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "eb2f7b63f94eba9a5c0fad721e2aec74d059fe1c9ef8a3b5d717dbc943f338cb",
-          "bytes": 107610,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "fight",
@@ -1952,7 +1891,8 @@
         "t1": 48,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-donut",
@@ -2937,20 +2877,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/gallery.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "grid",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "6adc2af115beea1d9e5b0a2c7d253c2b9596b3b59071c795cbfb45351b9ee64a",
-          "bytes": 104600,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "grid",
@@ -2973,7 +2900,8 @@
         "t1": 6,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-beforeafter",
@@ -3006,20 +2934,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/beforeafter.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "split",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "9dd4f3d0ccd252a99cc221860063f77f6bf8d882b264342bd150208e30ad3ac2",
-          "bytes": 168381,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "slider",
@@ -3042,7 +2957,8 @@
         "t1": 12,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-kenburns",
@@ -3075,20 +2991,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/kenburns.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "pan",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "ea7de387156cc6148ead9ce5359673a488f472ecb9d94b29c47d73935e6c60b5",
-          "bytes": 152899,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "pan",
@@ -3111,7 +3014,8 @@
         "t1": 18,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-polaroid",
@@ -3144,20 +3048,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/polaroid.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "pin",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "233f4a6c0113dd7d0e0286f0fb85f83cd299e892b372683922c888bea9d4f843",
-          "bytes": 167647,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "drop",
@@ -3180,7 +3071,8 @@
         "t1": 24,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-device",
@@ -3213,20 +3105,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/device.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "monitor",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "3f7004b92198cf1fc9db2faac5dab7033a118707937bf9a8afce0100422ed121",
-          "bytes": 101809,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "phone",
@@ -3249,7 +3128,8 @@
         "t1": 30,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-collage",
@@ -3282,20 +3162,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/collage.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "masonry",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "64348024064028e0da0c1a1c61e01c12fe572990ebc6480703276d4fb819cd92",
-          "bytes": 332868,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "masonry",
@@ -3318,7 +3185,8 @@
         "t1": 36,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-spotlight",
@@ -3351,20 +3219,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/spotlight.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "spotlight",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "fc215c487f4e037d9c765571f2648e9ebee87166347c7107b99690cf5362dc83",
-          "bytes": 109860,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "spotlight",
@@ -3387,7 +3242,8 @@
         "t1": 42,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-kinetic",
@@ -3827,20 +3683,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/chat.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "bubbles",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "6915eb949bda1168bc8938bb34691e0f3c56bd4151612175c8fa97a4cd7b5351",
-          "bytes": 169400,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "bubbles",
@@ -3863,7 +3706,8 @@
         "t1": 6,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-comment",
@@ -3895,20 +3739,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/comment.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "cards",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "f3aa4c0c57935dabf4bb0de739ac56ccd07ad28fc270f2a218a2c307dad8ba3a",
-          "bytes": 75247,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "cards",
@@ -3931,7 +3762,8 @@
         "t1": 12,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-notify",
@@ -4099,20 +3931,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/browser.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "browser",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "f905c721f8673d11a61919e5aac7d1702e9c4640f5576646ab50cd32b33a523a",
-          "bytes": 205802,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "browser",
@@ -4135,7 +3954,8 @@
         "t1": 30,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-social",
@@ -4167,20 +3987,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/social.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "post",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "f615d1f86a86a58c54ca122f639b1fd440a6d82794ffcbe799e52c09f63947d6",
-          "bytes": 95176,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "post",
@@ -4203,7 +4010,8 @@
         "t1": 36,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-cursor",
@@ -4235,20 +4043,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/cursor.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "click",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "6f0b58c314da7967819b7ef1c8fc74fd4f9d41c36c63ce9591dc9667f115b6ec",
-          "bytes": 99211,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "click",
@@ -4271,7 +4066,8 @@
         "t1": 42,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-lowerthird",
@@ -4304,20 +4100,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/lowerthird.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "bar",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "2a5f4c0eb2bd3b811843ad5016bf8adfb478a90936a71e035188ec5d2c423269",
-          "bytes": 51701,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "bar",
@@ -4340,7 +4123,8 @@
         "t1": 6,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-callout",
@@ -4373,20 +4157,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/callout.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "arrow",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "4d339461c013385cc2b4959925d812337d0a115174773d32d0a75df05730e14a",
-          "bytes": 48847,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "arrow",
@@ -4409,7 +4180,8 @@
         "t1": 12,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-sticker",
@@ -4442,20 +4214,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/sticker.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "pop",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "a57fc2a4f9a56fe5e1dd22afb39f8b181447dabe4e60144ba276a5536fd4d731",
-          "bytes": 71055,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "pop",
@@ -4478,7 +4237,8 @@
         "t1": 18,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-emoji",
@@ -4511,20 +4271,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/emoji.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "float",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "6fed416ca571c839513fbcdc1d7b34b4737f983c491305bdbcdd6c29bab5b7be",
-          "bytes": 49521,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "float",
@@ -4547,7 +4294,8 @@
         "t1": 24,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-progressbar",
@@ -4580,20 +4328,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/progressbar.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "top",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "605369ce2eb7d8a83bd7081bbeabe64f93f46be05b99bfa1edd01065dce768cf",
-          "bytes": 27804,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "top",
@@ -4616,7 +4351,8 @@
         "t1": 30,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-tag",
@@ -4649,20 +4385,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/tag.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "corner",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "b831897d601544b17d0d1633e8ee34f281bb68c4e29c0f1646ff693f98d6823d",
-          "bytes": 27499,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "corner",
@@ -4685,7 +4408,8 @@
         "t1": 36,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-confetti",
@@ -4718,20 +4442,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/confetti.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "cannons",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "03985a7a11b6d65e70afe5bfce4f3c15677cf9d40fe3628991e5980739fe67e1",
-          "bytes": 213725,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "cannons",
@@ -4754,7 +4465,8 @@
         "t1": 42,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     },
     {
       "id": "mg-control-frame",
@@ -4787,20 +4499,7 @@
         "continuous_watch": false,
         "owner_artistic_acceptance": false
       },
-      "demos": [
-        {
-          "kind": "own",
-          "path": "demos/motiongit/frame.mp4",
-          "description_zh": "官方控件真实渲染；使用本人授权素材。6秒静音控件演示；保留模板原生标记与组内时码，角标不是本文件播放计时。低位演示身份标为本目录后处理添加。",
-          "variant_id": "viewfinder",
-          "duration_seconds": 6,
-          "width": 540,
-          "height": 960,
-          "sha256": "7a819e2d2ba9219a2ec3023a8615c733028bd57a15184505cc099d6abe308329",
-          "bytes": 66637,
-          "audio": "none"
-        }
-      ],
+      "demos": [],
       "variants": [
         {
           "id": "viewfinder",
@@ -4823,7 +4522,8 @@
         "t1": 48,
         "kind": "own"
       },
-      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。"
+      "label_provenance": "原作者公开中文 guide：label/use/variantsNote；中文分类与使用提醒由本项目整理。",
+      "no_demo_reason": "原示范视频用的是本人素材，2026-11-18 按本人要求删除；模板本身仍可调用，需要时用你自己的素材重新渲染预览。"
     }
   ]
 }

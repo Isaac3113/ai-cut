@@ -2,9 +2,9 @@
 
 [返回全部分类](../README.zh-CN.md) · [学习自动剪辑](../../docs/NOTION_GUIDE.zh-CN.md) · [在线筛选与播放](https://aicut.agi-top.com)
 
-本页 25 个目录条目；每项固定七段，参数依据与使用状态独立标注。先准备自己的合法素材，再按对应版本检查依赖和预览。
+本页 23 个目录条目；每项固定七段，参数依据与使用状态独立标注。先准备自己的合法素材，再按对应版本检查依赖和预览。
 
-[流程与时间线 · FLOW / TIMELINE](#mg-style-876) · [目标与证据 · 17类语义动效](#mg-style-509099) · [黏土实验台 · 知识讲解模板](#mg-style-517652) · [粉笔黑板 · 知识讲解模板](#mg-style-173723) · [生长导图 · 知识讲解模板](#mg-style-880856) · [博物馆展墙 · 知识讲解模板](#mg-style-949192) · [发光玻璃板 · 知识讲解模板](#mg-style-803150) · [等距系统图 · 知识讲解模板](#mg-style-106531) · [纸雕层叠 · 知识讲解模板](#mg-style-546070) · [地铁线路图 · 知识讲解模板](#mg-style-447390) · [点阵手账 · 知识讲解模板](#mg-style-968813) · [彩色几何 · 知识讲解模板](#mg-style-118272) · [要点列表](#mg-control-list) · [步骤流程](#mg-control-steps) · [待办清单](#mg-control-checklist) · [时间线 / 里程碑](#mg-control-timeline) · [流程图](#mg-control-flow) · [循环图](#mg-control-cycle) · [漏斗 / 层级](#mg-control-funnel) · [交集图](#mg-control-venn) · [思维导图](#mg-control-mindmap) · [2×2 象限](#mg-control-matrix) · [中心辐射](#mg-control-hub) · [打勾清单](#presenter-effect-10) · [收据列表](#presenter-effect-18)
+[流程与时间线 · FLOW / TIMELINE](#mg-style-876) · [目标与证据 · 17类语义动效](#mg-style-509099) · [黏土实验台 · 知识讲解模板](#mg-style-517652) · [粉笔黑板 · 知识讲解模板](#mg-style-173723) · [生长导图 · 知识讲解模板](#mg-style-880856) · [博物馆展墙 · 知识讲解模板](#mg-style-949192) · [发光玻璃板 · 知识讲解模板](#mg-style-803150) · [等距系统图 · 知识讲解模板](#mg-style-106531) · [纸雕层叠 · 知识讲解模板](#mg-style-546070) · [地铁线路图 · 知识讲解模板](#mg-style-447390) · [点阵手账 · 知识讲解模板](#mg-style-968813) · [彩色几何 · 知识讲解模板](#mg-style-118272) · [要点列表](#mg-control-list) · [步骤流程](#mg-control-steps) · [待办清单](#mg-control-checklist) · [时间线 / 里程碑](#mg-control-timeline) · [流程图](#mg-control-flow) · [循环图](#mg-control-cycle) · [漏斗 / 层级](#mg-control-funnel) · [交集图](#mg-control-venn) · [思维导图](#mg-control-mindmap) · [2×2 象限](#mg-control-matrix) · [中心辐射](#mg-control-hub)
 
 <a id="mg-style-876"></a>
 
@@ -995,7 +995,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1077,7 +1077,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1160,7 +1160,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1243,7 +1243,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1325,7 +1325,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1407,7 +1407,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1489,7 +1489,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1570,7 +1570,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1654,7 +1654,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1741,7 +1741,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1825,7 +1825,7 @@
 **6. 当前能否使用**
 
 - 已有控件演示 · 需自备授权原包
-- 本仓库提供目录与已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
+- 本仓库提供目录，附已渲染演示，未附送个人 .motion 原包；学员须使用自己合法取得的对应包。
 - 本库登记版本：0.3.0 (package2.7.17-alpha.2)。新输入、新电脑和其他变体须另行验证。
 
 <details>
@@ -1840,167 +1840,5 @@
 - MotionGit 个人授权模板包，以原包授权为准；仅包含自有素材及明确示例数据的渲染演示，不分发受保护代码。
 
 [原始来源](https://motiongit.com/@adunext/template-01-integrated-portrait)
-
----
-
-<a id="presenter-effect-10"></a>
-
-### 打勾清单
-
-`presenter-effect-10` · 流程与时间线 · 列表与步骤 · **样片效果 · 需要源码适配**
-
-清单项依次打勾，顶部进度随演示推进。
-
-**1. 效果预览**
-
-[![打勾清单 预览](../../docs/template-gallery/demos/presenter/presenter-effect-10.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-10.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-10.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 步骤总结或完成项确认
-
-- 不能把演示勾选当作真实任务完成
-
-**3. 所需素材**
-
-- 口播视频
-- 清单文字
-- 逐项时间
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=10；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 打勾清单的条目与出现时间需按新片讲解重排；本样片通过固定源时间分界进入。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「打勾清单」（编号 presenter-effect-10）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
-
----
-
-<a id="presenter-effect-18"></a>
-
-### 收据列表
-
-`presenter-effect-18` · 流程与时间线 · 列表与步骤 · **样片效果 · 需要源码适配**
-
-纸张从打印口逐步出现，列出三项内容并打勾。
-
-**1. 效果预览**
-
-[![收据列表 预览](../../docs/template-gallery/demos/presenter/presenter-effect-18.jpg)](../../docs/template-gallery/demos/presenter/presenter-effect-18.mp4)
-
-- [本人案例 1 · 9:16](../../docs/template-gallery/demos/presenter/presenter-effect-18.mp4)：本人素材中文无声演示，来自已渲染母版的对应效果片段。
-
-**2. 适用内容**
-
-- 总结清单或展示内容目录
-
-- 示意收据不能冒充真实交易凭据
-
-**3. 所需素材**
-
-- 口播视频
-- 列表文字
-- 出现时间
-
-**4. 可改参数与限制**
-
-按已核对的字段与限制修改；尚未核对的能力会明确标注。
-
-<details>
-<summary>查看参数、限制与来源依据</summary>
-
-- 共同工程输入 sourceFile / alphaFile：原视频与严格同步的透明人像视频文件；透明人像按具体分支需要使用。
-- clips：每段的 fromFrame、durationInFrames、sourceStart、playbackRate、kind、title；totalFrames：总帧数。
-- 本条效果选择 kind=18；标题可由该段 title 提供，其余效果内容不能假定已参数化。
-
-- 当前是样片效果分支，需要按新片适配；没有独立的通用 .motion 参数合同。
-- 母版固定 1080×1920、30fps；品牌色 INK/ACCENT、Logo、小窗位置和部分文案在源码中固定，修改需调整代码并重新验证。
-- 收据内“镂空字/手机画面/贴纸轮播”三项文字固定在源码；换清单及项数需修改版面与出纸节奏。
-
-参数依据：[Showcase.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/Showcase.tsx) · [GraphicLayers.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/GraphicLayers.tsx) · [index.tsx](../../extensions/remotion-vd44/src/template-library/talking-head-effects/index.tsx)
-
-</details>
-
-**5. 怎样交给 AI 使用**
-
-<details>
-<summary>复制本模板的使用提示词</summary>
-
-```text
-请使用 AI Cut 模板目录中的「收据列表」（编号 presenter-effect-18）。
-我的内容或原片：[填写]；输出比例：[填写]；需要强调的内容：[填写]。
-先核对本条来源、当前状态、素材和参数合同；使用我自己的获授权素材，保留原声原意。
-按照本条已支持的参数范围做短预览，确认文字、动作和声音的时间一致，再放入剪辑工程。
-若原包、依赖或素材缺失，说明缺什么；遇到费用先告诉我。不要将示例人物或示例数据当成我的内容。
-```
-
-</details>
-
-**6. 当前能否使用**
-
-- 样片效果 · 需要源码适配
-- 当前为特定样片的效果分支，颜色、素材与时间逻辑尚有固定实现；不视为已通用化 .motion 包。
-- 本库登记版本：1.0.0。新输入、新电脑和其他变体须另行验证。
-
-<details>
-<summary>查看原始检查范围与接入记录</summary>
-
-- 已核对实际效果编号及母版帧区间，完整解码，检查尺寸、帧数、文件大小，并实际审看起中末联系表；无新音频，不代表逐帧连续观看或完整参考复刻。
-
-</details>
-
-**7. 来源与许可**
-
-- MIT（原创代码）；演示肖像仅按本人本次授权展示，非素材再分发授权；Remotion 引擎另有许可
-
-[原始来源](https://github.com/Isaac3113/ai-cut/tree/main/extensions/remotion-vd44/src/template-library/talking-head-effects)
 
 ---

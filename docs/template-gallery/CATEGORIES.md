@@ -1,6 +1,6 @@
 # 分类动画预览
 
-每个分类都有演示入口：23类提供真实本地Demo的动画小样，4类链接官方原片。逐项演示及适用条件见[完整中文清单](../../templates/README.zh-CN.md)。静音演示不代表本条成片已验收。
+16类提供真实本地Demo的动画小样，5类链接官方原片；另有2类暂无示范视频，条目见完整清单。逐项演示及适用条件见[完整中文清单](../../templates/README.zh-CN.md)。静音演示不代表本条成片已验收。
 
 ## Logo与品牌
 
@@ -28,47 +28,37 @@
 
 来源条目：`mg-style-128610`。
 
-## 人物与背景
-
-![分类动画：人物与背景](demos/categories/category-b82c52b1a37f.gif)
-
-来源条目：`presenter-effect-04`。
-
 ## 关系与系统结构
 
 ![分类动画：关系与系统结构](demos/categories/category-16ad44f7cf14.gif)
 
 来源条目：`mg-control-flow`。
 
-## 列表与步骤
-
-![分类动画：列表与步骤](demos/categories/category-c56da5b252bc.gif)
-
-来源条目：`presenter-effect-10`。
-
-## 叠加标注与装饰
-
-![分类动画：叠加标注与装饰](demos/categories/category-7c6eac7c2495.gif)
-
-来源条目：`mg-control-lowerthird`。
-
 ## 口播与讲解
 
 ![分类动画：口播与讲解](demos/categories/category-e3a35b0b90af.gif)
 
-来源条目：`mg-style-314486`。
+来源条目：`ai-cut-editorial-canvas`。
 
 ## 品牌与行动
 
 ![分类动画：品牌与行动](demos/categories/category-6893aefa7124.gif)
 
-来源条目：`mg-control-logo`。
+来源条目：`mg-control-intro`。
 
 ## 基础讲解
 
 ![分类动画：基础讲解](demos/categories/category-67110fb27cc6.gif)
 
 来源条目：`mg-control-title`。
+
+## 实验与创新
+
+[财经知识解说 · 50 页动效包：官方在线分类演示](https://media.openaicut.com/previews/955/1.0.0-zh-a4f8c3690cc4.mp4)
+
+官方视频保留原样，在线播放需要联网。
+
+来源条目：`mg-style-126246`。
 
 ## 循环与背景
 
@@ -110,19 +100,7 @@
 
 ![分类动画：界面与交互演示](demos/categories/category-b49e16fe7196.gif)
 
-来源条目：`mg-control-chat`。
-
-## 界面与设备
-
-![分类动画：界面与设备](demos/categories/category-5297269d2cdb.gif)
-
-来源条目：`presenter-effect-07`。
-
-## 真实素材展示
-
-![分类动画：真实素材展示](demos/categories/category-a8befd61c2a2.gif)
-
-来源条目：`mg-control-gallery`。
+来源条目：`mg-control-notify`。
 
 ## 知识解说与流程图
 
@@ -146,12 +124,6 @@
 
 来源条目：`mg-style-385712`。
 
-## 装饰与强调
-
-![分类动画：装饰与强调](demos/categories/category-453d878fd5d5.gif)
-
-来源条目：`presenter-effect-12`。
-
 ## 视觉与场景动效（非口播默认）
 
 [半调网点 · 人像标题：官方在线分类演示](https://media.openaicut.com/previews/615/draft-zh-87b41df4a38a.mp4)
@@ -165,9 +137,3 @@
 ![分类动画：转场](demos/categories/category-12bb64579c19.gif)
 
 来源条目：`remotion-camera-shake`。
-
-## 镜头与转场
-
-![分类动画：镜头与转场](demos/categories/category-e4de82d4b8b9.gif)
-
-来源条目：`presenter-effect-03`。
